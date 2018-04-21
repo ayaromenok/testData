@@ -23,17 +23,17 @@ $INSBASE
   9
 $EXTMIN
  10
-0
+-50
  20
-0
+-80
  30
 0
   9
 $EXTMAX
  10
-260
+290
  20
-180
+120
  30
 0
   9
@@ -801,6 +801,10 @@ $PEXTMAX
  30
 0
   9
+$GRIDMODE
+ 70
+    1
+  9
 $SNAPSTYLE
  70
     0
@@ -1111,9 +1115,9 @@ AcDbViewportTableRecord
  21
 1
  12
-146.25
+160.125
  22
-98
+53.25
  13
 0
  23
@@ -1139,9 +1143,9 @@ AcDbViewportTableRecord
  37
 0
  40
-208.5
+204.5
  41
-1.854916067146283
+1.89119804400978
  42
 50
  43
@@ -2385,7 +2389,7 @@ Standard
  70
     0
  40
-1
+2.5
  41
 2.5
  42
@@ -2409,7 +2413,7 @@ Standard
 141
 0.09
 142
-2.5
+0
 143
 25.4
 144
@@ -2437,7 +2441,7 @@ Standard
  77
     0
  78
-    1
+    8
  79
     0
 170
@@ -2475,7 +2479,7 @@ Standard
 277
     2
 278
-    0
+   44
 279
     0
 280
@@ -2497,7 +2501,7 @@ Standard
 289
     3
 340
-standard
+STANDARD
 341
 
 371
@@ -2653,7 +2657,7 @@ AcDbEntity
   8
 0
   6
-DOT
+BORDER
  62
   256
 370
@@ -2661,11 +2665,11 @@ DOT
 100
 AcDbLine
  10
-20
+270
  20
 0
  11
-0
+250
  21
 60
   0
@@ -2677,7 +2681,7 @@ AcDbEntity
   8
 0
   6
-DOTTINY
+BORDERTINY
  62
   256
 370
@@ -2685,11 +2689,11 @@ DOTTINY
 100
 AcDbLine
  10
-0
+250
  20
 60
  11
-20
+270
  21
 120
   0
@@ -2701,7 +2705,7 @@ AcDbEntity
   8
 0
   6
-DOT2
+BORDER2
  62
   256
 370
@@ -2709,11 +2713,11 @@ DOT2
 100
 AcDbLine
  10
-20
+270
  20
 120
  11
-40
+290
  21
 60
   0
@@ -2725,7 +2729,7 @@ AcDbEntity
   8
 0
   6
-DOTX2
+BORDERX2
  62
   256
 370
@@ -2733,11 +2737,11 @@ DOTX2
 100
 AcDbLine
  10
-40
+290
  20
 60
  11
-20
+270
  21
 0
   0
@@ -2749,7 +2753,7 @@ AcDbEntity
   8
 0
   6
-ByLayer
+CENTER
  62
   256
 370
@@ -2757,13 +2761,13 @@ ByLayer
 100
 AcDbLine
  10
-20
+220
  20
 0
  11
-60
+200
  21
-0
+60
   0
 LINE
   5
@@ -2773,7 +2777,7 @@ AcDbEntity
   8
 0
   6
-DASHED
+CENTERTINY
  62
   256
 370
@@ -2781,13 +2785,13 @@ DASHED
 100
 AcDbLine
  10
-60
+200
  20
-0
- 11
-40
- 21
 60
+ 11
+220
+ 21
+120
   0
 LINE
   5
@@ -2797,7 +2801,7 @@ AcDbEntity
   8
 0
   6
-DASHEDTINY
+CENTER2
  62
   256
 370
@@ -2805,13 +2809,13 @@ DASHEDTINY
 100
 AcDbLine
  10
-40
+220
  20
-60
- 11
-60
- 21
 120
+ 11
+240
+ 21
+60
   0
 LINE
   5
@@ -2821,7 +2825,7 @@ AcDbEntity
   8
 0
   6
-DASHED2
+CENTERX2
  62
   256
 370
@@ -2829,13 +2833,13 @@ DASHED2
 100
 AcDbLine
  10
-60
+240
  20
-120
- 11
-80
- 21
 60
+ 11
+220
+ 21
+0
   0
 LINE
   5
@@ -2845,7 +2849,7 @@ AcDbEntity
   8
 0
   6
-DASHEDX2
+DIVIDE
  62
   256
 370
@@ -2853,13 +2857,13 @@ DASHEDX2
 100
 AcDbLine
  10
-80
+170
  20
-60
- 11
-60
- 21
 0
+ 11
+150
+ 21
+60
   0
 LINE
   5
@@ -2869,7 +2873,7 @@ AcDbEntity
   8
 0
   6
-ByLayer
+DIVIDETINY
  62
   256
 370
@@ -2877,13 +2881,13 @@ ByLayer
 100
 AcDbLine
  10
-60
+150
  20
-0
+60
  11
-100
+170
  21
-0
+120
   0
 LINE
   5
@@ -2893,7 +2897,7 @@ AcDbEntity
   8
 0
   6
-DASHDOT
+DIVIDE2
  62
   256
 370
@@ -2901,11 +2905,11 @@ DASHDOT
 100
 AcDbLine
  10
-100
+170
  20
-0
+120
  11
-80
+190
  21
 60
   0
@@ -2917,7 +2921,7 @@ AcDbEntity
   8
 0
   6
-DASHDOTTINY
+DIVIDEX2
  62
   256
 370
@@ -2925,13 +2929,13 @@ DASHDOTTINY
 100
 AcDbLine
  10
-80
+190
  20
 60
  11
-100
+170
  21
-120
+0
   0
 LINE
   5
@@ -2941,7 +2945,7 @@ AcDbEntity
   8
 0
   6
-DASHDOT2
+ByLayer
  62
   256
 370
@@ -2949,13 +2953,13 @@ DASHDOT2
 100
 AcDbLine
  10
-100
+170
  20
 120
  11
-120
+170
  21
-60
+-0
   0
 LINE
   5
@@ -2965,7 +2969,7 @@ AcDbEntity
   8
 0
   6
-DASHDOTX2
+ByLayer
  62
   256
 370
@@ -2973,13 +2977,13 @@ DASHDOTX2
 100
 AcDbLine
  10
-120
+220
  20
-60
+-0
  11
-100
+220
  21
-0
+120
   0
 LINE
   5
@@ -2997,13 +3001,13 @@ ByLayer
 100
 AcDbLine
  10
-100
+270
  20
-0
+120
  11
-140
+270
  21
-0
+-0
   0
 LINE
   5
@@ -3013,7 +3017,7 @@ AcDbEntity
   8
 0
   6
-DIVIDE
+DASHED
  62
   256
 370
@@ -3021,13 +3025,13 @@ DIVIDE
 100
 AcDbLine
  10
-140
+70
  20
-0
+-20
  11
-120
+50
  21
-60
+40
   0
 LINE
   5
@@ -3037,7 +3041,7 @@ AcDbEntity
   8
 0
   6
-DIVIDETINY
+DASHEDTINY
  62
   256
 370
@@ -3045,13 +3049,13 @@ DIVIDETINY
 100
 AcDbLine
  10
-120
+50
  20
-60
+40
  11
-140
+70
  21
-120
+100
   0
 LINE
   5
@@ -3061,7 +3065,7 @@ AcDbEntity
   8
 0
   6
-DIVIDE2
+DASHED2
  62
   256
 370
@@ -3069,13 +3073,13 @@ DIVIDE2
 100
 AcDbLine
  10
-140
+70
  20
-120
+100
  11
-160
+90
  21
-60
+40
   0
 LINE
   5
@@ -3085,7 +3089,7 @@ AcDbEntity
   8
 0
   6
-DIVIDEX2
+DASHEDX2
  62
   256
 370
@@ -3093,13 +3097,13 @@ DIVIDEX2
 100
 AcDbLine
  10
-160
+90
  20
-60
+40
  11
-140
+70
  21
-0
+-20
   0
 LINE
   5
@@ -3117,13 +3121,13 @@ ByLayer
 100
 AcDbLine
  10
-140
+70
  20
-0
+100
  11
-180
+70
  21
-0
+-20
   0
 LINE
   5
@@ -3133,21 +3137,21 @@ AcDbEntity
   8
 0
   6
-CENTER
+DOT
  62
   256
 370
-   -1
+   35
 100
 AcDbLine
  10
-180
+-30
  20
-0
+-30
  11
-160
+-50
  21
-60
+30
   0
 LINE
   5
@@ -3157,21 +3161,21 @@ AcDbEntity
   8
 0
   6
-CENTERTINY
+DOTTINY
  62
   256
 370
-   -1
+   35
 100
 AcDbLine
  10
-160
+-50
  20
-60
+30
  11
-180
+-30
  21
-120
+90
   0
 LINE
   5
@@ -3181,21 +3185,21 @@ AcDbEntity
   8
 0
   6
-CENTER2
+DOT2
  62
   256
 370
-   -1
+   35
 100
 AcDbLine
  10
-180
+-30
  20
-120
+90
  11
-200
+-10
  21
-60
+30
   0
 LINE
   5
@@ -3205,21 +3209,21 @@ AcDbEntity
   8
 0
   6
-CENTERX2
+DOTX2
  62
   256
 370
-   -1
+   35
 100
 AcDbLine
  10
-200
+-10
  20
-60
+30
  11
-180
+-30
  21
-0
+-30
   0
 LINE
   5
@@ -3237,13 +3241,13 @@ ByLayer
 100
 AcDbLine
  10
-180
+-30
  20
-0
+-30
  11
-220
+-30
  21
-0
+90
   0
 LINE
   5
@@ -3253,7 +3257,7 @@ AcDbEntity
   8
 0
   6
-BORDER
+DOT
  62
   256
 370
@@ -3261,89 +3265,17 @@ BORDER
 100
 AcDbLine
  10
-220
+-30
  20
-0
+-30
  11
-200
+0
  21
-60
+-10
   0
 LINE
   5
 67
-100
-AcDbEntity
-  8
-0
-  6
-BORDERTINY
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-200
- 20
-60
- 11
-220
- 21
-120
-  0
-LINE
-  5
-68
-100
-AcDbEntity
-  8
-0
-  6
-BORDER2
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-220
- 20
-120
- 11
-240
- 21
-60
-  0
-LINE
-  5
-69
-100
-AcDbEntity
-  8
-0
-  6
-BORDERX2
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-240
- 20
-60
- 11
-220
- 21
-0
-  0
-LINE
-  5
-6A
 100
 AcDbEntity
   8
@@ -3357,13 +3289,509 @@ ByLayer
 100
 AcDbLine
  10
-220
+-50
+ 20
+30
+ 11
+-10
+ 21
+30
+  0
+LINE
+  5
+68
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-10
+ 20
+30
+ 11
+50
+ 21
+40
+  0
+LINE
+  5
+69
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+50
+ 20
+40
+ 11
+90
+ 21
+40
+  0
+LINE
+  5
+6A
+100
+AcDbEntity
+  8
+0
+  6
+DASHDOT
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+120
+ 20
+-80
+ 11
+100
+ 21
+-20
+  0
+LINE
+  5
+6B
+100
+AcDbEntity
+  8
+0
+  6
+DASHDOTTINY
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+100
+ 20
+-20
+ 11
+120
+ 21
+40
+  0
+LINE
+  5
+6C
+100
+AcDbEntity
+  8
+0
+  6
+DASHDOT2
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+120
+ 20
+40
+ 11
+140
+ 21
+-20
+  0
+LINE
+  5
+6D
+100
+AcDbEntity
+  8
+0
+  6
+DASHDOTX2
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+140
+ 20
+-20
+ 11
+120
+ 21
+-80
+  0
+LINE
+  5
+6E
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+120
+ 20
+-80
+ 11
+120
+ 21
+40
+  0
+LINE
+  5
+6F
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+90
+ 20
+40
+ 11
+100
+ 21
+-20
+  0
+LINE
+  5
+70
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+100
+ 20
+-20
+ 11
+140
+ 21
+-20
+  0
+LINE
+  5
+71
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+140
+ 20
+-20
+ 11
+150
+ 21
+60
+  0
+LINE
+  5
+72
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+150
+ 20
+60
+ 11
+190
+ 21
+60
+  0
+LINE
+  5
+73
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+190
+ 20
+60
+ 11
+200
+ 21
+60
+  0
+LINE
+  5
+74
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+200
+ 20
+60
+ 11
+240
+ 21
+60
+  0
+LINE
+  5
+75
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+240
+ 20
+60
+ 11
+250
+ 21
+60
+  0
+LINE
+  5
+76
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+250
+ 20
+60
+ 11
+290
+ 21
+60
+  0
+CIRCLE
+  5
+77
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+30
+ 20
+0
+ 40
+10
+  0
+LWPOLYLINE
+  5
+78
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+20
+ 20
+-40
+ 10
+40
+ 20
+-30
+ 10
+50
+ 20
+-40
+ 42
+-2.414213562373095
+ 10
+20
+ 20
+-40
+ 42
+-2.414213562373095
+  0
+LINE
+  5
+79
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-10
  20
 0
  11
-260
+40
  21
 0
+  0
+LINE
+  5
+7A
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+40
+ 20
+0
+ 11
+0
+ 21
+-40
+  0
+LINE
+  5
+7B
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+0
+ 20
+-40
+ 11
+0
+ 21
+10
   0
 ENDSEC
   0
