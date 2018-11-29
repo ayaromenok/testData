@@ -1,0 +1,105 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 4.0.0-beta-388-gc6daa4aa1-dirty
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2? *AVX512-SKX?
+Intel(R) IPP version: ippIP SSE4.2 (y8) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    Intel Gen OCL Driver
+        iGPU: Intel(R) HD Graphics IvyBridge M GT2 (OpenCL 1.2 beignet 1.3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) HD Graphics IvyBridge M GT2
+    Version = OpenCL 1.2 beignet 1.3
+    Driver version = 1.3
+    Address bits = 32
+    Compute units = 16
+    Max work group size = 512
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 512 MB
+    Double support = No
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_khr_spir
+        cl_khr_icd
+        cl_intel_accelerator
+        cl_intel_subgroups
+        cl_intel_subgroups_short
+        cl_khr_gl_sharing
+        cl_intel_motion_estimation
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 0
+Note: Google Test filter = *OCL_Imgproc/CLAHETest*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_Imgproc/CLAHETest
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/0, where GetParam() = (4x4, 0, false)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/0 (2 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/1, where GetParam() = (4x4, 0, true)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/1 (0 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/2, where GetParam() = (4x4, 10, false)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/2 (0 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/3, where GetParam() = (4x4, 10, true)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/3 (1 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/4, where GetParam() = (4x4, 62, false)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/4 (0 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/5, where GetParam() = (4x4, 62, true)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/5 (1 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/6, where GetParam() = (4x4, 300, false)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/6 (0 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/7, where GetParam() = (4x4, 300, true)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/7 (1 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/8, where GetParam() = (32x8, 0, false)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/8 (1 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/9, where GetParam() = (32x8, 0, true)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/9 (2 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/10, where GetParam() = (32x8, 10, false)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/10 (2 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/11, where GetParam() = (32x8, 10, true)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/11 (2 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/12, where GetParam() = (32x8, 62, false)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/12 (2 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/13, where GetParam() = (32x8, 62, true)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/13 (1 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/14, where GetParam() = (32x8, 300, false)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/14 (2 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/15, where GetParam() = (32x8, 300, true)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/15 (2 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/16, where GetParam() = (8x64, 0, false)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/16 (3 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/17, where GetParam() = (8x64, 0, true)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/17 (4 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/18, where GetParam() = (8x64, 10, false)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/18 (3 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/19, where GetParam() = (8x64, 10, true)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/19 (4 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/20, where GetParam() = (8x64, 62, false)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/20 (3 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/21, where GetParam() = (8x64, 62, true)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/21 (3 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/22, where GetParam() = (8x64, 300, false)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/22 (4 ms)
+[ RUN      ] OCL_Imgproc/CLAHETest.Accuracy/23, where GetParam() = (8x64, 300, true)
+[       OK ] OCL_Imgproc/CLAHETest.Accuracy/23 (3 ms)
+[----------] 24 tests from OCL_Imgproc/CLAHETest (46 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (46 ms total)
+[  PASSED  ] 24 tests.

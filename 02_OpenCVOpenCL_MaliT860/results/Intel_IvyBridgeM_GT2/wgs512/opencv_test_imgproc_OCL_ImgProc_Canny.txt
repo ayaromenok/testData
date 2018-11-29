@@ -1,0 +1,412 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 4.0.0-beta-388-gc6daa4aa1-dirty
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2? *AVX512-SKX?
+Intel(R) IPP version: ippIP SSE4.2 (y8) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    Intel Gen OCL Driver
+        iGPU: Intel(R) HD Graphics IvyBridge M GT2 (OpenCL 1.2 beignet 1.3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) HD Graphics IvyBridge M GT2
+    Version = OpenCL 1.2 beignet 1.3
+    Driver version = 1.3
+    Address bits = 32
+    Compute units = 16
+    Max work group size = 512
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 512 MB
+    Double support = No
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_khr_spir
+        cl_khr_icd
+        cl_intel_accelerator
+        cl_intel_subgroups
+        cl_intel_subgroups_short
+        cl_khr_gl_sharing
+        cl_intel_motion_estimation
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 0
+Note: Google Test filter = *OCL_ImgProc/Canny*
+[==========] Running 32 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 32 tests from OCL_ImgProc/Canny
+[ RUN      ] OCL_ImgProc/Canny.Accuracy/0, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(false), UseRoi(false))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/imgproc/src/templmatch.cpp:589: error: (-215:Assertion failed) corrsize.height <= img.rows + templ.rows - 1 && corrsize.width <= img.cols + templ.cols - 1 in function 'crossCorr'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/0, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(false), UseRoi(false)) (1 ms)
+[ RUN      ] OCL_ImgProc/Canny.Accuracy/1, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(false), UseRoi(true))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/imgproc/src/templmatch.cpp:589: error: (-215:Assertion failed) corrsize.height <= img.rows + templ.rows - 1 && corrsize.width <= img.cols + templ.cols - 1 in function 'crossCorr'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/1, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(false), UseRoi(true)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.Accuracy/2, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(true), UseRoi(false))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/imgproc/src/templmatch.cpp:589: error: (-215:Assertion failed) corrsize.height <= img.rows + templ.rows - 1 && corrsize.width <= img.cols + templ.cols - 1 in function 'crossCorr'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/2, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(true), UseRoi(false)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.Accuracy/3, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(true), UseRoi(true))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/imgproc/src/templmatch.cpp:589: error: (-215:Assertion failed) corrsize.height <= img.rows + templ.rows - 1 && corrsize.width <= img.cols + templ.cols - 1 in function 'crossCorr'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/3, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(true), UseRoi(true)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.Accuracy/4, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(false), UseRoi(false))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/imgproc/src/templmatch.cpp:589: error: (-215:Assertion failed) corrsize.height <= img.rows + templ.rows - 1 && corrsize.width <= img.cols + templ.cols - 1 in function 'crossCorr'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/4, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(false), UseRoi(false)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.Accuracy/5, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(false), UseRoi(true))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/imgproc/src/templmatch.cpp:589: error: (-215:Assertion failed) corrsize.height <= img.rows + templ.rows - 1 && corrsize.width <= img.cols + templ.cols - 1 in function 'crossCorr'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/5, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(false), UseRoi(true)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.Accuracy/6, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(true), UseRoi(false))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/imgproc/src/templmatch.cpp:589: error: (-215:Assertion failed) corrsize.height <= img.rows + templ.rows - 1 && corrsize.width <= img.cols + templ.cols - 1 in function 'crossCorr'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/6, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(true), UseRoi(false)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.Accuracy/7, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(true), UseRoi(true))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/imgproc/src/templmatch.cpp:589: error: (-215:Assertion failed) corrsize.height <= img.rows + templ.rows - 1 && corrsize.width <= img.cols + templ.cols - 1 in function 'crossCorr'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/7, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(true), UseRoi(true)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.Accuracy/8, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(false), UseRoi(false))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/imgproc/src/templmatch.cpp:589: error: (-215:Assertion failed) corrsize.height <= img.rows + templ.rows - 1 && corrsize.width <= img.cols + templ.cols - 1 in function 'crossCorr'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/8, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(false), UseRoi(false)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.Accuracy/9, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(false), UseRoi(true))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/imgproc/src/templmatch.cpp:589: error: (-215:Assertion failed) corrsize.height <= img.rows + templ.rows - 1 && corrsize.width <= img.cols + templ.cols - 1 in function 'crossCorr'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/9, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(false), UseRoi(true)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.Accuracy/10, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(true), UseRoi(false))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/imgproc/src/templmatch.cpp:589: error: (-215:Assertion failed) corrsize.height <= img.rows + templ.rows - 1 && corrsize.width <= img.cols + templ.cols - 1 in function 'crossCorr'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/10, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(true), UseRoi(false)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.Accuracy/11, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(true), UseRoi(true))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/imgproc/src/templmatch.cpp:589: error: (-215:Assertion failed) corrsize.height <= img.rows + templ.rows - 1 && corrsize.width <= img.cols + templ.cols - 1 in function 'crossCorr'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/11, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(true), UseRoi(true)) (1 ms)
+[ RUN      ] OCL_ImgProc/Canny.Accuracy/12, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(false), UseRoi(false))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/imgproc/src/templmatch.cpp:589: error: (-215:Assertion failed) corrsize.height <= img.rows + templ.rows - 1 && corrsize.width <= img.cols + templ.cols - 1 in function 'crossCorr'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/12, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(false), UseRoi(false)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.Accuracy/13, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(false), UseRoi(true))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/imgproc/src/templmatch.cpp:589: error: (-215:Assertion failed) corrsize.height <= img.rows + templ.rows - 1 && corrsize.width <= img.cols + templ.cols - 1 in function 'crossCorr'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/13, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(false), UseRoi(true)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.Accuracy/14, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(true), UseRoi(false))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/imgproc/src/templmatch.cpp:589: error: (-215:Assertion failed) corrsize.height <= img.rows + templ.rows - 1 && corrsize.width <= img.cols + templ.cols - 1 in function 'crossCorr'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/14, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(true), UseRoi(false)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.Accuracy/15, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(true), UseRoi(true))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/imgproc/src/templmatch.cpp:589: error: (-215:Assertion failed) corrsize.height <= img.rows + templ.rows - 1 && corrsize.width <= img.cols + templ.cols - 1 in function 'crossCorr'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/15, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(true), UseRoi(true)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.AccuracyCustomGradient/0, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(false), UseRoi(false))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/0, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(false), UseRoi(false)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.AccuracyCustomGradient/1, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(false), UseRoi(true))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/1, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(false), UseRoi(true)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.AccuracyCustomGradient/2, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(true), UseRoi(false))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/2, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(true), UseRoi(false)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.AccuracyCustomGradient/3, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(true), UseRoi(true))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/3, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(true), UseRoi(true)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.AccuracyCustomGradient/4, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(false), UseRoi(false))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/4, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(false), UseRoi(false)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.AccuracyCustomGradient/5, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(false), UseRoi(true))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/5, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(false), UseRoi(true)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.AccuracyCustomGradient/6, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(true), UseRoi(false))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/6, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(true), UseRoi(false)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.AccuracyCustomGradient/7, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(true), UseRoi(true))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/7, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(true), UseRoi(true)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.AccuracyCustomGradient/8, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(false), UseRoi(false))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/8, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(false), UseRoi(false)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.AccuracyCustomGradient/9, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(false), UseRoi(true))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/9, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(false), UseRoi(true)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.AccuracyCustomGradient/10, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(true), UseRoi(false))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/10, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(true), UseRoi(false)) (1 ms)
+[ RUN      ] OCL_ImgProc/Canny.AccuracyCustomGradient/11, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(true), UseRoi(true))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/11, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(true), UseRoi(true)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.AccuracyCustomGradient/12, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(false), UseRoi(false))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/12, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(false), UseRoi(false)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.AccuracyCustomGradient/13, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(false), UseRoi(true))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/13, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(false), UseRoi(true)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.AccuracyCustomGradient/14, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(true), UseRoi(false))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/14, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(true), UseRoi(false)) (0 ms)
+[ RUN      ] OCL_ImgProc/Canny.AccuracyCustomGradient/15, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(true), UseRoi(true))
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_canny.cpp:80: Failure
+Value of: img.empty()
+  Actual: true
+Expected: false
+cann't load shared/fruits.png
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/15, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(true), UseRoi(true)) (0 ms)
+[----------] 32 tests from OCL_ImgProc/Canny (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 32 tests from 1 test case ran. (3 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 32 tests, listed below:
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/0, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(false), UseRoi(false))
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/1, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(false), UseRoi(true))
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/2, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(true), UseRoi(false))
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/3, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(true), UseRoi(true))
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/4, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(false), UseRoi(false))
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/5, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(false), UseRoi(true))
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/6, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(true), UseRoi(false))
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/7, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(true), UseRoi(true))
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/8, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(false), UseRoi(false))
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/9, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(false), UseRoi(true))
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/10, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(true), UseRoi(false))
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/11, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(true), UseRoi(true))
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/12, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(false), UseRoi(false))
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/13, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(false), UseRoi(true))
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/14, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(true), UseRoi(false))
+[  FAILED  ] OCL_ImgProc/Canny.Accuracy/15, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(true), UseRoi(true))
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/0, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(false), UseRoi(false))
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/1, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(false), UseRoi(true))
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/2, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(true), UseRoi(false))
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/3, where GetParam() = (Channels(1), ApertureSize(3), L2gradient(true), UseRoi(true))
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/4, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(false), UseRoi(false))
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/5, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(false), UseRoi(true))
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/6, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(true), UseRoi(false))
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/7, where GetParam() = (Channels(1), ApertureSize(5), L2gradient(true), UseRoi(true))
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/8, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(false), UseRoi(false))
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/9, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(false), UseRoi(true))
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/10, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(true), UseRoi(false))
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/11, where GetParam() = (Channels(3), ApertureSize(3), L2gradient(true), UseRoi(true))
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/12, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(false), UseRoi(false))
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/13, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(false), UseRoi(true))
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/14, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(true), UseRoi(false))
+[  FAILED  ] OCL_ImgProc/Canny.AccuracyCustomGradient/15, where GetParam() = (Channels(3), ApertureSize(5), L2gradient(true), UseRoi(true))
+
+32 FAILED TESTS

@@ -1,0 +1,130 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 4.0.0-beta-388-gc6daa4aa1-dirty
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2? *AVX512-SKX?
+Intel(R) IPP version: ippIP SSE4.2 (y8) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    Intel Gen OCL Driver
+        iGPU: Intel(R) HD Graphics IvyBridge M GT2 (OpenCL 1.2 beignet 1.3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) HD Graphics IvyBridge M GT2
+    Version = OpenCL 1.2 beignet 1.3
+    Driver version = 1.3
+    Address bits = 32
+    Compute units = 16
+    Max work group size = 512
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 512 MB
+    Double support = No
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_khr_spir
+        cl_khr_icd
+        cl_intel_accelerator
+        cl_intel_subgroups
+        cl_intel_subgroups_short
+        cl_khr_gl_sharing
+        cl_intel_motion_estimation
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 0
+Note: Google Test filter = *OCL_ResizeLinearExactFixture_Resize*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_ResizeLinearExactFixture_Resize
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/0, where GetParam() = (640x480, 8UC1, 0.5)
+[ PERFSTAT ]    (samples=13   mean=0.04   median=0.04   min=0.04   stddev=0.00 (2.9%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/0 (2 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/1, where GetParam() = (640x480, 8UC1, 2)
+[ PERFSTAT ]    (samples=38   mean=0.80   median=0.80   min=0.69   stddev=0.02 (2.7%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/1 (32 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/2, where GetParam() = (640x480, 8UC3, 0.5)
+[ PERFSTAT ]    (samples=100   mean=0.12   median=0.12   min=0.12   stddev=0.01 (4.3%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/2 (15 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/3, where GetParam() = (640x480, 8UC3, 2)
+[ PERFSTAT ]    (samples=10   mean=3.33   median=3.36   min=3.23   stddev=0.06 (1.7%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/3 (39 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/4, where GetParam() = (640x480, 8UC4, 0.5)
+[ PERFSTAT ]    (samples=100   mean=0.11   median=0.11   min=0.11   stddev=0.00 (3.9%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/4 (14 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/5, where GetParam() = (640x480, 8UC4, 2)
+[ PERFSTAT ]    (samples=10   mean=1.83   median=1.84   min=1.73   stddev=0.04 (2.0%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/5 (25 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/6, where GetParam() = (1280x720, 8UC1, 0.5)
+[ PERFSTAT ]    (samples=13   mean=0.06   median=0.06   min=0.06   stddev=0.00 (1.5%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/6 (2 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/7, where GetParam() = (1280x720, 8UC1, 2)
+[ PERFSTAT ]    (samples=21   mean=1.91   median=1.92   min=1.68   stddev=0.06 (3.0%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/7 (44 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/8, where GetParam() = (1280x720, 8UC3, 0.5)
+[ PERFSTAT ]    (samples=13   mean=0.20   median=0.20   min=0.20   stddev=0.00 (2.3%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/8 (8 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/9, where GetParam() = (1280x720, 8UC3, 2)
+[ PERFSTAT ]    (samples=10   mean=9.50   median=9.46   min=9.26   stddev=0.16 (1.7%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/9 (111 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/10, where GetParam() = (1280x720, 8UC4, 0.5)
+[ PERFSTAT ]    (samples=13   mean=0.31   median=0.31   min=0.30   stddev=0.01 (1.8%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/10 (8 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/11, where GetParam() = (1280x720, 8UC4, 2)
+[ PERFSTAT ]    (samples=10   mean=4.86   median=4.86   min=4.66   stddev=0.09 (1.9%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/11 (71 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/12, where GetParam() = (1920x1080, 8UC1, 0.5)
+[ PERFSTAT ]    (samples=38   mean=0.11   median=0.11   min=0.11   stddev=0.00 (2.7%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/12 (8 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/13, where GetParam() = (1920x1080, 8UC1, 2)
+[ PERFSTAT ]    (samples=10   mean=3.65   median=3.67   min=3.41   stddev=0.08 (2.3%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/13 (49 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/14, where GetParam() = (1920x1080, 8UC3, 0.5)
+[ PERFSTAT ]    (samples=13   mean=0.71   median=0.72   min=0.69   stddev=0.01 (1.4%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/14 (19 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/15, where GetParam() = (1920x1080, 8UC3, 2)
+[ PERFSTAT ]    (samples=10   mean=20.41   median=20.45   min=20.22   stddev=0.11 (0.5%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/15 (240 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/16, where GetParam() = (1920x1080, 8UC4, 0.5)
+[ PERFSTAT ]    (samples=13   mean=0.94   median=0.93   min=0.90   stddev=0.03 (2.8%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/16 (21 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/17, where GetParam() = (1920x1080, 8UC4, 2)
+[ PERFSTAT ]    (samples=10   mean=10.25   median=10.20   min=9.95   stddev=0.26 (2.6%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/17 (149 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/18, where GetParam() = (3840x2160, 8UC1, 0.5)
+[ PERFSTAT ]    (samples=13   mean=0.93   median=0.93   min=0.91   stddev=0.01 (1.3%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/18 (21 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/19, where GetParam() = (3840x2160, 8UC1, 2)
+[ PERFSTAT ]    (samples=10   mean=12.23   median=12.22   min=12.04   stddev=0.11 (0.9%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/19 (157 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/20, where GetParam() = (3840x2160, 8UC3, 0.5)
+[ PERFSTAT ]    (samples=10   mean=2.69   median=2.68   min=2.64   stddev=0.05 (2.0%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/20 (54 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/21, where GetParam() = (3840x2160, 8UC3, 2)
+[ PERFSTAT ]    (samples=10   mean=77.29   median=77.20   min=76.91   stddev=0.43 (0.6%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/21 (913 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/22, where GetParam() = (3840x2160, 8UC4, 0.5)
+[ PERFSTAT ]    (samples=10   mean=3.59   median=3.58   min=3.52   stddev=0.06 (1.8%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/22 (71 ms)
+[ RUN      ] OCL_ResizeLinearExactFixture_Resize.Resize/23, where GetParam() = (3840x2160, 8UC4, 2)
+[ PERFSTAT ]    (samples=10   mean=37.77   median=37.71   min=37.57   stddev=0.27 (0.7%))
+[       OK ] OCL_ResizeLinearExactFixture_Resize.Resize/23 (569 ms)
+[----------] 24 tests from OCL_ResizeLinearExactFixture_Resize (2645 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (2645 ms total)
+[  PASSED  ] 24 tests.

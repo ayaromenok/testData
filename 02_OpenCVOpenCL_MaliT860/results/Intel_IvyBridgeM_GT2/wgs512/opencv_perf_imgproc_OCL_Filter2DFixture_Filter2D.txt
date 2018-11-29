@@ -1,0 +1,154 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 4.0.0-beta-388-gc6daa4aa1-dirty
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2? *AVX512-SKX?
+Intel(R) IPP version: ippIP SSE4.2 (y8) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    Intel Gen OCL Driver
+        iGPU: Intel(R) HD Graphics IvyBridge M GT2 (OpenCL 1.2 beignet 1.3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) HD Graphics IvyBridge M GT2
+    Version = OpenCL 1.2 beignet 1.3
+    Driver version = 1.3
+    Address bits = 32
+    Compute units = 16
+    Max work group size = 512
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 512 MB
+    Double support = No
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_khr_spir
+        cl_khr_icd
+        cl_intel_accelerator
+        cl_intel_subgroups
+        cl_intel_subgroups_short
+        cl_khr_gl_sharing
+        cl_intel_motion_estimation
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 0
+Note: Google Test filter = *OCL_Filter2DFixture_Filter2D*
+[==========] Running 32 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 32 tests from OCL_Filter2DFixture_Filter2D
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/0, where GetParam() = (640x480, 8UC1, 3)
+[ PERFSTAT ]    (samples=100   mean=0.56   median=0.54   min=0.47   stddev=0.12 (21.0%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/0 (66 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/1, where GetParam() = (640x480, 8UC1, 5)
+[ PERFSTAT ]    (samples=100   mean=1.50   median=1.30   min=1.09   stddev=0.42 (28.4%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/1 (166 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/2, where GetParam() = (640x480, 32FC1, 3)
+[ PERFSTAT ]    (samples=100   mean=0.28   median=0.27   min=0.24   stddev=0.03 (11.7%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/2 (37 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/3, where GetParam() = (640x480, 32FC1, 5)
+[ PERFSTAT ]    (samples=100   mean=0.55   median=0.55   min=0.51   stddev=0.02 (4.0%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/3 (59 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/4, where GetParam() = (640x480, 8UC4, 3)
+[ PERFSTAT ]    (samples=18   mean=1.01   median=1.00   min=0.96   stddev=0.03 (2.9%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/4 (21 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/5, where GetParam() = (640x480, 8UC4, 5)
+[ PERFSTAT ]    (samples=10   mean=2.68   median=2.66   min=2.63   stddev=0.07 (2.7%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/5 (29 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/6, where GetParam() = (640x480, 32FC4, 3)
+[ PERFSTAT ]    (samples=13   mean=1.31   median=1.31   min=1.27   stddev=0.03 (2.1%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/6 (29 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/7, where GetParam() = (640x480, 32FC4, 5)
+[ PERFSTAT ]    (samples=13   mean=3.44   median=3.42   min=3.37   stddev=0.08 (2.4%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/7 (51 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/8, where GetParam() = (1280x720, 8UC1, 3)
+[ PERFSTAT ]    (samples=25   mean=1.39   median=1.39   min=1.34   stddev=0.04 (2.6%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/8 (45 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/9, where GetParam() = (1280x720, 8UC1, 5)
+[ PERFSTAT ]    (samples=13   mean=3.10   median=3.08   min=3.04   stddev=0.07 (2.4%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/9 (43 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/10, where GetParam() = (1280x720, 32FC1, 3)
+[ PERFSTAT ]    (samples=100   mean=0.90   median=0.90   min=0.82   stddev=0.04 (5.0%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/10 (98 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/11, where GetParam() = (1280x720, 32FC1, 5)
+[ PERFSTAT ]    (samples=50   mean=1.39   median=1.39   min=1.32   stddev=0.04 (2.8%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/11 (83 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/12, where GetParam() = (1280x720, 8UC4, 3)
+[ PERFSTAT ]    (samples=12   mean=2.72   median=2.70   min=2.65   stddev=0.08 (2.9%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/12 (40 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/13, where GetParam() = (1280x720, 8UC4, 5)
+[ PERFSTAT ]    (samples=10   mean=7.02   median=6.98   min=6.92   stddev=0.11 (1.5%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/13 (76 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/14, where GetParam() = (1280x720, 32FC4, 3)
+[ PERFSTAT ]    (samples=10   mean=3.20   median=3.18   min=3.13   stddev=0.10 (3.0%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/14 (55 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/15, where GetParam() = (1280x720, 32FC4, 5)
+[ PERFSTAT ]    (samples=10   mean=9.10   median=9.11   min=8.97   stddev=0.09 (1.0%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/15 (103 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/16, where GetParam() = (1920x1080, 8UC1, 3)
+[ PERFSTAT ]    (samples=13   mean=2.79   median=2.78   min=2.72   stddev=0.05 (1.7%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/16 (42 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/17, where GetParam() = (1920x1080, 8UC1, 5)
+[ PERFSTAT ]    (samples=10   mean=7.22   median=7.21   min=7.12   stddev=0.07 (1.0%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/17 (76 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/18, where GetParam() = (1920x1080, 32FC1, 3)
+[ PERFSTAT ]    (samples=13   mean=2.14   median=2.13   min=2.06   stddev=0.06 (2.6%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/18 (40 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/19, where GetParam() = (1920x1080, 32FC1, 5)
+[ PERFSTAT ]    (samples=10   mean=2.95   median=2.93   min=2.90   stddev=0.08 (2.7%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/19 (37 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/20, where GetParam() = (1920x1080, 8UC4, 3)
+[ PERFSTAT ]    (samples=10   mean=5.78   median=5.75   min=5.70   stddev=0.09 (1.5%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/20 (72 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/21, where GetParam() = (1920x1080, 8UC4, 5)
+[ PERFSTAT ]    (samples=10   mean=14.95   median=14.95   min=14.87   stddev=0.06 (0.4%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/21 (163 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/22, where GetParam() = (1920x1080, 32FC4, 3)
+[ PERFSTAT ]    (samples=10   mean=7.04   median=6.95   min=6.88   stddev=0.19 (2.7%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/22 (119 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/23, where GetParam() = (1920x1080, 32FC4, 5)
+[ PERFSTAT ]    (samples=13   mean=19.61   median=19.62   min=19.44   stddev=0.09 (0.5%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/23 (288 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/24, where GetParam() = (3840x2160, 8UC1, 3)
+[ PERFSTAT ]    (samples=13   mean=10.75   median=10.72   min=10.62   stddev=0.10 (0.9%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/24 (170 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/25, where GetParam() = (3840x2160, 8UC1, 5)
+[ PERFSTAT ]    (samples=10   mean=28.89   median=28.86   min=28.72   stddev=0.12 (0.4%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/25 (305 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/26, where GetParam() = (3840x2160, 32FC1, 3)
+[ PERFSTAT ]    (samples=10   mean=7.52   median=7.49   min=7.33   stddev=0.15 (2.0%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/26 (101 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/27, where GetParam() = (3840x2160, 32FC1, 5)
+[ PERFSTAT ]    (samples=10   mean=10.85   median=10.85   min=10.72   stddev=0.10 (0.9%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/27 (135 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/28, where GetParam() = (3840x2160, 8UC4, 3)
+[ PERFSTAT ]    (samples=10   mean=21.98   median=21.96   min=21.91   stddev=0.08 (0.3%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/28 (277 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/29, where GetParam() = (3840x2160, 8UC4, 5)
+[ PERFSTAT ]    (samples=10   mean=58.09   median=58.10   min=57.75   stddev=0.21 (0.4%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/29 (639 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/30, where GetParam() = (3840x2160, 32FC4, 3)
+[ PERFSTAT ]    (samples=10   mean=26.42   median=26.45   min=26.14   stddev=0.24 (0.9%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/30 (470 ms)
+[ RUN      ] OCL_Filter2DFixture_Filter2D.Filter2D/31, where GetParam() = (3840x2160, 32FC4, 5)
+[ PERFSTAT ]    (samples=10   mean=75.02   median=74.98   min=74.69   stddev=0.27 (0.4%))
+[       OK ] OCL_Filter2DFixture_Filter2D.Filter2D/31 (962 ms)
+[----------] 32 tests from OCL_Filter2DFixture_Filter2D (4897 ms total)
+
+[----------] Global test environment tear-down
+[==========] 32 tests from 1 test case ran. (4897 ms total)
+[  PASSED  ] 32 tests.

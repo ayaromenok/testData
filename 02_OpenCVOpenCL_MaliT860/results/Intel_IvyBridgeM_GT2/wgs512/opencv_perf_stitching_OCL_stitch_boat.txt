@@ -1,0 +1,97 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 4.0.0-beta-388-gc6daa4aa1-dirty
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2? *AVX512-SKX?
+Intel(R) IPP version: ippIP SSE4.2 (y8) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    Intel Gen OCL Driver
+        iGPU: Intel(R) HD Graphics IvyBridge M GT2 (OpenCL 1.2 beignet 1.3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) HD Graphics IvyBridge M GT2
+    Version = OpenCL 1.2 beignet 1.3
+    Driver version = 1.3
+    Address bits = 32
+    Compute units = 16
+    Max work group size = 512
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 512 MB
+    Double support = No
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_khr_spir
+        cl_khr_icd
+        cl_intel_accelerator
+        cl_intel_subgroups
+        cl_intel_subgroups_short
+        cl_khr_gl_sharing
+        cl_intel_motion_estimation
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 0
+Note: Google Test filter = *OCL_stitch_boat*
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from OCL_stitch_boat
+[ RUN      ] OCL_stitch_boat.boat/0, where GetParam() = "surf"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2012: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.0.0-dev) /home/az/sdk/src/opencv/opencv_contrib/modules/xfeatures2d/src/surf.cpp:1029: error: (-213:The function/feature is not implemented) This algorithm is patented and is excluded in this configuration; Set OPENCV_ENABLE_NONFREE CMake option and rebuild the library in function 'create'
+
+params    =      "surf"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] OCL_stitch_boat.boat/0, where GetParam() = "surf" (466 ms)
+[ RUN      ] OCL_stitch_boat.boat/1, where GetParam() = "orb"
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=20   mean=5241.45   median=5290.83   min=4224.23   stddev=248.19 (4.7%))
+[       OK ] OCL_stitch_boat.boat/1 (105428 ms)
+[ RUN      ] OCL_stitch_boat.boat/2, where GetParam() = "akaze"
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=10   mean=7008.37   median=7027.88   min=6792.16   stddev=77.08 (1.1%))
+[       OK ] OCL_stitch_boat.boat/2 (70525 ms)
+[----------] 3 tests from OCL_stitch_boat (176420 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (176420 ms total)
+[  PASSED  ] 2 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] OCL_stitch_boat.boat/0, where GetParam() = "surf"
+
+ 1 FAILED TEST

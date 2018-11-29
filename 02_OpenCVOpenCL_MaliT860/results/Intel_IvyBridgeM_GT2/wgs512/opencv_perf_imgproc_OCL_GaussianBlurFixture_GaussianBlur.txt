@@ -1,0 +1,202 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 4.0.0-beta-388-gc6daa4aa1-dirty
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2? *AVX512-SKX?
+Intel(R) IPP version: ippIP SSE4.2 (y8) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    Intel Gen OCL Driver
+        iGPU: Intel(R) HD Graphics IvyBridge M GT2 (OpenCL 1.2 beignet 1.3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) HD Graphics IvyBridge M GT2
+    Version = OpenCL 1.2 beignet 1.3
+    Driver version = 1.3
+    Address bits = 32
+    Compute units = 16
+    Max work group size = 512
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 512 MB
+    Double support = No
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_khr_spir
+        cl_khr_icd
+        cl_intel_accelerator
+        cl_intel_subgroups
+        cl_intel_subgroups_short
+        cl_khr_gl_sharing
+        cl_intel_motion_estimation
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 0
+Note: Google Test filter = *OCL_GaussianBlurFixture_GaussianBlur*
+[==========] Running 48 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 48 tests from OCL_GaussianBlurFixture_GaussianBlur
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/0, where GetParam() = (640x480, 8UC1, 3)
+[ PERFSTAT ]    (samples=100   mean=0.25   median=0.24   min=0.23   stddev=0.01 (4.2%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/0 (28 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/1, where GetParam() = (640x480, 8UC1, 5)
+[ PERFSTAT ]    (samples=13   mean=0.63   median=0.63   min=0.60   stddev=0.02 (2.5%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/1 (9 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/2, where GetParam() = (640x480, 8UC1, 7)
+[ PERFSTAT ]    (samples=13   mean=1.38   median=1.38   min=1.33   stddev=0.03 (2.5%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/2 (18 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/3, where GetParam() = (640x480, 32FC1, 3)
+[ PERFSTAT ]    (samples=25   mean=0.69   median=0.69   min=0.66   stddev=0.02 (3.0%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/3 (20 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/4, where GetParam() = (640x480, 32FC1, 5)
+[ PERFSTAT ]    (samples=13   mean=0.79   median=0.79   min=0.77   stddev=0.01 (1.9%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/4 (12 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/5, where GetParam() = (640x480, 32FC1, 7)
+[ PERFSTAT ]    (samples=13   mean=0.90   median=0.89   min=0.88   stddev=0.01 (1.5%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/5 (13 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/6, where GetParam() = (640x480, 8UC4, 3)
+[ PERFSTAT ]    (samples=13   mean=0.93   median=0.93   min=0.91   stddev=0.01 (1.1%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/6 (14 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/7, where GetParam() = (640x480, 8UC4, 5)
+[ PERFSTAT ]    (samples=13   mean=1.12   median=1.11   min=1.08   stddev=0.03 (2.9%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/7 (17 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/8, where GetParam() = (640x480, 8UC4, 7)
+[ PERFSTAT ]    (samples=13   mean=1.34   median=1.34   min=1.28   stddev=0.04 (2.9%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/8 (20 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/9, where GetParam() = (640x480, 32FC4, 3)
+[ PERFSTAT ]    (samples=13   mean=1.19   median=1.19   min=1.13   stddev=0.02 (2.0%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/9 (24 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/10, where GetParam() = (640x480, 32FC4, 5)
+[ PERFSTAT ]    (samples=13   mean=1.39   median=1.38   min=1.36   stddev=0.03 (1.9%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/10 (24 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/11, where GetParam() = (640x480, 32FC4, 7)
+[ PERFSTAT ]    (samples=13   mean=1.63   median=1.63   min=1.61   stddev=0.02 (1.0%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/11 (26 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/12, where GetParam() = (1280x720, 8UC1, 3)
+[ PERFSTAT ]    (samples=50   mean=0.53   median=0.53   min=0.50   stddev=0.01 (2.8%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/12 (29 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/13, where GetParam() = (1280x720, 8UC1, 5)
+[ PERFSTAT ]    (samples=10   mean=1.73   median=1.74   min=1.68   stddev=0.03 (1.7%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/13 (19 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/14, where GetParam() = (1280x720, 8UC1, 7)
+[ PERFSTAT ]    (samples=10   mean=3.92   median=3.92   min=3.88   stddev=0.03 (0.7%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/14 (41 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/15, where GetParam() = (1280x720, 32FC1, 3)
+[ PERFSTAT ]    (samples=10   mean=1.89   median=1.88   min=1.85   stddev=0.04 (2.0%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/15 (25 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/16, where GetParam() = (1280x720, 32FC1, 5)
+[ PERFSTAT ]    (samples=10   mean=2.15   median=2.15   min=2.11   stddev=0.02 (1.1%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/16 (24 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/17, where GetParam() = (1280x720, 32FC1, 7)
+[ PERFSTAT ]    (samples=10   mean=2.50   median=2.51   min=2.46   stddev=0.03 (1.1%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/17 (29 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/18, where GetParam() = (1280x720, 8UC4, 3)
+[ PERFSTAT ]    (samples=10   mean=2.64   median=2.65   min=2.61   stddev=0.02 (0.7%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/18 (33 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/19, where GetParam() = (1280x720, 8UC4, 5)
+[ PERFSTAT ]    (samples=10   mean=3.09   median=3.08   min=3.05   stddev=0.03 (1.0%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/19 (37 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/20, where GetParam() = (1280x720, 8UC4, 7)
+[ PERFSTAT ]    (samples=10   mean=3.77   median=3.76   min=3.72   stddev=0.03 (0.7%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/20 (44 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/21, where GetParam() = (1280x720, 32FC4, 3)
+[ PERFSTAT ]    (samples=10   mean=3.33   median=3.32   min=3.26   stddev=0.05 (1.4%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/21 (56 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/22, where GetParam() = (1280x720, 32FC4, 5)
+[ PERFSTAT ]    (samples=10   mean=3.92   median=3.91   min=3.89   stddev=0.02 (0.4%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/22 (51 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/23, where GetParam() = (1280x720, 32FC4, 7)
+[ PERFSTAT ]    (samples=10   mean=4.66   median=4.67   min=4.61   stddev=0.04 (0.8%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/23 (59 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/24, where GetParam() = (1920x1080, 8UC1, 3)
+[ PERFSTAT ]    (samples=100   mean=1.10   median=1.09   min=0.98   stddev=0.08 (7.3%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/24 (116 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/25, where GetParam() = (1920x1080, 8UC1, 5)
+[ PERFSTAT ]    (samples=10   mean=3.72   median=3.71   min=3.68   stddev=0.03 (0.9%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/25 (41 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/26, where GetParam() = (1920x1080, 8UC1, 7)
+[ PERFSTAT ]    (samples=10   mean=9.11   median=9.08   min=9.01   stddev=0.11 (1.2%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/26 (98 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/27, where GetParam() = (1920x1080, 32FC1, 3)
+[ PERFSTAT ]    (samples=10   mean=3.99   median=3.99   min=3.97   stddev=0.01 (0.3%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/27 (52 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/28, where GetParam() = (1920x1080, 32FC1, 5)
+[ PERFSTAT ]    (samples=10   mean=4.59   median=4.58   min=4.56   stddev=0.03 (0.6%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/28 (53 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/29, where GetParam() = (1920x1080, 32FC1, 7)
+[ PERFSTAT ]    (samples=10   mean=5.20   median=5.20   min=5.11   stddev=0.04 (0.8%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/29 (58 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/30, where GetParam() = (1920x1080, 8UC4, 3)
+[ PERFSTAT ]    (samples=10   mean=5.40   median=5.41   min=5.36   stddev=0.02 (0.4%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/30 (69 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/31, where GetParam() = (1920x1080, 8UC4, 5)
+[ PERFSTAT ]    (samples=10   mean=6.46   median=6.45   min=6.40   stddev=0.04 (0.7%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/31 (78 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/32, where GetParam() = (1920x1080, 8UC4, 7)
+[ PERFSTAT ]    (samples=10   mean=8.00   median=7.99   min=7.97   stddev=0.02 (0.3%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/32 (94 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/33, where GetParam() = (1920x1080, 32FC4, 3)
+[ PERFSTAT ]    (samples=10   mean=7.11   median=7.10   min=7.07   stddev=0.03 (0.5%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/33 (119 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/34, where GetParam() = (1920x1080, 32FC4, 5)
+[ PERFSTAT ]    (samples=10   mean=8.42   median=8.41   min=8.36   stddev=0.04 (0.5%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/34 (110 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/35, where GetParam() = (1920x1080, 32FC4, 7)
+[ PERFSTAT ]    (samples=10   mean=10.05   median=10.05   min=9.99   stddev=0.04 (0.4%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/35 (137 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/36, where GetParam() = (3840x2160, 8UC1, 3)
+[ PERFSTAT ]    (samples=10   mean=3.69   median=3.69   min=3.64   stddev=0.02 (0.5%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/36 (51 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/37, where GetParam() = (3840x2160, 8UC1, 5)
+[ PERFSTAT ]    (samples=10   mean=14.35   median=14.36   min=14.28   stddev=0.05 (0.3%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/37 (158 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/38, where GetParam() = (3840x2160, 8UC1, 7)
+[ PERFSTAT ]    (samples=10   mean=38.12   median=38.22   min=37.83   stddev=0.18 (0.5%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/38 (396 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/39, where GetParam() = (3840x2160, 32FC1, 3)
+[ PERFSTAT ]    (samples=10   mean=14.57   median=14.57   min=14.54   stddev=0.02 (0.1%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/39 (171 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/40, where GetParam() = (3840x2160, 32FC1, 5)
+[ PERFSTAT ]    (samples=10   mean=17.10   median=17.12   min=17.00   stddev=0.07 (0.4%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/40 (197 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/41, where GetParam() = (3840x2160, 32FC1, 7)
+[ PERFSTAT ]    (samples=10   mean=19.60   median=19.60   min=19.52   stddev=0.04 (0.2%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/41 (223 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/42, where GetParam() = (3840x2160, 8UC4, 3)
+[ PERFSTAT ]    (samples=10   mean=20.60   median=20.60   min=20.51   stddev=0.05 (0.3%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/42 (264 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/43, where GetParam() = (3840x2160, 8UC4, 5)
+[ PERFSTAT ]    (samples=10   mean=24.65   median=24.64   min=24.61   stddev=0.04 (0.2%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/43 (304 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/44, where GetParam() = (3840x2160, 8UC4, 7)
+[ PERFSTAT ]    (samples=10   mean=30.44   median=30.44   min=30.31   stddev=0.08 (0.3%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/44 (361 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/45, where GetParam() = (3840x2160, 32FC4, 3)
+[ PERFSTAT ]    (samples=10   mean=27.22   median=27.19   min=27.08   stddev=0.11 (0.4%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/45 (477 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/46, where GetParam() = (3840x2160, 32FC4, 5)
+[ PERFSTAT ]    (samples=10   mean=32.43   median=32.34   min=32.28   stddev=0.22 (0.7%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/46 (529 ms)
+[ RUN      ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/47, where GetParam() = (3840x2160, 32FC4, 7)
+[ PERFSTAT ]    (samples=14   mean=39.61   median=39.12   min=38.92   stddev=1.16 (2.9%))
+[       OK ] OCL_GaussianBlurFixture_GaussianBlur.GaussianBlur/47 (782 ms)
+[----------] 48 tests from OCL_GaussianBlurFixture_GaussianBlur (5610 ms total)
+
+[----------] Global test environment tear-down
+[==========] 48 tests from 1 test case ran. (5610 ms total)
+[  PASSED  ] 48 tests.

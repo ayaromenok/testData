@@ -1,0 +1,220 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 4.0.0-beta-388-gc6daa4aa1-dirty
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2? *AVX512-SKX?
+Intel(R) IPP version: ippIP SSE4.2 (y8) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    Intel Gen OCL Driver
+        iGPU: Intel(R) HD Graphics IvyBridge M GT2 (OpenCL 1.2 beignet 1.3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) HD Graphics IvyBridge M GT2
+    Version = OpenCL 1.2 beignet 1.3
+    Driver version = 1.3
+    Address bits = 32
+    Compute units = 16
+    Max work group size = 512
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 512 MB
+    Double support = No
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_khr_spir
+        cl_khr_icd
+        cl_intel_accelerator
+        cl_intel_subgroups
+        cl_intel_subgroups_short
+        cl_khr_gl_sharing
+        cl_intel_motion_estimation
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 0
+Note: Google Test filter = *OCL_NormFixture_NormRel*
+[==========] Running 54 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 54 tests from OCL_NormFixture_NormRel
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/0, where GetParam() = (640x480, 8UC1, NORM_INF)
+[ PERFSTAT ]    (samples=31   mean=0.14   median=0.14   min=0.14   stddev=0.00 (3.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/0 (7 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/1, where GetParam() = (640x480, 8UC1, NORM_L1)
+[ PERFSTAT ]    (samples=13   mean=0.13   median=0.13   min=0.13   stddev=0.00 (2.2%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/1 (2 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/2, where GetParam() = (640x480, 8UC1, NORM_L2)
+[ PERFSTAT ]    (samples=16   mean=0.12   median=0.12   min=0.12   stddev=0.00 (2.9%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/2 (3 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/3, where GetParam() = (640x480, 32FC1, NORM_INF)
+[ PERFSTAT ]    (samples=100   mean=0.19   median=0.18   min=0.17   stddev=0.01 (7.2%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/3 (22 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/4, where GetParam() = (640x480, 32FC1, NORM_L1)
+[ PERFSTAT ]    (samples=100   mean=0.19   median=0.19   min=0.17   stddev=0.01 (4.8%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/4 (20 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/5, where GetParam() = (640x480, 32FC1, NORM_L2)
+[ PERFSTAT ]    (samples=100   mean=0.19   median=0.18   min=0.17   stddev=0.01 (7.3%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/5 (21 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/6, where GetParam() = (640x480, 8UC3, NORM_INF)
+[ PERFSTAT ]    (samples=57   mean=0.25   median=0.25   min=0.24   stddev=0.01 (3.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/6 (17 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/7, where GetParam() = (640x480, 8UC3, NORM_L1)
+[ PERFSTAT ]    (samples=100   mean=0.33   median=0.33   min=0.32   stddev=0.01 (3.1%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/7 (36 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/8, where GetParam() = (640x480, 8UC3, NORM_L2)
+[ PERFSTAT ]    (samples=100   mean=0.27   median=0.26   min=0.25   stddev=0.02 (7.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/8 (30 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/9, where GetParam() = (640x480, 32FC3, NORM_INF)
+[ PERFSTAT ]    (samples=28   mean=0.49   median=0.49   min=0.46   stddev=0.01 (3.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/9 (20 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/10, where GetParam() = (640x480, 32FC3, NORM_L1)
+[ PERFSTAT ]    (samples=38   mean=0.54   median=0.53   min=0.51   stddev=0.01 (2.5%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/10 (24 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/11, where GetParam() = (640x480, 32FC3, NORM_L2)
+[ PERFSTAT ]    (samples=90   mean=0.55   median=0.55   min=0.51   stddev=0.02 (3.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/11 (54 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/12, where GetParam() = (640x480, 8UC4, NORM_INF)
+[ PERFSTAT ]    (samples=32   mean=0.33   median=0.32   min=0.30   stddev=0.01 (3.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/12 (12 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/13, where GetParam() = (640x480, 8UC4, NORM_L1)
+[ PERFSTAT ]    (samples=100   mean=0.31   median=0.32   min=0.29   stddev=0.01 (4.5%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/13 (35 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/14, where GetParam() = (640x480, 8UC4, NORM_L2)
+[ PERFSTAT ]    (samples=100   mean=0.22   median=0.21   min=0.21   stddev=0.01 (6.2%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/14 (25 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/15, where GetParam() = (640x480, 32FC4, NORM_INF)
+[ PERFSTAT ]    (samples=25   mean=0.68   median=0.67   min=0.65   stddev=0.02 (2.9%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/15 (25 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/16, where GetParam() = (640x480, 32FC4, NORM_L1)
+[ PERFSTAT ]    (samples=50   mean=0.68   median=0.68   min=0.63   stddev=0.02 (3.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/16 (39 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/17, where GetParam() = (640x480, 32FC4, NORM_L2)
+[ PERFSTAT ]    (samples=15   mean=0.68   median=0.68   min=0.66   stddev=0.02 (2.9%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/17 (14 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/18, where GetParam() = (1280x720, 8UC1, NORM_INF)
+[ PERFSTAT ]    (samples=100   mean=0.26   median=0.26   min=0.25   stddev=0.01 (5.1%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/18 (29 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/19, where GetParam() = (1280x720, 8UC1, NORM_L1)
+[ PERFSTAT ]    (samples=35   mean=0.23   median=0.23   min=0.23   stddev=0.01 (3.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/19 (10 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/20, where GetParam() = (1280x720, 8UC1, NORM_L2)
+[ PERFSTAT ]    (samples=100   mean=0.17   median=0.17   min=0.17   stddev=0.01 (7.5%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/20 (20 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/21, where GetParam() = (1280x720, 32FC1, NORM_INF)
+[ PERFSTAT ]    (samples=100   mean=0.51   median=0.51   min=0.46   stddev=0.02 (3.1%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/21 (55 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/22, where GetParam() = (1280x720, 32FC1, NORM_L1)
+[ PERFSTAT ]    (samples=25   mean=0.50   median=0.50   min=0.48   stddev=0.01 (3.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/22 (16 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/23, where GetParam() = (1280x720, 32FC1, NORM_L2)
+[ PERFSTAT ]    (samples=100   mean=0.50   median=0.50   min=0.46   stddev=0.02 (3.6%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/23 (54 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/24, where GetParam() = (1280x720, 8UC3, NORM_INF)
+[ PERFSTAT ]    (samples=14   mean=0.64   median=0.64   min=0.61   stddev=0.02 (2.9%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/24 (17 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/25, where GetParam() = (1280x720, 8UC3, NORM_L1)
+[ PERFSTAT ]    (samples=13   mean=0.90   median=0.90   min=0.85   stddev=0.02 (2.3%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/25 (16 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/26, where GetParam() = (1280x720, 8UC3, NORM_L2)
+[ PERFSTAT ]    (samples=13   mean=0.73   median=0.73   min=0.71   stddev=0.02 (2.7%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/26 (15 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/27, where GetParam() = (1280x720, 32FC3, NORM_INF)
+[ PERFSTAT ]    (samples=43   mean=1.56   median=1.58   min=1.46   stddev=0.05 (3.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/27 (84 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/28, where GetParam() = (1280x720, 32FC3, NORM_L1)
+[ PERFSTAT ]    (samples=100   mean=1.64   median=1.63   min=1.55   stddev=0.05 (3.1%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/28 (174 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/29, where GetParam() = (1280x720, 32FC3, NORM_L2)
+[ PERFSTAT ]    (samples=100   mean=1.66   median=1.68   min=1.56   stddev=0.05 (3.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/29 (177 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/30, where GetParam() = (1280x720, 8UC4, NORM_INF)
+[ PERFSTAT ]    (samples=17   mean=0.83   median=0.83   min=0.80   stddev=0.02 (3.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/30 (20 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/31, where GetParam() = (1280x720, 8UC4, NORM_L1)
+[ PERFSTAT ]    (samples=13   mean=0.79   median=0.79   min=0.77   stddev=0.02 (2.1%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/31 (17 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/32, where GetParam() = (1280x720, 8UC4, NORM_L2)
+[ PERFSTAT ]    (samples=35   mean=0.52   median=0.52   min=0.50   stddev=0.02 (3.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/32 (25 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/33, where GetParam() = (1280x720, 32FC4, NORM_INF)
+[ PERFSTAT ]    (samples=10   mean=2.32   median=2.31   min=2.25   stddev=0.07 (2.8%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/33 (45 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/34, where GetParam() = (1280x720, 32FC4, NORM_L1)
+[ PERFSTAT ]    (samples=10   mean=2.29   median=2.27   min=2.24   stddev=0.05 (2.3%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/34 (34 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/35, where GetParam() = (1280x720, 32FC4, NORM_L2)
+[ PERFSTAT ]    (samples=10   mean=2.30   median=2.30   min=2.23   stddev=0.05 (2.3%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/35 (35 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/36, where GetParam() = (1920x1080, 8UC1, NORM_INF)
+[ PERFSTAT ]    (samples=100   mean=0.47   median=0.46   min=0.45   stddev=0.02 (3.7%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/36 (53 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/37, where GetParam() = (1920x1080, 8UC1, NORM_L1)
+[ PERFSTAT ]    (samples=25   mean=0.45   median=0.45   min=0.43   stddev=0.01 (2.5%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/37 (15 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/38, where GetParam() = (1920x1080, 8UC1, NORM_L2)
+[ PERFSTAT ]    (samples=100   mean=0.29   median=0.28   min=0.28   stddev=0.01 (4.5%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/38 (34 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/39, where GetParam() = (1920x1080, 32FC1, NORM_INF)
+[ PERFSTAT ]    (samples=29   mean=1.18   median=1.17   min=1.10   stddev=0.04 (3.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/39 (46 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/40, where GetParam() = (1920x1080, 32FC1, NORM_L1)
+[ PERFSTAT ]    (samples=53   mean=1.16   median=1.15   min=1.09   stddev=0.03 (3.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/40 (69 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/41, where GetParam() = (1920x1080, 32FC1, NORM_L2)
+[ PERFSTAT ]    (samples=50   mean=1.16   median=1.16   min=1.07   stddev=0.03 (2.9%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/41 (65 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/42, where GetParam() = (1920x1080, 8UC3, NORM_INF)
+[ PERFSTAT ]    (samples=13   mean=1.30   median=1.30   min=1.23   stddev=0.04 (2.9%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/42 (33 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/43, where GetParam() = (1920x1080, 8UC3, NORM_L1)
+[ PERFSTAT ]    (samples=10   mean=1.91   median=1.90   min=1.87   stddev=0.03 (1.8%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/43 (30 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/44, where GetParam() = (1920x1080, 8UC3, NORM_L2)
+[ PERFSTAT ]    (samples=13   mean=1.59   median=1.58   min=1.57   stddev=0.04 (2.5%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/44 (32 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/45, where GetParam() = (1920x1080, 32FC3, NORM_INF)
+[ PERFSTAT ]    (samples=10   mean=3.71   median=3.70   min=3.64   stddev=0.05 (1.3%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/45 (73 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/46, where GetParam() = (1920x1080, 32FC3, NORM_L1)
+[ PERFSTAT ]    (samples=10   mean=3.80   median=3.77   min=3.73   stddev=0.07 (1.9%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/46 (58 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/47, where GetParam() = (1920x1080, 32FC3, NORM_L2)
+[ PERFSTAT ]    (samples=14   mean=3.87   median=3.84   min=3.72   stddev=0.11 (2.9%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/47 (73 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/48, where GetParam() = (1920x1080, 8UC4, NORM_INF)
+[ PERFSTAT ]    (samples=10   mean=1.80   median=1.79   min=1.74   stddev=0.05 (3.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/48 (32 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/49, where GetParam() = (1920x1080, 8UC4, NORM_L1)
+[ PERFSTAT ]    (samples=29   mean=1.64   median=1.66   min=1.57   stddev=0.05 (3.0%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/49 (63 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/50, where GetParam() = (1920x1080, 8UC4, NORM_L2)
+[ PERFSTAT ]    (samples=13   mean=1.21   median=1.20   min=1.16   stddev=0.03 (2.5%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/50 (30 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/51, where GetParam() = (1920x1080, 32FC4, NORM_INF)
+[ PERFSTAT ]    (samples=10   mean=4.72   median=4.70   min=4.66   stddev=0.06 (1.3%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/51 (96 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/52, where GetParam() = (1920x1080, 32FC4, NORM_L1)
+[ PERFSTAT ]    (samples=10   mean=4.62   median=4.67   min=4.48   stddev=0.10 (2.1%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/52 (73 ms)
+[ RUN      ] OCL_NormFixture_NormRel.NormRel/53, where GetParam() = (1920x1080, 32FC4, NORM_L2)
+[ PERFSTAT ]    (samples=10   mean=4.64   median=4.63   min=4.48   stddev=0.13 (2.8%))
+[       OK ] OCL_NormFixture_NormRel.NormRel/53 (73 ms)
+[----------] 54 tests from OCL_NormFixture_NormRel (2198 ms total)
+
+[----------] Global test environment tear-down
+[==========] 54 tests from 1 test case ran. (2198 ms total)
+[  PASSED  ] 54 tests.

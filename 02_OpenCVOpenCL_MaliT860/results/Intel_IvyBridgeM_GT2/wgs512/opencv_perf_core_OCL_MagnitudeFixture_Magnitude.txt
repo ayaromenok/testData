@@ -1,0 +1,82 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 4.0.0-beta-388-gc6daa4aa1-dirty
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2? *AVX512-SKX?
+Intel(R) IPP version: ippIP SSE4.2 (y8) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    Intel Gen OCL Driver
+        iGPU: Intel(R) HD Graphics IvyBridge M GT2 (OpenCL 1.2 beignet 1.3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) HD Graphics IvyBridge M GT2
+    Version = OpenCL 1.2 beignet 1.3
+    Driver version = 1.3
+    Address bits = 32
+    Compute units = 16
+    Max work group size = 512
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 512 MB
+    Double support = No
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_khr_spir
+        cl_khr_icd
+        cl_intel_accelerator
+        cl_intel_subgroups
+        cl_intel_subgroups_short
+        cl_khr_gl_sharing
+        cl_intel_motion_estimation
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 0
+Note: Google Test filter = *OCL_MagnitudeFixture_Magnitude*
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from OCL_MagnitudeFixture_Magnitude
+[ RUN      ] OCL_MagnitudeFixture_Magnitude.Magnitude/0, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=0.51   median=0.52   min=0.48   stddev=0.02 (3.8%))
+[       OK ] OCL_MagnitudeFixture_Magnitude.Magnitude/0 (56 ms)
+[ RUN      ] OCL_MagnitudeFixture_Magnitude.Magnitude/1, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=1.75   median=1.74   min=1.72   stddev=0.03 (1.6%))
+[       OK ] OCL_MagnitudeFixture_Magnitude.Magnitude/1 (29 ms)
+[ RUN      ] OCL_MagnitudeFixture_Magnitude.Magnitude/2, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=1.38   median=1.38   min=1.33   stddev=0.04 (2.6%))
+[       OK ] OCL_MagnitudeFixture_Magnitude.Magnitude/2 (22 ms)
+[ RUN      ] OCL_MagnitudeFixture_Magnitude.Magnitude/3, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=4.93   median=4.93   min=4.89   stddev=0.03 (0.6%))
+[       OK ] OCL_MagnitudeFixture_Magnitude.Magnitude/3 (83 ms)
+[ RUN      ] OCL_MagnitudeFixture_Magnitude.Magnitude/4, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=2.88   median=2.87   min=2.84   stddev=0.04 (1.3%))
+[       OK ] OCL_MagnitudeFixture_Magnitude.Magnitude/4 (47 ms)
+[ RUN      ] OCL_MagnitudeFixture_Magnitude.Magnitude/5, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=10.71   median=10.69   min=10.63   stddev=0.07 (0.6%))
+[       OK ] OCL_MagnitudeFixture_Magnitude.Magnitude/5 (178 ms)
+[ RUN      ] OCL_MagnitudeFixture_Magnitude.Magnitude/6, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=10.69   median=10.69   min=10.61   stddev=0.05 (0.5%))
+[       OK ] OCL_MagnitudeFixture_Magnitude.Magnitude/6 (145 ms)
+[ RUN      ] OCL_MagnitudeFixture_Magnitude.Magnitude/7, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=42.04   median=41.97   min=41.67   stddev=0.31 (0.7%))
+[       OK ] OCL_MagnitudeFixture_Magnitude.Magnitude/7 (729 ms)
+[----------] 8 tests from OCL_MagnitudeFixture_Magnitude (1289 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (1289 ms total)
+[  PASSED  ] 8 tests.

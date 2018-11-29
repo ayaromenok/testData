@@ -1,0 +1,109 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 4.0.0-beta-388-gc6daa4aa1-dirty
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2? *AVX512-SKX?
+Intel(R) IPP version: ippIP SSE4.2 (y8) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    Intel Gen OCL Driver
+        iGPU: Intel(R) HD Graphics IvyBridge M GT2 (OpenCL 1.2 beignet 1.3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) HD Graphics IvyBridge M GT2
+    Version = OpenCL 1.2 beignet 1.3
+    Driver version = 1.3
+    Address bits = 32
+    Compute units = 16
+    Max work group size = 512
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 512 MB
+    Double support = No
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_khr_spir
+        cl_khr_icd
+        cl_intel_accelerator
+        cl_intel_subgroups
+        cl_intel_subgroups_short
+        cl_khr_gl_sharing
+        cl_intel_motion_estimation
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 0
+Note: Google Test filter = *OCL_Imgproc/GoodFeaturesToTrack*
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from OCL_Imgproc/GoodFeaturesToTrack
+[ RUN      ] OCL_Imgproc/GoodFeaturesToTrack.Accuracy/0, where GetParam() = (0, false)
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_gftt.cpp:75: Failure
+Value of: frame.empty()
+  Actual: true
+Expected: false
+could not load gpu/opticalflow/rubberwhale1.png
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_gftt.cpp:104: Failure
+Value of: points.empty()
+  Actual: true
+Expected: false
+[  FAILED  ] OCL_Imgproc/GoodFeaturesToTrack.Accuracy/0, where GetParam() = (0, false) (0 ms)
+[ RUN      ] OCL_Imgproc/GoodFeaturesToTrack.Accuracy/1, where GetParam() = (0, true)
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_gftt.cpp:75: Failure
+Value of: frame.empty()
+  Actual: true
+Expected: false
+could not load gpu/opticalflow/rubberwhale1.png
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_gftt.cpp:104: Failure
+Value of: points.empty()
+  Actual: true
+Expected: false
+[  FAILED  ] OCL_Imgproc/GoodFeaturesToTrack.Accuracy/1, where GetParam() = (0, true) (0 ms)
+[ RUN      ] OCL_Imgproc/GoodFeaturesToTrack.Accuracy/2, where GetParam() = (3, false)
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_gftt.cpp:75: Failure
+Value of: frame.empty()
+  Actual: true
+Expected: false
+could not load gpu/opticalflow/rubberwhale1.png
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_gftt.cpp:104: Failure
+Value of: points.empty()
+  Actual: true
+Expected: false
+[  FAILED  ] OCL_Imgproc/GoodFeaturesToTrack.Accuracy/2, where GetParam() = (3, false) (0 ms)
+[ RUN      ] OCL_Imgproc/GoodFeaturesToTrack.Accuracy/3, where GetParam() = (3, true)
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_gftt.cpp:75: Failure
+Value of: frame.empty()
+  Actual: true
+Expected: false
+could not load gpu/opticalflow/rubberwhale1.png
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_gftt.cpp:104: Failure
+Value of: points.empty()
+  Actual: true
+Expected: false
+[  FAILED  ] OCL_Imgproc/GoodFeaturesToTrack.Accuracy/3, where GetParam() = (3, true) (0 ms)
+[ RUN      ] OCL_Imgproc/GoodFeaturesToTrack.EmptyCorners/0, where GetParam() = (0, false)
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_gftt.cpp:75: Failure
+Value of: frame.empty()
+  Actual: true
+Expected: false
+could not load gpu/opticalflow/rubberwhale1.png
+[  FAILED  ] OCL_Imgproc/GoodFeaturesToTrack.EmptyCorners/0, where GetParam() = (0, false) (0 ms)
+[ RUN      ] OCL_Imgproc/GoodFeaturesToTrack.EmptyCorners/1, where GetParam() = (0, true)
+/home/az/sdk/src/opencv/opencv/modules/imgproc/test/ocl/test_gftt.cpp:75: Failure
+Value of: frame.empty()
+  Actual: true
+Expected: false
+could not load gpu/opticalflow/rubberwhale1.png

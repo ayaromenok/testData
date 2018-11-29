@@ -1,0 +1,154 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 4.0.0-beta-388-gc6daa4aa1-dirty
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2? *AVX512-SKX?
+Intel(R) IPP version: ippIP SSE4.2 (y8) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    Intel Gen OCL Driver
+        iGPU: Intel(R) HD Graphics IvyBridge M GT2 (OpenCL 1.2 beignet 1.3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) HD Graphics IvyBridge M GT2
+    Version = OpenCL 1.2 beignet 1.3
+    Driver version = 1.3
+    Address bits = 32
+    Compute units = 16
+    Max work group size = 512
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 512 MB
+    Double support = No
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_khr_spir
+        cl_khr_icd
+        cl_intel_accelerator
+        cl_intel_subgroups
+        cl_intel_subgroups_short
+        cl_khr_gl_sharing
+        cl_intel_motion_estimation
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 0
+Note: Google Test filter = *OCL_ErodeFixture_Erode*
+[==========] Running 32 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 32 tests from OCL_ErodeFixture_Erode
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/0, where GetParam() = (640x480, 8UC1, 3)
+[ PERFSTAT ]    (samples=38   mean=0.14   median=0.13   min=0.13   stddev=0.00 (2.3%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/0 (7 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/1, where GetParam() = (640x480, 8UC1, 5)
+[ PERFSTAT ]    (samples=13   mean=1.06   median=1.07   min=1.02   stddev=0.03 (2.8%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/1 (15 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/2, where GetParam() = (640x480, 32FC1, 3)
+[ PERFSTAT ]    (samples=100   mean=0.28   median=0.28   min=0.26   stddev=0.01 (5.2%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/2 (32 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/3, where GetParam() = (640x480, 32FC1, 5)
+[ PERFSTAT ]    (samples=13   mean=0.52   median=0.52   min=0.50   stddev=0.01 (2.9%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/3 (8 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/4, where GetParam() = (640x480, 8UC4, 3)
+[ PERFSTAT ]    (samples=13   mean=0.69   median=0.69   min=0.67   stddev=0.01 (1.5%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/4 (11 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/5, where GetParam() = (640x480, 8UC4, 5)
+[ PERFSTAT ]    (samples=13   mean=1.50   median=1.50   min=1.46   stddev=0.02 (1.4%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/5 (21 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/6, where GetParam() = (640x480, 32FC4, 3)
+[ PERFSTAT ]    (samples=13   mean=1.20   median=1.21   min=1.18   stddev=0.01 (1.2%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/6 (24 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/7, where GetParam() = (640x480, 32FC4, 5)
+[ PERFSTAT ]    (samples=13   mean=1.69   median=1.70   min=1.64   stddev=0.02 (1.4%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/7 (26 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/8, where GetParam() = (1280x720, 8UC1, 3)
+[ PERFSTAT ]    (samples=100   mean=0.25   median=0.24   min=0.23   stddev=0.02 (7.6%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/8 (28 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/9, where GetParam() = (1280x720, 8UC1, 5)
+[ PERFSTAT ]    (samples=10   mean=3.00   median=3.00   min=2.94   stddev=0.03 (1.1%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/9 (32 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/10, where GetParam() = (1280x720, 32FC1, 3)
+[ PERFSTAT ]    (samples=100   mean=0.86   median=0.84   min=0.79   stddev=0.05 (5.7%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/10 (94 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/11, where GetParam() = (1280x720, 32FC1, 5)
+[ PERFSTAT ]    (samples=10   mean=1.38   median=1.38   min=1.33   stddev=0.03 (2.2%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/11 (17 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/12, where GetParam() = (1280x720, 8UC4, 3)
+[ PERFSTAT ]    (samples=10   mean=1.99   median=1.99   min=1.95   stddev=0.02 (0.9%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/12 (26 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/13, where GetParam() = (1280x720, 8UC4, 5)
+[ PERFSTAT ]    (samples=10   mean=4.35   median=4.35   min=4.32   stddev=0.03 (0.7%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/13 (50 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/14, where GetParam() = (1280x720, 32FC4, 3)
+[ PERFSTAT ]    (samples=10   mean=3.30   median=3.31   min=3.20   stddev=0.05 (1.5%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/14 (55 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/15, where GetParam() = (1280x720, 32FC4, 5)
+[ PERFSTAT ]    (samples=10   mean=4.77   median=4.76   min=4.73   stddev=0.03 (0.6%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/15 (59 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/16, where GetParam() = (1920x1080, 8UC1, 3)
+[ PERFSTAT ]    (samples=100   mean=0.47   median=0.47   min=0.45   stddev=0.02 (3.3%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/16 (55 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/17, where GetParam() = (1920x1080, 8UC1, 5)
+[ PERFSTAT ]    (samples=10   mean=6.70   median=6.69   min=6.64   stddev=0.05 (0.7%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/17 (70 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/18, where GetParam() = (1920x1080, 32FC1, 3)
+[ PERFSTAT ]    (samples=10   mean=2.06   median=2.04   min=2.02   stddev=0.06 (2.7%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/18 (33 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/19, where GetParam() = (1920x1080, 32FC1, 5)
+[ PERFSTAT ]    (samples=10   mean=3.06   median=3.07   min=3.00   stddev=0.03 (0.9%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/19 (37 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/20, where GetParam() = (1920x1080, 8UC4, 3)
+[ PERFSTAT ]    (samples=10   mean=4.28   median=4.28   min=4.27   stddev=0.01 (0.3%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/20 (57 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/21, where GetParam() = (1920x1080, 8UC4, 5)
+[ PERFSTAT ]    (samples=10   mean=9.64   median=9.63   min=9.62   stddev=0.01 (0.2%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/21 (111 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/22, where GetParam() = (1920x1080, 32FC4, 3)
+[ PERFSTAT ]    (samples=10   mean=6.91   median=6.89   min=6.81   stddev=0.08 (1.2%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/22 (117 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/23, where GetParam() = (1920x1080, 32FC4, 5)
+[ PERFSTAT ]    (samples=10   mean=10.27   median=10.27   min=10.20   stddev=0.04 (0.4%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/23 (128 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/24, where GetParam() = (3840x2160, 8UC1, 3)
+[ PERFSTAT ]    (samples=10   mean=1.76   median=1.77   min=1.68   stddev=0.04 (2.4%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/24 (32 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/25, where GetParam() = (3840x2160, 8UC1, 5)
+[ PERFSTAT ]    (samples=10   mean=28.55   median=28.54   min=28.51   stddev=0.04 (0.1%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/25 (301 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/26, where GetParam() = (3840x2160, 32FC1, 3)
+[ PERFSTAT ]    (samples=10   mean=7.38   median=7.38   min=7.33   stddev=0.04 (0.5%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/26 (99 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/27, where GetParam() = (3840x2160, 32FC1, 5)
+[ PERFSTAT ]    (samples=10   mean=11.43   median=11.44   min=11.35   stddev=0.04 (0.4%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/27 (140 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/28, where GetParam() = (3840x2160, 8UC4, 3)
+[ PERFSTAT ]    (samples=10   mean=16.17   median=16.17   min=16.14   stddev=0.02 (0.1%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/28 (218 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/29, where GetParam() = (3840x2160, 8UC4, 5)
+[ PERFSTAT ]    (samples=10   mean=37.56   median=37.56   min=37.50   stddev=0.04 (0.1%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/29 (431 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/30, where GetParam() = (3840x2160, 32FC4, 3)
+[ PERFSTAT ]    (samples=10   mean=28.34   median=28.34   min=27.88   stddev=0.31 (1.1%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/30 (486 ms)
+[ RUN      ] OCL_ErodeFixture_Erode.Erode/31, where GetParam() = (3840x2160, 32FC4, 5)
+[ PERFSTAT ]    (samples=10   mean=42.13   median=42.02   min=41.88   stddev=0.25 (0.6%))
+[       OK ] OCL_ErodeFixture_Erode.Erode/31 (626 ms)
+[----------] 32 tests from OCL_ErodeFixture_Erode (3448 ms total)
+
+[----------] Global test environment tear-down
+[==========] 32 tests from 1 test case ran. (3448 ms total)
+[  PASSED  ] 32 tests.

@@ -1,0 +1,70 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 4.0.0-beta-388-gc6daa4aa1-dirty
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2? *AVX512-SKX?
+Intel(R) IPP version: ippIP SSE4.2 (y8) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    Intel Gen OCL Driver
+        iGPU: Intel(R) HD Graphics IvyBridge M GT2 (OpenCL 1.2 beignet 1.3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) HD Graphics IvyBridge M GT2
+    Version = OpenCL 1.2 beignet 1.3
+    Driver version = 1.3
+    Address bits = 32
+    Compute units = 16
+    Max work group size = 512
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 512 MB
+    Double support = No
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_khr_spir
+        cl_khr_icd
+        cl_intel_accelerator
+        cl_intel_subgroups
+        cl_intel_subgroups_short
+        cl_khr_gl_sharing
+        cl_intel_motion_estimation
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 0
+Note: Google Test filter = *OCL_GoodFeaturesToTrackFixture_GoodFeaturesToTrack*
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from OCL_GoodFeaturesToTrackFixture_GoodFeaturesToTrack
+[ RUN      ] OCL_GoodFeaturesToTrackFixture_GoodFeaturesToTrack.GoodFeaturesToTrack/0, where GetParam() = ("gpu/opticalflow/rubberwhale1.png", 0, false)
+[ PERFSTAT ]    (samples=13   mean=1.90   median=1.89   min=1.85   stddev=0.05 (2.9%))
+[       OK ] OCL_GoodFeaturesToTrackFixture_GoodFeaturesToTrack.GoodFeaturesToTrack/0 (33 ms)
+[ RUN      ] OCL_GoodFeaturesToTrackFixture_GoodFeaturesToTrack.GoodFeaturesToTrack/1, where GetParam() = ("gpu/opticalflow/rubberwhale1.png", 0, true)
+[ PERFSTAT ]    (samples=10   mean=1.62   median=1.61   min=1.56   stddev=0.04 (2.3%))
+[       OK ] OCL_GoodFeaturesToTrackFixture_GoodFeaturesToTrack.GoodFeaturesToTrack/1 (23 ms)
+[ RUN      ] OCL_GoodFeaturesToTrackFixture_GoodFeaturesToTrack.GoodFeaturesToTrack/2, where GetParam() = ("gpu/opticalflow/rubberwhale1.png", 3, false)
+[ PERFSTAT ]    (samples=10   mean=2.17   median=2.18   min=2.08   stddev=0.05 (2.4%))
+[       OK ] OCL_GoodFeaturesToTrackFixture_GoodFeaturesToTrack.GoodFeaturesToTrack/2 (29 ms)
+[ RUN      ] OCL_GoodFeaturesToTrackFixture_GoodFeaturesToTrack.GoodFeaturesToTrack/3, where GetParam() = ("gpu/opticalflow/rubberwhale1.png", 3, true)
+[ PERFSTAT ]    (samples=10   mean=1.72   median=1.70   min=1.67   stddev=0.05 (2.9%))
+[       OK ] OCL_GoodFeaturesToTrackFixture_GoodFeaturesToTrack.GoodFeaturesToTrack/3 (24 ms)
+[----------] 4 tests from OCL_GoodFeaturesToTrackFixture_GoodFeaturesToTrack (109 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (109 ms total)
+[  PASSED  ] 4 tests.

@@ -1,0 +1,126 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 4.0.0-beta-388-gc6daa4aa1-dirty
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2? *AVX512-SKX?
+Intel(R) IPP version: ippIP SSE4.2 (y8) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    Intel Gen OCL Driver
+        iGPU: Intel(R) HD Graphics IvyBridge M GT2 (OpenCL 1.2 beignet 1.3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) HD Graphics IvyBridge M GT2
+    Version = OpenCL 1.2 beignet 1.3
+    Driver version = 1.3
+    Address bits = 32
+    Compute units = 16
+    Max work group size = 512
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 512 MB
+    Double support = No
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_khr_spir
+        cl_khr_icd
+        cl_intel_accelerator
+        cl_intel_subgroups
+        cl_intel_subgroups_short
+        cl_khr_gl_sharing
+        cl_intel_motion_estimation
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 0
+Note: Google Test filter = *OCL_HoughLinesFixture_HoughLines*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_HoughLinesFixture_HoughLines
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/0, where GetParam() = (640x480, 0.1, 0.0174533)
+[ PERFSTAT ]    (samples=13   mean=7.51   median=7.52   min=7.40   stddev=0.07 (0.9%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/0 (102 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/1, where GetParam() = (640x480, 0.1, 0.1)
+[ PERFSTAT ]    (samples=100   mean=1.31   median=1.29   min=1.23   stddev=0.07 (5.0%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/1 (135 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/2, where GetParam() = (640x480, 1, 0.0174533)
+OpenCL program build log: imgproc/hough_lines
+Status -11: CL_BUILD_PROGRAM_FAILURE
+-D FILL_ACCUM_LOCAL -D LOCAL_SIZE=512 -D BUFFER_SIZE=2243 -D INTEL_DEVICE
+stringInput.cl:78:13: error: variables in the local address space can only be declared in the outermost scope of a kernel function
+
+[ PERFSTAT ]    (samples=100   mean=2.63   median=2.57   min=2.39   stddev=0.18 (6.8%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/2 (281 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/3, where GetParam() = (640x480, 1, 0.1)
+[ PERFSTAT ]    (samples=13   mean=0.75   median=0.75   min=0.73   stddev=0.01 (2.0%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/3 (10 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/4, where GetParam() = (1280x720, 0.1, 0.0174533)
+[ PERFSTAT ]    (samples=13   mean=14.62   median=14.57   min=14.30   stddev=0.29 (2.0%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/4 (196 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/5, where GetParam() = (1280x720, 0.1, 0.1)
+[ PERFSTAT ]    (samples=16   mean=2.79   median=2.78   min=2.69   stddev=0.08 (3.0%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/5 (46 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/6, where GetParam() = (1280x720, 1, 0.0174533)
+OpenCL program build log: imgproc/hough_lines
+Status -11: CL_BUILD_PROGRAM_FAILURE
+-D FILL_ACCUM_LOCAL -D LOCAL_SIZE=512 -D BUFFER_SIZE=4003 -D INTEL_DEVICE
+stringInput.cl:78:13: error: variables in the local address space can only be declared in the outermost scope of a kernel function
+
+[ PERFSTAT ]    (samples=100   mean=5.97   median=5.94   min=5.60   stddev=0.20 (3.3%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/6 (609 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/7, where GetParam() = (1280x720, 1, 0.1)
+[ PERFSTAT ]    (samples=25   mean=1.67   median=1.66   min=1.59   stddev=0.04 (2.3%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/7 (42 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/8, where GetParam() = (1920x1080, 0.1, 0.0174533)
+[ PERFSTAT ]    (samples=13   mean=22.62   median=22.61   min=22.32   stddev=0.20 (0.9%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/8 (304 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/9, where GetParam() = (1920x1080, 0.1, 0.1)
+[ PERFSTAT ]    (samples=13   mean=4.80   median=4.79   min=4.66   stddev=0.10 (2.1%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/9 (65 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/10, where GetParam() = (1920x1080, 1, 0.0174533)
+OpenCL program build log: imgproc/hough_lines
+Status -11: CL_BUILD_PROGRAM_FAILURE
+-D FILL_ACCUM_LOCAL -D LOCAL_SIZE=512 -D BUFFER_SIZE=6003 -D INTEL_DEVICE
+stringInput.cl:78:13: error: variables in the local address space can only be declared in the outermost scope of a kernel function
+
+[ PERFSTAT ]    (samples=50   mean=10.30   median=10.26   min=9.71   stddev=0.23 (2.2%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/10 (547 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/11, where GetParam() = (1920x1080, 1, 0.1)
+[ PERFSTAT ]    (samples=100   mean=3.24   median=3.24   min=2.93   stddev=0.13 (4.1%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/11 (334 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/12, where GetParam() = (3840x2160, 0.1, 0.0174533)
+[ PERFSTAT ]    (samples=13   mean=46.75   median=46.64   min=46.09   stddev=0.50 (1.1%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/12 (635 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/13, where GetParam() = (3840x2160, 0.1, 0.1)
+[ PERFSTAT ]    (samples=10   mean=10.37   median=10.35   min=10.30   stddev=0.06 (0.6%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/13 (107 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/14, where GetParam() = (3840x2160, 1, 0.0174533)
+OpenCL program build log: imgproc/hough_lines
+Status -11: CL_BUILD_PROGRAM_FAILURE
+-D FILL_ACCUM_LOCAL -D LOCAL_SIZE=512 -D BUFFER_SIZE=12003 -D INTEL_DEVICE
+stringInput.cl:78:13: error: variables in the local address space can only be declared in the outermost scope of a kernel function
+
+[ PERFSTAT ]    (samples=50   mean=27.83   median=27.59   min=26.99   stddev=0.82 (2.9%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/14 (1413 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/15, where GetParam() = (3840x2160, 1, 0.1)
+[ PERFSTAT ]    (samples=13   mean=10.05   median=9.98   min=9.90   stddev=0.20 (1.9%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/15 (136 ms)
+[----------] 16 tests from OCL_HoughLinesFixture_HoughLines (4962 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (4962 ms total)
+[  PASSED  ] 16 tests.

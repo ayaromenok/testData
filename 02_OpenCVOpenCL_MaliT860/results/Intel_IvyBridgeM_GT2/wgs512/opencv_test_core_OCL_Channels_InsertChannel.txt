@@ -1,0 +1,169 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 4.0.0-beta-388-gc6daa4aa1-dirty
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2? *AVX512-SKX?
+Intel(R) IPP version: ippIP SSE4.2 (y8) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    Intel Gen OCL Driver
+        iGPU: Intel(R) HD Graphics IvyBridge M GT2 (OpenCL 1.2 beignet 1.3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) HD Graphics IvyBridge M GT2
+    Version = OpenCL 1.2 beignet 1.3
+    Driver version = 1.3
+    Address bits = 32
+    Compute units = 16
+    Max work group size = 512
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 512 MB
+    Double support = No
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_khr_spir
+        cl_khr_icd
+        cl_intel_accelerator
+        cl_intel_subgroups
+        cl_intel_subgroups_short
+        cl_khr_gl_sharing
+        cl_intel_motion_estimation
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 0
+Note: Google Test filter = *OCL_Channels/InsertChannel*
+[==========] Running 56 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 56 tests from OCL_Channels/InsertChannel
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/0, where GetParam() = (CV_8U, Channels(1), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/0 (1 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/1, where GetParam() = (CV_8U, Channels(1), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/1 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/2, where GetParam() = (CV_8U, Channels(2), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/2 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/3, where GetParam() = (CV_8U, Channels(2), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/3 (1 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/4, where GetParam() = (CV_8U, Channels(3), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/4 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/5, where GetParam() = (CV_8U, Channels(3), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/5 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/6, where GetParam() = (CV_8U, Channels(4), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/6 (1 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/7, where GetParam() = (CV_8U, Channels(4), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/7 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/8, where GetParam() = (CV_8S, Channels(1), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/8 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/9, where GetParam() = (CV_8S, Channels(1), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/9 (1 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/10, where GetParam() = (CV_8S, Channels(2), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/10 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/11, where GetParam() = (CV_8S, Channels(2), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/11 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/12, where GetParam() = (CV_8S, Channels(3), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/12 (1 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/13, where GetParam() = (CV_8S, Channels(3), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/13 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/14, where GetParam() = (CV_8S, Channels(4), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/14 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/15, where GetParam() = (CV_8S, Channels(4), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/15 (1 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/16, where GetParam() = (CV_16U, Channels(1), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/16 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/17, where GetParam() = (CV_16U, Channels(1), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/17 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/18, where GetParam() = (CV_16U, Channels(2), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/18 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/19, where GetParam() = (CV_16U, Channels(2), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/19 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/20, where GetParam() = (CV_16U, Channels(3), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/20 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/21, where GetParam() = (CV_16U, Channels(3), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/21 (1 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/22, where GetParam() = (CV_16U, Channels(4), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/22 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/23, where GetParam() = (CV_16U, Channels(4), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/23 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/24, where GetParam() = (CV_16S, Channels(1), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/24 (1 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/25, where GetParam() = (CV_16S, Channels(1), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/25 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/26, where GetParam() = (CV_16S, Channels(2), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/26 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/27, where GetParam() = (CV_16S, Channels(2), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/27 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/28, where GetParam() = (CV_16S, Channels(3), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/28 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/29, where GetParam() = (CV_16S, Channels(3), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/29 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/30, where GetParam() = (CV_16S, Channels(4), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/30 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/31, where GetParam() = (CV_16S, Channels(4), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/31 (1 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/32, where GetParam() = (CV_32S, Channels(1), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/32 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/33, where GetParam() = (CV_32S, Channels(1), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/33 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/34, where GetParam() = (CV_32S, Channels(2), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/34 (1 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/35, where GetParam() = (CV_32S, Channels(2), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/35 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/36, where GetParam() = (CV_32S, Channels(3), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/36 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/37, where GetParam() = (CV_32S, Channels(3), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/37 (1 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/38, where GetParam() = (CV_32S, Channels(4), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/38 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/39, where GetParam() = (CV_32S, Channels(4), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/39 (1 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/40, where GetParam() = (CV_32F, Channels(1), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/40 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/41, where GetParam() = (CV_32F, Channels(1), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/41 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/42, where GetParam() = (CV_32F, Channels(2), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/42 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/43, where GetParam() = (CV_32F, Channels(2), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/43 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/44, where GetParam() = (CV_32F, Channels(3), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/44 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/45, where GetParam() = (CV_32F, Channels(3), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/45 (1 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/46, where GetParam() = (CV_32F, Channels(4), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/46 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/47, where GetParam() = (CV_32F, Channels(4), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/47 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/48, where GetParam() = (CV_64F, Channels(1), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/48 (1 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/49, where GetParam() = (CV_64F, Channels(1), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/49 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/50, where GetParam() = (CV_64F, Channels(2), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/50 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/51, where GetParam() = (CV_64F, Channels(2), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/51 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/52, where GetParam() = (CV_64F, Channels(3), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/52 (1 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/53, where GetParam() = (CV_64F, Channels(3), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/53 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/54, where GetParam() = (CV_64F, Channels(4), false)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/54 (0 ms)
+[ RUN      ] OCL_Channels/InsertChannel.Accuracy/55, where GetParam() = (CV_64F, Channels(4), true)
+[       OK ] OCL_Channels/InsertChannel.Accuracy/55 (1 ms)
+[----------] 56 tests from OCL_Channels/InsertChannel (18 ms total)
+
+[----------] Global test environment tear-down
+[==========] 56 tests from 1 test case ran. (18 ms total)
+[  PASSED  ] 56 tests.
