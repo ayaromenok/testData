@@ -13,10 +13,6 @@ echo "opencv_test_core: OCL_Gemm"
 time -p ./opencv_test_core --gtest_filter=*OCL_Gemm* > res/opencv_test_core_OCL_Gemm.txt
 echo "opencv_test_core: OCL_UMat"
 time -p ./opencv_test_core --gtest_filter=*OCL_UMat* > res/opencv_test_core_OCL_UMat.txt
-echo "opencv_test_core:   DISABLED_OCL_ThreadSafe_CleanupCallback_1_VeryLongTes"
-time -p ./opencv_test_core --gtest_filter=*  DISABLED_OCL_ThreadSafe_CleanupCallback_1_VeryLongTes* > res/opencv_test_core_DISABLED_OCL_ThreadSafe_CleanupCallback_1_VeryLongTes.txt
-echo "opencv_test_core:   DISABLED_OCL_ThreadSafe_CleanupCallback_2_VeryLongTes"
-time -p ./opencv_test_core --gtest_filter=*  DISABLED_OCL_ThreadSafe_CleanupCallback_2_VeryLongTes* > res/opencv_test_core_DISABLED_OCL_ThreadSafe_CleanupCallback_2_VeryLongTes.txt
 echo "opencv_test_core: OCL_Arithm/Lut"
 time -p ./opencv_test_core --gtest_filter=*OCL_Arithm/Lut* > res/opencv_test_core_OCL_Arithm_Lut.txt
 echo "opencv_test_core: OCL_Arithm/Add"
