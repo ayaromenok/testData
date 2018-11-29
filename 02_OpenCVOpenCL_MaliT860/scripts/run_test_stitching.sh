@@ -1,5 +1,10 @@
 #!/bin/sh
 mkdir res
+echo "
+
+running:		opencv_test_stitching
+
+"
 echo "OCL_SphericalWarperTest"
 time -p ./opencv_test_stitching --gtest_filter=*OCL_SphericalWarperTest* > res/opencv_test_stitching_OCL_SphericalWarperTest.txt
 echo "OCL_CylindricalWarperTest"

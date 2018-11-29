@@ -1,5 +1,10 @@
 #!/bin/sh
 mkdir res
+echo "
+
+running:		opencv_perf_imgproc
+
+"
 echo "OCL__3vs4_Fixture_Resize"
 time -p ./opencv_perf_imgproc --gtest_filter=*OCL__3vs4_Fixture_Resize* > res/opencv_perf_imgproc_OCL__3vs4_Fixture_Resize.txt
 echo "OCL__3vs4_Fixture_Subtract"

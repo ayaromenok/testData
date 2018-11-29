@@ -1,5 +1,10 @@
 #!/bin/sh
 mkdir res
+echo "
+
+running:		opencv_perf_core
+
+"
 echo "OCL_LUTFixture_LUT"
 time -p ./opencv_perf_core --gtest_filter=*OCL_LUTFixture_LUT* > res/opencv_perf_core_OCL_LUTFixture_LUT.txt
 echo "OCL_ExpFixture_Exp"

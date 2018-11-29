@@ -1,5 +1,10 @@
 #!/bin/sh
 mkdir res
+echo "
+
+running:		opencv_test_imgproc
+
+"
 echo "OCL_Imgproc_Moments"
 time -p ./opencv_test_imgproc --gtest_filter=*OCL_Imgproc_Moments* > res/opencv_test_imgproc_OCL_Imgproc_Moments.txt
 echo "OCL_ImgProc/Accumulate"

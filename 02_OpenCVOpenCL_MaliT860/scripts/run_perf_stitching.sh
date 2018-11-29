@@ -1,5 +1,10 @@
 #!/bin/sh
 mkdir res
+echo "
+
+running:		opencv_perf_stitching
+
+"
 echo "OCL_stitch_a123"
 time -p ./opencv_perf_stitching --gtest_filter=*OCL_stitch_a123* > res/opencv_perf_stitching_OCL_stitch_a123.txt
 echo "OCL_stitch_b12"

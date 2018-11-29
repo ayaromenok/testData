@@ -1,5 +1,10 @@
 #!/bin/sh
 mkdir res
+echo "
+
+running:		opencv_test_core
+
+"
 echo "OCL_MeanStdDev_"
 time -p ./opencv_test_core --gtest_filter=*OCL_MeanStdDev_* > res/opencv_test_core_OCL_MeanStdDev_.txt
 echo "OCL_Normalize"
