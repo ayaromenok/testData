@@ -1,0 +1,86 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 256
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 256
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 256
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_ExtractChannelFixture_ExtractChannel*
+[==========] Running 6 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 6 tests from OCL_ExtractChannelFixture_ExtractChannel
+[ RUN      ] OCL_ExtractChannelFixture_ExtractChannel.ExtractChannel/0, where GetParam() = (640x480, CV_8U)
+[ PERFSTAT ]    (samples=100   mean=3.99   median=4.13   min=2.35   stddev=0.52 (13.0%))
+[       OK ] OCL_ExtractChannelFixture_ExtractChannel.ExtractChannel/0 (455 ms)
+[ RUN      ] OCL_ExtractChannelFixture_ExtractChannel.ExtractChannel/1, where GetParam() = (640x480, CV_32F)
+[ PERFSTAT ]    (samples=100   mean=4.74   median=4.83   min=3.49   stddev=0.37 (7.9%))
+[       OK ] OCL_ExtractChannelFixture_ExtractChannel.ExtractChannel/1 (570 ms)
+[ RUN      ] OCL_ExtractChannelFixture_ExtractChannel.ExtractChannel/2, where GetParam() = (1280x720, CV_8U)
+[ PERFSTAT ]    (samples=100   mean=8.20   median=8.26   min=7.07   stddev=0.26 (3.2%))
+[       OK ] OCL_ExtractChannelFixture_ExtractChannel.ExtractChannel/2 (898 ms)
+[ RUN      ] OCL_ExtractChannelFixture_ExtractChannel.ExtractChannel/3, where GetParam() = (1280x720, CV_32F)
+[ PERFSTAT ]    (samples=100   mean=9.77   median=10.00   min=8.08   stddev=0.63 (6.5%))
+[       OK ] OCL_ExtractChannelFixture_ExtractChannel.ExtractChannel/3 (1119 ms)
+[ RUN      ] OCL_ExtractChannelFixture_ExtractChannel.ExtractChannel/4, where GetParam() = (1920x1080, CV_8U)
+[ PERFSTAT ]    (samples=17   mean=14.47   median=14.69   min=13.44   stddev=0.43 (3.0%))
+[       OK ] OCL_ExtractChannelFixture_ExtractChannel.ExtractChannel/4 (360 ms)
+[ RUN      ] OCL_ExtractChannelFixture_ExtractChannel.ExtractChannel/5, where GetParam() = (1920x1080, CV_32F)
+[ PERFSTAT ]    (samples=100   mean=6.85   median=6.65   min=6.48   stddev=1.08 (15.7%))
+[       OK ] OCL_ExtractChannelFixture_ExtractChannel.ExtractChannel/5 (1003 ms)
+[----------] 6 tests from OCL_ExtractChannelFixture_ExtractChannel (4413 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test case ran. (4414 ms total)
+[  PASSED  ] 6 tests.

@@ -1,0 +1,174 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 256
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 256
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 256
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_TransformFixture_Transform*
+[==========] Running 28 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 28 tests from OCL_TransformFixture_Transform
+[ RUN      ] OCL_TransformFixture_Transform.Transform/0, where GetParam() = (640x480, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=22.50   median=25.78   min=7.19   stddev=7.96 (35.4%))
+[       OK ] OCL_TransformFixture_Transform.Transform/0 (2406 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/1, where GetParam() = (640x480, 8SC3)
+[ PERFSTAT ]    (samples=100   mean=28.50   median=27.64   min=24.77   stddev=2.87 (10.1%))
+[       OK ] OCL_TransformFixture_Transform.Transform/1 (3003 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/2, where GetParam() = (640x480, 16UC3)
+[ PERFSTAT ]    (samples=100   mean=27.56   median=27.21   min=23.60   stddev=2.78 (10.1%))
+[       OK ] OCL_TransformFixture_Transform.Transform/2 (2887 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/3, where GetParam() = (640x480, 16SC3)
+[ PERFSTAT ]    (samples=100   mean=28.24   median=27.93   min=19.28   stddev=2.78 (9.8%))
+[       OK ] OCL_TransformFixture_Transform.Transform/3 (2947 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/4, where GetParam() = (640x480, 32SC3)
+[ PERFSTAT ]    (samples=100   mean=23.88   median=23.37   min=22.67   stddev=1.33 (5.6%))
+[       OK ] OCL_TransformFixture_Transform.Transform/4 (2499 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/5, where GetParam() = (640x480, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=22.53   median=22.72   min=17.64   stddev=0.92 (4.1%))
+[       OK ] OCL_TransformFixture_Transform.Transform/5 (2316 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/6, where GetParam() = (640x480, 64FC3)
+[ PERFSTAT ]    (samples=100   mean=33.26   median=32.75   min=30.75   stddev=1.18 (3.6%))
+[       OK ] OCL_TransformFixture_Transform.Transform/6 (3510 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/7, where GetParam() = (1280x720, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=36.17   median=35.95   min=27.38   stddev=6.00 (16.6%))
+[       OK ] OCL_TransformFixture_Transform.Transform/7 (4132 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/8, where GetParam() = (1280x720, 8SC3)
+[ PERFSTAT ]    (samples=100   mean=34.47   median=34.40   min=27.67   stddev=3.62 (10.5%))
+[       OK ] OCL_TransformFixture_Transform.Transform/8 (3611 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/9, where GetParam() = (1280x720, 16UC3)
+[ PERFSTAT ]    (samples=100   mean=56.63   median=50.42   min=27.67   stddev=21.55 (38.0%))
+[       OK ] OCL_TransformFixture_Transform.Transform/9 (6142 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/10, where GetParam() = (1280x720, 16SC3)
+[ PERFSTAT ]    (samples=100   mean=71.91   median=68.63   min=30.86   stddev=17.25 (24.0%))
+[       OK ] OCL_TransformFixture_Transform.Transform/10 (7568 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/11, where GetParam() = (1280x720, 32SC3)
+[ PERFSTAT ]    (samples=100   mean=60.55   median=58.45   min=54.27   stddev=6.15 (10.2%))
+[       OK ] OCL_TransformFixture_Transform.Transform/11 (6367 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/12, where GetParam() = (1280x720, 32FC3)
+[ PERFSTAT ]    (samples=13   mean=51.30   median=51.09   min=50.14   stddev=1.05 (2.0%))
+[       OK ] OCL_TransformFixture_Transform.Transform/12 (817 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/13, where GetParam() = (1280x720, 64FC3)
+[ PERFSTAT ]    (samples=96   mean=92.47   median=92.92   min=71.22   stddev=2.76 (3.0%))
+[       OK ] OCL_TransformFixture_Transform.Transform/13 (9334 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/14, where GetParam() = (1920x1080, 8UC3)
+.
+[ PERFSTAT ]    (samples=100   mean=125.94   median=149.76   min=50.02   stddev=49.68 (39.4%))
+[       OK ] OCL_TransformFixture_Transform.Transform/14 (13262 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/15, where GetParam() = (1920x1080, 8SC3)
+.
+[ PERFSTAT ]    (samples=100   mean=118.69   median=102.73   min=53.74   stddev=44.97 (37.9%))
+[       OK ] OCL_TransformFixture_Transform.Transform/15 (12583 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/16, where GetParam() = (1920x1080, 16UC3)
+.
+[ PERFSTAT ]    (samples=100   mean=143.98   median=158.85   min=51.08   stddev=39.17 (27.2%))
+[       OK ] OCL_TransformFixture_Transform.Transform/16 (14962 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/17, where GetParam() = (1920x1080, 16SC3)
+.
+[ PERFSTAT ]    (samples=100   mean=143.41   median=161.73   min=51.34   stddev=39.23 (27.4%))
+[       OK ] OCL_TransformFixture_Transform.Transform/17 (14920 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/18, where GetParam() = (1920x1080, 32SC3)
+.
+[ PERFSTAT ]    (samples=100   mean=119.97   median=118.18   min=64.39   stddev=10.13 (8.4%))
+[       OK ] OCL_TransformFixture_Transform.Transform/18 (12372 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/19, where GetParam() = (1920x1080, 32FC3)
+[ PERFSTAT ]    (samples=11   mean=109.17   median=110.12   min=100.40   stddev=3.17 (2.9%))
+[       OK ] OCL_TransformFixture_Transform.Transform/19 (1432 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/20, where GetParam() = (1920x1080, 64FC3)
+.
+[ PERFSTAT ]    (samples=100   mean=174.40   median=177.28   min=140.91   stddev=7.05 (4.0%))
+[       OK ] OCL_TransformFixture_Transform.Transform/20 (18254 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/21, where GetParam() = (3840x2160, 8UC3)
+.
+.
+[ PERFSTAT ]    (samples=100   mean=250.46   median=263.15   min=167.90   stddev=27.23 (10.9%))
+[       OK ] OCL_TransformFixture_Transform.Transform/21 (25808 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/22, where GetParam() = (3840x2160, 8SC3)
+.
+.
+[ PERFSTAT ]    (samples=100   mean=261.73   median=267.48   min=179.73   stddev=17.82 (6.8%))
+[       OK ] OCL_TransformFixture_Transform.Transform/22 (26569 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/23, where GetParam() = (3840x2160, 16UC3)
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=350.53   median=357.79   min=180.05   stddev=25.79 (7.4%))
+[       OK ] OCL_TransformFixture_Transform.Transform/23 (35956 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/24, where GetParam() = (3840x2160, 16SC3)
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=317.48   median=318.69   min=257.53   stddev=11.77 (3.7%))
+[       OK ] OCL_TransformFixture_Transform.Transform/24 (32651 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/25, where GetParam() = (3840x2160, 32SC3)
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=330.40   median=342.20   min=164.33   stddev=43.37 (13.1%))
+[       OK ] OCL_TransformFixture_Transform.Transform/25 (34130 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/26, where GetParam() = (3840x2160, 32FC3)
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=339.86   median=339.47   min=273.26   stddev=34.33 (10.1%))
+[       OK ] OCL_TransformFixture_Transform.Transform/26 (35227 ms)
+[ RUN      ] OCL_TransformFixture_Transform.Transform/27, where GetParam() = (3840x2160, 64FC3)
+[ PERFSTAT ]    (samples=10   mean=526.00   median=525.83   min=522.62   stddev=2.22 (0.4%))
+[       OK ] OCL_TransformFixture_Transform.Transform/27 (7409 ms)
+[----------] 28 tests from OCL_TransformFixture_Transform (343078 ms total)
+
+[----------] Global test environment tear-down
+[==========] 28 tests from 1 test case ran. (343080 ms total)
+[  PASSED  ] 28 tests.

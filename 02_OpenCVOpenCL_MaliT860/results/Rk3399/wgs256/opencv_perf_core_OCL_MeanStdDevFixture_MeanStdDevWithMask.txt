@@ -1,0 +1,1077 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 256
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 256
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 256
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_MeanStdDevFixture_MeanStdDevWithMask*
+[==========] Running 18 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 18 tests from OCL_MeanStdDevFixture_MeanStdDevWithMask
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=3.51   median=3.88   min=1.82   stddev=0.89 (25.3%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/0 (417 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=4.22   median=4.32   min=3.12   stddev=0.35 (8.4%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/1 (531 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/2, where GetParam() = (640x480, 8UC3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=5.73   median=5.74   min=5.04   stddev=0.27 (4.7%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/2 (699 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/3, where GetParam() = (640x480, 32FC3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+[ PERFSTAT ]    (samples=13   mean=17.59   median=17.62   min=17.05   stddev=0.31 (1.8%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/3 (323 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/4, where GetParam() = (640x480, 8UC4)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=14.40   median=14.22   min=11.91   stddev=1.43 (9.9%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/4 (1584 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/5, where GetParam() = (640x480, 32FC4)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=28.59   median=28.49   min=22.75   stddev=3.29 (11.5%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/5 (3014 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/6, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=89   mean=6.86   median=6.86   min=5.75   stddev=0.21 (3.0%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/6 (655 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/7, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=7.22   median=7.27   min=6.00   stddev=0.30 (4.1%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/7 (796 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/8, where GetParam() = (1280x720, 8UC3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+[ PERFSTAT ]    (samples=28   mean=12.11   median=12.10   min=11.34   stddev=0.36 (3.0%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/8 (406 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/9, where GetParam() = (1280x720, 32FC3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+[ PERFSTAT ]    (samples=13   mean=31.77   median=31.82   min=29.44   stddev=0.86 (2.7%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/9 (514 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/10, where GetParam() = (1280x720, 8UC4)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=37.41   median=39.03   min=20.89   stddev=7.47 (20.0%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/10 (3980 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/11, where GetParam() = (1280x720, 32FC4)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=78.85   median=81.52   min=67.13   stddev=6.54 (8.3%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/11 (8148 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/12, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=12.09   median=12.12   min=10.51   stddev=0.36 (3.0%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/12 (1274 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/13, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=13.27   median=13.34   min=11.71   stddev=0.51 (3.8%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/13 (1450 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/14, where GetParam() = (1920x1080, 8UC3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=30.58   median=31.14   min=24.70   stddev=1.46 (4.8%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/14 (3206 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/15, where GetParam() = (1920x1080, 32FC3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=62.75   median=61.49   min=56.66   stddev=4.69 (7.5%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/15 (6546 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/16, where GetParam() = (1920x1080, 8UC4)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=57.47   median=51.26   min=33.88   stddev=19.48 (33.9%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/16 (6305 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/17, where GetParam() = (1920x1080, 32FC4)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=1024x1x1, localsize=256x1x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=111.24   median=113.95   min=49.46   stddev=22.41 (20.1%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/17 (11787 ms)
+[----------] 18 tests from OCL_MeanStdDevFixture_MeanStdDevWithMask (51640 ms total)
+
+[----------] Global test environment tear-down
+[==========] 18 tests from 1 test case ran. (51640 ms total)
+[  PASSED  ] 18 tests.

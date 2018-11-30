@@ -1,0 +1,141 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 256
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 256
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 256
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_BitwiseXorFixture_Bitwise_xor*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_BitwiseXorFixture_Bitwise_xor
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/0, where GetParam() = (640x480, 8UC1)
+.
+[ PERFSTAT ]    (samples=100   mean=1.59   median=1.58   min=0.72   stddev=0.67 (42.1%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/0 (46885 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=1.08   median=1.00   min=0.89   stddev=0.25 (23.1%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/1 (204 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/2, where GetParam() = (640x480, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=1.84   median=1.51   min=1.19   stddev=0.64 (34.8%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/2 (227 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/3, where GetParam() = (640x480, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=5.36   median=5.32   min=4.95   stddev=0.22 (4.0%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/3 (655 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/4, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=3.56   median=3.57   min=2.58   stddev=0.34 (9.5%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/4 (433 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/5, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=7.57   median=8.41   min=5.95   stddev=1.13 (14.9%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/5 (902 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/6, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=3.39   median=3.51   min=2.29   stddev=0.41 (12.1%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/6 (408 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/7, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=5.24   median=5.21   min=5.05   stddev=0.17 (3.3%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/7 (646 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/8, where GetParam() = (1280x720, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=4.37   median=4.38   min=3.47   stddev=0.23 (5.3%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/8 (574 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/9, where GetParam() = (1280x720, 32FC3)
+[ PERFSTAT ]    (samples=63   mean=11.44   median=11.38   min=11.20   stddev=0.28 (2.5%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/9 (973 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/10, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=5.39   median=5.20   min=4.40   stddev=0.44 (8.1%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/10 (705 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/11, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=50   mean=14.13   median=14.11   min=13.95   stddev=0.16 (1.1%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/11 (1059 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/12, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=2.75   median=2.72   min=2.67   stddev=0.07 (2.5%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/12 (151 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/13, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=7.47   median=7.44   min=7.35   stddev=0.14 (1.9%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/13 (253 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/14, where GetParam() = (1920x1080, 8UC3)
+[ PERFSTAT ]    (samples=25   mean=7.13   median=7.20   min=6.59   stddev=0.21 (3.0%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/14 (360 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/15, where GetParam() = (1920x1080, 32FC3)
+[ PERFSTAT ]    (samples=38   mean=10.52   median=10.51   min=10.40   stddev=0.10 (1.0%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/15 (997 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/16, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=50   mean=8.75   median=8.77   min=8.60   stddev=0.08 (0.9%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/16 (743 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/17, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=34.47   median=34.46   min=33.96   stddev=0.35 (1.0%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/17 (966 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/18, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=9.90   median=9.90   min=9.73   stddev=0.13 (1.4%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/18 (377 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/19, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=63   mean=13.33   median=13.29   min=13.24   stddev=0.12 (0.9%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/19 (1596 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/20, where GetParam() = (3840x2160, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=14.54   median=10.40   min=9.84   stddev=5.63 (38.7%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/20 (2263 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/21, where GetParam() = (3840x2160, 32FC3)
+[ PERFSTAT ]    (samples=75   mean=36.63   median=36.46   min=36.28   stddev=0.99 (2.7%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/21 (3792 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/22, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=10   mean=13.60   median=13.72   min=13.09   stddev=0.26 (1.9%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/22 (969 ms)
+[ RUN      ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/23, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=25   mean=48.24   median=48.22   min=48.01   stddev=0.12 (0.2%))
+[       OK ] OCL_BitwiseXorFixture_Bitwise_xor.Bitwise_xor/23 (3317 ms)
+[----------] 24 tests from OCL_BitwiseXorFixture_Bitwise_xor (69460 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (69460 ms total)
+[  PASSED  ] 24 tests.

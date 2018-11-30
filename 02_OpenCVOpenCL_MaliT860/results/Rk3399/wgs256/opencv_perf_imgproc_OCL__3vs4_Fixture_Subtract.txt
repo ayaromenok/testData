@@ -1,0 +1,141 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 256
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 256
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 256
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL__3vs4_Fixture_Subtract*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL__3vs4_Fixture_Subtract
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/0, where GetParam() = (640x480, 8UC3, Pure)
+[ PERFSTAT ]    (samples=14   mean=3.86   median=3.85   min=3.67   stddev=0.11 (3.0%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/0 (102 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/1, where GetParam() = (640x480, 8UC3, Split)
+[ PERFSTAT ]    (samples=100   mean=21.95   median=22.33   min=14.15   stddev=1.53 (7.0%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/1 (2254 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/2, where GetParam() = (640x480, 8UC3, Convert)
+[ PERFSTAT ]    (samples=100   mean=11.89   median=12.12   min=9.01   stddev=0.76 (6.4%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/2 (1398 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/3, where GetParam() = (640x480, 32FC3, Pure)
+[ PERFSTAT ]    (samples=63   mean=5.46   median=5.41   min=5.24   stddev=0.16 (2.9%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/3 (460 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/4, where GetParam() = (640x480, 32FC3, Split)
+[ PERFSTAT ]    (samples=25   mean=25.02   median=25.13   min=22.06   stddev=0.65 (2.6%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/4 (794 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/5, where GetParam() = (640x480, 32FC3, Convert)
+[ PERFSTAT ]    (samples=75   mean=13.10   median=13.07   min=12.75   stddev=0.18 (1.3%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/5 (1200 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/6, where GetParam() = (1280x720, 8UC3, Pure)
+[ PERFSTAT ]    (samples=100   mean=11.67   median=11.97   min=9.78   stddev=0.63 (5.4%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/6 (1264 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/7, where GetParam() = (1280x720, 8UC3, Split)
+[ PERFSTAT ]    (samples=10   mean=51.82   median=52.14   min=48.70   stddev=1.12 (2.2%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/7 (603 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/8, where GetParam() = (1280x720, 8UC3, Convert)
+[ PERFSTAT ]    (samples=28   mean=25.19   median=25.37   min=22.66   stddev=0.75 (3.0%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/8 (800 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/9, where GetParam() = (1280x720, 32FC3, Pure)
+[ PERFSTAT ]    (samples=100   mean=13.44   median=12.77   min=12.15   stddev=1.22 (9.1%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/9 (1551 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/10, where GetParam() = (1280x720, 32FC3, Split)
+[ PERFSTAT ]    (samples=10   mean=62.15   median=62.60   min=58.84   stddev=1.20 (1.9%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/10 (765 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/11, where GetParam() = (1280x720, 32FC3, Convert)
+[ PERFSTAT ]    (samples=25   mean=29.10   median=28.97   min=28.55   stddev=0.68 (2.3%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/11 (934 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/12, where GetParam() = (1920x1080, 8UC3, Pure)
+[ PERFSTAT ]    (samples=13   mean=24.37   median=24.55   min=22.82   stddev=0.55 (2.3%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/12 (473 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/13, where GetParam() = (1920x1080, 8UC3, Split)
+[ PERFSTAT ]    (samples=10   mean=107.15   median=107.46   min=104.11   stddev=1.10 (1.0%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/13 (1228 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/14, where GetParam() = (1920x1080, 8UC3, Convert)
+[ PERFSTAT ]    (samples=10   mean=50.03   median=50.38   min=47.62   stddev=0.89 (1.8%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/14 (654 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/15, where GetParam() = (1920x1080, 32FC3, Pure)
+[ PERFSTAT ]    (samples=10   mean=31.18   median=31.02   min=30.79   stddev=0.41 (1.3%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/15 (673 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/16, where GetParam() = (1920x1080, 32FC3, Split)
+[ PERFSTAT ]    (samples=25   mean=38.95   median=38.93   min=38.70   stddev=0.11 (0.3%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/16 (1428 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/17, where GetParam() = (1920x1080, 32FC3, Convert)
+[ PERFSTAT ]    (samples=38   mean=28.42   median=28.42   min=28.34   stddev=0.06 (0.2%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/17 (1569 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/18, where GetParam() = (3840x2160, 8UC3, Pure)
+[ PERFSTAT ]    (samples=100   mean=28.87   median=26.00   min=24.18   stddev=9.35 (32.4%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/18 (3675 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/19, where GetParam() = (3840x2160, 8UC3, Split)
+.
+[ PERFSTAT ]    (samples=100   mean=171.88   median=173.76   min=120.73   stddev=8.69 (5.1%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/19 (17901 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/20, where GetParam() = (3840x2160, 8UC3, Convert)
+[ PERFSTAT ]    (samples=25   mean=51.21   median=51.21   min=51.08   stddev=0.09 (0.2%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/20 (1916 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/21, where GetParam() = (3840x2160, 32FC3, Pure)
+[ PERFSTAT ]    (samples=75   mean=32.53   median=32.55   min=32.25   stddev=0.13 (0.4%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/21 (3886 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/22, where GetParam() = (3840x2160, 32FC3, Split)
+[ PERFSTAT ]    (samples=25   mean=138.35   median=138.45   min=137.07   stddev=0.43 (0.3%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/22 (4722 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/23, where GetParam() = (3840x2160, 32FC3, Convert)
+[ PERFSTAT ]    (samples=50   mean=101.05   median=100.87   min=100.67   stddev=1.04 (1.0%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/23 (6378 ms)
+[----------] 24 tests from OCL__3vs4_Fixture_Subtract (56647 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (56647 ms total)
+[  PASSED  ] 24 tests.

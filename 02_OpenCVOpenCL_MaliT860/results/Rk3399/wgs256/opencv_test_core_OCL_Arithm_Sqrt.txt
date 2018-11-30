@@ -1,0 +1,99 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 256
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 256
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 256
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_Arithm/Sqrt*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_Arithm/Sqrt
+[ RUN      ] OCL_Arithm/Sqrt.Mat/0, where GetParam() = (CV_32F, Channels(1), false)
+[       OK ] OCL_Arithm/Sqrt.Mat/0 (51 ms)
+[ RUN      ] OCL_Arithm/Sqrt.Mat/1, where GetParam() = (CV_32F, Channels(1), true)
+[       OK ] OCL_Arithm/Sqrt.Mat/1 (10 ms)
+[ RUN      ] OCL_Arithm/Sqrt.Mat/2, where GetParam() = (CV_32F, Channels(2), false)
+[       OK ] OCL_Arithm/Sqrt.Mat/2 (8 ms)
+[ RUN      ] OCL_Arithm/Sqrt.Mat/3, where GetParam() = (CV_32F, Channels(2), true)
+[       OK ] OCL_Arithm/Sqrt.Mat/3 (4 ms)
+[ RUN      ] OCL_Arithm/Sqrt.Mat/4, where GetParam() = (CV_32F, Channels(3), false)
+[       OK ] OCL_Arithm/Sqrt.Mat/4 (5 ms)
+[ RUN      ] OCL_Arithm/Sqrt.Mat/5, where GetParam() = (CV_32F, Channels(3), true)
+[       OK ] OCL_Arithm/Sqrt.Mat/5 (7 ms)
+[ RUN      ] OCL_Arithm/Sqrt.Mat/6, where GetParam() = (CV_32F, Channels(4), false)
+[       OK ] OCL_Arithm/Sqrt.Mat/6 (5 ms)
+[ RUN      ] OCL_Arithm/Sqrt.Mat/7, where GetParam() = (CV_32F, Channels(4), true)
+[       OK ] OCL_Arithm/Sqrt.Mat/7 (10 ms)
+[ RUN      ] OCL_Arithm/Sqrt.Mat/8, where GetParam() = (CV_64F, Channels(1), false)
+[       OK ] OCL_Arithm/Sqrt.Mat/8 (32 ms)
+[ RUN      ] OCL_Arithm/Sqrt.Mat/9, where GetParam() = (CV_64F, Channels(1), true)
+[       OK ] OCL_Arithm/Sqrt.Mat/9 (9 ms)
+[ RUN      ] OCL_Arithm/Sqrt.Mat/10, where GetParam() = (CV_64F, Channels(2), false)
+[       OK ] OCL_Arithm/Sqrt.Mat/10 (4 ms)
+[ RUN      ] OCL_Arithm/Sqrt.Mat/11, where GetParam() = (CV_64F, Channels(2), true)
+[       OK ] OCL_Arithm/Sqrt.Mat/11 (10 ms)
+[ RUN      ] OCL_Arithm/Sqrt.Mat/12, where GetParam() = (CV_64F, Channels(3), false)
+[       OK ] OCL_Arithm/Sqrt.Mat/12 (4 ms)
+[ RUN      ] OCL_Arithm/Sqrt.Mat/13, where GetParam() = (CV_64F, Channels(3), true)
+[       OK ] OCL_Arithm/Sqrt.Mat/13 (13 ms)
+[ RUN      ] OCL_Arithm/Sqrt.Mat/14, where GetParam() = (CV_64F, Channels(4), false)
+[       OK ] OCL_Arithm/Sqrt.Mat/14 (6 ms)
+[ RUN      ] OCL_Arithm/Sqrt.Mat/15, where GetParam() = (CV_64F, Channels(4), true)
+[       OK ] OCL_Arithm/Sqrt.Mat/15 (17 ms)
+[----------] 16 tests from OCL_Arithm/Sqrt (200 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (202 ms total)
+[  PASSED  ] 16 tests.
