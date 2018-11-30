@@ -1,0 +1,179 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_Channels/Merge*
+[==========] Running 56 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 56 tests from OCL_Channels/Merge
+[ RUN      ] OCL_Channels/Merge.Accuracy/0, where GetParam() = (CV_8U, 1, false)
+[       OK ] OCL_Channels/Merge.Accuracy/0 (50 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/1, where GetParam() = (CV_8U, 1, true)
+[       OK ] OCL_Channels/Merge.Accuracy/1 (7 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/2, where GetParam() = (CV_8U, 2, false)
+[       OK ] OCL_Channels/Merge.Accuracy/2 (18 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/3, where GetParam() = (CV_8U, 2, true)
+[       OK ] OCL_Channels/Merge.Accuracy/3 (4 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/4, where GetParam() = (CV_8U, 3, false)
+[       OK ] OCL_Channels/Merge.Accuracy/4 (20 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/5, where GetParam() = (CV_8U, 3, true)
+[       OK ] OCL_Channels/Merge.Accuracy/5 (4 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/6, where GetParam() = (CV_8U, 4, false)
+[       OK ] OCL_Channels/Merge.Accuracy/6 (23 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/7, where GetParam() = (CV_8U, 4, true)
+[       OK ] OCL_Channels/Merge.Accuracy/7 (8 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/8, where GetParam() = (CV_8S, 1, false)
+[       OK ] OCL_Channels/Merge.Accuracy/8 (15 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/9, where GetParam() = (CV_8S, 1, true)
+[       OK ] OCL_Channels/Merge.Accuracy/9 (5 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/10, where GetParam() = (CV_8S, 2, false)
+[       OK ] OCL_Channels/Merge.Accuracy/10 (17 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/11, where GetParam() = (CV_8S, 2, true)
+[       OK ] OCL_Channels/Merge.Accuracy/11 (5 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/12, where GetParam() = (CV_8S, 3, false)
+[       OK ] OCL_Channels/Merge.Accuracy/12 (20 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/13, where GetParam() = (CV_8S, 3, true)
+[       OK ] OCL_Channels/Merge.Accuracy/13 (6 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/14, where GetParam() = (CV_8S, 4, false)
+[       OK ] OCL_Channels/Merge.Accuracy/14 (25 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/15, where GetParam() = (CV_8S, 4, true)
+[       OK ] OCL_Channels/Merge.Accuracy/15 (7 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/16, where GetParam() = (CV_16U, 1, false)
+[       OK ] OCL_Channels/Merge.Accuracy/16 (15 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/17, where GetParam() = (CV_16U, 1, true)
+[       OK ] OCL_Channels/Merge.Accuracy/17 (5 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/18, where GetParam() = (CV_16U, 2, false)
+[       OK ] OCL_Channels/Merge.Accuracy/18 (17 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/19, where GetParam() = (CV_16U, 2, true)
+[       OK ] OCL_Channels/Merge.Accuracy/19 (6 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/20, where GetParam() = (CV_16U, 3, false)
+[       OK ] OCL_Channels/Merge.Accuracy/20 (22 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/21, where GetParam() = (CV_16U, 3, true)
+[       OK ] OCL_Channels/Merge.Accuracy/21 (7 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/22, where GetParam() = (CV_16U, 4, false)
+[       OK ] OCL_Channels/Merge.Accuracy/22 (28 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/23, where GetParam() = (CV_16U, 4, true)
+[       OK ] OCL_Channels/Merge.Accuracy/23 (9 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/24, where GetParam() = (CV_16S, 1, false)
+[       OK ] OCL_Channels/Merge.Accuracy/24 (18 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/25, where GetParam() = (CV_16S, 1, true)
+[       OK ] OCL_Channels/Merge.Accuracy/25 (5 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/26, where GetParam() = (CV_16S, 2, false)
+[       OK ] OCL_Channels/Merge.Accuracy/26 (22 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/27, where GetParam() = (CV_16S, 2, true)
+[       OK ] OCL_Channels/Merge.Accuracy/27 (5 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/28, where GetParam() = (CV_16S, 3, false)
+[       OK ] OCL_Channels/Merge.Accuracy/28 (26 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/29, where GetParam() = (CV_16S, 3, true)
+[       OK ] OCL_Channels/Merge.Accuracy/29 (8 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/30, where GetParam() = (CV_16S, 4, false)
+[       OK ] OCL_Channels/Merge.Accuracy/30 (34 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/31, where GetParam() = (CV_16S, 4, true)
+[       OK ] OCL_Channels/Merge.Accuracy/31 (8 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/32, where GetParam() = (CV_32S, 1, false)
+[       OK ] OCL_Channels/Merge.Accuracy/32 (24 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/33, where GetParam() = (CV_32S, 1, true)
+[       OK ] OCL_Channels/Merge.Accuracy/33 (5 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/34, where GetParam() = (CV_32S, 2, false)
+[       OK ] OCL_Channels/Merge.Accuracy/34 (27 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/35, where GetParam() = (CV_32S, 2, true)
+[       OK ] OCL_Channels/Merge.Accuracy/35 (11 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/36, where GetParam() = (CV_32S, 3, false)
+[       OK ] OCL_Channels/Merge.Accuracy/36 (30 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/37, where GetParam() = (CV_32S, 3, true)
+[       OK ] OCL_Channels/Merge.Accuracy/37 (8 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/38, where GetParam() = (CV_32S, 4, false)
+[       OK ] OCL_Channels/Merge.Accuracy/38 (33 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/39, where GetParam() = (CV_32S, 4, true)
+[       OK ] OCL_Channels/Merge.Accuracy/39 (11 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/40, where GetParam() = (CV_32F, 1, false)
+[       OK ] OCL_Channels/Merge.Accuracy/40 (6 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/41, where GetParam() = (CV_32F, 1, true)
+[       OK ] OCL_Channels/Merge.Accuracy/41 (6 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/42, where GetParam() = (CV_32F, 2, false)
+[       OK ] OCL_Channels/Merge.Accuracy/42 (6 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/43, where GetParam() = (CV_32F, 2, true)
+[       OK ] OCL_Channels/Merge.Accuracy/43 (8 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/44, where GetParam() = (CV_32F, 3, false)
+[       OK ] OCL_Channels/Merge.Accuracy/44 (9 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/45, where GetParam() = (CV_32F, 3, true)
+[       OK ] OCL_Channels/Merge.Accuracy/45 (18 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/46, where GetParam() = (CV_32F, 4, false)
+[       OK ] OCL_Channels/Merge.Accuracy/46 (8 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/47, where GetParam() = (CV_32F, 4, true)
+[       OK ] OCL_Channels/Merge.Accuracy/47 (22 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/48, where GetParam() = (CV_64F, 1, false)
+[       OK ] OCL_Channels/Merge.Accuracy/48 (45 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/49, where GetParam() = (CV_64F, 1, true)
+[       OK ] OCL_Channels/Merge.Accuracy/49 (11 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/50, where GetParam() = (CV_64F, 2, false)
+[       OK ] OCL_Channels/Merge.Accuracy/50 (36 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/51, where GetParam() = (CV_64F, 2, true)
+[       OK ] OCL_Channels/Merge.Accuracy/51 (13 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/52, where GetParam() = (CV_64F, 3, false)
+[       OK ] OCL_Channels/Merge.Accuracy/52 (36 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/53, where GetParam() = (CV_64F, 3, true)
+[       OK ] OCL_Channels/Merge.Accuracy/53 (18 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/54, where GetParam() = (CV_64F, 4, false)
+[       OK ] OCL_Channels/Merge.Accuracy/54 (52 ms)
+[ RUN      ] OCL_Channels/Merge.Accuracy/55, where GetParam() = (CV_64F, 4, true)
+[       OK ] OCL_Channels/Merge.Accuracy/55 (28 ms)
+[----------] 56 tests from OCL_Channels/Merge (954 ms total)
+
+[----------] Global test environment tear-down
+[==========] 56 tests from 1 test case ran. (956 ms total)
+[  PASSED  ] 56 tests.

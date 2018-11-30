@@ -1,0 +1,851 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 32
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_Filter/Dilate*
+[==========] Running 320 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 320 tests from OCL_Filter/Dilate
+[ RUN      ] OCL_Filter/Dilate.Mat/0, where GetParam() = (8UC1, 0, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/0 (56 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/1, where GetParam() = (8UC1, 0, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/1 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/2, where GetParam() = (8UC1, 0, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/2 (37 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/3, where GetParam() = (8UC1, 0, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/3 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/4, where GetParam() = (8UC1, 0, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/4 (70 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/5, where GetParam() = (8UC1, 0, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/5 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/6, where GetParam() = (8UC1, 0, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/6 (1 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/7, where GetParam() = (8UC1, 0, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/7 (1 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/8, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/8 (22 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/9, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/9 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/10, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/10 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/11, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/11 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/12, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/12 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/13, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/13 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/14, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/14 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/15, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/15 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/16, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/16 (29 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/17, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/17 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/18, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/18 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/19, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/19 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/20, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/20 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/21, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/21 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/22, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 4, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/22 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/23, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 4, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/23 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/24, where GetParam() = (8UC1, 7, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/24 (38 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/25, where GetParam() = (8UC1, 7, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/25 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/26, where GetParam() = (8UC1, 7, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/26 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/27, where GetParam() = (8UC1, 7, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/27 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/28, where GetParam() = (8UC1, 7, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/28 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/29, where GetParam() = (8UC1, 7, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/29 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/30, where GetParam() = (8UC1, 7, 0x0, BORDER_CONSTANT, 4, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/30 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/31, where GetParam() = (8UC1, 7, 0x0, BORDER_CONSTANT, 4, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/31 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/32, where GetParam() = (8UC1, 9, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/32 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/33, where GetParam() = (8UC1, 9, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/33 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/34, where GetParam() = (8UC1, 9, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/34 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/35, where GetParam() = (8UC1, 9, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/35 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/36, where GetParam() = (8UC1, 9, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/36 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/37, where GetParam() = (8UC1, 9, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/37 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/38, where GetParam() = (8UC1, 9, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/38 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/39, where GetParam() = (8UC1, 9, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/39 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/40, where GetParam() = (8UC3, 0, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/40 (50 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/41, where GetParam() = (8UC3, 0, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/41 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/42, where GetParam() = (8UC3, 0, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/42 (78 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/43, where GetParam() = (8UC3, 0, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/43 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/44, where GetParam() = (8UC3, 0, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/44 (126 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/45, where GetParam() = (8UC3, 0, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/45 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/46, where GetParam() = (8UC3, 0, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/46 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/47, where GetParam() = (8UC3, 0, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/47 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/48, where GetParam() = (8UC3, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/48 (24 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/49, where GetParam() = (8UC3, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/49 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/50, where GetParam() = (8UC3, 3, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/50 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/51, where GetParam() = (8UC3, 3, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/51 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/52, where GetParam() = (8UC3, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/52 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/53, where GetParam() = (8UC3, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/53 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/54, where GetParam() = (8UC3, 3, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/54 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/55, where GetParam() = (8UC3, 3, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/55 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/56, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/56 (37 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/57, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/57 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/58, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/58 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/59, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/59 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/60, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/60 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/61, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/61 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/62, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 4, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/62 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/63, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 4, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/63 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/64, where GetParam() = (8UC3, 7, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/64 (97 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/65, where GetParam() = (8UC3, 7, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/65 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/66, where GetParam() = (8UC3, 7, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/66 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/67, where GetParam() = (8UC3, 7, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/67 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/68, where GetParam() = (8UC3, 7, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/68 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/69, where GetParam() = (8UC3, 7, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/69 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/70, where GetParam() = (8UC3, 7, 0x0, BORDER_CONSTANT, 4, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/70 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/71, where GetParam() = (8UC3, 7, 0x0, BORDER_CONSTANT, 4, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/71 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/72, where GetParam() = (8UC3, 9, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/72 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/73, where GetParam() = (8UC3, 9, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/73 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/74, where GetParam() = (8UC3, 9, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/74 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/75, where GetParam() = (8UC3, 9, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/75 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/76, where GetParam() = (8UC3, 9, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/76 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/77, where GetParam() = (8UC3, 9, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/77 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/78, where GetParam() = (8UC3, 9, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/78 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/79, where GetParam() = (8UC3, 9, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/79 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/80, where GetParam() = (8UC4, 0, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/80 (35 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/81, where GetParam() = (8UC4, 0, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/81 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/82, where GetParam() = (8UC4, 0, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/82 (45 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/83, where GetParam() = (8UC4, 0, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/83 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/84, where GetParam() = (8UC4, 0, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/84 (72 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/85, where GetParam() = (8UC4, 0, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/85 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/86, where GetParam() = (8UC4, 0, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/86 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/87, where GetParam() = (8UC4, 0, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/87 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/88, where GetParam() = (8UC4, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/88 (23 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/89, where GetParam() = (8UC4, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/89 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/90, where GetParam() = (8UC4, 3, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/90 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/91, where GetParam() = (8UC4, 3, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/91 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/92, where GetParam() = (8UC4, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/92 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/93, where GetParam() = (8UC4, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/93 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/94, where GetParam() = (8UC4, 3, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/94 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/95, where GetParam() = (8UC4, 3, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/95 (8 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/96, where GetParam() = (8UC4, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/96 (42 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/97, where GetParam() = (8UC4, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/97 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/98, where GetParam() = (8UC4, 5, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/98 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/99, where GetParam() = (8UC4, 5, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/99 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/100, where GetParam() = (8UC4, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/100 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/101, where GetParam() = (8UC4, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/101 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/102, where GetParam() = (8UC4, 5, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/102 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/103, where GetParam() = (8UC4, 5, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/103 (8 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/104, where GetParam() = (8UC4, 7, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/104 (56 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/105, where GetParam() = (8UC4, 7, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/105 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/106, where GetParam() = (8UC4, 7, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/106 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/107, where GetParam() = (8UC4, 7, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/107 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/108, where GetParam() = (8UC4, 7, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/108 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/109, where GetParam() = (8UC4, 7, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/109 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/110, where GetParam() = (8UC4, 7, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/110 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/111, where GetParam() = (8UC4, 7, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/111 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/112, where GetParam() = (8UC4, 9, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/112 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/113, where GetParam() = (8UC4, 9, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/113 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/114, where GetParam() = (8UC4, 9, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/114 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/115, where GetParam() = (8UC4, 9, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/115 (8 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/116, where GetParam() = (8UC4, 9, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/116 (9 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/117, where GetParam() = (8UC4, 9, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/117 (12 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/118, where GetParam() = (8UC4, 9, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/118 (10 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/119, where GetParam() = (8UC4, 9, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/119 (13 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/120, where GetParam() = (32FC1, 0, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/120 (71 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/121, where GetParam() = (32FC1, 0, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/121 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/122, where GetParam() = (32FC1, 0, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/122 (75 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/123, where GetParam() = (32FC1, 0, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/123 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/124, where GetParam() = (32FC1, 0, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/124 (133 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/125, where GetParam() = (32FC1, 0, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/125 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/126, where GetParam() = (32FC1, 0, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/126 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/127, where GetParam() = (32FC1, 0, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/127 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/128, where GetParam() = (32FC1, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/128 (44 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/129, where GetParam() = (32FC1, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/129 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/130, where GetParam() = (32FC1, 3, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/130 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/131, where GetParam() = (32FC1, 3, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/131 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/132, where GetParam() = (32FC1, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/132 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/133, where GetParam() = (32FC1, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/133 (10 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/134, where GetParam() = (32FC1, 3, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/134 (11 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/135, where GetParam() = (32FC1, 3, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/135 (12 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/136, where GetParam() = (32FC1, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/136 (80 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/137, where GetParam() = (32FC1, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/137 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/138, where GetParam() = (32FC1, 5, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/138 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/139, where GetParam() = (32FC1, 5, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/139 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/140, where GetParam() = (32FC1, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/140 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/141, where GetParam() = (32FC1, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/141 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/142, where GetParam() = (32FC1, 5, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/142 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/143, where GetParam() = (32FC1, 5, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/143 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/144, where GetParam() = (32FC1, 7, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/144 (94 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/145, where GetParam() = (32FC1, 7, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/145 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/146, where GetParam() = (32FC1, 7, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/146 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/147, where GetParam() = (32FC1, 7, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/147 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/148, where GetParam() = (32FC1, 7, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/148 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/149, where GetParam() = (32FC1, 7, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/149 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/150, where GetParam() = (32FC1, 7, 0x0, BORDER_CONSTANT, 4, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/150 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/151, where GetParam() = (32FC1, 7, 0x0, BORDER_CONSTANT, 4, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/151 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/152, where GetParam() = (32FC1, 9, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/152 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/153, where GetParam() = (32FC1, 9, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/153 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/154, where GetParam() = (32FC1, 9, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/154 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/155, where GetParam() = (32FC1, 9, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/155 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/156, where GetParam() = (32FC1, 9, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/156 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/157, where GetParam() = (32FC1, 9, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/157 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/158, where GetParam() = (32FC1, 9, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/158 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/159, where GetParam() = (32FC1, 9, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/159 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/160, where GetParam() = (32FC3, 0, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/160 (57 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/161, where GetParam() = (32FC3, 0, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/161 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/162, where GetParam() = (32FC3, 0, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/162 (92 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/163, where GetParam() = (32FC3, 0, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/163 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/164, where GetParam() = (32FC3, 0, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/164 (108 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/165, where GetParam() = (32FC3, 0, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/165 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/166, where GetParam() = (32FC3, 0, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/166 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/167, where GetParam() = (32FC3, 0, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/167 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/168, where GetParam() = (32FC3, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/168 (28 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/169, where GetParam() = (32FC3, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/169 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/170, where GetParam() = (32FC3, 3, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/170 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/171, where GetParam() = (32FC3, 3, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/171 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/172, where GetParam() = (32FC3, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/172 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/173, where GetParam() = (32FC3, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/173 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/174, where GetParam() = (32FC3, 3, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/174 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/175, where GetParam() = (32FC3, 3, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/175 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/176, where GetParam() = (32FC3, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/176 (67 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/177, where GetParam() = (32FC3, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/177 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/178, where GetParam() = (32FC3, 5, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/178 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/179, where GetParam() = (32FC3, 5, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/179 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/180, where GetParam() = (32FC3, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/180 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/181, where GetParam() = (32FC3, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/181 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/182, where GetParam() = (32FC3, 5, 0x0, BORDER_CONSTANT, 4, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/182 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/183, where GetParam() = (32FC3, 5, 0x0, BORDER_CONSTANT, 4, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/183 (14 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/184, where GetParam() = (32FC3, 7, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/184 (139 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/185, where GetParam() = (32FC3, 7, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/185 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/186, where GetParam() = (32FC3, 7, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/186 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/187, where GetParam() = (32FC3, 7, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/187 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/188, where GetParam() = (32FC3, 7, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/188 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/189, where GetParam() = (32FC3, 7, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/189 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/190, where GetParam() = (32FC3, 7, 0x0, BORDER_CONSTANT, 4, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/190 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/191, where GetParam() = (32FC3, 7, 0x0, BORDER_CONSTANT, 4, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/191 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/192, where GetParam() = (32FC3, 9, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/192 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/193, where GetParam() = (32FC3, 9, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/193 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/194, where GetParam() = (32FC3, 9, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/194 (1 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/195, where GetParam() = (32FC3, 9, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/195 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/196, where GetParam() = (32FC3, 9, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/196 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/197, where GetParam() = (32FC3, 9, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/197 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/198, where GetParam() = (32FC3, 9, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/198 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/199, where GetParam() = (32FC3, 9, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/199 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/200, where GetParam() = (32FC4, 0, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/200 (56 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/201, where GetParam() = (32FC4, 0, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/201 (9 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/202, where GetParam() = (32FC4, 0, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/202 (68 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/203, where GetParam() = (32FC4, 0, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/203 (9 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/204, where GetParam() = (32FC4, 0, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/204 (97 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/205, where GetParam() = (32FC4, 0, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/205 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/206, where GetParam() = (32FC4, 0, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/206 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/207, where GetParam() = (32FC4, 0, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/207 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/208, where GetParam() = (32FC4, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/208 (30 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/209, where GetParam() = (32FC4, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/209 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/210, where GetParam() = (32FC4, 3, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/210 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/211, where GetParam() = (32FC4, 3, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/211 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/212, where GetParam() = (32FC4, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/212 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/213, where GetParam() = (32FC4, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/213 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/214, where GetParam() = (32FC4, 3, 0x0, BORDER_CONSTANT, 4, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/214 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/215, where GetParam() = (32FC4, 3, 0x0, BORDER_CONSTANT, 4, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/215 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/216, where GetParam() = (32FC4, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/216 (52 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/217, where GetParam() = (32FC4, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/217 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/218, where GetParam() = (32FC4, 5, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/218 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/219, where GetParam() = (32FC4, 5, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/219 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/220, where GetParam() = (32FC4, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/220 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/221, where GetParam() = (32FC4, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/221 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/222, where GetParam() = (32FC4, 5, 0x0, BORDER_CONSTANT, 4, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/222 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/223, where GetParam() = (32FC4, 5, 0x0, BORDER_CONSTANT, 4, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/223 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/224, where GetParam() = (32FC4, 7, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/224 (60 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/225, where GetParam() = (32FC4, 7, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/225 (8 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/226, where GetParam() = (32FC4, 7, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/226 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/227, where GetParam() = (32FC4, 7, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/227 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/228, where GetParam() = (32FC4, 7, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/228 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/229, where GetParam() = (32FC4, 7, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/229 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/230, where GetParam() = (32FC4, 7, 0x0, BORDER_CONSTANT, 4, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/230 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/231, where GetParam() = (32FC4, 7, 0x0, BORDER_CONSTANT, 4, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/231 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/232, where GetParam() = (32FC4, 9, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/232 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/233, where GetParam() = (32FC4, 9, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/233 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/234, where GetParam() = (32FC4, 9, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/234 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/235, where GetParam() = (32FC4, 9, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/235 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/236, where GetParam() = (32FC4, 9, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/236 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/237, where GetParam() = (32FC4, 9, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/237 (12 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/238, where GetParam() = (32FC4, 9, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/238 (12 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/239, where GetParam() = (32FC4, 9, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/239 (15 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/240, where GetParam() = (64FC1, 0, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/240 (71 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/241, where GetParam() = (64FC1, 0, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/241 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/242, where GetParam() = (64FC1, 0, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/242 (82 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/243, where GetParam() = (64FC1, 0, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/243 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/244, where GetParam() = (64FC1, 0, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/244 (132 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/245, where GetParam() = (64FC1, 0, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/245 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/246, where GetParam() = (64FC1, 0, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/246 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/247, where GetParam() = (64FC1, 0, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/247 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/248, where GetParam() = (64FC1, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/248 (28 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/249, where GetParam() = (64FC1, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/249 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/250, where GetParam() = (64FC1, 3, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/250 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/251, where GetParam() = (64FC1, 3, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/251 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/252, where GetParam() = (64FC1, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/252 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/253, where GetParam() = (64FC1, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/253 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/254, where GetParam() = (64FC1, 3, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/254 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/255, where GetParam() = (64FC1, 3, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/255 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/256, where GetParam() = (64FC1, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/256 (38 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/257, where GetParam() = (64FC1, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/257 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/258, where GetParam() = (64FC1, 5, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/258 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/259, where GetParam() = (64FC1, 5, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/259 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/260, where GetParam() = (64FC1, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/260 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/261, where GetParam() = (64FC1, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/261 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/262, where GetParam() = (64FC1, 5, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/262 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/263, where GetParam() = (64FC1, 5, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/263 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/264, where GetParam() = (64FC1, 7, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/264 (67 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/265, where GetParam() = (64FC1, 7, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/265 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/266, where GetParam() = (64FC1, 7, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/266 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/267, where GetParam() = (64FC1, 7, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/267 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/268, where GetParam() = (64FC1, 7, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/268 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/269, where GetParam() = (64FC1, 7, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/269 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/270, where GetParam() = (64FC1, 7, 0x0, BORDER_CONSTANT, 4, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/270 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/271, where GetParam() = (64FC1, 7, 0x0, BORDER_CONSTANT, 4, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/271 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/272, where GetParam() = (64FC1, 9, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/272 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/273, where GetParam() = (64FC1, 9, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/273 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/274, where GetParam() = (64FC1, 9, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/274 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/275, where GetParam() = (64FC1, 9, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/275 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/276, where GetParam() = (64FC1, 9, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/276 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/277, where GetParam() = (64FC1, 9, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/277 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/278, where GetParam() = (64FC1, 9, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/278 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/279, where GetParam() = (64FC1, 9, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/279 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/280, where GetParam() = (64FC4, 0, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/280 (43 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/281, where GetParam() = (64FC4, 0, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/281 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/282, where GetParam() = (64FC4, 0, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/282 (65 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/283, where GetParam() = (64FC4, 0, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/283 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/284, where GetParam() = (64FC4, 0, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/284 (121 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/285, where GetParam() = (64FC4, 0, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/285 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/286, where GetParam() = (64FC4, 0, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/286 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/287, where GetParam() = (64FC4, 0, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/287 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/288, where GetParam() = (64FC4, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/288 (28 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/289, where GetParam() = (64FC4, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/289 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/290, where GetParam() = (64FC4, 3, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/290 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/291, where GetParam() = (64FC4, 3, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/291 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/292, where GetParam() = (64FC4, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/292 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/293, where GetParam() = (64FC4, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/293 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/294, where GetParam() = (64FC4, 3, 0x0, BORDER_CONSTANT, 4, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/294 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/295, where GetParam() = (64FC4, 3, 0x0, BORDER_CONSTANT, 4, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/295 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/296, where GetParam() = (64FC4, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/296 (40 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/297, where GetParam() = (64FC4, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/297 (5 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/298, where GetParam() = (64FC4, 5, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/298 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/299, where GetParam() = (64FC4, 5, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/299 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/300, where GetParam() = (64FC4, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/300 (1 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/301, where GetParam() = (64FC4, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/301 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/302, where GetParam() = (64FC4, 5, 0x0, BORDER_CONSTANT, 4, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/302 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/303, where GetParam() = (64FC4, 5, 0x0, BORDER_CONSTANT, 4, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/303 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/304, where GetParam() = (64FC4, 7, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/304 (57 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/305, where GetParam() = (64FC4, 7, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/305 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/306, where GetParam() = (64FC4, 7, 0x0, BORDER_CONSTANT, 2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/306 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/307, where GetParam() = (64FC4, 7, 0x0, BORDER_CONSTANT, 2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/307 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/308, where GetParam() = (64FC4, 7, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/308 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/309, where GetParam() = (64FC4, 7, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/309 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/310, where GetParam() = (64FC4, 7, 0x0, BORDER_CONSTANT, 4, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/310 (3 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/311, where GetParam() = (64FC4, 7, 0x0, BORDER_CONSTANT, 4, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/Dilate.Mat/311 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/312, where GetParam() = (64FC4, 9, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/312 (2 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/313, where GetParam() = (64FC4, 9, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/313 (7 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/314, where GetParam() = (64FC4, 9, 0x0, BORDER_CONSTANT, 2, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/314 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/315, where GetParam() = (64FC4, 9, 0x0, BORDER_CONSTANT, 2, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/315 (10 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/316, where GetParam() = (64FC4, 9, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/316 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/317, where GetParam() = (64FC4, 9, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/317 (6 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/318, where GetParam() = (64FC4, 9, 0x0, BORDER_CONSTANT, 4, false, 1)
+[       OK ] OCL_Filter/Dilate.Mat/318 (4 ms)
+[ RUN      ] OCL_Filter/Dilate.Mat/319, where GetParam() = (64FC4, 9, 0x0, BORDER_CONSTANT, 4, true, 1)
+[       OK ] OCL_Filter/Dilate.Mat/319 (7 ms)
+[----------] 320 tests from OCL_Filter/Dilate (4325 ms total)
+
+[----------] Global test environment tear-down
+[==========] 320 tests from 1 test case ran. (4327 ms total)
+[  PASSED  ] 320 tests.

@@ -1,0 +1,103 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_Filter/GaussianBlur_multicols*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_Filter/GaussianBlur_multicols
+[ RUN      ] OCL_Filter/GaussianBlur_multicols.Mat/0, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlur_multicols.Mat/0 (90 ms)
+[ RUN      ] OCL_Filter/GaussianBlur_multicols.Mat/1, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlur_multicols.Mat/1 (18 ms)
+[ RUN      ] OCL_Filter/GaussianBlur_multicols.Mat/2, where GetParam() = (8UC1, 3, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlur_multicols.Mat/2 (42 ms)
+[ RUN      ] OCL_Filter/GaussianBlur_multicols.Mat/3, where GetParam() = (8UC1, 3, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlur_multicols.Mat/3 (13 ms)
+[ RUN      ] OCL_Filter/GaussianBlur_multicols.Mat/4, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlur_multicols.Mat/4 (58 ms)
+[ RUN      ] OCL_Filter/GaussianBlur_multicols.Mat/5, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlur_multicols.Mat/5 (20 ms)
+[ RUN      ] OCL_Filter/GaussianBlur_multicols.Mat/6, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlur_multicols.Mat/6 (57 ms)
+[ RUN      ] OCL_Filter/GaussianBlur_multicols.Mat/7, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlur_multicols.Mat/7 (22 ms)
+[ RUN      ] OCL_Filter/GaussianBlur_multicols.Mat/8, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter_C1_D0', dims=2, globalsize=16x48x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlur_multicols.Mat/8 (49 ms)
+[ RUN      ] OCL_Filter/GaussianBlur_multicols.Mat/9, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlur_multicols.Mat/9 (39 ms)
+[ RUN      ] OCL_Filter/GaussianBlur_multicols.Mat/10, where GetParam() = (8UC1, 5, 0x0, BORDER_REPLICATE, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter_C1_D0', dims=2, globalsize=16x48x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlur_multicols.Mat/10 (46 ms)
+[ RUN      ] OCL_Filter/GaussianBlur_multicols.Mat/11, where GetParam() = (8UC1, 5, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlur_multicols.Mat/11 (17 ms)
+[ RUN      ] OCL_Filter/GaussianBlur_multicols.Mat/12, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter_C1_D0', dims=2, globalsize=16x48x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlur_multicols.Mat/12 (72 ms)
+[ RUN      ] OCL_Filter/GaussianBlur_multicols.Mat/13, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlur_multicols.Mat/13 (22 ms)
+[ RUN      ] OCL_Filter/GaussianBlur_multicols.Mat/14, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT_101, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter_C1_D0', dims=2, globalsize=16x48x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlur_multicols.Mat/14 (70 ms)
+[ RUN      ] OCL_Filter/GaussianBlur_multicols.Mat/15, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlur_multicols.Mat/15 (23 ms)
+[----------] 16 tests from OCL_Filter/GaussianBlur_multicols (660 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (662 ms total)
+[  PASSED  ] 16 tests.

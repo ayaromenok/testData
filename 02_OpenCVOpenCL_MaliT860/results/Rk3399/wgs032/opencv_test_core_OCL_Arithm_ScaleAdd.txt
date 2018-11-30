@@ -1,0 +1,179 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 32
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_Arithm/ScaleAdd*
+[==========] Running 56 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 56 tests from OCL_Arithm/ScaleAdd
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/0, where GetParam() = (CV_8U, Channels(1), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/0 (69 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/1, where GetParam() = (CV_8U, Channels(1), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/1 (6 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/2, where GetParam() = (CV_8U, Channels(2), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/2 (16 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/3, where GetParam() = (CV_8U, Channels(2), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/3 (6 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/4, where GetParam() = (CV_8U, Channels(3), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/4 (4 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/5, where GetParam() = (CV_8U, Channels(3), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/5 (4 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/6, where GetParam() = (CV_8U, Channels(4), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/6 (15 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/7, where GetParam() = (CV_8U, Channels(4), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/7 (4 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/8, where GetParam() = (CV_8S, Channels(1), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/8 (13 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/9, where GetParam() = (CV_8S, Channels(1), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/9 (4 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/10, where GetParam() = (CV_8S, Channels(2), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/10 (13 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/11, where GetParam() = (CV_8S, Channels(2), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/11 (5 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/12, where GetParam() = (CV_8S, Channels(3), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/12 (1 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/13, where GetParam() = (CV_8S, Channels(3), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/13 (5 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/14, where GetParam() = (CV_8S, Channels(4), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/14 (13 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/15, where GetParam() = (CV_8S, Channels(4), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/15 (6 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/16, where GetParam() = (CV_16U, Channels(1), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/16 (16 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/17, where GetParam() = (CV_16U, Channels(1), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/17 (7 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/18, where GetParam() = (CV_16U, Channels(2), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/18 (16 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/19, where GetParam() = (CV_16U, Channels(2), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/19 (14 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/20, where GetParam() = (CV_16U, Channels(3), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/20 (6 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/21, where GetParam() = (CV_16U, Channels(3), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/21 (7 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/22, where GetParam() = (CV_16U, Channels(4), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/22 (22 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/23, where GetParam() = (CV_16U, Channels(4), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/23 (8 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/24, where GetParam() = (CV_16S, Channels(1), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/24 (23 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/25, where GetParam() = (CV_16S, Channels(1), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/25 (7 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/26, where GetParam() = (CV_16S, Channels(2), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/26 (25 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/27, where GetParam() = (CV_16S, Channels(2), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/27 (10 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/28, where GetParam() = (CV_16S, Channels(3), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/28 (7 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/29, where GetParam() = (CV_16S, Channels(3), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/29 (8 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/30, where GetParam() = (CV_16S, Channels(4), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/30 (26 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/31, where GetParam() = (CV_16S, Channels(4), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/31 (8 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/32, where GetParam() = (CV_32S, Channels(1), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/32 (22 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/33, where GetParam() = (CV_32S, Channels(1), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/33 (7 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/34, where GetParam() = (CV_32S, Channels(2), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/34 (26 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/35, where GetParam() = (CV_32S, Channels(2), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/35 (8 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/36, where GetParam() = (CV_32S, Channels(3), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/36 (4 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/37, where GetParam() = (CV_32S, Channels(3), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/37 (7 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/38, where GetParam() = (CV_32S, Channels(4), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/38 (25 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/39, where GetParam() = (CV_32S, Channels(4), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/39 (13 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/40, where GetParam() = (CV_32F, Channels(1), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/40 (23 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/41, where GetParam() = (CV_32F, Channels(1), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/41 (13 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/42, where GetParam() = (CV_32F, Channels(2), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/42 (23 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/43, where GetParam() = (CV_32F, Channels(2), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/43 (11 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/44, where GetParam() = (CV_32F, Channels(3), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/44 (4 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/45, where GetParam() = (CV_32F, Channels(3), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/45 (36 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/46, where GetParam() = (CV_32F, Channels(4), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/46 (37 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/47, where GetParam() = (CV_32F, Channels(4), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/47 (20 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/48, where GetParam() = (CV_64F, Channels(1), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/48 (31 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/49, where GetParam() = (CV_64F, Channels(1), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/49 (15 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/50, where GetParam() = (CV_64F, Channels(2), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/50 (30 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/51, where GetParam() = (CV_64F, Channels(2), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/51 (18 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/52, where GetParam() = (CV_64F, Channels(3), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/52 (4 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/53, where GetParam() = (CV_64F, Channels(3), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/53 (19 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/54, where GetParam() = (CV_64F, Channels(4), false)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/54 (4 ms)
+[ RUN      ] OCL_Arithm/ScaleAdd.Mat/55, where GetParam() = (CV_64F, Channels(4), true)
+[       OK ] OCL_Arithm/ScaleAdd.Mat/55 (33 ms)
+[----------] 56 tests from OCL_Arithm/ScaleAdd (833 ms total)
+
+[----------] Global test environment tear-down
+[==========] 56 tests from 1 test case ran. (835 ms total)
+[  PASSED  ] 56 tests.
