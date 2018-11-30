@@ -1,0 +1,403 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 128
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 128
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_Filter/GaussianBlurTest*
+[==========] Running 144 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 144 tests from OCL_Filter/GaussianBlurTest
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/0, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/0 (116 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/1, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/1 (12 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/2, where GetParam() = (8UC1, 3, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/2 (58 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/3, where GetParam() = (8UC1, 3, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/3 (10 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/4, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/4 (69 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/5, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/5 (7 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/6, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/6 (63 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/7, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/7 (10 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/8, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/8 (70 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/9, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/9 (4 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/10, where GetParam() = (8UC1, 5, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/10 (39 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/11, where GetParam() = (8UC1, 5, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/11 (4 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/12, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/12 (68 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/13, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/13 (5 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/14, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/14 (57 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/15, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/15 (3 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/16, where GetParam() = (8UC3, 3, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/16 (65 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/17, where GetParam() = (8UC3, 3, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/17 (4 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/18, where GetParam() = (8UC3, 3, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/18 (41 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/19, where GetParam() = (8UC3, 3, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/19 (6 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/20, where GetParam() = (8UC3, 3, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/20 (62 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/21, where GetParam() = (8UC3, 3, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/21 (7 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/22, where GetParam() = (8UC3, 3, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/22 (59 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/23, where GetParam() = (8UC3, 3, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/23 (10 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/24, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/24 (53 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/25, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/25 (4 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/26, where GetParam() = (8UC3, 5, 0x0, BORDER_REPLICATE, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/26 (50 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/27, where GetParam() = (8UC3, 5, 0x0, BORDER_REPLICATE, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/27 (7 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/28, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/28 (72 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/29, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/29 (10 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/30, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT_101, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/30 (69 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/31, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT_101, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/31 (12 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/32, where GetParam() = (8UC4, 3, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/32 (59 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/33, where GetParam() = (8UC4, 3, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/33 (6 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/34, where GetParam() = (8UC4, 3, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/34 (48 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/35, where GetParam() = (8UC4, 3, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/35 (8 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/36, where GetParam() = (8UC4, 3, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/36 (66 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/37, where GetParam() = (8UC4, 3, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/37 (9 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/38, where GetParam() = (8UC4, 3, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/38 (58 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/39, where GetParam() = (8UC4, 3, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/39 (10 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/40, where GetParam() = (8UC4, 5, 0x0, BORDER_CONSTANT, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/40 (62 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/41, where GetParam() = (8UC4, 5, 0x0, BORDER_CONSTANT, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/41 (8 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/42, where GetParam() = (8UC4, 5, 0x0, BORDER_REPLICATE, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/42 (68 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/43, where GetParam() = (8UC4, 5, 0x0, BORDER_REPLICATE, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/43 (8 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/44, where GetParam() = (8UC4, 5, 0x0, BORDER_REFLECT, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/44 (60 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/45, where GetParam() = (8UC4, 5, 0x0, BORDER_REFLECT, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/45 (10 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/46, where GetParam() = (8UC4, 5, 0x0, BORDER_REFLECT_101, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/46 (71 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/47, where GetParam() = (8UC4, 5, 0x0, BORDER_REFLECT_101, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/47 (11 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/48, where GetParam() = (16UC1, 3, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/48 (54 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/49, where GetParam() = (16UC1, 3, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/49 (4 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/50, where GetParam() = (16UC1, 3, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/50 (36 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/51, where GetParam() = (16UC1, 3, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/51 (5 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/52, where GetParam() = (16UC1, 3, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/52 (60 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/53, where GetParam() = (16UC1, 3, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/53 (9 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/54, where GetParam() = (16UC1, 3, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/54 (60 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/55, where GetParam() = (16UC1, 3, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/55 (7 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/56, where GetParam() = (16UC1, 5, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/56 (60 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/57, where GetParam() = (16UC1, 5, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/57 (5 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/58, where GetParam() = (16UC1, 5, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/58 (38 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/59, where GetParam() = (16UC1, 5, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/59 (6 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/60, where GetParam() = (16UC1, 5, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/60 (62 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/61, where GetParam() = (16UC1, 5, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/61 (3 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/62, where GetParam() = (16UC1, 5, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/62 (64 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/63, where GetParam() = (16UC1, 5, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/63 (5 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/64, where GetParam() = (16UC3, 3, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/64 (57 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/65, where GetParam() = (16UC3, 3, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/65 (7 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/66, where GetParam() = (16UC3, 3, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/66 (45 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/67, where GetParam() = (16UC3, 3, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/67 (15 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/68, where GetParam() = (16UC3, 3, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/68 (57 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/69, where GetParam() = (16UC3, 3, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/69 (5 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/70, where GetParam() = (16UC3, 3, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/70 (49 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/71, where GetParam() = (16UC3, 3, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/71 (5 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/72, where GetParam() = (16UC3, 5, 0x0, BORDER_CONSTANT, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/72 (44 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/73, where GetParam() = (16UC3, 5, 0x0, BORDER_CONSTANT, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/73 (4 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/74, where GetParam() = (16UC3, 5, 0x0, BORDER_REPLICATE, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/74 (40 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/75, where GetParam() = (16UC3, 5, 0x0, BORDER_REPLICATE, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/75 (4 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/76, where GetParam() = (16UC3, 5, 0x0, BORDER_REFLECT, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/76 (56 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/77, where GetParam() = (16UC3, 5, 0x0, BORDER_REFLECT, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/77 (6 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/78, where GetParam() = (16UC3, 5, 0x0, BORDER_REFLECT_101, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/78 (52 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/79, where GetParam() = (16UC3, 5, 0x0, BORDER_REFLECT_101, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/79 (5 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/80, where GetParam() = (16UC4, 3, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/80 (48 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/81, where GetParam() = (16UC4, 3, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/81 (10 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/82, where GetParam() = (16UC4, 3, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/82 (35 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/83, where GetParam() = (16UC4, 3, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/83 (5 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/84, where GetParam() = (16UC4, 3, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/84 (44 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/85, where GetParam() = (16UC4, 3, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/85 (5 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/86, where GetParam() = (16UC4, 3, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/86 (57 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/87, where GetParam() = (16UC4, 3, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/87 (10 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/88, where GetParam() = (16UC4, 5, 0x0, BORDER_CONSTANT, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/88 (56 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/89, where GetParam() = (16UC4, 5, 0x0, BORDER_CONSTANT, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/89 (8 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/90, where GetParam() = (16UC4, 5, 0x0, BORDER_REPLICATE, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/90 (42 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/91, where GetParam() = (16UC4, 5, 0x0, BORDER_REPLICATE, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/91 (6 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/92, where GetParam() = (16UC4, 5, 0x0, BORDER_REFLECT, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/92 (69 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/93, where GetParam() = (16UC4, 5, 0x0, BORDER_REFLECT, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/93 (5 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/94, where GetParam() = (16UC4, 5, 0x0, BORDER_REFLECT_101, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/94 (62 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/95, where GetParam() = (16UC4, 5, 0x0, BORDER_REFLECT_101, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/95 (8 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/96, where GetParam() = (32FC1, 3, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/96 (59 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/97, where GetParam() = (32FC1, 3, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/97 (4 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/98, where GetParam() = (32FC1, 3, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/98 (41 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/99, where GetParam() = (32FC1, 3, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/99 (5 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/100, where GetParam() = (32FC1, 3, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/100 (58 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/101, where GetParam() = (32FC1, 3, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/101 (5 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/102, where GetParam() = (32FC1, 3, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/102 (59 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/103, where GetParam() = (32FC1, 3, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/103 (12 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/104, where GetParam() = (32FC1, 5, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/104 (73 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/105, where GetParam() = (32FC1, 5, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/105 (5 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/106, where GetParam() = (32FC1, 5, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/106 (48 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/107, where GetParam() = (32FC1, 5, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/107 (6 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/108, where GetParam() = (32FC1, 5, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/108 (71 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/109, where GetParam() = (32FC1, 5, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/109 (12 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/110, where GetParam() = (32FC1, 5, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/110 (57 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/111, where GetParam() = (32FC1, 5, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/111 (7 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/112, where GetParam() = (32FC3, 3, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/112 (67 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/113, where GetParam() = (32FC3, 3, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/113 (15 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/114, where GetParam() = (32FC3, 3, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/114 (35 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/115, where GetParam() = (32FC3, 3, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/115 (7 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/116, where GetParam() = (32FC3, 3, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/116 (51 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/117, where GetParam() = (32FC3, 3, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/117 (10 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/118, where GetParam() = (32FC3, 3, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/118 (46 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/119, where GetParam() = (32FC3, 3, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/119 (7 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/120, where GetParam() = (32FC3, 5, 0x0, BORDER_CONSTANT, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/120 (45 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/121, where GetParam() = (32FC3, 5, 0x0, BORDER_CONSTANT, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/121 (7 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/122, where GetParam() = (32FC3, 5, 0x0, BORDER_REPLICATE, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/122 (38 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/123, where GetParam() = (32FC3, 5, 0x0, BORDER_REPLICATE, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/123 (5 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/124, where GetParam() = (32FC3, 5, 0x0, BORDER_REFLECT, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/124 (56 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/125, where GetParam() = (32FC3, 5, 0x0, BORDER_REFLECT, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/125 (6 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/126, where GetParam() = (32FC3, 5, 0x0, BORDER_REFLECT_101, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/126 (52 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/127, where GetParam() = (32FC3, 5, 0x0, BORDER_REFLECT_101, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/127 (4 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/128, where GetParam() = (32FC4, 3, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/128 (49 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/129, where GetParam() = (32FC4, 3, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/129 (6 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/130, where GetParam() = (32FC4, 3, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/130 (31 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/131, where GetParam() = (32FC4, 3, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/131 (6 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/132, where GetParam() = (32FC4, 3, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/132 (47 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/133, where GetParam() = (32FC4, 3, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/133 (7 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/134, where GetParam() = (32FC4, 3, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/134 (45 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/135, where GetParam() = (32FC4, 3, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/135 (8 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/136, where GetParam() = (32FC4, 5, 0x0, BORDER_CONSTANT, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/136 (41 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/137, where GetParam() = (32FC4, 5, 0x0, BORDER_CONSTANT, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/137 (7 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/138, where GetParam() = (32FC4, 5, 0x0, BORDER_REPLICATE, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/138 (36 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/139, where GetParam() = (32FC4, 5, 0x0, BORDER_REPLICATE, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/139 (5 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/140, where GetParam() = (32FC4, 5, 0x0, BORDER_REFLECT, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/140 (57 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/141, where GetParam() = (32FC4, 5, 0x0, BORDER_REFLECT, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/141 (9 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/142, where GetParam() = (32FC4, 5, 0x0, BORDER_REFLECT_101, 0, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/142 (52 ms)
+[ RUN      ] OCL_Filter/GaussianBlurTest.Mat/143, where GetParam() = (32FC4, 5, 0x0, BORDER_REFLECT_101, 0, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/GaussianBlurTest.Mat/143 (6 ms)
+[----------] 144 tests from OCL_Filter/GaussianBlurTest (4500 ms total)
+
+[----------] Global test environment tear-down
+[==========] 144 tests from 1 test case ran. (4502 ms total)
+[  PASSED  ] 144 tests.

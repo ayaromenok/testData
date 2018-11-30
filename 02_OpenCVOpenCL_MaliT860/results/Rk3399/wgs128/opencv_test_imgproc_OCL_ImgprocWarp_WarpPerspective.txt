@@ -1,0 +1,238 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 128
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 128
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_ImgprocWarp/WarpPerspective*
+[==========] Running 84 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 72 tests from OCL_ImgprocWarp/WarpPerspective
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/0, where GetParam() = (8UC1, INTER_NEAREST, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/0 (64 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/1, where GetParam() = (8UC1, INTER_NEAREST, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/1 (11 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/2, where GetParam() = (8UC1, INTER_NEAREST, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/2 (5 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/3, where GetParam() = (8UC1, INTER_NEAREST, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/3 (6 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/4, where GetParam() = (8UC1, INTER_LINEAR, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/4 (32 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/5, where GetParam() = (8UC1, INTER_LINEAR, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/5 (2 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/6, where GetParam() = (8UC1, INTER_LINEAR, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/6 (2 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/7, where GetParam() = (8UC1, INTER_LINEAR, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/7 (2 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/8, where GetParam() = (8UC1, INTER_CUBIC, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/8 (49 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/9, where GetParam() = (8UC1, INTER_CUBIC, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/9 (6 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/10, where GetParam() = (8UC1, INTER_CUBIC, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/10 (4 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/11, where GetParam() = (8UC1, INTER_CUBIC, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/11 (2 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/12, where GetParam() = (8UC3, INTER_NEAREST, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/12 (20 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/13, where GetParam() = (8UC3, INTER_NEAREST, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/13 (7 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/14, where GetParam() = (8UC3, INTER_NEAREST, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/14 (2 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/15, where GetParam() = (8UC3, INTER_NEAREST, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/15 (6 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/16, where GetParam() = (8UC3, INTER_LINEAR, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/16 (37 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/17, where GetParam() = (8UC3, INTER_LINEAR, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/17 (3 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/18, where GetParam() = (8UC3, INTER_LINEAR, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/18 (2 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/19, where GetParam() = (8UC3, INTER_LINEAR, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/19 (2 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/20, where GetParam() = (8UC3, INTER_CUBIC, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/20 (41 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/21, where GetParam() = (8UC3, INTER_CUBIC, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/21 (5 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/22, where GetParam() = (8UC3, INTER_CUBIC, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/22 (3 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/23, where GetParam() = (8UC3, INTER_CUBIC, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/23 (3 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/24, where GetParam() = (8UC4, INTER_NEAREST, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/24 (22 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/25, where GetParam() = (8UC4, INTER_NEAREST, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/25 (9 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/26, where GetParam() = (8UC4, INTER_NEAREST, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/26 (5 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/27, where GetParam() = (8UC4, INTER_NEAREST, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/27 (7 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/28, where GetParam() = (8UC4, INTER_LINEAR, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/28 (36 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/29, where GetParam() = (8UC4, INTER_LINEAR, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/29 (7 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/30, where GetParam() = (8UC4, INTER_LINEAR, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/30 (3 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/31, where GetParam() = (8UC4, INTER_LINEAR, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/31 (5 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/32, where GetParam() = (8UC4, INTER_CUBIC, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/32 (42 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/33, where GetParam() = (8UC4, INTER_CUBIC, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/33 (5 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/34, where GetParam() = (8UC4, INTER_CUBIC, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/34 (3 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/35, where GetParam() = (8UC4, INTER_CUBIC, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/35 (7 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/36, where GetParam() = (32FC1, INTER_NEAREST, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/36 (20 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/37, where GetParam() = (32FC1, INTER_NEAREST, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/37 (6 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/38, where GetParam() = (32FC1, INTER_NEAREST, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/38 (4 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/39, where GetParam() = (32FC1, INTER_NEAREST, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/39 (7 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/40, where GetParam() = (32FC1, INTER_LINEAR, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/40 (29 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/41, where GetParam() = (32FC1, INTER_LINEAR, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/41 (8 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/42, where GetParam() = (32FC1, INTER_LINEAR, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/42 (4 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/43, where GetParam() = (32FC1, INTER_LINEAR, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/43 (4 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/44, where GetParam() = (32FC1, INTER_CUBIC, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/44 (39 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/45, where GetParam() = (32FC1, INTER_CUBIC, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/45 (10 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/46, where GetParam() = (32FC1, INTER_CUBIC, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/46 (25 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/47, where GetParam() = (32FC1, INTER_CUBIC, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/47 (8 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/48, where GetParam() = (32FC3, INTER_NEAREST, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/48 (37 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/49, where GetParam() = (32FC3, INTER_NEAREST, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/49 (11 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/50, where GetParam() = (32FC3, INTER_NEAREST, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/50 (3 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/51, where GetParam() = (32FC3, INTER_NEAREST, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/51 (10 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/52, where GetParam() = (32FC3, INTER_LINEAR, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/52 (46 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/53, where GetParam() = (32FC3, INTER_LINEAR, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/53 (8 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/54, where GetParam() = (32FC3, INTER_LINEAR, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/54 (4 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/55, where GetParam() = (32FC3, INTER_LINEAR, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/55 (7 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/56, where GetParam() = (32FC3, INTER_CUBIC, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/56 (53 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/57, where GetParam() = (32FC3, INTER_CUBIC, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/57 (8 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/58, where GetParam() = (32FC3, INTER_CUBIC, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/58 (3 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/59, where GetParam() = (32FC3, INTER_CUBIC, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/59 (6 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/60, where GetParam() = (32FC4, INTER_NEAREST, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/60 (21 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/61, where GetParam() = (32FC4, INTER_NEAREST, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/61 (10 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/62, where GetParam() = (32FC4, INTER_NEAREST, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/62 (3 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/63, where GetParam() = (32FC4, INTER_NEAREST, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/63 (9 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/64, where GetParam() = (32FC4, INTER_LINEAR, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/64 (42 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/65, where GetParam() = (32FC4, INTER_LINEAR, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/65 (10 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/66, where GetParam() = (32FC4, INTER_LINEAR, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/66 (3 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/67, where GetParam() = (32FC4, INTER_LINEAR, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/67 (9 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/68, where GetParam() = (32FC4, INTER_CUBIC, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/68 (49 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/69, where GetParam() = (32FC4, INTER_CUBIC, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/69 (10 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/70, where GetParam() = (32FC4, INTER_CUBIC, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/70 (18 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective.Mat/71, where GetParam() = (32FC4, INTER_CUBIC, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective.Mat/71 (12 ms)
+[----------] 72 tests from OCL_ImgprocWarp/WarpPerspective (1038 ms total)
+
+[----------] 12 tests from OCL_ImgprocWarp/WarpPerspective_cols4
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/0, where GetParam() = (8UC1, INTER_NEAREST, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/0 (3 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/1, where GetParam() = (8UC1, INTER_NEAREST, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/1 (3 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/2, where GetParam() = (8UC1, INTER_NEAREST, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/2 (2 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/3, where GetParam() = (8UC1, INTER_NEAREST, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/3 (3 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/4, where GetParam() = (8UC1, INTER_LINEAR, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/4 (2 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/5, where GetParam() = (8UC1, INTER_LINEAR, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/5 (4 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/6, where GetParam() = (8UC1, INTER_LINEAR, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/6 (3 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/7, where GetParam() = (8UC1, INTER_LINEAR, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/7 (4 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/8, where GetParam() = (8UC1, INTER_CUBIC, false, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/8 (3 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/9, where GetParam() = (8UC1, INTER_CUBIC, false, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/9 (4 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/10, where GetParam() = (8UC1, INTER_CUBIC, true, false)
+[       OK ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/10 (3 ms)
+[ RUN      ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/11, where GetParam() = (8UC1, INTER_CUBIC, true, true)
+[       OK ] OCL_ImgprocWarp/WarpPerspective_cols4.Mat/11 (4 ms)
+[----------] 12 tests from OCL_ImgprocWarp/WarpPerspective_cols4 (39 ms total)
+
+[----------] Global test environment tear-down
+[==========] 84 tests from 2 test cases ran. (1079 ms total)
+[  PASSED  ] 84 tests.

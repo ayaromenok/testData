@@ -1,0 +1,227 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 128
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 128
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_Filter/Bilateral*
+[==========] Running 80 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 80 tests from OCL_Filter/Bilateral
+[ RUN      ] OCL_Filter/Bilateral.Mat/0, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/0 (87 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/1, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/1 (9 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/2, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/2 (8 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/3, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/3 (9 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/4, where GetParam() = (8UC1, 5, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/4 (26 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/5, where GetParam() = (8UC1, 5, 0x0, BORDER_REPLICATE, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/5 (8 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/6, where GetParam() = (8UC1, 5, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/6 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/7, where GetParam() = (8UC1, 5, 0x0, BORDER_REPLICATE, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/7 (5 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/8, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/8 (31 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/9, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/9 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/10, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/10 (5 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/11, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/11 (5 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/12, where GetParam() = (8UC1, 5, 0x0, BORDER_WRAP, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/12 (30 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/13, where GetParam() = (8UC1, 5, 0x0, BORDER_WRAP, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/13 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/14, where GetParam() = (8UC1, 5, 0x0, BORDER_WRAP, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/14 (14 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/15, where GetParam() = (8UC1, 5, 0x0, BORDER_WRAP, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/15 (8 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/16, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/16 (48 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/17, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT_101, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/17 (4 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/18, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/18 (4 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/19, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT_101, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/19 (4 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/20, where GetParam() = (8UC1, 9, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/20 (34 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/21, where GetParam() = (8UC1, 9, 0x0, BORDER_CONSTANT, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/21 (3 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/22, where GetParam() = (8UC1, 9, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/22 (4 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/23, where GetParam() = (8UC1, 9, 0x0, BORDER_CONSTANT, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/23 (4 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/24, where GetParam() = (8UC1, 9, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/24 (3 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/25, where GetParam() = (8UC1, 9, 0x0, BORDER_REPLICATE, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/25 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/26, where GetParam() = (8UC1, 9, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/26 (10 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/27, where GetParam() = (8UC1, 9, 0x0, BORDER_REPLICATE, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/27 (11 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/28, where GetParam() = (8UC1, 9, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/28 (12 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/29, where GetParam() = (8UC1, 9, 0x0, BORDER_REFLECT, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/29 (10 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/30, where GetParam() = (8UC1, 9, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/30 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/31, where GetParam() = (8UC1, 9, 0x0, BORDER_REFLECT, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/31 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/32, where GetParam() = (8UC1, 9, 0x0, BORDER_WRAP, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/32 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/33, where GetParam() = (8UC1, 9, 0x0, BORDER_WRAP, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/33 (5 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/34, where GetParam() = (8UC1, 9, 0x0, BORDER_WRAP, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/34 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/35, where GetParam() = (8UC1, 9, 0x0, BORDER_WRAP, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/35 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/36, where GetParam() = (8UC1, 9, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/36 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/37, where GetParam() = (8UC1, 9, 0x0, BORDER_REFLECT_101, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/37 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/38, where GetParam() = (8UC1, 9, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/38 (7 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/39, where GetParam() = (8UC1, 9, 0x0, BORDER_REFLECT_101, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/39 (8 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/40, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/40 (81 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/41, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/41 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/42, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/42 (7 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/43, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/43 (7 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/44, where GetParam() = (8UC3, 5, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/44 (55 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/45, where GetParam() = (8UC3, 5, 0x0, BORDER_REPLICATE, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/45 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/46, where GetParam() = (8UC3, 5, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/46 (5 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/47, where GetParam() = (8UC3, 5, 0x0, BORDER_REPLICATE, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/47 (5 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/48, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/48 (58 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/49, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/49 (9 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/50, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/50 (9 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/51, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/51 (10 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/52, where GetParam() = (8UC3, 5, 0x0, BORDER_WRAP, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/52 (65 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/53, where GetParam() = (8UC3, 5, 0x0, BORDER_WRAP, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/53 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/54, where GetParam() = (8UC3, 5, 0x0, BORDER_WRAP, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/54 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/55, where GetParam() = (8UC3, 5, 0x0, BORDER_WRAP, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/55 (5 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/56, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/56 (59 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/57, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT_101, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/57 (4 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/58, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/58 (5 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/59, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT_101, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/59 (5 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/60, where GetParam() = (8UC3, 9, 0x0, BORDER_CONSTANT, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/60 (30 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/61, where GetParam() = (8UC3, 9, 0x0, BORDER_CONSTANT, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/61 (4 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/62, where GetParam() = (8UC3, 9, 0x0, BORDER_CONSTANT, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/62 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/63, where GetParam() = (8UC3, 9, 0x0, BORDER_CONSTANT, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/63 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/64, where GetParam() = (8UC3, 9, 0x0, BORDER_REPLICATE, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/64 (4 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/65, where GetParam() = (8UC3, 9, 0x0, BORDER_REPLICATE, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/65 (4 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/66, where GetParam() = (8UC3, 9, 0x0, BORDER_REPLICATE, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/66 (5 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/67, where GetParam() = (8UC3, 9, 0x0, BORDER_REPLICATE, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/67 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/68, where GetParam() = (8UC3, 9, 0x0, BORDER_REFLECT, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/68 (5 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/69, where GetParam() = (8UC3, 9, 0x0, BORDER_REFLECT, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/69 (5 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/70, where GetParam() = (8UC3, 9, 0x0, BORDER_REFLECT, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/70 (5 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/71, where GetParam() = (8UC3, 9, 0x0, BORDER_REFLECT, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/71 (7 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/72, where GetParam() = (8UC3, 9, 0x0, BORDER_WRAP, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/72 (6 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/73, where GetParam() = (8UC3, 9, 0x0, BORDER_WRAP, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/73 (5 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/74, where GetParam() = (8UC3, 9, 0x0, BORDER_WRAP, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/74 (4 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/75, where GetParam() = (8UC3, 9, 0x0, BORDER_WRAP, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/75 (5 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/76, where GetParam() = (8UC3, 9, 0x0, BORDER_REFLECT_101, 0, false, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/76 (56262 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/77, where GetParam() = (8UC3, 9, 0x0, BORDER_REFLECT_101, 0, false, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/77 (13 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/78, where GetParam() = (8UC3, 9, 0x0, BORDER_REFLECT_101, 0, true, 1)
+[       OK ] OCL_Filter/Bilateral.Mat/78 (14 ms)
+[ RUN      ] OCL_Filter/Bilateral.Mat/79, where GetParam() = (8UC3, 9, 0x0, BORDER_REFLECT_101, 0, true, 4)
+[       OK ] OCL_Filter/Bilateral.Mat/79 (15 ms)
+[----------] 80 tests from OCL_Filter/Bilateral (57321 ms total)
+
+[----------] Global test environment tear-down
+[==========] 80 tests from 1 test case ran. (57323 ms total)
+[  PASSED  ] 80 tests.

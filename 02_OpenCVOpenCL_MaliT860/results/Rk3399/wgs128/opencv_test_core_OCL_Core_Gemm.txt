@@ -1,0 +1,195 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 128
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 128
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_Core/Gemm*
+[==========] Running 64 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 64 tests from OCL_Core/Gemm
+[ RUN      ] OCL_Core/Gemm.Accuracy/0, where GetParam() = (32FC1, false, false, false, false)
+[       OK ] OCL_Core/Gemm.Accuracy/0 (75 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/1, where GetParam() = (32FC1, false, false, false, true)
+[       OK ] OCL_Core/Gemm.Accuracy/1 (12 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/2, where GetParam() = (32FC1, false, false, true, false)
+[       OK ] OCL_Core/Gemm.Accuracy/2 (35 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/3, where GetParam() = (32FC1, false, false, true, true)
+[       OK ] OCL_Core/Gemm.Accuracy/3 (9 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/4, where GetParam() = (32FC1, false, true, false, false)
+[       OK ] OCL_Core/Gemm.Accuracy/4 (38 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/5, where GetParam() = (32FC1, false, true, false, true)
+[       OK ] OCL_Core/Gemm.Accuracy/5 (40 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/6, where GetParam() = (32FC1, false, true, true, false)
+[       OK ] OCL_Core/Gemm.Accuracy/6 (8 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/7, where GetParam() = (32FC1, false, true, true, true)
+[       OK ] OCL_Core/Gemm.Accuracy/7 (6 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/8, where GetParam() = (32FC1, true, false, false, false)
+[       OK ] OCL_Core/Gemm.Accuracy/8 (5 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/9, where GetParam() = (32FC1, true, false, false, true)
+[       OK ] OCL_Core/Gemm.Accuracy/9 (9 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/10, where GetParam() = (32FC1, true, false, true, false)
+[       OK ] OCL_Core/Gemm.Accuracy/10 (8 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/11, where GetParam() = (32FC1, true, false, true, true)
+[       OK ] OCL_Core/Gemm.Accuracy/11 (10 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/12, where GetParam() = (32FC1, true, true, false, false)
+[       OK ] OCL_Core/Gemm.Accuracy/12 (8 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/13, where GetParam() = (32FC1, true, true, false, true)
+[       OK ] OCL_Core/Gemm.Accuracy/13 (12 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/14, where GetParam() = (32FC1, true, true, true, false)
+[       OK ] OCL_Core/Gemm.Accuracy/14 (8 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/15, where GetParam() = (32FC1, true, true, true, true)
+[       OK ] OCL_Core/Gemm.Accuracy/15 (9 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/16, where GetParam() = (32FC2, false, false, false, false)
+[       OK ] OCL_Core/Gemm.Accuracy/16 (38 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/17, where GetParam() = (32FC2, false, false, false, true)
+[       OK ] OCL_Core/Gemm.Accuracy/17 (16 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/18, where GetParam() = (32FC2, false, false, true, false)
+[       OK ] OCL_Core/Gemm.Accuracy/18 (30 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/19, where GetParam() = (32FC2, false, false, true, true)
+[       OK ] OCL_Core/Gemm.Accuracy/19 (11 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/20, where GetParam() = (32FC2, false, true, false, false)
+[       OK ] OCL_Core/Gemm.Accuracy/20 (35 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/21, where GetParam() = (32FC2, false, true, false, true)
+[       OK ] OCL_Core/Gemm.Accuracy/21 (13 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/22, where GetParam() = (32FC2, false, true, true, false)
+[       OK ] OCL_Core/Gemm.Accuracy/22 (11 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/23, where GetParam() = (32FC2, false, true, true, true)
+[       OK ] OCL_Core/Gemm.Accuracy/23 (11 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/24, where GetParam() = (32FC2, true, false, false, false)
+[       OK ] OCL_Core/Gemm.Accuracy/24 (11 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/25, where GetParam() = (32FC2, true, false, false, true)
+[       OK ] OCL_Core/Gemm.Accuracy/25 (17 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/26, where GetParam() = (32FC2, true, false, true, false)
+[       OK ] OCL_Core/Gemm.Accuracy/26 (12 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/27, where GetParam() = (32FC2, true, false, true, true)
+[       OK ] OCL_Core/Gemm.Accuracy/27 (20 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/28, where GetParam() = (32FC2, true, true, false, false)
+[       OK ] OCL_Core/Gemm.Accuracy/28 (12 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/29, where GetParam() = (32FC2, true, true, false, true)
+[       OK ] OCL_Core/Gemm.Accuracy/29 (19 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/30, where GetParam() = (32FC2, true, true, true, false)
+[       OK ] OCL_Core/Gemm.Accuracy/30 (13 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/31, where GetParam() = (32FC2, true, true, true, true)
+[       OK ] OCL_Core/Gemm.Accuracy/31 (16 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/32, where GetParam() = (64FC1, false, false, false, false)
+[       OK ] OCL_Core/Gemm.Accuracy/32 (65 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/33, where GetParam() = (64FC1, false, false, false, true)
+[       OK ] OCL_Core/Gemm.Accuracy/33 (18 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/34, where GetParam() = (64FC1, false, false, true, false)
+[       OK ] OCL_Core/Gemm.Accuracy/34 (55 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/35, where GetParam() = (64FC1, false, false, true, true)
+[       OK ] OCL_Core/Gemm.Accuracy/35 (16 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/36, where GetParam() = (64FC1, false, true, false, false)
+[       OK ] OCL_Core/Gemm.Accuracy/36 (13 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/37, where GetParam() = (64FC1, false, true, false, true)
+[       OK ] OCL_Core/Gemm.Accuracy/37 (22 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/38, where GetParam() = (64FC1, false, true, true, false)
+[       OK ] OCL_Core/Gemm.Accuracy/38 (10 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/39, where GetParam() = (64FC1, false, true, true, true)
+[       OK ] OCL_Core/Gemm.Accuracy/39 (16 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/40, where GetParam() = (64FC1, true, false, false, false)
+[       OK ] OCL_Core/Gemm.Accuracy/40 (11 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/41, where GetParam() = (64FC1, true, false, false, true)
+[       OK ] OCL_Core/Gemm.Accuracy/41 (19 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/42, where GetParam() = (64FC1, true, false, true, false)
+[       OK ] OCL_Core/Gemm.Accuracy/42 (10 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/43, where GetParam() = (64FC1, true, false, true, true)
+[       OK ] OCL_Core/Gemm.Accuracy/43 (16 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/44, where GetParam() = (64FC1, true, true, false, false)
+[       OK ] OCL_Core/Gemm.Accuracy/44 (9 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/45, where GetParam() = (64FC1, true, true, false, true)
+[       OK ] OCL_Core/Gemm.Accuracy/45 (49068 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/46, where GetParam() = (64FC1, true, true, true, false)
+[       OK ] OCL_Core/Gemm.Accuracy/46 (22 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/47, where GetParam() = (64FC1, true, true, true, true)
+[       OK ] OCL_Core/Gemm.Accuracy/47 (33 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/48, where GetParam() = (64FC2, false, false, false, false)
+[       OK ] OCL_Core/Gemm.Accuracy/48 (79 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/49, where GetParam() = (64FC2, false, false, false, true)
+[       OK ] OCL_Core/Gemm.Accuracy/49 (33 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/50, where GetParam() = (64FC2, false, false, true, false)
+[       OK ] OCL_Core/Gemm.Accuracy/50 (68 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/51, where GetParam() = (64FC2, false, false, true, true)
+[       OK ] OCL_Core/Gemm.Accuracy/51 (25 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/52, where GetParam() = (64FC2, false, true, false, false)
+[       OK ] OCL_Core/Gemm.Accuracy/52 (11 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/53, where GetParam() = (64FC2, false, true, false, true)
+[       OK ] OCL_Core/Gemm.Accuracy/53 (32 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/54, where GetParam() = (64FC2, false, true, true, false)
+[       OK ] OCL_Core/Gemm.Accuracy/54 (14 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/55, where GetParam() = (64FC2, false, true, true, true)
+[       OK ] OCL_Core/Gemm.Accuracy/55 (26 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/56, where GetParam() = (64FC2, true, false, false, false)
+[       OK ] OCL_Core/Gemm.Accuracy/56 (16 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/57, where GetParam() = (64FC2, true, false, false, true)
+[       OK ] OCL_Core/Gemm.Accuracy/57 (33 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/58, where GetParam() = (64FC2, true, false, true, false)
+[       OK ] OCL_Core/Gemm.Accuracy/58 (20 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/59, where GetParam() = (64FC2, true, false, true, true)
+[       OK ] OCL_Core/Gemm.Accuracy/59 (35 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/60, where GetParam() = (64FC2, true, true, false, false)
+[       OK ] OCL_Core/Gemm.Accuracy/60 (16 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/61, where GetParam() = (64FC2, true, true, false, true)
+[       OK ] OCL_Core/Gemm.Accuracy/61 (35 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/62, where GetParam() = (64FC2, true, true, true, false)
+[       OK ] OCL_Core/Gemm.Accuracy/62 (19 ms)
+[ RUN      ] OCL_Core/Gemm.Accuracy/63, where GetParam() = (64FC2, true, true, true, true)
+[       OK ] OCL_Core/Gemm.Accuracy/63 (32 ms)
+[----------] 64 tests from OCL_Core/Gemm (50494 ms total)
+
+[----------] Global test environment tear-down
+[==========] 64 tests from 1 test case ran. (50496 ms total)
+[  PASSED  ] 64 tests.
