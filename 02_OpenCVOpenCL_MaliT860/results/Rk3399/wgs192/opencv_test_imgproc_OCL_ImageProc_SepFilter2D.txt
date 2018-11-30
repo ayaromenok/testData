@@ -1,0 +1,395 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_ImageProc/SepFilter2D*
+[==========] Running 128 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 128 tests from OCL_ImageProc/SepFilter2D
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/0, where GetParam() = (CV_8U, Channels(1), BORDER_CONSTANT, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter_C1_D0', dims=2, globalsize=16x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/0 (133 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/1, where GetParam() = (CV_8U, Channels(1), BORDER_CONSTANT, false, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/1 (56 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/2, where GetParam() = (CV_8U, Channels(1), BORDER_CONSTANT, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter_C1_D0', dims=2, globalsize=16x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/2 (113 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/3, where GetParam() = (CV_8U, Channels(1), BORDER_CONSTANT, true, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/3 (39 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/4, where GetParam() = (CV_8U, Channels(1), BORDER_REPLICATE, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter_C1_D0', dims=2, globalsize=16x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/4 (91 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/5, where GetParam() = (CV_8U, Channels(1), BORDER_REPLICATE, false, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/5 (34 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/6, where GetParam() = (CV_8U, Channels(1), BORDER_REPLICATE, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter_C1_D0', dims=2, globalsize=16x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/6 (108 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/7, where GetParam() = (CV_8U, Channels(1), BORDER_REPLICATE, true, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/7 (42 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/8, where GetParam() = (CV_8U, Channels(1), BORDER_REFLECT, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter_C1_D0', dims=2, globalsize=16x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/8 (147 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/9, where GetParam() = (CV_8U, Channels(1), BORDER_REFLECT, false, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/9 (42 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/10, where GetParam() = (CV_8U, Channels(1), BORDER_REFLECT, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter_C1_D0', dims=2, globalsize=16x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/10 (125 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/11, where GetParam() = (CV_8U, Channels(1), BORDER_REFLECT, true, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/11 (35 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/12, where GetParam() = (CV_8U, Channels(1), BORDER_REFLECT_101, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter_C1_D0', dims=2, globalsize=16x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/12 (121 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/13, where GetParam() = (CV_8U, Channels(1), BORDER_REFLECT_101, false, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/13 (49 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/14, where GetParam() = (CV_8U, Channels(1), BORDER_REFLECT_101, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter_C1_D0', dims=2, globalsize=16x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/14 (129 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/15, where GetParam() = (CV_8U, Channels(1), BORDER_REFLECT_101, true, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/15 (41 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/16, where GetParam() = (CV_8U, Channels(2), BORDER_CONSTANT, false, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/16 (125 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/17, where GetParam() = (CV_8U, Channels(2), BORDER_CONSTANT, false, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/17 (27 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/18, where GetParam() = (CV_8U, Channels(2), BORDER_CONSTANT, true, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/18 (116 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/19, where GetParam() = (CV_8U, Channels(2), BORDER_CONSTANT, true, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/19 (36 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/20, where GetParam() = (CV_8U, Channels(2), BORDER_REPLICATE, false, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/20 (123 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/21, where GetParam() = (CV_8U, Channels(2), BORDER_REPLICATE, false, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/21 (47 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/22, where GetParam() = (CV_8U, Channels(2), BORDER_REPLICATE, true, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/22 (186 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/23, where GetParam() = (CV_8U, Channels(2), BORDER_REPLICATE, true, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/23 (45 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/24, where GetParam() = (CV_8U, Channels(2), BORDER_REFLECT, false, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/24 (197 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/25, where GetParam() = (CV_8U, Channels(2), BORDER_REFLECT, false, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/25 (36 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/26, where GetParam() = (CV_8U, Channels(2), BORDER_REFLECT, true, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/26 (148 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/27, where GetParam() = (CV_8U, Channels(2), BORDER_REFLECT, true, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/27 (29 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/28, where GetParam() = (CV_8U, Channels(2), BORDER_REFLECT_101, false, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/28 (126 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/29, where GetParam() = (CV_8U, Channels(2), BORDER_REFLECT_101, false, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/29 (32 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/30, where GetParam() = (CV_8U, Channels(2), BORDER_REFLECT_101, true, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/30 (147 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/31, where GetParam() = (CV_8U, Channels(2), BORDER_REFLECT_101, true, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/31 (29 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/32, where GetParam() = (CV_8U, Channels(3), BORDER_CONSTANT, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/32 (143 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/33, where GetParam() = (CV_8U, Channels(3), BORDER_CONSTANT, false, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/33 (42 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/34, where GetParam() = (CV_8U, Channels(3), BORDER_CONSTANT, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/34 (109 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/35, where GetParam() = (CV_8U, Channels(3), BORDER_CONSTANT, true, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/35 (43 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/36, where GetParam() = (CV_8U, Channels(3), BORDER_REPLICATE, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/36 (105 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/37, where GetParam() = (CV_8U, Channels(3), BORDER_REPLICATE, false, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/37 (46 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/38, where GetParam() = (CV_8U, Channels(3), BORDER_REPLICATE, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/38 (109 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/39, where GetParam() = (CV_8U, Channels(3), BORDER_REPLICATE, true, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/39 (43 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/40, where GetParam() = (CV_8U, Channels(3), BORDER_REFLECT, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/40 (149 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/41, where GetParam() = (CV_8U, Channels(3), BORDER_REFLECT, false, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/41 (37 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/42, where GetParam() = (CV_8U, Channels(3), BORDER_REFLECT, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/42 (129 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/43, where GetParam() = (CV_8U, Channels(3), BORDER_REFLECT, true, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/43 (37 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/44, where GetParam() = (CV_8U, Channels(3), BORDER_REFLECT_101, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/44 (133 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/45, where GetParam() = (CV_8U, Channels(3), BORDER_REFLECT_101, false, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/45 (45 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/46, where GetParam() = (CV_8U, Channels(3), BORDER_REFLECT_101, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/46 (156 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/47, where GetParam() = (CV_8U, Channels(3), BORDER_REFLECT_101, true, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/47 (41 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/48, where GetParam() = (CV_8U, Channels(4), BORDER_CONSTANT, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/48 (129 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/49, where GetParam() = (CV_8U, Channels(4), BORDER_CONSTANT, false, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/49 (55 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/50, where GetParam() = (CV_8U, Channels(4), BORDER_CONSTANT, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/50 (125 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/51, where GetParam() = (CV_8U, Channels(4), BORDER_CONSTANT, true, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/51 (56 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/52, where GetParam() = (CV_8U, Channels(4), BORDER_REPLICATE, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/52 (111 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/53, where GetParam() = (CV_8U, Channels(4), BORDER_REPLICATE, false, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/53 (49 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/54, where GetParam() = (CV_8U, Channels(4), BORDER_REPLICATE, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/54 (94 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/55, where GetParam() = (CV_8U, Channels(4), BORDER_REPLICATE, true, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/55 (44 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/56, where GetParam() = (CV_8U, Channels(4), BORDER_REFLECT, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/56 (126 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/57, where GetParam() = (CV_8U, Channels(4), BORDER_REFLECT, false, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/57 (53 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/58, where GetParam() = (CV_8U, Channels(4), BORDER_REFLECT, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/58 (150 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/59, where GetParam() = (CV_8U, Channels(4), BORDER_REFLECT, true, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/59 (50 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/60, where GetParam() = (CV_8U, Channels(4), BORDER_REFLECT_101, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/60 (132 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/61, where GetParam() = (CV_8U, Channels(4), BORDER_REFLECT_101, false, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/61 (46 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/62, where GetParam() = (CV_8U, Channels(4), BORDER_REFLECT_101, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/62 (146 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/63, where GetParam() = (CV_8U, Channels(4), BORDER_REFLECT_101, true, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/63 (47 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/64, where GetParam() = (CV_32F, Channels(1), BORDER_CONSTANT, false, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/64 (140 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/65, where GetParam() = (CV_32F, Channels(1), BORDER_CONSTANT, false, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/65 (32 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/66, where GetParam() = (CV_32F, Channels(1), BORDER_CONSTANT, true, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/66 (124 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/67, where GetParam() = (CV_32F, Channels(1), BORDER_CONSTANT, true, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/67 (31 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/68, where GetParam() = (CV_32F, Channels(1), BORDER_REPLICATE, false, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/68 (120 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/69, where GetParam() = (CV_32F, Channels(1), BORDER_REPLICATE, false, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/69 (32 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/70, where GetParam() = (CV_32F, Channels(1), BORDER_REPLICATE, true, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/70 (133 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/71, where GetParam() = (CV_32F, Channels(1), BORDER_REPLICATE, true, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/71 (34 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/72, where GetParam() = (CV_32F, Channels(1), BORDER_REFLECT, false, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/72 (247 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/73, where GetParam() = (CV_32F, Channels(1), BORDER_REFLECT, false, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/73 (28 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/74, where GetParam() = (CV_32F, Channels(1), BORDER_REFLECT, true, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/74 (156 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/75, where GetParam() = (CV_32F, Channels(1), BORDER_REFLECT, true, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/75 (26 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/76, where GetParam() = (CV_32F, Channels(1), BORDER_REFLECT_101, false, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/76 (159 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/77, where GetParam() = (CV_32F, Channels(1), BORDER_REFLECT_101, false, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/77 (33 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/78, where GetParam() = (CV_32F, Channels(1), BORDER_REFLECT_101, true, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/78 (185 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/79, where GetParam() = (CV_32F, Channels(1), BORDER_REFLECT_101, true, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/79 (30 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/80, where GetParam() = (CV_32F, Channels(2), BORDER_CONSTANT, false, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/80 (208 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/81, where GetParam() = (CV_32F, Channels(2), BORDER_CONSTANT, false, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/81 (68 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/82, where GetParam() = (CV_32F, Channels(2), BORDER_CONSTANT, true, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/82 (123 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/83, where GetParam() = (CV_32F, Channels(2), BORDER_CONSTANT, true, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/83 (52 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/84, where GetParam() = (CV_32F, Channels(2), BORDER_REPLICATE, false, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/84 (114 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/85, where GetParam() = (CV_32F, Channels(2), BORDER_REPLICATE, false, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/85 (53 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/86, where GetParam() = (CV_32F, Channels(2), BORDER_REPLICATE, true, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/86 (121 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/87, where GetParam() = (CV_32F, Channels(2), BORDER_REPLICATE, true, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/87 (49 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/88, where GetParam() = (CV_32F, Channels(2), BORDER_REFLECT, false, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/88 (166 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/89, where GetParam() = (CV_32F, Channels(2), BORDER_REFLECT, false, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/89 (54 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/90, where GetParam() = (CV_32F, Channels(2), BORDER_REFLECT, true, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/90 (152 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/91, where GetParam() = (CV_32F, Channels(2), BORDER_REFLECT, true, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/91 (51 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/92, where GetParam() = (CV_32F, Channels(2), BORDER_REFLECT_101, false, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/92 (141 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/93, where GetParam() = (CV_32F, Channels(2), BORDER_REFLECT_101, false, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/93 (48 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/94, where GetParam() = (CV_32F, Channels(2), BORDER_REFLECT_101, true, false)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/94 (155 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/95, where GetParam() = (CV_32F, Channels(2), BORDER_REFLECT_101, true, true)
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/95 (44 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/96, where GetParam() = (CV_32F, Channels(3), BORDER_CONSTANT, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/96 (140 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/97, where GetParam() = (CV_32F, Channels(3), BORDER_CONSTANT, false, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/97 (74 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/98, where GetParam() = (CV_32F, Channels(3), BORDER_CONSTANT, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/98 (153 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/99, where GetParam() = (CV_32F, Channels(3), BORDER_CONSTANT, true, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/99 (111 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/100, where GetParam() = (CV_32F, Channels(3), BORDER_REPLICATE, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/100 (167 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/101, where GetParam() = (CV_32F, Channels(3), BORDER_REPLICATE, false, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/101 (107 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/102, where GetParam() = (CV_32F, Channels(3), BORDER_REPLICATE, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/102 (156 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/103, where GetParam() = (CV_32F, Channels(3), BORDER_REPLICATE, true, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/103 (103 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/104, where GetParam() = (CV_32F, Channels(3), BORDER_REFLECT, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/104 (227 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/105, where GetParam() = (CV_32F, Channels(3), BORDER_REFLECT, false, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/105 (72 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/106, where GetParam() = (CV_32F, Channels(3), BORDER_REFLECT, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/106 (163 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/107, where GetParam() = (CV_32F, Channels(3), BORDER_REFLECT, true, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/107 (66 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/108, where GetParam() = (CV_32F, Channels(3), BORDER_REFLECT_101, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/108 (162 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/109, where GetParam() = (CV_32F, Channels(3), BORDER_REFLECT_101, false, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/109 (112 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/110, where GetParam() = (CV_32F, Channels(3), BORDER_REFLECT_101, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/110 (304 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/111, where GetParam() = (CV_32F, Channels(3), BORDER_REFLECT_101, true, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/111 (101 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/112, where GetParam() = (CV_32F, Channels(4), BORDER_CONSTANT, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/112 (253 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/113, where GetParam() = (CV_32F, Channels(4), BORDER_CONSTANT, false, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/113 (120 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/114, where GetParam() = (CV_32F, Channels(4), BORDER_CONSTANT, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/114 (169 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/115, where GetParam() = (CV_32F, Channels(4), BORDER_CONSTANT, true, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/115 (142 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/116, where GetParam() = (CV_32F, Channels(4), BORDER_REPLICATE, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/116 (181 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/117, where GetParam() = (CV_32F, Channels(4), BORDER_REPLICATE, false, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/117 (133 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/118, where GetParam() = (CV_32F, Channels(4), BORDER_REPLICATE, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/118 (184 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/119, where GetParam() = (CV_32F, Channels(4), BORDER_REPLICATE, true, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/119 (138 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/120, where GetParam() = (CV_32F, Channels(4), BORDER_REFLECT, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/120 (204 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/121, where GetParam() = (CV_32F, Channels(4), BORDER_REFLECT, false, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/121 (106 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/122, where GetParam() = (CV_32F, Channels(4), BORDER_REFLECT, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/122 (261 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/123, where GetParam() = (CV_32F, Channels(4), BORDER_REFLECT, true, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/123 (94 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/124, where GetParam() = (CV_32F, Channels(4), BORDER_REFLECT_101, false, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/124 (262 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/125, where GetParam() = (CV_32F, Channels(4), BORDER_REFLECT_101, false, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/125 (136 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/126, where GetParam() = (CV_32F, Channels(4), BORDER_REFLECT_101, true, false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/126 (229 ms)
+[ RUN      ] OCL_ImageProc/SepFilter2D.Mat/127, where GetParam() = (CV_32F, Channels(4), BORDER_REFLECT_101, true, true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=64x64x1, localsize=16x16x1) sync=false
+[       OK ] OCL_ImageProc/SepFilter2D.Mat/127 (107 ms)
+[----------] 128 tests from OCL_ImageProc/SepFilter2D (13606 ms total)
+
+[----------] Global test environment tear-down
+[==========] 128 tests from 1 test case ran. (13608 ms total)
+[  PASSED  ] 128 tests.
