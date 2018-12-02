@@ -1,0 +1,92 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_MagnitudeFixture_Magnitude*
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from OCL_MagnitudeFixture_Magnitude
+[ RUN      ] OCL_MagnitudeFixture_Magnitude.Magnitude/0, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=6.75   median=6.47   min=5.69   stddev=0.72 (10.7%))
+[       OK ] OCL_MagnitudeFixture_Magnitude.Magnitude/0 (802 ms)
+[ RUN      ] OCL_MagnitudeFixture_Magnitude.Magnitude/1, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=9.35   median=9.02   min=5.41   stddev=2.99 (32.0%))
+[       OK ] OCL_MagnitudeFixture_Magnitude.Magnitude/1 (1150 ms)
+[ RUN      ] OCL_MagnitudeFixture_Magnitude.Magnitude/2, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=6.88   median=6.04   min=4.47   stddev=2.54 (36.9%))
+[       OK ] OCL_MagnitudeFixture_Magnitude.Magnitude/2 (869 ms)
+[ RUN      ] OCL_MagnitudeFixture_Magnitude.Magnitude/3, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=16.43   median=16.20   min=14.99   stddev=1.24 (7.5%))
+[       OK ] OCL_MagnitudeFixture_Magnitude.Magnitude/3 (2053 ms)
+[ RUN      ] OCL_MagnitudeFixture_Magnitude.Magnitude/4, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=11.94   median=11.90   min=8.65   stddev=2.41 (20.2%))
+[       OK ] OCL_MagnitudeFixture_Magnitude.Magnitude/4 (1478 ms)
+[ RUN      ] OCL_MagnitudeFixture_Magnitude.Magnitude/5, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=25   mean=34.13   median=33.94   min=33.39   stddev=0.65 (1.9%))
+[       OK ] OCL_MagnitudeFixture_Magnitude.Magnitude/5 (1584 ms)
+[ RUN      ] OCL_MagnitudeFixture_Magnitude.Magnitude/6, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=25   mean=33.59   median=33.41   min=32.92   stddev=0.46 (1.4%))
+[       OK ] OCL_MagnitudeFixture_Magnitude.Magnitude/6 (1421 ms)
+[ RUN      ] OCL_MagnitudeFixture_Magnitude.Magnitude/7, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=35   mean=132.61   median=131.87   min=130.39   stddev=3.95 (3.0%))
+[       OK ] OCL_MagnitudeFixture_Magnitude.Magnitude/7 (7179 ms)
+[----------] 8 tests from OCL_MagnitudeFixture_Magnitude (16537 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (16539 ms total)
+[  PASSED  ] 8 tests.

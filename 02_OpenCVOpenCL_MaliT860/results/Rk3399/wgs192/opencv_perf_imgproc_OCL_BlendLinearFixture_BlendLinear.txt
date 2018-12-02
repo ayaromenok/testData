@@ -1,0 +1,140 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_BlendLinearFixture_BlendLinear*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_BlendLinearFixture_BlendLinear
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=6.85   median=6.64   min=4.94   stddev=1.08 (15.8%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/0 (782 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=7.84   median=7.53   min=6.76   stddev=0.87 (11.1%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/1 (899 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/2, where GetParam() = (640x480, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=10.84   median=10.44   min=9.00   stddev=1.46 (13.4%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/2 (1246 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/3, where GetParam() = (640x480, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=10.37   median=10.24   min=9.03   stddev=0.81 (7.8%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/3 (1204 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/4, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=12.50   median=12.35   min=10.45   stddev=0.99 (7.9%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/4 (1364 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/5, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=12.19   median=12.17   min=10.82   stddev=0.79 (6.5%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/5 (1409 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/6, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=13.90   median=11.26   min=8.21   stddev=4.63 (33.3%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/6 (1579 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/7, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=9.48   median=9.44   min=5.38   stddev=2.14 (22.6%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/7 (1129 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/8, where GetParam() = (1280x720, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=11.56   median=11.35   min=9.38   stddev=1.37 (11.9%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/8 (1442 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/9, where GetParam() = (1280x720, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=11.74   median=11.02   min=8.58   stddev=1.92 (16.4%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/9 (1550 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/10, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=10.20   median=9.71   min=8.73   stddev=1.21 (11.8%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/10 (1356 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/11, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=11.10   median=10.77   min=9.69   stddev=1.22 (11.0%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/11 (1576 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/12, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=14.82   median=14.66   min=10.06   stddev=1.82 (12.2%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/12 (1741 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/13, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=14.11   median=14.06   min=11.30   stddev=1.49 (10.5%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/13 (1780 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/14, where GetParam() = (1920x1080, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=18.50   median=17.47   min=15.32   stddev=2.64 (14.3%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/14 (2424 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/15, where GetParam() = (1920x1080, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=19.25   median=18.30   min=17.66   stddev=2.48 (12.9%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/15 (2735 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/16, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=20.54   median=20.12   min=18.53   stddev=1.43 (6.9%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/16 (2581 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/17, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=63   mean=22.36   median=22.20   min=21.50   stddev=0.66 (3.0%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/17 (2152 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/18, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=40   mean=42.45   median=42.45   min=36.72   stddev=1.27 (3.0%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/18 (2432 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/19, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=88   mean=44.93   median=44.97   min=42.55   stddev=1.24 (2.7%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/19 (5209 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/20, where GetParam() = (3840x2160, 8UC3)
+[ PERFSTAT ]    (samples=13   mean=65.23   median=65.37   min=61.47   stddev=1.43 (2.2%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/20 (1807 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/21, where GetParam() = (3840x2160, 32FC3)
+[ PERFSTAT ]    (samples=25   mean=68.25   median=68.11   min=67.55   stddev=0.59 (0.9%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/21 (3337 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/22, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=50   mean=77.28   median=77.31   min=74.78   stddev=0.59 (0.8%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/22 (5626 ms)
+[ RUN      ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/23, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=83.62   median=83.55   min=83.00   stddev=0.54 (0.7%))
+[       OK ] OCL_BlendLinearFixture_BlendLinear.BlendLinear/23 (3370 ms)
+[----------] 24 tests from OCL_BlendLinearFixture_BlendLinear (50737 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (50738 ms total)
+[  PASSED  ] 24 tests.

@@ -1,0 +1,116 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_ScaleAddFixture_ScaleAdd*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_ScaleAddFixture_ScaleAdd
+[ RUN      ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=2.59   median=2.40   min=1.50   stddev=0.53 (20.5%))
+[       OK ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/0 (345 ms)
+[ RUN      ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=3.28   median=2.99   min=2.61   stddev=0.58 (17.7%))
+[       OK ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/1 (453 ms)
+[ RUN      ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/2, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=4.54   median=4.43   min=3.53   stddev=0.69 (15.2%))
+[       OK ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/2 (527 ms)
+[ RUN      ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/3, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=6.98   median=7.30   min=4.94   stddev=1.31 (18.7%))
+[       OK ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/3 (876 ms)
+[ RUN      ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/4, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=3.75   median=3.63   min=2.97   stddev=0.60 (16.0%))
+[       OK ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/4 (485 ms)
+[ RUN      ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/5, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=5.51   median=5.14   min=4.12   stddev=1.17 (21.2%))
+[       OK ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/5 (694 ms)
+[ RUN      ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/6, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=9.63   median=9.43   min=8.46   stddev=0.65 (6.8%))
+[       OK ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/6 (1124 ms)
+[ RUN      ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/7, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=6.73   median=6.67   min=6.11   stddev=0.44 (6.6%))
+[       OK ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/7 (1027 ms)
+[ RUN      ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/8, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=6.68   median=6.33   min=5.42   stddev=0.84 (12.6%))
+[       OK ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/8 (820 ms)
+[ RUN      ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/9, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=8.74   median=8.37   min=7.63   stddev=0.96 (11.0%))
+[       OK ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/9 (1074 ms)
+[ RUN      ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/10, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=7.13   median=6.78   min=6.30   stddev=0.86 (12.1%))
+[       OK ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/10 (1098 ms)
+[ RUN      ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/11, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=13.14   median=12.97   min=12.28   stddev=0.67 (5.1%))
+[       OK ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/11 (2090 ms)
+[ RUN      ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/12, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=8.48   median=7.15   min=4.95   stddev=3.61 (42.5%))
+[       OK ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/12 (1315 ms)
+[ RUN      ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/13, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=50   mean=12.71   median=12.68   min=12.12   stddev=0.36 (2.8%))
+[       OK ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/13 (1351 ms)
+[ RUN      ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/14, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=38   mean=18.83   median=18.74   min=18.00   stddev=0.51 (2.7%))
+[       OK ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/14 (1408 ms)
+[ RUN      ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/15, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=47.73   median=47.70   min=46.96   stddev=0.55 (1.2%))
+[       OK ] OCL_ScaleAddFixture_ScaleAdd.ScaleAdd/15 (2741 ms)
+[----------] 16 tests from OCL_ScaleAddFixture_ScaleAdd (17433 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (17434 ms total)
+[  PASSED  ] 16 tests.

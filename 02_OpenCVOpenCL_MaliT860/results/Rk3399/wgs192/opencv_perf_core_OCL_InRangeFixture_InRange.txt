@@ -1,0 +1,116 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_InRangeFixture_InRange*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_InRangeFixture_InRange
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=2.34   median=2.29   min=1.56   stddev=0.66 (28.2%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/0 (313 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=5.80   median=5.42   min=5.00   stddev=0.76 (13.1%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/1 (723 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/2, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=6.82   median=6.22   min=5.85   stddev=1.24 (18.2%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/2 (861 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/3, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=7.66   median=7.41   min=6.73   stddev=0.73 (9.6%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/3 (955 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/4, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=5.27   median=5.03   min=3.86   stddev=0.78 (14.8%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/4 (661 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/5, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=13.43   median=13.22   min=12.60   stddev=0.63 (4.7%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/5 (1537 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/6, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=10.19   median=11.20   min=4.31   stddev=4.74 (46.5%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/6 (1234 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/7, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=20.11   median=19.21   min=18.15   stddev=2.02 (10.1%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/7 (2422 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/8, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=9.75   median=9.29   min=8.08   stddev=1.16 (11.9%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/8 (1165 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/9, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=28.51   median=28.28   min=27.69   stddev=0.82 (2.9%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/9 (480 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/10, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=9.97   median=9.41   min=8.98   stddev=1.41 (14.1%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/10 (1430 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/11, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=13.73   median=13.51   min=12.71   stddev=0.93 (6.8%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/11 (2096 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/12, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=10.04   median=9.78   min=9.33   stddev=0.58 (5.7%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/12 (1493 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/13, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=38   mean=28.91   median=28.62   min=28.07   stddev=0.78 (2.7%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/13 (1866 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/14, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=38   mean=33.49   median=33.38   min=32.58   stddev=0.72 (2.2%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/14 (2062 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/15, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=88   mean=49.26   median=49.17   min=47.76   stddev=1.00 (2.0%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/15 (7325 ms)
+[----------] 16 tests from OCL_InRangeFixture_InRange (26630 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (26631 ms total)
+[  PASSED  ] 16 tests.

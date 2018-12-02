@@ -1,0 +1,116 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/0, where GetParam() = (640x480, SphericalWarperType)
+[ PERFSTAT ]    (samples=100   mean=13.24   median=13.38   min=10.86   stddev=0.59 (4.5%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/0 (1392 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/1, where GetParam() = (640x480, CylindricalWarperType)
+[ PERFSTAT ]    (samples=100   mean=13.66   median=13.68   min=11.25   stddev=0.57 (4.1%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/1 (1426 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/2, where GetParam() = (640x480, PlaneWarperType)
+[ PERFSTAT ]    (samples=100   mean=13.93   median=13.82   min=12.23   stddev=0.55 (4.0%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/2 (1458 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/3, where GetParam() = (640x480, AffineWarperType)
+[ PERFSTAT ]    (samples=100   mean=14.28   median=14.04   min=13.28   stddev=0.60 (4.2%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/3 (1455 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/4, where GetParam() = (1280x720, SphericalWarperType)
+[ PERFSTAT ]    (samples=13   mean=35.04   median=35.01   min=34.55   stddev=0.29 (0.8%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/4 (463 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/5, where GetParam() = (1280x720, CylindricalWarperType)
+[ PERFSTAT ]    (samples=13   mean=35.87   median=35.75   min=35.44   stddev=0.42 (1.2%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/5 (475 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/6, where GetParam() = (1280x720, PlaneWarperType)
+[ PERFSTAT ]    (samples=13   mean=40.15   median=40.21   min=39.27   stddev=0.46 (1.2%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/6 (536 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/7, where GetParam() = (1280x720, AffineWarperType)
+[ PERFSTAT ]    (samples=100   mean=26.22   median=28.69   min=14.88   stddev=4.42 (16.9%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/7 (2721 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/8, where GetParam() = (1920x1080, SphericalWarperType)
+[ PERFSTAT ]    (samples=13   mean=39.35   median=39.25   min=39.21   stddev=0.19 (0.5%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/8 (532 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/9, where GetParam() = (1920x1080, CylindricalWarperType)
+[ PERFSTAT ]    (samples=13   mean=50.97   median=50.86   min=50.41   stddev=0.58 (1.1%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/9 (692 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/10, where GetParam() = (1920x1080, PlaneWarperType)
+[ PERFSTAT ]    (samples=13   mean=57.40   median=57.26   min=56.53   stddev=0.68 (1.2%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/10 (775 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/11, where GetParam() = (1920x1080, AffineWarperType)
+[ PERFSTAT ]    (samples=100   mean=26.64   median=25.48   min=23.31   stddev=3.05 (11.4%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/11 (2860 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/12, where GetParam() = (3840x2160, SphericalWarperType)
+[ PERFSTAT ]    (samples=100   mean=78.65   median=74.64   min=66.32   stddev=6.87 (8.7%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/12 (8361 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/13, where GetParam() = (3840x2160, CylindricalWarperType)
+[ PERFSTAT ]    (samples=38   mean=75.97   median=75.95   min=70.20   stddev=2.24 (3.0%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/13 (3027 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/14, where GetParam() = (3840x2160, PlaneWarperType)
+[ PERFSTAT ]    (samples=13   mean=80.90   median=80.96   min=79.54   stddev=0.87 (1.1%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/14 (1359 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/15, where GetParam() = (3840x2160, AffineWarperType)
+[ PERFSTAT ]    (samples=10   mean=80.13   median=80.61   min=78.45   stddev=1.02 (1.3%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/15 (803 ms)
+[----------] 16 tests from OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps (28339 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (28339 ms total)
+[  PASSED  ] 16 tests.

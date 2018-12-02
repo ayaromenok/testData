@@ -1,0 +1,92 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_IntegralFixture_Integral1*
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from OCL_IntegralFixture_Integral1
+[ RUN      ] OCL_IntegralFixture_Integral1.Integral1/0, where GetParam() = (640x480, CV_32S)
+[ PERFSTAT ]    (samples=100   mean=9.46   median=9.58   min=7.13   stddev=0.50 (5.3%))
+[       OK ] OCL_IntegralFixture_Integral1.Integral1/0 (1031 ms)
+[ RUN      ] OCL_IntegralFixture_Integral1.Integral1/1, where GetParam() = (640x480, CV_32F)
+[ PERFSTAT ]    (samples=100   mean=9.45   median=9.59   min=8.07   stddev=0.39 (4.2%))
+[       OK ] OCL_IntegralFixture_Integral1.Integral1/1 (1097 ms)
+[ RUN      ] OCL_IntegralFixture_Integral1.Integral1/2, where GetParam() = (1280x720, CV_32S)
+[ PERFSTAT ]    (samples=100   mean=14.50   median=11.16   min=8.30   stddev=6.60 (45.5%))
+[       OK ] OCL_IntegralFixture_Integral1.Integral1/2 (1615 ms)
+[ RUN      ] OCL_IntegralFixture_Integral1.Integral1/3, where GetParam() = (1280x720, CV_32F)
+[ PERFSTAT ]    (samples=100   mean=10.85   median=11.05   min=8.44   stddev=0.99 (9.1%))
+[       OK ] OCL_IntegralFixture_Integral1.Integral1/3 (1234 ms)
+[ RUN      ] OCL_IntegralFixture_Integral1.Integral1/4, where GetParam() = (1920x1080, CV_32S)
+[ PERFSTAT ]    (samples=63   mean=16.21   median=16.20   min=15.90   stddev=0.10 (0.6%))
+[       OK ] OCL_IntegralFixture_Integral1.Integral1/4 (1242 ms)
+[ RUN      ] OCL_IntegralFixture_Integral1.Integral1/5, where GetParam() = (1920x1080, CV_32F)
+[ PERFSTAT ]    (samples=63   mean=16.22   median=16.21   min=15.96   stddev=0.09 (0.6%))
+[       OK ] OCL_IntegralFixture_Integral1.Integral1/5 (1230 ms)
+[ RUN      ] OCL_IntegralFixture_Integral1.Integral1/6, where GetParam() = (3840x2160, CV_32S)
+[ PERFSTAT ]    (samples=13   mean=57.64   median=57.76   min=56.53   stddev=0.51 (0.9%))
+[       OK ] OCL_IntegralFixture_Integral1.Integral1/6 (1141 ms)
+[ RUN      ] OCL_IntegralFixture_Integral1.Integral1/7, where GetParam() = (3840x2160, CV_32F)
+[ PERFSTAT ]    (samples=13   mean=57.77   median=57.90   min=56.95   stddev=0.43 (0.7%))
+[       OK ] OCL_IntegralFixture_Integral1.Integral1/7 (1190 ms)
+[----------] 8 tests from OCL_IntegralFixture_Integral1 (9780 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (9780 ms total)
+[  PASSED  ] 8 tests.

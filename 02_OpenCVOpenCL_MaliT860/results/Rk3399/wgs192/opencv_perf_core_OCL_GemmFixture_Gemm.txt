@@ -1,0 +1,219 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_GemmFixture_Gemm*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_GemmFixture_Gemm
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/0, where GetParam() = (640x640, 0, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=136.28   median=136.01   min=135.70   stddev=0.70 (0.5%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/0 (2365 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/1, where GetParam() = (640x640, 0, 32FC2)
+[ PERFSTAT ]    (samples=13   mean=318.61   median=318.78   min=317.37   stddev=0.53 (0.2%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/1 (4561 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/2, where GetParam() = (640x640, GEMM_1_T, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=141.67   median=141.48   min=140.28   stddev=0.94 (0.7%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/2 (2314 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/3, where GetParam() = (640x640, GEMM_1_T, 32FC2)
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=341.55   median=336.46   min=322.68   stddev=20.97 (6.1%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/3 (35490 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/4, where GetParam() = (640x640, GEMM_2_T, 32FC1)
+.
+[ PERFSTAT ]    (samples=100   mean=132.76   median=129.25   min=127.62   stddev=6.02 (4.5%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/4 (13702 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/5, where GetParam() = (640x640, GEMM_2_T, 32FC2)
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=340.87   median=324.41   min=321.98   stddev=22.44 (6.6%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/5 (34802 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/6, where GetParam() = (640x640, GEMM_3_T, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=132.91   median=132.77   min=132.53   stddev=0.48 (0.4%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/6 (1907 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/7, where GetParam() = (640x640, GEMM_3_T, 32FC2)
+[ PERFSTAT ]    (samples=13   mean=310.26   median=310.32   min=309.71   stddev=0.29 (0.1%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/7 (4258 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/8, where GetParam() = (640x640, GEMM_1_T|GEMM_2_T, 32FC1)
+.
+[ PERFSTAT ]    (samples=100   mean=140.20   median=143.11   min=126.92   stddev=8.46 (6.0%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/8 (14428 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/9, where GetParam() = (640x640, GEMM_1_T|GEMM_2_T, 32FC2)
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=346.43   median=340.55   min=326.33   stddev=20.00 (5.8%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/9 (35365 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/10, where GetParam() = (640x640, GEMM_2_T|GEMM_3_T, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=136.73   median=136.04   min=135.90   stddev=2.05 (1.5%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/10 (2188 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/11, where GetParam() = (640x640, GEMM_2_T|GEMM_3_T, 32FC2)
+[ PERFSTAT ]    (samples=10   mean=319.74   median=316.61   min=315.88   stddev=9.31 (2.9%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/11 (3304 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/12, where GetParam() = (1280x1280, 0, 32FC1)
+.
+[ PERFSTAT ]    (samples=10   mean=1071.99   median=1069.17   min=1048.59   stddev=24.76 (2.3%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/12 (10913 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/13, where GetParam() = (1280x1280, 0, 32FC2)
+.
+.
+[ PERFSTAT ]    (samples=10   mean=2675.04   median=2675.73   min=2617.71   stddev=36.73 (1.4%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/13 (27114 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/14, where GetParam() = (1280x1280, GEMM_1_T, 32FC1)
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=1056.14   median=1079.71   min=947.11   stddev=48.55 (4.6%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/14 (106576 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/15, where GetParam() = (1280x1280, GEMM_1_T, 32FC2)
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=2653.01   median=2637.75   min=2359.06   stddev=144.47 (5.4%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/15 (269117 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/16, where GetParam() = (1280x1280, GEMM_2_T, 32FC1)
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=50   mean=1070.77   median=1062.76   min=986.80   stddev=32.10 (3.0%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/16 (54501 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/17, where GetParam() = (1280x1280, GEMM_2_T, 32FC2)
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=25   mean=2635.98   median=2657.51   min=2362.58   stddev=78.74 (3.0%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/17 (67301 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/18, where GetParam() = (1280x1280, GEMM_3_T, 32FC1)
+.
+[ PERFSTAT ]    (samples=13   mean=965.98   median=963.34   min=962.17   stddev=7.78 (0.8%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/18 (12950 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/19, where GetParam() = (1280x1280, GEMM_3_T, 32FC2)
+.
+.
+[ PERFSTAT ]    (samples=13   mean=2336.72   median=2332.42   min=2327.35   stddev=12.19 (0.5%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/19 (31020 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/20, where GetParam() = (1280x1280, GEMM_1_T|GEMM_2_T, 32FC1)
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=1038.10   median=1024.62   min=969.75   stddev=45.89 (4.4%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/20 (106367 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/21, where GetParam() = (1280x1280, GEMM_1_T|GEMM_2_T, 32FC2)
+.
+.
+.
+[ PERFSTAT ]    (samples=13   mean=2626.16   median=2626.71   min=2620.02   stddev=4.78 (0.2%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/21 (34962 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/22, where GetParam() = (1280x1280, GEMM_2_T|GEMM_3_T, 32FC1)
+.
+.
+[ PERFSTAT ]    (samples=31   mean=981.30   median=966.74   min=964.71   stddev=29.17 (3.0%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/22 (30957 ms)
+[ RUN      ] OCL_GemmFixture_Gemm.Gemm/23, where GetParam() = (1280x1280, GEMM_2_T|GEMM_3_T, 32FC2)
+.
+.
+[ PERFSTAT ]    (samples=10   mean=2596.32   median=2592.04   min=2590.22   stddev=14.59 (0.6%))
+[       OK ] OCL_GemmFixture_Gemm.Gemm/23 (26336 ms)
+[----------] 24 tests from OCL_GemmFixture_Gemm (932808 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (932810 ms total)
+[  PASSED  ] 24 tests.

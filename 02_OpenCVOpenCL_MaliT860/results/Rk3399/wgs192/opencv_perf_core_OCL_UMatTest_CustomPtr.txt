@@ -1,0 +1,110 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 192
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_UMatTest_CustomPtr*
+[==========] Running 12 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 12 tests from OCL_UMatTest_CustomPtr
+[ RUN      ] OCL_UMatTest_CustomPtr.CustomPtr/0, where GetParam() = (1920x1080, false, 4)
+[ PERFSTAT ]    (samples=100   mean=10.67   median=10.91   min=9.32   stddev=0.67 (6.3%))
+[       OK ] OCL_UMatTest_CustomPtr.CustomPtr/0 (1085 ms)
+[ RUN      ] OCL_UMatTest_CustomPtr.CustomPtr/1, where GetParam() = (1920x1080, false, 64)
+[ PERFSTAT ]    (samples=13   mean=10.57   median=10.53   min=10.32   stddev=0.15 (1.5%))
+[       OK ] OCL_UMatTest_CustomPtr.CustomPtr/1 (141 ms)
+[ RUN      ] OCL_UMatTest_CustomPtr.CustomPtr/2, where GetParam() = (1920x1080, false, 4096)
+[ PERFSTAT ]    (samples=13   mean=10.65   median=10.67   min=10.38   stddev=0.14 (1.3%))
+[       OK ] OCL_UMatTest_CustomPtr.CustomPtr/2 (142 ms)
+[ RUN      ] OCL_UMatTest_CustomPtr.CustomPtr/3, where GetParam() = (1920x1080, true, 4)
+[ PERFSTAT ]    (samples=13   mean=70.91   median=70.85   min=70.30   stddev=0.46 (0.6%))
+[       OK ] OCL_UMatTest_CustomPtr.CustomPtr/3 (967 ms)
+[ RUN      ] OCL_UMatTest_CustomPtr.CustomPtr/4, where GetParam() = (1920x1080, true, 64)
+[ PERFSTAT ]    (samples=10   mean=69.81   median=69.46   min=69.17   stddev=1.12 (1.6%))
+[       OK ] OCL_UMatTest_CustomPtr.CustomPtr/4 (701 ms)
+[ RUN      ] OCL_UMatTest_CustomPtr.CustomPtr/5, where GetParam() = (1920x1080, true, 4096)
+[ PERFSTAT ]    (samples=13   mean=70.88   median=69.86   min=68.87   stddev=1.99 (2.8%))
+[       OK ] OCL_UMatTest_CustomPtr.CustomPtr/5 (929 ms)
+[ RUN      ] OCL_UMatTest_CustomPtr.CustomPtr/6, where GetParam() = (3840x2160, false, 4)
+[ PERFSTAT ]    (samples=57   mean=36.92   median=36.91   min=34.37   stddev=1.11 (3.0%))
+[       OK ] OCL_UMatTest_CustomPtr.CustomPtr/6 (2248 ms)
+[ RUN      ] OCL_UMatTest_CustomPtr.CustomPtr/7, where GetParam() = (3840x2160, false, 64)
+[ PERFSTAT ]    (samples=13   mean=36.25   median=36.30   min=34.95   stddev=0.83 (2.3%))
+[       OK ] OCL_UMatTest_CustomPtr.CustomPtr/7 (487 ms)
+[ RUN      ] OCL_UMatTest_CustomPtr.CustomPtr/8, where GetParam() = (3840x2160, false, 4096)
+[ PERFSTAT ]    (samples=21   mean=36.12   median=35.97   min=34.88   stddev=1.08 (3.0%))
+[       OK ] OCL_UMatTest_CustomPtr.CustomPtr/8 (775 ms)
+[ RUN      ] OCL_UMatTest_CustomPtr.CustomPtr/9, where GetParam() = (3840x2160, true, 4)
+.
+.
+[ PERFSTAT ]    (samples=100   mean=228.63   median=234.00   min=155.78   stddev=17.11 (7.5%))
+[       OK ] OCL_UMatTest_CustomPtr.CustomPtr/9 (23032 ms)
+[ RUN      ] OCL_UMatTest_CustomPtr.CustomPtr/10, where GetParam() = (3840x2160, true, 64)
+.
+.
+[ PERFSTAT ]    (samples=100   mean=228.25   median=232.08   min=190.67   stddev=10.77 (4.7%))
+[       OK ] OCL_UMatTest_CustomPtr.CustomPtr/10 (23019 ms)
+[ RUN      ] OCL_UMatTest_CustomPtr.CustomPtr/11, where GetParam() = (3840x2160, true, 4096)
+.
+.
+[ PERFSTAT ]    (samples=100   mean=228.11   median=233.28   min=191.32   stddev=11.70 (5.1%))
+[       OK ] OCL_UMatTest_CustomPtr.CustomPtr/11 (22954 ms)
+[----------] 12 tests from OCL_UMatTest_CustomPtr (76482 ms total)
+
+[----------] Global test environment tear-down
+[==========] 12 tests from 1 test case ran. (76483 ms total)
+[  PASSED  ] 12 tests.
