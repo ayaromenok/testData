@@ -1,0 +1,164 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 128
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 128
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_NormalizeFixture_NormalizeWithMask*
+[==========] Running 32 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 32 tests from OCL_NormalizeFixture_NormalizeWithMask
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/0, where GetParam() = (640x480, 8UC1, CV_MINMAX)
+[ PERFSTAT ]    (samples=100   mean=10.41   median=10.41   min=7.14   stddev=0.62 (5.9%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/0 (1139 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/1, where GetParam() = (640x480, 8UC1, CV_L2)
+[ PERFSTAT ]    (samples=100   mean=10.51   median=10.70   min=7.41   stddev=0.80 (7.6%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/1 (1190 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/2, where GetParam() = (640x480, 8UC1, CV_L1)
+[ PERFSTAT ]    (samples=100   mean=10.46   median=10.57   min=8.24   stddev=0.62 (5.9%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/2 (1158 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/3, where GetParam() = (640x480, 8UC1, CV_C)
+[ PERFSTAT ]    (samples=100   mean=10.06   median=10.15   min=7.19   stddev=0.58 (5.8%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/3 (1120 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/4, where GetParam() = (640x480, 32FC1, CV_MINMAX)
+[ PERFSTAT ]    (samples=100   mean=10.70   median=10.77   min=7.34   stddev=0.77 (7.2%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/4 (1217 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/5, where GetParam() = (640x480, 32FC1, CV_L2)
+[ PERFSTAT ]    (samples=100   mean=10.78   median=10.91   min=8.00   stddev=0.74 (6.9%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/5 (1224 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/6, where GetParam() = (640x480, 32FC1, CV_L1)
+[ PERFSTAT ]    (samples=100   mean=10.40   median=10.51   min=7.97   stddev=0.55 (5.3%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/6 (1162 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/7, where GetParam() = (640x480, 32FC1, CV_C)
+[ PERFSTAT ]    (samples=100   mean=10.56   median=10.57   min=7.75   stddev=0.56 (5.3%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/7 (1187 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/8, where GetParam() = (1280x720, 8UC1, CV_MINMAX)
+[ PERFSTAT ]    (samples=37   mean=20.23   median=20.42   min=17.91   stddev=0.60 (3.0%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/8 (802 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/9, where GetParam() = (1280x720, 8UC1, CV_L2)
+[ PERFSTAT ]    (samples=25   mean=19.49   median=19.49   min=17.72   stddev=0.58 (3.0%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/9 (551 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/10, where GetParam() = (1280x720, 8UC1, CV_L1)
+[ PERFSTAT ]    (samples=38   mean=19.47   median=19.49   min=17.25   stddev=0.58 (3.0%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/10 (798 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/11, where GetParam() = (1280x720, 8UC1, CV_C)
+[ PERFSTAT ]    (samples=27   mean=19.78   median=20.01   min=17.68   stddev=0.59 (3.0%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/11 (586 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/12, where GetParam() = (1280x720, 32FC1, CV_MINMAX)
+[ PERFSTAT ]    (samples=25   mean=21.12   median=21.23   min=19.12   stddev=0.62 (2.9%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/12 (619 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/13, where GetParam() = (1280x720, 32FC1, CV_L2)
+[ PERFSTAT ]    (samples=60   mean=21.01   median=21.07   min=18.42   stddev=0.63 (3.0%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/13 (1361 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/14, where GetParam() = (1280x720, 32FC1, CV_L1)
+[ PERFSTAT ]    (samples=19   mean=20.89   median=21.05   min=19.24   stddev=0.61 (2.9%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/14 (483 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/15, where GetParam() = (1280x720, 32FC1, CV_C)
+[ PERFSTAT ]    (samples=34   mean=20.95   median=21.06   min=18.68   stddev=0.63 (3.0%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/15 (801 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/16, where GetParam() = (1920x1080, 8UC1, CV_MINMAX)
+[ PERFSTAT ]    (samples=10   mean=38.54   median=38.90   min=36.58   stddev=0.85 (2.2%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/16 (483 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/17, where GetParam() = (1920x1080, 8UC1, CV_L2)
+[ PERFSTAT ]    (samples=10   mean=38.60   median=38.96   min=36.10   stddev=0.96 (2.5%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/17 (470 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/18, where GetParam() = (1920x1080, 8UC1, CV_L1)
+[ PERFSTAT ]    (samples=10   mean=37.41   median=37.41   min=35.62   stddev=0.84 (2.2%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/18 (467 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/19, where GetParam() = (1920x1080, 8UC1, CV_C)
+[ PERFSTAT ]    (samples=10   mean=37.15   median=37.61   min=35.10   stddev=1.04 (2.8%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/19 (454 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/20, where GetParam() = (1920x1080, 32FC1, CV_MINMAX)
+[ PERFSTAT ]    (samples=10   mean=40.63   median=40.85   min=37.91   stddev=1.21 (3.0%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/20 (567 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/21, where GetParam() = (1920x1080, 32FC1, CV_L2)
+[ PERFSTAT ]    (samples=10   mean=40.05   median=40.17   min=38.88   stddev=0.50 (1.2%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/21 (557 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/22, where GetParam() = (1920x1080, 32FC1, CV_L1)
+[ PERFSTAT ]    (samples=10   mean=39.86   median=40.37   min=37.43   stddev=1.18 (3.0%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/22 (536 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/23, where GetParam() = (1920x1080, 32FC1, CV_C)
+[ PERFSTAT ]    (samples=10   mean=40.23   median=40.46   min=38.87   stddev=0.56 (1.4%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/23 (559 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/24, where GetParam() = (3840x2160, 8UC1, CV_MINMAX)
+[ PERFSTAT ]    (samples=25   mean=62.72   median=62.67   min=61.94   stddev=0.45 (0.7%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/24 (1944 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/25, where GetParam() = (3840x2160, 8UC1, CV_L2)
+[ PERFSTAT ]    (samples=100   mean=61.97   median=63.58   min=35.98   stddev=6.00 (9.7%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/25 (6637 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/26, where GetParam() = (3840x2160, 8UC1, CV_L1)
+[ PERFSTAT ]    (samples=13   mean=62.10   median=62.33   min=57.86   stddev=1.59 (2.6%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/26 (1124 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/27, where GetParam() = (3840x2160, 8UC1, CV_C)
+[ PERFSTAT ]    (samples=38   mean=62.05   median=62.10   min=58.65   stddev=1.21 (1.9%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/27 (2775 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/28, where GetParam() = (3840x2160, 32FC1, CV_MINMAX)
+[ PERFSTAT ]    (samples=38   mean=41.83   median=41.82   min=41.28   stddev=0.28 (0.7%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/28 (2384 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/29, where GetParam() = (3840x2160, 32FC1, CV_L2)
+[ PERFSTAT ]    (samples=100   mean=44.05   median=41.54   min=40.96   stddev=9.14 (20.7%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/29 (5241 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/30, where GetParam() = (3840x2160, 32FC1, CV_L1)
+[ PERFSTAT ]    (samples=25   mean=41.47   median=41.45   min=40.61   stddev=0.47 (1.1%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/30 (1549 ms)
+[ RUN      ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/31, where GetParam() = (3840x2160, 32FC1, CV_C)
+[ PERFSTAT ]    (samples=25   mean=41.75   median=41.62   min=41.27   stddev=0.38 (0.9%))
+[       OK ] OCL_NormalizeFixture_NormalizeWithMask.NormalizeWithMask/31 (1630 ms)
+[----------] 32 tests from OCL_NormalizeFixture_NormalizeWithMask (42781 ms total)
+
+[----------] Global test environment tear-down
+[==========] 32 tests from 1 test case ran. (42782 ms total)
+[  PASSED  ] 32 tests.

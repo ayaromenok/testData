@@ -1,0 +1,167 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 128
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 128
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_ReduceAccFixture_Reduce*
+[==========] Running 32 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 32 tests from OCL_ReduceAccFixture_Reduce
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/0, where GetParam() = (640x480, (8UC4, 32SC4), 0, CV_REDUCE_SUM)
+[ PERFSTAT ]    (samples=38   mean=8.80   median=8.81   min=8.23   stddev=0.23 (2.6%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/0 (387 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/1, where GetParam() = (640x480, (8UC4, 32SC4), 0, CV_REDUCE_AVG)
+[ PERFSTAT ]    (samples=17   mean=8.48   median=8.53   min=7.85   stddev=0.25 (3.0%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/1 (227 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/2, where GetParam() = (640x480, (8UC4, 32SC4), 1, CV_REDUCE_SUM)
+[ PERFSTAT ]    (samples=100   mean=8.65   median=8.79   min=7.12   stddev=0.43 (4.9%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/2 (993 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/3, where GetParam() = (640x480, (8UC4, 32SC4), 1, CV_REDUCE_AVG)
+[ PERFSTAT ]    (samples=100   mean=8.81   median=8.90   min=7.27   stddev=0.32 (3.7%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/3 (1010 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/4, where GetParam() = (640x480, (32FC1, 32FC1), 0, CV_REDUCE_SUM)
+[ PERFSTAT ]    (samples=100   mean=3.15   median=3.30   min=2.03   stddev=0.39 (12.4%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/4 (389 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/5, where GetParam() = (640x480, (32FC1, 32FC1), 0, CV_REDUCE_AVG)
+.
+[ PERFSTAT ]    (samples=100   mean=2.00   median=1.28   min=0.80   stddev=1.18 (59.2%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/5 (40872 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/6, where GetParam() = (640x480, (32FC1, 32FC1), 1, CV_REDUCE_SUM)
+[ PERFSTAT ]    (samples=100   mean=2.80   median=3.15   min=1.60   stddev=0.65 (23.4%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/6 (366 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/7, where GetParam() = (640x480, (32FC1, 32FC1), 1, CV_REDUCE_AVG)
+[ PERFSTAT ]    (samples=100   mean=3.14   median=3.24   min=2.05   stddev=0.41 (13.2%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/7 (442 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/8, where GetParam() = (1280x720, (8UC4, 32SC4), 0, CV_REDUCE_SUM)
+[ PERFSTAT ]    (samples=100   mean=8.59   median=8.52   min=7.52   stddev=0.74 (8.6%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/8 (1027 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/9, where GetParam() = (1280x720, (8UC4, 32SC4), 0, CV_REDUCE_AVG)
+[ PERFSTAT ]    (samples=100   mean=10.64   median=11.21   min=6.78   stddev=1.02 (9.6%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/9 (1154 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/10, where GetParam() = (1280x720, (8UC4, 32SC4), 1, CV_REDUCE_SUM)
+[ PERFSTAT ]    (samples=10   mean=19.23   median=19.23   min=19.06   stddev=0.13 (0.7%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/10 (263 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/11, where GetParam() = (1280x720, (8UC4, 32SC4), 1, CV_REDUCE_AVG)
+[ PERFSTAT ]    (samples=10   mean=19.30   median=19.32   min=18.65   stddev=0.32 (1.7%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/11 (264 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/12, where GetParam() = (1280x720, (32FC1, 32FC1), 0, CV_REDUCE_SUM)
+[ PERFSTAT ]    (samples=100   mean=6.42   median=6.73   min=4.94   stddev=0.56 (8.7%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/12 (714 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/13, where GetParam() = (1280x720, (32FC1, 32FC1), 0, CV_REDUCE_AVG)
+[ PERFSTAT ]    (samples=100   mean=6.54   median=6.86   min=4.84   stddev=0.57 (8.7%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/13 (721 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/14, where GetParam() = (1280x720, (32FC1, 32FC1), 1, CV_REDUCE_SUM)
+[ PERFSTAT ]    (samples=13   mean=4.30   median=4.32   min=4.08   stddev=0.12 (2.7%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/14 (125 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/15, where GetParam() = (1280x720, (32FC1, 32FC1), 1, CV_REDUCE_AVG)
+[ PERFSTAT ]    (samples=100   mean=5.63   median=5.69   min=4.07   stddev=0.42 (7.5%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/15 (606 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/16, where GetParam() = (1920x1080, (8UC4, 32SC4), 0, CV_REDUCE_SUM)
+[ PERFSTAT ]    (samples=88   mean=13.91   median=13.92   min=13.55   stddev=0.17 (1.2%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/16 (1503 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/17, where GetParam() = (1920x1080, (8UC4, 32SC4), 0, CV_REDUCE_AVG)
+[ PERFSTAT ]    (samples=38   mean=14.22   median=14.18   min=13.86   stddev=0.40 (2.8%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/17 (706 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/18, where GetParam() = (1920x1080, (8UC4, 32SC4), 1, CV_REDUCE_SUM)
+[ PERFSTAT ]    (samples=100   mean=16.59   median=16.77   min=12.28   stddev=0.87 (5.2%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/18 (1788 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/19, where GetParam() = (1920x1080, (8UC4, 32SC4), 1, CV_REDUCE_AVG)
+[ PERFSTAT ]    (samples=100   mean=14.27   median=14.03   min=13.73   stddev=0.77 (5.4%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/19 (1616 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/20, where GetParam() = (1920x1080, (32FC1, 32FC1), 0, CV_REDUCE_SUM)
+.
+.
+[ PERFSTAT ]    (samples=100   mean=4.81   median=3.91   min=2.65   stddev=2.94 (61.1%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/20 (108989 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/21, where GetParam() = (1920x1080, (32FC1, 32FC1), 0, CV_REDUCE_AVG)
+[ PERFSTAT ]    (samples=100   mean=10.58   median=10.63   min=9.27   stddev=0.33 (3.1%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/21 (1157 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/22, where GetParam() = (1920x1080, (32FC1, 32FC1), 1, CV_REDUCE_SUM)
+[ PERFSTAT ]    (samples=69   mean=9.72   median=9.82   min=8.57   stddev=0.29 (3.0%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/22 (758 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/23, where GetParam() = (1920x1080, (32FC1, 32FC1), 1, CV_REDUCE_AVG)
+[ PERFSTAT ]    (samples=62   mean=9.77   median=9.80   min=8.62   stddev=0.29 (3.0%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/23 (693 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/24, where GetParam() = (3840x2160, (8UC4, 32SC4), 0, CV_REDUCE_SUM)
+[ PERFSTAT ]    (samples=13   mean=48.94   median=49.01   min=48.46   stddev=0.34 (0.7%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/24 (1047 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/25, where GetParam() = (3840x2160, (8UC4, 32SC4), 0, CV_REDUCE_AVG)
+[ PERFSTAT ]    (samples=25   mean=49.13   median=49.17   min=48.36   stddev=0.43 (0.9%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/25 (1662 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/26, where GetParam() = (3840x2160, (8UC4, 32SC4), 1, CV_REDUCE_SUM)
+[ PERFSTAT ]    (samples=25   mean=46.17   median=46.17   min=45.96   stddev=0.13 (0.3%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/26 (1607 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/27, where GetParam() = (3840x2160, (8UC4, 32SC4), 1, CV_REDUCE_AVG)
+[ PERFSTAT ]    (samples=38   mean=46.30   median=46.28   min=46.05   stddev=0.12 (0.3%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/27 (2284 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/28, where GetParam() = (3840x2160, (32FC1, 32FC1), 0, CV_REDUCE_SUM)
+[ PERFSTAT ]    (samples=63   mean=10.87   median=10.94   min=10.42   stddev=0.24 (2.2%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/28 (983 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/29, where GetParam() = (3840x2160, (32FC1, 32FC1), 0, CV_REDUCE_AVG)
+[ PERFSTAT ]    (samples=63   mean=11.08   median=11.11   min=10.61   stddev=0.24 (2.2%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/29 (990 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/30, where GetParam() = (3840x2160, (32FC1, 32FC1), 1, CV_REDUCE_SUM)
+[ PERFSTAT ]    (samples=75   mean=9.92   median=9.93   min=9.63   stddev=0.14 (1.4%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/30 (1044 ms)
+[ RUN      ] OCL_ReduceAccFixture_Reduce.Reduce/31, where GetParam() = (3840x2160, (32FC1, 32FC1), 1, CV_REDUCE_AVG)
+[ PERFSTAT ]    (samples=75   mean=9.93   median=9.92   min=9.68   stddev=0.14 (1.4%))
+[       OK ] OCL_ReduceAccFixture_Reduce.Reduce/31 (1047 ms)
+[----------] 32 tests from OCL_ReduceAccFixture_Reduce (177453 ms total)
+
+[----------] Global test environment tear-down
+[==========] 32 tests from 1 test case ran. (177454 ms total)
+[  PASSED  ] 32 tests.

@@ -1,0 +1,93 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 128
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 128
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_PatchNaNsFixture_PatchNaNs*
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from OCL_PatchNaNsFixture_PatchNaNs
+[ RUN      ] OCL_PatchNaNsFixture_PatchNaNs.PatchNaNs/0, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=2.27   median=2.27   min=2.22   stddev=0.02 (1.1%))
+[       OK ] OCL_PatchNaNsFixture_PatchNaNs.PatchNaNs/0 (76 ms)
+[ RUN      ] OCL_PatchNaNsFixture_PatchNaNs.PatchNaNs/1, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=81   mean=8.96   median=8.97   min=7.34   stddev=0.27 (3.0%))
+[       OK ] OCL_PatchNaNsFixture_PatchNaNs.PatchNaNs/1 (767 ms)
+[ RUN      ] OCL_PatchNaNsFixture_PatchNaNs.PatchNaNs/2, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=7.27   median=7.34   min=6.22   stddev=0.28 (3.9%))
+[       OK ] OCL_PatchNaNsFixture_PatchNaNs.PatchNaNs/2 (835 ms)
+[ RUN      ] OCL_PatchNaNsFixture_PatchNaNs.PatchNaNs/3, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=7.41   median=7.40   min=7.00   stddev=0.19 (2.6%))
+[       OK ] OCL_PatchNaNsFixture_PatchNaNs.PatchNaNs/3 (1050 ms)
+[ RUN      ] OCL_PatchNaNsFixture_PatchNaNs.PatchNaNs/4, where GetParam() = (1920x1080, 32FC1)
+.
+[ PERFSTAT ]    (samples=100   mean=5.18   median=4.61   min=3.87   stddev=2.36 (45.5%))
+[       OK ] OCL_PatchNaNsFixture_PatchNaNs.PatchNaNs/4 (54608 ms)
+[ RUN      ] OCL_PatchNaNsFixture_PatchNaNs.PatchNaNs/5, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=14.68   median=14.21   min=13.76   stddev=1.48 (10.1%))
+[       OK ] OCL_PatchNaNsFixture_PatchNaNs.PatchNaNs/5 (2075 ms)
+[ RUN      ] OCL_PatchNaNsFixture_PatchNaNs.PatchNaNs/6, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=14.27   median=14.23   min=13.86   stddev=0.54 (3.8%))
+[       OK ] OCL_PatchNaNsFixture_PatchNaNs.PatchNaNs/6 (1985 ms)
+[ RUN      ] OCL_PatchNaNsFixture_PatchNaNs.PatchNaNs/7, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=48.95   median=48.89   min=48.81   stddev=0.12 (0.3%))
+[       OK ] OCL_PatchNaNsFixture_PatchNaNs.PatchNaNs/7 (2143 ms)
+[----------] 8 tests from OCL_PatchNaNsFixture_PatchNaNs (63542 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (63542 ms total)
+[  PASSED  ] 8 tests.

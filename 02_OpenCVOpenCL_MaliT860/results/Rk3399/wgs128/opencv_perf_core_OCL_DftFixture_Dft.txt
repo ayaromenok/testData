@@ -1,0 +1,549 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 128
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 128
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_DftFixture_Dft*
+[==========] Running 144 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 144 tests from OCL_DftFixture_Dft
+[ RUN      ] OCL_DftFixture_Dft.Dft/0, where GetParam() = (3, 640x480, 0)
+[ PERFSTAT ]    (samples=25   mean=20.02   median=19.93   min=19.64   stddev=0.45 (2.2%))
+[       OK ] OCL_DftFixture_Dft.Dft/0 (1175 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/1, where GetParam() = (3, 640x480, 4)
+[ PERFSTAT ]    (samples=13   mean=19.40   median=19.31   min=19.21   stddev=0.18 (0.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/1 (697 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/2, where GetParam() = (3, 640x480, 2)
+[ PERFSTAT ]    (samples=100   mean=20.90   median=19.83   min=19.30   stddev=4.49 (21.5%))
+[       OK ] OCL_DftFixture_Dft.Dft/2 (2751 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/3, where GetParam() = (3, 640x480, 1)
+[ PERFSTAT ]    (samples=25   mean=22.37   median=22.22   min=21.74   stddev=0.63 (2.8%))
+[       OK ] OCL_DftFixture_Dft.Dft/3 (1385 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/4, where GetParam() = (3, 640x480, 3)
+[ PERFSTAT ]    (samples=88   mean=22.35   median=22.30   min=21.69   stddev=0.33 (1.5%))
+[       OK ] OCL_DftFixture_Dft.Dft/4 (2885 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/5, where GetParam() = (3, 640x480, 5)
+[ PERFSTAT ]    (samples=16   mean=22.05   median=22.15   min=20.62   stddev=0.66 (3.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/5 (831 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/6, where GetParam() = (3, 1280x720, 0)
+[ PERFSTAT ]    (samples=13   mean=187.22   median=186.53   min=184.04   stddev=2.21 (1.2%))
+[       OK ] OCL_DftFixture_Dft.Dft/6 (2619 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/7, where GetParam() = (3, 1280x720, 4)
+[ PERFSTAT ]    (samples=100   mean=79.66   median=84.29   min=48.20   stddev=22.71 (28.5%))
+[       OK ] OCL_DftFixture_Dft.Dft/7 (8326 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/8, where GetParam() = (3, 1280x720, 2)
+[ PERFSTAT ]    (samples=13   mean=189.86   median=189.74   min=188.19   stddev=1.45 (0.8%))
+[       OK ] OCL_DftFixture_Dft.Dft/8 (2673 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/9, where GetParam() = (3, 1280x720, 1)
+[ PERFSTAT ]    (samples=13   mean=190.89   median=190.51   min=188.67   stddev=2.11 (1.1%))
+[       OK ] OCL_DftFixture_Dft.Dft/9 (2557 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/10, where GetParam() = (3, 1280x720, 3)
+[ PERFSTAT ]    (samples=13   mean=191.86   median=191.65   min=189.63   stddev=1.75 (0.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/10 (2562 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/11, where GetParam() = (3, 1280x720, 5)
+[ PERFSTAT ]    (samples=100   mean=86.94   median=85.30   min=49.85   stddev=29.01 (33.4%))
+[       OK ] OCL_DftFixture_Dft.Dft/11 (9201 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/12, where GetParam() = (3, 1920x1080, 0)
+[ PERFSTAT ]    (samples=16   mean=497.36   median=491.04   min=487.60   stddev=14.55 (2.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/12 (8188 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/13, where GetParam() = (3, 1920x1080, 4)
+.
+[ PERFSTAT ]    (samples=100   mean=185.12   median=199.34   min=108.64   stddev=41.12 (22.2%))
+[       OK ] OCL_DftFixture_Dft.Dft/13 (19025 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/14, where GetParam() = (3, 1920x1080, 2)
+[ PERFSTAT ]    (samples=13   mean=487.50   median=487.83   min=484.80   stddev=1.73 (0.4%))
+[       OK ] OCL_DftFixture_Dft.Dft/14 (6667 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/15, where GetParam() = (3, 1920x1080, 1)
+[ PERFSTAT ]    (samples=12   mean=498.89   median=491.14   min=489.52   stddev=14.88 (3.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/15 (6077 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/16, where GetParam() = (3, 1920x1080, 3)
+.
+[ PERFSTAT ]    (samples=25   mean=504.58   median=499.89   min=491.67   stddev=14.00 (2.8%))
+[       OK ] OCL_DftFixture_Dft.Dft/16 (12797 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/17, where GetParam() = (3, 1920x1080, 5)
+.
+[ PERFSTAT ]    (samples=100   mean=175.33   median=163.98   min=107.80   stddev=57.12 (32.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/17 (18262 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/18, where GetParam() = (3, 512x512, 0)
+[ PERFSTAT ]    (samples=13   mean=23.61   median=23.82   min=22.35   stddev=0.65 (2.8%))
+[       OK ] OCL_DftFixture_Dft.Dft/18 (752 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/19, where GetParam() = (3, 512x512, 4)
+[ PERFSTAT ]    (samples=100   mean=10.58   median=10.66   min=8.93   stddev=0.38 (3.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/19 (1473 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/20, where GetParam() = (3, 512x512, 2)
+[ PERFSTAT ]    (samples=38   mean=12.80   median=12.78   min=12.26   stddev=0.34 (2.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/20 (905 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/21, where GetParam() = (3, 512x512, 1)
+[ PERFSTAT ]    (samples=100   mean=16.74   median=16.52   min=14.50   stddev=2.08 (12.4%))
+[       OK ] OCL_DftFixture_Dft.Dft/21 (2240 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/22, where GetParam() = (3, 512x512, 3)
+[ PERFSTAT ]    (samples=13   mean=27.49   median=27.78   min=25.77   stddev=0.81 (3.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/22 (863 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/23, where GetParam() = (3, 512x512, 5)
+.
+[ PERFSTAT ]    (samples=100   mean=10.07   median=12.21   min=3.26   stddev=4.02 (39.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/23 (61320 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/24, where GetParam() = (3, 1024x1024, 0)
+[ PERFSTAT ]    (samples=38   mean=60.93   median=61.17   min=60.19   stddev=0.53 (0.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/24 (3009 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/25, where GetParam() = (3, 1024x1024, 4)
+[ PERFSTAT ]    (samples=13   mean=40.32   median=40.25   min=40.19   stddev=0.25 (0.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/25 (967 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/26, where GetParam() = (3, 1024x1024, 2)
+[ PERFSTAT ]    (samples=63   mean=60.91   median=60.80   min=58.62   stddev=0.67 (1.1%))
+[       OK ] OCL_DftFixture_Dft.Dft/26 (4564 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/27, where GetParam() = (3, 1024x1024, 1)
+[ PERFSTAT ]    (samples=38   mean=66.39   median=66.35   min=65.74   stddev=0.32 (0.5%))
+[       OK ] OCL_DftFixture_Dft.Dft/27 (3342 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/28, where GetParam() = (3, 1024x1024, 3)
+[ PERFSTAT ]    (samples=38   mean=66.43   median=66.32   min=65.15   stddev=0.50 (0.8%))
+[       OK ] OCL_DftFixture_Dft.Dft/28 (3384 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/29, where GetParam() = (3, 1024x1024, 5)
+[ PERFSTAT ]    (samples=100   mean=16.93   median=15.84   min=14.71   stddev=4.98 (29.4%))
+[       OK ] OCL_DftFixture_Dft.Dft/29 (2423 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/30, where GetParam() = (3, 2048x2048, 0)
+.
+[ PERFSTAT ]    (samples=10   mean=1497.36   median=1501.30   min=1432.99   stddev=34.97 (2.3%))
+[       OK ] OCL_DftFixture_Dft.Dft/30 (15394 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/31, where GetParam() = (3, 2048x2048, 4)
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=322.57   median=333.93   min=157.34   stddev=30.87 (9.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/31 (32711 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/32, where GetParam() = (3, 2048x2048, 2)
+.
+[ PERFSTAT ]    (samples=10   mean=1536.42   median=1526.07   min=1491.27   stddev=32.17 (2.1%))
+[       OK ] OCL_DftFixture_Dft.Dft/32 (15719 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/33, where GetParam() = (3, 2048x2048, 1)
+.
+[ PERFSTAT ]    (samples=10   mean=1535.14   median=1536.29   min=1481.74   stddev=33.74 (2.2%))
+[       OK ] OCL_DftFixture_Dft.Dft/33 (15540 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/34, where GetParam() = (3, 2048x2048, 3)
+.
+[ PERFSTAT ]    (samples=10   mean=1603.49   median=1627.23   min=1540.65   stddev=40.80 (2.5%))
+[       OK ] OCL_DftFixture_Dft.Dft/34 (16378 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/35, where GetParam() = (3, 2048x2048, 5)
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=344.89   median=352.00   min=184.66   stddev=27.34 (7.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/35 (34928 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/36, where GetParam() = (0, 640x480, 0)
+[ PERFSTAT ]    (samples=33   mean=18.32   median=18.42   min=15.86   stddev=0.55 (3.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/36 (1411 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/37, where GetParam() = (0, 640x480, 4)
+[ PERFSTAT ]    (samples=13   mean=19.79   median=19.81   min=19.38   stddev=0.25 (1.3%))
+[       OK ] OCL_DftFixture_Dft.Dft/37 (755 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/38, where GetParam() = (0, 640x480, 2)
+[ PERFSTAT ]    (samples=25   mean=18.26   median=18.12   min=17.90   stddev=0.29 (1.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/38 (998 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/39, where GetParam() = (0, 640x480, 1)
+[ PERFSTAT ]    (samples=13   mean=34.66   median=34.70   min=33.95   stddev=0.30 (0.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/39 (1233 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/40, where GetParam() = (0, 640x480, 3)
+[ PERFSTAT ]    (samples=13   mean=34.54   median=34.63   min=33.11   stddev=0.75 (2.2%))
+[       OK ] OCL_DftFixture_Dft.Dft/40 (1229 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/41, where GetParam() = (0, 640x480, 5)
+[ PERFSTAT ]    (samples=13   mean=19.43   median=19.30   min=19.28   stddev=0.24 (1.2%))
+[       OK ] OCL_DftFixture_Dft.Dft/41 (675 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/42, where GetParam() = (0, 1280x720, 0)
+[ PERFSTAT ]    (samples=100   mean=67.55   median=67.83   min=63.72   stddev=2.11 (3.1%))
+[       OK ] OCL_DftFixture_Dft.Dft/42 (7047 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/43, where GetParam() = (0, 1280x720, 4)
+[ PERFSTAT ]    (samples=100   mean=36.01   median=36.08   min=24.40   stddev=3.36 (9.3%))
+[       OK ] OCL_DftFixture_Dft.Dft/43 (3767 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/44, where GetParam() = (0, 1280x720, 2)
+[ PERFSTAT ]    (samples=30   mean=68.00   median=68.42   min=64.07   stddev=2.02 (3.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/44 (2117 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/45, where GetParam() = (0, 1280x720, 1)
+[ PERFSTAT ]    (samples=13   mean=290.13   median=291.14   min=279.72   stddev=5.72 (2.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/45 (4162 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/46, where GetParam() = (0, 1280x720, 3)
+[ PERFSTAT ]    (samples=13   mean=293.03   median=292.29   min=289.33   stddev=2.70 (0.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/46 (4252 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/47, where GetParam() = (0, 1280x720, 5)
+[ PERFSTAT ]    (samples=100   mean=39.91   median=38.31   min=31.81   stddev=6.05 (15.2%))
+[       OK ] OCL_DftFixture_Dft.Dft/47 (4230 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/48, where GetParam() = (0, 1920x1080, 0)
+[ PERFSTAT ]    (samples=13   mean=118.39   median=118.15   min=116.50   stddev=1.28 (1.1%))
+[       OK ] OCL_DftFixture_Dft.Dft/48 (1639 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/49, where GetParam() = (0, 1920x1080, 4)
+[ PERFSTAT ]    (samples=25   mean=62.20   median=62.01   min=60.30   stddev=1.17 (1.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/49 (1621 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/50, where GetParam() = (0, 1920x1080, 2)
+[ PERFSTAT ]    (samples=13   mean=120.03   median=119.52   min=118.03   stddev=2.12 (1.8%))
+[       OK ] OCL_DftFixture_Dft.Dft/50 (1656 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/51, where GetParam() = (0, 1920x1080, 1)
+[ PERFSTAT ]    (samples=10   mean=270.85   median=271.82   min=263.38   stddev=3.55 (1.3%))
+[       OK ] OCL_DftFixture_Dft.Dft/51 (2756 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/52, where GetParam() = (0, 1920x1080, 3)
+[ PERFSTAT ]    (samples=10   mean=270.56   median=269.34   min=267.47   stddev=2.98 (1.1%))
+[       OK ] OCL_DftFixture_Dft.Dft/52 (2756 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/53, where GetParam() = (0, 1920x1080, 5)
+[ PERFSTAT ]    (samples=10   mean=60.96   median=60.74   min=59.25   stddev=1.56 (2.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/53 (657 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/54, where GetParam() = (0, 512x512, 0)
+[ PERFSTAT ]    (samples=23   mean=20.09   median=20.23   min=18.12   stddev=0.60 (3.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/54 (944 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/55, where GetParam() = (0, 512x512, 4)
+[ PERFSTAT ]    (samples=100   mean=10.06   median=10.10   min=8.59   stddev=0.31 (3.1%))
+[       OK ] OCL_DftFixture_Dft.Dft/55 (1427 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/56, where GetParam() = (0, 512x512, 2)
+[ PERFSTAT ]    (samples=16   mean=19.67   median=19.84   min=18.30   stddev=0.57 (2.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/56 (738 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/57, where GetParam() = (0, 512x512, 1)
+[ PERFSTAT ]    (samples=15   mean=19.25   median=19.41   min=17.85   stddev=0.56 (2.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/57 (898 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/58, where GetParam() = (0, 512x512, 3)
+[ PERFSTAT ]    (samples=23   mean=19.19   median=19.35   min=17.62   stddev=0.57 (3.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/58 (1073 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/59, where GetParam() = (0, 512x512, 5)
+[ PERFSTAT ]    (samples=28   mean=10.23   median=10.22   min=9.28   stddev=0.31 (3.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/59 (707 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/60, where GetParam() = (0, 1024x1024, 0)
+[ PERFSTAT ]    (samples=13   mean=97.73   median=97.64   min=97.19   stddev=0.35 (0.4%))
+[       OK ] OCL_DftFixture_Dft.Dft/60 (1970 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/61, where GetParam() = (0, 1024x1024, 4)
+[ PERFSTAT ]    (samples=50   mean=13.85   median=13.83   min=13.73   stddev=0.08 (0.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/61 (1205 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/62, where GetParam() = (0, 1024x1024, 2)
+[ PERFSTAT ]    (samples=25   mean=64.82   median=64.88   min=62.38   stddev=0.87 (1.3%))
+[       OK ] OCL_DftFixture_Dft.Dft/62 (2139 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/63, where GetParam() = (0, 1024x1024, 1)
+[ PERFSTAT ]    (samples=50   mean=46.80   median=46.83   min=45.35   stddev=0.47 (1.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/63 (3244 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/64, where GetParam() = (0, 1024x1024, 3)
+[ PERFSTAT ]    (samples=13   mean=46.92   median=46.69   min=46.51   stddev=0.72 (1.5%))
+[       OK ] OCL_DftFixture_Dft.Dft/64 (1341 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/65, where GetParam() = (0, 1024x1024, 5)
+[ PERFSTAT ]    (samples=13   mean=38.56   median=38.42   min=38.23   stddev=0.43 (1.1%))
+[       OK ] OCL_DftFixture_Dft.Dft/65 (930 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/66, where GetParam() = (0, 2048x2048, 0)
+[ PERFSTAT ]    (samples=13   mean=563.84   median=568.97   min=524.67   stddev=13.42 (2.4%))
+[       OK ] OCL_DftFixture_Dft.Dft/66 (7662 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/67, where GetParam() = (0, 2048x2048, 4)
+.
+.
+[ PERFSTAT ]    (samples=100   mean=206.45   median=220.83   min=111.61   stddev=32.43 (15.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/67 (20983 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/68, where GetParam() = (0, 2048x2048, 2)
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=559.53   median=572.22   min=399.88   stddev=27.91 (5.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/68 (56566 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/69, where GetParam() = (0, 2048x2048, 1)
+[ PERFSTAT ]    (samples=10   mean=523.27   median=524.78   min=507.80   stddev=13.22 (2.5%))
+[       OK ] OCL_DftFixture_Dft.Dft/69 (5343 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/70, where GetParam() = (0, 2048x2048, 3)
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=534.58   median=538.33   min=403.84   stddev=19.46 (3.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/70 (53933 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/71, where GetParam() = (0, 2048x2048, 5)
+[ PERFSTAT ]    (samples=10   mean=109.69   median=109.65   min=109.11   stddev=0.44 (0.4%))
+[       OK ] OCL_DftFixture_Dft.Dft/71 (1182 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/72, where GetParam() = (1, 640x480, 0)
+[ PERFSTAT ]    (samples=100   mean=19.38   median=19.35   min=19.10   stddev=0.18 (0.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/72 (2146 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/73, where GetParam() = (1, 640x480, 4)
+[ PERFSTAT ]    (samples=14   mean=18.85   median=19.12   min=17.72   stddev=0.55 (2.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/73 (334 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/74, where GetParam() = (1, 640x480, 2)
+[ PERFSTAT ]    (samples=10   mean=41.04   median=41.14   min=39.51   stddev=0.55 (1.3%))
+[       OK ] OCL_DftFixture_Dft.Dft/74 (464 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/75, where GetParam() = (1, 640x480, 1)
+[ PERFSTAT ]    (samples=10   mean=34.48   median=34.67   min=33.34   stddev=0.49 (1.4%))
+[       OK ] OCL_DftFixture_Dft.Dft/75 (411 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/76, where GetParam() = (1, 640x480, 3)
+[ PERFSTAT ]    (samples=100   mean=17.27   median=17.60   min=15.45   stddev=0.76 (4.4%))
+[       OK ] OCL_DftFixture_Dft.Dft/76 (1885 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/77, where GetParam() = (1, 640x480, 5)
+[ PERFSTAT ]    (samples=100   mean=11.65   median=11.59   min=9.75   stddev=0.83 (7.1%))
+[       OK ] OCL_DftFixture_Dft.Dft/77 (1700 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/78, where GetParam() = (1, 1280x720, 0)
+[ PERFSTAT ]    (samples=13   mean=190.82   median=188.92   min=185.87   stddev=5.00 (2.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/78 (2674 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/79, where GetParam() = (1, 1280x720, 4)
+[ PERFSTAT ]    (samples=100   mean=93.26   median=88.35   min=51.86   stddev=17.42 (18.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/79 (9618 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/80, where GetParam() = (1, 1280x720, 2)
+[ PERFSTAT ]    (samples=13   mean=193.03   median=192.30   min=191.13   stddev=1.89 (1.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/80 (2657 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/81, where GetParam() = (1, 1280x720, 1)
+[ PERFSTAT ]    (samples=13   mean=287.55   median=286.37   min=282.75   stddev=4.59 (1.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/81 (4134 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/82, where GetParam() = (1, 1280x720, 3)
+[ PERFSTAT ]    (samples=13   mean=292.22   median=291.86   min=283.59   stddev=5.42 (1.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/82 (4380 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/83, where GetParam() = (1, 1280x720, 5)
+[ PERFSTAT ]    (samples=100   mean=51.15   median=54.38   min=32.29   stddev=10.57 (20.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/83 (5408 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/84, where GetParam() = (1, 1920x1080, 0)
+[ PERFSTAT ]    (samples=13   mean=493.15   median=490.50   min=484.22   stddev=12.90 (2.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/84 (6758 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/85, where GetParam() = (1, 1920x1080, 4)
+.
+[ PERFSTAT ]    (samples=100   mean=178.64   median=168.09   min=103.00   stddev=43.49 (24.3%))
+[       OK ] OCL_DftFixture_Dft.Dft/85 (18441 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/86, where GetParam() = (1, 1920x1080, 2)
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=504.01   median=497.84   min=286.88   stddev=27.32 (5.4%))
+[       OK ] OCL_DftFixture_Dft.Dft/86 (51013 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/87, where GetParam() = (1, 1920x1080, 1)
+[ PERFSTAT ]    (samples=10   mean=296.23   median=294.93   min=291.07   stddev=5.06 (1.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/87 (3059 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/88, where GetParam() = (1, 1920x1080, 3)
+[ PERFSTAT ]    (samples=10   mean=298.42   median=295.82   min=291.98   stddev=8.89 (3.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/88 (3078 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/89, where GetParam() = (1, 1920x1080, 5)
+.
+[ PERFSTAT ]    (samples=100   mean=112.10   median=113.00   min=60.17   stddev=31.26 (27.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/89 (11660 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/90, where GetParam() = (1, 512x512, 0)
+[ PERFSTAT ]    (samples=13   mean=24.42   median=24.49   min=23.13   stddev=0.44 (1.8%))
+[       OK ] OCL_DftFixture_Dft.Dft/90 (374 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/91, where GetParam() = (1, 512x512, 4)
+[ PERFSTAT ]    (samples=54   mean=11.05   median=11.12   min=9.74   stddev=0.33 (3.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/91 (647 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/92, where GetParam() = (1, 512x512, 2)
+[ PERFSTAT ]    (samples=12   mean=24.53   median=24.86   min=22.96   stddev=0.73 (3.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/92 (346 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/93, where GetParam() = (1, 512x512, 1)
+[ PERFSTAT ]    (samples=15   mean=20.52   median=20.76   min=18.77   stddev=0.60 (2.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/93 (377 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/94, where GetParam() = (1, 512x512, 3)
+[ PERFSTAT ]    (samples=17   mean=20.62   median=20.77   min=19.13   stddev=0.60 (2.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/94 (410 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/95, where GetParam() = (1, 512x512, 5)
+[ PERFSTAT ]    (samples=13   mean=10.54   median=10.59   min=10.12   stddev=0.28 (2.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/95 (569 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/96, where GetParam() = (1, 1024x1024, 0)
+[ PERFSTAT ]    (samples=13   mean=59.79   median=59.86   min=59.04   stddev=0.47 (0.8%))
+[       OK ] OCL_DftFixture_Dft.Dft/96 (973 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/97, where GetParam() = (1, 1024x1024, 4)
+[ PERFSTAT ]    (samples=100   mean=18.20   median=18.19   min=17.91   stddev=0.13 (0.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/97 (2126 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/98, where GetParam() = (1, 1024x1024, 2)
+[ PERFSTAT ]    (samples=100   mean=61.06   median=61.12   min=60.19   stddev=0.38 (0.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/98 (6654 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/99, where GetParam() = (1, 1024x1024, 1)
+[ PERFSTAT ]    (samples=10   mean=47.02   median=47.06   min=46.14   stddev=0.39 (0.8%))
+[       OK ] OCL_DftFixture_Dft.Dft/99 (590 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/100, where GetParam() = (1, 1024x1024, 3)
+[ PERFSTAT ]    (samples=25   mean=47.11   median=47.10   min=46.77   stddev=0.17 (0.4%))
+[       OK ] OCL_DftFixture_Dft.Dft/100 (1386 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/101, where GetParam() = (1, 1024x1024, 5)
+[ PERFSTAT ]    (samples=13   mean=39.57   median=39.53   min=38.07   stddev=0.67 (1.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/101 (992 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/102, where GetParam() = (1, 2048x2048, 0)
+.
+[ PERFSTAT ]    (samples=10   mean=1458.83   median=1460.28   min=1447.36   stddev=6.29 (0.4%))
+[       OK ] OCL_DftFixture_Dft.Dft/102 (15010 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/103, where GetParam() = (1, 2048x2048, 4)
+.
+.
+[ PERFSTAT ]    (samples=100   mean=284.23   median=297.46   min=132.16   stddev=33.05 (11.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/103 (28980 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/104, where GetParam() = (1, 2048x2048, 2)
+.
+[ PERFSTAT ]    (samples=10   mean=1466.58   median=1468.95   min=1450.10   stddev=10.91 (0.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/104 (14894 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/105, where GetParam() = (1, 2048x2048, 1)
+.
+[ PERFSTAT ]    (samples=16   mean=637.77   median=636.23   min=579.59   stddev=18.87 (3.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/105 (10449 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/106, where GetParam() = (1, 2048x2048, 3)
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=655.93   median=650.78   min=592.63   stddev=26.48 (4.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/106 (66442 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/107, where GetParam() = (1, 2048x2048, 5)
+.
+.
+[ PERFSTAT ]    (samples=100   mean=211.92   median=212.30   min=155.83   stddev=9.96 (4.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/107 (21787 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/108, where GetParam() = (2, 640x480, 0)
+[ PERFSTAT ]    (samples=50   mean=18.91   median=18.88   min=18.69   stddev=0.16 (0.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/108 (1432 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/109, where GetParam() = (2, 640x480, 4)
+[ PERFSTAT ]    (samples=13   mean=19.95   median=20.00   min=19.39   stddev=0.29 (1.4%))
+[       OK ] OCL_DftFixture_Dft.Dft/109 (711 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/110, where GetParam() = (2, 640x480, 2)
+[ PERFSTAT ]    (samples=100   mean=18.48   median=19.98   min=10.71   stddev=4.13 (22.3%))
+[       OK ] OCL_DftFixture_Dft.Dft/110 (2002 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/111, where GetParam() = (2, 640x480, 1)
+[ PERFSTAT ]    (samples=100   mean=26.55   median=26.73   min=13.55   stddev=1.39 (5.2%))
+[       OK ] OCL_DftFixture_Dft.Dft/111 (2724 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/112, where GetParam() = (2, 640x480, 3)
+[ PERFSTAT ]    (samples=63   mean=18.61   median=18.69   min=16.88   stddev=0.39 (2.1%))
+[       OK ] OCL_DftFixture_Dft.Dft/112 (1301 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/113, where GetParam() = (2, 640x480, 5)
+[ PERFSTAT ]    (samples=100   mean=18.90   median=19.43   min=7.83   stddev=2.32 (12.3%))
+[       OK ] OCL_DftFixture_Dft.Dft/113 (1963 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/114, where GetParam() = (2, 1280x720, 0)
+[ PERFSTAT ]    (samples=18   mean=115.28   median=114.61   min=113.14   stddev=3.40 (2.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/114 (2235 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/115, where GetParam() = (2, 1280x720, 4)
+[ PERFSTAT ]    (samples=10   mean=40.61   median=40.70   min=38.32   stddev=1.16 (2.8%))
+[       OK ] OCL_DftFixture_Dft.Dft/115 (439 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/116, where GetParam() = (2, 1280x720, 2)
+[ PERFSTAT ]    (samples=13   mean=116.66   median=115.59   min=114.90   stddev=2.24 (1.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/116 (1585 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/117, where GetParam() = (2, 1280x720, 1)
+[ PERFSTAT ]    (samples=10   mean=291.21   median=291.53   min=284.52   stddev=3.76 (1.3%))
+[       OK ] OCL_DftFixture_Dft.Dft/117 (2944 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/118, where GetParam() = (2, 1280x720, 3)
+[ PERFSTAT ]    (samples=10   mean=289.10   median=291.63   min=278.84   stddev=4.94 (1.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/118 (2950 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/119, where GetParam() = (2, 1280x720, 5)
+[ PERFSTAT ]    (samples=100   mean=42.87   median=39.23   min=30.33   stddev=8.46 (19.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/119 (4576 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/120, where GetParam() = (2, 1920x1080, 0)
+[ PERFSTAT ]    (samples=13   mean=279.64   median=276.85   min=275.63   stddev=6.73 (2.4%))
+[       OK ] OCL_DftFixture_Dft.Dft/120 (3879 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/121, where GetParam() = (2, 1920x1080, 4)
+.
+[ PERFSTAT ]    (samples=100   mean=136.48   median=149.28   min=77.95   stddev=32.42 (23.8%))
+[       OK ] OCL_DftFixture_Dft.Dft/121 (14061 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/122, where GetParam() = (2, 1920x1080, 2)
+[ PERFSTAT ]    (samples=13   mean=276.27   median=276.10   min=274.33   stddev=1.42 (0.5%))
+[       OK ] OCL_DftFixture_Dft.Dft/122 (3715 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/123, where GetParam() = (2, 1920x1080, 1)
+[ PERFSTAT ]    (samples=10   mean=270.69   median=269.38   min=265.80   stddev=4.52 (1.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/123 (2771 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/124, where GetParam() = (2, 1920x1080, 3)
+[ PERFSTAT ]    (samples=10   mean=270.07   median=269.34   min=265.64   stddev=3.08 (1.1%))
+[       OK ] OCL_DftFixture_Dft.Dft/124 (2769 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/125, where GetParam() = (2, 1920x1080, 5)
+[ PERFSTAT ]    (samples=100   mean=70.35   median=64.00   min=58.68   stddev=16.67 (23.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/125 (7703 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/126, where GetParam() = (2, 512x512, 0)
+[ PERFSTAT ]    (samples=13   mean=23.51   median=23.71   min=21.99   stddev=0.65 (2.8%))
+[       OK ] OCL_DftFixture_Dft.Dft/126 (552 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/127, where GetParam() = (2, 512x512, 4)
+[ PERFSTAT ]    (samples=100   mean=10.77   median=10.88   min=8.85   stddev=0.38 (3.5%))
+[       OK ] OCL_DftFixture_Dft.Dft/127 (1454 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/128, where GetParam() = (2, 512x512, 2)
+[ PERFSTAT ]    (samples=12   mean=24.06   median=24.34   min=22.35   stddev=0.70 (2.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/128 (343 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/129, where GetParam() = (2, 512x512, 1)
+[ PERFSTAT ]    (samples=30   mean=19.86   median=20.06   min=18.05   stddev=0.59 (2.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/129 (649 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/130, where GetParam() = (2, 512x512, 3)
+[ PERFSTAT ]    (samples=10   mean=20.04   median=20.03   min=19.04   stddev=0.46 (2.3%))
+[       OK ] OCL_DftFixture_Dft.Dft/130 (248 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/131, where GetParam() = (2, 512x512, 5)
+[ PERFSTAT ]    (samples=31   mean=10.26   median=10.34   min=9.34   stddev=0.31 (3.0%))
+[       OK ] OCL_DftFixture_Dft.Dft/131 (367 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/132, where GetParam() = (2, 1024x1024, 0)
+[ PERFSTAT ]    (samples=13   mean=57.03   median=56.89   min=56.41   stddev=0.53 (0.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/132 (1217 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/133, where GetParam() = (2, 1024x1024, 4)
+[ PERFSTAT ]    (samples=13   mean=39.60   median=39.82   min=37.94   stddev=0.68 (1.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/133 (967 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/134, where GetParam() = (2, 1024x1024, 2)
+[ PERFSTAT ]    (samples=63   mean=56.89   median=56.88   min=56.14   stddev=0.38 (0.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/134 (3972 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/135, where GetParam() = (2, 1024x1024, 1)
+[ PERFSTAT ]    (samples=10   mean=47.28   median=47.49   min=45.17   stddev=0.80 (1.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/135 (572 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/136, where GetParam() = (2, 1024x1024, 3)
+[ PERFSTAT ]    (samples=10   mean=47.48   median=47.46   min=45.03   stddev=1.24 (2.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/136 (584 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/137, where GetParam() = (2, 1024x1024, 5)
+[ PERFSTAT ]    (samples=13   mean=14.94   median=14.93   min=14.54   stddev=0.20 (1.3%))
+[       OK ] OCL_DftFixture_Dft.Dft/137 (331 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/138, where GetParam() = (2, 2048x2048, 0)
+[ PERFSTAT ]    (samples=10   mean=813.82   median=820.59   min=771.01   stddev=20.82 (2.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/138 (8474 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/139, where GetParam() = (2, 2048x2048, 4)
+.
+.
+[ PERFSTAT ]    (samples=100   mean=207.54   median=198.70   min=179.81   stddev=18.57 (8.9%))
+[       OK ] OCL_DftFixture_Dft.Dft/139 (21233 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/140, where GetParam() = (2, 2048x2048, 2)
+[ PERFSTAT ]    (samples=10   mean=821.27   median=826.05   min=772.89   stddev=17.16 (2.1%))
+[       OK ] OCL_DftFixture_Dft.Dft/140 (8360 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/141, where GetParam() = (2, 2048x2048, 1)
+[ PERFSTAT ]    (samples=10   mean=570.76   median=574.46   min=546.97   stddev=14.91 (2.6%))
+[       OK ] OCL_DftFixture_Dft.Dft/141 (5857 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/142, where GetParam() = (2, 2048x2048, 3)
+[ PERFSTAT ]    (samples=13   mean=572.44   median=570.45   min=552.10   stddev=15.44 (2.7%))
+[       OK ] OCL_DftFixture_Dft.Dft/142 (7776 ms)
+[ RUN      ] OCL_DftFixture_Dft.Dft/143, where GetParam() = (2, 2048x2048, 5)
+.
+[ PERFSTAT ]    (samples=100   mean=192.74   median=205.07   min=100.77   stddev=37.48 (19.4%))
+[       OK ] OCL_DftFixture_Dft.Dft/143 (19897 ms)
+[----------] 144 tests from OCL_DftFixture_Dft (975306 ms total)
+
+[----------] Global test environment tear-down
+[==========] 144 tests from 1 test case ran. (975306 ms total)
+[  PASSED  ] 144 tests.
