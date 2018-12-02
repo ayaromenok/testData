@@ -1,5 +1,6 @@
 ### Intel IvyBridgeM GT2 info
 
+```
 Tests/perf results fom Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz added as reference
 OpenCL Platforms:
     Intel Gen OCL Driver
@@ -40,4 +41,4 @@ Current OpenCL device:
     Preferred vector width long = 2
     Preferred vector width float = 4
     Preferred vector width double = 0
-
+```
