@@ -1,0 +1,204 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_MedianBlurFixture_Bilateral*
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from OCL_MedianBlurFixture_Bilateral
+[ RUN      ] OCL_MedianBlurFixture_Bilateral.Bilateral/0, where GetParam() = (640x480, 3)
+[ PERFSTAT ]    (samples=100   mean=5.30   median=5.32   min=3.32   stddev=0.33 (6.3%))
+[       OK ] OCL_MedianBlurFixture_Bilateral.Bilateral/0 (627 ms)
+[ RUN      ] OCL_MedianBlurFixture_Bilateral.Bilateral/1, where GetParam() = (640x480, 5)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=656x480x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=63   mean=30.44   median=30.32   min=28.16   stddev=0.88 (2.9%))
+[       OK ] OCL_MedianBlurFixture_Bilateral.Bilateral/1 (2181 ms)
+[ RUN      ] OCL_MedianBlurFixture_Bilateral.Bilateral/2, where GetParam() = (1280x720, 3)
+[ PERFSTAT ]    (samples=38   mean=9.32   median=9.25   min=9.15   stddev=0.17 (1.9%))
+[       OK ] OCL_MedianBlurFixture_Bilateral.Bilateral/2 (419 ms)
+[ RUN      ] OCL_MedianBlurFixture_Bilateral.Bilateral/3, where GetParam() = (1280x720, 5)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1296x720x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=25   mean=85.41   median=85.38   min=83.61   stddev=1.06 (1.2%))
+[       OK ] OCL_MedianBlurFixture_Bilateral.Bilateral/3 (2351 ms)
+[ RUN      ] OCL_MedianBlurFixture_Bilateral.Bilateral/4, where GetParam() = (1920x1080, 3)
+[ PERFSTAT ]    (samples=25   mean=19.24   median=19.18   min=18.95   stddev=0.22 (1.1%))
+[       OK ] OCL_MedianBlurFixture_Bilateral.Bilateral/4 (575 ms)
+[ RUN      ] OCL_MedianBlurFixture_Bilateral.Bilateral/5, where GetParam() = (1920x1080, 5)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1936x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1936x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1936x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1936x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1936x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1936x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1936x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1936x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1936x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1936x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1936x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1936x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=1936x1088x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=13   mean=193.17   median=193.11   min=192.22   stddev=0.51 (0.3%))
+[       OK ] OCL_MedianBlurFixture_Bilateral.Bilateral/5 (2682 ms)
+[ RUN      ] OCL_MedianBlurFixture_Bilateral.Bilateral/6, where GetParam() = (3840x2160, 3)
+[ PERFSTAT ]    (samples=13   mean=71.18   median=71.23   min=70.86   stddev=0.27 (0.4%))
+[       OK ] OCL_MedianBlurFixture_Bilateral.Bilateral/6 (1090 ms)
+[ RUN      ] OCL_MedianBlurFixture_Bilateral.Bilateral/7, where GetParam() = (3840x2160, 5)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=3856x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=3856x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=3856x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=3856x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=3856x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=3856x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=3856x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=3856x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=3856x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('medianFilter5', dims=2, globalsize=3856x2160x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=10   mean=1119.64   median=1110.89   min=1107.88   stddev=28.79 (2.6%))
+[       OK ] OCL_MedianBlurFixture_Bilateral.Bilateral/7 (11378 ms)
+[----------] 8 tests from OCL_MedianBlurFixture_Bilateral (21305 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (21306 ms total)
+[  PASSED  ] 8 tests.

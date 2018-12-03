@@ -1,0 +1,80 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_BilateralFixture_Bilateral*
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from OCL_BilateralFixture_Bilateral
+[ RUN      ] OCL_BilateralFixture_Bilateral.Bilateral/0, where GetParam() = 640x480
+[ PERFSTAT ]    (samples=38   mean=17.68   median=17.88   min=16.94   stddev=0.45 (2.6%))
+[       OK ] OCL_BilateralFixture_Bilateral.Bilateral/0 (829 ms)
+[ RUN      ] OCL_BilateralFixture_Bilateral.Bilateral/1, where GetParam() = 1280x720
+[ PERFSTAT ]    (samples=10   mean=43.35   median=43.67   min=40.92   stddev=1.16 (2.7%))
+[       OK ] OCL_BilateralFixture_Bilateral.Bilateral/1 (471 ms)
+[ RUN      ] OCL_BilateralFixture_Bilateral.Bilateral/2, where GetParam() = 1920x1080
+[ PERFSTAT ]    (samples=10   mean=90.82   median=90.94   min=89.30   stddev=0.63 (0.7%))
+[       OK ] OCL_BilateralFixture_Bilateral.Bilateral/2 (981 ms)
+[ RUN      ] OCL_BilateralFixture_Bilateral.Bilateral/3, where GetParam() = 3840x2160
+[ PERFSTAT ]    (samples=10   mean=344.16   median=344.09   min=343.77   stddev=0.34 (0.1%))
+[       OK ] OCL_BilateralFixture_Bilateral.Bilateral/3 (3645 ms)
+[----------] 4 tests from OCL_BilateralFixture_Bilateral (5929 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (5929 ms total)
+[  PASSED  ] 4 tests.

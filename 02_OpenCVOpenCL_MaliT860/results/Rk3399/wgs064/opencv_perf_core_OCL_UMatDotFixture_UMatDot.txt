@@ -1,0 +1,122 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_UMatDotFixture_UMatDot*
+[==========] Running 18 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 18 tests from OCL_UMatDotFixture_UMatDot
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=2.65   median=2.23   min=1.53   stddev=1.15 (43.4%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/0 (3188 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=3.72   median=3.98   min=2.31   stddev=0.69 (18.6%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/1 (462 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/2, where GetParam() = (640x480, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=5.61   median=5.63   min=4.13   stddev=0.48 (8.6%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/2 (621 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/3, where GetParam() = (640x480, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=6.65   median=6.82   min=4.53   stddev=0.67 (10.1%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/3 (767 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/4, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=7.03   median=7.20   min=5.11   stddev=0.57 (8.1%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/4 (768 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/5, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=7.14   median=7.04   min=6.39   stddev=0.39 (5.5%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/5 (831 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/6, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=5.92   median=5.97   min=4.43   stddev=0.45 (7.6%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/6 (656 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/7, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=5.94   median=6.10   min=4.58   stddev=0.55 (9.2%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/7 (680 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/8, where GetParam() = (1280x720, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=10.70   median=10.78   min=8.97   stddev=0.39 (3.6%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/8 (1170 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/9, where GetParam() = (1280x720, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=13.02   median=13.07   min=10.90   stddev=0.41 (3.2%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/9 (1478 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/10, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=63   mean=13.61   median=13.66   min=12.08   stddev=0.40 (3.0%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/10 (980 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/11, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=16.03   median=16.07   min=15.36   stddev=0.40 (2.5%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/11 (381 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/12, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=9.65   median=9.82   min=7.25   stddev=0.70 (7.2%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/12 (1055 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/13, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=10.06   median=9.86   min=9.20   stddev=0.59 (5.9%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/13 (1165 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/14, where GetParam() = (1920x1080, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=20.58   median=20.79   min=17.96   stddev=0.73 (3.6%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/14 (2220 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/15, where GetParam() = (1920x1080, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=25.51   median=25.63   min=24.34   stddev=0.68 (2.7%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/15 (599 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/16, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=10   mean=26.35   median=26.23   min=25.98   stddev=0.37 (1.4%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/16 (472 ms)
+[ RUN      ] OCL_UMatDotFixture_UMatDot.UMatDot/17, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=32.88   median=32.89   min=32.45   stddev=0.24 (0.7%))
+[       OK ] OCL_UMatDotFixture_UMatDot.UMatDot/17 (813 ms)
+[----------] 18 tests from OCL_UMatDotFixture_UMatDot (18311 ms total)
+
+[----------] Global test environment tear-down
+[==========] 18 tests from 1 test case ran. (18312 ms total)
+[  PASSED  ] 18 tests.

@@ -1,0 +1,140 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_CompareFixture_CompareScalar*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_CompareFixture_CompareScalar
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/0, where GetParam() = (640x480, 32FC1, CMP_LT)
+[ PERFSTAT ]    (samples=13   mean=2.99   median=3.00   min=2.78   stddev=0.08 (2.8%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/0 (80 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/1, where GetParam() = (640x480, 32FC1, CMP_LE)
+[ PERFSTAT ]    (samples=100   mean=4.29   median=4.31   min=4.08   stddev=0.15 (3.4%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/1 (481 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/2, where GetParam() = (640x480, 32FC1, CMP_EQ)
+[ PERFSTAT ]    (samples=100   mean=4.03   median=4.15   min=3.07   stddev=0.39 (9.6%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/2 (497 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/3, where GetParam() = (640x480, 32FC1, CMP_NE)
+[ PERFSTAT ]    (samples=100   mean=3.97   median=4.02   min=3.10   stddev=0.28 (7.0%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/3 (484 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/4, where GetParam() = (640x480, 32FC1, CMP_GE)
+[ PERFSTAT ]    (samples=100   mean=3.91   median=4.01   min=3.04   stddev=0.30 (7.6%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/4 (471 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/5, where GetParam() = (640x480, 32FC1, CMP_GT)
+[ PERFSTAT ]    (samples=100   mean=3.78   median=3.98   min=2.92   stddev=0.41 (10.8%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/5 (457 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/6, where GetParam() = (1280x720, 32FC1, CMP_LT)
+[ PERFSTAT ]    (samples=100   mean=8.65   median=8.76   min=7.61   stddev=0.32 (3.7%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/6 (937 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/7, where GetParam() = (1280x720, 32FC1, CMP_LE)
+[ PERFSTAT ]    (samples=88   mean=8.76   median=8.78   min=7.71   stddev=0.26 (2.9%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/7 (835 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/8, where GetParam() = (1280x720, 32FC1, CMP_EQ)
+[ PERFSTAT ]    (samples=91   mean=8.83   median=8.90   min=7.78   stddev=0.26 (3.0%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/8 (874 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/9, where GetParam() = (1280x720, 32FC1, CMP_NE)
+[ PERFSTAT ]    (samples=14   mean=8.34   median=8.38   min=7.84   stddev=0.24 (2.9%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/9 (177 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/10, where GetParam() = (1280x720, 32FC1, CMP_GE)
+[ PERFSTAT ]    (samples=75   mean=8.63   median=8.69   min=7.84   stddev=0.26 (3.0%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/10 (714 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/11, where GetParam() = (1280x720, 32FC1, CMP_GT)
+[ PERFSTAT ]    (samples=100   mean=8.83   median=8.89   min=7.52   stddev=0.31 (3.5%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/11 (958 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/12, where GetParam() = (1920x1080, 32FC1, CMP_LT)
+[ PERFSTAT ]    (samples=27   mean=17.24   median=17.37   min=15.57   stddev=0.51 (3.0%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/12 (563 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/13, where GetParam() = (1920x1080, 32FC1, CMP_LE)
+[ PERFSTAT ]    (samples=38   mean=8.70   median=8.69   min=8.10   stddev=0.25 (2.8%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/13 (453 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/14, where GetParam() = (1920x1080, 32FC1, CMP_EQ)
+[ PERFSTAT ]    (samples=44   mean=8.74   median=8.76   min=8.07   stddev=0.26 (3.0%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/14 (515 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/15, where GetParam() = (1920x1080, 32FC1, CMP_NE)
+[ PERFSTAT ]    (samples=26   mean=17.21   median=17.41   min=15.78   stddev=0.51 (3.0%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/15 (549 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/16, where GetParam() = (1920x1080, 32FC1, CMP_GE)
+[ PERFSTAT ]    (samples=50   mean=8.69   median=8.73   min=8.26   stddev=0.18 (2.1%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/16 (561 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/17, where GetParam() = (1920x1080, 32FC1, CMP_GT)
+[ PERFSTAT ]    (samples=100   mean=10.95   median=11.26   min=8.07   stddev=0.80 (7.3%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/17 (1217 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/18, where GetParam() = (3840x2160, 32FC1, CMP_LT)
+[ PERFSTAT ]    (samples=75   mean=18.48   median=18.60   min=17.14   stddev=0.42 (2.3%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/18 (1877 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/19, where GetParam() = (3840x2160, 32FC1, CMP_LE)
+[ PERFSTAT ]    (samples=63   mean=22.27   median=22.38   min=18.77   stddev=0.66 (3.0%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/19 (1769 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/20, where GetParam() = (3840x2160, 32FC1, CMP_EQ)
+[ PERFSTAT ]    (samples=50   mean=18.53   median=18.63   min=17.28   stddev=0.44 (2.4%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/20 (1322 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/21, where GetParam() = (3840x2160, 32FC1, CMP_NE)
+[ PERFSTAT ]    (samples=88   mean=18.61   median=18.66   min=17.16   stddev=0.47 (2.5%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/21 (2063 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/22, where GetParam() = (3840x2160, 32FC1, CMP_GE)
+[ PERFSTAT ]    (samples=50   mean=18.76   median=18.83   min=17.45   stddev=0.37 (2.0%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/22 (1281 ms)
+[ RUN      ] OCL_CompareFixture_CompareScalar.CompareScalar/23, where GetParam() = (3840x2160, 32FC1, CMP_GT)
+[ PERFSTAT ]    (samples=100   mean=18.41   median=18.68   min=17.24   stddev=0.56 (3.0%))
+[       OK ] OCL_CompareFixture_CompareScalar.CompareScalar/23 (2298 ms)
+[----------] 24 tests from OCL_CompareFixture_CompareScalar (21444 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (21445 ms total)
+[  PASSED  ] 24 tests.

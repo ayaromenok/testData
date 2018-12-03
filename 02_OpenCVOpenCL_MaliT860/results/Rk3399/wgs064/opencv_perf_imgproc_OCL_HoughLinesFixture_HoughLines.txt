@@ -1,0 +1,116 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_HoughLinesFixture_HoughLines*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_HoughLinesFixture_HoughLines
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/0, where GetParam() = (640x480, 0.1, 0.0174533)
+[ PERFSTAT ]    (samples=100   mean=32.03   median=32.77   min=16.28   stddev=2.65 (8.3%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/0 (3352 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/1, where GetParam() = (640x480, 0.1, 0.1)
+[ PERFSTAT ]    (samples=38   mean=13.49   median=13.48   min=12.60   stddev=0.36 (2.7%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/1 (534 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/2, where GetParam() = (640x480, 1, 0.0174533)
+[ PERFSTAT ]    (samples=100   mean=17.19   median=17.54   min=11.87   stddev=1.19 (6.9%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/2 (1827 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/3, where GetParam() = (640x480, 1, 0.1)
+[ PERFSTAT ]    (samples=100   mean=10.47   median=10.72   min=6.61   stddev=1.01 (9.6%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/3 (1093 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/4, where GetParam() = (1280x720, 0.1, 0.0174533)
+[ PERFSTAT ]    (samples=100   mean=24.77   median=24.95   min=17.92   stddev=1.34 (5.4%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/4 (2596 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/5, where GetParam() = (1280x720, 0.1, 0.1)
+[ PERFSTAT ]    (samples=100   mean=18.15   median=16.61   min=12.65   stddev=3.58 (19.7%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/5 (1884 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/6, where GetParam() = (1280x720, 1, 0.0174533)
+[ PERFSTAT ]    (samples=27   mean=25.21   median=24.99   min=23.28   stddev=0.75 (3.0%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/6 (774 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/7, where GetParam() = (1280x720, 1, 0.1)
+[ PERFSTAT ]    (samples=10   mean=13.89   median=13.77   min=13.59   stddev=0.35 (2.5%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/7 (150 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/8, where GetParam() = (1920x1080, 0.1, 0.0174533)
+[ PERFSTAT ]    (samples=100   mean=54.66   median=74.20   min=26.85   stddev=21.81 (39.9%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/8 (5876 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/9, where GetParam() = (1920x1080, 0.1, 0.1)
+[ PERFSTAT ]    (samples=100   mean=30.97   median=31.18   min=21.75   stddev=1.38 (4.4%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/9 (3150 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/10, where GetParam() = (1920x1080, 1, 0.0174533)
+[ PERFSTAT ]    (samples=15   mean=35.82   median=35.96   min=32.50   stddev=1.05 (2.9%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/10 (637 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/11, where GetParam() = (1920x1080, 1, 0.1)
+[ PERFSTAT ]    (samples=10   mean=18.89   median=18.93   min=17.82   stddev=0.56 (2.9%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/11 (207 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/12, where GetParam() = (3840x2160, 0.1, 0.0174533)
+[ PERFSTAT ]    (samples=100   mean=73.05   median=62.70   min=59.40   stddev=27.29 (37.4%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/12 (8606 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/13, where GetParam() = (3840x2160, 0.1, 0.1)
+[ PERFSTAT ]    (samples=13   mean=65.41   median=65.40   min=64.56   stddev=0.42 (0.6%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/13 (962 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/14, where GetParam() = (3840x2160, 1, 0.0174533)
+[ PERFSTAT ]    (samples=13   mean=35.01   median=35.05   min=33.55   stddev=0.55 (1.6%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/14 (510 ms)
+[ RUN      ] OCL_HoughLinesFixture_HoughLines.HoughLines/15, where GetParam() = (3840x2160, 1, 0.1)
+[ PERFSTAT ]    (samples=100   mean=32.84   median=32.63   min=18.76   stddev=7.23 (22.0%))
+[       OK ] OCL_HoughLinesFixture_HoughLines.HoughLines/15 (3418 ms)
+[----------] 16 tests from OCL_HoughLinesFixture_HoughLines (35582 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (35584 ms total)
+[  PASSED  ] 16 tests.

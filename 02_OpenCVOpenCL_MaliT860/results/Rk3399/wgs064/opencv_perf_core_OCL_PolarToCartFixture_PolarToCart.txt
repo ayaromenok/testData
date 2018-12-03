@@ -1,0 +1,92 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_PolarToCartFixture_PolarToCart*
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from OCL_PolarToCartFixture_PolarToCart
+[ RUN      ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/0, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=50   mean=7.24   median=7.27   min=6.58   stddev=0.21 (2.9%))
+[       OK ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/0 (469 ms)
+[ RUN      ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/1, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=20.60   median=20.76   min=19.80   stddev=0.53 (2.6%))
+[       OK ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/1 (432 ms)
+[ RUN      ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/2, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=16.05   median=15.92   min=15.64   stddev=0.40 (2.5%))
+[       OK ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/2 (295 ms)
+[ RUN      ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/3, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=50   mean=17.01   median=17.03   min=16.80   stddev=0.10 (0.6%))
+[       OK ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/3 (1394 ms)
+[ RUN      ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/4, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=14.00   median=14.63   min=10.05   stddev=3.18 (22.7%))
+[       OK ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/4 (1751 ms)
+[ RUN      ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/5, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=35.64   median=35.04   min=34.91   stddev=2.74 (7.7%))
+[       OK ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/5 (4529 ms)
+[ RUN      ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/6, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=36.14   median=35.07   min=34.53   stddev=2.14 (5.9%))
+[       OK ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/6 (4398 ms)
+[ RUN      ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/7, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=133.26   median=133.27   min=132.54   stddev=0.33 (0.2%))
+[       OK ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/7 (4173 ms)
+[----------] 8 tests from OCL_PolarToCartFixture_PolarToCart (17443 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (17444 ms total)
+[  PASSED  ] 8 tests.

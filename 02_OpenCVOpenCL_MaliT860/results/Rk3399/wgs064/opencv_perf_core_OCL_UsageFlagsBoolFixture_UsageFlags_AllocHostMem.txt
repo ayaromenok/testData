@@ -1,0 +1,92 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem*
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem
+[ RUN      ] OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem.UsageFlags_AllocHostMem/0, where GetParam() = (640x480, false)
+[ PERFSTAT ]    (samples=100   mean=9.71   median=9.69   min=7.97   stddev=0.55 (5.6%))
+[       OK ] OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem.UsageFlags_AllocHostMem/0 (1060 ms)
+[ RUN      ] OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem.UsageFlags_AllocHostMem/1, where GetParam() = (640x480, true)
+[ PERFSTAT ]    (samples=100   mean=10.28   median=10.31   min=9.39   stddev=0.40 (3.9%))
+[       OK ] OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem.UsageFlags_AllocHostMem/1 (1053 ms)
+[ RUN      ] OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem.UsageFlags_AllocHostMem/2, where GetParam() = (1280x720, false)
+[ PERFSTAT ]    (samples=10   mean=18.83   median=18.74   min=18.33   stddev=0.51 (2.7%))
+[       OK ] OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem.UsageFlags_AllocHostMem/2 (194 ms)
+[ RUN      ] OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem.UsageFlags_AllocHostMem/3, where GetParam() = (1280x720, true)
+[ PERFSTAT ]    (samples=10   mean=19.23   median=19.18   min=18.64   stddev=0.37 (1.9%))
+[       OK ] OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem.UsageFlags_AllocHostMem/3 (197 ms)
+[ RUN      ] OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem.UsageFlags_AllocHostMem/4, where GetParam() = (1920x1080, false)
+[ PERFSTAT ]    (samples=13   mean=35.38   median=35.41   min=33.70   stddev=0.96 (2.7%))
+[       OK ] OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem.UsageFlags_AllocHostMem/4 (480 ms)
+[ RUN      ] OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem.UsageFlags_AllocHostMem/5, where GetParam() = (1920x1080, true)
+[ PERFSTAT ]    (samples=10   mean=35.24   median=35.26   min=34.95   stddev=0.19 (0.6%))
+[       OK ] OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem.UsageFlags_AllocHostMem/5 (358 ms)
+[ RUN      ] OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem.UsageFlags_AllocHostMem/6, where GetParam() = (3840x2160, false)
+[ PERFSTAT ]    (samples=100   mean=59.60   median=57.59   min=53.97   stddev=3.69 (6.2%))
+[       OK ] OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem.UsageFlags_AllocHostMem/6 (6308 ms)
+[ RUN      ] OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem.UsageFlags_AllocHostMem/7, where GetParam() = (3840x2160, true)
+[ PERFSTAT ]    (samples=100   mean=58.22   median=56.98   min=55.69   stddev=2.70 (4.6%))
+[       OK ] OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem.UsageFlags_AllocHostMem/7 (5903 ms)
+[----------] 8 tests from OCL_UsageFlagsBoolFixture_UsageFlags_AllocHostMem (15554 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (15556 ms total)
+[  PASSED  ] 8 tests.

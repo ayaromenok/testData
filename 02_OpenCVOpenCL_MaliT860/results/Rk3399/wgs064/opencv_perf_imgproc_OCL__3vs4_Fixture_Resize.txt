@@ -1,0 +1,143 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL__3vs4_Fixture_Resize*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL__3vs4_Fixture_Resize
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/0, where GetParam() = (640x480, 8UC3, Pure)
+[ PERFSTAT ]    (samples=100   mean=8.53   median=9.88   min=2.59   stddev=2.56 (30.0%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/0 (897 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/1, where GetParam() = (640x480, 8UC3, Split)
+[ PERFSTAT ]    (samples=100   mean=24.76   median=25.38   min=13.87   stddev=2.30 (9.3%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/1 (2666 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/2, where GetParam() = (640x480, 8UC3, Convert)
+[ PERFSTAT ]    (samples=100   mean=21.33   median=22.31   min=11.96   stddev=2.50 (11.7%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/2 (2311 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/3, where GetParam() = (640x480, 32FC3, Pure)
+[ PERFSTAT ]    (samples=100   mean=4.74   median=4.83   min=3.36   stddev=0.37 (7.9%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/3 (605 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/4, where GetParam() = (640x480, 32FC3, Split)
+[ PERFSTAT ]    (samples=100   mean=18.23   median=18.41   min=14.15   stddev=0.89 (4.9%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/4 (2007 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/5, where GetParam() = (640x480, 32FC3, Convert)
+[ PERFSTAT ]    (samples=25   mean=13.74   median=13.64   min=13.37   stddev=0.28 (2.1%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/5 (530 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/6, where GetParam() = (1280x720, 8UC3, Pure)
+[ PERFSTAT ]    (samples=100   mean=6.18   median=5.95   min=5.10   stddev=1.11 (18.0%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/6 (747 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/7, where GetParam() = (1280x720, 8UC3, Split)
+[ PERFSTAT ]    (samples=100   mean=32.39   median=32.77   min=28.81   stddev=1.89 (5.8%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/7 (3339 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/8, where GetParam() = (1280x720, 8UC3, Convert)
+[ PERFSTAT ]    (samples=100   mean=26.61   median=26.47   min=15.34   stddev=4.66 (17.5%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/8 (2853 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/9, where GetParam() = (1280x720, 32FC3, Pure)
+[ PERFSTAT ]    (samples=100   mean=8.93   median=9.00   min=7.41   stddev=0.32 (3.6%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/9 (1062 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/10, where GetParam() = (1280x720, 32FC3, Split)
+[ PERFSTAT ]    (samples=100   mean=39.48   median=39.75   min=31.26   stddev=1.32 (3.3%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/10 (4124 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/11, where GetParam() = (1280x720, 32FC3, Convert)
+[ PERFSTAT ]    (samples=63   mean=20.45   median=20.43   min=20.10   stddev=0.14 (0.7%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/11 (1512 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/12, where GetParam() = (1920x1080, 8UC3, Pure)
+[ PERFSTAT ]    (samples=100   mean=12.45   median=12.64   min=8.04   stddev=1.83 (14.7%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/12 (1458 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/13, where GetParam() = (1920x1080, 8UC3, Split)
+[ PERFSTAT ]    (samples=100   mean=56.81   median=56.40   min=36.61   stddev=4.65 (8.2%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/13 (5917 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/14, where GetParam() = (1920x1080, 8UC3, Convert)
+[ PERFSTAT ]    (samples=100   mean=46.01   median=45.20   min=36.89   stddev=3.36 (7.3%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/14 (4809 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/15, where GetParam() = (1920x1080, 32FC3, Pure)
+[ PERFSTAT ]    (samples=16   mean=16.92   median=16.74   min=16.52   stddev=0.50 (3.0%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/15 (580 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/16, where GetParam() = (1920x1080, 32FC3, Split)
+[ PERFSTAT ]    (samples=38   mean=25.56   median=25.55   min=25.42   stddev=0.06 (0.2%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/16 (1445 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/17, where GetParam() = (1920x1080, 32FC3, Convert)
+[ PERFSTAT ]    (samples=13   mean=19.98   median=19.91   min=19.82   stddev=0.18 (0.9%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/17 (691 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/18, where GetParam() = (3840x2160, 8UC3, Pure)
+[ PERFSTAT ]    (samples=25   mean=46.25   median=46.16   min=45.62   stddev=0.46 (1.0%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/18 (1694 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/19, where GetParam() = (3840x2160, 8UC3, Split)
+.
+.
+[ PERFSTAT ]    (samples=100   mean=201.96   median=200.12   min=152.53   stddev=24.18 (12.0%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/19 (20865 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/20, where GetParam() = (3840x2160, 8UC3, Convert)
+.
+[ PERFSTAT ]    (samples=100   mean=141.34   median=140.62   min=122.58   stddev=7.32 (5.2%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/20 (14689 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/21, where GetParam() = (3840x2160, 32FC3, Pure)
+[ PERFSTAT ]    (samples=63   mean=19.01   median=18.95   min=18.70   stddev=0.45 (2.4%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/21 (2139 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/22, where GetParam() = (3840x2160, 32FC3, Split)
+[ PERFSTAT ]    (samples=50   mean=82.02   median=82.02   min=81.77   stddev=0.13 (0.2%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/22 (5291 ms)
+[ RUN      ] OCL__3vs4_Fixture_Resize.Resize/23, where GetParam() = (3840x2160, 32FC3, Convert)
+[ PERFSTAT ]    (samples=13   mean=63.96   median=63.92   min=63.75   stddev=0.21 (0.3%))
+[       OK ] OCL__3vs4_Fixture_Resize.Resize/23 (2076 ms)
+[----------] 24 tests from OCL__3vs4_Fixture_Resize (84317 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (84318 ms total)
+[  PASSED  ] 24 tests.

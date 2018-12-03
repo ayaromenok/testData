@@ -1,0 +1,143 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 64
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_AddWeightedFixture_AddWeighted*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_AddWeightedFixture_AddWeighted
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=2.89   median=3.14   min=1.66   stddev=0.59 (20.3%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/0 (382 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=4.08   median=4.13   min=2.99   stddev=0.32 (7.8%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/1 (527 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/2, where GetParam() = (640x480, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=4.67   median=4.75   min=3.36   stddev=0.39 (8.3%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/2 (532 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/3, where GetParam() = (640x480, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=6.10   median=5.69   min=5.30   stddev=0.80 (13.1%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/3 (740 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/4, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=5.10   median=5.07   min=4.12   stddev=0.35 (6.8%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/4 (609 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/5, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=7.74   median=7.67   min=7.53   stddev=0.18 (2.3%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/5 (233 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/6, where GetParam() = (1280x720, 8UC1)
+.
+[ PERFSTAT ]    (samples=100   mean=3.96   median=3.82   min=1.65   stddev=1.74 (43.9%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/6 (61215 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/7, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=5.95   median=5.89   min=5.64   stddev=0.29 (4.8%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/7 (717 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/8, where GetParam() = (1280x720, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=8.64   median=8.70   min=7.10   stddev=0.35 (4.1%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/8 (992 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/9, where GetParam() = (1280x720, 32FC3)
+[ PERFSTAT ]    (samples=50   mean=11.97   median=11.96   min=11.69   stddev=0.15 (1.2%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/9 (850 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/10, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=83   mean=11.27   median=11.38   min=9.81   stddev=0.34 (3.0%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/10 (1091 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/11, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=38   mean=7.97   median=8.01   min=7.51   stddev=0.20 (2.5%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/11 (667 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/12, where GetParam() = (1920x1080, 8UC1)
+.
+.
+[ PERFSTAT ]    (samples=100   mean=4.66   median=3.26   min=1.78   stddev=2.53 (54.4%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/12 (115954 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/13, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=75   mean=9.36   median=9.34   min=9.00   stddev=0.14 (1.5%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/13 (910 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/14, where GetParam() = (1920x1080, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=16.12   median=16.02   min=15.53   stddev=0.43 (2.7%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/14 (361 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/15, where GetParam() = (1920x1080, 32FC3)
+[ PERFSTAT ]    (samples=38   mean=10.76   median=10.74   min=10.53   stddev=0.12 (1.1%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/15 (1022 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/16, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=7.74   median=8.00   min=5.31   stddev=0.79 (10.1%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/16 (1106 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/17, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=38   mean=13.78   median=13.76   min=13.50   stddev=0.22 (1.6%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/17 (1288 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/18, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=19.59   median=19.70   min=19.17   stddev=0.28 (1.4%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/18 (496 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/19, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=25   mean=14.08   median=14.04   min=13.93   stddev=0.20 (1.4%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/19 (1089 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/20, where GetParam() = (3840x2160, 8UC3)
+[ PERFSTAT ]    (samples=50   mean=15.62   median=15.62   min=15.40   stddev=0.07 (0.4%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/20 (1649 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/21, where GetParam() = (3840x2160, 32FC3)
+[ PERFSTAT ]    (samples=25   mean=36.75   median=36.72   min=36.57   stddev=0.15 (0.4%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/21 (2662 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/22, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=25   mean=20.20   median=20.18   min=19.94   stddev=0.17 (0.8%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/22 (1230 ms)
+[ RUN      ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/23, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=47.95   median=47.92   min=47.81   stddev=0.09 (0.2%))
+[       OK ] OCL_AddWeightedFixture_AddWeighted.AddWeighted/23 (3015 ms)
+[----------] 24 tests from OCL_AddWeightedFixture_AddWeighted (199342 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (199344 ms total)
+[  PASSED  ] 24 tests.
