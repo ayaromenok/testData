@@ -1,0 +1,124 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 32
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_TransposeFixture_TransposeInplace*
+[==========] Running 18 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 18 tests from OCL_TransposeFixture_TransposeInplace
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/0, where GetParam() = (640x640, 8UC1)
+.
+[ PERFSTAT ]    (samples=100   mean=3.80   median=3.24   min=2.77   stddev=1.00 (26.4%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/0 (51520 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/1, where GetParam() = (640x640, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=5.09   median=5.20   min=3.91   stddev=0.41 (8.2%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/1 (601 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/2, where GetParam() = (640x640, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=5.48   median=5.50   min=4.45   stddev=0.38 (7.0%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/2 (637 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/3, where GetParam() = (640x640, 32FC3)
+[ PERFSTAT ]    (samples=13   mean=8.39   median=8.34   min=8.20   stddev=0.18 (2.1%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/3 (200 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/4, where GetParam() = (640x640, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=4.84   median=4.84   min=3.79   stddev=0.36 (7.5%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/4 (555 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/5, where GetParam() = (640x640, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=10.75   median=10.72   min=10.13   stddev=0.29 (2.7%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/5 (244 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/6, where GetParam() = (1280x1280, 8UC1)
+[ PERFSTAT ]    (samples=22   mean=11.20   median=11.34   min=10.40   stddev=0.33 (3.0%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/6 (289 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/7, where GetParam() = (1280x1280, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=14.71   median=14.86   min=14.01   stddev=0.39 (2.7%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/7 (222 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/8, where GetParam() = (1280x1280, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=17.09   median=17.36   min=16.30   stddev=0.47 (2.7%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/8 (254 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/9, where GetParam() = (1280x1280, 32FC3)
+[ PERFSTAT ]    (samples=63   mean=10.67   median=10.67   min=10.46   stddev=0.09 (0.9%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/9 (952 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/10, where GetParam() = (1280x1280, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=7.02   median=7.47   min=4.47   stddev=1.01 (14.4%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/10 (812 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/11, where GetParam() = (1280x1280, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=12.31   median=11.88   min=11.58   stddev=3.10 (25.2%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/11 (1677 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/12, where GetParam() = (2160x2160, 8UC1)
+[ PERFSTAT ]    (samples=20   mean=12.37   median=12.47   min=11.44   stddev=0.36 (3.0%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/12 (340 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/13, where GetParam() = (2160x2160, 32FC1)
+.
+[ PERFSTAT ]    (samples=75   mean=11.44   median=11.52   min=10.47   stddev=0.31 (2.7%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/13 (53857 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/14, where GetParam() = (2160x2160, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=14.18   median=13.65   min=13.45   stddev=2.53 (17.9%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/14 (1746 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/15, where GetParam() = (2160x2160, 32FC3)
+[ PERFSTAT ]    (samples=25   mean=25.64   median=25.53   min=25.31   stddev=0.44 (1.7%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/15 (1100 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/16, where GetParam() = (2160x2160, 8UC4)
+[ PERFSTAT ]    (samples=25   mean=11.48   median=11.43   min=11.31   stddev=0.17 (1.5%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/16 (544 ms)
+[ RUN      ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/17, where GetParam() = (2160x2160, 32FC4)
+[ PERFSTAT ]    (samples=25   mean=28.28   median=28.24   min=27.59   stddev=0.56 (2.0%))
+[       OK ] OCL_TransposeFixture_TransposeInplace.TransposeInplace/17 (1287 ms)
+[----------] 18 tests from OCL_TransposeFixture_TransposeInplace (116845 ms total)
+
+[----------] Global test environment tear-down
+[==========] 18 tests from 1 test case ran. (116846 ms total)
+[  PASSED  ] 18 tests.

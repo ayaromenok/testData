@@ -1,0 +1,144 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 32
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_MulFixture_Multiply*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_MulFixture_Multiply
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/0, where GetParam() = (640x480, 8UC1)
+.
+[ PERFSTAT ]    (samples=100   mean=2.04   median=2.20   min=1.06   stddev=0.51 (24.8%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/0 (34263 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=1.85   median=1.75   min=1.62   stddev=0.29 (15.5%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/1 (239 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/2, where GetParam() = (640x480, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=2.80   median=3.06   min=1.74   stddev=0.80 (28.6%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/2 (324 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/3, where GetParam() = (640x480, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=5.28   median=5.21   min=4.95   stddev=0.21 (4.0%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/3 (659 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/4, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=3.73   median=3.83   min=2.57   stddev=0.37 (10.0%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/4 (446 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/5, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=6.13   median=6.09   min=5.92   stddev=0.15 (2.4%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/5 (781 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/6, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=3.39   median=3.49   min=2.44   stddev=0.35 (10.3%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/6 (421 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/7, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=6.28   median=6.89   min=4.97   stddev=1.01 (16.1%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/7 (753 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/8, where GetParam() = (1280x720, 8UC3)
+[ PERFSTAT ]    (samples=13   mean=3.85   median=3.86   min=3.72   stddev=0.10 (2.7%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/8 (153 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/9, where GetParam() = (1280x720, 32FC3)
+[ PERFSTAT ]    (samples=65   mean=6.20   median=6.24   min=5.87   stddev=0.19 (3.0%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/9 (695 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/10, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=6.34   median=6.42   min=5.06   stddev=0.40 (6.3%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/10 (799 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/11, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=21.94   median=22.03   min=21.28   stddev=0.26 (1.2%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/11 (532 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/12, where GetParam() = (1920x1080, 8UC1)
+.
+[ PERFSTAT ]    (samples=100   mean=2.63   median=1.93   min=1.27   stddev=1.19 (45.2%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/12 (54414 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/13, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=7.76   median=8.89   min=3.72   stddev=1.94 (25.0%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/13 (983 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/14, where GetParam() = (1920x1080, 8UC3)
+.
+.
+[ PERFSTAT ]    (samples=100   mean=6.83   median=8.12   min=2.90   stddev=2.69 (39.4%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/14 (118402 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/15, where GetParam() = (1920x1080, 32FC3)
+[ PERFSTAT ]    (samples=88   mean=10.83   median=10.83   min=10.25   stddev=0.25 (2.3%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/15 (1580 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/16, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=50   mean=10.62   median=10.60   min=10.43   stddev=0.15 (1.4%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/16 (837 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/17, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=38   mean=13.54   median=13.53   min=13.39   stddev=0.09 (0.6%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/17 (1295 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/18, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=38   mean=10.53   median=10.51   min=10.36   stddev=0.16 (1.5%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/18 (688 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/19, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=25   mean=13.45   median=13.43   min=13.32   stddev=0.11 (0.8%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/19 (1083 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/20, where GetParam() = (3840x2160, 8UC3)
+[ PERFSTAT ]    (samples=38   mean=10.64   median=10.64   min=10.54   stddev=0.07 (0.6%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/20 (1200 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/21, where GetParam() = (3840x2160, 32FC3)
+[ PERFSTAT ]    (samples=13   mean=36.46   median=36.35   min=36.22   stddev=0.20 (0.6%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/21 (2128 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/22, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=38   mean=13.75   median=13.75   min=13.60   stddev=0.08 (0.6%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/22 (1298 ms)
+[ RUN      ] OCL_MulFixture_Multiply.Multiply/23, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=25   mean=47.89   median=47.88   min=47.70   stddev=0.13 (0.3%))
+[       OK ] OCL_MulFixture_Multiply.Multiply/23 (3610 ms)
+[----------] 24 tests from OCL_MulFixture_Multiply (227588 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (227589 ms total)
+[  PASSED  ] 24 tests.

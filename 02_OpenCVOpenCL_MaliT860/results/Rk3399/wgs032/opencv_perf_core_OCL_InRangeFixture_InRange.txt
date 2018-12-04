@@ -1,0 +1,116 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 32
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_InRangeFixture_InRange*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_InRangeFixture_InRange
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=3.06   median=3.37   min=1.59   stddev=0.68 (22.4%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/0 (369 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=6.44   median=6.46   min=5.32   stddev=0.27 (4.2%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/1 (778 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/2, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=7.09   median=7.19   min=5.73   stddev=0.37 (5.3%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/2 (828 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/3, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=8.79   median=8.86   min=7.47   stddev=0.30 (3.4%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/3 (1053 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/4, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=5.99   median=6.07   min=5.04   stddev=0.24 (4.0%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/4 (684 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/5, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=29   mean=13.54   median=13.72   min=12.33   stddev=0.40 (3.0%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/5 (499 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/6, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=10   mean=14.77   median=14.84   min=13.87   stddev=0.42 (2.9%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/6 (293 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/7, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=22.80   median=22.85   min=22.53   stddev=0.18 (0.8%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/7 (544 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/8, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=10.49   median=10.56   min=8.92   stddev=0.31 (3.0%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/8 (1182 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/9, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=29.05   median=29.36   min=27.99   stddev=0.64 (2.2%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/9 (495 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/10, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=10   mean=33.50   median=33.73   min=32.47   stddev=0.46 (1.4%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/10 (645 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/11, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=48.01   median=48.09   min=47.39   stddev=0.24 (0.5%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/11 (1273 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/12, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=25   mean=20.11   median=20.06   min=19.85   stddev=0.31 (1.6%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/12 (850 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/13, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=50   mean=29.41   median=29.41   min=29.24   stddev=0.10 (0.4%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/13 (2399 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/14, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=38   mean=33.98   median=33.99   min=33.76   stddev=0.12 (0.4%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/14 (2249 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/15, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=25   mean=48.44   median=48.46   min=48.25   stddev=0.12 (0.2%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/15 (3644 ms)
+[----------] 16 tests from OCL_InRangeFixture_InRange (17795 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (17795 ms total)
+[  PASSED  ] 16 tests.

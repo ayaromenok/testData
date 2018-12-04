@@ -1,0 +1,104 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 32
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_CopyToFixture_CopyToWithMaskUninit*
+[==========] Running 12 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 12 tests from OCL_CopyToFixture_CopyToWithMaskUninit
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=4.72   median=4.92   min=2.53   stddev=0.91 (19.2%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/0 (534 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=5.56   median=5.66   min=3.96   stddev=0.40 (7.3%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/1 (658 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/2, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=97   mean=7.97   median=8.03   min=6.87   stddev=0.24 (3.0%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/2 (862 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/3, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=69   mean=9.42   median=9.48   min=8.13   stddev=0.28 (3.0%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/3 (756 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/4, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=9.88   median=9.92   min=8.12   stddev=0.34 (3.4%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/4 (1051 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/5, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=16   mean=10.89   median=10.97   min=9.84   stddev=0.32 (2.9%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/5 (242 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/6, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=13   mean=19.58   median=19.77   min=18.40   stddev=0.51 (2.6%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/6 (338 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/7, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=7.49   median=7.46   min=7.11   stddev=0.40 (5.4%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/7 (1024 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/8, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=9.64   median=9.83   min=7.99   stddev=0.48 (5.0%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/8 (1089 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/9, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=6.40   median=6.98   min=5.34   stddev=0.79 (12.3%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/9 (846 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/10, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=56   mean=11.99   median=12.06   min=10.41   stddev=0.36 (3.0%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/10 (808 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/11, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=41.75   median=41.90   min=40.87   stddev=0.37 (0.9%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/11 (846 ms)
+[----------] 12 tests from OCL_CopyToFixture_CopyToWithMaskUninit (9061 ms total)
+
+[----------] Global test environment tear-down
+[==========] 12 tests from 1 test case ran. (9062 ms total)
+[  PASSED  ] 12 tests.

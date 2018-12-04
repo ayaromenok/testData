@@ -1,0 +1,92 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 32
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_HoughLinesPFixture_HoughLinesP*
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from OCL_HoughLinesPFixture_HoughLinesP
+[ RUN      ] OCL_HoughLinesPFixture_HoughLinesP.HoughLinesP/0, where GetParam() = ("cv/shared/pic5.png", 0.1, 0.0174533)
+[ PERFSTAT ]    (samples=20   mean=34.74   median=34.97   min=31.67   stddev=1.02 (2.9%))
+[       OK ] OCL_HoughLinesPFixture_HoughLinesP.HoughLinesP/0 (868 ms)
+[ RUN      ] OCL_HoughLinesPFixture_HoughLinesP.HoughLinesP/1, where GetParam() = ("cv/shared/pic5.png", 0.1, 0.1)
+[ PERFSTAT ]    (samples=100   mean=14.83   median=15.07   min=10.10   stddev=1.05 (7.0%))
+[       OK ] OCL_HoughLinesPFixture_HoughLinesP.HoughLinesP/1 (1537 ms)
+[ RUN      ] OCL_HoughLinesPFixture_HoughLinesP.HoughLinesP/2, where GetParam() = ("cv/shared/pic5.png", 1, 0.0174533)
+[ PERFSTAT ]    (samples=100   mean=17.34   median=17.54   min=13.23   stddev=0.94 (5.4%))
+[       OK ] OCL_HoughLinesPFixture_HoughLinesP.HoughLinesP/2 (1851 ms)
+[ RUN      ] OCL_HoughLinesPFixture_HoughLinesP.HoughLinesP/3, where GetParam() = ("cv/shared/pic5.png", 1, 0.1)
+[ PERFSTAT ]    (samples=100   mean=10.36   median=10.67   min=6.74   stddev=1.11 (10.7%))
+[       OK ] OCL_HoughLinesPFixture_HoughLinesP.HoughLinesP/3 (1089 ms)
+[ RUN      ] OCL_HoughLinesPFixture_HoughLinesP.HoughLinesP/4, where GetParam() = ("stitching/a1.png", 0.1, 0.0174533)
+[ PERFSTAT ]    (samples=100   mean=40.74   median=40.77   min=35.12   stddev=3.71 (9.1%))
+[       OK ] OCL_HoughLinesPFixture_HoughLinesP.HoughLinesP/4 (4420 ms)
+[ RUN      ] OCL_HoughLinesPFixture_HoughLinesP.HoughLinesP/5, where GetParam() = ("stitching/a1.png", 0.1, 0.1)
+[ PERFSTAT ]    (samples=100   mean=30.79   median=30.91   min=25.35   stddev=1.11 (3.6%))
+[       OK ] OCL_HoughLinesPFixture_HoughLinesP.HoughLinesP/5 (3179 ms)
+[ RUN      ] OCL_HoughLinesPFixture_HoughLinesP.HoughLinesP/6, where GetParam() = ("stitching/a1.png", 1, 0.0174533)
+[ PERFSTAT ]    (samples=100   mean=35.37   median=34.80   min=32.60   stddev=2.52 (7.1%))
+[       OK ] OCL_HoughLinesPFixture_HoughLinesP.HoughLinesP/6 (3939 ms)
+[ RUN      ] OCL_HoughLinesPFixture_HoughLinesP.HoughLinesP/7, where GetParam() = ("stitching/a1.png", 1, 0.1)
+[ PERFSTAT ]    (samples=100   mean=18.94   median=19.97   min=8.77   stddev=5.98 (31.6%))
+[       OK ] OCL_HoughLinesPFixture_HoughLinesP.HoughLinesP/7 (2029 ms)
+[----------] 8 tests from OCL_HoughLinesPFixture_HoughLinesP (18915 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (18916 ms total)
+[  PASSED  ] 8 tests.

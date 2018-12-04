@@ -1,0 +1,212 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 32
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_WarpPerspectiveFixture_WarpPerspective*
+[==========] Running 48 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 48 tests from OCL_WarpPerspectiveFixture_WarpPerspective
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/0, where GetParam() = (640x480, 8UC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=6.73   median=6.71   min=6.10   stddev=0.25 (3.7%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/0 (748 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/1, where GetParam() = (640x480, 8UC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=38   mean=10.22   median=10.24   min=8.89   stddev=0.31 (3.0%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/1 (460 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/2, where GetParam() = (640x480, 32FC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=6.66   median=6.75   min=5.29   stddev=0.45 (6.8%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/2 (759 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/3, where GetParam() = (640x480, 32FC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=100   mean=9.24   median=9.24   min=7.98   stddev=0.31 (3.4%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/3 (1032 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/4, where GetParam() = (640x480, 8UC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=7.50   median=7.55   min=6.18   stddev=0.34 (4.5%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/4 (848 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/5, where GetParam() = (640x480, 8UC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=13   mean=13.89   median=14.04   min=12.92   stddev=0.37 (2.6%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/5 (272 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/6, where GetParam() = (640x480, 32FC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=8.87   median=8.85   min=7.56   stddev=0.27 (3.1%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/6 (1011 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/7, where GetParam() = (640x480, 32FC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=15   mean=12.75   median=12.87   min=11.55   stddev=0.37 (2.9%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/7 (314 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/8, where GetParam() = (640x480, 8UC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=6.60   median=6.68   min=5.18   stddev=0.37 (5.6%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/8 (749 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/9, where GetParam() = (640x480, 8UC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=63   mean=12.56   median=12.67   min=10.82   stddev=0.37 (3.0%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/9 (895 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/10, where GetParam() = (640x480, 32FC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=8.44   median=8.34   min=6.77   stddev=0.46 (5.4%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/10 (978 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/11, where GetParam() = (640x480, 32FC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=22   mean=11.75   median=11.81   min=11.09   stddev=0.35 (2.9%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/11 (399 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/12, where GetParam() = (1280x720, 8UC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=73   mean=13.86   median=13.92   min=12.10   stddev=0.42 (3.0%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/12 (1064 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/13, where GetParam() = (1280x720, 8UC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=23.07   median=23.29   min=21.70   stddev=0.62 (2.7%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/13 (271 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/14, where GetParam() = (1280x720, 32FC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=22   mean=14.79   median=14.80   min=13.63   stddev=0.44 (3.0%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/14 (406 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/15, where GetParam() = (1280x720, 32FC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=21.36   median=21.62   min=20.16   stddev=0.60 (2.8%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/15 (281 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/16, where GetParam() = (1280x720, 8UC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=28   mean=17.24   median=17.36   min=15.84   stddev=0.51 (3.0%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/16 (561 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/17, where GetParam() = (1280x720, 8UC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=34.04   median=34.24   min=32.61   stddev=0.55 (1.6%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/17 (419 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/18, where GetParam() = (1280x720, 32FC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=11   mean=22.28   median=22.42   min=21.10   stddev=0.64 (2.9%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/18 (414 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/19, where GetParam() = (1280x720, 32FC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=100   mean=11.69   median=11.00   min=10.80   stddev=2.79 (23.9%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/19 (1542 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/20, where GetParam() = (1280x720, 8UC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=49   mean=15.05   median=15.10   min=13.22   stddev=0.45 (3.0%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/20 (845 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/21, where GetParam() = (1280x720, 8UC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=30.67   median=30.78   min=29.56   stddev=0.54 (1.7%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/21 (405 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/22, where GetParam() = (1280x720, 32FC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=10   mean=21.01   median=21.01   min=20.60   stddev=0.20 (0.9%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/22 (425 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/23, where GetParam() = (1280x720, 32FC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=29.98   median=29.93   min=29.42   stddev=0.45 (1.5%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/23 (494 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/24, where GetParam() = (1920x1080, 8UC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=13   mean=27.22   median=27.34   min=26.23   stddev=0.48 (1.8%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/24 (434 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/25, where GetParam() = (1920x1080, 8UC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=47.54   median=47.64   min=46.89   stddev=0.29 (0.6%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/25 (545 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/26, where GetParam() = (1920x1080, 32FC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=10   mean=30.18   median=29.99   min=29.90   stddev=0.33 (1.1%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/26 (437 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/27, where GetParam() = (1920x1080, 32FC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=50   mean=15.80   median=15.74   min=15.19   stddev=0.30 (1.9%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/27 (1023 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/28, where GetParam() = (1920x1080, 8UC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=63   mean=12.09   median=12.04   min=11.57   stddev=0.28 (2.3%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/28 (1036 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/29, where GetParam() = (1920x1080, 8UC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=25   mean=20.67   median=20.63   min=20.16   stddev=0.30 (1.5%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/29 (770 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/30, where GetParam() = (1920x1080, 32FC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=38   mean=14.75   median=14.74   min=14.48   stddev=0.19 (1.3%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/30 (1000 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/31, where GetParam() = (1920x1080, 32FC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=66   mean=23.53   median=23.45   min=23.08   stddev=0.71 (3.0%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/31 (2022 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/32, where GetParam() = (1920x1080, 8UC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=11.67   median=11.78   min=9.64   stddev=0.64 (5.5%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/32 (1447 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/33, where GetParam() = (1920x1080, 8UC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=25   mean=18.90   median=18.87   min=18.62   stddev=0.23 (1.2%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/33 (701 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/34, where GetParam() = (1920x1080, 32FC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=13.77   median=13.83   min=12.19   stddev=1.17 (8.5%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/34 (2058 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/35, where GetParam() = (1920x1080, 32FC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=100   mean=19.65   median=19.37   min=19.10   stddev=1.83 (9.3%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/35 (2613 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/36, where GetParam() = (3840x2160, 8UC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=13   mean=28.02   median=28.04   min=27.84   stddev=0.11 (0.4%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/36 (612 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/37, where GetParam() = (3840x2160, 8UC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=13   mean=48.28   median=48.25   min=47.99   stddev=0.21 (0.4%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/37 (885 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/38, where GetParam() = (3840x2160, 32FC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=38   mean=34.27   median=34.36   min=33.54   stddev=0.44 (1.3%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/38 (1938 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/39, where GetParam() = (3840x2160, 32FC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=38   mean=58.49   median=58.25   min=57.68   stddev=1.72 (2.9%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/39 (2825 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/40, where GetParam() = (3840x2160, 8UC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=37   mean=39.36   median=39.17   min=38.49   stddev=1.17 (3.0%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/40 (2039 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/41, where GetParam() = (3840x2160, 8UC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=38   mean=74.91   median=74.93   min=74.53   stddev=0.23 (0.3%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/41 (3509 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/42, where GetParam() = (3840x2160, 32FC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=25   mean=63.96   median=63.96   min=63.33   stddev=0.19 (0.3%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/42 (2651 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/43, where GetParam() = (3840x2160, 32FC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=14   mean=92.72   median=91.21   min=90.95   stddev=2.74 (3.0%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/43 (2065 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/44, where GetParam() = (3840x2160, 8UC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=38   mean=33.96   median=33.88   min=33.68   stddev=0.31 (0.9%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/44 (2034 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/45, where GetParam() = (3840x2160, 8UC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=38   mean=67.08   median=66.50   min=65.78   stddev=1.84 (2.7%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/45 (3260 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/46, where GetParam() = (3840x2160, 32FC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=25   mean=58.09   median=58.07   min=57.81   stddev=0.21 (0.4%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/46 (2851 ms)
+[ RUN      ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/47, where GetParam() = (3840x2160, 32FC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=13   mean=79.42   median=79.37   min=79.15   stddev=0.21 (0.3%))
+[       OK ] OCL_WarpPerspectiveFixture_WarpPerspective.WarpPerspective/47 (1930 ms)
+[----------] 48 tests from OCL_WarpPerspectiveFixture_WarpPerspective (56291 ms total)
+
+[----------] Global test environment tear-down
+[==========] 48 tests from 1 test case ran. (56293 ms total)
+[  PASSED  ] 48 tests.

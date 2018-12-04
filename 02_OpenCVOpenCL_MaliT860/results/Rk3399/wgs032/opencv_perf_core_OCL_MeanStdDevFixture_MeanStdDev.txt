@@ -1,0 +1,179 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.0-dev
+OpenCV VCS version: 3.4.3-983-g8b544a8
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: pthreads
+CPU features: N/A
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+OpenCL Platforms: 
+    ARM Platform
+vendor name: ARM
+max WG Size by driver: 256
+max WG Size by test: 32
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).fb73b5772aa0adfbd3ad68351d4226c5
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 32
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 18 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_MeanStdDevFixture_MeanStdDev*
+[==========] Running 36 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 18 tests from OCL_MeanStdDevFixture_MeanStdDev
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=6.45   median=6.48   min=4.40   stddev=0.59 (9.1%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/0 (715 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=6.03   median=6.00   min=4.65   stddev=0.46 (7.6%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/1 (696 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/2, where GetParam() = (640x480, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=9.46   median=9.58   min=7.69   stddev=0.57 (6.1%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/2 (1048 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/3, where GetParam() = (640x480, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=9.08   median=9.09   min=7.34   stddev=0.34 (3.7%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/3 (1016 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/4, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=8.61   median=8.61   min=6.96   stddev=0.38 (4.5%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/4 (959 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/5, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=7.92   median=7.95   min=6.56   stddev=0.33 (4.1%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/5 (916 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/6, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=25   mean=13.42   median=13.48   min=12.37   stddev=0.38 (2.9%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/6 (365 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/7, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=64   mean=13.24   median=13.35   min=12.00   stddev=0.40 (3.0%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/7 (907 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/8, where GetParam() = (1280x720, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=21.82   median=22.05   min=20.59   stddev=0.56 (2.6%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/8 (274 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/9, where GetParam() = (1280x720, 32FC3)
+[ PERFSTAT ]    (samples=13   mean=20.36   median=20.49   min=19.01   stddev=0.57 (2.8%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/9 (370 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/10, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=14   mean=19.03   median=19.28   min=17.89   stddev=0.56 (2.9%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/10 (336 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/11, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=24   mean=17.96   median=18.13   min=16.31   stddev=0.53 (2.9%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/11 (563 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/12, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=25.96   median=26.08   min=25.40   stddev=0.33 (1.3%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/12 (300 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/13, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=25.72   median=25.90   min=24.53   stddev=0.50 (1.9%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/13 (329 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/14, where GetParam() = (1920x1080, 8UC3)
+[ PERFSTAT ]    (samples=25   mean=17.84   median=17.84   min=17.35   stddev=0.28 (1.6%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/14 (573 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/15, where GetParam() = (1920x1080, 32FC3)
+[ PERFSTAT ]    (samples=63   mean=16.67   median=16.61   min=16.39   stddev=0.22 (1.3%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/15 (1360 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/16, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=35   mean=14.84   median=14.96   min=13.47   stddev=0.44 (3.0%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/16 (674 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/17, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=15.58   median=17.48   min=11.01   stddev=2.89 (18.6%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDev.MeanStdDev/17 (1878 ms)
+[----------] 18 tests from OCL_MeanStdDevFixture_MeanStdDev (13281 ms total)
+
+[----------] 18 tests from OCL_MeanStdDevFixture_MeanStdDevWithMask
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=4.03   median=4.26   min=2.53   stddev=0.59 (14.7%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/0 (496 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=2.92   median=2.92   min=2.77   stddev=0.08 (2.7%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/1 (128 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/2, where GetParam() = (640x480, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=6.05   median=5.11   min=3.23   stddev=1.91 (31.6%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/2 (706 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/3, where GetParam() = (640x480, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=8.28   median=8.36   min=6.67   stddev=0.43 (5.3%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/3 (955 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/4, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=8.49   median=8.32   min=6.60   stddev=0.69 (8.2%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/4 (962 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/5, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=10.35   median=9.88   min=7.31   stddev=1.33 (12.8%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/5 (1181 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/6, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=22.86   median=22.74   min=22.54   stddev=0.31 (1.3%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/6 (276 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/7, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=23.75   median=23.90   min=22.52   stddev=0.61 (2.6%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/7 (297 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/8, where GetParam() = (1280x720, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=31.23   median=31.32   min=30.03   stddev=0.52 (1.7%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/8 (382 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/9, where GetParam() = (1280x720, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=29.90   median=30.06   min=28.44   stddev=0.57 (1.9%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/9 (413 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/10, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=12.89   median=12.84   min=12.31   stddev=0.30 (2.4%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/10 (1509 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/11, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=27.50   median=27.81   min=26.27   stddev=0.77 (2.8%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/11 (403 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/12, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=46.49   median=46.63   min=45.30   stddev=0.48 (1.0%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/12 (540 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/13, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=49.38   median=49.46   min=48.22   stddev=0.43 (0.9%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/13 (601 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/14, where GetParam() = (1920x1080, 8UC3)
+[ PERFSTAT ]    (samples=63   mean=25.75   median=25.78   min=25.32   stddev=0.16 (0.6%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/14 (1916 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/15, where GetParam() = (1920x1080, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=25.76   median=25.77   min=25.04   stddev=0.35 (1.4%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/15 (473 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/16, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=10   mean=24.38   median=24.64   min=22.92   stddev=0.63 (2.6%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/16 (396 ms)
+[ RUN      ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/17, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=26.15   median=25.89   min=25.63   stddev=0.69 (2.6%))
+[       OK ] OCL_MeanStdDevFixture_MeanStdDevWithMask.MeanStdDevWithMask/17 (614 ms)
+[----------] 18 tests from OCL_MeanStdDevFixture_MeanStdDevWithMask (12258 ms total)
+
+[----------] Global test environment tear-down
+[==========] 36 tests from 2 test cases ran. (25540 ms total)
+[  PASSED  ] 36 tests.
