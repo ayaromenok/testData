@@ -1,0 +1,134 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_AbsDiffFixture_Absdiff*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_AbsDiffFixture_Absdiff
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=0.61   median=0.60   min=0.57   stddev=0.05 (7.8%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/0 (134 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=2.17   median=1.59   min=1.15   stddev=0.95 (43.8%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/1 (739 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/2, where GetParam() = (640x480, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=1.89   median=1.26   min=1.00   stddev=0.94 (49.8%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/2 (225 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/3, where GetParam() = (640x480, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=2.21   median=2.18   min=2.03   stddev=0.08 (3.6%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/3 (269 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/4, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=1.27   median=1.26   min=1.07   stddev=0.06 (4.6%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/4 (156 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/5, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=2.68   median=2.66   min=2.53   stddev=0.11 (4.1%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/5 (327 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/6, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.33   median=1.32   min=1.03   stddev=0.11 (8.3%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/6 (170 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/7, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=2.93   median=2.92   min=2.85   stddev=0.04 (1.5%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/7 (78 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/8, where GetParam() = (1280x720, 8UC3)
+[ PERFSTAT ]    (samples=21   mean=2.33   median=2.32   min=2.23   stddev=0.07 (3.0%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/8 (88 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/9, where GetParam() = (1280x720, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=6.96   median=6.92   min=6.84   stddev=0.14 (2.1%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/9 (179 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/10, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=2.34   median=2.34   min=2.16   stddev=0.08 (3.3%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/10 (317 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/11, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=6.79   median=6.81   min=6.58   stddev=0.14 (2.0%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/11 (201 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/12, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=4.66   median=4.70   min=1.72   stddev=0.60 (12.9%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/12 (710 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/13, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=14.01   median=13.91   min=13.79   stddev=0.25 (1.8%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/13 (288 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/14, where GetParam() = (1920x1080, 8UC3)
+[ PERFSTAT ]    (samples=13   mean=3.40   median=3.40   min=3.23   stddev=0.10 (2.8%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/14 (135 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/15, where GetParam() = (1920x1080, 32FC3)
+[ PERFSTAT ]    (samples=38   mean=10.71   median=10.70   min=10.28   stddev=0.27 (2.5%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/15 (653 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/16, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=4.53   median=4.26   min=4.03   stddev=1.54 (34.0%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/16 (681 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/17, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=75   mean=13.92   median=13.89   min=13.70   stddev=0.22 (1.6%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/17 (1563 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/18, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=4.00   median=3.94   min=3.82   stddev=0.28 (6.9%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/18 (585 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/19, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=25   mean=13.88   median=13.79   min=13.64   stddev=0.31 (2.2%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/19 (714 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/20, where GetParam() = (3840x2160, 8UC3)
+[ PERFSTAT ]    (samples=38   mean=10.56   median=10.48   min=10.30   stddev=0.23 (2.2%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/20 (680 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/21, where GetParam() = (3840x2160, 32FC3)
+[ PERFSTAT ]    (samples=25   mean=39.41   median=39.37   min=39.03   stddev=0.32 (0.8%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/21 (2321 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/22, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=16.12   median=14.15   min=13.78   stddev=8.46 (52.5%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/22 (4532 ms)
+[ RUN      ] OCL_AbsDiffFixture_Absdiff.Absdiff/23, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=25   mean=52.28   median=52.17   min=51.98   stddev=0.26 (0.5%))
+[       OK ] OCL_AbsDiffFixture_Absdiff.Absdiff/23 (2633 ms)
+[----------] 24 tests from OCL_AbsDiffFixture_Absdiff (18381 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (18382 ms total)
+[  PASSED  ] 24 tests.

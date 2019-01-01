@@ -1,0 +1,89 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 256
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_Arithm/CountNonZero*
+[==========] Running 14 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 14 tests from OCL_Arithm/CountNonZero
+[ RUN      ] OCL_Arithm/CountNonZero.MAT/0, where GetParam() = (CV_8U, Channels(1), false)
+[       OK ] OCL_Arithm/CountNonZero.MAT/0 (78 ms)
+[ RUN      ] OCL_Arithm/CountNonZero.MAT/1, where GetParam() = (CV_8U, Channels(1), true)
+[       OK ] OCL_Arithm/CountNonZero.MAT/1 (35 ms)
+[ RUN      ] OCL_Arithm/CountNonZero.MAT/2, where GetParam() = (CV_8S, Channels(1), false)
+[       OK ] OCL_Arithm/CountNonZero.MAT/2 (28 ms)
+[ RUN      ] OCL_Arithm/CountNonZero.MAT/3, where GetParam() = (CV_8S, Channels(1), true)
+[       OK ] OCL_Arithm/CountNonZero.MAT/3 (34 ms)
+[ RUN      ] OCL_Arithm/CountNonZero.MAT/4, where GetParam() = (CV_16U, Channels(1), false)
+[       OK ] OCL_Arithm/CountNonZero.MAT/4 (31 ms)
+[ RUN      ] OCL_Arithm/CountNonZero.MAT/5, where GetParam() = (CV_16U, Channels(1), true)
+[       OK ] OCL_Arithm/CountNonZero.MAT/5 (34 ms)
+[ RUN      ] OCL_Arithm/CountNonZero.MAT/6, where GetParam() = (CV_16S, Channels(1), false)
+[       OK ] OCL_Arithm/CountNonZero.MAT/6 (33 ms)
+[ RUN      ] OCL_Arithm/CountNonZero.MAT/7, where GetParam() = (CV_16S, Channels(1), true)
+[       OK ] OCL_Arithm/CountNonZero.MAT/7 (34 ms)
+[ RUN      ] OCL_Arithm/CountNonZero.MAT/8, where GetParam() = (CV_32S, Channels(1), false)
+[       OK ] OCL_Arithm/CountNonZero.MAT/8 (33 ms)
+[ RUN      ] OCL_Arithm/CountNonZero.MAT/9, where GetParam() = (CV_32S, Channels(1), true)
+[       OK ] OCL_Arithm/CountNonZero.MAT/9 (35 ms)
+[ RUN      ] OCL_Arithm/CountNonZero.MAT/10, where GetParam() = (CV_32F, Channels(1), false)
+[       OK ] OCL_Arithm/CountNonZero.MAT/10 (36 ms)
+[ RUN      ] OCL_Arithm/CountNonZero.MAT/11, where GetParam() = (CV_32F, Channels(1), true)
+[       OK ] OCL_Arithm/CountNonZero.MAT/11 (37 ms)
+[ RUN      ] OCL_Arithm/CountNonZero.MAT/12, where GetParam() = (CV_64F, Channels(1), false)
+[       OK ] OCL_Arithm/CountNonZero.MAT/12 (31 ms)
+[ RUN      ] OCL_Arithm/CountNonZero.MAT/13, where GetParam() = (CV_64F, Channels(1), true)
+[       OK ] OCL_Arithm/CountNonZero.MAT/13 (43 ms)
+[----------] 14 tests from OCL_Arithm/CountNonZero (526 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 1 test case ran. (530 ms total)
+[  PASSED  ] 14 tests.

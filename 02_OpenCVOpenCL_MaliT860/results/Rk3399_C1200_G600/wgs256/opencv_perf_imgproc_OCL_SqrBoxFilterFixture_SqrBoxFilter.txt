@@ -1,0 +1,254 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 256
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_SqrBoxFilterFixture_SqrBoxFilter*
+[==========] Running 64 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 64 tests from OCL_SqrBoxFilterFixture_SqrBoxFilter
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/0, where GetParam() = (640x480, 8UC1, 3x3)
+[ PERFSTAT ]    (samples=100   mean=3.86   median=3.74   min=2.81   stddev=0.46 (11.8%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/0 (497 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/1, where GetParam() = (640x480, 8UC1, 20x3)
+[ PERFSTAT ]    (samples=100   mean=7.46   median=7.63   min=6.26   stddev=0.56 (7.5%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/1 (863 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/2, where GetParam() = (640x480, 8UC1, 3x20)
+[ PERFSTAT ]    (samples=100   mean=5.99   median=5.85   min=4.54   stddev=0.51 (8.6%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/2 (727 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/3, where GetParam() = (640x480, 8UC1, 20x20)
+[ PERFSTAT ]    (samples=100   mean=9.67   median=9.82   min=8.73   stddev=0.53 (5.5%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/3 (1098 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/4, where GetParam() = (640x480, 8UC4, 3x3)
+[ PERFSTAT ]    (samples=100   mean=5.08   median=5.00   min=4.44   stddev=0.42 (8.2%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/4 (747 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/5, where GetParam() = (640x480, 8UC4, 20x3)
+[ PERFSTAT ]    (samples=100   mean=8.70   median=8.45   min=7.83   stddev=0.67 (7.7%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/5 (1080 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/6, where GetParam() = (640x480, 8UC4, 3x20)
+[ PERFSTAT ]    (samples=100   mean=5.63   median=5.61   min=5.18   stddev=0.29 (5.1%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/6 (776 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/7, where GetParam() = (640x480, 8UC4, 20x20)
+[ PERFSTAT ]    (samples=100   mean=9.43   median=9.33   min=8.59   stddev=0.47 (5.0%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/7 (1116 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/8, where GetParam() = (640x480, 32FC1, 3x3)
+[ PERFSTAT ]    (samples=100   mean=4.26   median=4.20   min=3.65   stddev=0.30 (7.0%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/8 (534 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/9, where GetParam() = (640x480, 32FC1, 20x3)
+[ PERFSTAT ]    (samples=100   mean=6.49   median=6.41   min=5.87   stddev=0.31 (4.8%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/9 (767 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/10, where GetParam() = (640x480, 32FC1, 3x20)
+[ PERFSTAT ]    (samples=100   mean=4.89   median=4.75   min=4.19   stddev=0.39 (8.1%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/10 (622 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/11, where GetParam() = (640x480, 32FC1, 20x20)
+[ PERFSTAT ]    (samples=100   mean=9.99   median=10.04   min=8.94   stddev=0.58 (5.8%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/11 (1108 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/12, where GetParam() = (640x480, 32FC4, 3x3)
+[ PERFSTAT ]    (samples=100   mean=5.14   median=5.03   min=4.71   stddev=0.25 (4.9%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/12 (781 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/13, where GetParam() = (640x480, 32FC4, 20x3)
+[ PERFSTAT ]    (samples=100   mean=9.42   median=9.63   min=7.87   stddev=0.84 (9.0%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/13 (1129 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/14, where GetParam() = (640x480, 32FC4, 3x20)
+[ PERFSTAT ]    (samples=100   mean=6.14   median=6.10   min=5.61   stddev=0.33 (5.4%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/14 (843 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/15, where GetParam() = (640x480, 32FC4, 20x20)
+[ PERFSTAT ]    (samples=100   mean=9.40   median=9.18   min=8.85   stddev=0.81 (8.6%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/15 (1146 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/16, where GetParam() = (1280x720, 8UC1, 3x3)
+[ PERFSTAT ]    (samples=10   mean=7.92   median=7.96   min=7.70   stddev=0.14 (1.7%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/16 (94 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/17, where GetParam() = (1280x720, 8UC1, 20x3)
+[ PERFSTAT ]    (samples=10   mean=14.56   median=14.62   min=14.31   stddev=0.16 (1.1%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/17 (160 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/18, where GetParam() = (1280x720, 8UC1, 3x20)
+[ PERFSTAT ]    (samples=12   mean=8.30   median=8.31   min=7.96   stddev=0.24 (2.9%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/18 (113 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/19, where GetParam() = (1280x720, 8UC1, 20x20)
+[ PERFSTAT ]    (samples=100   mean=18.80   median=19.20   min=14.80   stddev=1.35 (7.2%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/19 (1940 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/20, where GetParam() = (1280x720, 8UC4, 3x3)
+[ PERFSTAT ]    (samples=100   mean=10.63   median=10.54   min=10.33   stddev=0.34 (3.2%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/20 (1197 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/21, where GetParam() = (1280x720, 8UC4, 20x3)
+[ PERFSTAT ]    (samples=46   mean=24.11   median=24.23   min=21.26   stddev=0.72 (3.0%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/21 (1192 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/22, where GetParam() = (1280x720, 8UC4, 3x20)
+[ PERFSTAT ]    (samples=50   mean=12.69   median=12.66   min=12.12   stddev=0.30 (2.4%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/22 (718 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/23, where GetParam() = (1280x720, 8UC4, 20x20)
+[ PERFSTAT ]    (samples=14   mean=23.91   median=24.09   min=22.20   stddev=0.72 (3.0%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/23 (388 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/24, where GetParam() = (1280x720, 32FC1, 3x3)
+[ PERFSTAT ]    (samples=13   mean=8.66   median=8.61   min=8.46   stddev=0.17 (1.9%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/24 (161 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/25, where GetParam() = (1280x720, 32FC1, 20x3)
+[ PERFSTAT ]    (samples=13   mean=15.81   median=15.93   min=15.11   stddev=0.45 (2.9%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/25 (257 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/26, where GetParam() = (1280x720, 32FC1, 3x20)
+[ PERFSTAT ]    (samples=36   mean=10.49   median=10.54   min=9.80   stddev=0.31 (3.0%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/26 (420 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/27, where GetParam() = (1280x720, 32FC1, 20x20)
+[ PERFSTAT ]    (samples=10   mean=17.86   median=17.86   min=17.45   stddev=0.25 (1.4%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/27 (221 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/28, where GetParam() = (1280x720, 32FC4, 3x3)
+[ PERFSTAT ]    (samples=38   mean=11.24   median=11.31   min=10.90   stddev=0.22 (2.0%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/28 (637 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/29, where GetParam() = (1280x720, 32FC4, 20x3)
+[ PERFSTAT ]    (samples=63   mean=22.78   median=22.72   min=21.02   stddev=0.66 (2.9%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/29 (1617 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/30, where GetParam() = (1280x720, 32FC4, 3x20)
+[ PERFSTAT ]    (samples=38   mean=14.56   median=14.47   min=14.14   stddev=0.28 (1.9%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/30 (731 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/31, where GetParam() = (1280x720, 32FC4, 20x20)
+[ PERFSTAT ]    (samples=75   mean=24.09   median=24.06   min=23.43   stddev=0.28 (1.2%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/31 (2020 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/32, where GetParam() = (1920x1080, 8UC1, 3x3)
+[ PERFSTAT ]    (samples=40   mean=15.37   median=15.39   min=14.34   stddev=0.46 (3.0%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/32 (669 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/33, where GetParam() = (1920x1080, 8UC1, 20x3)
+[ PERFSTAT ]    (samples=17   mean=35.43   median=35.78   min=32.45   stddev=1.04 (2.9%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/33 (635 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/34, where GetParam() = (1920x1080, 8UC1, 3x20)
+[ PERFSTAT ]    (samples=63   mean=14.85   median=14.84   min=14.46   stddev=0.20 (1.3%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/34 (1016 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/35, where GetParam() = (1920x1080, 8UC1, 20x20)
+[ PERFSTAT ]    (samples=10   mean=35.14   median=35.12   min=34.70   stddev=0.24 (0.7%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/35 (383 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/36, where GetParam() = (1920x1080, 8UC4, 3x3)
+[ PERFSTAT ]    (samples=38   mean=20.57   median=20.45   min=20.20   stddev=0.30 (1.5%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/36 (952 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/37, where GetParam() = (1920x1080, 8UC4, 20x3)
+[ PERFSTAT ]    (samples=25   mean=46.38   median=46.69   min=43.18   stddev=1.08 (2.3%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/37 (1304 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/38, where GetParam() = (1920x1080, 8UC4, 3x20)
+[ PERFSTAT ]    (samples=13   mean=25.95   median=25.99   min=25.53   stddev=0.18 (0.7%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/38 (512 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/39, where GetParam() = (1920x1080, 8UC4, 20x20)
+[ PERFSTAT ]    (samples=50   mean=49.17   median=49.06   min=48.56   stddev=0.44 (0.9%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/39 (2631 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/40, where GetParam() = (1920x1080, 32FC1, 3x3)
+[ PERFSTAT ]    (samples=63   mean=15.82   median=15.92   min=14.63   stddev=0.45 (2.8%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/40 (1134 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/41, where GetParam() = (1920x1080, 32FC1, 20x3)
+[ PERFSTAT ]    (samples=10   mean=33.36   median=33.26   min=33.02   stddev=0.39 (1.2%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/41 (419 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/42, where GetParam() = (1920x1080, 32FC1, 3x20)
+[ PERFSTAT ]    (samples=100   mean=15.78   median=15.83   min=14.69   stddev=0.49 (3.1%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/42 (1689 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/43, where GetParam() = (1920x1080, 32FC1, 20x20)
+[ PERFSTAT ]    (samples=10   mean=38.39   median=38.43   min=37.88   stddev=0.35 (0.9%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/43 (468 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/44, where GetParam() = (1920x1080, 32FC4, 3x3)
+[ PERFSTAT ]    (samples=25   mean=23.57   median=23.59   min=23.00   stddev=0.35 (1.5%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/44 (920 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/45, where GetParam() = (1920x1080, 32FC4, 20x3)
+[ PERFSTAT ]    (samples=10   mean=46.08   median=45.90   min=45.47   stddev=0.61 (1.3%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/45 (670 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/46, where GetParam() = (1920x1080, 32FC4, 3x20)
+[ PERFSTAT ]    (samples=10   mean=30.62   median=30.42   min=29.97   stddev=0.63 (2.1%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/46 (515 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/47, where GetParam() = (1920x1080, 32FC4, 20x20)
+[ PERFSTAT ]    (samples=10   mean=67.53   median=67.35   min=66.39   stddev=0.79 (1.2%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/47 (884 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/48, where GetParam() = (3840x2160, 8UC1, 3x3)
+[ PERFSTAT ]    (samples=13   mean=54.62   median=54.64   min=54.29   stddev=0.18 (0.3%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/48 (859 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/49, where GetParam() = (3840x2160, 8UC1, 20x3)
+[ PERFSTAT ]    (samples=29   mean=129.00   median=130.31   min=117.04   stddev=3.83 (3.0%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/49 (3870 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/50, where GetParam() = (3840x2160, 8UC1, 3x20)
+[ PERFSTAT ]    (samples=13   mean=55.07   median=54.18   min=53.93   stddev=1.54 (2.8%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/50 (849 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/51, where GetParam() = (3840x2160, 8UC1, 20x20)
+[ PERFSTAT ]    (samples=10   mean=140.58   median=140.24   min=139.67   stddev=1.47 (1.0%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/51 (1524 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/52, where GetParam() = (3840x2160, 8UC4, 3x3)
+[ PERFSTAT ]    (samples=13   mean=75.06   median=74.92   min=74.62   stddev=0.43 (0.6%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/52 (1437 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/53, where GetParam() = (3840x2160, 8UC4, 20x3)
+[ PERFSTAT ]    (samples=13   mean=179.82   median=182.39   min=169.61   stddev=5.23 (2.9%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/53 (2763 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/54, where GetParam() = (3840x2160, 8UC4, 3x20)
+[ PERFSTAT ]    (samples=13   mean=107.63   median=107.63   min=107.08   stddev=0.34 (0.3%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/54 (1758 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/55, where GetParam() = (3840x2160, 8UC4, 20x20)
+[ PERFSTAT ]    (samples=10   mean=217.48   median=215.74   min=214.07   stddev=5.55 (2.6%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/55 (2531 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/56, where GetParam() = (3840x2160, 32FC1, 3x3)
+[ PERFSTAT ]    (samples=10   mean=65.51   median=65.44   min=65.35   stddev=0.17 (0.3%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/56 (934 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/57, where GetParam() = (3840x2160, 32FC1, 20x3)
+[ PERFSTAT ]    (samples=10   mean=126.97   median=126.94   min=126.79   stddev=0.17 (0.1%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/57 (1519 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/58, where GetParam() = (3840x2160, 32FC1, 3x20)
+[ PERFSTAT ]    (samples=13   mean=60.31   median=60.87   min=58.38   stddev=1.14 (1.9%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/58 (1039 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/59, where GetParam() = (3840x2160, 32FC1, 20x20)
+[ PERFSTAT ]    (samples=10   mean=128.57   median=128.67   min=127.46   stddev=0.89 (0.7%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/59 (1502 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/60, where GetParam() = (3840x2160, 32FC4, 3x3)
+[ PERFSTAT ]    (samples=13   mean=80.35   median=80.34   min=80.06   stddev=0.18 (0.2%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/60 (2068 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/61, where GetParam() = (3840x2160, 32FC4, 20x3)
+[ PERFSTAT ]    (samples=13   mean=183.54   median=183.25   min=178.37   stddev=2.97 (1.6%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/61 (3208 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/62, where GetParam() = (3840x2160, 32FC4, 3x20)
+[ PERFSTAT ]    (samples=13   mean=119.00   median=119.02   min=118.48   stddev=0.24 (0.2%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/62 (2429 ms)
+[ RUN      ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/63, where GetParam() = (3840x2160, 32FC4, 20x20)
+[ PERFSTAT ]    (samples=13   mean=218.29   median=217.89   min=217.48   stddev=1.32 (0.6%))
+[       OK ] OCL_SqrBoxFilterFixture_SqrBoxFilter.SqrBoxFilter/63 (3646 ms)
+[----------] 64 tests from OCL_SqrBoxFilterFixture_SqrBoxFilter (72443 ms total)
+
+[----------] Global test environment tear-down
+[==========] 64 tests from 1 test case ran. (72444 ms total)
+[  PASSED  ] 64 tests.

@@ -1,0 +1,134 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 256
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_BitwiseOrFixture_Bitwise_or*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_BitwiseOrFixture_Bitwise_or
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=0.87   median=0.82   min=0.66   stddev=0.11 (12.7%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/0 (150 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=1.63   median=1.46   min=1.08   stddev=0.46 (28.6%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/1 (211 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/2, where GetParam() = (640x480, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=1.56   median=1.54   min=1.21   stddev=0.19 (12.0%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/2 (199 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/3, where GetParam() = (640x480, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=2.61   median=2.61   min=2.12   stddev=0.40 (15.2%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/3 (371 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/4, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=1.43   median=1.35   min=1.07   stddev=0.25 (17.2%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/4 (178 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/5, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=3.03   median=2.88   min=2.53   stddev=0.62 (20.3%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/5 (437 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/6, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.56   median=1.26   min=1.03   stddev=0.75 (48.0%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/6 (482 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/7, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=2.52   median=2.48   min=2.10   stddev=0.23 (8.9%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/7 (316 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/8, where GetParam() = (1280x720, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=2.39   median=2.29   min=1.82   stddev=0.57 (23.7%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/8 (319 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/9, where GetParam() = (1280x720, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=5.50   median=5.59   min=5.02   stddev=0.25 (4.6%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/9 (756 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/10, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=2.80   median=2.73   min=2.23   stddev=0.45 (16.1%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/10 (373 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/11, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=7.01   median=7.04   min=6.52   stddev=0.27 (3.9%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/11 (1178 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/12, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=2.36   median=2.40   min=1.82   stddev=0.36 (15.5%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/12 (795 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/13, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=4.55   median=4.30   min=3.94   stddev=1.51 (33.1%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/13 (844 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/14, where GetParam() = (1920x1080, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=3.53   median=3.44   min=3.13   stddev=0.23 (6.7%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/14 (533 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/15, where GetParam() = (1920x1080, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=10.54   median=10.58   min=10.17   stddev=0.18 (1.7%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/15 (359 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/16, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=4.47   median=4.53   min=3.92   stddev=0.27 (5.9%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/16 (789 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/17, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=63   mean=14.14   median=14.19   min=13.60   stddev=0.34 (2.4%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/17 (1562 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/18, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=4.47   median=4.48   min=3.76   stddev=0.48 (10.8%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/18 (921 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/19, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=25   mean=14.21   median=14.26   min=13.81   stddev=0.23 (1.6%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/19 (906 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/20, where GetParam() = (3840x2160, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=10.66   median=10.67   min=10.39   stddev=0.19 (1.8%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/20 (422 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/21, where GetParam() = (3840x2160, 32FC3)
+[ PERFSTAT ]    (samples=13   mean=40.54   median=40.51   min=40.15   stddev=0.22 (0.5%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/21 (1903 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/22, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=10   mean=13.96   median=13.86   min=13.41   stddev=0.36 (2.6%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/22 (665 ms)
+[ RUN      ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/23, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=53.21   median=53.21   min=52.92   stddev=0.17 (0.3%))
+[       OK ] OCL_BitwiseOrFixture_Bitwise_or.Bitwise_or/23 (2153 ms)
+[----------] 24 tests from OCL_BitwiseOrFixture_Bitwise_or (16829 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (16830 ms total)
+[  PASSED  ] 24 tests.

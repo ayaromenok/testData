@@ -1,0 +1,149 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_CopyToFixture_CopyToWithMask*
+[==========] Running 28 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_CopyToFixture_CopyToWithMask
+[ RUN      ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=3.22   median=2.99   min=2.10   stddev=0.71 (22.0%))
+[       OK ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/0 (419 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=2.14   median=1.89   min=1.75   stddev=0.51 (23.9%))
+[       OK ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/1 (294 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/2, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=2.94   median=2.89   min=2.49   stddev=0.30 (10.1%))
+[       OK ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/2 (375 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/3, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=3.84   median=3.49   min=2.86   stddev=1.01 (26.2%))
+[       OK ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/3 (985 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/4, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=3.39   median=3.42   min=3.23   stddev=0.09 (2.6%))
+[       OK ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/4 (67 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/5, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=3.73   median=3.59   min=3.41   stddev=0.41 (11.1%))
+[       OK ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/5 (494 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/6, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=19   mean=6.72   median=6.72   min=6.33   stddev=0.20 (3.0%))
+[       OK ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/6 (187 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/7, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=10.31   median=10.16   min=10.00   stddev=0.31 (3.0%))
+[       OK ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/7 (290 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/8, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=38   mean=6.88   median=6.81   min=6.69   stddev=0.18 (2.6%))
+[       OK ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/8 (323 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/9, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=6.83   median=6.75   min=6.62   stddev=0.20 (2.9%))
+[       OK ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/9 (831 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/10, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=14.50   median=14.51   min=13.69   stddev=0.44 (3.0%))
+[       OK ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/10 (1640 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/11, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=25   mean=15.73   median=15.76   min=15.38   stddev=0.18 (1.2%))
+[       OK ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/11 (767 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/12, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=21.31   median=21.07   min=20.75   stddev=0.61 (2.8%))
+[       OK ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/12 (436 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/13, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=23.82   median=23.72   min=23.40   stddev=0.41 (1.7%))
+[       OK ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/13 (506 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/14, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=57.87   median=57.67   min=51.83   stddev=1.64 (2.8%))
+[       OK ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/14 (6284 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/15, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=59.75   median=59.46   min=59.26   stddev=0.80 (1.3%))
+[       OK ] OCL_CopyToFixture_CopyToWithMask.CopyToWithMask/15 (1917 ms)
+[----------] 16 tests from OCL_CopyToFixture_CopyToWithMask (15815 ms total)
+
+[----------] 12 tests from OCL_CopyToFixture_CopyToWithMaskUninit
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.74   median=1.75   min=1.48   stddev=0.11 (6.6%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/0 (317 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=2.07   median=2.11   min=1.84   stddev=0.13 (6.1%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/1 (255 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/2, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=25   mean=2.91   median=2.88   min=2.82   stddev=0.08 (2.8%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/2 (110 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/3, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=7.79   median=7.85   min=3.53   stddev=0.84 (10.8%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/3 (2028 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/4, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=4.43   median=3.65   min=3.30   stddev=1.07 (24.2%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/4 (485 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/5, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=25   mean=3.71   median=3.70   min=3.56   stddev=0.11 (2.8%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/5 (120 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/6, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=13   mean=6.66   median=6.62   min=6.48   stddev=0.15 (2.2%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/6 (120 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/7, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=25   mean=7.56   median=7.59   min=7.28   stddev=0.18 (2.4%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/7 (297 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/8, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=6.29   median=6.27   min=6.22   stddev=0.07 (1.2%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/8 (123 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/9, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=41   mean=7.68   median=7.67   min=6.99   stddev=0.23 (3.0%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/9 (374 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/10, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=10   mean=14.54   median=14.45   min=14.25   stddev=0.42 (2.9%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/10 (217 ms)
+[ RUN      ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/11, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=18.54   median=18.56   min=18.33   stddev=0.17 (0.9%))
+[       OK ] OCL_CopyToFixture_CopyToWithMaskUninit.CopyToWithMaskUninit/11 (395 ms)
+[----------] 12 tests from OCL_CopyToFixture_CopyToWithMaskUninit (4842 ms total)
+
+[----------] Global test environment tear-down
+[==========] 28 tests from 2 test cases ran. (20658 ms total)
+[  PASSED  ] 28 tests.

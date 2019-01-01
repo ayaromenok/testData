@@ -1,0 +1,134 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_DivFixture_Divide*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_DivFixture_Divide
+[ RUN      ] OCL_DivFixture_Divide.Divide/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.56   median=1.58   min=1.01   stddev=0.38 (24.6%))
+[       OK ] OCL_DivFixture_Divide.Divide/0 (288 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=1.38   median=1.38   min=1.19   stddev=0.10 (7.3%))
+[       OK ] OCL_DivFixture_Divide.Divide/1 (211 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/2, where GetParam() = (640x480, 8UC3)
+[ PERFSTAT ]    (samples=13   mean=1.71   median=1.71   min=1.66   stddev=0.03 (1.6%))
+[       OK ] OCL_DivFixture_Divide.Divide/2 (50 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/3, where GetParam() = (640x480, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=7.07   median=7.02   min=6.93   stddev=0.18 (2.5%))
+[       OK ] OCL_DivFixture_Divide.Divide/3 (182 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/4, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=2.02   median=2.05   min=1.77   stddev=0.09 (4.3%))
+[       OK ] OCL_DivFixture_Divide.Divide/4 (262 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/5, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=2.99   median=2.92   min=2.77   stddev=0.41 (13.8%))
+[       OK ] OCL_DivFixture_Divide.Divide/5 (450 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/6, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.83   median=1.82   min=1.68   stddev=0.08 (4.2%))
+[       OK ] OCL_DivFixture_Divide.Divide/6 (217 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/7, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=2.47   median=2.46   min=2.25   stddev=0.14 (5.7%))
+[       OK ] OCL_DivFixture_Divide.Divide/7 (470 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/8, where GetParam() = (1280x720, 8UC3)
+[ PERFSTAT ]    (samples=13   mean=3.15   median=3.11   min=3.08   stddev=0.08 (2.7%))
+[       OK ] OCL_DivFixture_Divide.Divide/8 (108 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/9, where GetParam() = (1280x720, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=5.51   median=5.50   min=5.44   stddev=0.06 (1.0%))
+[       OK ] OCL_DivFixture_Divide.Divide/9 (218 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/10, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=4.59   median=4.22   min=3.94   stddev=0.64 (14.0%))
+[       OK ] OCL_DivFixture_Divide.Divide/10 (1037 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/11, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=15.81   median=15.77   min=15.39   stddev=0.27 (1.7%))
+[       OK ] OCL_DivFixture_Divide.Divide/11 (425 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/12, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=2.76   median=2.76   min=2.53   stddev=0.11 (4.0%))
+[       OK ] OCL_DivFixture_Divide.Divide/12 (356 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/13, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=4.32   median=4.33   min=4.16   stddev=0.11 (2.6%))
+[       OK ] OCL_DivFixture_Divide.Divide/13 (191 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/14, where GetParam() = (1920x1080, 8UC3)
+[ PERFSTAT ]    (samples=25   mean=6.59   median=6.56   min=6.30   stddev=0.19 (2.9%))
+[       OK ] OCL_DivFixture_Divide.Divide/14 (293 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/15, where GetParam() = (1920x1080, 32FC3)
+[ PERFSTAT ]    (samples=13   mean=10.80   median=10.84   min=10.42   stddev=0.24 (2.2%))
+[       OK ] OCL_DivFixture_Divide.Divide/15 (525 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/16, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=13   mean=7.60   median=7.60   min=7.45   stddev=0.08 (1.0%))
+[       OK ] OCL_DivFixture_Divide.Divide/16 (346 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/17, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=14.23   median=14.17   min=13.86   stddev=0.32 (2.2%))
+[       OK ] OCL_DivFixture_Divide.Divide/17 (786 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/18, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=10.86   median=10.71   min=10.54   stddev=0.30 (2.8%))
+[       OK ] OCL_DivFixture_Divide.Divide/18 (300 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/19, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=25   mean=14.09   median=14.02   min=13.79   stddev=0.26 (1.8%))
+[       OK ] OCL_DivFixture_Divide.Divide/19 (887 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/20, where GetParam() = (3840x2160, 8UC3)
+[ PERFSTAT ]    (samples=16   mean=20.54   median=20.36   min=20.20   stddev=0.60 (2.9%))
+[       OK ] OCL_DivFixture_Divide.Divide/20 (701 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/21, where GetParam() = (3840x2160, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=40.05   median=39.96   min=39.86   stddev=0.22 (0.5%))
+[       OK ] OCL_DivFixture_Divide.Divide/21 (1768 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/22, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=27.35   median=27.19   min=26.84   stddev=1.07 (3.9%))
+[       OK ] OCL_DivFixture_Divide.Divide/22 (3511 ms)
+[ RUN      ] OCL_DivFixture_Divide.Divide/23, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=54.06   median=54.04   min=53.86   stddev=0.12 (0.2%))
+[       OK ] OCL_DivFixture_Divide.Divide/23 (2834 ms)
+[----------] 24 tests from OCL_DivFixture_Divide (16432 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (16433 ms total)
+[  PASSED  ] 24 tests.

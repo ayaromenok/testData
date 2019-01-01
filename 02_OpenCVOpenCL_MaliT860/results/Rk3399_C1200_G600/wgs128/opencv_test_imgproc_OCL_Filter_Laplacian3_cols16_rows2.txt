@@ -1,0 +1,109 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_Filter/Laplacian3_cols16_rows2*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_Filter/Laplacian3_cols16_rows2
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/0, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/0 (91 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/1, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/1 (45 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/2, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/2 (41 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/3, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/3 (43 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/4, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/4 (42 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/5, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/5 (43 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/6, where GetParam() = (8UC1, 3, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/6 (36 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/7, where GetParam() = (8UC1, 3, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/7 (38 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/8, where GetParam() = (8UC1, 3, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/8 (36 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/9, where GetParam() = (8UC1, 3, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/9 (37 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/10, where GetParam() = (8UC1, 3, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/10 (38 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/11, where GetParam() = (8UC1, 3, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/11 (39 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/12, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/12 (49 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/13, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/13 (38 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/14, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/14 (46 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/15, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/15 (38 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/16, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/16 (48 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/17, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/17 (39 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/18, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/18 (48 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/19, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/19 (40 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/20, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/20 (49 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/21, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/21 (39 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/22, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/22 (50 ms)
+[ RUN      ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/23, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/Laplacian3_cols16_rows2.Accuracy/23 (39 ms)
+[----------] 24 tests from OCL_Filter/Laplacian3_cols16_rows2 (1053 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (1055 ms total)
+[  PASSED  ] 24 tests.

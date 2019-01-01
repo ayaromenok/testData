@@ -1,0 +1,384 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 256
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_Imgproc/CornerMinEigenVal*
+[==========] Running 32 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 32 tests from OCL_Imgproc/CornerMinEigenVal
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/0, where GetParam() = (8UC1, 3, 0, false)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/0, where GetParam() = (8UC1, 3, 0, false) (1 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/1, where GetParam() = (8UC1, 3, 0, true)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/1, where GetParam() = (8UC1, 3, 0, true) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/2, where GetParam() = (8UC1, 3, 1, false)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/2, where GetParam() = (8UC1, 3, 1, false) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/3, where GetParam() = (8UC1, 3, 1, true)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/3, where GetParam() = (8UC1, 3, 1, true) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/4, where GetParam() = (8UC1, 3, 2, false)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/4, where GetParam() = (8UC1, 3, 2, false) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/5, where GetParam() = (8UC1, 3, 2, true)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/5, where GetParam() = (8UC1, 3, 2, true) (1 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/6, where GetParam() = (8UC1, 3, 4, false)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/6, where GetParam() = (8UC1, 3, 4, false) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/7, where GetParam() = (8UC1, 3, 4, true)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/7, where GetParam() = (8UC1, 3, 4, true) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/8, where GetParam() = (8UC1, 5, 0, false)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/8, where GetParam() = (8UC1, 5, 0, false) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/9, where GetParam() = (8UC1, 5, 0, true)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/9, where GetParam() = (8UC1, 5, 0, true) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/10, where GetParam() = (8UC1, 5, 1, false)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/10, where GetParam() = (8UC1, 5, 1, false) (1 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/11, where GetParam() = (8UC1, 5, 1, true)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/11, where GetParam() = (8UC1, 5, 1, true) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/12, where GetParam() = (8UC1, 5, 2, false)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/12, where GetParam() = (8UC1, 5, 2, false) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/13, where GetParam() = (8UC1, 5, 2, true)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/13, where GetParam() = (8UC1, 5, 2, true) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/14, where GetParam() = (8UC1, 5, 4, false)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/14, where GetParam() = (8UC1, 5, 4, false) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/15, where GetParam() = (8UC1, 5, 4, true)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/15, where GetParam() = (8UC1, 5, 4, true) (1 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/16, where GetParam() = (32FC1, 3, 0, false)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/16, where GetParam() = (32FC1, 3, 0, false) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/17, where GetParam() = (32FC1, 3, 0, true)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/17, where GetParam() = (32FC1, 3, 0, true) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/18, where GetParam() = (32FC1, 3, 1, false)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/18, where GetParam() = (32FC1, 3, 1, false) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/19, where GetParam() = (32FC1, 3, 1, true)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/19, where GetParam() = (32FC1, 3, 1, true) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/20, where GetParam() = (32FC1, 3, 2, false)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/20, where GetParam() = (32FC1, 3, 2, false) (1 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/21, where GetParam() = (32FC1, 3, 2, true)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/21, where GetParam() = (32FC1, 3, 2, true) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/22, where GetParam() = (32FC1, 3, 4, false)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/22, where GetParam() = (32FC1, 3, 4, false) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/23, where GetParam() = (32FC1, 3, 4, true)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/23, where GetParam() = (32FC1, 3, 4, true) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/24, where GetParam() = (32FC1, 5, 0, false)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/24, where GetParam() = (32FC1, 5, 0, false) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/25, where GetParam() = (32FC1, 5, 0, true)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/25, where GetParam() = (32FC1, 5, 0, true) (1 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/26, where GetParam() = (32FC1, 5, 1, false)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/26, where GetParam() = (32FC1, 5, 1, false) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/27, where GetParam() = (32FC1, 5, 1, true)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/27, where GetParam() = (32FC1, 5, 1, true) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/28, where GetParam() = (32FC1, 5, 2, false)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/28, where GetParam() = (32FC1, 5, 2, false) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/29, where GetParam() = (32FC1, 5, 2, true)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/29, where GetParam() = (32FC1, 5, 2, true) (0 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/30, where GetParam() = (32FC1, 5, 4, false)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/30, where GetParam() = (32FC1, 5, 4, false) (1 ms)
+[ RUN      ] OCL_Imgproc/CornerMinEigenVal.Mat/31, where GetParam() = (32FC1, 5, 4, true)
+/home/pi/sdk/src/opencv/modules/imgproc/test/ocl/test_imgproc.cpp:198: Failure
+Value of: image.empty()
+  Actual: true
+Expected: false
+unknown file: Failure
+C++ exception with description "OpenCV(4.0.1-dev) /home/pi/sdk/src/opencv/modules/core/src/matrix.cpp:757: error: (-215:Assertion failed) dims <= 2 && step[0] > 0 in function 'locateROI'
+" thrown in the test body.
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/31, where GetParam() = (32FC1, 5, 4, true) (0 ms)
+[----------] 32 tests from OCL_Imgproc/CornerMinEigenVal (8 ms total)
+
+[----------] Global test environment tear-down
+[==========] 32 tests from 1 test case ran. (10 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 32 tests, listed below:
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/0, where GetParam() = (8UC1, 3, 0, false)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/1, where GetParam() = (8UC1, 3, 0, true)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/2, where GetParam() = (8UC1, 3, 1, false)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/3, where GetParam() = (8UC1, 3, 1, true)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/4, where GetParam() = (8UC1, 3, 2, false)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/5, where GetParam() = (8UC1, 3, 2, true)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/6, where GetParam() = (8UC1, 3, 4, false)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/7, where GetParam() = (8UC1, 3, 4, true)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/8, where GetParam() = (8UC1, 5, 0, false)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/9, where GetParam() = (8UC1, 5, 0, true)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/10, where GetParam() = (8UC1, 5, 1, false)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/11, where GetParam() = (8UC1, 5, 1, true)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/12, where GetParam() = (8UC1, 5, 2, false)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/13, where GetParam() = (8UC1, 5, 2, true)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/14, where GetParam() = (8UC1, 5, 4, false)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/15, where GetParam() = (8UC1, 5, 4, true)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/16, where GetParam() = (32FC1, 3, 0, false)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/17, where GetParam() = (32FC1, 3, 0, true)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/18, where GetParam() = (32FC1, 3, 1, false)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/19, where GetParam() = (32FC1, 3, 1, true)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/20, where GetParam() = (32FC1, 3, 2, false)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/21, where GetParam() = (32FC1, 3, 2, true)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/22, where GetParam() = (32FC1, 3, 4, false)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/23, where GetParam() = (32FC1, 3, 4, true)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/24, where GetParam() = (32FC1, 5, 0, false)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/25, where GetParam() = (32FC1, 5, 0, true)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/26, where GetParam() = (32FC1, 5, 1, false)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/27, where GetParam() = (32FC1, 5, 1, true)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/28, where GetParam() = (32FC1, 5, 2, false)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/29, where GetParam() = (32FC1, 5, 2, true)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/30, where GetParam() = (32FC1, 5, 4, false)
+[  FAILED  ] OCL_Imgproc/CornerMinEigenVal.Mat/31, where GetParam() = (32FC1, 5, 4, true)
+
+32 FAILED TESTS

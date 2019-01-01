@@ -1,0 +1,134 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_SumFixture_Sum*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_SumFixture_Sum
+[ RUN      ] OCL_SumFixture_Sum.Sum/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.84   median=1.85   min=1.40   stddev=0.22 (12.1%))
+[       OK ] OCL_SumFixture_Sum.Sum/0 (475 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=1.43   median=1.18   min=1.02   stddev=0.45 (31.7%))
+[       OK ] OCL_SumFixture_Sum.Sum/1 (252 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/2, where GetParam() = (640x480, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=2.46   median=2.54   min=1.40   stddev=0.30 (12.3%))
+[       OK ] OCL_SumFixture_Sum.Sum/2 (403 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/3, where GetParam() = (640x480, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=3.15   median=3.26   min=1.63   stddev=0.40 (12.8%))
+[       OK ] OCL_SumFixture_Sum.Sum/3 (557 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/4, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=1.75   median=1.77   min=1.30   stddev=0.29 (16.6%))
+[       OK ] OCL_SumFixture_Sum.Sum/4 (254 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/5, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=1.81   median=1.59   min=1.48   stddev=0.47 (26.2%))
+[       OK ] OCL_SumFixture_Sum.Sum/5 (289 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/6, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.25   median=1.27   min=1.08   stddev=0.12 (9.7%))
+[       OK ] OCL_SumFixture_Sum.Sum/6 (156 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/7, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=1.59   median=1.53   min=1.37   stddev=0.18 (11.1%))
+[       OK ] OCL_SumFixture_Sum.Sum/7 (192 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/8, where GetParam() = (1280x720, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=3.18   median=3.13   min=2.65   stddev=0.20 (6.1%))
+[       OK ] OCL_SumFixture_Sum.Sum/8 (412 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/9, where GetParam() = (1280x720, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=2.85   median=2.75   min=2.64   stddev=0.36 (12.6%))
+[       OK ] OCL_SumFixture_Sum.Sum/9 (399 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/10, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=2.59   median=2.66   min=2.05   stddev=0.31 (12.1%))
+[       OK ] OCL_SumFixture_Sum.Sum/10 (373 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/11, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=2.86   median=2.78   min=2.65   stddev=0.39 (13.6%))
+[       OK ] OCL_SumFixture_Sum.Sum/11 (401 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/12, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.50   median=1.48   min=1.40   stddev=0.08 (5.2%))
+[       OK ] OCL_SumFixture_Sum.Sum/12 (211 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/13, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=2.15   median=2.05   min=1.96   stddev=0.26 (11.9%))
+[       OK ] OCL_SumFixture_Sum.Sum/13 (292 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/14, where GetParam() = (1920x1080, 8UC3)
+[ PERFSTAT ]    (samples=75   mean=5.75   median=5.73   min=5.41   stddev=0.17 (3.0%))
+[       OK ] OCL_SumFixture_Sum.Sum/14 (537 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/15, where GetParam() = (1920x1080, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=6.43   median=4.94   min=4.81   stddev=2.61 (40.7%))
+[       OK ] OCL_SumFixture_Sum.Sum/15 (820 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/16, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=3.76   median=3.73   min=3.57   stddev=0.14 (3.8%))
+[       OK ] OCL_SumFixture_Sum.Sum/16 (507 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/17, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=25   mean=5.14   median=5.09   min=4.99   stddev=0.13 (2.6%))
+[       OK ] OCL_SumFixture_Sum.Sum/17 (262 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/18, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=2.22   median=2.16   min=1.92   stddev=0.14 (6.4%))
+[       OK ] OCL_SumFixture_Sum.Sum/18 (348 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/19, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=5.29   median=5.25   min=4.99   stddev=0.34 (6.5%))
+[       OK ] OCL_SumFixture_Sum.Sum/19 (770 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/20, where GetParam() = (3840x2160, 8UC3)
+[ PERFSTAT ]    (samples=25   mean=19.92   median=19.86   min=18.99   stddev=0.57 (2.8%))
+[       OK ] OCL_SumFixture_Sum.Sum/20 (776 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/21, where GetParam() = (3840x2160, 32FC3)
+[ PERFSTAT ]    (samples=25   mean=24.33   median=24.20   min=22.98   stddev=0.60 (2.5%))
+[       OK ] OCL_SumFixture_Sum.Sum/21 (1108 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/22, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=12.62   median=11.90   min=11.56   stddev=3.04 (24.1%))
+[       OK ] OCL_SumFixture_Sum.Sum/22 (2834 ms)
+[ RUN      ] OCL_SumFixture_Sum.Sum/23, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=88   mean=16.82   median=16.87   min=16.30   stddev=0.28 (1.7%))
+[       OK ] OCL_SumFixture_Sum.Sum/23 (3792 ms)
+[----------] 24 tests from OCL_SumFixture_Sum (16427 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (16427 ms total)
+[  PASSED  ] 24 tests.

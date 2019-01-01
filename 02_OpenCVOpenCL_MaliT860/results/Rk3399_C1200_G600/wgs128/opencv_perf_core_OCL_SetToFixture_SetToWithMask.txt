@@ -1,0 +1,110 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_SetToFixture_SetToWithMask*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_SetToFixture_SetToWithMask
+[ RUN      ] OCL_SetToFixture_SetToWithMask.SetToWithMask/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=2.80   median=2.65   min=1.87   stddev=0.58 (20.8%))
+[       OK ] OCL_SetToFixture_SetToWithMask.SetToWithMask/0 (370 ms)
+[ RUN      ] OCL_SetToFixture_SetToWithMask.SetToWithMask/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=3.28   median=3.19   min=2.47   stddev=0.52 (15.8%))
+[       OK ] OCL_SetToFixture_SetToWithMask.SetToWithMask/1 (415 ms)
+[ RUN      ] OCL_SetToFixture_SetToWithMask.SetToWithMask/2, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=3.25   median=3.15   min=2.52   stddev=0.50 (15.5%))
+[       OK ] OCL_SetToFixture_SetToWithMask.SetToWithMask/2 (402 ms)
+[ RUN      ] OCL_SetToFixture_SetToWithMask.SetToWithMask/3, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=3.27   median=2.18   min=1.59   stddev=1.75 (53.5%))
+[       OK ] OCL_SetToFixture_SetToWithMask.SetToWithMask/3 (938 ms)
+[ RUN      ] OCL_SetToFixture_SetToWithMask.SetToWithMask/4, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=3.58   median=3.61   min=2.53   stddev=0.38 (10.6%))
+[       OK ] OCL_SetToFixture_SetToWithMask.SetToWithMask/4 (392 ms)
+[ RUN      ] OCL_SetToFixture_SetToWithMask.SetToWithMask/5, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=4.98   median=4.98   min=4.79   stddev=0.12 (2.3%))
+[       OK ] OCL_SetToFixture_SetToWithMask.SetToWithMask/5 (99 ms)
+[ RUN      ] OCL_SetToFixture_SetToWithMask.SetToWithMask/6, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=4.06   median=3.18   min=2.85   stddev=1.33 (32.9%))
+[       OK ] OCL_SetToFixture_SetToWithMask.SetToWithMask/6 (682 ms)
+[ RUN      ] OCL_SetToFixture_SetToWithMask.SetToWithMask/7, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=4.58   median=3.87   min=3.61   stddev=1.74 (37.9%))
+[       OK ] OCL_SetToFixture_SetToWithMask.SetToWithMask/7 (808 ms)
+[ RUN      ] OCL_SetToFixture_SetToWithMask.SetToWithMask/8, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=8.35   median=8.73   min=5.04   stddev=1.17 (14.0%))
+[       OK ] OCL_SetToFixture_SetToWithMask.SetToWithMask/8 (921 ms)
+[ RUN      ] OCL_SetToFixture_SetToWithMask.SetToWithMask/9, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=10.89   median=10.82   min=10.53   stddev=0.31 (2.8%))
+[       OK ] OCL_SetToFixture_SetToWithMask.SetToWithMask/9 (261 ms)
+[ RUN      ] OCL_SetToFixture_SetToWithMask.SetToWithMask/10, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=6.34   median=5.54   min=5.40   stddev=1.87 (29.6%))
+[       OK ] OCL_SetToFixture_SetToWithMask.SetToWithMask/10 (811 ms)
+[ RUN      ] OCL_SetToFixture_SetToWithMask.SetToWithMask/11, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=7.48   median=7.23   min=6.93   stddev=0.90 (12.1%))
+[       OK ] OCL_SetToFixture_SetToWithMask.SetToWithMask/11 (1147 ms)
+[ RUN      ] OCL_SetToFixture_SetToWithMask.SetToWithMask/12, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=29.42   median=29.30   min=28.79   stddev=0.51 (1.7%))
+[       OK ] OCL_SetToFixture_SetToWithMask.SetToWithMask/12 (459 ms)
+[ RUN      ] OCL_SetToFixture_SetToWithMask.SetToWithMask/13, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=20.37   median=20.23   min=19.88   stddev=0.54 (2.6%))
+[       OK ] OCL_SetToFixture_SetToWithMask.SetToWithMask/13 (526 ms)
+[ RUN      ] OCL_SetToFixture_SetToWithMask.SetToWithMask/14, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=25.51   median=25.99   min=20.18   stddev=2.19 (8.6%))
+[       OK ] OCL_SetToFixture_SetToWithMask.SetToWithMask/14 (2984 ms)
+[ RUN      ] OCL_SetToFixture_SetToWithMask.SetToWithMask/15, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=38   mean=26.58   median=26.41   min=26.14   stddev=0.63 (2.4%))
+[       OK ] OCL_SetToFixture_SetToWithMask.SetToWithMask/15 (2191 ms)
+[----------] 16 tests from OCL_SetToFixture_SetToWithMask (13409 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (13410 ms total)
+[  PASSED  ] 16 tests.

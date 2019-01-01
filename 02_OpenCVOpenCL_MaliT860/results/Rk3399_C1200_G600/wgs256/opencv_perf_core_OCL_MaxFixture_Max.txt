@@ -1,0 +1,110 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 256
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_MaxFixture_Max*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_MaxFixture_Max
+[ RUN      ] OCL_MaxFixture_Max.Max/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.49   median=1.53   min=0.97   stddev=0.40 (26.8%))
+[       OK ] OCL_MaxFixture_Max.Max/0 (244 ms)
+[ RUN      ] OCL_MaxFixture_Max.Max/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=1.68   median=1.51   min=1.08   stddev=0.80 (47.7%))
+[       OK ] OCL_MaxFixture_Max.Max/1 (258 ms)
+[ RUN      ] OCL_MaxFixture_Max.Max/2, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=1.66   median=1.65   min=1.35   stddev=0.21 (12.4%))
+[       OK ] OCL_MaxFixture_Max.Max/2 (204 ms)
+[ RUN      ] OCL_MaxFixture_Max.Max/3, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=3.42   median=3.13   min=2.66   stddev=1.04 (30.3%))
+[       OK ] OCL_MaxFixture_Max.Max/3 (932 ms)
+[ RUN      ] OCL_MaxFixture_Max.Max/4, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.56   median=1.50   min=1.00   stddev=0.60 (38.6%))
+[       OK ] OCL_MaxFixture_Max.Max/4 (580 ms)
+[ RUN      ] OCL_MaxFixture_Max.Max/5, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=19   mean=3.47   median=3.50   min=3.20   stddev=0.10 (2.9%))
+[       OK ] OCL_MaxFixture_Max.Max/5 (126 ms)
+[ RUN      ] OCL_MaxFixture_Max.Max/6, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=2.57   median=2.57   min=2.19   stddev=0.22 (8.4%))
+[       OK ] OCL_MaxFixture_Max.Max/6 (389 ms)
+[ RUN      ] OCL_MaxFixture_Max.Max/7, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=7.08   median=7.11   min=6.50   stddev=0.31 (4.4%))
+[       OK ] OCL_MaxFixture_Max.Max/7 (1507 ms)
+[ RUN      ] OCL_MaxFixture_Max.Max/8, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.72   median=1.63   min=1.43   stddev=0.23 (13.4%))
+[       OK ] OCL_MaxFixture_Max.Max/8 (238 ms)
+[ RUN      ] OCL_MaxFixture_Max.Max/9, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=10.20   median=10.19   min=9.88   stddev=0.23 (2.3%))
+[       OK ] OCL_MaxFixture_Max.Max/9 (236 ms)
+[ RUN      ] OCL_MaxFixture_Max.Max/10, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=10   mean=9.51   median=9.45   min=9.23   stddev=0.21 (2.2%))
+[       OK ] OCL_MaxFixture_Max.Max/10 (188 ms)
+[ RUN      ] OCL_MaxFixture_Max.Max/11, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=38   mean=14.19   median=14.26   min=13.78   stddev=0.23 (1.6%))
+[       OK ] OCL_MaxFixture_Max.Max/11 (969 ms)
+[ RUN      ] OCL_MaxFixture_Max.Max/12, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=4.46   median=4.43   min=4.04   stddev=0.41 (9.1%))
+[       OK ] OCL_MaxFixture_Max.Max/12 (719 ms)
+[ RUN      ] OCL_MaxFixture_Max.Max/13, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=14.26   median=14.35   min=13.74   stddev=0.26 (1.8%))
+[       OK ] OCL_MaxFixture_Max.Max/13 (604 ms)
+[ RUN      ] OCL_MaxFixture_Max.Max/14, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=38   mean=14.47   median=14.49   min=14.06   stddev=0.20 (1.4%))
+[       OK ] OCL_MaxFixture_Max.Max/14 (997 ms)
+[ RUN      ] OCL_MaxFixture_Max.Max/15, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=52.45   median=52.46   min=52.19   stddev=0.16 (0.3%))
+[       OK ] OCL_MaxFixture_Max.Max/15 (2429 ms)
+[----------] 16 tests from OCL_MaxFixture_Max (10622 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (10623 ms total)
+[  PASSED  ] 16 tests.

@@ -1,0 +1,86 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 256
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_PhaseFixture_Phase*
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from OCL_PhaseFixture_Phase
+[ RUN      ] OCL_PhaseFixture_Phase.Phase/0, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=2.40   median=2.36   min=1.81   stddev=0.42 (17.7%))
+[       OK ] OCL_PhaseFixture_Phase.Phase/0 (326 ms)
+[ RUN      ] OCL_PhaseFixture_Phase.Phase/1, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=6.00   median=5.60   min=5.12   stddev=1.34 (22.3%))
+[       OK ] OCL_PhaseFixture_Phase.Phase/1 (1507 ms)
+[ RUN      ] OCL_PhaseFixture_Phase.Phase/2, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=4.89   median=4.88   min=4.05   stddev=0.33 (6.7%))
+[       OK ] OCL_PhaseFixture_Phase.Phase/2 (562 ms)
+[ RUN      ] OCL_PhaseFixture_Phase.Phase/3, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=38   mean=14.50   median=14.41   min=14.06   stddev=0.41 (2.9%))
+[       OK ] OCL_PhaseFixture_Phase.Phase/3 (818 ms)
+[ RUN      ] OCL_PhaseFixture_Phase.Phase/4, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=8.86   median=8.84   min=8.42   stddev=0.26 (3.0%))
+[       OK ] OCL_PhaseFixture_Phase.Phase/4 (1072 ms)
+[ RUN      ] OCL_PhaseFixture_Phase.Phase/5, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=25   mean=31.51   median=31.53   min=31.12   stddev=0.22 (0.7%))
+[       OK ] OCL_PhaseFixture_Phase.Phase/5 (1288 ms)
+[ RUN      ] OCL_PhaseFixture_Phase.Phase/6, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=50   mean=31.45   median=31.35   min=30.96   stddev=0.31 (1.0%))
+[       OK ] OCL_PhaseFixture_Phase.Phase/6 (1993 ms)
+[ RUN      ] OCL_PhaseFixture_Phase.Phase/7, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=14   mean=122.23   median=121.30   min=120.98   stddev=3.56 (2.9%))
+[       OK ] OCL_PhaseFixture_Phase.Phase/7 (3614 ms)
+[----------] 8 tests from OCL_PhaseFixture_Phase (11185 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (11186 ms total)
+[  PASSED  ] 8 tests.

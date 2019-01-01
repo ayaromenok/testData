@@ -1,0 +1,110 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_SetIdentityFixture_SetIdentity*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_SetIdentityFixture_SetIdentity
+[ RUN      ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=0.91   median=0.92   min=0.72   stddev=0.10 (11.4%))
+[       OK ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/0 (169 ms)
+[ RUN      ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=1.31   median=1.36   min=0.98   stddev=0.17 (12.7%))
+[       OK ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/1 (189 ms)
+[ RUN      ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/2, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=1.64   median=1.64   min=1.44   stddev=0.07 (4.5%))
+[       OK ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/2 (207 ms)
+[ RUN      ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/3, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=1.75   median=1.56   min=1.43   stddev=0.51 (29.2%))
+[       OK ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/3 (251 ms)
+[ RUN      ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/4, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.95   median=1.93   min=1.50   stddev=0.25 (12.8%))
+[       OK ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/4 (244 ms)
+[ RUN      ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/5, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=2.50   median=2.31   min=1.72   stddev=0.65 (26.1%))
+[       OK ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/5 (331 ms)
+[ RUN      ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/6, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=2.41   median=2.37   min=2.23   stddev=0.12 (5.0%))
+[       OK ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/6 (274 ms)
+[ RUN      ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/7, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=5.76   median=5.74   min=5.55   stddev=0.16 (2.8%))
+[       OK ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/7 (136 ms)
+[ RUN      ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/8, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=75   mean=2.98   median=2.95   min=2.85   stddev=0.09 (2.9%))
+[       OK ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/8 (248 ms)
+[ RUN      ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/9, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=4.01   median=4.00   min=3.88   stddev=0.10 (2.4%))
+[       OK ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/9 (95 ms)
+[ RUN      ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/10, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=34   mean=5.03   median=5.04   min=4.39   stddev=0.15 (3.0%))
+[       OK ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/10 (236 ms)
+[ RUN      ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/11, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=88   mean=6.31   median=6.29   min=6.03   stddev=0.14 (2.2%))
+[       OK ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/11 (751 ms)
+[ RUN      ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/12, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=8.70   median=8.75   min=8.27   stddev=0.19 (2.2%))
+[       OK ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/12 (174 ms)
+[ RUN      ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/13, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=9.63   median=9.45   min=9.20   stddev=1.04 (10.8%))
+[       OK ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/13 (1618 ms)
+[ RUN      ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/14, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=10   mean=9.48   median=9.46   min=9.26   stddev=0.16 (1.7%))
+[       OK ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/14 (252 ms)
+[ RUN      ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/15, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=21.58   median=21.52   min=21.03   stddev=0.45 (2.1%))
+[       OK ] OCL_SetIdentityFixture_SetIdentity.SetIdentity/15 (749 ms)
+[----------] 16 tests from OCL_SetIdentityFixture_SetIdentity (5926 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (5926 ms total)
+[  PASSED  ] 16 tests.

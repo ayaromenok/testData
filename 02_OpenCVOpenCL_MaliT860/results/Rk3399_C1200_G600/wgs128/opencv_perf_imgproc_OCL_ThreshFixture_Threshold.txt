@@ -1,0 +1,254 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_ThreshFixture_Threshold*
+[==========] Running 64 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 64 tests from OCL_ThreshFixture_Threshold
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/0, where GetParam() = (640x480, 8UC1, THRESH_BINARY)
+[ PERFSTAT ]    (samples=100   mean=1.09   median=1.06   min=0.74   stddev=0.18 (16.3%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/0 (198 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/1, where GetParam() = (640x480, 8UC1, THRESH_BINARY_INV)
+[ PERFSTAT ]    (samples=100   mean=1.32   median=1.24   min=1.02   stddev=0.37 (27.8%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/1 (568 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/2, where GetParam() = (640x480, 8UC1, THRESH_TRUNC)
+[ PERFSTAT ]    (samples=100   mean=2.22   median=2.08   min=1.41   stddev=0.54 (24.5%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/2 (322 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/3, where GetParam() = (640x480, 8UC1, THRESH_TOZERO_INV)
+[ PERFSTAT ]    (samples=100   mean=2.09   median=2.22   min=1.26   stddev=0.39 (18.7%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/3 (287 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/4, where GetParam() = (640x480, 32FC1, THRESH_BINARY)
+[ PERFSTAT ]    (samples=100   mean=2.14   median=1.61   min=1.38   stddev=1.11 (52.0%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/4 (322 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/5, where GetParam() = (640x480, 32FC1, THRESH_BINARY_INV)
+[ PERFSTAT ]    (samples=100   mean=1.72   median=1.67   min=1.45   stddev=0.21 (12.2%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/5 (222 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/6, where GetParam() = (640x480, 32FC1, THRESH_TRUNC)
+[ PERFSTAT ]    (samples=100   mean=1.73   median=1.64   min=1.44   stddev=0.26 (14.8%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/6 (228 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/7, where GetParam() = (640x480, 32FC1, THRESH_TOZERO_INV)
+[ PERFSTAT ]    (samples=100   mean=1.63   median=1.59   min=1.44   stddev=0.17 (10.2%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/7 (213 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/8, where GetParam() = (640x480, 8UC4, THRESH_BINARY)
+[ PERFSTAT ]    (samples=100   mean=1.60   median=1.55   min=1.44   stddev=0.12 (7.6%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/8 (185 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/9, where GetParam() = (640x480, 8UC4, THRESH_BINARY_INV)
+[ PERFSTAT ]    (samples=100   mean=1.56   median=1.51   min=1.44   stddev=0.10 (6.6%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/9 (182 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/10, where GetParam() = (640x480, 8UC4, THRESH_TRUNC)
+[ PERFSTAT ]    (samples=100   mean=1.56   median=1.53   min=1.45   stddev=0.10 (6.3%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/10 (183 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/11, where GetParam() = (640x480, 8UC4, THRESH_TOZERO_INV)
+[ PERFSTAT ]    (samples=100   mean=1.60   median=1.56   min=1.44   stddev=0.15 (9.3%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/11 (200 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/12, where GetParam() = (640x480, 32FC4, THRESH_BINARY)
+[ PERFSTAT ]    (samples=100   mean=2.80   median=2.72   min=2.57   stddev=0.18 (6.5%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/12 (347 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/13, where GetParam() = (640x480, 32FC4, THRESH_BINARY_INV)
+[ PERFSTAT ]    (samples=100   mean=3.06   median=3.04   min=2.56   stddev=0.37 (12.0%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/13 (388 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/14, where GetParam() = (640x480, 32FC4, THRESH_TRUNC)
+[ PERFSTAT ]    (samples=100   mean=2.75   median=2.70   min=2.53   stddev=0.17 (6.0%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/14 (332 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/15, where GetParam() = (640x480, 32FC4, THRESH_TOZERO_INV)
+[ PERFSTAT ]    (samples=100   mean=2.77   median=2.69   min=2.40   stddev=0.25 (9.2%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/15 (339 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/16, where GetParam() = (1280x720, 8UC1, THRESH_BINARY)
+[ PERFSTAT ]    (samples=100   mean=1.44   median=1.42   min=1.21   stddev=0.16 (11.1%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/16 (178 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/17, where GetParam() = (1280x720, 8UC1, THRESH_BINARY_INV)
+[ PERFSTAT ]    (samples=100   mean=1.44   median=1.42   min=1.36   stddev=0.06 (3.9%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/17 (169 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/18, where GetParam() = (1280x720, 8UC1, THRESH_TRUNC)
+[ PERFSTAT ]    (samples=100   mean=1.65   median=1.69   min=1.18   stddev=0.22 (13.0%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/18 (207 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/19, where GetParam() = (1280x720, 8UC1, THRESH_TOZERO_INV)
+[ PERFSTAT ]    (samples=100   mean=1.77   median=1.78   min=1.53   stddev=0.11 (5.9%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/19 (204 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/20, where GetParam() = (1280x720, 32FC1, THRESH_BINARY)
+[ PERFSTAT ]    (samples=100   mean=2.31   median=2.20   min=2.03   stddev=0.40 (17.4%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/20 (320 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/21, where GetParam() = (1280x720, 32FC1, THRESH_BINARY_INV)
+[ PERFSTAT ]    (samples=100   mean=2.23   median=2.22   min=2.10   stddev=0.09 (4.1%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/21 (270 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/22, where GetParam() = (1280x720, 32FC1, THRESH_TRUNC)
+[ PERFSTAT ]    (samples=63   mean=2.20   median=2.18   min=2.13   stddev=0.06 (2.7%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/22 (180 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/23, where GetParam() = (1280x720, 32FC1, THRESH_TOZERO_INV)
+[ PERFSTAT ]    (samples=100   mean=2.26   median=2.21   min=2.12   stddev=0.14 (6.3%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/23 (282 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/24, where GetParam() = (1280x720, 8UC4, THRESH_BINARY)
+[ PERFSTAT ]    (samples=13   mean=2.18   median=2.17   min=2.09   stddev=0.05 (2.4%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/24 (79 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/25, where GetParam() = (1280x720, 8UC4, THRESH_BINARY_INV)
+[ PERFSTAT ]    (samples=100   mean=2.19   median=2.19   min=2.00   stddev=0.08 (3.4%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/25 (282 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/26, where GetParam() = (1280x720, 8UC4, THRESH_TRUNC)
+[ PERFSTAT ]    (samples=100   mean=2.88   median=2.80   min=2.37   stddev=0.25 (8.8%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/26 (382 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/27, where GetParam() = (1280x720, 8UC4, THRESH_TOZERO_INV)
+[ PERFSTAT ]    (samples=100   mean=2.69   median=2.81   min=1.97   stddev=0.37 (13.6%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/27 (345 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/28, where GetParam() = (1280x720, 32FC4, THRESH_BINARY)
+[ PERFSTAT ]    (samples=100   mean=6.21   median=5.55   min=5.32   stddev=1.02 (16.5%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/28 (788 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/29, where GetParam() = (1280x720, 32FC4, THRESH_BINARY_INV)
+[ PERFSTAT ]    (samples=13   mean=5.52   median=5.46   min=5.38   stddev=0.13 (2.3%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/29 (201 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/30, where GetParam() = (1280x720, 32FC4, THRESH_TRUNC)
+[ PERFSTAT ]    (samples=38   mean=5.55   median=5.52   min=5.32   stddev=0.15 (2.8%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/30 (338 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/31, where GetParam() = (1280x720, 32FC4, THRESH_TOZERO_INV)
+[ PERFSTAT ]    (samples=100   mean=5.57   median=5.51   min=5.27   stddev=0.22 (3.9%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/31 (728 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/32, where GetParam() = (1920x1080, 8UC1, THRESH_BINARY)
+[ PERFSTAT ]    (samples=100   mean=1.68   median=1.66   min=1.57   stddev=0.07 (4.3%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/32 (214 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/33, where GetParam() = (1920x1080, 8UC1, THRESH_BINARY_INV)
+[ PERFSTAT ]    (samples=18   mean=1.76   median=1.74   min=1.72   stddev=0.05 (3.0%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/33 (62 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/34, where GetParam() = (1920x1080, 8UC1, THRESH_TRUNC)
+[ PERFSTAT ]    (samples=14   mean=1.63   median=1.61   min=1.58   stddev=0.05 (3.0%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/34 (53 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/35, where GetParam() = (1920x1080, 8UC1, THRESH_TOZERO_INV)
+[ PERFSTAT ]    (samples=100   mean=1.62   median=1.61   min=1.56   stddev=0.05 (3.1%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/35 (199 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/36, where GetParam() = (1920x1080, 32FC1, THRESH_BINARY)
+[ PERFSTAT ]    (samples=100   mean=3.56   median=3.53   min=3.35   stddev=0.13 (3.5%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/36 (450 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/37, where GetParam() = (1920x1080, 32FC1, THRESH_BINARY_INV)
+[ PERFSTAT ]    (samples=100   mean=3.58   median=3.53   min=3.36   stddev=0.16 (4.4%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/37 (461 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/38, where GetParam() = (1920x1080, 32FC1, THRESH_TRUNC)
+[ PERFSTAT ]    (samples=100   mean=3.55   median=3.50   min=3.41   stddev=0.12 (3.4%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/38 (447 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/39, where GetParam() = (1920x1080, 32FC1, THRESH_TOZERO_INV)
+[ PERFSTAT ]    (samples=100   mean=3.60   median=3.51   min=3.40   stddev=0.21 (5.8%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/39 (485 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/40, where GetParam() = (1920x1080, 8UC4, THRESH_BINARY)
+[ PERFSTAT ]    (samples=100   mean=3.72   median=3.62   min=3.37   stddev=0.25 (6.8%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/40 (559 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/41, where GetParam() = (1920x1080, 8UC4, THRESH_BINARY_INV)
+[ PERFSTAT ]    (samples=46   mean=3.64   median=3.62   min=3.46   stddev=0.11 (3.0%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/41 (299 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/42, where GetParam() = (1920x1080, 8UC4, THRESH_TRUNC)
+[ PERFSTAT ]    (samples=100   mean=4.30   median=3.62   min=3.45   stddev=1.46 (33.9%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/42 (597 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/43, where GetParam() = (1920x1080, 8UC4, THRESH_TOZERO_INV)
+[ PERFSTAT ]    (samples=13   mean=4.91   median=4.91   min=4.73   stddev=0.13 (2.7%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/43 (172 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/44, where GetParam() = (1920x1080, 32FC4, THRESH_BINARY)
+[ PERFSTAT ]    (samples=16   mean=16.12   median=16.04   min=15.46   stddev=0.48 (3.0%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/44 (505 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/45, where GetParam() = (1920x1080, 32FC4, THRESH_BINARY_INV)
+[ PERFSTAT ]    (samples=75   mean=11.02   median=11.02   min=10.54   stddev=0.31 (2.8%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/45 (1067 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/46, where GetParam() = (1920x1080, 32FC4, THRESH_TRUNC)
+[ PERFSTAT ]    (samples=38   mean=10.90   median=10.83   min=10.67   stddev=0.23 (2.1%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/46 (658 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/47, where GetParam() = (1920x1080, 32FC4, THRESH_TOZERO_INV)
+[ PERFSTAT ]    (samples=61   mean=11.00   median=10.86   min=10.66   stddev=0.33 (3.0%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/47 (893 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/48, where GetParam() = (3840x2160, 8UC1, THRESH_BINARY)
+[ PERFSTAT ]    (samples=100   mean=3.63   median=3.59   min=3.40   stddev=0.19 (5.2%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/48 (540 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/49, where GetParam() = (3840x2160, 8UC1, THRESH_BINARY_INV)
+[ PERFSTAT ]    (samples=100   mean=4.03   median=3.53   min=3.43   stddev=2.01 (49.8%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/49 (601 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/50, where GetParam() = (3840x2160, 8UC1, THRESH_TRUNC)
+[ PERFSTAT ]    (samples=11   mean=6.43   median=6.33   min=6.23   stddev=0.19 (3.0%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/50 (172 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/51, where GetParam() = (3840x2160, 8UC1, THRESH_TOZERO_INV)
+[ PERFSTAT ]    (samples=100   mean=3.58   median=3.57   min=3.43   stddev=0.11 (3.0%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/51 (499 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/52, where GetParam() = (3840x2160, 32FC1, THRESH_BINARY)
+[ PERFSTAT ]    (samples=100   mean=10.91   median=10.78   min=10.57   stddev=0.35 (3.2%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/52 (1408 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/53, where GetParam() = (3840x2160, 32FC1, THRESH_BINARY_INV)
+[ PERFSTAT ]    (samples=13   mean=10.90   median=10.80   min=10.62   stddev=0.30 (2.8%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/53 (438 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/54, where GetParam() = (3840x2160, 32FC1, THRESH_TRUNC)
+[ PERFSTAT ]    (samples=50   mean=10.81   median=10.73   min=10.52   stddev=0.28 (2.6%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/54 (809 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/55, where GetParam() = (3840x2160, 32FC1, THRESH_TOZERO_INV)
+[ PERFSTAT ]    (samples=25   mean=10.77   median=10.67   min=10.51   stddev=0.30 (2.8%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/55 (515 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/56, where GetParam() = (3840x2160, 8UC4, THRESH_BINARY)
+[ PERFSTAT ]    (samples=50   mean=10.91   median=10.80   min=10.53   stddev=0.28 (2.6%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/56 (984 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/57, where GetParam() = (3840x2160, 8UC4, THRESH_BINARY_INV)
+[ PERFSTAT ]    (samples=38   mean=10.89   median=10.85   min=10.66   stddev=0.16 (1.4%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/57 (782 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/58, where GetParam() = (3840x2160, 8UC4, THRESH_TRUNC)
+[ PERFSTAT ]    (samples=37   mean=10.92   median=10.83   min=10.60   stddev=0.32 (3.0%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/58 (767 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/59, where GetParam() = (3840x2160, 8UC4, THRESH_TOZERO_INV)
+[ PERFSTAT ]    (samples=10   mean=10.90   median=10.86   min=10.72   stddev=0.15 (1.4%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/59 (391 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/60, where GetParam() = (3840x2160, 32FC4, THRESH_BINARY)
+[ PERFSTAT ]    (samples=25   mean=39.87   median=39.81   min=39.67   stddev=0.20 (0.5%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/60 (2617 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/61, where GetParam() = (3840x2160, 32FC4, THRESH_BINARY_INV)
+[ PERFSTAT ]    (samples=10   mean=39.78   median=39.68   min=39.53   stddev=0.23 (0.6%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/61 (1223 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/62, where GetParam() = (3840x2160, 32FC4, THRESH_TRUNC)
+[ PERFSTAT ]    (samples=38   mean=39.86   median=39.82   min=39.67   stddev=0.16 (0.4%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/62 (2460 ms)
+[ RUN      ] OCL_ThreshFixture_Threshold.Threshold/63, where GetParam() = (3840x2160, 32FC4, THRESH_TOZERO_INV)
+[ PERFSTAT ]    (samples=13   mean=39.74   median=39.67   min=39.56   stddev=0.16 (0.4%))
+[       OK ] OCL_ThreshFixture_Threshold.Threshold/63 (1381 ms)
+[----------] 64 tests from OCL_ThreshFixture_Threshold (32186 ms total)
+
+[----------] Global test environment tear-down
+[==========] 64 tests from 1 test case ran. (32194 ms total)
+[  PASSED  ] 64 tests.

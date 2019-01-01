@@ -1,0 +1,134 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL__3vs4_Fixture_Subtract*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL__3vs4_Fixture_Subtract
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/0, where GetParam() = (640x480, 8UC3, Pure)
+[ PERFSTAT ]    (samples=100   mean=2.45   median=2.38   min=1.67   stddev=0.41 (16.6%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/0 (315 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/1, where GetParam() = (640x480, 8UC3, Split)
+[ PERFSTAT ]    (samples=100   mean=13.38   median=12.93   min=11.56   stddev=1.04 (7.8%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/1 (1490 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/2, where GetParam() = (640x480, 8UC3, Convert)
+[ PERFSTAT ]    (samples=100   mean=4.76   median=4.64   min=4.13   stddev=0.43 (9.1%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/2 (649 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/3, where GetParam() = (640x480, 32FC3, Pure)
+[ PERFSTAT ]    (samples=100   mean=2.42   median=2.36   min=2.10   stddev=0.27 (11.2%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/3 (368 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/4, where GetParam() = (640x480, 32FC3, Split)
+[ PERFSTAT ]    (samples=100   mean=9.30   median=8.80   min=8.49   stddev=1.22 (13.1%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/4 (1093 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/5, where GetParam() = (640x480, 32FC3, Convert)
+[ PERFSTAT ]    (samples=63   mean=6.11   median=6.10   min=5.88   stddev=0.13 (2.0%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/5 (564 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/6, where GetParam() = (1280x720, 8UC3, Pure)
+[ PERFSTAT ]    (samples=10   mean=4.22   median=4.22   min=4.07   stddev=0.11 (2.7%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/6 (82 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/7, where GetParam() = (1280x720, 8UC3, Split)
+[ PERFSTAT ]    (samples=63   mean=22.65   median=22.61   min=20.19   stddev=0.65 (2.9%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/7 (1484 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/8, where GetParam() = (1280x720, 8UC3, Convert)
+[ PERFSTAT ]    (samples=100   mean=9.20   median=8.69   min=8.42   stddev=1.06 (11.5%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/8 (1009 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/9, where GetParam() = (1280x720, 32FC3, Pure)
+[ PERFSTAT ]    (samples=100   mean=5.31   median=5.05   min=4.93   stddev=0.78 (14.8%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/9 (707 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/10, where GetParam() = (1280x720, 32FC3, Split)
+[ PERFSTAT ]    (samples=25   mean=21.28   median=21.01   min=20.78   stddev=0.51 (2.4%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/10 (673 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/11, where GetParam() = (1280x720, 32FC3, Convert)
+[ PERFSTAT ]    (samples=25   mean=14.16   median=14.03   min=13.82   stddev=0.38 (2.7%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/11 (563 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/12, where GetParam() = (1920x1080, 8UC3, Pure)
+[ PERFSTAT ]    (samples=100   mean=9.53   median=9.34   min=8.08   stddev=0.89 (9.3%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/12 (1121 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/13, where GetParam() = (1920x1080, 8UC3, Split)
+[ PERFSTAT ]    (samples=10   mean=58.81   median=58.64   min=58.17   stddev=0.68 (1.2%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/13 (674 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/14, where GetParam() = (1920x1080, 8UC3, Convert)
+[ PERFSTAT ]    (samples=25   mean=17.14   median=17.07   min=16.87   stddev=0.20 (1.2%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/14 (544 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/15, where GetParam() = (1920x1080, 32FC3, Pure)
+[ PERFSTAT ]    (samples=88   mean=10.21   median=10.19   min=9.88   stddev=0.18 (1.7%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/15 (1178 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/16, where GetParam() = (1920x1080, 32FC3, Split)
+[ PERFSTAT ]    (samples=13   mean=43.28   median=43.26   min=43.11   stddev=0.13 (0.3%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/16 (774 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/17, where GetParam() = (1920x1080, 32FC3, Convert)
+[ PERFSTAT ]    (samples=13   mean=28.26   median=28.12   min=27.89   stddev=0.38 (1.3%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/17 (759 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/18, where GetParam() = (3840x2160, 8UC3, Pure)
+[ PERFSTAT ]    (samples=75   mean=31.49   median=31.47   min=29.75   stddev=0.78 (2.5%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/18 (2641 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/19, where GetParam() = (3840x2160, 8UC3, Split)
+[ PERFSTAT ]    (samples=10   mean=174.47   median=173.48   min=172.52   stddev=1.89 (1.1%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/19 (1975 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/20, where GetParam() = (3840x2160, 8UC3, Convert)
+[ PERFSTAT ]    (samples=13   mean=61.51   median=61.41   min=61.01   stddev=0.53 (0.9%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/20 (1057 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/21, where GetParam() = (3840x2160, 32FC3, Pure)
+[ PERFSTAT ]    (samples=10   mean=38.18   median=38.14   min=38.02   stddev=0.17 (0.5%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/21 (1247 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/22, where GetParam() = (3840x2160, 32FC3, Split)
+[ PERFSTAT ]    (samples=10   mean=167.23   median=165.90   min=165.26   stddev=3.21 (1.9%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/22 (2405 ms)
+[ RUN      ] OCL__3vs4_Fixture_Subtract.Subtract/23, where GetParam() = (3840x2160, 32FC3, Convert)
+[ PERFSTAT ]    (samples=10   mean=106.63   median=106.64   min=106.31   stddev=0.22 (0.2%))
+[       OK ] OCL__3vs4_Fixture_Subtract.Subtract/23 (1903 ms)
+[----------] 24 tests from OCL__3vs4_Fixture_Subtract (25284 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (25285 ms total)
+[  PASSED  ] 24 tests.

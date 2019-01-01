@@ -1,0 +1,285 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 128
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_Arithm/Transpose*
+[==========] Running 112 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 112 tests from OCL_Arithm/Transpose
+[ RUN      ] OCL_Arithm/Transpose.Mat/0, where GetParam() = (CV_8U, Channels(1), false)
+[       OK ] OCL_Arithm/Transpose.Mat/0 (74 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/1, where GetParam() = (CV_8U, Channels(1), true)
+[       OK ] OCL_Arithm/Transpose.Mat/1 (16 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/2, where GetParam() = (CV_8U, Channels(2), false)
+[       OK ] OCL_Arithm/Transpose.Mat/2 (35 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/3, where GetParam() = (CV_8U, Channels(2), true)
+[       OK ] OCL_Arithm/Transpose.Mat/3 (8 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/4, where GetParam() = (CV_8U, Channels(3), false)
+[       OK ] OCL_Arithm/Transpose.Mat/4 (34 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/5, where GetParam() = (CV_8U, Channels(3), true)
+[       OK ] OCL_Arithm/Transpose.Mat/5 (12 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/6, where GetParam() = (CV_8U, Channels(4), false)
+[       OK ] OCL_Arithm/Transpose.Mat/6 (31 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/7, where GetParam() = (CV_8U, Channels(4), true)
+[       OK ] OCL_Arithm/Transpose.Mat/7 (11 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/8, where GetParam() = (CV_8S, Channels(1), false)
+[       OK ] OCL_Arithm/Transpose.Mat/8 (31 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/9, where GetParam() = (CV_8S, Channels(1), true)
+[       OK ] OCL_Arithm/Transpose.Mat/9 (14 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/10, where GetParam() = (CV_8S, Channels(2), false)
+[       OK ] OCL_Arithm/Transpose.Mat/10 (30 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/11, where GetParam() = (CV_8S, Channels(2), true)
+[       OK ] OCL_Arithm/Transpose.Mat/11 (15 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/12, where GetParam() = (CV_8S, Channels(3), false)
+[       OK ] OCL_Arithm/Transpose.Mat/12 (35 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/13, where GetParam() = (CV_8S, Channels(3), true)
+[       OK ] OCL_Arithm/Transpose.Mat/13 (8 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/14, where GetParam() = (CV_8S, Channels(4), false)
+[       OK ] OCL_Arithm/Transpose.Mat/14 (32 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/15, where GetParam() = (CV_8S, Channels(4), true)
+[       OK ] OCL_Arithm/Transpose.Mat/15 (12 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/16, where GetParam() = (CV_16U, Channels(1), false)
+[       OK ] OCL_Arithm/Transpose.Mat/16 (31 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/17, where GetParam() = (CV_16U, Channels(1), true)
+[       OK ] OCL_Arithm/Transpose.Mat/17 (7 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/18, where GetParam() = (CV_16U, Channels(2), false)
+[       OK ] OCL_Arithm/Transpose.Mat/18 (30 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/19, where GetParam() = (CV_16U, Channels(2), true)
+[       OK ] OCL_Arithm/Transpose.Mat/19 (13 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/20, where GetParam() = (CV_16U, Channels(3), false)
+[       OK ] OCL_Arithm/Transpose.Mat/20 (34 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/21, where GetParam() = (CV_16U, Channels(3), true)
+[       OK ] OCL_Arithm/Transpose.Mat/21 (15 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/22, where GetParam() = (CV_16U, Channels(4), false)
+[       OK ] OCL_Arithm/Transpose.Mat/22 (33 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/23, where GetParam() = (CV_16U, Channels(4), true)
+[       OK ] OCL_Arithm/Transpose.Mat/23 (16 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/24, where GetParam() = (CV_16S, Channels(1), false)
+[       OK ] OCL_Arithm/Transpose.Mat/24 (31 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/25, where GetParam() = (CV_16S, Channels(1), true)
+[       OK ] OCL_Arithm/Transpose.Mat/25 (18 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/26, where GetParam() = (CV_16S, Channels(2), false)
+[       OK ] OCL_Arithm/Transpose.Mat/26 (32 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/27, where GetParam() = (CV_16S, Channels(2), true)
+[       OK ] OCL_Arithm/Transpose.Mat/27 (6 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/28, where GetParam() = (CV_16S, Channels(3), false)
+[       OK ] OCL_Arithm/Transpose.Mat/28 (34 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/29, where GetParam() = (CV_16S, Channels(3), true)
+[       OK ] OCL_Arithm/Transpose.Mat/29 (13 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/30, where GetParam() = (CV_16S, Channels(4), false)
+[       OK ] OCL_Arithm/Transpose.Mat/30 (32 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/31, where GetParam() = (CV_16S, Channels(4), true)
+[       OK ] OCL_Arithm/Transpose.Mat/31 (12 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/32, where GetParam() = (CV_32S, Channels(1), false)
+[       OK ] OCL_Arithm/Transpose.Mat/32 (31 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/33, where GetParam() = (CV_32S, Channels(1), true)
+[       OK ] OCL_Arithm/Transpose.Mat/33 (13 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/34, where GetParam() = (CV_32S, Channels(2), false)
+[       OK ] OCL_Arithm/Transpose.Mat/34 (37 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/35, where GetParam() = (CV_32S, Channels(2), true)
+[       OK ] OCL_Arithm/Transpose.Mat/35 (11 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/36, where GetParam() = (CV_32S, Channels(3), false)
+[       OK ] OCL_Arithm/Transpose.Mat/36 (33 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/37, where GetParam() = (CV_32S, Channels(3), true)
+[       OK ] OCL_Arithm/Transpose.Mat/37 (16 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/38, where GetParam() = (CV_32S, Channels(4), false)
+[       OK ] OCL_Arithm/Transpose.Mat/38 (34 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/39, where GetParam() = (CV_32S, Channels(4), true)
+[       OK ] OCL_Arithm/Transpose.Mat/39 (16 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/40, where GetParam() = (CV_32F, Channels(1), false)
+[       OK ] OCL_Arithm/Transpose.Mat/40 (4 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/41, where GetParam() = (CV_32F, Channels(1), true)
+[       OK ] OCL_Arithm/Transpose.Mat/41 (9 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/42, where GetParam() = (CV_32F, Channels(2), false)
+[       OK ] OCL_Arithm/Transpose.Mat/42 (7 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/43, where GetParam() = (CV_32F, Channels(2), true)
+[       OK ] OCL_Arithm/Transpose.Mat/43 (10 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/44, where GetParam() = (CV_32F, Channels(3), false)
+[       OK ] OCL_Arithm/Transpose.Mat/44 (4 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/45, where GetParam() = (CV_32F, Channels(3), true)
+[       OK ] OCL_Arithm/Transpose.Mat/45 (12 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/46, where GetParam() = (CV_32F, Channels(4), false)
+[       OK ] OCL_Arithm/Transpose.Mat/46 (4 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/47, where GetParam() = (CV_32F, Channels(4), true)
+[       OK ] OCL_Arithm/Transpose.Mat/47 (13 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/48, where GetParam() = (CV_64F, Channels(1), false)
+[       OK ] OCL_Arithm/Transpose.Mat/48 (31 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/49, where GetParam() = (CV_64F, Channels(1), true)
+[       OK ] OCL_Arithm/Transpose.Mat/49 (17 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/50, where GetParam() = (CV_64F, Channels(2), false)
+[       OK ] OCL_Arithm/Transpose.Mat/50 (33 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/51, where GetParam() = (CV_64F, Channels(2), true)
+[       OK ] OCL_Arithm/Transpose.Mat/51 (12 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/52, where GetParam() = (CV_64F, Channels(3), false)
+[       OK ] OCL_Arithm/Transpose.Mat/52 (32 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/53, where GetParam() = (CV_64F, Channels(3), true)
+[       OK ] OCL_Arithm/Transpose.Mat/53 (25 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/54, where GetParam() = (CV_64F, Channels(4), false)
+[       OK ] OCL_Arithm/Transpose.Mat/54 (6 ms)
+[ RUN      ] OCL_Arithm/Transpose.Mat/55, where GetParam() = (CV_64F, Channels(4), true)
+[       OK ] OCL_Arithm/Transpose.Mat/55 (36 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/0, where GetParam() = (CV_8U, Channels(1), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/0 (22 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/1, where GetParam() = (CV_8U, Channels(1), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/1 (3 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/2, where GetParam() = (CV_8U, Channels(2), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/2 (21 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/3, where GetParam() = (CV_8U, Channels(2), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/3 (3 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/4, where GetParam() = (CV_8U, Channels(3), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/4 (23 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/5, where GetParam() = (CV_8U, Channels(3), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/5 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/6, where GetParam() = (CV_8U, Channels(4), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/6 (22 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/7, where GetParam() = (CV_8U, Channels(4), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/7 (3 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/8, where GetParam() = (CV_8S, Channels(1), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/8 (21 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/9, where GetParam() = (CV_8S, Channels(1), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/9 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/10, where GetParam() = (CV_8S, Channels(2), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/10 (21 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/11, where GetParam() = (CV_8S, Channels(2), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/11 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/12, where GetParam() = (CV_8S, Channels(3), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/12 (24 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/13, where GetParam() = (CV_8S, Channels(3), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/13 (4 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/14, where GetParam() = (CV_8S, Channels(4), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/14 (23 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/15, where GetParam() = (CV_8S, Channels(4), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/15 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/16, where GetParam() = (CV_16U, Channels(1), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/16 (23 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/17, where GetParam() = (CV_16U, Channels(1), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/17 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/18, where GetParam() = (CV_16U, Channels(2), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/18 (22 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/19, where GetParam() = (CV_16U, Channels(2), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/19 (3 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/20, where GetParam() = (CV_16U, Channels(3), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/20 (23 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/21, where GetParam() = (CV_16U, Channels(3), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/21 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/22, where GetParam() = (CV_16U, Channels(4), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/22 (22 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/23, where GetParam() = (CV_16U, Channels(4), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/23 (3 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/24, where GetParam() = (CV_16S, Channels(1), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/24 (22 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/25, where GetParam() = (CV_16S, Channels(1), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/25 (3 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/26, where GetParam() = (CV_16S, Channels(2), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/26 (22 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/27, where GetParam() = (CV_16S, Channels(2), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/27 (3 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/28, where GetParam() = (CV_16S, Channels(3), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/28 (24 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/29, where GetParam() = (CV_16S, Channels(3), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/29 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/30, where GetParam() = (CV_16S, Channels(4), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/30 (22 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/31, where GetParam() = (CV_16S, Channels(4), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/31 (3 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/32, where GetParam() = (CV_32S, Channels(1), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/32 (22 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/33, where GetParam() = (CV_32S, Channels(1), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/33 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/34, where GetParam() = (CV_32S, Channels(2), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/34 (22 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/35, where GetParam() = (CV_32S, Channels(2), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/35 (3 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/36, where GetParam() = (CV_32S, Channels(3), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/36 (23 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/37, where GetParam() = (CV_32S, Channels(3), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/37 (3 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/38, where GetParam() = (CV_32S, Channels(4), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/38 (22 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/39, where GetParam() = (CV_32S, Channels(4), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/39 (4 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/40, where GetParam() = (CV_32F, Channels(1), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/40 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/41, where GetParam() = (CV_32F, Channels(1), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/41 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/42, where GetParam() = (CV_32F, Channels(2), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/42 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/43, where GetParam() = (CV_32F, Channels(2), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/43 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/44, where GetParam() = (CV_32F, Channels(3), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/44 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/45, where GetParam() = (CV_32F, Channels(3), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/45 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/46, where GetParam() = (CV_32F, Channels(4), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/46 (1 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/47, where GetParam() = (CV_32F, Channels(4), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/47 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/48, where GetParam() = (CV_64F, Channels(1), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/48 (22 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/49, where GetParam() = (CV_64F, Channels(1), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/49 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/50, where GetParam() = (CV_64F, Channels(2), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/50 (22 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/51, where GetParam() = (CV_64F, Channels(2), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/51 (3 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/52, where GetParam() = (CV_64F, Channels(3), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/52 (24 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/53, where GetParam() = (CV_64F, Channels(3), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/53 (2 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/54, where GetParam() = (CV_64F, Channels(4), false)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/54 (26 ms)
+[ RUN      ] OCL_Arithm/Transpose.SquareInplace/55, where GetParam() = (CV_64F, Channels(4), true)
+[       OK ] OCL_Arithm/Transpose.SquareInplace/55 (3 ms)
+[----------] 112 tests from OCL_Arithm/Transpose (1837 ms total)
+
+[----------] Global test environment tear-down
+[==========] 112 tests from 1 test case ran. (1839 ms total)
+[  PASSED  ] 112 tests.
