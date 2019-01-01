@@ -1,0 +1,134 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_SubtractFixture_Subtract*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_SubtractFixture_Subtract
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.16   median=0.89   min=0.69   stddev=0.46 (39.5%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/0 (212 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=1.65   median=1.55   min=1.24   stddev=0.52 (31.8%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/1 (818 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/2, where GetParam() = (640x480, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=2.15   median=1.64   min=1.05   stddev=1.01 (46.9%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/2 (1094 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/3, where GetParam() = (640x480, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=2.72   median=2.66   min=2.20   stddev=0.55 (20.4%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/3 (363 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/4, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=1.74   median=1.76   min=1.20   stddev=0.26 (14.9%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/4 (220 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/5, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=3.85   median=3.13   min=2.60   stddev=1.84 (47.8%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/5 (711 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/6, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=2.63   median=2.75   min=1.09   stddev=1.05 (40.0%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/6 (714 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/7, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=2.39   median=2.31   min=2.16   stddev=0.18 (7.4%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/7 (304 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/8, where GetParam() = (1280x720, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=1.92   median=1.88   min=1.67   stddev=0.17 (8.9%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/8 (258 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/9, where GetParam() = (1280x720, 32FC3)
+[ PERFSTAT ]    (samples=23   mean=5.43   median=5.38   min=5.22   stddev=0.16 (3.0%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/9 (266 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/10, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=2.58   median=2.51   min=2.18   stddev=0.40 (15.5%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/10 (571 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/11, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=24.61   median=24.46   min=24.25   stddev=0.45 (1.8%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/11 (489 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/12, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=5.05   median=4.78   min=4.29   stddev=0.60 (12.0%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/12 (595 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/13, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=4.30   median=4.23   min=4.02   stddev=0.23 (5.3%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/13 (578 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/14, where GetParam() = (1920x1080, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=3.46   median=3.44   min=3.41   stddev=0.06 (1.7%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/14 (154 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/15, where GetParam() = (1920x1080, 32FC3)
+[ PERFSTAT ]    (samples=51   mean=10.71   median=10.63   min=10.31   stddev=0.32 (3.0%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/15 (891 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/16, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=4.24   median=4.19   min=3.87   stddev=0.21 (5.1%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/16 (631 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/17, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=63   mean=14.13   median=14.08   min=13.65   stddev=0.26 (1.9%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/17 (1277 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/18, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=4.34   median=4.28   min=4.04   stddev=0.20 (4.6%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/18 (636 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/19, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=25   mean=14.19   median=14.22   min=13.79   stddev=0.28 (2.0%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/19 (897 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/20, where GetParam() = (3840x2160, 8UC3)
+[ PERFSTAT ]    (samples=38   mean=10.89   median=10.85   min=10.58   stddev=0.24 (2.2%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/20 (786 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/21, where GetParam() = (3840x2160, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=40.63   median=40.51   min=40.27   stddev=0.79 (1.9%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/21 (5443 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/22, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=14.31   median=13.99   min=13.69   stddev=2.31 (16.1%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/22 (2109 ms)
+[ RUN      ] OCL_SubtractFixture_Subtract.Subtract/23, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=38   mean=52.70   median=52.67   min=52.42   stddev=0.17 (0.3%))
+[       OK ] OCL_SubtractFixture_Subtract.Subtract/23 (3610 ms)
+[----------] 24 tests from OCL_SubtractFixture_Subtract (23634 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (23636 ms total)
+[  PASSED  ] 24 tests.

@@ -1,0 +1,206 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_RemapFixture_Remap*
+[==========] Running 48 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 48 tests from OCL_RemapFixture_Remap
+[ RUN      ] OCL_RemapFixture_Remap.Remap/0, where GetParam() = (640x480, 8UC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=2.64   median=2.66   min=1.80   stddev=0.25 (9.4%))
+[       OK ] OCL_RemapFixture_Remap.Remap/0 (358 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/1, where GetParam() = (640x480, 8UC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=100   mean=4.82   median=4.73   min=4.17   stddev=0.43 (8.9%))
+[       OK ] OCL_RemapFixture_Remap.Remap/1 (583 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/2, where GetParam() = (640x480, 32FC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=2.87   median=2.80   min=2.28   stddev=0.44 (15.2%))
+[       OK ] OCL_RemapFixture_Remap.Remap/2 (377 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/3, where GetParam() = (640x480, 32FC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=100   mean=4.96   median=4.92   min=4.28   stddev=0.46 (9.2%))
+[       OK ] OCL_RemapFixture_Remap.Remap/3 (606 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/4, where GetParam() = (640x480, 8UC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=3.99   median=3.98   min=3.36   stddev=0.44 (11.1%))
+[       OK ] OCL_RemapFixture_Remap.Remap/4 (479 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/5, where GetParam() = (640x480, 8UC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=100   mean=7.38   median=7.39   min=6.65   stddev=0.44 (5.9%))
+[       OK ] OCL_RemapFixture_Remap.Remap/5 (859 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/6, where GetParam() = (640x480, 32FC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=3.23   median=3.15   min=2.91   stddev=0.23 (7.2%))
+[       OK ] OCL_RemapFixture_Remap.Remap/6 (456 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/7, where GetParam() = (640x480, 32FC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=100   mean=6.15   median=6.15   min=5.89   stddev=0.21 (3.4%))
+[       OK ] OCL_RemapFixture_Remap.Remap/7 (727 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/8, where GetParam() = (640x480, 8UC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=3.00   median=2.77   min=2.20   stddev=0.61 (20.4%))
+[       OK ] OCL_RemapFixture_Remap.Remap/8 (374 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/9, where GetParam() = (640x480, 8UC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=100   mean=8.06   median=7.84   min=6.60   stddev=0.58 (7.2%))
+[       OK ] OCL_RemapFixture_Remap.Remap/9 (918 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/10, where GetParam() = (640x480, 32FC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=2.92   median=2.85   min=2.69   stddev=0.21 (7.2%))
+[       OK ] OCL_RemapFixture_Remap.Remap/10 (438 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/11, where GetParam() = (640x480, 32FC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=100   mean=5.97   median=5.81   min=5.64   stddev=0.38 (6.4%))
+[       OK ] OCL_RemapFixture_Remap.Remap/11 (740 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/12, where GetParam() = (1280x720, 8UC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=13   mean=5.55   median=5.54   min=5.31   stddev=0.15 (2.7%))
+[       OK ] OCL_RemapFixture_Remap.Remap/12 (97 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/13, where GetParam() = (1280x720, 8UC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=10.31   median=10.33   min=9.86   stddev=0.25 (2.4%))
+[       OK ] OCL_RemapFixture_Remap.Remap/13 (127 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/14, where GetParam() = (1280x720, 32FC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=6.00   median=5.77   min=5.33   stddev=0.59 (9.8%))
+[       OK ] OCL_RemapFixture_Remap.Remap/14 (668 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/15, where GetParam() = (1280x720, 32FC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=13   mean=9.35   median=9.28   min=9.17   stddev=0.19 (2.0%))
+[       OK ] OCL_RemapFixture_Remap.Remap/15 (169 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/16, where GetParam() = (1280x720, 8UC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=6.86   median=6.83   min=6.27   stddev=0.30 (4.4%))
+[       OK ] OCL_RemapFixture_Remap.Remap/16 (745 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/17, where GetParam() = (1280x720, 8UC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=17.01   median=17.03   min=16.72   stddev=0.19 (1.1%))
+[       OK ] OCL_RemapFixture_Remap.Remap/17 (219 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/18, where GetParam() = (1280x720, 32FC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=10   mean=11.34   median=11.25   min=11.00   stddev=0.25 (2.2%))
+[       OK ] OCL_RemapFixture_Remap.Remap/18 (245 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/19, where GetParam() = (1280x720, 32FC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=15.96   median=15.97   min=15.35   stddev=0.38 (2.4%))
+[       OK ] OCL_RemapFixture_Remap.Remap/19 (281 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/20, where GetParam() = (1280x720, 8UC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=5.84   median=5.72   min=5.44   stddev=0.48 (8.2%))
+[       OK ] OCL_RemapFixture_Remap.Remap/20 (680 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/21, where GetParam() = (1280x720, 8UC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=15.54   median=15.56   min=15.09   stddev=0.28 (1.8%))
+[       OK ] OCL_RemapFixture_Remap.Remap/21 (212 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/22, where GetParam() = (1280x720, 32FC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=6.51   median=6.44   min=6.21   stddev=0.35 (5.4%))
+[       OK ] OCL_RemapFixture_Remap.Remap/22 (840 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/23, where GetParam() = (1280x720, 32FC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=88   mean=14.84   median=14.79   min=14.33   stddev=0.33 (2.2%))
+[       OK ] OCL_RemapFixture_Remap.Remap/23 (1514 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/24, where GetParam() = (1920x1080, 8UC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=47   mean=11.43   median=11.46   min=10.32   stddev=0.34 (3.0%))
+[       OK ] OCL_RemapFixture_Remap.Remap/24 (588 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/25, where GetParam() = (1920x1080, 8UC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=21.92   median=21.93   min=21.23   stddev=0.40 (1.8%))
+[       OK ] OCL_RemapFixture_Remap.Remap/25 (268 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/26, where GetParam() = (1920x1080, 32FC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=10.96   median=10.90   min=10.70   stddev=0.44 (4.0%))
+[       OK ] OCL_RemapFixture_Remap.Remap/26 (1256 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/27, where GetParam() = (1920x1080, 32FC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=13   mean=19.75   median=20.05   min=18.97   stddev=0.51 (2.6%))
+[       OK ] OCL_RemapFixture_Remap.Remap/27 (363 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/28, where GetParam() = (1920x1080, 8UC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=75   mean=12.67   median=12.62   min=12.36   stddev=0.20 (1.6%))
+[       OK ] OCL_RemapFixture_Remap.Remap/28 (1097 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/29, where GetParam() = (1920x1080, 8UC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=50   mean=42.23   median=42.47   min=36.17   stddev=1.27 (3.0%))
+[       OK ] OCL_RemapFixture_Remap.Remap/29 (2224 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/30, where GetParam() = (1920x1080, 32FC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=25   mean=14.64   median=14.65   min=14.43   stddev=0.14 (0.9%))
+[       OK ] OCL_RemapFixture_Remap.Remap/30 (702 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/31, where GetParam() = (1920x1080, 32FC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=26   mean=34.37   median=34.26   min=33.23   stddev=1.01 (2.9%))
+[       OK ] OCL_RemapFixture_Remap.Remap/31 (1093 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/32, where GetParam() = (1920x1080, 8UC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=11.22   median=11.18   min=10.74   stddev=0.24 (2.1%))
+[       OK ] OCL_RemapFixture_Remap.Remap/32 (1301 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/33, where GetParam() = (1920x1080, 8UC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=33.94   median=33.92   min=33.63   stddev=0.14 (0.4%))
+[       OK ] OCL_RemapFixture_Remap.Remap/33 (458 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/34, where GetParam() = (1920x1080, 32FC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=38   mean=13.37   median=13.34   min=13.16   stddev=0.16 (1.2%))
+[       OK ] OCL_RemapFixture_Remap.Remap/34 (855 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/35, where GetParam() = (1920x1080, 32FC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=50   mean=31.44   median=31.35   min=31.24   stddev=0.40 (1.3%))
+[       OK ] OCL_RemapFixture_Remap.Remap/35 (1837 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/36, where GetParam() = (3840x2160, 8UC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=43   mean=39.18   median=39.59   min=36.41   stddev=1.17 (3.0%))
+[       OK ] OCL_RemapFixture_Remap.Remap/36 (1858 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/37, where GetParam() = (3840x2160, 8UC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=13   mean=80.98   median=81.14   min=78.94   stddev=0.71 (0.9%))
+[       OK ] OCL_RemapFixture_Remap.Remap/37 (1235 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/38, where GetParam() = (3840x2160, 32FC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=13   mean=41.93   median=41.83   min=41.37   stddev=0.43 (1.0%))
+[       OK ] OCL_RemapFixture_Remap.Remap/38 (912 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/39, where GetParam() = (3840x2160, 32FC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=81.39   median=81.40   min=81.28   stddev=0.07 (0.1%))
+[       OK ] OCL_RemapFixture_Remap.Remap/39 (1047 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/40, where GetParam() = (3840x2160, 8UC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=13   mean=47.34   median=47.29   min=47.23   stddev=0.12 (0.2%))
+[       OK ] OCL_RemapFixture_Remap.Remap/40 (917 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/41, where GetParam() = (3840x2160, 8UC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=144.58   median=144.36   min=144.00   stddev=0.93 (0.6%))
+[       OK ] OCL_RemapFixture_Remap.Remap/41 (1704 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/42, where GetParam() = (3840x2160, 32FC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=25   mean=55.45   median=55.34   min=55.13   stddev=0.54 (1.0%))
+[       OK ] OCL_RemapFixture_Remap.Remap/42 (2326 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/43, where GetParam() = (3840x2160, 32FC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=131.83   median=132.15   min=128.79   stddev=1.07 (0.8%))
+[       OK ] OCL_RemapFixture_Remap.Remap/43 (2080 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/44, where GetParam() = (3840x2160, 8UC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=25   mean=41.95   median=41.99   min=41.42   stddev=0.31 (0.7%))
+[       OK ] OCL_RemapFixture_Remap.Remap/44 (1554 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/45, where GetParam() = (3840x2160, 8UC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=132.18   median=132.08   min=127.16   stddev=2.41 (1.8%))
+[       OK ] OCL_RemapFixture_Remap.Remap/45 (1684 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/46, where GetParam() = (3840x2160, 32FC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=13   mean=50.53   median=50.47   min=50.09   stddev=0.32 (0.6%))
+[       OK ] OCL_RemapFixture_Remap.Remap/46 (2087 ms)
+[ RUN      ] OCL_RemapFixture_Remap.Remap/47, where GetParam() = (3840x2160, 32FC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=13   mean=122.05   median=122.02   min=121.82   stddev=0.20 (0.2%))
+[       OK ] OCL_RemapFixture_Remap.Remap/47 (2526 ms)
+[----------] 48 tests from OCL_RemapFixture_Remap (44696 ms total)
+
+[----------] Global test environment tear-down
+[==========] 48 tests from 1 test case ran. (44698 ms total)
+[  PASSED  ] 48 tests.

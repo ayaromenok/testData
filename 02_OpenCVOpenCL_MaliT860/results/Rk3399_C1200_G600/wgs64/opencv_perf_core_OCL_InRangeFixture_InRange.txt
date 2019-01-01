@@ -1,0 +1,110 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_InRangeFixture_InRange*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_InRangeFixture_InRange
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.27   median=1.28   min=1.04   stddev=0.18 (13.8%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/0 (192 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=2.62   median=2.61   min=2.20   stddev=0.27 (10.1%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/1 (317 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/2, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=2.94   median=2.83   min=2.61   stddev=0.25 (8.4%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/2 (374 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/3, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=3.36   median=3.30   min=2.96   stddev=0.25 (7.5%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/3 (522 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/4, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=3.11   median=2.52   min=1.90   stddev=1.07 (34.5%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/4 (455 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/5, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=6.55   median=6.76   min=4.70   stddev=0.99 (15.1%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/5 (759 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/6, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=5.88   median=5.80   min=5.31   stddev=0.62 (10.5%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/6 (713 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/7, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=7.53   median=7.53   min=7.39   stddev=0.10 (1.3%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/7 (253 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/8, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=3.94   median=3.65   min=3.37   stddev=0.69 (17.5%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/8 (1050 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/9, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=38   mean=10.14   median=10.07   min=9.84   stddev=0.24 (2.4%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/9 (537 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/10, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=38   mean=11.38   median=11.35   min=11.13   stddev=0.17 (1.5%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/10 (657 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/11, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=38   mean=15.80   median=15.70   min=15.43   stddev=0.32 (2.0%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/11 (1056 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/12, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=63   mean=11.34   median=11.30   min=10.96   stddev=0.30 (2.7%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/12 (973 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/13, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=50   mean=35.60   median=35.43   min=35.07   stddev=0.98 (2.8%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/13 (2271 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/14, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=63   mean=40.73   median=40.57   min=40.34   stddev=0.98 (2.4%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/14 (3202 ms)
+[ RUN      ] OCL_InRangeFixture_InRange.InRange/15, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=59.48   median=59.41   min=59.20   stddev=0.35 (0.6%))
+[       OK ] OCL_InRangeFixture_InRange.InRange/15 (2457 ms)
+[----------] 16 tests from OCL_InRangeFixture_InRange (15789 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (15789 ms total)
+[  PASSED  ] 16 tests.

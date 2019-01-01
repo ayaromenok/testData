@@ -1,0 +1,641 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_CornerHarrisFixture_CornerHarris*
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from OCL_CornerHarrisFixture_CornerHarris
+[ RUN      ] OCL_CornerHarrisFixture_CornerHarris.CornerHarris/0, where GetParam() = (640x480, 8UC1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=16   mean=27.03   median=27.04   min=25.98   stddev=0.80 (3.0%))
+[       OK ] OCL_CornerHarrisFixture_CornerHarris.CornerHarris/0 (589 ms)
+[ RUN      ] OCL_CornerHarrisFixture_CornerHarris.CornerHarris/1, where GetParam() = (640x480, 32FC1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=22.09   median=21.82   min=21.10   stddev=0.74 (3.4%))
+[       OK ] OCL_CornerHarrisFixture_CornerHarris.CornerHarris/1 (2341 ms)
+[ RUN      ] OCL_CornerHarrisFixture_CornerHarris.CornerHarris/2, where GetParam() = (1280x720, 8UC1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=13   mean=77.41   median=77.08   min=75.61   stddev=1.65 (2.1%))
+[       OK ] OCL_CornerHarrisFixture_CornerHarris.CornerHarris/2 (1034 ms)
+[ RUN      ] OCL_CornerHarrisFixture_CornerHarris.CornerHarris/3, where GetParam() = (1280x720, 32FC1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=10   mean=62.46   median=61.78   min=61.04   stddev=1.46 (2.3%))
+[       OK ] OCL_CornerHarrisFixture_CornerHarris.CornerHarris/3 (649 ms)
+[ RUN      ] OCL_CornerHarrisFixture_CornerHarris.CornerHarris/4, where GetParam() = (1920x1080, 8UC1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=187.83   median=191.97   min=157.05   stddev=10.82 (5.8%))
+[       OK ] OCL_CornerHarrisFixture_CornerHarris.CornerHarris/4 (19145 ms)
+[ RUN      ] OCL_CornerHarrisFixture_CornerHarris.CornerHarris/5, where GetParam() = (1920x1080, 32FC1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=146.44   median=143.12   min=128.76   stddev=7.86 (5.4%))
+[       OK ] OCL_CornerHarrisFixture_CornerHarris.CornerHarris/5 (14868 ms)
+[ RUN      ] OCL_CornerHarrisFixture_CornerHarris.CornerHarris/6, where GetParam() = (3840x2160, 8UC1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=856.38   median=856.11   min=748.65   stddev=44.42 (5.2%))
+[       OK ] OCL_CornerHarrisFixture_CornerHarris.CornerHarris/6 (88267 ms)
+[ RUN      ] OCL_CornerHarrisFixture_CornerHarris.CornerHarris/7, where GetParam() = (3840x2160, 32FC1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('sobel7', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=680.26   median=684.47   min=603.65   stddev=30.82 (4.5%))
+[       OK ] OCL_CornerHarrisFixture_CornerHarris.CornerHarris/7 (69282 ms)
+[----------] 8 tests from OCL_CornerHarrisFixture_CornerHarris (196175 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (196176 ms total)
+[  PASSED  ] 8 tests.

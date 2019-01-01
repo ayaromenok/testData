@@ -1,0 +1,285 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_MatrixOperation/CopyTo*
+[==========] Running 112 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 112 tests from OCL_MatrixOperation/CopyTo
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/0, where GetParam() = (CV_8U, Channels(1), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/0 (5 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/1, where GetParam() = (CV_8U, Channels(1), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/1 (79 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/2, where GetParam() = (CV_8U, Channels(1), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/2 (5 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/3, where GetParam() = (CV_8U, Channels(1), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/3 (5 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/4, where GetParam() = (CV_8U, Channels(2), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/4 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/5, where GetParam() = (CV_8U, Channels(2), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/5 (26 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/6, where GetParam() = (CV_8U, Channels(2), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/6 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/7, where GetParam() = (CV_8U, Channels(2), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/7 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/8, where GetParam() = (CV_8U, Channels(3), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/8 (1 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/9, where GetParam() = (CV_8U, Channels(3), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/9 (25 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/10, where GetParam() = (CV_8U, Channels(3), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/10 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/11, where GetParam() = (CV_8U, Channels(3), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/11 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/12, where GetParam() = (CV_8U, Channels(4), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/12 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/13, where GetParam() = (CV_8U, Channels(4), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/13 (25 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/14, where GetParam() = (CV_8U, Channels(4), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/14 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/15, where GetParam() = (CV_8U, Channels(4), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/15 (5 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/16, where GetParam() = (CV_8S, Channels(1), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/16 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/17, where GetParam() = (CV_8S, Channels(1), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/17 (30 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/18, where GetParam() = (CV_8S, Channels(1), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/18 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/19, where GetParam() = (CV_8S, Channels(1), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/19 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/20, where GetParam() = (CV_8S, Channels(2), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/20 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/21, where GetParam() = (CV_8S, Channels(2), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/21 (20 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/22, where GetParam() = (CV_8S, Channels(2), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/22 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/23, where GetParam() = (CV_8S, Channels(2), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/23 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/24, where GetParam() = (CV_8S, Channels(3), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/24 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/25, where GetParam() = (CV_8S, Channels(3), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/25 (28 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/26, where GetParam() = (CV_8S, Channels(3), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/26 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/27, where GetParam() = (CV_8S, Channels(3), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/27 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/28, where GetParam() = (CV_8S, Channels(4), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/28 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/29, where GetParam() = (CV_8S, Channels(4), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/29 (26 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/30, where GetParam() = (CV_8S, Channels(4), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/30 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/31, where GetParam() = (CV_8S, Channels(4), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/31 (5 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/32, where GetParam() = (CV_16U, Channels(1), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/32 (1 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/33, where GetParam() = (CV_16U, Channels(1), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/33 (31 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/34, where GetParam() = (CV_16U, Channels(1), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/34 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/35, where GetParam() = (CV_16U, Channels(1), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/35 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/36, where GetParam() = (CV_16U, Channels(2), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/36 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/37, where GetParam() = (CV_16U, Channels(2), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/37 (24 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/38, where GetParam() = (CV_16U, Channels(2), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/38 (5 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/39, where GetParam() = (CV_16U, Channels(2), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/39 (5 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/40, where GetParam() = (CV_16U, Channels(3), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/40 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/41, where GetParam() = (CV_16U, Channels(3), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/41 (22 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/42, where GetParam() = (CV_16U, Channels(3), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/42 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/43, where GetParam() = (CV_16U, Channels(3), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/43 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/44, where GetParam() = (CV_16U, Channels(4), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/44 (1 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/45, where GetParam() = (CV_16U, Channels(4), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/45 (24 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/46, where GetParam() = (CV_16U, Channels(4), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/46 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/47, where GetParam() = (CV_16U, Channels(4), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/47 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/48, where GetParam() = (CV_16S, Channels(1), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/48 (1 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/49, where GetParam() = (CV_16S, Channels(1), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/49 (32 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/50, where GetParam() = (CV_16S, Channels(1), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/50 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/51, where GetParam() = (CV_16S, Channels(1), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/51 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/52, where GetParam() = (CV_16S, Channels(2), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/52 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/53, where GetParam() = (CV_16S, Channels(2), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/53 (20 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/54, where GetParam() = (CV_16S, Channels(2), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/54 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/55, where GetParam() = (CV_16S, Channels(2), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/55 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/56, where GetParam() = (CV_16S, Channels(3), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/56 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/57, where GetParam() = (CV_16S, Channels(3), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/57 (25 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/58, where GetParam() = (CV_16S, Channels(3), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/58 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/59, where GetParam() = (CV_16S, Channels(3), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/59 (6 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/60, where GetParam() = (CV_16S, Channels(4), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/60 (1 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/61, where GetParam() = (CV_16S, Channels(4), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/61 (21 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/62, where GetParam() = (CV_16S, Channels(4), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/62 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/63, where GetParam() = (CV_16S, Channels(4), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/63 (6 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/64, where GetParam() = (CV_32S, Channels(1), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/64 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/65, where GetParam() = (CV_32S, Channels(1), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/65 (27 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/66, where GetParam() = (CV_32S, Channels(1), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/66 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/67, where GetParam() = (CV_32S, Channels(1), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/67 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/68, where GetParam() = (CV_32S, Channels(2), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/68 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/69, where GetParam() = (CV_32S, Channels(2), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/69 (26 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/70, where GetParam() = (CV_32S, Channels(2), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/70 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/71, where GetParam() = (CV_32S, Channels(2), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/71 (5 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/72, where GetParam() = (CV_32S, Channels(3), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/72 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/73, where GetParam() = (CV_32S, Channels(3), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/73 (24 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/74, where GetParam() = (CV_32S, Channels(3), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/74 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/75, where GetParam() = (CV_32S, Channels(3), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/75 (6 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/76, where GetParam() = (CV_32S, Channels(4), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/76 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/77, where GetParam() = (CV_32S, Channels(4), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/77 (21 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/78, where GetParam() = (CV_32S, Channels(4), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/78 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/79, where GetParam() = (CV_32S, Channels(4), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/79 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/80, where GetParam() = (CV_32F, Channels(1), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/80 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/81, where GetParam() = (CV_32F, Channels(1), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/81 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/82, where GetParam() = (CV_32F, Channels(1), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/82 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/83, where GetParam() = (CV_32F, Channels(1), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/83 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/84, where GetParam() = (CV_32F, Channels(2), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/84 (1 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/85, where GetParam() = (CV_32F, Channels(2), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/85 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/86, where GetParam() = (CV_32F, Channels(2), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/86 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/87, where GetParam() = (CV_32F, Channels(2), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/87 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/88, where GetParam() = (CV_32F, Channels(3), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/88 (1 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/89, where GetParam() = (CV_32F, Channels(3), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/89 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/90, where GetParam() = (CV_32F, Channels(3), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/90 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/91, where GetParam() = (CV_32F, Channels(3), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/91 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/92, where GetParam() = (CV_32F, Channels(4), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/92 (1 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/93, where GetParam() = (CV_32F, Channels(4), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/93 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/94, where GetParam() = (CV_32F, Channels(4), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/94 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/95, where GetParam() = (CV_32F, Channels(4), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/95 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/96, where GetParam() = (CV_64F, Channels(1), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/96 (2 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/97, where GetParam() = (CV_64F, Channels(1), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/97 (27 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/98, where GetParam() = (CV_64F, Channels(1), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/98 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/99, where GetParam() = (CV_64F, Channels(1), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/99 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/100, where GetParam() = (CV_64F, Channels(2), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/100 (1 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/101, where GetParam() = (CV_64F, Channels(2), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/101 (21 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/102, where GetParam() = (CV_64F, Channels(2), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/102 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/103, where GetParam() = (CV_64F, Channels(2), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/103 (4 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/104, where GetParam() = (CV_64F, Channels(3), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/104 (1 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/105, where GetParam() = (CV_64F, Channels(3), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/105 (21 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/106, where GetParam() = (CV_64F, Channels(3), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/106 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/107, where GetParam() = (CV_64F, Channels(3), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/107 (6 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/108, where GetParam() = (CV_64F, Channels(4), false, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/108 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/109, where GetParam() = (CV_64F, Channels(4), false, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/109 (26 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/110, where GetParam() = (CV_64F, Channels(4), true, false)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/110 (3 ms)
+[ RUN      ] OCL_MatrixOperation/CopyTo.Accuracy/111, where GetParam() = (CV_64F, Channels(4), true, true)
+[       OK ] OCL_MatrixOperation/CopyTo.Accuracy/111 (6 ms)
+[----------] 112 tests from OCL_MatrixOperation/CopyTo (936 ms total)
+
+[----------] Global test environment tear-down
+[==========] 112 tests from 1 test case ran. (938 ms total)
+[  PASSED  ] 112 tests.

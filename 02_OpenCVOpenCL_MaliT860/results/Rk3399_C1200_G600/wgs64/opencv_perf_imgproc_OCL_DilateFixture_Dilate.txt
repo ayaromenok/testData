@@ -1,0 +1,943 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_DilateFixture_Dilate*
+[==========] Running 32 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 32 tests from OCL_DilateFixture_Dilate
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/0, where GetParam() = (640x480, 8UC1, 3)
+[ PERFSTAT ]    (samples=100   mean=4.73   median=4.61   min=3.93   stddev=0.62 (13.2%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/0 (573 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/1, where GetParam() = (640x480, 8UC1, 5)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=2.93   median=2.71   min=2.29   stddev=0.59 (20.0%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/1 (415 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/2, where GetParam() = (640x480, 32FC1, 3)
+[ PERFSTAT ]    (samples=100   mean=6.44   median=6.62   min=4.91   stddev=0.61 (9.4%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/2 (917 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/3, where GetParam() = (640x480, 32FC1, 5)
+[ PERFSTAT ]    (samples=100   mean=8.57   median=8.67   min=6.82   stddev=0.73 (8.5%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/3 (973 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/4, where GetParam() = (640x480, 8UC4, 3)
+[ PERFSTAT ]    (samples=100   mean=6.62   median=6.68   min=5.63   stddev=0.54 (8.2%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/4 (763 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/5, where GetParam() = (640x480, 8UC4, 5)
+[ PERFSTAT ]    (samples=14   mean=8.36   median=8.29   min=7.95   stddev=0.24 (2.9%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/5 (216 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/6, where GetParam() = (640x480, 32FC4, 3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=29.00   median=29.18   min=25.30   stddev=1.45 (5.0%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/6 (3043 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/7, where GetParam() = (640x480, 32FC4, 5)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=640x480x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=20   mean=34.53   median=34.75   min=32.42   stddev=1.03 (3.0%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/7 (782 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/8, where GetParam() = (1280x720, 8UC1, 3)
+[ PERFSTAT ]    (samples=100   mean=12.82   median=12.62   min=11.92   stddev=0.59 (4.6%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/8 (1316 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/9, where GetParam() = (1280x720, 8UC1, 5)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=9.98   median=9.45   min=8.42   stddev=1.77 (17.8%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/9 (1112 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/10, where GetParam() = (1280x720, 32FC1, 3)
+[ PERFSTAT ]    (samples=100   mean=12.31   median=12.24   min=11.01   stddev=0.67 (5.4%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/10 (1331 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/11, where GetParam() = (1280x720, 32FC1, 5)
+[ PERFSTAT ]    (samples=10   mean=18.28   median=18.24   min=18.00   stddev=0.22 (1.2%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/11 (224 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/12, where GetParam() = (1280x720, 8UC4, 3)
+[ PERFSTAT ]    (samples=10   mean=12.34   median=12.36   min=11.86   stddev=0.34 (2.7%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/12 (176 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/13, where GetParam() = (1280x720, 8UC4, 5)
+[ PERFSTAT ]    (samples=10   mean=18.36   median=18.28   min=17.91   stddev=0.31 (1.7%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/13 (236 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/14, where GetParam() = (1280x720, 32FC4, 3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=10   mean=78.67   median=78.84   min=75.65   stddev=2.06 (2.6%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/14 (944 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/15, where GetParam() = (1280x720, 32FC4, 5)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1280x720x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=25   mean=94.37   median=95.31   min=86.29   stddev=2.80 (3.0%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/15 (2479 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/16, where GetParam() = (1920x1080, 8UC1, 3)
+[ PERFSTAT ]    (samples=10   mean=26.29   median=26.28   min=25.39   stddev=0.40 (1.5%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/16 (299 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/17, where GetParam() = (1920x1080, 8UC1, 5)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=17.11   median=16.95   min=16.15   stddev=0.65 (3.8%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/17 (1789 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/18, where GetParam() = (1920x1080, 32FC1, 3)
+[ PERFSTAT ]    (samples=10   mean=31.39   median=31.29   min=30.81   stddev=0.40 (1.3%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/18 (396 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/19, where GetParam() = (1920x1080, 32FC1, 5)
+[ PERFSTAT ]    (samples=13   mean=42.00   median=41.70   min=41.24   stddev=0.68 (1.6%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/19 (654 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/20, where GetParam() = (1920x1080, 8UC4, 3)
+[ PERFSTAT ]    (samples=10   mean=31.09   median=31.08   min=30.62   stddev=0.43 (1.4%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/20 (421 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/21, where GetParam() = (1920x1080, 8UC4, 5)
+[ PERFSTAT ]    (samples=10   mean=41.31   median=41.33   min=40.86   stddev=0.24 (0.6%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/21 (513 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/22, where GetParam() = (1920x1080, 32FC4, 3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=10   mean=170.17   median=169.87   min=166.21   stddev=3.10 (1.8%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/22 (2051 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/23, where GetParam() = (1920x1080, 32FC4, 5)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=1920x1088x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=209.66   median=210.37   min=180.85   stddev=6.88 (3.3%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/23 (21293 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/24, where GetParam() = (3840x2160, 8UC1, 3)
+[ PERFSTAT ]    (samples=10   mean=98.30   median=98.13   min=98.02   stddev=0.49 (0.5%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/24 (1055 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/25, where GetParam() = (3840x2160, 8UC1, 5)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=34.17   median=34.71   min=28.35   stddev=1.68 (4.9%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/25 (3574 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/26, where GetParam() = (3840x2160, 32FC1, 3)
+[ PERFSTAT ]    (samples=25   mean=93.67   median=93.74   min=90.82   stddev=0.71 (0.8%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/26 (2707 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/27, where GetParam() = (3840x2160, 32FC1, 5)
+[ PERFSTAT ]    (samples=10   mean=151.01   median=151.02   min=149.69   stddev=1.05 (0.7%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/27 (1725 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/28, where GetParam() = (3840x2160, 8UC4, 3)
+[ PERFSTAT ]    (samples=10   mean=98.45   median=98.27   min=98.10   stddev=0.40 (0.4%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/28 (1274 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/29, where GetParam() = (3840x2160, 8UC4, 5)
+[ PERFSTAT ]    (samples=10   mean=162.13   median=161.79   min=161.49   stddev=0.87 (0.5%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/29 (1926 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/30, where GetParam() = (3840x2160, 32FC4, 3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=10   mean=660.63   median=661.71   min=633.04   stddev=19.69 (3.0%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/30 (7946 ms)
+[ RUN      ] OCL_DilateFixture_Dilate.Dilate/31, where GetParam() = (3840x2160, 32FC4, 5)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('morph', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=875.66   median=870.61   min=781.83   stddev=29.70 (3.4%))
+[       OK ] OCL_DilateFixture_Dilate.Dilate/31 (88713 ms)
+[----------] 32 tests from OCL_DilateFixture_Dilate (151844 ms total)
+
+[----------] Global test environment tear-down
+[==========] 32 tests from 1 test case ran. (151845 ms total)
+[  PASSED  ] 32 tests.

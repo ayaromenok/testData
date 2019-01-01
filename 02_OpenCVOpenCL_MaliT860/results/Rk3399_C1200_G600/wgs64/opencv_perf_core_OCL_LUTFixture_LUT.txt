@@ -1,0 +1,110 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_LUTFixture_LUT*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_LUTFixture_LUT
+[ RUN      ] OCL_LUTFixture_LUT.LUT/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.54   median=1.35   min=0.84   stddev=0.52 (33.7%))
+[       OK ] OCL_LUTFixture_LUT.LUT/0 (242 ms)
+[ RUN      ] OCL_LUTFixture_LUT.LUT/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=3.53   median=3.61   min=2.00   stddev=0.90 (25.6%))
+[       OK ] OCL_LUTFixture_LUT.LUT/1 (758 ms)
+[ RUN      ] OCL_LUTFixture_LUT.LUT/2, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=4.78   median=4.72   min=3.28   stddev=1.00 (20.9%))
+[       OK ] OCL_LUTFixture_LUT.LUT/2 (573 ms)
+[ RUN      ] OCL_LUTFixture_LUT.LUT/3, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=4.54   median=4.30   min=3.80   stddev=1.05 (23.2%))
+[       OK ] OCL_LUTFixture_LUT.LUT/3 (1096 ms)
+[ RUN      ] OCL_LUTFixture_LUT.LUT/4, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=2.71   median=2.57   min=2.10   stddev=0.34 (12.4%))
+[       OK ] OCL_LUTFixture_LUT.LUT/4 (319 ms)
+[ RUN      ] OCL_LUTFixture_LUT.LUT/5, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=5.54   median=5.73   min=4.68   stddev=0.45 (8.0%))
+[       OK ] OCL_LUTFixture_LUT.LUT/5 (598 ms)
+[ RUN      ] OCL_LUTFixture_LUT.LUT/6, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=47   mean=9.45   median=9.49   min=8.93   stddev=0.28 (3.0%))
+[       OK ] OCL_LUTFixture_LUT.LUT/6 (504 ms)
+[ RUN      ] OCL_LUTFixture_LUT.LUT/7, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=63   mean=9.71   median=9.70   min=9.28   stddev=0.18 (1.8%))
+[       OK ] OCL_LUTFixture_LUT.LUT/7 (800 ms)
+[ RUN      ] OCL_LUTFixture_LUT.LUT/8, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=3.97   median=3.97   min=3.44   stddev=0.34 (8.6%))
+[       OK ] OCL_LUTFixture_LUT.LUT/8 (449 ms)
+[ RUN      ] OCL_LUTFixture_LUT.LUT/9, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=10.41   median=10.29   min=9.83   stddev=0.39 (3.8%))
+[       OK ] OCL_LUTFixture_LUT.LUT/9 (1136 ms)
+[ RUN      ] OCL_LUTFixture_LUT.LUT/10, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=50   mean=17.84   median=17.88   min=16.83   stddev=0.34 (1.9%))
+[       OK ] OCL_LUTFixture_LUT.LUT/10 (1039 ms)
+[ RUN      ] OCL_LUTFixture_LUT.LUT/11, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=38   mean=20.46   median=20.42   min=20.04   stddev=0.33 (1.6%))
+[       OK ] OCL_LUTFixture_LUT.LUT/11 (1059 ms)
+[ RUN      ] OCL_LUTFixture_LUT.LUT/12, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=12.92   median=11.80   min=10.91   stddev=2.20 (17.0%))
+[       OK ] OCL_LUTFixture_LUT.LUT/12 (1842 ms)
+[ RUN      ] OCL_LUTFixture_LUT.LUT/13, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=30.54   median=30.87   min=29.21   stddev=0.78 (2.5%))
+[       OK ] OCL_LUTFixture_LUT.LUT/13 (643 ms)
+[ RUN      ] OCL_LUTFixture_LUT.LUT/14, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=13   mean=65.95   median=65.86   min=64.40   stddev=1.02 (1.6%))
+[       OK ] OCL_LUTFixture_LUT.LUT/14 (1200 ms)
+[ RUN      ] OCL_LUTFixture_LUT.LUT/15, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=76.86   median=76.82   min=76.35   stddev=0.25 (0.3%))
+[       OK ] OCL_LUTFixture_LUT.LUT/15 (1781 ms)
+[----------] 16 tests from OCL_LUTFixture_LUT (14046 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (14046 ms total)
+[  PASSED  ] 16 tests.

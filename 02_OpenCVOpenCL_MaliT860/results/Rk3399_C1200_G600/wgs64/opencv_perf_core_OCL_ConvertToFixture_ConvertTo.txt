@@ -1,0 +1,110 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_ConvertToFixture_ConvertTo*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_ConvertToFixture_ConvertTo
+[ RUN      ] OCL_ConvertToFixture_ConvertTo.ConvertTo/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=2.20   median=2.19   min=1.55   stddev=0.35 (15.8%))
+[       OK ] OCL_ConvertToFixture_ConvertTo.ConvertTo/0 (532 ms)
+[ RUN      ] OCL_ConvertToFixture_ConvertTo.ConvertTo/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=2.48   median=2.24   min=1.41   stddev=0.84 (34.0%))
+[       OK ] OCL_ConvertToFixture_ConvertTo.ConvertTo/1 (1050 ms)
+[ RUN      ] OCL_ConvertToFixture_ConvertTo.ConvertTo/2, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=3.58   median=3.55   min=3.09   stddev=0.24 (6.8%))
+[       OK ] OCL_ConvertToFixture_ConvertTo.ConvertTo/2 (401 ms)
+[ RUN      ] OCL_ConvertToFixture_ConvertTo.ConvertTo/3, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=3.74   median=3.67   min=2.95   stddev=0.55 (14.7%))
+[       OK ] OCL_ConvertToFixture_ConvertTo.ConvertTo/3 (901 ms)
+[ RUN      ] OCL_ConvertToFixture_ConvertTo.ConvertTo/4, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=4.37   median=4.29   min=3.77   stddev=0.40 (9.1%))
+[       OK ] OCL_ConvertToFixture_ConvertTo.ConvertTo/4 (478 ms)
+[ RUN      ] OCL_ConvertToFixture_ConvertTo.ConvertTo/5, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=3.77   median=3.53   min=3.29   stddev=0.41 (10.9%))
+[       OK ] OCL_ConvertToFixture_ConvertTo.ConvertTo/5 (438 ms)
+[ RUN      ] OCL_ConvertToFixture_ConvertTo.ConvertTo/6, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=12.08   median=12.94   min=8.94   stddev=1.76 (14.6%))
+[       OK ] OCL_ConvertToFixture_ConvertTo.ConvertTo/6 (1342 ms)
+[ RUN      ] OCL_ConvertToFixture_ConvertTo.ConvertTo/7, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=9.20   median=9.15   min=8.49   stddev=0.39 (4.3%))
+[       OK ] OCL_ConvertToFixture_ConvertTo.ConvertTo/7 (1065 ms)
+[ RUN      ] OCL_ConvertToFixture_ConvertTo.ConvertTo/8, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=5.49   median=5.07   min=4.75   stddev=1.02 (18.6%))
+[       OK ] OCL_ConvertToFixture_ConvertTo.ConvertTo/8 (1052 ms)
+[ RUN      ] OCL_ConvertToFixture_ConvertTo.ConvertTo/9, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=5.84   median=5.82   min=4.64   stddev=0.38 (6.6%))
+[       OK ] OCL_ConvertToFixture_ConvertTo.ConvertTo/9 (651 ms)
+[ RUN      ] OCL_ConvertToFixture_ConvertTo.ConvertTo/10, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=25   mean=19.89   median=19.91   min=19.19   stddev=0.35 (1.8%))
+[       OK ] OCL_ConvertToFixture_ConvertTo.ConvertTo/10 (762 ms)
+[ RUN      ] OCL_ConvertToFixture_ConvertTo.ConvertTo/11, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=63   mean=19.01   median=18.95   min=18.32   stddev=0.36 (1.9%))
+[       OK ] OCL_ConvertToFixture_ConvertTo.ConvertTo/11 (1396 ms)
+[ RUN      ] OCL_ConvertToFixture_ConvertTo.ConvertTo/12, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=38   mean=20.01   median=20.00   min=19.08   stddev=0.47 (2.4%))
+[       OK ] OCL_ConvertToFixture_ConvertTo.ConvertTo/12 (1014 ms)
+[ RUN      ] OCL_ConvertToFixture_ConvertTo.ConvertTo/13, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=50   mean=18.87   median=18.84   min=18.00   stddev=0.41 (2.2%))
+[       OK ] OCL_ConvertToFixture_ConvertTo.ConvertTo/13 (1171 ms)
+[ RUN      ] OCL_ConvertToFixture_ConvertTo.ConvertTo/14, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=13   mean=78.98   median=79.25   min=76.52   stddev=1.09 (1.4%))
+[       OK ] OCL_ConvertToFixture_ConvertTo.ConvertTo/14 (1878 ms)
+[ RUN      ] OCL_ConvertToFixture_ConvertTo.ConvertTo/15, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=73.95   median=73.69   min=72.51   stddev=1.23 (1.7%))
+[       OK ] OCL_ConvertToFixture_ConvertTo.ConvertTo/15 (1526 ms)
+[----------] 16 tests from OCL_ConvertToFixture_ConvertTo (15661 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (15662 ms total)
+[  PASSED  ] 16 tests.

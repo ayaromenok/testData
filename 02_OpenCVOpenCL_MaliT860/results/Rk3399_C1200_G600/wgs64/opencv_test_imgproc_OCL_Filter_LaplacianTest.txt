@@ -1,0 +1,1645 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 64
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_Filter/LaplacianTest*
+[==========] Running 648 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 648 tests from OCL_Filter/LaplacianTest
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/0, where GetParam() = (8UC1, 1, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/0 (99 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/1, where GetParam() = (8UC1, 1, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/1 (54 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/2, where GetParam() = (8UC1, 1, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/2 (52 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/3, where GetParam() = (8UC1, 1, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/3 (54 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/4, where GetParam() = (8UC1, 1, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/4 (52 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/5, where GetParam() = (8UC1, 1, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/5 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/6, where GetParam() = (8UC1, 1, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/6 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/7, where GetParam() = (8UC1, 1, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/7 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/8, where GetParam() = (8UC1, 1, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/8 (39 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/9, where GetParam() = (8UC1, 1, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/9 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/10, where GetParam() = (8UC1, 1, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/10 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/11, where GetParam() = (8UC1, 1, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/11 (39 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/12, where GetParam() = (8UC1, 1, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/12 (60 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/13, where GetParam() = (8UC1, 1, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/13 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/14, where GetParam() = (8UC1, 1, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/14 (57 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/15, where GetParam() = (8UC1, 1, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/15 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/16, where GetParam() = (8UC1, 1, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/16 (61 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/17, where GetParam() = (8UC1, 1, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/17 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/18, where GetParam() = (8UC1, 1, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/18 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/19, where GetParam() = (8UC1, 1, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/19 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/20, where GetParam() = (8UC1, 1, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/20 (58 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/21, where GetParam() = (8UC1, 1, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/21 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/22, where GetParam() = (8UC1, 1, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/22 (52 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/23, where GetParam() = (8UC1, 1, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/23 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/24, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/24 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/25, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/25 (53 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/26, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/26 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/27, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/27 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/28, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/28 (52 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/29, where GetParam() = (8UC1, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/29 (53 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/30, where GetParam() = (8UC1, 3, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/30 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/31, where GetParam() = (8UC1, 3, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/31 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/32, where GetParam() = (8UC1, 3, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/32 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/33, where GetParam() = (8UC1, 3, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/33 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/34, where GetParam() = (8UC1, 3, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/34 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/35, where GetParam() = (8UC1, 3, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/35 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/36, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/36 (58 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/37, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/37 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/38, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/38 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/39, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/39 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/40, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/40 (60 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/41, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/41 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/42, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/42 (57 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/43, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/43 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/44, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/44 (60 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/45, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/45 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/46, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/46 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/47, where GetParam() = (8UC1, 3, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/47 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/48, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/48 (254 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/49, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/49 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/50, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/50 (30 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/51, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/51 (10 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/52, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/52 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/53, where GetParam() = (8UC1, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/53 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/54, where GetParam() = (8UC1, 5, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/54 (120 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/55, where GetParam() = (8UC1, 5, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/55 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/56, where GetParam() = (8UC1, 5, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/56 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/57, where GetParam() = (8UC1, 5, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/57 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/58, where GetParam() = (8UC1, 5, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/58 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/59, where GetParam() = (8UC1, 5, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/59 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/60, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/60 (170 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/61, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/61 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/62, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/62 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/63, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/63 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/64, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/64 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/65, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/65 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/66, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/66 (153 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/67, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/67 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/68, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/68 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/69, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/69 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/70, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/70 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/71, where GetParam() = (8UC1, 5, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/71 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/72, where GetParam() = (8UC3, 1, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/72 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/73, where GetParam() = (8UC3, 1, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/73 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/74, where GetParam() = (8UC3, 1, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/74 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/75, where GetParam() = (8UC3, 1, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/75 (50 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/76, where GetParam() = (8UC3, 1, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/76 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/77, where GetParam() = (8UC3, 1, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/77 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/78, where GetParam() = (8UC3, 1, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/78 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/79, where GetParam() = (8UC3, 1, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/79 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/80, where GetParam() = (8UC3, 1, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/80 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/81, where GetParam() = (8UC3, 1, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/81 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/82, where GetParam() = (8UC3, 1, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/82 (40 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/83, where GetParam() = (8UC3, 1, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/83 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/84, where GetParam() = (8UC3, 1, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/84 (58 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/85, where GetParam() = (8UC3, 1, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/85 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/86, where GetParam() = (8UC3, 1, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/86 (61 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/87, where GetParam() = (8UC3, 1, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/87 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/88, where GetParam() = (8UC3, 1, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/88 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/89, where GetParam() = (8UC3, 1, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/89 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/90, where GetParam() = (8UC3, 1, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/90 (61 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/91, where GetParam() = (8UC3, 1, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/91 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/92, where GetParam() = (8UC3, 1, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/92 (59 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/93, where GetParam() = (8UC3, 1, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/93 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/94, where GetParam() = (8UC3, 1, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/94 (59 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/95, where GetParam() = (8UC3, 1, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/95 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/96, where GetParam() = (8UC3, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/96 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/97, where GetParam() = (8UC3, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/97 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/98, where GetParam() = (8UC3, 3, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/98 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/99, where GetParam() = (8UC3, 3, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/99 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/100, where GetParam() = (8UC3, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/100 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/101, where GetParam() = (8UC3, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/101 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/102, where GetParam() = (8UC3, 3, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/102 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/103, where GetParam() = (8UC3, 3, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/103 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/104, where GetParam() = (8UC3, 3, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/104 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/105, where GetParam() = (8UC3, 3, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/105 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/106, where GetParam() = (8UC3, 3, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/106 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/107, where GetParam() = (8UC3, 3, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/107 (40 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/108, where GetParam() = (8UC3, 3, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/108 (60 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/109, where GetParam() = (8UC3, 3, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/109 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/110, where GetParam() = (8UC3, 3, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/110 (61 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/111, where GetParam() = (8UC3, 3, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/111 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/112, where GetParam() = (8UC3, 3, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/112 (58 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/113, where GetParam() = (8UC3, 3, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/113 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/114, where GetParam() = (8UC3, 3, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/114 (57 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/115, where GetParam() = (8UC3, 3, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/115 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/116, where GetParam() = (8UC3, 3, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/116 (63 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/117, where GetParam() = (8UC3, 3, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/117 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/118, where GetParam() = (8UC3, 3, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/118 (60 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/119, where GetParam() = (8UC3, 3, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/119 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/120, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/120 (182 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/121, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/121 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/122, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/122 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/123, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/123 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/124, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/124 (4 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/125, where GetParam() = (8UC3, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/125 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/126, where GetParam() = (8UC3, 5, 0x0, BORDER_REPLICATE, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/126 (170 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/127, where GetParam() = (8UC3, 5, 0x0, BORDER_REPLICATE, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/127 (12 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/128, where GetParam() = (8UC3, 5, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/128 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/129, where GetParam() = (8UC3, 5, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/129 (4 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/130, where GetParam() = (8UC3, 5, 0x0, BORDER_REPLICATE, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/130 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/131, where GetParam() = (8UC3, 5, 0x0, BORDER_REPLICATE, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/131 (12 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/132, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/132 (174 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/133, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/133 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/134, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/134 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/135, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/135 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/136, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/136 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/137, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/137 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/138, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT_101, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/138 (175 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/139, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT_101, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/139 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/140, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/140 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/141, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/141 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/142, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT_101, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/142 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/143, where GetParam() = (8UC3, 5, 0x0, BORDER_REFLECT_101, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/143 (9 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/144, where GetParam() = (8UC4, 1, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/144 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/145, where GetParam() = (8UC4, 1, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/145 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/146, where GetParam() = (8UC4, 1, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/146 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/147, where GetParam() = (8UC4, 1, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/147 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/148, where GetParam() = (8UC4, 1, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/148 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/149, where GetParam() = (8UC4, 1, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/149 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/150, where GetParam() = (8UC4, 1, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/150 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/151, where GetParam() = (8UC4, 1, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/151 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/152, where GetParam() = (8UC4, 1, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/152 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/153, where GetParam() = (8UC4, 1, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/153 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/154, where GetParam() = (8UC4, 1, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/154 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/155, where GetParam() = (8UC4, 1, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/155 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/156, where GetParam() = (8UC4, 1, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/156 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/157, where GetParam() = (8UC4, 1, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/157 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/158, where GetParam() = (8UC4, 1, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/158 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/159, where GetParam() = (8UC4, 1, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/159 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/160, where GetParam() = (8UC4, 1, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/160 (54 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/161, where GetParam() = (8UC4, 1, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/161 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/162, where GetParam() = (8UC4, 1, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/162 (54 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/163, where GetParam() = (8UC4, 1, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/163 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/164, where GetParam() = (8UC4, 1, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/164 (60 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/165, where GetParam() = (8UC4, 1, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/165 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/166, where GetParam() = (8UC4, 1, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/166 (54 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/167, where GetParam() = (8UC4, 1, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/167 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/168, where GetParam() = (8UC4, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/168 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/169, where GetParam() = (8UC4, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/169 (50 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/170, where GetParam() = (8UC4, 3, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/170 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/171, where GetParam() = (8UC4, 3, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/171 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/172, where GetParam() = (8UC4, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/172 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/173, where GetParam() = (8UC4, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/173 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/174, where GetParam() = (8UC4, 3, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/174 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/175, where GetParam() = (8UC4, 3, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/175 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/176, where GetParam() = (8UC4, 3, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/176 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/177, where GetParam() = (8UC4, 3, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/177 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/178, where GetParam() = (8UC4, 3, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/178 (40 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/179, where GetParam() = (8UC4, 3, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/179 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/180, where GetParam() = (8UC4, 3, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/180 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/181, where GetParam() = (8UC4, 3, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/181 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/182, where GetParam() = (8UC4, 3, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/182 (53 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/183, where GetParam() = (8UC4, 3, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/183 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/184, where GetParam() = (8UC4, 3, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/184 (54 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/185, where GetParam() = (8UC4, 3, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/185 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/186, where GetParam() = (8UC4, 3, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/186 (58 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/187, where GetParam() = (8UC4, 3, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/187 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/188, where GetParam() = (8UC4, 3, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/188 (59 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/189, where GetParam() = (8UC4, 3, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/189 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/190, where GetParam() = (8UC4, 3, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/190 (61 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/191, where GetParam() = (8UC4, 3, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/191 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/192, where GetParam() = (8UC4, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/192 (157 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/193, where GetParam() = (8UC4, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/193 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/194, where GetParam() = (8UC4, 5, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/194 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/195, where GetParam() = (8UC4, 5, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/195 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/196, where GetParam() = (8UC4, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/196 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/197, where GetParam() = (8UC4, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/197 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/198, where GetParam() = (8UC4, 5, 0x0, BORDER_REPLICATE, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/198 (159 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/199, where GetParam() = (8UC4, 5, 0x0, BORDER_REPLICATE, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/199 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/200, where GetParam() = (8UC4, 5, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/200 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/201, where GetParam() = (8UC4, 5, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/201 (65 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/202, where GetParam() = (8UC4, 5, 0x0, BORDER_REPLICATE, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/202 (21 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/203, where GetParam() = (8UC4, 5, 0x0, BORDER_REPLICATE, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/203 (11 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/204, where GetParam() = (8UC4, 5, 0x0, BORDER_REFLECT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/204 (208 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/205, where GetParam() = (8UC4, 5, 0x0, BORDER_REFLECT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/205 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/206, where GetParam() = (8UC4, 5, 0x0, BORDER_REFLECT, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/206 (10 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/207, where GetParam() = (8UC4, 5, 0x0, BORDER_REFLECT, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/207 (12 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/208, where GetParam() = (8UC4, 5, 0x0, BORDER_REFLECT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/208 (12 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/209, where GetParam() = (8UC4, 5, 0x0, BORDER_REFLECT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/209 (12 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/210, where GetParam() = (8UC4, 5, 0x0, BORDER_REFLECT_101, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/210 (159 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/211, where GetParam() = (8UC4, 5, 0x0, BORDER_REFLECT_101, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/211 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/212, where GetParam() = (8UC4, 5, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/212 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/213, where GetParam() = (8UC4, 5, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/213 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/214, where GetParam() = (8UC4, 5, 0x0, BORDER_REFLECT_101, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/214 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/215, where GetParam() = (8UC4, 5, 0x0, BORDER_REFLECT_101, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/215 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/216, where GetParam() = (16UC1, 1, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/216 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/217, where GetParam() = (16UC1, 1, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/217 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/218, where GetParam() = (16UC1, 1, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/218 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/219, where GetParam() = (16UC1, 1, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/219 (50 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/220, where GetParam() = (16UC1, 1, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/220 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/221, where GetParam() = (16UC1, 1, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/221 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/222, where GetParam() = (16UC1, 1, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/222 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/223, where GetParam() = (16UC1, 1, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/223 (39 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/224, where GetParam() = (16UC1, 1, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/224 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/225, where GetParam() = (16UC1, 1, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/225 (39 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/226, where GetParam() = (16UC1, 1, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/226 (39 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/227, where GetParam() = (16UC1, 1, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/227 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/228, where GetParam() = (16UC1, 1, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/228 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/229, where GetParam() = (16UC1, 1, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/229 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/230, where GetParam() = (16UC1, 1, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/230 (52 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/231, where GetParam() = (16UC1, 1, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/231 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/232, where GetParam() = (16UC1, 1, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/232 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/233, where GetParam() = (16UC1, 1, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/233 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/234, where GetParam() = (16UC1, 1, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/234 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/235, where GetParam() = (16UC1, 1, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/235 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/236, where GetParam() = (16UC1, 1, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/236 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/237, where GetParam() = (16UC1, 1, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/237 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/238, where GetParam() = (16UC1, 1, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/238 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/239, where GetParam() = (16UC1, 1, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/239 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/240, where GetParam() = (16UC1, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/240 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/241, where GetParam() = (16UC1, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/241 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/242, where GetParam() = (16UC1, 3, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/242 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/243, where GetParam() = (16UC1, 3, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/243 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/244, where GetParam() = (16UC1, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/244 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/245, where GetParam() = (16UC1, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/245 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/246, where GetParam() = (16UC1, 3, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/246 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/247, where GetParam() = (16UC1, 3, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/247 (40 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/248, where GetParam() = (16UC1, 3, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/248 (40 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/249, where GetParam() = (16UC1, 3, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/249 (40 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/250, where GetParam() = (16UC1, 3, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/250 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/251, where GetParam() = (16UC1, 3, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/251 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/252, where GetParam() = (16UC1, 3, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/252 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/253, where GetParam() = (16UC1, 3, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/253 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/254, where GetParam() = (16UC1, 3, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/254 (52 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/255, where GetParam() = (16UC1, 3, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/255 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/256, where GetParam() = (16UC1, 3, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/256 (53 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/257, where GetParam() = (16UC1, 3, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/257 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/258, where GetParam() = (16UC1, 3, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/258 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/259, where GetParam() = (16UC1, 3, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/259 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/260, where GetParam() = (16UC1, 3, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/260 (52 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/261, where GetParam() = (16UC1, 3, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/261 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/262, where GetParam() = (16UC1, 3, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/262 (53 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/263, where GetParam() = (16UC1, 3, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/263 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/264, where GetParam() = (16UC1, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/264 (235 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/265, where GetParam() = (16UC1, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/265 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/266, where GetParam() = (16UC1, 5, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/266 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/267, where GetParam() = (16UC1, 5, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/267 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/268, where GetParam() = (16UC1, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/268 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/269, where GetParam() = (16UC1, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/269 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/270, where GetParam() = (16UC1, 5, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/270 (145 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/271, where GetParam() = (16UC1, 5, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/271 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/272, where GetParam() = (16UC1, 5, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/272 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/273, where GetParam() = (16UC1, 5, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/273 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/274, where GetParam() = (16UC1, 5, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/274 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/275, where GetParam() = (16UC1, 5, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/275 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/276, where GetParam() = (16UC1, 5, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/276 (159 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/277, where GetParam() = (16UC1, 5, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/277 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/278, where GetParam() = (16UC1, 5, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/278 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/279, where GetParam() = (16UC1, 5, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/279 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/280, where GetParam() = (16UC1, 5, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/280 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/281, where GetParam() = (16UC1, 5, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/281 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/282, where GetParam() = (16UC1, 5, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/282 (148 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/283, where GetParam() = (16UC1, 5, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/283 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/284, where GetParam() = (16UC1, 5, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/284 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/285, where GetParam() = (16UC1, 5, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/285 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/286, where GetParam() = (16UC1, 5, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/286 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/287, where GetParam() = (16UC1, 5, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/287 (9 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/288, where GetParam() = (16UC3, 1, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/288 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/289, where GetParam() = (16UC3, 1, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/289 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/290, where GetParam() = (16UC3, 1, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/290 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/291, where GetParam() = (16UC3, 1, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/291 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/292, where GetParam() = (16UC3, 1, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/292 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/293, where GetParam() = (16UC3, 1, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/293 (52 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/294, where GetParam() = (16UC3, 1, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/294 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/295, where GetParam() = (16UC3, 1, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/295 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/296, where GetParam() = (16UC3, 1, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/296 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/297, where GetParam() = (16UC3, 1, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/297 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/298, where GetParam() = (16UC3, 1, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/298 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/299, where GetParam() = (16UC3, 1, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/299 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/300, where GetParam() = (16UC3, 1, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/300 (57 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/301, where GetParam() = (16UC3, 1, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/301 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/302, where GetParam() = (16UC3, 1, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/302 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/303, where GetParam() = (16UC3, 1, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/303 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/304, where GetParam() = (16UC3, 1, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/304 (57 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/305, where GetParam() = (16UC3, 1, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/305 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/306, where GetParam() = (16UC3, 1, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/306 (57 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/307, where GetParam() = (16UC3, 1, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/307 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/308, where GetParam() = (16UC3, 1, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/308 (58 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/309, where GetParam() = (16UC3, 1, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/309 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/310, where GetParam() = (16UC3, 1, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/310 (57 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/311, where GetParam() = (16UC3, 1, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/311 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/312, where GetParam() = (16UC3, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/312 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/313, where GetParam() = (16UC3, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/313 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/314, where GetParam() = (16UC3, 3, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/314 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/315, where GetParam() = (16UC3, 3, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/315 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/316, where GetParam() = (16UC3, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/316 (50 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/317, where GetParam() = (16UC3, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/317 (50 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/318, where GetParam() = (16UC3, 3, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/318 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/319, where GetParam() = (16UC3, 3, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/319 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/320, where GetParam() = (16UC3, 3, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/320 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/321, where GetParam() = (16UC3, 3, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/321 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/322, where GetParam() = (16UC3, 3, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/322 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/323, where GetParam() = (16UC3, 3, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/323 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/324, where GetParam() = (16UC3, 3, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/324 (58 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/325, where GetParam() = (16UC3, 3, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/325 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/326, where GetParam() = (16UC3, 3, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/326 (58 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/327, where GetParam() = (16UC3, 3, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/327 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/328, where GetParam() = (16UC3, 3, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/328 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/329, where GetParam() = (16UC3, 3, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/329 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/330, where GetParam() = (16UC3, 3, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/330 (58 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/331, where GetParam() = (16UC3, 3, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/331 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/332, where GetParam() = (16UC3, 3, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/332 (58 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/333, where GetParam() = (16UC3, 3, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/333 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/334, where GetParam() = (16UC3, 3, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/334 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/335, where GetParam() = (16UC3, 3, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/335 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/336, where GetParam() = (16UC3, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/336 (168 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/337, where GetParam() = (16UC3, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/337 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/338, where GetParam() = (16UC3, 5, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/338 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/339, where GetParam() = (16UC3, 5, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/339 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/340, where GetParam() = (16UC3, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/340 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/341, where GetParam() = (16UC3, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/341 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/342, where GetParam() = (16UC3, 5, 0x0, BORDER_REPLICATE, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/342 (176 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/343, where GetParam() = (16UC3, 5, 0x0, BORDER_REPLICATE, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/343 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/344, where GetParam() = (16UC3, 5, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/344 (11 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/345, where GetParam() = (16UC3, 5, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/345 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/346, where GetParam() = (16UC3, 5, 0x0, BORDER_REPLICATE, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/346 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/347, where GetParam() = (16UC3, 5, 0x0, BORDER_REPLICATE, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/347 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/348, where GetParam() = (16UC3, 5, 0x0, BORDER_REFLECT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/348 (170 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/349, where GetParam() = (16UC3, 5, 0x0, BORDER_REFLECT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/349 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/350, where GetParam() = (16UC3, 5, 0x0, BORDER_REFLECT, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/350 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/351, where GetParam() = (16UC3, 5, 0x0, BORDER_REFLECT, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/351 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/352, where GetParam() = (16UC3, 5, 0x0, BORDER_REFLECT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/352 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/353, where GetParam() = (16UC3, 5, 0x0, BORDER_REFLECT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/353 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/354, where GetParam() = (16UC3, 5, 0x0, BORDER_REFLECT_101, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/354 (157 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/355, where GetParam() = (16UC3, 5, 0x0, BORDER_REFLECT_101, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/355 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/356, where GetParam() = (16UC3, 5, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/356 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/357, where GetParam() = (16UC3, 5, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/357 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/358, where GetParam() = (16UC3, 5, 0x0, BORDER_REFLECT_101, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/358 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/359, where GetParam() = (16UC3, 5, 0x0, BORDER_REFLECT_101, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/359 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/360, where GetParam() = (16UC4, 1, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/360 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/361, where GetParam() = (16UC4, 1, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/361 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/362, where GetParam() = (16UC4, 1, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/362 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/363, where GetParam() = (16UC4, 1, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/363 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/364, where GetParam() = (16UC4, 1, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/364 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/365, where GetParam() = (16UC4, 1, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/365 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/366, where GetParam() = (16UC4, 1, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/366 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/367, where GetParam() = (16UC4, 1, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/367 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/368, where GetParam() = (16UC4, 1, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/368 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/369, where GetParam() = (16UC4, 1, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/369 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/370, where GetParam() = (16UC4, 1, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/370 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/371, where GetParam() = (16UC4, 1, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/371 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/372, where GetParam() = (16UC4, 1, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/372 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/373, where GetParam() = (16UC4, 1, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/373 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/374, where GetParam() = (16UC4, 1, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/374 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/375, where GetParam() = (16UC4, 1, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/375 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/376, where GetParam() = (16UC4, 1, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/376 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/377, where GetParam() = (16UC4, 1, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/377 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/378, where GetParam() = (16UC4, 1, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/378 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/379, where GetParam() = (16UC4, 1, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/379 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/380, where GetParam() = (16UC4, 1, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/380 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/381, where GetParam() = (16UC4, 1, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/381 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/382, where GetParam() = (16UC4, 1, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/382 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/383, where GetParam() = (16UC4, 1, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/383 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/384, where GetParam() = (16UC4, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/384 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/385, where GetParam() = (16UC4, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/385 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/386, where GetParam() = (16UC4, 3, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/386 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/387, where GetParam() = (16UC4, 3, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/387 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/388, where GetParam() = (16UC4, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/388 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/389, where GetParam() = (16UC4, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/389 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/390, where GetParam() = (16UC4, 3, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/390 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/391, where GetParam() = (16UC4, 3, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/391 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/392, where GetParam() = (16UC4, 3, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/392 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/393, where GetParam() = (16UC4, 3, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/393 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/394, where GetParam() = (16UC4, 3, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/394 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/395, where GetParam() = (16UC4, 3, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/395 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/396, where GetParam() = (16UC4, 3, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/396 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/397, where GetParam() = (16UC4, 3, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/397 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/398, where GetParam() = (16UC4, 3, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/398 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/399, where GetParam() = (16UC4, 3, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/399 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/400, where GetParam() = (16UC4, 3, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/400 (54 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/401, where GetParam() = (16UC4, 3, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/401 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/402, where GetParam() = (16UC4, 3, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/402 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/403, where GetParam() = (16UC4, 3, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/403 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/404, where GetParam() = (16UC4, 3, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/404 (54 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/405, where GetParam() = (16UC4, 3, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/405 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/406, where GetParam() = (16UC4, 3, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/406 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/407, where GetParam() = (16UC4, 3, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/407 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/408, where GetParam() = (16UC4, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/408 (159 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/409, where GetParam() = (16UC4, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/409 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/410, where GetParam() = (16UC4, 5, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/410 (9 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/411, where GetParam() = (16UC4, 5, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/411 (12 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/412, where GetParam() = (16UC4, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/412 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/413, where GetParam() = (16UC4, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/413 (10 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/414, where GetParam() = (16UC4, 5, 0x0, BORDER_REPLICATE, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/414 (153 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/415, where GetParam() = (16UC4, 5, 0x0, BORDER_REPLICATE, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/415 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/416, where GetParam() = (16UC4, 5, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/416 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/417, where GetParam() = (16UC4, 5, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/417 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/418, where GetParam() = (16UC4, 5, 0x0, BORDER_REPLICATE, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/418 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/419, where GetParam() = (16UC4, 5, 0x0, BORDER_REPLICATE, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/419 (10 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/420, where GetParam() = (16UC4, 5, 0x0, BORDER_REFLECT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/420 (163 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/421, where GetParam() = (16UC4, 5, 0x0, BORDER_REFLECT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/421 (10 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/422, where GetParam() = (16UC4, 5, 0x0, BORDER_REFLECT, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/422 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/423, where GetParam() = (16UC4, 5, 0x0, BORDER_REFLECT, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/423 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/424, where GetParam() = (16UC4, 5, 0x0, BORDER_REFLECT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/424 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/425, where GetParam() = (16UC4, 5, 0x0, BORDER_REFLECT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/425 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/426, where GetParam() = (16UC4, 5, 0x0, BORDER_REFLECT_101, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/426 (154 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/427, where GetParam() = (16UC4, 5, 0x0, BORDER_REFLECT_101, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/427 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/428, where GetParam() = (16UC4, 5, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/428 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/429, where GetParam() = (16UC4, 5, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/429 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/430, where GetParam() = (16UC4, 5, 0x0, BORDER_REFLECT_101, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/430 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/431, where GetParam() = (16UC4, 5, 0x0, BORDER_REFLECT_101, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/431 (12 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/432, where GetParam() = (32FC1, 1, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/432 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/433, where GetParam() = (32FC1, 1, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/433 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/434, where GetParam() = (32FC1, 1, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/434 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/435, where GetParam() = (32FC1, 1, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/435 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/436, where GetParam() = (32FC1, 1, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/436 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/437, where GetParam() = (32FC1, 1, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/437 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/438, where GetParam() = (32FC1, 1, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/438 (84 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/439, where GetParam() = (32FC1, 1, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/439 (40 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/440, where GetParam() = (32FC1, 1, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/440 (39 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/441, where GetParam() = (32FC1, 1, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/441 (39 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/442, where GetParam() = (32FC1, 1, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/442 (40 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/443, where GetParam() = (32FC1, 1, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/443 (40 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/444, where GetParam() = (32FC1, 1, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/444 (52 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/445, where GetParam() = (32FC1, 1, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/445 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/446, where GetParam() = (32FC1, 1, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/446 (53 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/447, where GetParam() = (32FC1, 1, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/447 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/448, where GetParam() = (32FC1, 1, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/448 (50 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/449, where GetParam() = (32FC1, 1, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/449 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/450, where GetParam() = (32FC1, 1, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/450 (52 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/451, where GetParam() = (32FC1, 1, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/451 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/452, where GetParam() = (32FC1, 1, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/452 (52 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/453, where GetParam() = (32FC1, 1, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/453 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/454, where GetParam() = (32FC1, 1, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/454 (53 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/455, where GetParam() = (32FC1, 1, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/455 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/456, where GetParam() = (32FC1, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/456 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/457, where GetParam() = (32FC1, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/457 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/458, where GetParam() = (32FC1, 3, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/458 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/459, where GetParam() = (32FC1, 3, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/459 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/460, where GetParam() = (32FC1, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/460 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/461, where GetParam() = (32FC1, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/461 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/462, where GetParam() = (32FC1, 3, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/462 (38 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/463, where GetParam() = (32FC1, 3, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/463 (40 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/464, where GetParam() = (32FC1, 3, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/464 (40 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/465, where GetParam() = (32FC1, 3, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/465 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/466, where GetParam() = (32FC1, 3, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/466 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/467, where GetParam() = (32FC1, 3, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/467 (40 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/468, where GetParam() = (32FC1, 3, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/468 (50 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/469, where GetParam() = (32FC1, 3, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/469 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/470, where GetParam() = (32FC1, 3, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/470 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/471, where GetParam() = (32FC1, 3, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/471 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/472, where GetParam() = (32FC1, 3, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/472 (50 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/473, where GetParam() = (32FC1, 3, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/473 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/474, where GetParam() = (32FC1, 3, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/474 (50 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/475, where GetParam() = (32FC1, 3, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/475 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/476, where GetParam() = (32FC1, 3, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/476 (50 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/477, where GetParam() = (32FC1, 3, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/477 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/478, where GetParam() = (32FC1, 3, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/478 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/479, where GetParam() = (32FC1, 3, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/479 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/480, where GetParam() = (32FC1, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/480 (152 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/481, where GetParam() = (32FC1, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/481 (10 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/482, where GetParam() = (32FC1, 5, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/482 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/483, where GetParam() = (32FC1, 5, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/483 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/484, where GetParam() = (32FC1, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/484 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/485, where GetParam() = (32FC1, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/485 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/486, where GetParam() = (32FC1, 5, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/486 (118 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/487, where GetParam() = (32FC1, 5, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/487 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/488, where GetParam() = (32FC1, 5, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/488 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/489, where GetParam() = (32FC1, 5, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/489 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/490, where GetParam() = (32FC1, 5, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/490 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/491, where GetParam() = (32FC1, 5, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/491 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/492, where GetParam() = (32FC1, 5, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/492 (155 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/493, where GetParam() = (32FC1, 5, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/493 (9 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/494, where GetParam() = (32FC1, 5, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/494 (9 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/495, where GetParam() = (32FC1, 5, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/495 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/496, where GetParam() = (32FC1, 5, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/496 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/497, where GetParam() = (32FC1, 5, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/497 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/498, where GetParam() = (32FC1, 5, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/498 (142 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/499, where GetParam() = (32FC1, 5, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/499 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/500, where GetParam() = (32FC1, 5, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/500 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/501, where GetParam() = (32FC1, 5, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/501 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/502, where GetParam() = (32FC1, 5, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/502 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/503, where GetParam() = (32FC1, 5, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/503 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/504, where GetParam() = (32FC3, 1, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/504 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/505, where GetParam() = (32FC3, 1, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/505 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/506, where GetParam() = (32FC3, 1, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/506 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/507, where GetParam() = (32FC3, 1, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/507 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/508, where GetParam() = (32FC3, 1, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/508 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/509, where GetParam() = (32FC3, 1, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/509 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/510, where GetParam() = (32FC3, 1, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/510 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/511, where GetParam() = (32FC3, 1, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/511 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/512, where GetParam() = (32FC3, 1, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/512 (40 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/513, where GetParam() = (32FC3, 1, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/513 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/514, where GetParam() = (32FC3, 1, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/514 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/515, where GetParam() = (32FC3, 1, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/515 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/516, where GetParam() = (32FC3, 1, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/516 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/517, where GetParam() = (32FC3, 1, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/517 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/518, where GetParam() = (32FC3, 1, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/518 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/519, where GetParam() = (32FC3, 1, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/519 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/520, where GetParam() = (32FC3, 1, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/520 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/521, where GetParam() = (32FC3, 1, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/521 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/522, where GetParam() = (32FC3, 1, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/522 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/523, where GetParam() = (32FC3, 1, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/523 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/524, where GetParam() = (32FC3, 1, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/524 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/525, where GetParam() = (32FC3, 1, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/525 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/526, where GetParam() = (32FC3, 1, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/526 (57 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/527, where GetParam() = (32FC3, 1, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/527 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/528, where GetParam() = (32FC3, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/528 (50 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/529, where GetParam() = (32FC3, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/529 (52 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/530, where GetParam() = (32FC3, 3, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/530 (50 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/531, where GetParam() = (32FC3, 3, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/531 (52 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/532, where GetParam() = (32FC3, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/532 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/533, where GetParam() = (32FC3, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/533 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/534, where GetParam() = (32FC3, 3, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/534 (41 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/535, where GetParam() = (32FC3, 3, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/535 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/536, where GetParam() = (32FC3, 3, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/536 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/537, where GetParam() = (32FC3, 3, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/537 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/538, where GetParam() = (32FC3, 3, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/538 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/539, where GetParam() = (32FC3, 3, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/539 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/540, where GetParam() = (32FC3, 3, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/540 (58 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/541, where GetParam() = (32FC3, 3, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/541 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/542, where GetParam() = (32FC3, 3, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/542 (57 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/543, where GetParam() = (32FC3, 3, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/543 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/544, where GetParam() = (32FC3, 3, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/544 (57 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/545, where GetParam() = (32FC3, 3, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/545 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/546, where GetParam() = (32FC3, 3, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/546 (57 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/547, where GetParam() = (32FC3, 3, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/547 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/548, where GetParam() = (32FC3, 3, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/548 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/549, where GetParam() = (32FC3, 3, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/549 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/550, where GetParam() = (32FC3, 3, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/550 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/551, where GetParam() = (32FC3, 3, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/551 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/552, where GetParam() = (32FC3, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/552 (163 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/553, where GetParam() = (32FC3, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/553 (9 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/554, where GetParam() = (32FC3, 5, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/554 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/555, where GetParam() = (32FC3, 5, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/555 (10 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/556, where GetParam() = (32FC3, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/556 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/557, where GetParam() = (32FC3, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/557 (10 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/558, where GetParam() = (32FC3, 5, 0x0, BORDER_REPLICATE, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/558 (158 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/559, where GetParam() = (32FC3, 5, 0x0, BORDER_REPLICATE, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/559 (10 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/560, where GetParam() = (32FC3, 5, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/560 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/561, where GetParam() = (32FC3, 5, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/561 (10 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/562, where GetParam() = (32FC3, 5, 0x0, BORDER_REPLICATE, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/562 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/563, where GetParam() = (32FC3, 5, 0x0, BORDER_REPLICATE, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/563 (10 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/564, where GetParam() = (32FC3, 5, 0x0, BORDER_REFLECT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/564 (174 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/565, where GetParam() = (32FC3, 5, 0x0, BORDER_REFLECT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/565 (16 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/566, where GetParam() = (32FC3, 5, 0x0, BORDER_REFLECT, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/566 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/567, where GetParam() = (32FC3, 5, 0x0, BORDER_REFLECT, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/567 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/568, where GetParam() = (32FC3, 5, 0x0, BORDER_REFLECT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/568 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/569, where GetParam() = (32FC3, 5, 0x0, BORDER_REFLECT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/569 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/570, where GetParam() = (32FC3, 5, 0x0, BORDER_REFLECT_101, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/570 (160 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/571, where GetParam() = (32FC3, 5, 0x0, BORDER_REFLECT_101, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/571 (12 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/572, where GetParam() = (32FC3, 5, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/572 (11 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/573, where GetParam() = (32FC3, 5, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/573 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/574, where GetParam() = (32FC3, 5, 0x0, BORDER_REFLECT_101, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/574 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/575, where GetParam() = (32FC3, 5, 0x0, BORDER_REFLECT_101, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/575 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/576, where GetParam() = (32FC4, 1, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/576 (50 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/577, where GetParam() = (32FC4, 1, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/577 (50 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/578, where GetParam() = (32FC4, 1, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/578 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/579, where GetParam() = (32FC4, 1, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/579 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/580, where GetParam() = (32FC4, 1, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/580 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/581, where GetParam() = (32FC4, 1, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/581 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/582, where GetParam() = (32FC4, 1, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/582 (43 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/583, where GetParam() = (32FC4, 1, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/583 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/584, where GetParam() = (32FC4, 1, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/584 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/585, where GetParam() = (32FC4, 1, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/585 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/586, where GetParam() = (32FC4, 1, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/586 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/587, where GetParam() = (32FC4, 1, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/587 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/588, where GetParam() = (32FC4, 1, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/588 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/589, where GetParam() = (32FC4, 1, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/589 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/590, where GetParam() = (32FC4, 1, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/590 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/591, where GetParam() = (32FC4, 1, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/591 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/592, where GetParam() = (32FC4, 1, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/592 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/593, where GetParam() = (32FC4, 1, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/593 (44 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/594, where GetParam() = (32FC4, 1, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/594 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/595, where GetParam() = (32FC4, 1, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/595 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/596, where GetParam() = (32FC4, 1, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/596 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/597, where GetParam() = (32FC4, 1, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/597 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/598, where GetParam() = (32FC4, 1, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/598 (58 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/599, where GetParam() = (32FC4, 1, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/599 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/600, where GetParam() = (32FC4, 3, 0x0, BORDER_CONSTANT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/600 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/601, where GetParam() = (32FC4, 3, 0x0, BORDER_CONSTANT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/601 (54 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/602, where GetParam() = (32FC4, 3, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/602 (52 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/603, where GetParam() = (32FC4, 3, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/603 (51 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/604, where GetParam() = (32FC4, 3, 0x0, BORDER_CONSTANT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/604 (50 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/605, where GetParam() = (32FC4, 3, 0x0, BORDER_CONSTANT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/605 (52 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/606, where GetParam() = (32FC4, 3, 0x0, BORDER_REPLICATE, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/606 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/607, where GetParam() = (32FC4, 3, 0x0, BORDER_REPLICATE, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/607 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/608, where GetParam() = (32FC4, 3, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/608 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/609, where GetParam() = (32FC4, 3, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/609 (46 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/610, where GetParam() = (32FC4, 3, 0x0, BORDER_REPLICATE, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/610 (42 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/611, where GetParam() = (32FC4, 3, 0x0, BORDER_REPLICATE, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/611 (45 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/612, where GetParam() = (32FC4, 3, 0x0, BORDER_REFLECT, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/612 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/613, where GetParam() = (32FC4, 3, 0x0, BORDER_REFLECT, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/613 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/614, where GetParam() = (32FC4, 3, 0x0, BORDER_REFLECT, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/614 (59 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/615, where GetParam() = (32FC4, 3, 0x0, BORDER_REFLECT, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/615 (49 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/616, where GetParam() = (32FC4, 3, 0x0, BORDER_REFLECT, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/616 (53 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/617, where GetParam() = (32FC4, 3, 0x0, BORDER_REFLECT, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/617 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/618, where GetParam() = (32FC4, 3, 0x0, BORDER_REFLECT_101, 1, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/618 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/619, where GetParam() = (32FC4, 3, 0x0, BORDER_REFLECT_101, 1, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/619 (47 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/620, where GetParam() = (32FC4, 3, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/620 (56 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/621, where GetParam() = (32FC4, 3, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/621 (48 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/622, where GetParam() = (32FC4, 3, 0x0, BORDER_REFLECT_101, 3, false, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/622 (55 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/623, where GetParam() = (32FC4, 3, 0x0, BORDER_REFLECT_101, 3, true, 1)
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/623 (52 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/624, where GetParam() = (32FC4, 5, 0x0, BORDER_CONSTANT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/624 (162 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/625, where GetParam() = (32FC4, 5, 0x0, BORDER_CONSTANT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/625 (12 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/626, where GetParam() = (32FC4, 5, 0x0, BORDER_CONSTANT, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/626 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/627, where GetParam() = (32FC4, 5, 0x0, BORDER_CONSTANT, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/627 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/628, where GetParam() = (32FC4, 5, 0x0, BORDER_CONSTANT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/628 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/629, where GetParam() = (32FC4, 5, 0x0, BORDER_CONSTANT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/629 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/630, where GetParam() = (32FC4, 5, 0x0, BORDER_REPLICATE, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/630 (143 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/631, where GetParam() = (32FC4, 5, 0x0, BORDER_REPLICATE, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/631 (8 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/632, where GetParam() = (32FC4, 5, 0x0, BORDER_REPLICATE, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/632 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/633, where GetParam() = (32FC4, 5, 0x0, BORDER_REPLICATE, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/633 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/634, where GetParam() = (32FC4, 5, 0x0, BORDER_REPLICATE, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/634 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/635, where GetParam() = (32FC4, 5, 0x0, BORDER_REPLICATE, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/635 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/636, where GetParam() = (32FC4, 5, 0x0, BORDER_REFLECT, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/636 (162 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/637, where GetParam() = (32FC4, 5, 0x0, BORDER_REFLECT, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/637 (11 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/638, where GetParam() = (32FC4, 5, 0x0, BORDER_REFLECT, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/638 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/639, where GetParam() = (32FC4, 5, 0x0, BORDER_REFLECT, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/639 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/640, where GetParam() = (32FC4, 5, 0x0, BORDER_REFLECT, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/640 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/641, where GetParam() = (32FC4, 5, 0x0, BORDER_REFLECT, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/641 (9 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/642, where GetParam() = (32FC4, 5, 0x0, BORDER_REFLECT_101, 1, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/642 (158 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/643, where GetParam() = (32FC4, 5, 0x0, BORDER_REFLECT_101, 1, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/643 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/644, where GetParam() = (32FC4, 5, 0x0, BORDER_REFLECT_101, 0.2, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/644 (5 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/645, where GetParam() = (32FC4, 5, 0x0, BORDER_REFLECT_101, 0.2, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/645 (7 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/646, where GetParam() = (32FC4, 5, 0x0, BORDER_REFLECT_101, 3, false, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/646 (6 ms)
+[ RUN      ] OCL_Filter/LaplacianTest.Accuracy/647, where GetParam() = (32FC4, 5, 0x0, BORDER_REFLECT_101, 3, true, 1)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('row_filter', dims=2, globalsize=16x32x1, localsize=16x16x1) sync=false
+[       OK ] OCL_Filter/LaplacianTest.Accuracy/647 (8 ms)
+[----------] 648 tests from OCL_Filter/LaplacianTest (28177 ms total)
+
+[----------] Global test environment tear-down
+[==========] 648 tests from 1 test case ran. (28179 ms total)
+[  PASSED  ] 648 tests.
