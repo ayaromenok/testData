@@ -1,0 +1,738 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate*
+[==========] Running 144 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 144 tests from OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/0, where GetParam() = (640x480, 11x11, TM_SQDIFF, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=33.55   median=33.51   min=33.43   stddev=0.13 (0.4%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/0 (491 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/1, where GetParam() = (640x480, 11x11, TM_SQDIFF, 8UC3)
+[ PERFSTAT ]    (samples=13   mean=65.38   median=64.76   min=64.60   stddev=1.58 (2.4%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/1 (897 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/2, where GetParam() = (640x480, 11x11, TM_SQDIFF, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=41.40   median=41.37   min=41.24   stddev=0.10 (0.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/2 (595 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/3, where GetParam() = (640x480, 11x11, TM_SQDIFF, 32FC3)
+[ PERFSTAT ]    (samples=13   mean=71.76   median=70.95   min=70.69   stddev=1.92 (2.7%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/3 (1004 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/4, where GetParam() = (640x480, 11x11, TM_SQDIFF_NORMED, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=57.62   median=57.74   min=57.08   stddev=0.42 (0.7%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/4 (936 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/5, where GetParam() = (640x480, 11x11, TM_SQDIFF_NORMED, 8UC3)
+.
+[ PERFSTAT ]    (samples=100   mean=104.58   median=106.34   min=81.35   stddev=5.20 (5.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/5 (10645 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/6, where GetParam() = (640x480, 11x11, TM_SQDIFF_NORMED, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=54.14   median=54.26   min=53.07   stddev=0.66 (1.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/6 (846 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/7, where GetParam() = (640x480, 11x11, TM_SQDIFF_NORMED, 32FC3)
+[ PERFSTAT ]    (samples=13   mean=116.97   median=115.57   min=114.03   stddev=2.56 (2.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/7 (1654 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/8, where GetParam() = (640x480, 11x11, TM_CCORR, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=41.38   median=41.35   min=41.19   stddev=0.18 (0.4%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/8 (428 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/9, where GetParam() = (640x480, 11x11, TM_CCORR, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=64.92   median=64.86   min=64.62   stddev=0.34 (0.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/9 (665 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/10, where GetParam() = (640x480, 11x11, TM_CCORR, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=33.80   median=33.79   min=33.57   stddev=0.14 (0.4%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/10 (356 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/11, where GetParam() = (640x480, 11x11, TM_CCORR, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=72.16   median=71.70   min=71.50   stddev=1.49 (2.1%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/11 (753 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/12, where GetParam() = (640x480, 11x11, TM_CCORR_NORMED, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=57.87   median=57.89   min=57.63   stddev=0.11 (0.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/12 (804 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/13, where GetParam() = (640x480, 11x11, TM_CCORR_NORMED, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=98.14   median=94.22   min=81.34   stddev=10.12 (10.3%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/13 (9978 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/14, where GetParam() = (640x480, 11x11, TM_CCORR_NORMED, 32FC1)
+[ PERFSTAT ]    (samples=18   mean=52.45   median=52.73   min=48.62   stddev=1.54 (2.9%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/14 (987 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/15, where GetParam() = (640x480, 11x11, TM_CCORR_NORMED, 32FC3)
+[ PERFSTAT ]    (samples=13   mean=116.21   median=115.03   min=114.37   stddev=2.73 (2.3%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/15 (1579 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/16, where GetParam() = (640x480, 11x11, TM_CCOEFF, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=53.48   median=53.75   min=52.35   stddev=0.65 (1.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/16 (805 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/17, where GetParam() = (640x480, 11x11, TM_CCOEFF, 8UC3)
+[ PERFSTAT ]    (samples=13   mean=95.05   median=94.59   min=94.13   stddev=1.22 (1.3%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/17 (1288 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/18, where GetParam() = (640x480, 11x11, TM_CCOEFF, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=47.96   median=47.87   min=47.68   stddev=0.30 (0.6%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/18 (499 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/19, where GetParam() = (640x480, 11x11, TM_CCOEFF, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=105.06   median=104.95   min=104.54   stddev=0.53 (0.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/19 (1083 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/20, where GetParam() = (640x480, 11x11, TM_CCOEFF_NORMED, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=65.74   median=65.76   min=64.31   stddev=1.11 (1.7%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/20 (1011 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/21, where GetParam() = (640x480, 11x11, TM_CCOEFF_NORMED, 8UC3)
+[ PERFSTAT ]    (samples=13   mean=119.54   median=119.42   min=118.34   stddev=0.74 (0.6%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/21 (1682 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/22, where GetParam() = (640x480, 11x11, TM_CCOEFF_NORMED, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=60.69   median=60.50   min=59.34   stddev=1.10 (1.8%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/22 (848 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/23, where GetParam() = (640x480, 11x11, TM_CCOEFF_NORMED, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=130.38   median=130.17   min=129.08   stddev=1.13 (0.9%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/23 (1335 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/24, where GetParam() = (640x480, 16x16, TM_SQDIFF, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=67.76   median=67.56   min=67.35   stddev=0.48 (0.7%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/24 (690 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/25, where GetParam() = (640x480, 16x16, TM_SQDIFF, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=132.83   median=132.89   min=132.55   stddev=0.17 (0.1%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/25 (1345 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/26, where GetParam() = (640x480, 16x16, TM_SQDIFF, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=82.68   median=82.37   min=82.19   stddev=0.84 (1.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/26 (845 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/27, where GetParam() = (640x480, 16x16, TM_SQDIFF, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=145.11   median=144.68   min=144.48   stddev=1.02 (0.7%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/27 (1481 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/28, where GetParam() = (640x480, 16x16, TM_SQDIFF_NORMED, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=99.70   median=99.13   min=98.81   stddev=1.87 (1.9%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/28 (1009 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/29, where GetParam() = (640x480, 16x16, TM_SQDIFF_NORMED, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=172.91   median=172.84   min=172.16   stddev=0.68 (0.4%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/29 (1746 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/30, where GetParam() = (640x480, 16x16, TM_SQDIFF_NORMED, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=86.19   median=86.26   min=85.15   stddev=0.78 (0.9%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/30 (880 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/31, where GetParam() = (640x480, 16x16, TM_SQDIFF_NORMED, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=189.96   median=188.44   min=187.94   stddev=4.61 (2.4%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/31 (1931 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/32, where GetParam() = (640x480, 16x16, TM_CCORR, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=82.92   median=82.86   min=82.70   stddev=0.15 (0.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/32 (841 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/33, where GetParam() = (640x480, 16x16, TM_CCORR, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=131.95   median=131.90   min=131.77   stddev=0.19 (0.1%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/33 (1337 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/34, where GetParam() = (640x480, 16x16, TM_CCORR, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=67.11   median=66.98   min=66.80   stddev=0.32 (0.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/34 (689 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/35, where GetParam() = (640x480, 16x16, TM_CCORR, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=145.19   median=145.13   min=144.88   stddev=0.30 (0.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/35 (1483 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/36, where GetParam() = (640x480, 16x16, TM_CCORR_NORMED, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=99.34   median=99.17   min=98.78   stddev=0.71 (0.7%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/36 (1005 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/37, where GetParam() = (640x480, 16x16, TM_CCORR_NORMED, 8UC3)
+.
+[ PERFSTAT ]    (samples=100   mean=172.95   median=175.99   min=148.32   stddev=7.99 (4.6%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/37 (17375 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/38, where GetParam() = (640x480, 16x16, TM_CCORR_NORMED, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=88.62   median=88.19   min=86.71   stddev=1.66 (1.9%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/38 (909 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/39, where GetParam() = (640x480, 16x16, TM_CCORR_NORMED, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=191.76   median=191.54   min=190.65   stddev=0.94 (0.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/39 (1950 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/40, where GetParam() = (640x480, 16x16, TM_CCOEFF, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=93.92   median=93.78   min=93.61   stddev=0.38 (0.4%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/40 (953 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/41, where GetParam() = (640x480, 16x16, TM_CCOEFF, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=163.32   median=161.99   min=161.91   stddev=3.31 (2.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/41 (1650 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/42, where GetParam() = (640x480, 16x16, TM_CCOEFF, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=81.49   median=80.62   min=79.90   stddev=2.24 (2.8%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/42 (836 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/43, where GetParam() = (640x480, 16x16, TM_CCOEFF, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=179.47   median=179.15   min=178.88   stddev=1.16 (0.6%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/43 (1826 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/44, where GetParam() = (640x480, 16x16, TM_CCOEFF_NORMED, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=106.47   median=106.17   min=105.73   stddev=0.72 (0.7%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/44 (1500 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/45, where GetParam() = (640x480, 16x16, TM_CCOEFF_NORMED, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=186.95   median=185.88   min=184.65   stddev=2.86 (1.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/45 (1888 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/46, where GetParam() = (640x480, 16x16, TM_CCOEFF_NORMED, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=92.93   median=93.03   min=91.91   stddev=0.68 (0.7%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/46 (1266 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/47, where GetParam() = (640x480, 16x16, TM_CCOEFF_NORMED, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=203.04   median=202.18   min=201.51   stddev=1.69 (0.8%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/47 (2062 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/48, where GetParam() = (640x480, 41x41, TM_SQDIFF, 8UC1)
+[ PERFSTAT ]    (samples=58   mean=103.91   median=103.75   min=85.38   stddev=3.11 (3.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/48 (7637 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/49, where GetParam() = (640x480, 41x41, TM_SQDIFF, 8UC3)
+.
+[ PERFSTAT ]    (samples=29   mean=322.14   median=325.07   min=302.18   stddev=9.51 (3.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/49 (10701 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/50, where GetParam() = (640x480, 41x41, TM_SQDIFF, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=96.00   median=96.29   min=93.15   stddev=1.78 (1.9%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/50 (1322 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/51, where GetParam() = (640x480, 41x41, TM_SQDIFF, 32FC3)
+.
+[ PERFSTAT ]    (samples=41   mean=398.96   median=401.50   min=356.20   stddev=11.84 (3.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/51 (16469 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/52, where GetParam() = (640x480, 41x41, TM_SQDIFF_NORMED, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=105.85   median=105.50   min=104.04   stddev=1.72 (1.6%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/52 (1425 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/53, where GetParam() = (640x480, 41x41, TM_SQDIFF_NORMED, 8UC3)
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=342.17   median=331.31   min=316.91   stddev=18.91 (5.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/53 (34542 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/54, where GetParam() = (640x480, 41x41, TM_SQDIFF_NORMED, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=106.12   median=105.81   min=105.21   stddev=0.86 (0.8%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/54 (1444 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/55, where GetParam() = (640x480, 41x41, TM_SQDIFF_NORMED, 32FC3)
+[ PERFSTAT ]    (samples=13   mean=399.97   median=400.46   min=385.40   stddev=5.37 (1.3%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/55 (5328 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/56, where GetParam() = (640x480, 41x41, TM_CCORR, 8UC1)
+[ PERFSTAT ]    (samples=32   mean=93.08   median=92.89   min=82.04   stddev=2.75 (3.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/56 (3098 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/57, where GetParam() = (640x480, 41x41, TM_CCORR, 8UC3)
+[ PERFSTAT ]    (samples=13   mean=334.98   median=335.96   min=324.09   stddev=5.48 (1.6%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/57 (4407 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/58, where GetParam() = (640x480, 41x41, TM_CCORR, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=91.60   median=91.52   min=90.32   stddev=1.19 (1.3%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/58 (1244 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/59, where GetParam() = (640x480, 41x41, TM_CCORR, 32FC3)
+[ PERFSTAT ]    (samples=13   mean=333.23   median=334.66   min=322.16   stddev=5.73 (1.7%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/59 (4394 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/60, where GetParam() = (640x480, 41x41, TM_CCORR_NORMED, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=97.02   median=93.87   min=78.77   stddev=6.99 (7.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/60 (9926 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/61, where GetParam() = (640x480, 41x41, TM_CCORR_NORMED, 8UC3)
+[ PERFSTAT ]    (samples=13   mean=322.57   median=324.47   min=312.06   stddev=5.85 (1.8%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/61 (4305 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/62, where GetParam() = (640x480, 41x41, TM_CCORR_NORMED, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=95.65   median=95.97   min=94.02   stddev=0.91 (1.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/62 (1297 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/63, where GetParam() = (640x480, 41x41, TM_CCORR_NORMED, 32FC3)
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=397.62   median=400.87   min=345.28   stddev=12.61 (3.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/63 (40130 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/64, where GetParam() = (640x480, 41x41, TM_CCOEFF, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=100.06   median=99.33   min=98.60   stddev=2.09 (2.1%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/64 (1341 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/65, where GetParam() = (640x480, 41x41, TM_CCOEFF, 8UC3)
+[ PERFSTAT ]    (samples=11   mean=366.11   median=363.08   min=360.36   stddev=10.90 (3.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/65 (4043 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/66, where GetParam() = (640x480, 41x41, TM_CCOEFF, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=103.22   median=103.01   min=100.00   stddev=2.31 (2.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/66 (1388 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/67, where GetParam() = (640x480, 41x41, TM_CCOEFF, 32FC3)
+[ PERFSTAT ]    (samples=13   mean=363.51   median=359.91   min=355.62   stddev=9.08 (2.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/67 (4863 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/68, where GetParam() = (640x480, 41x41, TM_CCOEFF_NORMED, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=111.80   median=111.84   min=110.20   stddev=1.09 (1.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/68 (1496 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/69, where GetParam() = (640x480, 41x41, TM_CCOEFF_NORMED, 8UC3)
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=387.18   median=387.89   min=337.26   stddev=25.18 (6.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/69 (40258 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/70, where GetParam() = (640x480, 41x41, TM_CCOEFF_NORMED, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=111.27   median=110.89   min=108.72   stddev=1.68 (1.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/70 (1488 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/71, where GetParam() = (640x480, 41x41, TM_CCOEFF_NORMED, 32FC3)
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=390.33   median=399.81   min=340.81   stddev=23.18 (5.9%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/71 (39524 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/72, where GetParam() = (1280x1024, 11x11, TM_SQDIFF, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=142.94   median=142.53   min=141.65   stddev=1.25 (0.9%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/72 (1472 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/73, where GetParam() = (1280x1024, 11x11, TM_SQDIFF, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=278.80   median=278.17   min=277.65   stddev=1.53 (0.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/73 (2854 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/74, where GetParam() = (1280x1024, 11x11, TM_SQDIFF, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=173.42   median=172.99   min=172.86   stddev=1.16 (0.7%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/74 (1804 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/75, where GetParam() = (1280x1024, 11x11, TM_SQDIFF, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=304.96   median=304.90   min=304.47   stddev=0.32 (0.1%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/75 (3180 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/76, where GetParam() = (1280x1024, 11x11, TM_SQDIFF_NORMED, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=247.08   median=245.57   min=243.13   stddev=5.58 (2.3%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/76 (2516 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/77, where GetParam() = (1280x1024, 11x11, TM_SQDIFF_NORMED, 8UC3)
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=394.61   median=393.83   min=343.02   stddev=30.05 (7.6%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/77 (40080 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/78, where GetParam() = (1280x1024, 11x11, TM_SQDIFF_NORMED, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=209.66   median=207.48   min=206.40   stddev=5.25 (2.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/78 (2149 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/79, where GetParam() = (1280x1024, 11x11, TM_SQDIFF_NORMED, 32FC3)
+[ PERFSTAT ]    (samples=19   mean=463.41   median=465.81   min=422.81   stddev=13.64 (2.9%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/79 (8944 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/80, where GetParam() = (1280x1024, 11x11, TM_CCORR, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=174.09   median=174.06   min=173.66   stddev=0.30 (0.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/80 (1802 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/81, where GetParam() = (1280x1024, 11x11, TM_CCORR, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=275.80   median=275.65   min=275.48   stddev=0.42 (0.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/81 (2822 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/82, where GetParam() = (1280x1024, 11x11, TM_CCORR, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=141.35   median=141.25   min=140.96   stddev=0.39 (0.3%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/82 (1491 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/83, where GetParam() = (1280x1024, 11x11, TM_CCORR, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=308.04   median=308.01   min=307.75   stddev=0.20 (0.1%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/83 (3210 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/84, where GetParam() = (1280x1024, 11x11, TM_CCORR_NORMED, 8UC1)
+.
+.
+[ PERFSTAT ]    (samples=100   mean=235.58   median=243.16   min=200.60   stddev=15.15 (6.4%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/84 (23739 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/85, where GetParam() = (1280x1024, 11x11, TM_CCORR_NORMED, 8UC3)
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=392.85   median=394.14   min=343.27   stddev=29.85 (7.6%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/85 (39856 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/86, where GetParam() = (1280x1024, 11x11, TM_CCORR_NORMED, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=206.53   median=207.85   min=195.32   stddev=6.17 (3.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/86 (2119 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/87, where GetParam() = (1280x1024, 11x11, TM_CCORR_NORMED, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=470.36   median=468.64   min=463.89   stddev=6.16 (1.3%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/87 (4818 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/88, where GetParam() = (1280x1024, 11x11, TM_CCOEFF, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=215.43   median=214.10   min=213.47   stddev=2.63 (1.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/88 (2215 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/89, where GetParam() = (1280x1024, 11x11, TM_CCOEFF, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=400.58   median=397.78   min=391.49   stddev=7.58 (1.9%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/89 (4076 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/90, where GetParam() = (1280x1024, 11x11, TM_CCOEFF, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=190.18   median=190.01   min=185.84   stddev=2.37 (1.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/90 (1956 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/91, where GetParam() = (1280x1024, 11x11, TM_CCOEFF, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=449.82   median=449.23   min=439.88   stddev=7.36 (1.6%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/91 (4609 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/92, where GetParam() = (1280x1024, 11x11, TM_CCOEFF_NORMED, 8UC1)
+.
+.
+[ PERFSTAT ]    (samples=100   mean=251.71   median=260.89   min=207.84   stddev=17.74 (7.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/92 (25384 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/93, where GetParam() = (1280x1024, 11x11, TM_CCOEFF_NORMED, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=475.51   median=474.65   min=462.28   stddev=9.53 (2.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/93 (4811 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/94, where GetParam() = (1280x1024, 11x11, TM_CCOEFF_NORMED, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=219.20   median=219.32   min=204.66   stddev=6.49 (3.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/94 (2254 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/95, where GetParam() = (1280x1024, 11x11, TM_CCOEFF_NORMED, 32FC3)
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=504.77   median=510.09   min=388.56   stddev=19.47 (3.9%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/95 (50729 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/96, where GetParam() = (1280x1024, 16x16, TM_SQDIFF, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=290.03   median=290.03   min=288.67   stddev=0.56 (0.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/96 (2955 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/97, where GetParam() = (1280x1024, 16x16, TM_SQDIFF, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=575.13   median=575.17   min=574.18   stddev=0.83 (0.1%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/97 (5812 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/98, where GetParam() = (1280x1024, 16x16, TM_SQDIFF, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=354.43   median=354.36   min=353.79   stddev=0.47 (0.1%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/98 (3608 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/99, where GetParam() = (1280x1024, 16x16, TM_SQDIFF, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=637.46   median=637.29   min=636.13   stddev=0.79 (0.1%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/99 (6497 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/100, where GetParam() = (1280x1024, 16x16, TM_SQDIFF_NORMED, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=430.15   median=429.57   min=427.16   stddev=2.39 (0.6%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/100 (4351 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/101, where GetParam() = (1280x1024, 16x16, TM_SQDIFF_NORMED, 8UC3)
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=712.68   median=711.47   min=639.16   stddev=33.93 (4.8%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/101 (71752 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/102, where GetParam() = (1280x1024, 16x16, TM_SQDIFF_NORMED, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=355.63   median=353.33   min=352.69   stddev=6.43 (1.8%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/102 (3608 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/103, where GetParam() = (1280x1024, 16x16, TM_SQDIFF_NORMED, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=801.94   median=799.17   min=796.71   stddev=6.74 (0.8%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/103 (8128 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/104, where GetParam() = (1280x1024, 16x16, TM_CCORR, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=356.99   median=356.81   min=356.39   stddev=0.61 (0.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/104 (3631 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/105, where GetParam() = (1280x1024, 16x16, TM_CCORR, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=572.00   median=571.76   min=570.90   stddev=1.04 (0.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/105 (5785 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/106, where GetParam() = (1280x1024, 16x16, TM_CCORR, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=287.63   median=287.38   min=287.13   stddev=0.53 (0.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/106 (2944 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/107, where GetParam() = (1280x1024, 16x16, TM_CCORR, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=636.87   median=637.19   min=635.25   stddev=0.80 (0.1%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/107 (6494 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/108, where GetParam() = (1280x1024, 16x16, TM_CCORR_NORMED, 8UC1)
+.
+[ PERFSTAT ]    (samples=35   mean=425.86   median=429.08   min=383.56   stddev=12.67 (3.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/108 (14981 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/109, where GetParam() = (1280x1024, 16x16, TM_CCORR_NORMED, 8UC3)
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=714.54   median=712.13   min=648.82   stddev=24.45 (3.4%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/109 (71910 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/110, where GetParam() = (1280x1024, 16x16, TM_CCORR_NORMED, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=354.73   median=353.77   min=352.43   stddev=3.64 (1.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/110 (3602 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/111, where GetParam() = (1280x1024, 16x16, TM_CCORR_NORMED, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=802.69   median=802.55   min=798.74   stddev=3.71 (0.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/111 (8137 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/112, where GetParam() = (1280x1024, 16x16, TM_CCOEFF, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=397.98   median=397.44   min=394.32   stddev=3.42 (0.9%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/112 (4036 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/113, where GetParam() = (1280x1024, 16x16, TM_CCOEFF, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=697.32   median=696.18   min=690.90   stddev=4.48 (0.6%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/113 (7048 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/114, where GetParam() = (1280x1024, 16x16, TM_CCOEFF, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=333.29   median=333.06   min=332.16   stddev=0.93 (0.3%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/114 (3385 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/115, where GetParam() = (1280x1024, 16x16, TM_CCOEFF, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=769.91   median=770.81   min=740.74   stddev=11.32 (1.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/115 (7811 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/116, where GetParam() = (1280x1024, 16x16, TM_CCOEFF_NORMED, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=440.75   median=441.43   min=420.25   stddev=10.93 (2.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/116 (4471 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/117, where GetParam() = (1280x1024, 16x16, TM_CCOEFF_NORMED, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=776.11   median=776.73   min=765.22   stddev=7.57 (1.0%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/117 (7831 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/118, where GetParam() = (1280x1024, 16x16, TM_CCOEFF_NORMED, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=367.06   median=365.65   min=365.44   stddev=2.78 (0.8%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/118 (3723 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/119, where GetParam() = (1280x1024, 16x16, TM_CCOEFF_NORMED, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=850.66   median=849.63   min=844.65   stddev=6.16 (0.7%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/119 (8611 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/120, where GetParam() = (1280x1024, 41x41, TM_SQDIFF, 8UC1)
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=446.46   median=450.76   min=378.40   stddev=20.06 (4.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/120 (45238 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/121, where GetParam() = (1280x1024, 41x41, TM_SQDIFF, 8UC3)
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=1637.91   median=1623.49   min=1480.03   stddev=88.45 (5.4%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/121 (167205 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/122, where GetParam() = (1280x1024, 41x41, TM_SQDIFF, 32FC1)
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=561.68   median=601.39   min=456.25   stddev=64.00 (11.4%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/122 (56865 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/123, where GetParam() = (1280x1024, 41x41, TM_SQDIFF, 32FC3)
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=1685.74   median=1624.30   min=1425.95   stddev=144.25 (8.6%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/123 (171422 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/124, where GetParam() = (1280x1024, 41x41, TM_SQDIFF_NORMED, 8UC1)
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=463.77   median=455.08   min=391.62   stddev=38.16 (8.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/124 (47680 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/125, where GetParam() = (1280x1024, 41x41, TM_SQDIFF_NORMED, 8UC3)
+.
+.
+.
+[ PERFSTAT ]    (samples=25   mean=1605.25   median=1601.94   min=1534.49   stddev=46.50 (2.9%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/125 (40368 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/126, where GetParam() = (1280x1024, 41x41, TM_SQDIFF_NORMED, 32FC1)
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=559.12   median=589.02   min=431.80   stddev=62.04 (11.1%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/126 (56517 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/127, where GetParam() = (1280x1024, 41x41, TM_SQDIFF_NORMED, 32FC3)
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=1713.48   median=1625.13   min=1477.63   stddev=163.03 (9.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/127 (174070 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/128, where GetParam() = (1280x1024, 41x41, TM_CCORR, 8UC1)
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=415.48   median=404.56   min=320.01   stddev=36.42 (8.8%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/128 (42586 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/129, where GetParam() = (1280x1024, 41x41, TM_CCORR, 8UC3)
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=1680.43   median=1795.63   min=1398.34   stddev=178.44 (10.6%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/129 (169545 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/130, where GetParam() = (1280x1024, 41x41, TM_CCORR, 32FC1)
+.
+[ PERFSTAT ]    (samples=25   mean=398.47   median=396.45   min=380.38   stddev=9.22 (2.3%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/130 (10258 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/131, where GetParam() = (1280x1024, 41x41, TM_CCORR, 32FC3)
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=1689.60   median=1766.98   min=1362.40   stddev=160.57 (9.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/131 (170374 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/132, where GetParam() = (1280x1024, 41x41, TM_CCORR_NORMED, 8UC1)
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=438.24   median=449.57   min=347.66   stddev=33.48 (7.6%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/132 (44965 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/133, where GetParam() = (1280x1024, 41x41, TM_CCORR_NORMED, 8UC3)
+.
+[ PERFSTAT ]    (samples=10   mean=1624.22   median=1628.82   min=1535.69   stddev=43.21 (2.7%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/133 (16310 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/134, where GetParam() = (1280x1024, 41x41, TM_CCORR_NORMED, 32FC1)
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=557.78   median=591.13   min=402.01   stddev=69.89 (12.5%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/134 (56482 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/135, where GetParam() = (1280x1024, 41x41, TM_CCORR_NORMED, 32FC3)
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=1690.42   median=1624.65   min=1493.25   stddev=142.39 (8.4%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/135 (172040 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/136, where GetParam() = (1280x1024, 41x41, TM_CCOEFF, 8UC1)
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=434.48   median=431.36   min=340.29   stddev=29.61 (6.8%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/136 (44727 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/137, where GetParam() = (1280x1024, 41x41, TM_CCOEFF, 8UC3)
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=1589.32   median=1545.00   min=1457.37   stddev=122.40 (7.7%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/137 (161941 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/138, where GetParam() = (1280x1024, 41x41, TM_CCOEFF, 32FC1)
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=444.64   median=446.92   min=361.08   stddev=14.26 (3.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/138 (45362 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/139, where GetParam() = (1280x1024, 41x41, TM_CCOEFF, 32FC3)
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=1586.40   median=1538.22   min=1449.65   stddev=125.05 (7.9%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/139 (161537 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/140, where GetParam() = (1280x1024, 41x41, TM_CCOEFF_NORMED, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=487.15   median=491.47   min=449.77   stddev=12.49 (2.6%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/140 (6385 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/141, where GetParam() = (1280x1024, 41x41, TM_CCOEFF_NORMED, 8UC3)
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=1676.82   median=1668.30   min=1499.96   stddev=64.25 (3.8%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/141 (170569 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/142, where GetParam() = (1280x1024, 41x41, TM_CCOEFF_NORMED, 32FC1)
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=529.99   median=495.85   min=416.65   stddev=61.88 (11.7%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/142 (54046 ms)
+[ RUN      ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/143, where GetParam() = (1280x1024, 41x41, TM_CCOEFF_NORMED, 32FC3)
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=1713.63   median=1670.63   min=1420.88   stddev=123.93 (7.2%))
+[       OK ] OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate.MatchTemplate/143 (174516 ms)
+[----------] 144 tests from OCL_ImgSize_TmplSize_Method_MatType_MatchTemplate (3101774 ms total)
+
+[----------] Global test environment tear-down
+[==========] 144 tests from 1 test case ran. (3101775 ms total)
+[  PASSED  ] 144 tests.

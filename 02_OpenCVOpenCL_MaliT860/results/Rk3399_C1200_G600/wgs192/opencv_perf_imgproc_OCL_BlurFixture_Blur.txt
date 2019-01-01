@@ -1,0 +1,158 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_BlurFixture_Blur*
+[==========] Running 32 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 32 tests from OCL_BlurFixture_Blur
+[ RUN      ] OCL_BlurFixture_Blur.Blur/0, where GetParam() = (640x480, 8UC1, 3)
+[ PERFSTAT ]    (samples=100   mean=3.94   median=3.94   min=3.46   stddev=0.20 (5.0%))
+[       OK ] OCL_BlurFixture_Blur.Blur/0 (510 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/1, where GetParam() = (640x480, 8UC1, 5)
+[ PERFSTAT ]    (samples=76   mean=4.28   median=4.27   min=4.06   stddev=0.13 (3.0%))
+[       OK ] OCL_BlurFixture_Blur.Blur/1 (410 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/2, where GetParam() = (640x480, 32FC1, 3)
+[ PERFSTAT ]    (samples=96   mean=4.45   median=4.43   min=4.22   stddev=0.13 (3.0%))
+[       OK ] OCL_BlurFixture_Blur.Blur/2 (549 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/3, where GetParam() = (640x480, 32FC1, 5)
+[ PERFSTAT ]    (samples=38   mean=4.85   median=4.88   min=4.57   stddev=0.14 (3.0%))
+[       OK ] OCL_BlurFixture_Blur.Blur/3 (275 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/4, where GetParam() = (640x480, 8UC4, 3)
+[ PERFSTAT ]    (samples=100   mean=5.57   median=5.83   min=3.74   stddev=0.99 (17.8%))
+[       OK ] OCL_BlurFixture_Blur.Blur/4 (727 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/5, where GetParam() = (640x480, 8UC4, 5)
+[ PERFSTAT ]    (samples=88   mean=6.20   median=6.18   min=5.88   stddev=0.18 (3.0%))
+[       OK ] OCL_BlurFixture_Blur.Blur/5 (677 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/6, where GetParam() = (640x480, 32FC4, 3)
+[ PERFSTAT ]    (samples=100   mean=5.25   median=4.36   min=4.29   stddev=1.71 (32.7%))
+[       OK ] OCL_BlurFixture_Blur.Blur/6 (994 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/7, where GetParam() = (640x480, 32FC4, 5)
+[ PERFSTAT ]    (samples=100   mean=5.09   median=4.98   min=4.85   stddev=0.72 (14.2%))
+[       OK ] OCL_BlurFixture_Blur.Blur/7 (703 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/8, where GetParam() = (1280x720, 8UC1, 3)
+[ PERFSTAT ]    (samples=13   mean=6.96   median=6.99   min=6.68   stddev=0.17 (2.5%))
+[       OK ] OCL_BlurFixture_Blur.Blur/8 (116 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/9, where GetParam() = (1280x720, 8UC1, 5)
+[ PERFSTAT ]    (samples=10   mean=9.34   median=9.27   min=9.14   stddev=0.24 (2.5%))
+[       OK ] OCL_BlurFixture_Blur.Blur/9 (119 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/10, where GetParam() = (1280x720, 32FC1, 3)
+[ PERFSTAT ]    (samples=100   mean=8.18   median=8.01   min=7.29   stddev=0.67 (8.2%))
+[       OK ] OCL_BlurFixture_Blur.Blur/10 (1819 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/11, where GetParam() = (1280x720, 32FC1, 5)
+[ PERFSTAT ]    (samples=10   mean=8.97   median=8.88   min=8.82   stddev=0.21 (2.4%))
+[       OK ] OCL_BlurFixture_Blur.Blur/11 (128 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/12, where GetParam() = (1280x720, 8UC4, 3)
+[ PERFSTAT ]    (samples=38   mean=10.55   median=10.57   min=9.78   stddev=0.29 (2.8%))
+[       OK ] OCL_BlurFixture_Blur.Blur/12 (460 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/13, where GetParam() = (1280x720, 8UC4, 5)
+[ PERFSTAT ]    (samples=10   mean=11.88   median=11.87   min=11.68   stddev=0.16 (1.4%))
+[       OK ] OCL_BlurFixture_Blur.Blur/13 (171 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/14, where GetParam() = (1280x720, 32FC4, 3)
+[ PERFSTAT ]    (samples=38   mean=10.51   median=10.46   min=10.33   stddev=0.18 (1.7%))
+[       OK ] OCL_BlurFixture_Blur.Blur/14 (615 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/15, where GetParam() = (1280x720, 32FC4, 5)
+[ PERFSTAT ]    (samples=50   mean=11.88   median=11.86   min=11.72   stddev=0.09 (0.8%))
+[       OK ] OCL_BlurFixture_Blur.Blur/15 (789 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/16, where GetParam() = (1920x1080, 8UC1, 3)
+[ PERFSTAT ]    (samples=31   mean=15.41   median=15.55   min=13.44   stddev=0.46 (3.0%))
+[       OK ] OCL_BlurFixture_Blur.Blur/16 (519 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/17, where GetParam() = (1920x1080, 8UC1, 5)
+[ PERFSTAT ]    (samples=13   mean=17.60   median=17.56   min=17.35   stddev=0.19 (1.1%))
+[       OK ] OCL_BlurFixture_Blur.Blur/17 (263 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/18, where GetParam() = (1920x1080, 32FC1, 3)
+[ PERFSTAT ]    (samples=100   mean=16.54   median=16.64   min=14.05   stddev=0.67 (4.0%))
+[       OK ] OCL_BlurFixture_Blur.Blur/18 (1788 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/19, where GetParam() = (1920x1080, 32FC1, 5)
+[ PERFSTAT ]    (samples=10   mean=18.26   median=18.23   min=18.14   stddev=0.16 (0.9%))
+[       OK ] OCL_BlurFixture_Blur.Blur/19 (271 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/20, where GetParam() = (1920x1080, 8UC4, 3)
+[ PERFSTAT ]    (samples=10   mean=21.13   median=21.07   min=20.97   stddev=0.16 (0.8%))
+[       OK ] OCL_BlurFixture_Blur.Blur/20 (312 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/21, where GetParam() = (1920x1080, 8UC4, 5)
+[ PERFSTAT ]    (samples=10   mean=24.03   median=23.95   min=23.79   stddev=0.22 (0.9%))
+[       OK ] OCL_BlurFixture_Blur.Blur/21 (347 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/22, where GetParam() = (1920x1080, 32FC4, 3)
+[ PERFSTAT ]    (samples=38   mean=22.26   median=22.26   min=22.01   stddev=0.11 (0.5%))
+[       OK ] OCL_BlurFixture_Blur.Blur/22 (1178 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/23, where GetParam() = (1920x1080, 32FC4, 5)
+[ PERFSTAT ]    (samples=25   mean=25.00   median=24.92   min=24.81   stddev=0.25 (1.0%))
+[       OK ] OCL_BlurFixture_Blur.Blur/23 (838 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/24, where GetParam() = (3840x2160, 8UC1, 3)
+[ PERFSTAT ]    (samples=25   mean=57.84   median=57.43   min=56.83   stddev=1.35 (2.3%))
+[       OK ] OCL_BlurFixture_Blur.Blur/24 (1595 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/25, where GetParam() = (3840x2160, 8UC1, 5)
+[ PERFSTAT ]    (samples=10   mean=65.96   median=66.00   min=65.42   stddev=0.43 (0.7%))
+[       OK ] OCL_BlurFixture_Blur.Blur/25 (772 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/26, where GetParam() = (3840x2160, 32FC1, 3)
+[ PERFSTAT ]    (samples=10   mean=54.79   median=54.45   min=54.29   stddev=1.06 (1.9%))
+[       OK ] OCL_BlurFixture_Blur.Blur/26 (831 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/27, where GetParam() = (3840x2160, 32FC1, 5)
+[ PERFSTAT ]    (samples=10   mean=66.57   median=66.52   min=66.44   stddev=0.16 (0.2%))
+[       OK ] OCL_BlurFixture_Blur.Blur/27 (881 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/28, where GetParam() = (3840x2160, 8UC4, 3)
+[ PERFSTAT ]    (samples=10   mean=77.87   median=77.75   min=77.51   stddev=0.41 (0.5%))
+[       OK ] OCL_BlurFixture_Blur.Blur/28 (1064 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/29, where GetParam() = (3840x2160, 8UC4, 5)
+[ PERFSTAT ]    (samples=19   mean=85.76   median=85.51   min=80.31   stddev=2.50 (2.9%))
+[       OK ] OCL_BlurFixture_Blur.Blur/29 (1955 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/30, where GetParam() = (3840x2160, 32FC4, 3)
+[ PERFSTAT ]    (samples=13   mean=79.42   median=79.44   min=79.22   stddev=0.14 (0.2%))
+[       OK ] OCL_BlurFixture_Blur.Blur/30 (2226 ms)
+[ RUN      ] OCL_BlurFixture_Blur.Blur/31, where GetParam() = (3840x2160, 32FC4, 5)
+[ PERFSTAT ]    (samples=13   mean=92.64   median=92.48   min=92.33   stddev=0.53 (0.6%))
+[       OK ] OCL_BlurFixture_Blur.Blur/31 (2004 ms)
+[----------] 32 tests from OCL_BlurFixture_Blur (25911 ms total)
+
+[----------] Global test environment tear-down
+[==========] 32 tests from 1 test case ran. (25912 ms total)
+[  PASSED  ] 32 tests.

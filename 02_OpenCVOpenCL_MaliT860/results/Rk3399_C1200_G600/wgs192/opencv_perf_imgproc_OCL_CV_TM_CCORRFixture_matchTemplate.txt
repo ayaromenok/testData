@@ -1,0 +1,74 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_CV_TM_CCORRFixture_matchTemplate*
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from OCL_CV_TM_CCORRFixture_matchTemplate
+[ RUN      ] OCL_CV_TM_CCORRFixture_matchTemplate.matchTemplate/0, where GetParam() = (1000x1000, 32FC1)
+[ PERFSTAT ]    (samples=25   mean=27.11   median=26.93   min=26.68   stddev=0.53 (2.0%))
+[       OK ] OCL_CV_TM_CCORRFixture_matchTemplate.matchTemplate/0 (786 ms)
+[ RUN      ] OCL_CV_TM_CCORRFixture_matchTemplate.matchTemplate/1, where GetParam() = (1000x1000, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=31.46   median=31.45   min=31.14   stddev=0.17 (0.5%))
+[       OK ] OCL_CV_TM_CCORRFixture_matchTemplate.matchTemplate/1 (560 ms)
+[ RUN      ] OCL_CV_TM_CCORRFixture_matchTemplate.matchTemplate/2, where GetParam() = (2000x2000, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=100.05   median=99.99   min=99.63   stddev=0.29 (0.3%))
+[       OK ] OCL_CV_TM_CCORRFixture_matchTemplate.matchTemplate/2 (1171 ms)
+[ RUN      ] OCL_CV_TM_CCORRFixture_matchTemplate.matchTemplate/3, where GetParam() = (2000x2000, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=126.96   median=126.92   min=126.59   stddev=0.29 (0.2%))
+[       OK ] OCL_CV_TM_CCORRFixture_matchTemplate.matchTemplate/3 (1647 ms)
+[----------] 4 tests from OCL_CV_TM_CCORRFixture_matchTemplate (4165 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (4166 ms total)
+[  PASSED  ] 4 tests.

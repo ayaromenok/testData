@@ -1,0 +1,193 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_StereoBMFixture_StereoBM*
+[==========] Running 6 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 6 tests from OCL_StereoBMFixture_StereoBM
+[ RUN      ] OCL_StereoBMFixture_StereoBM.StereoBM/0, where GetParam() = (32, 11)
+[ PERFSTAT ]    (samples=13   mean=224.13   median=224.07   min=223.03   stddev=0.81 (0.4%))
+[       OK ] OCL_StereoBMFixture_StereoBM.StereoBM/0 (3170 ms)
+[ RUN      ] OCL_StereoBMFixture_StereoBM.StereoBM/1, where GetParam() = (32, 21)
+[ PERFSTAT ]    (samples=13   mean=246.52   median=246.57   min=245.64   stddev=0.50 (0.2%))
+[       OK ] OCL_StereoBMFixture_StereoBM.StereoBM/1 (3453 ms)
+[ RUN      ] OCL_StereoBMFixture_StereoBM.StereoBM/2, where GetParam() = (64, 11)
+[ PERFSTAT ]    (samples=13   mean=453.66   median=453.80   min=452.76   stddev=0.46 (0.1%))
+[       OK ] OCL_StereoBMFixture_StereoBM.StereoBM/2 (6192 ms)
+[ RUN      ] OCL_StereoBMFixture_StereoBM.StereoBM/3, where GetParam() = (64, 21)
+[ PERFSTAT ]    (samples=13   mean=503.63   median=503.91   min=499.73   stddev=1.29 (0.3%))
+[       OK ] OCL_StereoBMFixture_StereoBM.StereoBM/3 (6758 ms)
+[ RUN      ] OCL_StereoBMFixture_StereoBM.StereoBM/4, where GetParam() = (128, 11)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=93.12   median=94.50   min=76.88   stddev=5.62 (6.0%))
+[       OK ] OCL_StereoBMFixture_StereoBM.StereoBM/4 (9623 ms)
+[ RUN      ] OCL_StereoBMFixture_StereoBM.StereoBM/5, where GetParam() = (128, 21)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('stereoBM', dims=3, globalsize=256x22x25, localsize=256x1x1) sync=false
+[ PERFSTAT ]    (samples=13   mean=158.49   median=158.64   min=151.73   stddev=3.79 (2.4%))
+[       OK ] OCL_StereoBMFixture_StereoBM.StereoBM/5 (2225 ms)
+[----------] 6 tests from OCL_StereoBMFixture_StereoBM (31421 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test case ran. (31421 ms total)
+[  PASSED  ] 6 tests.

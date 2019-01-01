@@ -1,0 +1,134 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_MinMaxLocFixture_MinMaxLoc*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_MinMaxLocFixture_MinMaxLoc
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.75   median=1.75   min=1.00   stddev=0.35 (20.1%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/0 (328 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=1.50   median=1.40   min=0.86   stddev=0.41 (27.0%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/1 (285 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/2, where GetParam() = (640x480, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=2.11   median=1.99   min=1.54   stddev=0.43 (20.2%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/2 (279 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/3, where GetParam() = (640x480, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=2.19   median=1.82   min=1.37   stddev=1.11 (50.5%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/3 (725 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/4, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=1.48   median=1.38   min=1.33   stddev=0.18 (12.2%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/4 (165 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/5, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=2.09   median=2.17   min=1.76   stddev=0.24 (11.3%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/5 (244 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/6, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=2.06   median=1.99   min=1.56   stddev=0.32 (15.3%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/6 (247 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/7, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=2.36   median=2.43   min=1.87   stddev=0.35 (14.7%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/7 (281 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/8, where GetParam() = (1280x720, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=2.61   median=2.45   min=2.08   stddev=0.38 (14.4%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/8 (311 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/9, where GetParam() = (1280x720, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=2.67   median=2.41   min=2.17   stddev=0.61 (22.9%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/9 (363 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/10, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=2.64   median=2.59   min=2.31   stddev=0.22 (8.2%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/10 (300 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/11, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=3.02   median=2.97   min=2.66   stddev=0.37 (12.3%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/11 (413 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/12, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=2.58   median=2.57   min=2.23   stddev=0.20 (7.7%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/12 (305 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/13, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=3.10   median=3.03   min=2.81   stddev=0.29 (9.3%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/13 (373 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/14, where GetParam() = (1920x1080, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=4.04   median=4.00   min=3.68   stddev=0.25 (6.2%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/14 (466 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/15, where GetParam() = (1920x1080, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=4.15   median=4.04   min=3.81   stddev=0.25 (6.0%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/15 (624 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/16, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=4.75   median=4.76   min=3.73   stddev=0.36 (7.5%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/16 (551 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/17, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=5.05   median=4.91   min=4.68   stddev=0.32 (6.3%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/17 (707 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/18, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=6.57   median=6.53   min=5.82   stddev=0.40 (6.2%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/18 (784 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/19, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=8.98   median=8.88   min=8.49   stddev=0.26 (2.9%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/19 (1108 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/20, where GetParam() = (3840x2160, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=9.48   median=9.40   min=8.94   stddev=0.34 (3.6%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/20 (1132 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/21, where GetParam() = (3840x2160, 32FC3)
+[ PERFSTAT ]    (samples=14   mean=13.26   median=13.24   min=12.82   stddev=0.39 (3.0%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/21 (575 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/22, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=38   mean=12.63   median=12.51   min=12.08   stddev=0.38 (3.0%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/22 (693 ms)
+[ RUN      ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/23, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=38   mean=16.68   median=16.62   min=16.30   stddev=0.25 (1.5%))
+[       OK ] OCL_MinMaxLocFixture_MinMaxLoc.MinMaxLoc/23 (1235 ms)
+[----------] 24 tests from OCL_MinMaxLocFixture_MinMaxLoc (12502 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (12503 ms total)
+[  PASSED  ] 24 tests.

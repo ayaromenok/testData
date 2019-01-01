@@ -1,0 +1,110 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_AccumulateSquareFixture_AccumulateSquare*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_AccumulateSquareFixture_AccumulateSquare
+[ RUN      ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.83   median=1.51   min=1.25   stddev=0.70 (38.4%))
+[       OK ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/0 (1560 ms)
+[ RUN      ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=2.54   median=3.20   min=1.42   stddev=0.97 (38.2%))
+[       OK ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/1 (1518 ms)
+[ RUN      ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/2, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=3.36   median=3.34   min=3.17   stddev=0.12 (3.7%))
+[       OK ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/2 (385 ms)
+[ RUN      ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/3, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=3.53   median=3.53   min=3.42   stddev=0.07 (1.9%))
+[       OK ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/3 (97 ms)
+[ RUN      ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/4, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=3.07   median=2.90   min=2.57   stddev=0.63 (20.5%))
+[       OK ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/4 (1004 ms)
+[ RUN      ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/5, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=4.68   median=3.23   min=2.80   stddev=2.43 (51.9%))
+[       OK ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/5 (4348 ms)
+[ RUN      ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/6, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=9.77   median=8.83   min=8.55   stddev=3.04 (31.1%))
+[       OK ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/6 (3699 ms)
+[ RUN      ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/7, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=9.83   median=9.80   min=9.60   stddev=0.14 (1.4%))
+[       OK ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/7 (230 ms)
+[ RUN      ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/8, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=5.39   median=5.36   min=5.31   stddev=0.13 (2.4%))
+[       OK ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/8 (110 ms)
+[ RUN      ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/9, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=5.82   median=5.78   min=5.71   stddev=0.11 (2.0%))
+[       OK ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/9 (140 ms)
+[ RUN      ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/10, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=10   mean=18.82   median=18.78   min=18.55   stddev=0.28 (1.5%))
+[       OK ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/10 (362 ms)
+[ RUN      ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/11, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=75   mean=20.35   median=20.34   min=20.12   stddev=0.16 (0.8%))
+[       OK ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/11 (2709 ms)
+[ RUN      ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/12, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=18.67   median=18.68   min=18.47   stddev=0.14 (0.7%))
+[       OK ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/12 (448 ms)
+[ RUN      ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/13, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=20.87   median=20.85   min=20.47   stddev=0.30 (1.4%))
+[       OK ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/13 (437 ms)
+[ RUN      ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/14, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=88   mean=71.12   median=70.88   min=70.47   stddev=1.31 (1.8%))
+[       OK ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/14 (7744 ms)
+[ RUN      ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/15, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=79.35   median=78.64   min=77.69   stddev=1.97 (2.5%))
+[       OK ] OCL_AccumulateSquareFixture_AccumulateSquare.AccumulateSquare/15 (1608 ms)
+[----------] 16 tests from OCL_AccumulateSquareFixture_AccumulateSquare (26407 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (26409 ms total)
+[  PASSED  ] 16 tests.

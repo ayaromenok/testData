@@ -1,0 +1,86 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_IntegralFixture_Integral2*
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from OCL_IntegralFixture_Integral2
+[ RUN      ] OCL_IntegralFixture_Integral2.Integral2/0, where GetParam() = (640x480, CV_32S)
+[ PERFSTAT ]    (samples=50   mean=5.91   median=5.88   min=5.79   stddev=0.10 (1.7%))
+[       OK ] OCL_IntegralFixture_Integral2.Integral2/0 (484 ms)
+[ RUN      ] OCL_IntegralFixture_Integral2.Integral2/1, where GetParam() = (640x480, CV_32F)
+[ PERFSTAT ]    (samples=100   mean=6.00   median=5.90   min=5.71   stddev=0.35 (5.9%))
+[       OK ] OCL_IntegralFixture_Integral2.Integral2/1 (697 ms)
+[ RUN      ] OCL_IntegralFixture_Integral2.Integral2/2, where GetParam() = (1280x720, CV_32S)
+[ PERFSTAT ]    (samples=100   mean=18.67   median=19.00   min=16.30   stddev=0.88 (4.7%))
+[       OK ] OCL_IntegralFixture_Integral2.Integral2/2 (1906 ms)
+[ RUN      ] OCL_IntegralFixture_Integral2.Integral2/3, where GetParam() = (1280x720, CV_32F)
+[ PERFSTAT ]    (samples=100   mean=19.22   median=19.53   min=16.73   stddev=0.81 (4.2%))
+[       OK ] OCL_IntegralFixture_Integral2.Integral2/3 (1963 ms)
+[ RUN      ] OCL_IntegralFixture_Integral2.Integral2/4, where GetParam() = (1920x1080, CV_32S)
+[ PERFSTAT ]    (samples=38   mean=36.00   median=35.98   min=35.49   stddev=0.33 (0.9%))
+[       OK ] OCL_IntegralFixture_Integral2.Integral2/4 (1500 ms)
+[ RUN      ] OCL_IntegralFixture_Integral2.Integral2/5, where GetParam() = (1920x1080, CV_32F)
+[ PERFSTAT ]    (samples=25   mean=36.69   median=36.53   min=36.07   stddev=0.85 (2.3%))
+[       OK ] OCL_IntegralFixture_Integral2.Integral2/5 (981 ms)
+[ RUN      ] OCL_IntegralFixture_Integral2.Integral2/6, where GetParam() = (3840x2160, CV_32S)
+[ PERFSTAT ]    (samples=13   mean=139.41   median=139.17   min=137.48   stddev=1.28 (0.9%))
+[       OK ] OCL_IntegralFixture_Integral2.Integral2/6 (2209 ms)
+[ RUN      ] OCL_IntegralFixture_Integral2.Integral2/7, where GetParam() = (3840x2160, CV_32F)
+[ PERFSTAT ]    (samples=13   mean=138.56   median=138.58   min=137.49   stddev=0.72 (0.5%))
+[       OK ] OCL_IntegralFixture_Integral2.Integral2/7 (2294 ms)
+[----------] 8 tests from OCL_IntegralFixture_Integral2 (12035 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (12036 ms total)
+[  PASSED  ] 8 tests.

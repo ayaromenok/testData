@@ -1,0 +1,134 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_BitwiseNotFixture_Bitwise_not*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_BitwiseNotFixture_Bitwise_not
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.06   median=1.00   min=0.72   stddev=0.20 (18.7%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/0 (229 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=2.02   median=1.89   min=1.33   stddev=0.44 (21.9%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/1 (665 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/2, where GetParam() = (640x480, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=1.90   median=1.88   min=1.38   stddev=0.32 (16.6%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/2 (216 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/3, where GetParam() = (640x480, 32FC3)
+[ PERFSTAT ]    (samples=100   mean=3.98   median=3.91   min=3.37   stddev=0.36 (8.9%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/3 (455 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/4, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=2.14   median=2.16   min=1.71   stddev=0.30 (13.9%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/4 (258 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/5, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=2.74   median=2.47   min=2.04   stddev=0.90 (32.9%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/5 (349 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/6, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.10   median=1.03   min=0.89   stddev=0.16 (14.5%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/6 (130 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/7, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=1.99   median=2.07   min=1.75   stddev=0.16 (8.1%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/7 (244 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/8, where GetParam() = (1280x720, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=1.63   median=1.60   min=1.33   stddev=0.18 (11.2%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/8 (209 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/9, where GetParam() = (1280x720, 32FC3)
+[ PERFSTAT ]    (samples=10   mean=5.61   median=5.70   min=5.30   stddev=0.16 (2.9%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/9 (162 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/10, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=13   mean=2.33   median=2.31   min=2.24   stddev=0.07 (3.0%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/10 (82 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/11, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=5.88   median=5.36   min=4.77   stddev=0.88 (15.0%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/11 (735 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/12, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=1.90   median=1.42   min=1.20   stddev=1.01 (52.8%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/12 (815 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/13, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=3.88   median=4.15   min=2.95   stddev=0.59 (15.1%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/13 (498 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/14, where GetParam() = (1920x1080, 8UC3)
+[ PERFSTAT ]    (samples=100   mean=2.69   median=2.70   min=2.30   stddev=0.18 (6.6%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/14 (361 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/15, where GetParam() = (1920x1080, 32FC3)
+[ PERFSTAT ]    (samples=25   mean=7.81   median=7.77   min=7.45   stddev=0.23 (2.9%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/15 (378 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/16, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=100   mean=3.25   median=3.23   min=2.96   stddev=0.15 (4.7%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/16 (453 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/17, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=10.09   median=10.07   min=9.74   stddev=0.23 (2.3%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/17 (335 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/18, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=3.26   median=3.10   min=2.95   stddev=0.82 (25.2%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/18 (562 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/19, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=9.89   median=9.83   min=9.47   stddev=0.29 (2.9%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/19 (1279 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/20, where GetParam() = (3840x2160, 8UC3)
+[ PERFSTAT ]    (samples=13   mean=7.57   median=7.53   min=7.30   stddev=0.17 (2.2%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/20 (318 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/21, where GetParam() = (3840x2160, 32FC3)
+[ PERFSTAT ]    (samples=13   mean=27.97   median=27.78   min=27.43   stddev=0.61 (2.2%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/21 (1326 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/22, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=50   mean=9.90   median=9.97   min=9.33   stddev=0.30 (3.0%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/22 (1160 ms)
+[ RUN      ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/23, where GetParam() = (3840x2160, 32FC4)
+[ PERFSTAT ]    (samples=25   mean=36.18   median=36.19   min=35.96   stddev=0.16 (0.4%))
+[       OK ] OCL_BitwiseNotFixture_Bitwise_not.Bitwise_not/23 (2095 ms)
+[----------] 24 tests from OCL_BitwiseNotFixture_Bitwise_not (13317 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (13318 ms total)
+[  PASSED  ] 24 tests.

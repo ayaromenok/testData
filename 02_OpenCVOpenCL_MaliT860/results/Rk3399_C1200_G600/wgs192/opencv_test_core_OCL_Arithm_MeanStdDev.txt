@@ -1,0 +1,355 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 192
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_Arithm/MeanStdDev*
+[==========] Running 112 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 112 tests from OCL_Arithm/MeanStdDev
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/0, where GetParam() = (CV_8U, Channels(1), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/0 (107 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/1, where GetParam() = (CV_8U, Channels(1), true)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/1 (59 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/2, where GetParam() = (CV_8U, Channels(2), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/2 (50 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/3, where GetParam() = (CV_8U, Channels(2), true)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/3 (53 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/4, where GetParam() = (CV_8U, Channels(3), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/4 (58 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/5, where GetParam() = (CV_8U, Channels(3), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/5 (66 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/6, where GetParam() = (CV_8U, Channels(4), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/6 (51 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/7, where GetParam() = (CV_8U, Channels(4), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/7 (54 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/8, where GetParam() = (CV_8S, Channels(1), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/8 (46 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/9, where GetParam() = (CV_8S, Channels(1), true)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/9 (53 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/10, where GetParam() = (CV_8S, Channels(2), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/10 (48 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/11, where GetParam() = (CV_8S, Channels(2), true)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/11 (51 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/12, where GetParam() = (CV_8S, Channels(3), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/12 (50 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/13, where GetParam() = (CV_8S, Channels(3), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/13 (68 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/14, where GetParam() = (CV_8S, Channels(4), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/14 (45 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/15, where GetParam() = (CV_8S, Channels(4), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/15 (64 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/16, where GetParam() = (CV_16U, Channels(1), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/16 (44 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/17, where GetParam() = (CV_16U, Channels(1), true)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/17 (62 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/18, where GetParam() = (CV_16U, Channels(2), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/18 (46 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/19, where GetParam() = (CV_16U, Channels(2), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/19 (60 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/20, where GetParam() = (CV_16U, Channels(3), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/20 (55 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/21, where GetParam() = (CV_16U, Channels(3), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/21 (70 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/22, where GetParam() = (CV_16U, Channels(4), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/22 (44 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/23, where GetParam() = (CV_16U, Channels(4), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/23 (67 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/24, where GetParam() = (CV_16S, Channels(1), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/24 (52 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/25, where GetParam() = (CV_16S, Channels(1), true)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/25 (47 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/26, where GetParam() = (CV_16S, Channels(2), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/26 (59 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/27, where GetParam() = (CV_16S, Channels(2), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/27 (54 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/28, where GetParam() = (CV_16S, Channels(3), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/28 (57 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/29, where GetParam() = (CV_16S, Channels(3), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/29 (64 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/30, where GetParam() = (CV_16S, Channels(4), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/30 (51 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/31, where GetParam() = (CV_16S, Channels(4), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/31 (68 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/32, where GetParam() = (CV_32S, Channels(1), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/32 (46 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/33, where GetParam() = (CV_32S, Channels(1), true)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/33 (67 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/34, where GetParam() = (CV_32S, Channels(2), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/34 (46 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/35, where GetParam() = (CV_32S, Channels(2), true)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/35 (51 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/36, where GetParam() = (CV_32S, Channels(3), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/36 (57 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/37, where GetParam() = (CV_32S, Channels(3), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/37 (64 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/38, where GetParam() = (CV_32S, Channels(4), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/38 (47 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/39, where GetParam() = (CV_32S, Channels(4), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/39 (54 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/40, where GetParam() = (CV_32F, Channels(1), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/40 (48 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/41, where GetParam() = (CV_32F, Channels(1), true)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/41 (56 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/42, where GetParam() = (CV_32F, Channels(2), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/42 (50 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/43, where GetParam() = (CV_32F, Channels(2), true)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/43 (51 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/44, where GetParam() = (CV_32F, Channels(3), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/44 (58 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/45, where GetParam() = (CV_32F, Channels(3), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/45 (61 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/46, where GetParam() = (CV_32F, Channels(4), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/46 (51 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/47, where GetParam() = (CV_32F, Channels(4), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/47 (57 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/48, where GetParam() = (CV_64F, Channels(1), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/48 (50 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/49, where GetParam() = (CV_64F, Channels(1), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/49 (50 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/50, where GetParam() = (CV_64F, Channels(2), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat/50 (53 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/51, where GetParam() = (CV_64F, Channels(2), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/51 (52 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/52, where GetParam() = (CV_64F, Channels(3), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/52 (59 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/53, where GetParam() = (CV_64F, Channels(3), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/53 (61 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/54, where GetParam() = (CV_64F, Channels(4), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/54 (60 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat/55, where GetParam() = (CV_64F, Channels(4), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat/55 (72 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/0, where GetParam() = (CV_8U, Channels(1), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/0 (54 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/1, where GetParam() = (CV_8U, Channels(1), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/1 (60 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/2, where GetParam() = (CV_8U, Channels(2), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/2 (52 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/3, where GetParam() = (CV_8U, Channels(2), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/3 (62 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/4, where GetParam() = (CV_8U, Channels(3), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/4 (69 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/5, where GetParam() = (CV_8U, Channels(3), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/5 (70 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/6, where GetParam() = (CV_8U, Channels(4), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/6 (62 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/7, where GetParam() = (CV_8U, Channels(4), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/7 (64 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/8, where GetParam() = (CV_8S, Channels(1), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/8 (50 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/9, where GetParam() = (CV_8S, Channels(1), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/9 (65 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/10, where GetParam() = (CV_8S, Channels(2), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/10 (52 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/11, where GetParam() = (CV_8S, Channels(2), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/11 (74 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/12, where GetParam() = (CV_8S, Channels(3), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/12 (61 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/13, where GetParam() = (CV_8S, Channels(3), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/13 (71 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/14, where GetParam() = (CV_8S, Channels(4), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/14 (57 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/15, where GetParam() = (CV_8S, Channels(4), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/15 (62 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/16, where GetParam() = (CV_16U, Channels(1), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/16 (51 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/17, where GetParam() = (CV_16U, Channels(1), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/17 (64 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/18, where GetParam() = (CV_16U, Channels(2), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/18 (52 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/19, where GetParam() = (CV_16U, Channels(2), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/19 (64 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/20, where GetParam() = (CV_16U, Channels(3), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/20 (42 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/21, where GetParam() = (CV_16U, Channels(3), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/21 (57 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/22, where GetParam() = (CV_16U, Channels(4), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/22 (64 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/23, where GetParam() = (CV_16U, Channels(4), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/23 (68 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/24, where GetParam() = (CV_16S, Channels(1), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/24 (51 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/25, where GetParam() = (CV_16S, Channels(1), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/25 (64 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/26, where GetParam() = (CV_16S, Channels(2), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/26 (53 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/27, where GetParam() = (CV_16S, Channels(2), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/27 (64 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/28, where GetParam() = (CV_16S, Channels(3), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/28 (67 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/29, where GetParam() = (CV_16S, Channels(3), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/29 (71 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/30, where GetParam() = (CV_16S, Channels(4), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/30 (54 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/31, where GetParam() = (CV_16S, Channels(4), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/31 (61 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/32, where GetParam() = (CV_32S, Channels(1), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/32 (41 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/33, where GetParam() = (CV_32S, Channels(1), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/33 (62 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/34, where GetParam() = (CV_32S, Channels(2), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/34 (51 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/35, where GetParam() = (CV_32S, Channels(2), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/35 (66 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/36, where GetParam() = (CV_32S, Channels(3), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/36 (62 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/37, where GetParam() = (CV_32S, Channels(3), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/37 (74 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/38, where GetParam() = (CV_32S, Channels(4), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/38 (53 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/39, where GetParam() = (CV_32S, Channels(4), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/39 (64 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/40, where GetParam() = (CV_32F, Channels(1), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/40 (54 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/41, where GetParam() = (CV_32F, Channels(1), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/41 (60 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/42, where GetParam() = (CV_32F, Channels(2), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/42 (56 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/43, where GetParam() = (CV_32F, Channels(2), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/43 (64 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/44, where GetParam() = (CV_32F, Channels(3), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/44 (63 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/45, where GetParam() = (CV_32F, Channels(3), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/45 (69 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/46, where GetParam() = (CV_32F, Channels(4), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/46 (62 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/47, where GetParam() = (CV_32F, Channels(4), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/47 (61 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/48, where GetParam() = (CV_64F, Channels(1), false)
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/48 (51 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/49, where GetParam() = (CV_64F, Channels(1), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/49 (58 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/50, where GetParam() = (CV_64F, Channels(2), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/50 (54 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/51, where GetParam() = (CV_64F, Channels(2), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/51 (65 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/52, where GetParam() = (CV_64F, Channels(3), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/52 (62 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/53, where GetParam() = (CV_64F, Channels(3), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/53 (71 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/54, where GetParam() = (CV_64F, Channels(4), false)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/54 (66 ms)
+[ RUN      ] OCL_Arithm/MeanStdDev.Mat_Mask/55, where GetParam() = (CV_64F, Channels(4), true)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('meanStdDev', dims=1, globalsize=768x1x1, localsize=192x1x1) sync=false
+[       OK ] OCL_Arithm/MeanStdDev.Mat_Mask/55 (72 ms)
+[----------] 112 tests from OCL_Arithm/MeanStdDev (6553 ms total)
+
+[----------] Global test environment tear-down
+[==========] 112 tests from 1 test case ran. (6555 ms total)
+[  PASSED  ] 112 tests.
