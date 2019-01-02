@@ -1,0 +1,1383 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 32
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_PyrUpFixture_PyrUp*
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from OCL_PyrUpFixture_PyrUp
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=10.62   median=10.68   min=8.69   stddev=0.34 (3.2%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/0 (1152 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=11.36   median=11.30   min=10.77   stddev=0.46 (4.1%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/1 (1259 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/2, where GetParam() = (640x480, 8UC3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=16.23   median=16.13   min=13.90   stddev=1.20 (7.4%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/2 (1768 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/3, where GetParam() = (640x480, 32FC3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=32.10   median=32.53   min=28.15   stddev=2.33 (7.3%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/3 (3378 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/4, where GetParam() = (640x480, 8UC4)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=20.55   median=20.70   min=17.52   stddev=1.40 (6.8%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/4 (2164 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/5, where GetParam() = (640x480, 32FC4)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=1280x960x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=44.48   median=45.30   min=28.21   stddev=9.37 (21.1%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/5 (4695 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/6, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=27.05   median=27.04   min=26.92   stddev=0.12 (0.5%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/6 (383 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/7, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=28.37   median=28.28   min=27.93   stddev=0.34 (1.2%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/7 (384 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/8, where GetParam() = (1280x720, 8UC3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=13   mean=37.31   median=37.47   min=35.87   stddev=0.61 (1.6%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/8 (587 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/9, where GetParam() = (1280x720, 32FC3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=81.79   median=77.39   min=75.16   stddev=6.96 (8.5%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/9 (8485 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/10, where GetParam() = (1280x720, 8UC4)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=10   mean=53.91   median=54.32   min=52.08   stddev=0.93 (1.7%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/10 (634 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/11, where GetParam() = (1280x720, 32FC4)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=2560x1440x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=134.22   median=127.44   min=91.42   stddev=13.39 (10.0%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/11 (13867 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/12, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=62.43   median=62.31   min=61.68   stddev=0.73 (1.2%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/12 (707 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/13, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=70.75   median=70.51   min=70.09   stddev=0.56 (0.8%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/13 (930 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/14, where GetParam() = (1920x1080, 8UC3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=77.70   median=76.97   min=72.88   stddev=2.98 (3.8%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/14 (8101 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/15, where GetParam() = (1920x1080, 32FC3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=172.63   median=178.21   min=115.93   stddev=25.52 (14.8%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/15 (18149 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/16, where GetParam() = (1920x1080, 8UC4)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=10   mean=110.96   median=111.53   min=108.08   stddev=2.03 (1.8%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/16 (1372 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/17, where GetParam() = (1920x1080, 32FC4)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=3840x2160x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=221.19   median=217.70   min=174.33   stddev=19.34 (8.7%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/17 (23093 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/18, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=13   mean=239.34   median=239.19   min=238.85   stddev=0.47 (0.2%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/18 (3310 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/19, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=249.06   median=248.74   min=247.28   stddev=1.68 (0.7%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/19 (3139 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/20, where GetParam() = (3840x2160, 8UC3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=314.17   median=320.82   min=297.15   stddev=14.43 (4.6%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/20 (32217 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/21, where GetParam() = (3840x2160, 32FC3)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+.
+[ PERFSTAT ]    (samples=100   mean=501.36   median=504.44   min=450.30   stddev=38.99 (7.8%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/21 (53795 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/22, where GetParam() = (3840x2160, 8UC4)
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+.
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+OpenCL error CL_OUT_OF_RESOURCES (-5) during call: clEnqueueNDRangeKernel('pyrUp', dims=2, globalsize=7680x4320x1, localsize=16x16x1) sync=false
+[ PERFSTAT ]    (samples=100   mean=429.41   median=438.97   min=396.93   stddev=18.34 (4.3%))
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/22 (43996 ms)
+[ RUN      ] OCL_PyrUpFixture_PyrUp.PyrUp/23, where GetParam() = (3840x2160, 32FC4)
+	Test was skipped
+[       OK ] OCL_PyrUpFixture_PyrUp.PyrUp/23 (1 ms)
+[----------] 24 tests from OCL_PyrUpFixture_PyrUp (227568 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (227568 ms total)
+[  PASSED  ] 24 tests.

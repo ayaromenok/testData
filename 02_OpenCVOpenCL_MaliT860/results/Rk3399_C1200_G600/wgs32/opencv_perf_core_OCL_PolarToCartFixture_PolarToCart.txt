@@ -1,0 +1,87 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 32
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_PolarToCartFixture_PolarToCart*
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from OCL_PolarToCartFixture_PolarToCart
+[ RUN      ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/0, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=3.62   median=3.65   min=2.26   stddev=0.55 (15.3%))
+[       OK ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/0 (447 ms)
+[ RUN      ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/1, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=100   mean=7.88   median=7.90   min=6.97   stddev=0.26 (3.3%))
+[       OK ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/1 (903 ms)
+[ RUN      ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/2, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=6.33   median=6.28   min=5.91   stddev=0.23 (3.6%))
+[       OK ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/2 (720 ms)
+[ RUN      ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/3, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=21.58   median=21.58   min=21.30   stddev=0.17 (0.8%))
+[       OK ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/3 (453 ms)
+[ RUN      ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/4, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=100   mean=11.20   median=11.14   min=10.91   stddev=0.32 (2.9%))
+[       OK ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/4 (1314 ms)
+[ RUN      ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/5, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=48   mean=42.25   median=41.89   min=41.54   stddev=1.27 (3.0%))
+[       OK ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/5 (2534 ms)
+[ RUN      ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/6, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=62.12   median=61.92   min=61.63   stddev=0.52 (0.8%))
+[       OK ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/6 (1062 ms)
+[ RUN      ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/7, where GetParam() = (3840x2160, 32FC4)
+.
+[ PERFSTAT ]    (samples=63   mean=162.95   median=162.93   min=162.62   stddev=0.21 (0.1%))
+[       OK ] OCL_PolarToCartFixture_PolarToCart.PolarToCart/7 (13217 ms)
+[----------] 8 tests from OCL_PolarToCartFixture_PolarToCart (20653 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (20653 ms total)
+[  PASSED  ] 8 tests.

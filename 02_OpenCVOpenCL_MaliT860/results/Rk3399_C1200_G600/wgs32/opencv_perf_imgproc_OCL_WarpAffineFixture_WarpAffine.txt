@@ -1,0 +1,278 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 32
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_WarpAffineFixture_WarpAffine*
+[==========] Running 72 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 72 tests from OCL_WarpAffineFixture_WarpAffine
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/0, where GetParam() = (640x480, 8UC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=3.24   median=3.23   min=2.57   stddev=0.37 (11.4%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/0 (424 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/1, where GetParam() = (640x480, 8UC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=100   mean=5.11   median=5.10   min=4.73   stddev=0.20 (3.9%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/1 (607 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/2, where GetParam() = (640x480, 8UC1, INTER_CUBIC)
+[ PERFSTAT ]    (samples=100   mean=5.99   median=5.95   min=5.50   stddev=0.23 (3.9%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/2 (704 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/3, where GetParam() = (640x480, 32FC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=3.75   median=3.78   min=3.37   stddev=0.18 (4.9%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/3 (464 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/4, where GetParam() = (640x480, 32FC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=50   mean=5.06   median=5.00   min=4.92   stddev=0.15 (2.9%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/4 (333 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/5, where GetParam() = (640x480, 32FC1, INTER_CUBIC)
+[ PERFSTAT ]    (samples=100   mean=7.86   median=7.77   min=7.33   stddev=0.35 (4.5%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/5 (919 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/6, where GetParam() = (640x480, 8UC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=13   mean=4.44   median=4.45   min=4.21   stddev=0.13 (2.8%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/6 (120 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/7, where GetParam() = (640x480, 8UC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=25   mean=7.63   median=7.71   min=7.15   stddev=0.22 (2.9%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/7 (291 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/8, where GetParam() = (640x480, 8UC3, INTER_CUBIC)
+[ PERFSTAT ]    (samples=13   mean=13.02   median=12.96   min=12.67   stddev=0.35 (2.7%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/8 (270 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/9, where GetParam() = (640x480, 32FC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=3.42   median=3.21   min=3.04   stddev=0.79 (23.0%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/9 (476 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/10, where GetParam() = (640x480, 32FC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=13   mean=5.08   median=5.03   min=4.92   stddev=0.13 (2.6%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/10 (153 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/11, where GetParam() = (640x480, 32FC3, INTER_CUBIC)
+[ PERFSTAT ]    (samples=50   mean=12.39   median=12.41   min=11.83   stddev=0.23 (1.8%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/11 (739 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/12, where GetParam() = (640x480, 8UC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=3.11   median=3.09   min=2.79   stddev=0.17 (5.6%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/12 (381 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/13, where GetParam() = (640x480, 8UC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=88   mean=8.78   median=8.70   min=8.35   stddev=0.24 (2.7%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/13 (904 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/14, where GetParam() = (640x480, 8UC4, INTER_CUBIC)
+[ PERFSTAT ]    (samples=13   mean=13.26   median=13.17   min=12.83   stddev=0.37 (2.8%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/14 (269 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/15, where GetParam() = (640x480, 32FC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=3.11   median=3.05   min=2.84   stddev=0.68 (21.7%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/15 (469 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/16, where GetParam() = (640x480, 32FC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=100   mean=5.53   median=5.28   min=5.05   stddev=1.06 (19.1%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/16 (705 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/17, where GetParam() = (640x480, 32FC4, INTER_CUBIC)
+[ PERFSTAT ]    (samples=100   mean=12.38   median=12.22   min=11.34   stddev=0.69 (5.6%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/17 (1411 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/18, where GetParam() = (1280x720, 8UC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=6.25   median=6.26   min=5.66   stddev=0.22 (3.5%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/18 (677 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/19, where GetParam() = (1280x720, 8UC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=10.13   median=10.12   min=9.72   stddev=0.26 (2.6%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/19 (116 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/20, where GetParam() = (1280x720, 8UC1, INTER_CUBIC)
+[ PERFSTAT ]    (samples=16   mean=13.00   median=13.13   min=12.21   stddev=0.38 (2.9%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/20 (231 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/21, where GetParam() = (1280x720, 32FC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=5.86   median=5.83   min=5.45   stddev=0.42 (7.1%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/21 (675 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/22, where GetParam() = (1280x720, 32FC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=8.76   median=8.76   min=8.62   stddev=0.08 (0.9%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/22 (126 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/23, where GetParam() = (1280x720, 32FC1, INTER_CUBIC)
+[ PERFSTAT ]    (samples=13   mean=19.20   median=19.28   min=18.68   stddev=0.35 (1.8%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/23 (299 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/24, where GetParam() = (1280x720, 8UC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=10   mean=7.68   median=7.65   min=7.46   stddev=0.17 (2.2%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/24 (117 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/25, where GetParam() = (1280x720, 8UC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=16.17   median=16.09   min=15.87   stddev=0.25 (1.5%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/25 (202 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/26, where GetParam() = (1280x720, 8UC3, INTER_CUBIC)
+[ PERFSTAT ]    (samples=10   mean=29.56   median=29.50   min=29.14   stddev=0.30 (1.0%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/26 (336 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/27, where GetParam() = (1280x720, 32FC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=38   mean=7.94   median=7.93   min=7.82   stddev=0.07 (0.9%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/27 (462 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/28, where GetParam() = (1280x720, 32FC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=38   mean=13.43   median=13.41   min=13.01   stddev=0.29 (2.1%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/28 (643 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/29, where GetParam() = (1280x720, 32FC3, INTER_CUBIC)
+[ PERFSTAT ]    (samples=10   mean=41.18   median=41.09   min=40.89   stddev=0.32 (0.8%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/29 (518 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/30, where GetParam() = (1280x720, 8UC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=77   mean=6.36   median=6.38   min=5.50   stddev=0.19 (3.0%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/30 (557 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/31, where GetParam() = (1280x720, 8UC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=20.34   median=20.28   min=19.67   stddev=0.45 (2.2%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/31 (255 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/32, where GetParam() = (1280x720, 8UC4, INTER_CUBIC)
+[ PERFSTAT ]    (samples=10   mean=30.50   median=30.21   min=29.92   stddev=0.71 (2.3%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/32 (357 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/33, where GetParam() = (1280x720, 32FC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=38   mean=7.33   median=7.32   min=7.05   stddev=0.18 (2.5%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/33 (487 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/34, where GetParam() = (1280x720, 32FC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=15   mean=14.79   median=14.98   min=13.74   stddev=0.43 (2.9%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/34 (365 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/35, where GetParam() = (1280x720, 32FC4, INTER_CUBIC)
+[ PERFSTAT ]    (samples=10   mean=32.16   median=32.14   min=31.84   stddev=0.19 (0.6%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/35 (459 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/36, where GetParam() = (1920x1080, 8UC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=72   mean=11.71   median=11.67   min=10.63   stddev=0.35 (3.0%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/36 (890 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/37, where GetParam() = (1920x1080, 8UC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=19.70   median=19.65   min=19.13   stddev=0.47 (2.4%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/37 (228 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/38, where GetParam() = (1920x1080, 8UC1, INTER_CUBIC)
+[ PERFSTAT ]    (samples=10   mean=24.80   median=24.80   min=24.39   stddev=0.25 (1.0%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/38 (279 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/39, where GetParam() = (1920x1080, 32FC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=50   mean=11.36   median=11.35   min=11.12   stddev=0.11 (0.9%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/39 (689 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/40, where GetParam() = (1920x1080, 32FC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=13   mean=18.20   median=18.24   min=17.93   stddev=0.18 (1.0%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/40 (329 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/41, where GetParam() = (1920x1080, 32FC1, INTER_CUBIC)
+[ PERFSTAT ]    (samples=10   mean=46.34   median=46.05   min=45.55   stddev=0.83 (1.8%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/41 (553 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/42, where GetParam() = (1920x1080, 8UC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=100   mean=12.92   median=12.88   min=12.44   stddev=0.33 (2.5%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/42 (1418 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/43, where GetParam() = (1920x1080, 8UC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=32.09   median=31.93   min=31.74   stddev=0.42 (1.3%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/43 (405 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/44, where GetParam() = (1920x1080, 8UC3, INTER_CUBIC)
+[ PERFSTAT ]    (samples=10   mean=60.91   median=60.66   min=60.43   stddev=0.48 (0.8%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/44 (695 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/45, where GetParam() = (1920x1080, 32FC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=13   mean=17.90   median=17.92   min=17.59   stddev=0.16 (0.9%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/45 (495 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/46, where GetParam() = (1920x1080, 32FC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=30   mean=32.08   median=31.78   min=31.32   stddev=0.96 (3.0%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/46 (1142 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/47, where GetParam() = (1920x1080, 32FC3, INTER_CUBIC)
+[ PERFSTAT ]    (samples=10   mean=94.15   median=94.29   min=93.21   stddev=0.53 (0.6%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/47 (1112 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/48, where GetParam() = (1920x1080, 8UC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=13   mean=12.34   median=12.32   min=11.92   stddev=0.32 (2.6%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/48 (290 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/49, where GetParam() = (1920x1080, 8UC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=38.58   median=38.50   min=38.21   stddev=0.35 (0.9%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/49 (491 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/50, where GetParam() = (1920x1080, 8UC4, INTER_CUBIC)
+[ PERFSTAT ]    (samples=10   mean=60.38   median=60.13   min=59.20   stddev=1.20 (2.0%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/50 (713 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/51, where GetParam() = (1920x1080, 32FC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=13   mean=16.16   median=16.15   min=15.81   stddev=0.19 (1.2%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/51 (564 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/52, where GetParam() = (1920x1080, 32FC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=25   mean=29.32   median=29.16   min=29.03   stddev=0.46 (1.6%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/52 (979 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/53, where GetParam() = (1920x1080, 32FC4, INTER_CUBIC)
+[ PERFSTAT ]    (samples=10   mean=67.93   median=67.89   min=67.28   stddev=0.31 (0.5%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/53 (889 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/54, where GetParam() = (3840x2160, 8UC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=13   mean=39.64   median=39.55   min=39.28   stddev=0.34 (0.9%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/54 (664 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/55, where GetParam() = (3840x2160, 8UC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=69.89   median=69.83   min=69.47   stddev=0.48 (0.7%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/55 (799 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/56, where GetParam() = (3840x2160, 8UC1, INTER_CUBIC)
+[ PERFSTAT ]    (samples=10   mean=91.00   median=90.72   min=90.38   stddev=0.61 (0.7%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/56 (1014 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/57, where GetParam() = (3840x2160, 32FC1, INTER_NEAREST)
+[ PERFSTAT ]    (samples=13   mean=47.18   median=47.14   min=46.38   stddev=0.36 (0.8%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/57 (970 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/58, where GetParam() = (3840x2160, 32FC1, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=76.78   median=76.31   min=76.12   stddev=0.96 (1.2%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/58 (1014 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/59, where GetParam() = (3840x2160, 32FC1, INTER_CUBIC)
+[ PERFSTAT ]    (samples=10   mean=221.90   median=220.97   min=220.56   stddev=1.85 (0.8%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/59 (2446 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/60, where GetParam() = (3840x2160, 8UC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=63   mean=53.52   median=53.56   min=52.13   stddev=1.40 (2.6%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/60 (3679 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/61, where GetParam() = (3840x2160, 8UC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=125.37   median=125.31   min=125.11   stddev=0.25 (0.2%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/61 (1478 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/62, where GetParam() = (3840x2160, 8UC3, INTER_CUBIC)
+[ PERFSTAT ]    (samples=10   mean=262.60   median=262.07   min=261.83   stddev=1.33 (0.5%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/62 (2885 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/63, where GetParam() = (3840x2160, 32FC3, INTER_NEAREST)
+[ PERFSTAT ]    (samples=13   mean=89.74   median=89.72   min=89.49   stddev=0.19 (0.2%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/63 (2318 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/64, where GetParam() = (3840x2160, 32FC3, INTER_LINEAR)
+[ PERFSTAT ]    (samples=13   mean=128.24   median=127.15   min=126.72   stddev=3.48 (2.7%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/64 (2261 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/65, where GetParam() = (3840x2160, 32FC3, INTER_CUBIC)
+[ PERFSTAT ]    (samples=10   mean=385.64   median=385.10   min=379.20   stddev=4.12 (1.1%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/65 (4438 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/66, where GetParam() = (3840x2160, 8UC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=10   mean=49.79   median=49.62   min=49.45   stddev=0.47 (0.9%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/66 (869 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/67, where GetParam() = (3840x2160, 8UC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=10   mean=151.56   median=151.26   min=151.00   stddev=0.68 (0.4%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/67 (1797 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/68, where GetParam() = (3840x2160, 8UC4, INTER_CUBIC)
+[ PERFSTAT ]    (samples=10   mean=244.74   median=243.88   min=243.17   stddev=2.07 (0.8%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/68 (2729 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/69, where GetParam() = (3840x2160, 32FC4, INTER_NEAREST)
+[ PERFSTAT ]    (samples=63   mean=70.93   median=70.72   min=70.47   stddev=0.73 (1.0%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/69 (5937 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/70, where GetParam() = (3840x2160, 32FC4, INTER_LINEAR)
+[ PERFSTAT ]    (samples=13   mean=117.86   median=117.88   min=117.73   stddev=0.08 (0.1%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/70 (2281 ms)
+[ RUN      ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/71, where GetParam() = (3840x2160, 32FC4, INTER_CUBIC)
+[ PERFSTAT ]    (samples=10   mean=270.43   median=271.33   min=262.41   stddev=2.86 (1.1%))
+[       OK ] OCL_WarpAffineFixture_WarpAffine.WarpAffine/71 (3454 ms)
+[----------] 72 tests from OCL_WarpAffineFixture_WarpAffine (69736 ms total)
+
+[----------] Global test environment tear-down
+[==========] 72 tests from 1 test case ran. (69737 ms total)
+[  PASSED  ] 72 tests.

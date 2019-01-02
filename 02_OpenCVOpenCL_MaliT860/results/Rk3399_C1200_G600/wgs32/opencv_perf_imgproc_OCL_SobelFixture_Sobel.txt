@@ -1,0 +1,110 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 32
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_SobelFixture_Sobel*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_SobelFixture_Sobel
+[ RUN      ] OCL_SobelFixture_Sobel.Sobel/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=6.42   median=6.56   min=5.21   stddev=0.42 (6.6%))
+[       OK ] OCL_SobelFixture_Sobel.Sobel/0 (766 ms)
+[ RUN      ] OCL_SobelFixture_Sobel.Sobel/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=9.67   median=9.71   min=9.25   stddev=0.23 (2.4%))
+[       OK ] OCL_SobelFixture_Sobel.Sobel/1 (230 ms)
+[ RUN      ] OCL_SobelFixture_Sobel.Sobel/2, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=13   mean=13.99   median=13.97   min=13.75   stddev=0.17 (1.2%))
+[       OK ] OCL_SobelFixture_Sobel.Sobel/2 (292 ms)
+[ RUN      ] OCL_SobelFixture_Sobel.Sobel/3, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=75   mean=11.51   median=11.50   min=11.27   stddev=0.13 (1.1%))
+[       OK ] OCL_SobelFixture_Sobel.Sobel/3 (1050 ms)
+[ RUN      ] OCL_SobelFixture_Sobel.Sobel/4, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=12.78   median=12.78   min=12.72   stddev=0.05 (0.4%))
+[       OK ] OCL_SobelFixture_Sobel.Sobel/4 (142 ms)
+[ RUN      ] OCL_SobelFixture_Sobel.Sobel/5, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=21.90   median=21.88   min=21.61   stddev=0.31 (1.4%))
+[       OK ] OCL_SobelFixture_Sobel.Sobel/5 (257 ms)
+[ RUN      ] OCL_SobelFixture_Sobel.Sobel/6, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=34   mean=27.83   median=28.16   min=25.92   stddev=0.83 (3.0%))
+[       OK ] OCL_SobelFixture_Sobel.Sobel/6 (1005 ms)
+[ RUN      ] OCL_SobelFixture_Sobel.Sobel/7, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=34.86   median=34.80   min=34.36   stddev=0.50 (1.4%))
+[       OK ] OCL_SobelFixture_Sobel.Sobel/7 (487 ms)
+[ RUN      ] OCL_SobelFixture_Sobel.Sobel/8, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=27.21   median=27.19   min=26.97   stddev=0.17 (0.6%))
+[       OK ] OCL_SobelFixture_Sobel.Sobel/8 (311 ms)
+[ RUN      ] OCL_SobelFixture_Sobel.Sobel/9, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=48.36   median=48.53   min=47.44   stddev=0.76 (1.6%))
+[       OK ] OCL_SobelFixture_Sobel.Sobel/9 (569 ms)
+[ RUN      ] OCL_SobelFixture_Sobel.Sobel/10, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=13   mean=56.90   median=56.85   min=56.54   stddev=0.37 (0.6%))
+[       OK ] OCL_SobelFixture_Sobel.Sobel/10 (910 ms)
+[ RUN      ] OCL_SobelFixture_Sobel.Sobel/11, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=67.49   median=67.37   min=67.21   stddev=0.27 (0.4%))
+[       OK ] OCL_SobelFixture_Sobel.Sobel/11 (1282 ms)
+[ RUN      ] OCL_SobelFixture_Sobel.Sobel/12, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=14   mean=109.95   median=111.07   min=100.42   stddev=3.22 (2.9%))
+[       OK ] OCL_SobelFixture_Sobel.Sobel/12 (1648 ms)
+[ RUN      ] OCL_SobelFixture_Sobel.Sobel/13, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=211.09   median=211.33   min=200.95   stddev=4.42 (2.1%))
+[       OK ] OCL_SobelFixture_Sobel.Sobel/13 (2433 ms)
+[ RUN      ] OCL_SobelFixture_Sobel.Sobel/14, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=13   mean=220.82   median=220.60   min=219.89   stddev=0.81 (0.4%))
+[       OK ] OCL_SobelFixture_Sobel.Sobel/14 (3351 ms)
+[ RUN      ] OCL_SobelFixture_Sobel.Sobel/15, where GetParam() = (3840x2160, 32FC4)
+	Test was skipped
+[       OK ] OCL_SobelFixture_Sobel.Sobel/15 (1 ms)
+[----------] 16 tests from OCL_SobelFixture_Sobel (14737 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (14737 ms total)
+[  PASSED  ] 16 tests.

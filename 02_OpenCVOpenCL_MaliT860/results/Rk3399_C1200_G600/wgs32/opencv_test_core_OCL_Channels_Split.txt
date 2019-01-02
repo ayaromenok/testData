@@ -1,0 +1,173 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 32
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_Channels/Split*
+[==========] Running 56 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 56 tests from OCL_Channels/Split
+[ RUN      ] OCL_Channels/Split.Accuracy/0, where GetParam() = (8UC1, Channels(1), false)
+[       OK ] OCL_Channels/Split.Accuracy/0 (70 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/1, where GetParam() = (8UC1, Channels(1), true)
+[       OK ] OCL_Channels/Split.Accuracy/1 (4 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/2, where GetParam() = (8UC1, Channels(2), false)
+[       OK ] OCL_Channels/Split.Accuracy/2 (22 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/3, where GetParam() = (8UC1, Channels(2), true)
+[       OK ] OCL_Channels/Split.Accuracy/3 (6 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/4, where GetParam() = (8UC1, Channels(3), false)
+[       OK ] OCL_Channels/Split.Accuracy/4 (29 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/5, where GetParam() = (8UC1, Channels(3), true)
+[       OK ] OCL_Channels/Split.Accuracy/5 (7 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/6, where GetParam() = (8UC1, Channels(4), false)
+[       OK ] OCL_Channels/Split.Accuracy/6 (27 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/7, where GetParam() = (8UC1, Channels(4), true)
+[       OK ] OCL_Channels/Split.Accuracy/7 (7 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/8, where GetParam() = (8SC1, Channels(1), false)
+[       OK ] OCL_Channels/Split.Accuracy/8 (22 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/9, where GetParam() = (8SC1, Channels(1), true)
+[       OK ] OCL_Channels/Split.Accuracy/9 (5 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/10, where GetParam() = (8SC1, Channels(2), false)
+[       OK ] OCL_Channels/Split.Accuracy/10 (29 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/11, where GetParam() = (8SC1, Channels(2), true)
+[       OK ] OCL_Channels/Split.Accuracy/11 (5 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/12, where GetParam() = (8SC1, Channels(3), false)
+[       OK ] OCL_Channels/Split.Accuracy/12 (25 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/13, where GetParam() = (8SC1, Channels(3), true)
+[       OK ] OCL_Channels/Split.Accuracy/13 (5 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/14, where GetParam() = (8SC1, Channels(4), false)
+[       OK ] OCL_Channels/Split.Accuracy/14 (28 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/15, where GetParam() = (8SC1, Channels(4), true)
+[       OK ] OCL_Channels/Split.Accuracy/15 (9 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/16, where GetParam() = (16UC1, Channels(1), false)
+[       OK ] OCL_Channels/Split.Accuracy/16 (23 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/17, where GetParam() = (16UC1, Channels(1), true)
+[       OK ] OCL_Channels/Split.Accuracy/17 (7 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/18, where GetParam() = (16UC1, Channels(2), false)
+[       OK ] OCL_Channels/Split.Accuracy/18 (25 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/19, where GetParam() = (16UC1, Channels(2), true)
+[       OK ] OCL_Channels/Split.Accuracy/19 (7 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/20, where GetParam() = (16UC1, Channels(3), false)
+[       OK ] OCL_Channels/Split.Accuracy/20 (25 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/21, where GetParam() = (16UC1, Channels(3), true)
+[       OK ] OCL_Channels/Split.Accuracy/21 (8 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/22, where GetParam() = (16UC1, Channels(4), false)
+[       OK ] OCL_Channels/Split.Accuracy/22 (28 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/23, where GetParam() = (16UC1, Channels(4), true)
+[       OK ] OCL_Channels/Split.Accuracy/23 (8 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/24, where GetParam() = (16SC1, Channels(1), false)
+[       OK ] OCL_Channels/Split.Accuracy/24 (21 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/25, where GetParam() = (16SC1, Channels(1), true)
+[       OK ] OCL_Channels/Split.Accuracy/25 (5 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/26, where GetParam() = (16SC1, Channels(2), false)
+[       OK ] OCL_Channels/Split.Accuracy/26 (23 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/27, where GetParam() = (16SC1, Channels(2), true)
+[       OK ] OCL_Channels/Split.Accuracy/27 (6 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/28, where GetParam() = (16SC1, Channels(3), false)
+[       OK ] OCL_Channels/Split.Accuracy/28 (28 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/29, where GetParam() = (16SC1, Channels(3), true)
+[       OK ] OCL_Channels/Split.Accuracy/29 (6 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/30, where GetParam() = (16SC1, Channels(4), false)
+[       OK ] OCL_Channels/Split.Accuracy/30 (27 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/31, where GetParam() = (16SC1, Channels(4), true)
+[       OK ] OCL_Channels/Split.Accuracy/31 (8 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/32, where GetParam() = (32SC1, Channels(1), false)
+[       OK ] OCL_Channels/Split.Accuracy/32 (23 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/33, where GetParam() = (32SC1, Channels(1), true)
+[       OK ] OCL_Channels/Split.Accuracy/33 (7 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/34, where GetParam() = (32SC1, Channels(2), false)
+[       OK ] OCL_Channels/Split.Accuracy/34 (23 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/35, where GetParam() = (32SC1, Channels(2), true)
+[       OK ] OCL_Channels/Split.Accuracy/35 (7 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/36, where GetParam() = (32SC1, Channels(3), false)
+[       OK ] OCL_Channels/Split.Accuracy/36 (23 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/37, where GetParam() = (32SC1, Channels(3), true)
+[       OK ] OCL_Channels/Split.Accuracy/37 (7 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/38, where GetParam() = (32SC1, Channels(4), false)
+[       OK ] OCL_Channels/Split.Accuracy/38 (30 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/39, where GetParam() = (32SC1, Channels(4), true)
+[       OK ] OCL_Channels/Split.Accuracy/39 (14 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/40, where GetParam() = (32FC1, Channels(1), false)
+[       OK ] OCL_Channels/Split.Accuracy/40 (5 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/41, where GetParam() = (32FC1, Channels(1), true)
+[       OK ] OCL_Channels/Split.Accuracy/41 (6 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/42, where GetParam() = (32FC1, Channels(2), false)
+[       OK ] OCL_Channels/Split.Accuracy/42 (4 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/43, where GetParam() = (32FC1, Channels(2), true)
+[       OK ] OCL_Channels/Split.Accuracy/43 (8 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/44, where GetParam() = (32FC1, Channels(3), false)
+[       OK ] OCL_Channels/Split.Accuracy/44 (6 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/45, where GetParam() = (32FC1, Channels(3), true)
+[       OK ] OCL_Channels/Split.Accuracy/45 (10 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/46, where GetParam() = (32FC1, Channels(4), false)
+[       OK ] OCL_Channels/Split.Accuracy/46 (5 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/47, where GetParam() = (32FC1, Channels(4), true)
+[       OK ] OCL_Channels/Split.Accuracy/47 (9 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/48, where GetParam() = (64FC1, Channels(1), false)
+[       OK ] OCL_Channels/Split.Accuracy/48 (20 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/49, where GetParam() = (64FC1, Channels(1), true)
+[       OK ] OCL_Channels/Split.Accuracy/49 (12 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/50, where GetParam() = (64FC1, Channels(2), false)
+[       OK ] OCL_Channels/Split.Accuracy/50 (27 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/51, where GetParam() = (64FC1, Channels(2), true)
+[       OK ] OCL_Channels/Split.Accuracy/51 (13 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/52, where GetParam() = (64FC1, Channels(3), false)
+[       OK ] OCL_Channels/Split.Accuracy/52 (30 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/53, where GetParam() = (64FC1, Channels(3), true)
+[       OK ] OCL_Channels/Split.Accuracy/53 (19 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/54, where GetParam() = (64FC1, Channels(4), false)
+[       OK ] OCL_Channels/Split.Accuracy/54 (39 ms)
+[ RUN      ] OCL_Channels/Split.Accuracy/55, where GetParam() = (64FC1, Channels(4), true)
+[       OK ] OCL_Channels/Split.Accuracy/55 (18 ms)
+[----------] 56 tests from OCL_Channels/Split (926 ms total)
+
+[----------] Global test environment tear-down
+[==========] 56 tests from 1 test case ran. (928 ms total)
+[  PASSED  ] 56 tests.

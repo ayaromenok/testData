@@ -1,0 +1,110 @@
+Time compensation is 0
+CTEST_FULL_OUTPUT
+OpenCV version: 4.0.1-dev
+OpenCV VCS version: 4.0.0-beta-625-g6b96512d4
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.3.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    ARM Platform
+        iGPU: Mali-T860 (OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3)
+Current OpenCL device: 
+    Type = iGPU
+    Name = Mali-T860
+    Version = OpenCL 1.2 v1.r14p0-01rel0-git(966ed26).f44c85cb3d2ceb87e8be88e7592755c3
+    Driver version = 1.2
+    Address bits = 64
+    Compute units = 4
+    Max work group size = 32
+    Local memory size = 32 KB
+    Max memory allocation size = 493 MB 15 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_byte_addressable_store
+        cl_khr_3d_image_writes
+        cl_khr_fp64
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_icd
+        cl_khr_egl_event
+        cl_khr_egl_image
+        cl_khr_image2d_from_buffer
+        cl_arm_core_id
+        cl_arm_printf
+        cl_arm_thread_limit_hint
+        cl_arm_non_uniform_work_group_size
+        cl_arm_import_memory
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 2
+    Preferred vector width float = 4
+    Preferred vector width double = 2
+Note: Google Test filter = *OCL_ScharrFixture_Scharr*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from OCL_ScharrFixture_Scharr
+[ RUN      ] OCL_ScharrFixture_Scharr.Scharr/0, where GetParam() = (640x480, 8UC1)
+[ PERFSTAT ]    (samples=100   mean=6.01   median=6.02   min=5.06   stddev=0.22 (3.7%))
+[       OK ] OCL_ScharrFixture_Scharr.Scharr/0 (718 ms)
+[ RUN      ] OCL_ScharrFixture_Scharr.Scharr/1, where GetParam() = (640x480, 32FC1)
+[ PERFSTAT ]    (samples=38   mean=9.14   median=9.16   min=8.59   stddev=0.18 (2.0%))
+[       OK ] OCL_ScharrFixture_Scharr.Scharr/1 (452 ms)
+[ RUN      ] OCL_ScharrFixture_Scharr.Scharr/2, where GetParam() = (640x480, 8UC4)
+[ PERFSTAT ]    (samples=13   mean=11.81   median=11.89   min=11.07   stddev=0.27 (2.3%))
+[       OK ] OCL_ScharrFixture_Scharr.Scharr/2 (257 ms)
+[ RUN      ] OCL_ScharrFixture_Scharr.Scharr/3, where GetParam() = (640x480, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=14.55   median=14.49   min=14.24   stddev=0.29 (2.0%))
+[       OK ] OCL_ScharrFixture_Scharr.Scharr/3 (323 ms)
+[ RUN      ] OCL_ScharrFixture_Scharr.Scharr/4, where GetParam() = (1280x720, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=13.68   median=13.66   min=13.59   stddev=0.11 (0.8%))
+[       OK ] OCL_ScharrFixture_Scharr.Scharr/4 (153 ms)
+[ RUN      ] OCL_ScharrFixture_Scharr.Scharr/5, where GetParam() = (1280x720, 32FC1)
+[ PERFSTAT ]    (samples=13   mean=22.97   median=22.97   min=22.81   stddev=0.12 (0.5%))
+[       OK ] OCL_ScharrFixture_Scharr.Scharr/5 (341 ms)
+[ RUN      ] OCL_ScharrFixture_Scharr.Scharr/6, where GetParam() = (1280x720, 8UC4)
+[ PERFSTAT ]    (samples=10   mean=32.59   median=32.18   min=31.73   stddev=0.97 (3.0%))
+[       OK ] OCL_ScharrFixture_Scharr.Scharr/6 (377 ms)
+[ RUN      ] OCL_ScharrFixture_Scharr.Scharr/7, where GetParam() = (1280x720, 32FC4)
+[ PERFSTAT ]    (samples=10   mean=40.12   median=39.83   min=39.28   stddev=0.93 (2.3%))
+[       OK ] OCL_ScharrFixture_Scharr.Scharr/7 (544 ms)
+[ RUN      ] OCL_ScharrFixture_Scharr.Scharr/8, where GetParam() = (1920x1080, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=28.62   median=28.61   min=28.38   stddev=0.16 (0.6%))
+[       OK ] OCL_ScharrFixture_Scharr.Scharr/8 (326 ms)
+[ RUN      ] OCL_ScharrFixture_Scharr.Scharr/9, where GetParam() = (1920x1080, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=49.75   median=49.29   min=49.18   stddev=1.04 (2.1%))
+[       OK ] OCL_ScharrFixture_Scharr.Scharr/9 (583 ms)
+[ RUN      ] OCL_ScharrFixture_Scharr.Scharr/10, where GetParam() = (1920x1080, 8UC4)
+[ PERFSTAT ]    (samples=13   mean=70.79   median=70.68   min=70.46   stddev=0.30 (0.4%))
+[       OK ] OCL_ScharrFixture_Scharr.Scharr/10 (1042 ms)
+[ RUN      ] OCL_ScharrFixture_Scharr.Scharr/11, where GetParam() = (1920x1080, 32FC4)
+[ PERFSTAT ]    (samples=13   mean=87.91   median=87.48   min=87.05   stddev=1.24 (1.4%))
+[       OK ] OCL_ScharrFixture_Scharr.Scharr/11 (1450 ms)
+[ RUN      ] OCL_ScharrFixture_Scharr.Scharr/12, where GetParam() = (3840x2160, 8UC1)
+[ PERFSTAT ]    (samples=11   mean=111.71   median=110.42   min=110.08   stddev=3.33 (3.0%))
+[       OK ] OCL_ScharrFixture_Scharr.Scharr/12 (1335 ms)
+[ RUN      ] OCL_ScharrFixture_Scharr.Scharr/13, where GetParam() = (3840x2160, 32FC1)
+[ PERFSTAT ]    (samples=10   mean=211.71   median=211.34   min=210.98   stddev=1.24 (0.6%))
+[       OK ] OCL_ScharrFixture_Scharr.Scharr/13 (2392 ms)
+[ RUN      ] OCL_ScharrFixture_Scharr.Scharr/14, where GetParam() = (3840x2160, 8UC4)
+[ PERFSTAT ]    (samples=13   mean=224.12   median=224.02   min=222.46   stddev=1.39 (0.6%))
+[       OK ] OCL_ScharrFixture_Scharr.Scharr/14 (3344 ms)
+[ RUN      ] OCL_ScharrFixture_Scharr.Scharr/15, where GetParam() = (3840x2160, 32FC4)
+	Test was skipped
+[       OK ] OCL_ScharrFixture_Scharr.Scharr/15 (1 ms)
+[----------] 16 tests from OCL_ScharrFixture_Scharr (13639 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (13640 ms total)
+[  PASSED  ] 16 tests.
