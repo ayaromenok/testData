@@ -1,34 +1,35 @@
+#!/bin/sh
 mkdir _results
-./opencv_perf_bioinspired > resulst/bioinspired.txt
-./opencv_perf_calib3d > resulst/calib3d.txt
-./opencv_perf_core > resulst/code.txt
-./opencv_perf_cudaarithm > resulst/cudaarithm.txt
-./opencv_perf_cudabgsegm > resulst/cudabgsegm.txt
-./opencv_perf_cudacodec > resulst/cudacodes.txt
-./opencv_perf_cudafeatures2d > resulst/cudafeatures2d.txt
-./opencv_perf_cudafilters > resulst/cudafilters.txt
-./opencv_perf_cudaimgproc > resulst/cudaimgproc.txt
-./opencv_perf_cudalegacy > resulst/cudalegasy.txt
-./opencv_perf_cudaobjdetect > resulst/cudaobjdetect.txt
-./opencv_perf_cudaoptflow > resulst/cudaoptflow.txt
-./opencv_perf_cudastereo > resulst/cudastereo.txt
-./opencv_perf_cudawarping > resulst/cudawarping.txt
-./opencv_perf_dnn > resulst/dnn.txt
-./opencv_perf_features2d > resulst/features2d.txt
-./opencv_perf_gapi > resulst/gapi.txt
-./opencv_perf_imgcodecs > resulst/imgcodecs.txt
-./opencv_perf_imgproc > resulst/imgproc.txt
-./opencv_perf_line_descriptor > resulst/line_description.txt
-./opencv_perf_objdetect > resulst/objdetect.txt
-./opencv_perf_optflow > resulst/optflow.txt
-./opencv_perf_photo > resulst/photo.txt
-./opencv_perf_reg > resulst/reg.txt
-./opencv_perf_stereo > resulst/stereo.txt
-./opencv_perf_stitching > resulst/stitching.txt
-./opencv_perf_superres > resulst/superres.txt
-./opencv_perf_tracking > resulst/tracking.txt
-./opencv_perf_video > resulst/video.txt
-./opencv_perf_videoio > resulst/videoio.txt
-./opencv_perf_xfeatures2d > resulst/xfeatures2d.txt
-./opencv_perf_ximgproc > resulst/ximgproc.txt
-./opencv_perf_xphoto > resulst/xphoto.txt
+time -p ./opencv_perf_bioinspired > results/bioinspired.txt
+time -p ./opencv_perf_calib3d > results/calib3d.txt
+time -p ./opencv_perf_core > results/code.txt
+time -p ./opencv_perf_cudaarithm > results/cudaarithm.txt
+time -p ./opencv_perf_cudabgsegm > results/cudabgsegm.txt
+time -p ./opencv_perf_cudacodec > results/cudacodes.txt
+time -p ./opencv_perf_cudafeatures2d > results/cudafeatures2d.txt
+time -p ./opencv_perf_cudafilters > results/cudafilters.txt
+time -p ./opencv_perf_cudaimgproc > results/cudaimgproc.txt
+time -p ./opencv_perf_cudalegacy > results/cudalegasy.txt
+time -p ./opencv_perf_cudaobjdetect > results/cudaobjdetect.txt
+time -p ./opencv_perf_cudaoptflow > results/cudaoptflow.txt
+time -p ./opencv_perf_cudastereo > results/cudastereo.txt
+time -p ./opencv_perf_cudawarping > results/cudawarping.txt
+time -p ./opencv_perf_dnn > results/dnn.txt
+time -p ./opencv_perf_features2d > results/features2d.txt
+time -p ./opencv_perf_gapi > results/gapi.txt
+time -p ./opencv_perf_imgcodecs > results/imgcodecs.txt
+time -p ./opencv_perf_imgproc > results/imgproc.txt
+time -p ./opencv_perf_line_descriptor > results/line_description.txt
+time -p ./opencv_perf_objdetect > results/objdetect.txt
+time -p ./opencv_perf_optflow > results/optflow.txt
+time -p ./opencv_perf_photo > results/photo.txt
+time -p ./opencv_perf_reg > results/reg.txt
+time -p ./opencv_perf_stereo > results/stereo.txt
+time -p ./opencv_perf_stitching > results/stitching.txt
+time -p ./opencv_perf_superres > results/superres.txt
+time -p ./opencv_perf_tracking > results/tracking.txt
+time -p ./opencv_perf_video > results/video.txt
+time -p ./opencv_perf_videoio > results/videoio.txt
+time -p ./opencv_perf_xfeatures2d > results/xfeatures2d.txt
+time -p ./opencv_perf_ximgproc > results/ximgproc.txt
+time -p ./opencv_perf_xphoto > results/xphoto.txt
