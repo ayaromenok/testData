@@ -1,0 +1,145 @@
+Time compensation is 0
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.1.0-dev
+OpenCV VCS version: 4.1.0-180-gb4ec8fe3e
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.4.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (888) haveOpenCL Initialize OpenCL runtime...
+OpenCL Platforms: 
+    Portable Computing Language
+        CPU: pthread-cortex-a57 (OpenCL 1.2 pocl HSTR: pthread-aarch64-unknown-linux-gnu-cortex-a57)
+        iGPU: NVIDIA Tegra X1 (OpenCL 1.2 pocl HSTR: CUDA-sm_53)
+Current OpenCL device: 
+    Type = iGPU
+    Name = NVIDIA Tegra X1
+    Version = OpenCL 1.2 pocl HSTR: CUDA-sm_53
+    Driver version = 1.3
+    Address bits = 64
+    Compute units = 1
+    Max work group size = 1024
+    Local memory size = 48 KB
+    Max memory allocation size = 990 MB 848 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_byte_addressable_store
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_fp16
+        cl_khr_fp64
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 1
+    Preferred vector width short = 1
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 19 tests from 5 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from OCL_OpticalFlowDualTVL1Fixture_OpticalFlowDualTVL1
+[ RUN      ] OCL_OpticalFlowDualTVL1Fixture_OpticalFlowDualTVL1.OpticalFlowDualTVL1/0, where GetParam() = ((-1, 0.3), false)
+.
+.
+.
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 2265920 (base=0  current=0)
+[ PERFSTAT ]    (samples=10   mean=3527.00   median=3521.75   min=3508.47   stddev=14.13 (0.4%))
+[       OK ] OCL_OpticalFlowDualTVL1Fixture_OpticalFlowDualTVL1.OpticalFlowDualTVL1/0 (35318 ms)
+[ RUN      ] OCL_OpticalFlowDualTVL1Fixture_OpticalFlowDualTVL1.OpticalFlowDualTVL1/1, where GetParam() = ((-1, 0.3), true)
+.
+.
+.
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 2265920 (base=0  current=0)
+[ PERFSTAT ]    (samples=10   mean=3509.07   median=3509.34   min=3483.83   stddev=13.52 (0.4%))
+[       OK ] OCL_OpticalFlowDualTVL1Fixture_OpticalFlowDualTVL1.OpticalFlowDualTVL1/1 (38644 ms)
+[ RUN      ] OCL_OpticalFlowDualTVL1Fixture_OpticalFlowDualTVL1.OpticalFlowDualTVL1/2, where GetParam() = ((3, 0.5), false)
+.
+.
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 2265920 (base=0  current=0)
+[ PERFSTAT ]    (samples=10   mean=3321.82   median=3320.61   min=3306.50   stddev=12.04 (0.4%))
+[       OK ] OCL_OpticalFlowDualTVL1Fixture_OpticalFlowDualTVL1.OpticalFlowDualTVL1/2 (33250 ms)
+[ RUN      ] OCL_OpticalFlowDualTVL1Fixture_OpticalFlowDualTVL1.OpticalFlowDualTVL1/3, where GetParam() = ((3, 0.5), true)
+.
+.
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 2265920 (base=0  current=0)
+[ PERFSTAT ]    (samples=10   mean=3322.39   median=3325.08   min=3296.00   stddev=14.89 (0.4%))
+[       OK ] OCL_OpticalFlowDualTVL1Fixture_OpticalFlowDualTVL1.OpticalFlowDualTVL1/3 (36549 ms)
+[----------] 4 tests from OCL_OpticalFlowDualTVL1Fixture_OpticalFlowDualTVL1 (143761 ms total)
+
+[----------] 2 tests from DenseOpticalFlow_DeepFlow_perf
+[ RUN      ] DenseOpticalFlow_DeepFlow_perf.perf/0, where GetParam() = (640x480)
+[ PERFSTAT ]    (samples=1   mean=4934.29   median=4934.29   min=4934.29   stddev=0.00 (0.0%))
+[       OK ] DenseOpticalFlow_DeepFlow_perf.perf/0 (4939 ms)
+[ RUN      ] DenseOpticalFlow_DeepFlow_perf.perf/1, where GetParam() = (1280x720)
+.
+[ PERFSTAT ]    (samples=1   mean=15604.18   median=15604.18   min=15604.18   stddev=0.00 (0.0%))
+[       OK ] DenseOpticalFlow_DeepFlow_perf.perf/1 (15618 ms)
+[----------] 2 tests from DenseOpticalFlow_DeepFlow_perf (20558 ms total)
+
+[----------] 8 tests from ST_SR_IM_Sparse_OpticalFlow_SparseRLOF
+[ RUN      ] ST_SR_IM_Sparse_OpticalFlow_SparseRLOF.OpticalFlow_SparseRLOF/0, where GetParam() = ("ST_BILINEAR", "SR_CROSS", true)
+[ PERFSTAT ]    (samples=10   mean=620.10   median=618.81   min=613.70   stddev=5.58 (0.9%))
+[       OK ] ST_SR_IM_Sparse_OpticalFlow_SparseRLOF.OpticalFlow_SparseRLOF/0 (6227 ms)
+[ RUN      ] ST_SR_IM_Sparse_OpticalFlow_SparseRLOF.OpticalFlow_SparseRLOF/1, where GetParam() = ("ST_BILINEAR", "SR_CROSS", false)
+[ PERFSTAT ]    (samples=10   mean=482.01   median=480.61   min=478.02   stddev=4.94 (1.0%))
+[       OK ] ST_SR_IM_Sparse_OpticalFlow_SparseRLOF.OpticalFlow_SparseRLOF/1 (4846 ms)
+[ RUN      ] ST_SR_IM_Sparse_OpticalFlow_SparseRLOF.OpticalFlow_SparseRLOF/2, where GetParam() = ("ST_BILINEAR", "SR_FIXED", true)
+[ PERFSTAT ]    (samples=10   mean=742.35   median=743.45   min=734.63   stddev=4.50 (0.6%))
+[       OK ] ST_SR_IM_Sparse_OpticalFlow_SparseRLOF.OpticalFlow_SparseRLOF/2 (7449 ms)
+[ RUN      ] ST_SR_IM_Sparse_OpticalFlow_SparseRLOF.OpticalFlow_SparseRLOF/3, where GetParam() = ("ST_BILINEAR", "SR_FIXED", false)
+[ PERFSTAT ]    (samples=10   mean=499.83   median=499.57   min=497.26   stddev=2.05 (0.4%))
+[       OK ] ST_SR_IM_Sparse_OpticalFlow_SparseRLOF.OpticalFlow_SparseRLOF/3 (5025 ms)
+[ RUN      ] ST_SR_IM_Sparse_OpticalFlow_SparseRLOF.OpticalFlow_SparseRLOF/4, where GetParam() = ("ST_STANDART", "SR_CROSS", true)
+[ PERFSTAT ]    (samples=10   mean=672.27   median=671.23   min=667.27   stddev=4.25 (0.6%))
+[       OK ] ST_SR_IM_Sparse_OpticalFlow_SparseRLOF.OpticalFlow_SparseRLOF/4 (6750 ms)
+[ RUN      ] ST_SR_IM_Sparse_OpticalFlow_SparseRLOF.OpticalFlow_SparseRLOF/5, where GetParam() = ("ST_STANDART", "SR_CROSS", false)
+[ PERFSTAT ]    (samples=10   mean=525.68   median=526.19   min=520.74   stddev=2.81 (0.5%))
+[       OK ] ST_SR_IM_Sparse_OpticalFlow_SparseRLOF.OpticalFlow_SparseRLOF/5 (5283 ms)
+[ RUN      ] ST_SR_IM_Sparse_OpticalFlow_SparseRLOF.OpticalFlow_SparseRLOF/6, where GetParam() = ("ST_STANDART", "SR_FIXED", true)
+[ PERFSTAT ]    (samples=10   mean=797.81   median=798.00   min=788.33   stddev=7.24 (0.9%))
+[       OK ] ST_SR_IM_Sparse_OpticalFlow_SparseRLOF.OpticalFlow_SparseRLOF/6 (8005 ms)
+[ RUN      ] ST_SR_IM_Sparse_OpticalFlow_SparseRLOF.OpticalFlow_SparseRLOF/7, where GetParam() = ("ST_STANDART", "SR_FIXED", false)
+[ PERFSTAT ]    (samples=10   mean=592.87   median=593.12   min=586.82   stddev=3.74 (0.6%))
+[       OK ] ST_SR_IM_Sparse_OpticalFlow_SparseRLOF.OpticalFlow_SparseRLOF/7 (5955 ms)
+[----------] 8 tests from ST_SR_IM_Sparse_OpticalFlow_SparseRLOF (49546 ms total)
+
+[----------] 4 tests from INTERP_GRID_Dense_OpticalFlow_DenseRLOF
+[ RUN      ] INTERP_GRID_Dense_OpticalFlow_DenseRLOF.OpticalFlow_DenseRLOF/0, where GetParam() = ("INTERP_EPIC", 4)
+.
+.
+[ PERFSTAT ]    (samples=10   mean=2751.89   median=2756.85   min=2725.46   stddev=12.51 (0.5%))
+[       OK ] INTERP_GRID_Dense_OpticalFlow_DenseRLOF.OpticalFlow_DenseRLOF/0 (27545 ms)
+[ RUN      ] INTERP_GRID_Dense_OpticalFlow_DenseRLOF.OpticalFlow_DenseRLOF/1, where GetParam() = ("INTERP_EPIC", 10)
+[ PERFSTAT ]    (samples=10   mean=595.75   median=595.29   min=588.44   stddev=6.56 (1.1%))
+[       OK ] INTERP_GRID_Dense_OpticalFlow_DenseRLOF.OpticalFlow_DenseRLOF/1 (5984 ms)
+[ RUN      ] INTERP_GRID_Dense_OpticalFlow_DenseRLOF.OpticalFlow_DenseRLOF/2, where GetParam() = ("INTERP_GEO", 4)
+.
+.
+[ PERFSTAT ]    (samples=10   mean=2517.70   median=2518.67   min=2501.41   stddev=8.58 (0.3%))
+[       OK ] INTERP_GRID_Dense_OpticalFlow_DenseRLOF.OpticalFlow_DenseRLOF/2 (25203 ms)
+[ RUN      ] INTERP_GRID_Dense_OpticalFlow_DenseRLOF.OpticalFlow_DenseRLOF/3, where GetParam() = ("INTERP_GEO", 10)
+[ PERFSTAT ]    (samples=10   mean=690.86   median=690.66   min=686.23   stddev=3.32 (0.5%))
+[       OK ] INTERP_GRID_Dense_OpticalFlow_DenseRLOF.OpticalFlow_DenseRLOF/3 (6936 ms)
+[----------] 4 tests from INTERP_GRID_Dense_OpticalFlow_DenseRLOF (65669 ms total)
+
+[----------] 1 test from ImagePair_OpticalFlowDual_TVL1
+[ RUN      ] ImagePair_OpticalFlowDual_TVL1.OpticalFlowDual_TVL1/0, where GetParam() = ("cv/optflow/RubberWhale1.png", "cv/optflow/RubberWhale2.png")
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=10   mean=5128.60   median=5123.73   min=5086.00   stddev=32.83 (0.6%))
+[       OK ] ImagePair_OpticalFlowDual_TVL1.OpticalFlowDual_TVL1/0 (51314 ms)
+[----------] 1 test from ImagePair_OpticalFlowDual_TVL1 (51314 ms total)
+
+[----------] Global test environment tear-down
+[==========] 19 tests from 5 test cases ran. (330848 ms total)
+[  PASSED  ] 19 tests.

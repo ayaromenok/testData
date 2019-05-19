@@ -1,0 +1,156 @@
+[----------]
+[   INFO   ] 	Implementation variant: cuda.
+[----------]
+[----------]
+[ GPU INFO ] 	Run test suite on NVIDIA Tegra X1 GPU.
+[----------]
+Time compensation is 0
+*** CUDA Device Query (Runtime API) version (CUDART static linking) *** 
+
+Device count: 1
+
+Device 0: "NVIDIA Tegra X1"
+  CUDA Driver Version / Runtime Version          10.0 / 10.0
+  CUDA Capability Major/Minor version number:    5.3
+  Total amount of global memory:                 3963 MBytes (4155834368 bytes)
+  GPU Clock Speed:                               0.92 GHz
+  Max Texture Dimension Size (x,y,z)             1D=(65536), 2D=(65536,65536), 3D=(4096,4096,4096)
+  Max Layered Texture Size (dim) x layers        1D=(16384) x 2048, 2D=(16384,16384) x 2048
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 32768
+  Warp size:                                     32
+  Maximum number of threads per block:           1024
+  Maximum sizes of each dimension of a block:    1024 x 1024 x 64
+  Maximum sizes of each dimension of a grid:     2147483647 x 65535 x 65535
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and execution:                 Yes with 1 copy engine(s)
+  Run time limit on kernels:                     Yes
+  Integrated GPU sharing Host Memory:            Yes
+  Support host page-locked memory mapping:       Yes
+  Concurrent kernel execution:                   Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support enabled:                No
+  Device is using TCC driver mode:               No
+  Device supports Unified Addressing (UVA):      Yes
+  Device PCI Bus ID / PCI location ID:           0 / 0
+  Compute Mode:
+      Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) 
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version  = 10.0, CUDA Runtime Version = 10.0, NumDevs = 1
+
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.1.0-dev
+OpenCV VCS version: 4.1.0-180-gb4ec8fe3e
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.4.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (888) haveOpenCL Initialize OpenCL runtime...
+OpenCL Platforms: 
+    Portable Computing Language
+        CPU: pthread-cortex-a57 (OpenCL 1.2 pocl HSTR: pthread-aarch64-unknown-linux-gnu-cortex-a57)
+        iGPU: NVIDIA Tegra X1 (OpenCL 1.2 pocl HSTR: CUDA-sm_53)
+Current OpenCL device: 
+    Type = iGPU
+    Name = NVIDIA Tegra X1
+    Version = OpenCL 1.2 pocl HSTR: CUDA-sm_53
+    Driver version = 1.3
+    Address bits = 64
+    Compute units = 1
+    Max work group size = 1024
+    Local memory size = 48 KB
+    Max memory allocation size = 990 MB 848 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_byte_addressable_store
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_fp16
+        cl_khr_fp64
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 1
+    Preferred vector width short = 1
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 16 tests from 6 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from ImagePair_StereoBM
+[ RUN      ] ImagePair_StereoBM.StereoBM/0, where GetParam() = ("gpu/perf/aloe.png", "gpu/perf/aloeR.png")
+[ PERFSTAT ]    (samples=13   mean=254.68   median=254.32   min=249.44   stddev=5.01 (2.0%))
+[       OK ] ImagePair_StereoBM.StereoBM/0 (3785 ms)
+[----------] 1 test from ImagePair_StereoBM (3785 ms total)
+
+[----------] 1 test from ImagePair_StereoBeliefPropagation
+[ RUN      ] ImagePair_StereoBeliefPropagation.StereoBeliefPropagation/0, where GetParam() = ("gpu/stereobp/aloe-L.png", "gpu/stereobp/aloe-R.png")
+[ PERFSTAT ]    (samples=13   mean=482.05   median=480.96   min=473.91   stddev=4.23 (0.9%))
+[       OK ] ImagePair_StereoBeliefPropagation.StereoBeliefPropagation/0 (6393 ms)
+[----------] 1 test from ImagePair_StereoBeliefPropagation (6394 ms total)
+
+[----------] 1 test from ImagePair_StereoConstantSpaceBP
+[ RUN      ] ImagePair_StereoConstantSpaceBP.StereoConstantSpaceBP/0, where GetParam() = ("gpu/stereobm/aloe-L.png", "gpu/stereobm/aloe-R.png")
+[ PERFSTAT ]    (samples=13   mean=416.75   median=415.93   min=412.03   stddev=3.17 (0.8%))
+[       OK ] ImagePair_StereoConstantSpaceBP.StereoConstantSpaceBP/0 (5535 ms)
+[----------] 1 test from ImagePair_StereoConstantSpaceBP (5535 ms total)
+
+[----------] 1 test from ImagePair_DisparityBilateralFilter
+[ RUN      ] ImagePair_DisparityBilateralFilter.DisparityBilateralFilter/0, where GetParam() = ("gpu/stereobm/aloe-L.png", "gpu/stereobm/aloe-disp.png")
+[ PERFSTAT ]    (samples=13   mean=5.69   median=5.66   min=5.61   stddev=0.07 (1.3%))
+[       OK ] ImagePair_DisparityBilateralFilter.DisparityBilateralFilter/0 (117 ms)
+[----------] 1 test from ImagePair_DisparityBilateralFilter (117 ms total)
+
+[----------] 6 tests from Sz_Depth_ReprojectImageTo3D
+[ RUN      ] Sz_Depth_ReprojectImageTo3D.ReprojectImageTo3D/0, where GetParam() = (1280x720, CV_8U)
+[ PERFSTAT ]    (samples=100   mean=1.23   median=1.22   min=1.12   stddev=0.06 (4.5%))
+[       OK ] Sz_Depth_ReprojectImageTo3D.ReprojectImageTo3D/0 (161 ms)
+[ RUN      ] Sz_Depth_ReprojectImageTo3D.ReprojectImageTo3D/1, where GetParam() = (1280x720, CV_16S)
+[ PERFSTAT ]    (samples=13   mean=1.14   median=1.14   min=1.12   stddev=0.02 (2.0%))
+[       OK ] Sz_Depth_ReprojectImageTo3D.ReprojectImageTo3D/1 (40 ms)
+[ RUN      ] Sz_Depth_ReprojectImageTo3D.ReprojectImageTo3D/2, where GetParam() = (1280x1024, CV_8U)
+[ PERFSTAT ]    (samples=13   mean=1.56   median=1.54   min=1.51   stddev=0.03 (2.1%))
+[       OK ] Sz_Depth_ReprojectImageTo3D.ReprojectImageTo3D/2 (55 ms)
+[ RUN      ] Sz_Depth_ReprojectImageTo3D.ReprojectImageTo3D/3, where GetParam() = (1280x1024, CV_16S)
+[ PERFSTAT ]    (samples=13   mean=1.57   median=1.58   min=1.53   stddev=0.03 (1.7%))
+[       OK ] Sz_Depth_ReprojectImageTo3D.ReprojectImageTo3D/3 (57 ms)
+[ RUN      ] Sz_Depth_ReprojectImageTo3D.ReprojectImageTo3D/4, where GetParam() = (1920x1080, CV_8U)
+[ PERFSTAT ]    (samples=13   mean=2.50   median=2.49   min=2.45   stddev=0.06 (2.2%))
+[       OK ] Sz_Depth_ReprojectImageTo3D.ReprojectImageTo3D/4 (88 ms)
+[ RUN      ] Sz_Depth_ReprojectImageTo3D.ReprojectImageTo3D/5, where GetParam() = (1920x1080, CV_16S)
+[ PERFSTAT ]    (samples=13   mean=2.49   median=2.49   min=2.45   stddev=0.02 (0.8%))
+[       OK ] Sz_Depth_ReprojectImageTo3D.ReprojectImageTo3D/5 (89 ms)
+[----------] 6 tests from Sz_Depth_ReprojectImageTo3D (492 ms total)
+
+[----------] 6 tests from Sz_Depth_DrawColorDisp
+[ RUN      ] Sz_Depth_DrawColorDisp.DrawColorDisp/0, where GetParam() = (1280x720, CV_8U)
+[ PERFSTAT ]    (samples=76   mean=1.02   median=1.01   min=0.98   stddev=0.03 (3.0%))
+[       OK ] Sz_Depth_DrawColorDisp.DrawColorDisp/0 (91 ms)
+[ RUN      ] Sz_Depth_DrawColorDisp.DrawColorDisp/1, where GetParam() = (1280x720, CV_16S)
+[ PERFSTAT ]    (samples=13   mean=1.17   median=1.16   min=1.15   stddev=0.02 (1.9%))
+[       OK ] Sz_Depth_DrawColorDisp.DrawColorDisp/1 (30 ms)
+[ RUN      ] Sz_Depth_DrawColorDisp.DrawColorDisp/2, where GetParam() = (1280x1024, CV_8U)
+[ PERFSTAT ]    (samples=13   mean=1.44   median=1.45   min=1.38   stddev=0.03 (2.1%))
+[       OK ] Sz_Depth_DrawColorDisp.DrawColorDisp/2 (32 ms)
+[ RUN      ] Sz_Depth_DrawColorDisp.DrawColorDisp/3, where GetParam() = (1280x1024, CV_16S)
+[ PERFSTAT ]    (samples=13   mean=1.64   median=1.65   min=1.59   stddev=0.03 (1.6%))
+[       OK ] Sz_Depth_DrawColorDisp.DrawColorDisp/3 (39 ms)
+[ RUN      ] Sz_Depth_DrawColorDisp.DrawColorDisp/4, where GetParam() = (1920x1080, CV_8U)
+[ PERFSTAT ]    (samples=13   mean=2.17   median=2.17   min=2.14   stddev=0.03 (1.2%))
+[       OK ] Sz_Depth_DrawColorDisp.DrawColorDisp/4 (47 ms)
+[ RUN      ] Sz_Depth_DrawColorDisp.DrawColorDisp/5, where GetParam() = (1920x1080, CV_16S)
+[ PERFSTAT ]    (samples=13   mean=2.52   median=2.54   min=2.48   stddev=0.03 (1.0%))
+[       OK ] Sz_Depth_DrawColorDisp.DrawColorDisp/5 (60 ms)
+[----------] 6 tests from Sz_Depth_DrawColorDisp (299 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 6 test cases ran. (16622 ms total)
+[  PASSED  ] 16 tests.

@@ -2,7 +2,7 @@
 mkdir _results
 time -p ./opencv_perf_bioinspired > _results/bioinspired.txt
 time -p ./opencv_perf_calib3d > _results/calib3d.txt
-time -p ./opencv_perf_core > _results/code.txt
+time -p ./opencv_perf_core > _results/core.txt
 time -p ./opencv_perf_cudaarithm > _results/cudaarithm.txt
 time -p ./opencv_perf_cudabgsegm > _results/cudabgsegm.txt
 time -p ./opencv_perf_cudacodec > _results/cudacodes.txt

@@ -1,0 +1,87 @@
+Time compensation is 0
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.1.0-dev
+OpenCV VCS version: 4.1.0-180-gb4ec8fe3e
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.4.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (888) haveOpenCL Initialize OpenCL runtime...
+OpenCL Platforms: 
+    Portable Computing Language
+        CPU: pthread-cortex-a57 (OpenCL 1.2 pocl HSTR: pthread-aarch64-unknown-linux-gnu-cortex-a57)
+        iGPU: NVIDIA Tegra X1 (OpenCL 1.2 pocl HSTR: CUDA-sm_53)
+Current OpenCL device: 
+    Type = iGPU
+    Name = NVIDIA Tegra X1
+    Version = OpenCL 1.2 pocl HSTR: CUDA-sm_53
+    Driver version = 1.3
+    Address bits = 64
+    Compute units = 1
+    Max work group size = 1024
+    Local memory size = 48 KB
+    Max memory allocation size = 990 MB 848 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_byte_addressable_store
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_fp16
+        cl_khr_fp64
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 1
+    Preferred vector width short = 1
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from OCL_RetinaFixture_Retina
+[ RUN      ] OCL_RetinaFixture_Retina.Retina/0, where GetParam() = (false, 2, 1, 10)
+[DEBUG:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (344) OpenCLBinaryCacheConfigurator Initializing OpenCL cache configuration...
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (430) OpenCLBinaryCacheConfigurator Successfully initialized OpenCL cache directory: /home/pi/.cache/opencv/4.1-dev/opencl_cache/
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (454) prepareCacheDirectoryForContext Preparing OpenCL cache configuration for context: NVIDIA_Corporation--NVIDIA_Tegra_X1--1_3
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 44564480 (base=0  current=0)
+[ PERFSTAT ]    (samples=100   mean=69.88   median=68.48   min=67.63   stddev=2.55 (3.6%))
+[       OK ] OCL_RetinaFixture_Retina.Retina/0 (11477 ms)
+[ RUN      ] OCL_RetinaFixture_Retina.Retina/1, where GetParam() = (false, 2, 1, 5)
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 44564480 (base=0  current=0)
+[ PERFSTAT ]    (samples=100   mean=69.15   median=67.88   min=66.22   stddev=2.45 (3.5%))
+[       OK ] OCL_RetinaFixture_Retina.Retina/1 (7170 ms)
+[ RUN      ] OCL_RetinaFixture_Retina.Retina/2, where GetParam() = (false, 2, 0.5, 10)
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 44564480 (base=0  current=0)
+[ PERFSTAT ]    (samples=100   mean=69.20   median=67.85   min=66.73   stddev=2.24 (3.2%))
+[       OK ] OCL_RetinaFixture_Retina.Retina/2 (7189 ms)
+[ RUN      ] OCL_RetinaFixture_Retina.Retina/3, where GetParam() = (false, 2, 0.5, 5)
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 44564480 (base=0  current=0)
+[ PERFSTAT ]    (samples=100   mean=69.11   median=68.07   min=65.50   stddev=2.27 (3.3%))
+[       OK ] OCL_RetinaFixture_Retina.Retina/3 (7158 ms)
+[ RUN      ] OCL_RetinaFixture_Retina.Retina/4, where GetParam() = (true, 2, 1, 10)
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 45088768 (base=0  current=0)
+[ PERFSTAT ]    (samples=10   mean=209.77   median=207.95   min=204.55   stddev=5.94 (2.8%))
+[       OK ] OCL_RetinaFixture_Retina.Retina/4 (2388 ms)
+[ RUN      ] OCL_RetinaFixture_Retina.Retina/5, where GetParam() = (true, 2, 1, 5)
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 45088768 (base=0  current=0)
+[ PERFSTAT ]    (samples=10   mean=210.36   median=209.71   min=204.44   stddev=5.05 (2.4%))
+[       OK ] OCL_RetinaFixture_Retina.Retina/5 (2324 ms)
+[ RUN      ] OCL_RetinaFixture_Retina.Retina/6, where GetParam() = (true, 2, 0.5, 10)
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 45088768 (base=0  current=0)
+[ PERFSTAT ]    (samples=13   mean=209.51   median=206.32   min=204.85   stddev=5.82 (2.8%))
+[       OK ] OCL_RetinaFixture_Retina.Retina/6 (2908 ms)
+[ RUN      ] OCL_RetinaFixture_Retina.Retina/7, where GetParam() = (true, 2, 0.5, 5)
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 45088768 (base=0  current=0)
+[ PERFSTAT ]    (samples=10   mean=211.85   median=210.30   min=206.85   stddev=5.52 (2.6%))
+[       OK ] OCL_RetinaFixture_Retina.Retina/7 (2296 ms)
+[----------] 8 tests from OCL_RetinaFixture_Retina (42910 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (42910 ms total)
+[  PASSED  ] 8 tests.

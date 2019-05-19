@@ -1,0 +1,186 @@
+[----------]
+[   INFO   ] 	Implementation variant: cuda.
+[----------]
+[----------]
+[ GPU INFO ] 	Run test suite on NVIDIA Tegra X1 GPU.
+[----------]
+Time compensation is 0
+*** CUDA Device Query (Runtime API) version (CUDART static linking) *** 
+
+Device count: 1
+
+Device 0: "NVIDIA Tegra X1"
+  CUDA Driver Version / Runtime Version          10.0 / 10.0
+  CUDA Capability Major/Minor version number:    5.3
+  Total amount of global memory:                 3963 MBytes (4155834368 bytes)
+  GPU Clock Speed:                               0.92 GHz
+  Max Texture Dimension Size (x,y,z)             1D=(65536), 2D=(65536,65536), 3D=(4096,4096,4096)
+  Max Layered Texture Size (dim) x layers        1D=(16384) x 2048, 2D=(16384,16384) x 2048
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 32768
+  Warp size:                                     32
+  Maximum number of threads per block:           1024
+  Maximum sizes of each dimension of a block:    1024 x 1024 x 64
+  Maximum sizes of each dimension of a grid:     2147483647 x 65535 x 65535
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and execution:                 Yes with 1 copy engine(s)
+  Run time limit on kernels:                     Yes
+  Integrated GPU sharing Host Memory:            Yes
+  Support host page-locked memory mapping:       Yes
+  Concurrent kernel execution:                   Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support enabled:                No
+  Device is using TCC driver mode:               No
+  Device supports Unified Addressing (UVA):      Yes
+  Device PCI Bus ID / PCI location ID:           0 / 0
+  Compute Mode:
+      Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) 
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version  = 10.0, CUDA Runtime Version = 10.0, NumDevs = 1
+
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.1.0-dev
+OpenCV VCS version: 4.1.0-180-gb4ec8fe3e
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.4.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (888) haveOpenCL Initialize OpenCL runtime...
+OpenCL Platforms: 
+    Portable Computing Language
+        CPU: pthread-cortex-a57 (OpenCL 1.2 pocl HSTR: pthread-aarch64-unknown-linux-gnu-cortex-a57)
+        iGPU: NVIDIA Tegra X1 (OpenCL 1.2 pocl HSTR: CUDA-sm_53)
+Current OpenCL device: 
+    Type = iGPU
+    Name = NVIDIA Tegra X1
+    Version = OpenCL 1.2 pocl HSTR: CUDA-sm_53
+    Driver version = 1.3
+    Address bits = 64
+    Compute units = 1
+    Max work group size = 1024
+    Local memory size = 48 KB
+    Max memory allocation size = 990 MB 848 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_byte_addressable_store
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_fp16
+        cl_khr_fp64
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 1
+    Preferred vector width short = 1
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 18 tests from 6 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from OCL_Photo_DenoisingGrayscale
+[ RUN      ] OCL_Photo_DenoisingGrayscale.DenoisingGrayscale
+[DEBUG:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (344) OpenCLBinaryCacheConfigurator Initializing OpenCL cache configuration...
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (430) OpenCLBinaryCacheConfigurator Successfully initialized OpenCL cache directory: /home/pi/.cache/opencv/4.1-dev/opencl_cache/
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (454) prepareCacheDirectoryForContext Preparing OpenCL cache configuration for context: NVIDIA_Corporation--NVIDIA_Tegra_X1--1_3
+.
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 36236424 (base=0  current=35712136)
+[ PERFSTAT ]    (samples=10   mean=1078.34   median=558.37   min=555.71   stddev=1641.29 (152.2%))
+[       OK ] OCL_Photo_DenoisingGrayscale.DenoisingGrayscale (10811 ms)
+[----------] 1 test from OCL_Photo_DenoisingGrayscale (10811 ms total)
+
+[----------] 1 test from OCL_Photo_DenoisingColored
+[ RUN      ] OCL_Photo_DenoisingColored.DenoisingColored
+.
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 76149592 (base=35712136  current=107929568)
+[ PERFSTAT ]    (samples=10   mean=1934.56   median=1184.00   min=1180.65   stddev=2343.07 (121.1%))
+[       OK ] OCL_Photo_DenoisingColored.DenoisingColored (19368 ms)
+[----------] 1 test from OCL_Photo_DenoisingColored (19368 ms total)
+
+[----------] 4 tests from Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/0, where GetParam() = (640x480, CV_8U, Gray, 21, 5)
+.
+[ PERFSTAT ]    (samples=10   mean=1681.24   median=1694.26   min=1562.67   stddev=41.66 (2.5%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/0 (16833 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/1, where GetParam() = (640x480, CV_8U, BGR, 21, 5)
+.
+.
+[ PERFSTAT ]    (samples=10   mean=2601.36   median=2601.45   min=2600.36   stddev=0.68 (0.0%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/1 (26020 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/2, where GetParam() = (1280x720, CV_8U, Gray, 21, 5)
+.
+.
+.
+[ PERFSTAT ]    (samples=10   mean=4054.20   median=4054.12   min=4053.46   stddev=0.61 (0.0%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/2 (40550 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/3, where GetParam() = (1280x720, CV_8U, BGR, 21, 5)
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=10   mean=6500.59   median=6507.35   min=6428.44   stddev=25.61 (0.4%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/3 (65024 ms)
+[----------] 4 tests from Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans (148427 ms total)
+
+[----------] 4 tests from Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/0, where GetParam() = (640x480, CV_8U, Gray, 21, 7)
+[ PERFSTAT ]    (samples=25   mean=125.65   median=125.23   min=124.98   stddev=2.00 (1.6%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/0 (3712 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/1, where GetParam() = (640x480, CV_8U, BGR, 21, 7)
+[ PERFSTAT ]    (samples=10   mean=128.63   median=128.61   min=128.29   stddev=0.25 (0.2%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/1 (1290 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/2, where GetParam() = (1280x720, CV_8U, Gray, 21, 7)
+[ PERFSTAT ]    (samples=10   mean=374.92   median=375.03   min=374.10   stddev=0.53 (0.1%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/2 (3757 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/3, where GetParam() = (1280x720, CV_8U, BGR, 21, 7)
+[ PERFSTAT ]    (samples=10   mean=386.81   median=386.61   min=385.33   stddev=1.02 (0.3%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/3 (3877 ms)
+[----------] 4 tests from Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans (12636 ms total)
+
+[----------] 2 tests from Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored
+[ RUN      ] Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored.CUDA_FastNonLocalMeansColored/0, where GetParam() = (640x480, CV_8U, 21, 7)
+.
+[ PERFSTAT ]    (samples=13   mean=874.96   median=874.61   min=873.86   stddev=1.53 (0.2%))
+[       OK ] Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored.CUDA_FastNonLocalMeansColored/0 (11506 ms)
+[ RUN      ] Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored.CUDA_FastNonLocalMeansColored/1, where GetParam() = (1280x720, CV_8U, 21, 7)
+.
+.
+[ PERFSTAT ]    (samples=10   mean=2650.41   median=2649.01   min=2639.17   stddev=10.72 (0.4%))
+[       OK ] Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored.CUDA_FastNonLocalMeansColored/1 (26521 ms)
+[----------] 2 tests from Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored (38031 ms total)
+
+[----------] 6 tests from InpaintArea_InpaintingMethod_inpaint
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/0, where GetParam() = (24x24, INPAINT_NS)
+[ PERFSTAT ]    (samples=10   mean=42.68   median=42.63   min=42.56   stddev=0.14 (0.3%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/0 (451 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/1, where GetParam() = (24x24, INPAINT_TELEA)
+[ PERFSTAT ]    (samples=10   mean=50.67   median=50.48   min=50.38   stddev=0.45 (0.9%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/1 (530 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/2, where GetParam() = (32x32, INPAINT_NS)
+[ PERFSTAT ]    (samples=10   mean=67.85   median=67.68   min=67.64   stddev=0.52 (0.8%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/2 (702 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/3, where GetParam() = (32x32, INPAINT_TELEA)
+[ PERFSTAT ]    (samples=10   mean=77.02   median=76.94   min=76.83   stddev=0.27 (0.4%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/3 (793 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/4, where GetParam() = (64x64, INPAINT_NS)
+[ PERFSTAT ]    (samples=10   mean=231.24   median=230.62   min=230.45   stddev=1.89 (0.8%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/4 (2336 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/5, where GetParam() = (64x64, INPAINT_TELEA)
+[ PERFSTAT ]    (samples=10   mean=249.93   median=249.09   min=248.94   stddev=1.79 (0.7%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/5 (2522 ms)
+[----------] 6 tests from InpaintArea_InpaintingMethod_inpaint (7336 ms total)
+
+[----------] Global test environment tear-down
+[==========] 18 tests from 6 test cases ran. (236610 ms total)
+[  PASSED  ] 18 tests.
+
+  YOU HAVE 2 DISABLED TESTS
+

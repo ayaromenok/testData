@@ -1,0 +1,691 @@
+Time compensation is 0
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.1.0-dev
+OpenCV VCS version: 4.1.0-180-gb4ec8fe3e
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.4.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (888) haveOpenCL Initialize OpenCL runtime...
+OpenCL Platforms: 
+    Portable Computing Language
+        CPU: pthread-cortex-a57 (OpenCL 1.2 pocl HSTR: pthread-aarch64-unknown-linux-gnu-cortex-a57)
+        iGPU: NVIDIA Tegra X1 (OpenCL 1.2 pocl HSTR: CUDA-sm_53)
+Current OpenCL device: 
+    Type = iGPU
+    Name = NVIDIA Tegra X1
+    Version = OpenCL 1.2 pocl HSTR: CUDA-sm_53
+    Driver version = 1.3
+    Address bits = 64
+    Compute units = 1
+    Max work group size = 1024
+    Local memory size = 48 KB
+    Max memory allocation size = 990 MB 848 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_byte_addressable_store
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_fp16
+        cl_khr_fp64
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 1
+    Preferred vector width short = 1
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 6705 tests from 161 test cases.
+[----------] Global test environment set-up.
+[----------] 80 tests from AddPerfTestCPU/AddPerfTest
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/0, where GetParam() = (128x128, 8UC1, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=15   mean=0.02   median=0.02   min=0.02   stddev=0.00 (3.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/0 (3 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/1, where GetParam() = (128x128, 8UC1, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=13   mean=0.02   median=0.02   min=0.02   stddev=0.00 (2.5%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/1 (2 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/2, where GetParam() = (128x128, 8UC1, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=0.08   median=0.08   min=0.08   stddev=0.00 (1.7%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/2 (2 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/3, where GetParam() = (128x128, 8UC1, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=13   mean=0.08   median=0.08   min=0.07   stddev=0.00 (1.8%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/3 (2 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/4, where GetParam() = (128x128, 8UC3, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=25   mean=0.03   median=0.03   min=0.03   stddev=0.00 (1.9%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/4 (2 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/5, where GetParam() = (128x128, 8UC3, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=0.03   median=0.03   min=0.03   stddev=0.00 (2.8%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/5 (2 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/6, where GetParam() = (128x128, 8UC3, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=0.20   median=0.20   min=0.19   stddev=0.00 (1.8%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/6 (4 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/7, where GetParam() = (128x128, 8UC3, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=13   mean=0.18   median=0.18   min=0.18   stddev=0.00 (0.5%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/7 (5 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/8, where GetParam() = (128x128, 16UC1, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=13   mean=0.03   median=0.03   min=0.03   stddev=0.00 (1.2%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/8 (2 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/9, where GetParam() = (128x128, 16UC1, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=0.08   median=0.08   min=0.08   stddev=0.00 (2.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/9 (2 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/10, where GetParam() = (128x128, 16UC1, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=13   mean=0.03   median=0.03   min=0.03   stddev=0.00 (1.8%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/10 (2 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/11, where GetParam() = (128x128, 16UC1, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=0.08   median=0.08   min=0.08   stddev=0.00 (2.1%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/11 (2 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/12, where GetParam() = (128x128, 16SC1, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=13   mean=0.03   median=0.03   min=0.03   stddev=0.00 (1.4%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/12 (2 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/13, where GetParam() = (128x128, 16SC1, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=0.08   median=0.08   min=0.08   stddev=0.00 (1.6%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/13 (2 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/14, where GetParam() = (128x128, 16SC1, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=0.08   median=0.08   min=0.08   stddev=0.00 (1.4%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/14 (2 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/15, where GetParam() = (128x128, 16SC1, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=0.08   median=0.08   min=0.08   stddev=0.00 (2.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/15 (2 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/16, where GetParam() = (128x128, 32FC1, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=11   mean=0.04   median=0.04   min=0.03   stddev=0.00 (3.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/16 (2 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/17, where GetParam() = (128x128, 32FC1, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=0.06   median=0.06   min=0.05   stddev=0.00 (2.7%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/17 (1 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/18, where GetParam() = (128x128, 32FC1, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=13   mean=0.06   median=0.06   min=0.06   stddev=0.00 (2.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/18 (2 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/19, where GetParam() = (128x128, 32FC1, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=13   mean=0.04   median=0.04   min=0.03   stddev=0.00 (2.3%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/19 (2 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/20, where GetParam() = (640x480, 8UC1, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=25   mean=0.08   median=0.08   min=0.08   stddev=0.00 (1.7%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/20 (9 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/21, where GetParam() = (640x480, 8UC1, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=20   mean=0.09   median=0.09   min=0.08   stddev=0.00 (2.9%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/21 (7 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/22, where GetParam() = (640x480, 8UC1, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=50   mean=1.15   median=1.14   min=1.10   stddev=0.03 (2.9%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/22 (68 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/23, where GetParam() = (640x480, 8UC1, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=100   mean=1.28   median=1.28   min=1.19   stddev=0.04 (3.3%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/23 (141 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/24, where GetParam() = (640x480, 8UC3, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=100   mean=0.35   median=0.34   min=0.30   stddev=0.03 (9.8%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/24 (53 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/25, where GetParam() = (640x480, 8UC3, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=100   mean=0.41   median=0.42   min=0.32   stddev=0.04 (10.2%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/25 (59 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/26, where GetParam() = (640x480, 8UC3, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=25   mean=3.83   median=3.84   min=3.79   stddev=0.02 (0.5%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/26 (122 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/27, where GetParam() = (640x480, 8UC3, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=3.73   median=3.73   min=3.70   stddev=0.01 (0.3%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/27 (63 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/28, where GetParam() = (640x480, 16UC1, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=100   mean=0.16   median=0.16   min=0.15   stddev=0.01 (8.1%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/28 (24 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/29, where GetParam() = (640x480, 16UC1, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=100   mean=1.28   median=1.27   min=1.19   stddev=0.07 (5.6%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/29 (141 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/30, where GetParam() = (640x480, 16UC1, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=100   mean=0.17   median=0.17   min=0.16   stddev=0.01 (6.5%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/30 (25 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/31, where GetParam() = (640x480, 16UC1, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=1.53   median=1.54   min=1.46   stddev=0.04 (2.5%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/31 (23 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/32, where GetParam() = (640x480, 16SC1, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=100   mean=0.17   median=0.16   min=0.15   stddev=0.02 (12.5%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/32 (26 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/33, where GetParam() = (640x480, 16SC1, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=100   mean=1.44   median=1.43   min=1.24   stddev=0.11 (8.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/33 (157 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/34, where GetParam() = (640x480, 16SC1, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=38   mean=1.43   median=1.42   min=1.36   stddev=0.04 (2.9%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/34 (64 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/35, where GetParam() = (640x480, 16SC1, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=11   mean=1.52   median=1.54   min=1.43   stddev=0.05 (3.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/35 (25 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/36, where GetParam() = (640x480, 32FC1, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=0.61   median=0.61   min=0.59   stddev=0.01 (2.3%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/36 (12 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/37, where GetParam() = (640x480, 32FC1, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=0.87   median=0.88   min=0.84   stddev=0.02 (2.3%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/37 (16 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/38, where GetParam() = (640x480, 32FC1, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=0.85   median=0.84   min=0.83   stddev=0.02 (2.5%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/38 (15 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/39, where GetParam() = (640x480, 32FC1, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=11   mean=0.61   median=0.61   min=0.58   stddev=0.02 (3.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/39 (14 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/40, where GetParam() = (1280x720, 8UC1, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=100   mean=0.36   median=0.35   min=0.30   stddev=0.05 (12.9%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/40 (54 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/41, where GetParam() = (1280x720, 8UC1, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=100   mean=0.34   median=0.34   min=0.31   stddev=0.02 (6.2%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/41 (51 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/42, where GetParam() = (1280x720, 8UC1, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=3.68   median=3.68   min=3.64   stddev=0.02 (0.5%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/42 (59 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/43, where GetParam() = (1280x720, 8UC1, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=25   mean=3.49   median=3.47   min=3.42   stddev=0.04 (1.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/43 (110 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/44, where GetParam() = (1280x720, 8UC3, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=75   mean=1.15   median=1.13   min=1.12   stddev=0.03 (2.8%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/44 (138 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/45, where GetParam() = (1280x720, 8UC3, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=1.15   median=1.14   min=1.12   stddev=0.03 (2.4%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/45 (57 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/46, where GetParam() = (1280x720, 8UC3, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=10.08   median=10.04   min=10.00   stddev=0.13 (1.3%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/46 (163 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/47, where GetParam() = (1280x720, 8UC3, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=19   mean=10.45   median=10.34   min=10.26   stddev=0.31 (2.9%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/47 (267 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/48, where GetParam() = (1280x720, 16UC1, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=25   mean=0.74   median=0.74   min=0.73   stddev=0.02 (2.8%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/48 (35 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/49, where GetParam() = (1280x720, 16UC1, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=3.58   median=3.58   min=3.56   stddev=0.01 (0.2%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/49 (57 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/50, where GetParam() = (1280x720, 16UC1, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=0.74   median=0.73   min=0.72   stddev=0.02 (3.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/50 (23 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/51, where GetParam() = (1280x720, 16UC1, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=3.86   median=3.85   min=3.84   stddev=0.02 (0.4%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/51 (62 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/52, where GetParam() = (1280x720, 16SC1, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=16   mean=0.73   median=0.72   min=0.71   stddev=0.02 (2.9%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/52 (29 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/53, where GetParam() = (1280x720, 16SC1, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=3.95   median=3.95   min=3.94   stddev=0.02 (0.4%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/53 (63 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/54, where GetParam() = (1280x720, 16SC1, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=13   mean=4.08   median=4.04   min=4.03   stddev=0.09 (2.1%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/54 (78 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/55, where GetParam() = (1280x720, 16SC1, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=13   mean=4.03   median=3.99   min=3.96   stddev=0.09 (2.3%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/55 (77 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/56, where GetParam() = (1280x720, 32FC1, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=13   mean=1.55   median=1.54   min=1.51   stddev=0.04 (2.6%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/56 (39 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/57, where GetParam() = (1280x720, 32FC1, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=2.40   median=2.41   min=2.36   stddev=0.03 (1.4%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/57 (42 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/58, where GetParam() = (1280x720, 32FC1, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=2.45   median=2.45   min=2.41   stddev=0.02 (1.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/58 (42 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/59, where GetParam() = (1280x720, 32FC1, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=1.54   median=1.51   min=1.50   stddev=0.05 (3.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/59 (32 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/60, where GetParam() = (1920x1080, 8UC1, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=100   mean=0.84   median=0.83   min=0.81   stddev=0.03 (3.7%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/60 (122 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/61, where GetParam() = (1920x1080, 8UC1, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=11   mean=0.83   median=0.82   min=0.81   stddev=0.02 (3.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/61 (41 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/62, where GetParam() = (1920x1080, 8UC1, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=25   mean=7.53   median=7.47   min=7.43   stddev=0.19 (2.5%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/62 (235 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/63, where GetParam() = (1920x1080, 8UC1, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=7.69   median=7.68   min=7.66   stddev=0.02 (0.3%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/63 (125 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/64, where GetParam() = (1920x1080, 8UC3, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=2.58   median=2.57   min=2.53   stddev=0.05 (2.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/64 (128 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/65, where GetParam() = (1920x1080, 8UC3, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=13   mean=2.55   median=2.55   min=2.51   stddev=0.06 (2.3%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/65 (131 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/66, where GetParam() = (1920x1080, 8UC3, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=22.29   median=22.09   min=22.02   stddev=0.53 (2.4%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/66 (364 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/67, where GetParam() = (1920x1080, 8UC3, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=23.14   median=22.81   min=22.73   stddev=0.67 (2.9%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/67 (374 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/68, where GetParam() = (1920x1080, 16UC1, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=100   mean=1.78   median=1.77   min=1.71   stddev=0.08 (4.7%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/68 (220 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/69, where GetParam() = (1920x1080, 16UC1, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=20   mean=8.01   median=7.93   min=7.87   stddev=0.24 (3.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/69 (210 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/70, where GetParam() = (1920x1080, 16UC1, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=13   mean=1.74   median=1.74   min=1.70   stddev=0.04 (2.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/70 (57 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/71, where GetParam() = (1920x1080, 16UC1, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=13   mean=7.99   median=7.98   min=7.97   stddev=0.04 (0.5%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/71 (152 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/72, where GetParam() = (1920x1080, 16SC1, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=1.75   median=1.75   min=1.70   stddev=0.04 (2.4%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/72 (55 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/73, where GetParam() = (1920x1080, 16SC1, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=25   mean=7.89   median=7.88   min=7.79   stddev=0.05 (0.6%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/73 (251 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/74, where GetParam() = (1920x1080, 16SC1, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=13   mean=8.06   median=8.06   min=8.04   stddev=0.02 (0.3%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/74 (156 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/75, where GetParam() = (1920x1080, 16SC1, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=7.99   median=7.98   min=7.97   stddev=0.05 (0.6%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/75 (130 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/76, where GetParam() = (1920x1080, 32FC1, -1, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=100   mean=3.47   median=3.43   min=3.34   stddev=0.14 (4.1%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/76 (392 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/77, where GetParam() = (1920x1080, 32FC1, 0, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=10   mean=5.33   median=5.33   min=5.25   stddev=0.05 (1.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/77 (92 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/78, where GetParam() = (1920x1080, 32FC1, 2, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=41   mean=5.47   median=5.43   min=5.30   stddev=0.16 (3.0%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/78 (268 ms)
+[ RUN      ] AddPerfTestCPU/AddPerfTest.TestPerformance/79, where GetParam() = (1920x1080, 32FC1, 5, { gapi.kernel_package })
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (219) generateGraph Generated graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/passes/kernels.cpp (157) expandKernels Final graph: 4 nodes
+
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/gapi/src/compiler/gcompiler.cpp (232) runPasses All compiler passes are successful
+[ PERFSTAT ]    (samples=25   mean=3.46   median=3.45   min=3.39   stddev=0.04 (1.2%))
+[       OK ] AddPerfTestCPU/AddPerfTest.TestPerformance/79 (123 ms)
+[----------] 80 tests from AddPerfTestCPU/AddPerfTest (6221 ms total)
+
+[----------] 80 tests from AddPerfTestGPU/AddPerfTest
+[ RUN      ] AddPerfTestGPU/AddPerfTest.TestPerformance/0, where GetParam() = (128x128, 8UC1, -1, { gapi.kernel_package })

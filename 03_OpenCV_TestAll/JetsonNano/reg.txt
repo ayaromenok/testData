@@ -1,0 +1,124 @@
+Time compensation is 0
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.1.0-dev
+OpenCV VCS version: 4.1.0-180-gb4ec8fe3e
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.4.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (888) haveOpenCL Initialize OpenCL runtime...
+OpenCL Platforms: 
+    Portable Computing Language
+        CPU: pthread-cortex-a57 (OpenCL 1.2 pocl HSTR: pthread-aarch64-unknown-linux-gnu-cortex-a57)
+        iGPU: NVIDIA Tegra X1 (OpenCL 1.2 pocl HSTR: CUDA-sm_53)
+Current OpenCL device: 
+    Type = iGPU
+    Name = NVIDIA Tegra X1
+    Version = OpenCL 1.2 pocl HSTR: CUDA-sm_53
+    Driver version = 1.3
+    Address bits = 64
+    Compute units = 1
+    Max work group size = 1024
+    Local memory size = 48 KB
+    Max memory allocation size = 990 MB 848 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_byte_addressable_store
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_fp16
+        cl_khr_fp64
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 1
+    Preferred vector width short = 1
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 20 tests from 5 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from Size_MatType_Registration_Shift
+[ RUN      ] Size_MatType_Registration_Shift.Registration_Shift/0, where GetParam() = (64x64, 64FC1)
+[ PERFSTAT ]    (samples=13   mean=2.27   median=2.26   min=2.24   stddev=0.03 (1.3%))
+[       OK ] Size_MatType_Registration_Shift.Registration_Shift/0 (31 ms)
+[ RUN      ] Size_MatType_Registration_Shift.Registration_Shift/1, where GetParam() = (64x64, 64FC3)
+[ PERFSTAT ]    (samples=100   mean=4.14   median=4.08   min=4.02   stddev=0.16 (3.8%))
+[       OK ] Size_MatType_Registration_Shift.Registration_Shift/1 (428 ms)
+[ RUN      ] Size_MatType_Registration_Shift.Registration_Shift/2, where GetParam() = (128x128, 64FC1)
+[ PERFSTAT ]    (samples=13   mean=6.99   median=6.97   min=6.91   stddev=0.08 (1.1%))
+[       OK ] Size_MatType_Registration_Shift.Registration_Shift/2 (92 ms)
+[ RUN      ] Size_MatType_Registration_Shift.Registration_Shift/3, where GetParam() = (128x128, 64FC3)
+[ PERFSTAT ]    (samples=13   mean=18.57   median=18.33   min=18.16   stddev=0.54 (2.9%))
+[       OK ] Size_MatType_Registration_Shift.Registration_Shift/3 (244 ms)
+[----------] 4 tests from Size_MatType_Registration_Shift (795 ms total)
+
+[----------] 4 tests from Size_MatType_Registration_Euclidean
+[ RUN      ] Size_MatType_Registration_Euclidean.Registration_Euclidean/0, where GetParam() = (64x64, 64FC1)
+[ PERFSTAT ]    (samples=75   mean=3.03   median=3.01   min=2.96   stddev=0.08 (2.7%))
+[       OK ] Size_MatType_Registration_Euclidean.Registration_Euclidean/0 (233 ms)
+[ RUN      ] Size_MatType_Registration_Euclidean.Registration_Euclidean/1, where GetParam() = (64x64, 64FC3)
+[ PERFSTAT ]    (samples=100   mean=5.76   median=5.67   min=5.49   stddev=0.26 (4.5%))
+[       OK ] Size_MatType_Registration_Euclidean.Registration_Euclidean/1 (590 ms)
+[ RUN      ] Size_MatType_Registration_Euclidean.Registration_Euclidean/2, where GetParam() = (128x128, 64FC1)
+[ PERFSTAT ]    (samples=100   mean=10.40   median=10.29   min=9.89   stddev=0.40 (3.9%))
+[       OK ] Size_MatType_Registration_Euclidean.Registration_Euclidean/2 (1058 ms)
+[ RUN      ] Size_MatType_Registration_Euclidean.Registration_Euclidean/3, where GetParam() = (128x128, 64FC3)
+[ PERFSTAT ]    (samples=10   mean=27.46   median=27.11   min=26.82   stddev=0.74 (2.7%))
+[       OK ] Size_MatType_Registration_Euclidean.Registration_Euclidean/3 (275 ms)
+[----------] 4 tests from Size_MatType_Registration_Euclidean (2156 ms total)
+
+[----------] 4 tests from Size_MatType_Registration_Similarity
+[ RUN      ] Size_MatType_Registration_Similarity.Registration_Similarity/0, where GetParam() = (64x64, 64FC1)
+[ PERFSTAT ]    (samples=13   mean=3.65   median=3.64   min=3.60   stddev=0.04 (1.2%))
+[       OK ] Size_MatType_Registration_Similarity.Registration_Similarity/0 (48 ms)
+[ RUN      ] Size_MatType_Registration_Similarity.Registration_Similarity/1, where GetParam() = (64x64, 64FC3)
+[ PERFSTAT ]    (samples=100   mean=7.28   median=7.16   min=6.84   stddev=0.37 (5.1%))
+[       OK ] Size_MatType_Registration_Similarity.Registration_Similarity/1 (750 ms)
+[ RUN      ] Size_MatType_Registration_Similarity.Registration_Similarity/2, where GetParam() = (128x128, 64FC1)
+[ PERFSTAT ]    (samples=13   mean=12.12   median=12.00   min=11.82   stddev=0.27 (2.2%))
+[       OK ] Size_MatType_Registration_Similarity.Registration_Similarity/2 (160 ms)
+[ RUN      ] Size_MatType_Registration_Similarity.Registration_Similarity/3, where GetParam() = (128x128, 64FC3)
+[ PERFSTAT ]    (samples=13   mean=35.54   median=35.52   min=34.65   stddev=0.77 (2.2%))
+[       OK ] Size_MatType_Registration_Similarity.Registration_Similarity/3 (467 ms)
+[----------] 4 tests from Size_MatType_Registration_Similarity (1426 ms total)
+
+[----------] 4 tests from Size_MatType_Registration_Affine
+[ RUN      ] Size_MatType_Registration_Affine.Registration_Affine/0, where GetParam() = (64x64, 64FC1)
+[ PERFSTAT ]    (samples=100   mean=4.62   median=4.54   min=4.47   stddev=0.21 (4.4%))
+[       OK ] Size_MatType_Registration_Affine.Registration_Affine/0 (480 ms)
+[ RUN      ] Size_MatType_Registration_Affine.Registration_Affine/1, where GetParam() = (64x64, 64FC3)
+[ PERFSTAT ]    (samples=27   mean=11.02   median=10.93   min=10.64   stddev=0.32 (2.9%))
+[       OK ] Size_MatType_Registration_Affine.Registration_Affine/1 (301 ms)
+[ RUN      ] Size_MatType_Registration_Affine.Registration_Affine/2, where GetParam() = (128x128, 64FC1)
+[ PERFSTAT ]    (samples=23   mean=17.30   median=17.09   min=16.92   stddev=0.51 (3.0%))
+[       OK ] Size_MatType_Registration_Affine.Registration_Affine/2 (401 ms)
+[ RUN      ] Size_MatType_Registration_Affine.Registration_Affine/3, where GetParam() = (128x128, 64FC3)
+[ PERFSTAT ]    (samples=10   mean=48.64   median=48.02   min=47.60   stddev=1.35 (2.8%))
+[       OK ] Size_MatType_Registration_Affine.Registration_Affine/3 (487 ms)
+[----------] 4 tests from Size_MatType_Registration_Affine (1669 ms total)
+
+[----------] 4 tests from Size_MatType_Registration_Projective
+[ RUN      ] Size_MatType_Registration_Projective.Registration_Projective/0, where GetParam() = (64x64, 64FC1)
+[ PERFSTAT ]    (samples=100   mean=7.18   median=7.03   min=6.85   stddev=0.41 (5.8%))
+[       OK ] Size_MatType_Registration_Projective.Registration_Projective/0 (742 ms)
+[ RUN      ] Size_MatType_Registration_Projective.Registration_Projective/1, where GetParam() = (64x64, 64FC3)
+[ PERFSTAT ]    (samples=13   mean=16.88   median=16.72   min=16.38   stddev=0.42 (2.5%))
+[       OK ] Size_MatType_Registration_Projective.Registration_Projective/1 (221 ms)
+[ RUN      ] Size_MatType_Registration_Projective.Registration_Projective/2, where GetParam() = (128x128, 64FC1)
+[ PERFSTAT ]    (samples=11   mean=26.59   median=26.30   min=25.97   stddev=0.80 (3.0%))
+[       OK ] Size_MatType_Registration_Projective.Registration_Projective/2 (293 ms)
+[ RUN      ] Size_MatType_Registration_Projective.Registration_Projective/3, where GetParam() = (128x128, 64FC3)
+[ PERFSTAT ]    (samples=10   mean=74.96   median=75.02   min=73.80   stddev=0.94 (1.3%))
+[       OK ] Size_MatType_Registration_Projective.Registration_Projective/3 (750 ms)
+[----------] 4 tests from Size_MatType_Registration_Projective (2006 ms total)
+
+[----------] Global test environment tear-down
+[==========] 20 tests from 5 test cases ran. (8052 ms total)
+[  PASSED  ] 20 tests.

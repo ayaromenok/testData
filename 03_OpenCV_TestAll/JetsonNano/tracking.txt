@@ -1,0 +1,862 @@
+Time compensation is 0
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.1.0-dev
+OpenCV VCS version: 4.1.0-180-gb4ec8fe3e
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.4.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (888) haveOpenCL Initialize OpenCL runtime...
+OpenCL Platforms: 
+    Portable Computing Language
+        CPU: pthread-cortex-a57 (OpenCL 1.2 pocl HSTR: pthread-aarch64-unknown-linux-gnu-cortex-a57)
+        iGPU: NVIDIA Tegra X1 (OpenCL 1.2 pocl HSTR: CUDA-sm_53)
+Current OpenCL device: 
+    Type = iGPU
+    Name = NVIDIA Tegra X1
+    Version = OpenCL 1.2 pocl HSTR: CUDA-sm_53
+    Driver version = 1.3
+    Address bits = 64
+    Compute units = 1
+    Max work group size = 1024
+    Local memory size = 48 KB
+    Max memory allocation size = 990 MB 848 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_byte_addressable_store
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_fp16
+        cl_khr_fp64
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 1
+    Preferred vector width short = 1
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 120 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 30 tests from tracking_mil
+[ RUN      ] tracking_mil.mil/0, where GetParam() = ("david", 1)
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/videoio/src/videoio_registry.cpp (185) VideoBackendRegistry VIDEOIO: Enabled backends(5, sorted by priority): FFMPEG(1000); GSTREAMER(990); V4L2(980); CV_IMAGES(970); CV_MJPEG(960)
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/videoio/src/backend_plugin.cpp (248) getPluginCandidates VideoIO pluigin (FFMPEG): glob is 'libopencv_videoio_ffmpeg*.so', 1 location(s)
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/videoio/src/backend_plugin.cpp (256) getPluginCandidates     - /home/pi/sdk/build/opencv/lib: 0
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/videoio/src/backend_plugin.cpp (259) getPluginCandidates Found 0 plugin(s) for FFMPEG
+[ PERFSTAT ]    (samples=1   mean=8644.17   median=8644.17   min=8644.17   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/0 (8653 ms)
+[ RUN      ] tracking_mil.mil/1, where GetParam() = ("david", 2)
+[ PERFSTAT ]    (samples=1   mean=7813.99   median=7813.99   min=7813.99   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/1 (7817 ms)
+[ RUN      ] tracking_mil.mil/2, where GetParam() = ("david", 3)
+[ PERFSTAT ]    (samples=1   mean=7484.50   median=7484.50   min=7484.50   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/2 (7487 ms)
+[ RUN      ] tracking_mil.mil/3, where GetParam() = ("david", 4)
+[ PERFSTAT ]    (samples=1   mean=7724.59   median=7724.59   min=7724.59   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/3 (7728 ms)
+[ RUN      ] tracking_mil.mil/4, where GetParam() = ("david", 5)
+[ PERFSTAT ]    (samples=1   mean=7955.49   median=7955.49   min=7955.49   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/4 (7958 ms)
+[ RUN      ] tracking_mil.mil/5, where GetParam() = ("david", 6)
+[ PERFSTAT ]    (samples=1   mean=7359.55   median=7359.55   min=7359.55   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/5 (7363 ms)
+[ RUN      ] tracking_mil.mil/6, where GetParam() = ("david", 7)
+[ PERFSTAT ]    (samples=1   mean=7803.58   median=7803.58   min=7803.58   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/6 (7806 ms)
+[ RUN      ] tracking_mil.mil/7, where GetParam() = ("david", 8)
+[ PERFSTAT ]    (samples=1   mean=7587.66   median=7587.66   min=7587.66   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/7 (7591 ms)
+[ RUN      ] tracking_mil.mil/8, where GetParam() = ("david", 9)
+[ PERFSTAT ]    (samples=1   mean=7630.14   median=7630.14   min=7630.14   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/8 (7633 ms)
+[ RUN      ] tracking_mil.mil/9, where GetParam() = ("david", 10)
+[ PERFSTAT ]    (samples=1   mean=7350.45   median=7350.45   min=7350.45   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/9 (7354 ms)
+[ RUN      ] tracking_mil.mil/10, where GetParam() = ("dudek", 1)
+.
+[ PERFSTAT ]    (samples=1   mean=18506.05   median=18506.05   min=18506.05   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/10 (18515 ms)
+[ RUN      ] tracking_mil.mil/11, where GetParam() = ("dudek", 2)
+.
+[ PERFSTAT ]    (samples=1   mean=18525.17   median=18525.17   min=18525.17   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/11 (18529 ms)
+[ RUN      ] tracking_mil.mil/12, where GetParam() = ("dudek", 3)
+.
+[ PERFSTAT ]    (samples=1   mean=18709.93   median=18709.93   min=18709.93   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/12 (18714 ms)
+[ RUN      ] tracking_mil.mil/13, where GetParam() = ("dudek", 4)
+.
+[ PERFSTAT ]    (samples=1   mean=18672.76   median=18672.76   min=18672.76   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/13 (18677 ms)
+[ RUN      ] tracking_mil.mil/14, where GetParam() = ("dudek", 5)
+.
+[ PERFSTAT ]    (samples=1   mean=18681.73   median=18681.73   min=18681.73   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/14 (18686 ms)
+[ RUN      ] tracking_mil.mil/15, where GetParam() = ("dudek", 6)
+.
+[ PERFSTAT ]    (samples=1   mean=18726.49   median=18726.49   min=18726.49   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/15 (18731 ms)
+[ RUN      ] tracking_mil.mil/16, where GetParam() = ("dudek", 7)
+.
+[ PERFSTAT ]    (samples=1   mean=18578.37   median=18578.37   min=18578.37   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/16 (18582 ms)
+[ RUN      ] tracking_mil.mil/17, where GetParam() = ("dudek", 8)
+.
+[ PERFSTAT ]    (samples=1   mean=18531.59   median=18531.59   min=18531.59   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/17 (18536 ms)
+[ RUN      ] tracking_mil.mil/18, where GetParam() = ("dudek", 9)
+.
+[ PERFSTAT ]    (samples=1   mean=18642.64   median=18642.64   min=18642.64   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/18 (18646 ms)
+[ RUN      ] tracking_mil.mil/19, where GetParam() = ("dudek", 10)
+.
+[ PERFSTAT ]    (samples=1   mean=19183.97   median=19183.97   min=19183.97   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/19 (19188 ms)
+[ RUN      ] tracking_mil.mil/20, where GetParam() = ("faceocc2", 1)
+.
+[ PERFSTAT ]    (samples=1   mean=12832.23   median=12832.23   min=12832.23   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/20 (12841 ms)
+[ RUN      ] tracking_mil.mil/21, where GetParam() = ("faceocc2", 2)
+.
+[ PERFSTAT ]    (samples=1   mean=12844.00   median=12844.00   min=12844.00   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/21 (12847 ms)
+[ RUN      ] tracking_mil.mil/22, where GetParam() = ("faceocc2", 3)
+.
+[ PERFSTAT ]    (samples=1   mean=12625.64   median=12625.64   min=12625.64   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/22 (12630 ms)
+[ RUN      ] tracking_mil.mil/23, where GetParam() = ("faceocc2", 4)
+.
+[ PERFSTAT ]    (samples=1   mean=12810.28   median=12810.28   min=12810.28   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/23 (12813 ms)
+[ RUN      ] tracking_mil.mil/24, where GetParam() = ("faceocc2", 5)
+.
+[ PERFSTAT ]    (samples=1   mean=12662.91   median=12662.91   min=12662.91   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/24 (12667 ms)
+[ RUN      ] tracking_mil.mil/25, where GetParam() = ("faceocc2", 6)
+.
+[ PERFSTAT ]    (samples=1   mean=12714.69   median=12714.69   min=12714.69   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/25 (12718 ms)
+[ RUN      ] tracking_mil.mil/26, where GetParam() = ("faceocc2", 7)
+.
+[ PERFSTAT ]    (samples=1   mean=12840.03   median=12840.03   min=12840.03   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/26 (12843 ms)
+[ RUN      ] tracking_mil.mil/27, where GetParam() = ("faceocc2", 8)
+.
+[ PERFSTAT ]    (samples=1   mean=12741.98   median=12741.98   min=12741.98   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/27 (12746 ms)
+[ RUN      ] tracking_mil.mil/28, where GetParam() = ("faceocc2", 9)
+.
+[ PERFSTAT ]    (samples=1   mean=12598.69   median=12598.69   min=12598.69   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/28 (12602 ms)
+[ RUN      ] tracking_mil.mil/29, where GetParam() = ("faceocc2", 10)
+.
+[ PERFSTAT ]    (samples=1   mean=12867.15   median=12867.15   min=12867.15   stddev=0.00 (0.0%))
+[       OK ] tracking_mil.mil/29 (12871 ms)
+[----------] 30 tests from tracking_mil (391773 ms total)
+
+[----------] 30 tests from tracking_boosting
+[ RUN      ] tracking_boosting.boosting/0, where GetParam() = ("david", 1)
+[ PERFSTAT ]    (samples=1   mean=5000.53   median=5000.53   min=5000.53   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/0 (5007 ms)
+[ RUN      ] tracking_boosting.boosting/1, where GetParam() = ("david", 2)
+[ PERFSTAT ]    (samples=1   mean=4845.26   median=4845.26   min=4845.26   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/1 (4854 ms)
+[ RUN      ] tracking_boosting.boosting/2, where GetParam() = ("david", 3)
+[ PERFSTAT ]    (samples=1   mean=3704.74   median=3704.74   min=3704.74   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/2 (3709 ms)
+[ RUN      ] tracking_boosting.boosting/3, where GetParam() = ("david", 4)
+[ PERFSTAT ]    (samples=1   mean=3209.42   median=3209.42   min=3209.42   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/3 (3217 ms)
+[ RUN      ] tracking_boosting.boosting/4, where GetParam() = ("david", 5)
+[ PERFSTAT ]    (samples=1   mean=3030.58   median=3030.58   min=3030.58   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/4 (3038 ms)
+[ RUN      ] tracking_boosting.boosting/5, where GetParam() = ("david", 6)
+[ PERFSTAT ]    (samples=1   mean=4261.27   median=4261.27   min=4261.27   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/5 (4269 ms)
+[ RUN      ] tracking_boosting.boosting/6, where GetParam() = ("david", 7)
+[ PERFSTAT ]    (samples=1   mean=3849.95   median=3849.95   min=3849.95   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/6 (3857 ms)
+[ RUN      ] tracking_boosting.boosting/7, where GetParam() = ("david", 8)
+[ PERFSTAT ]    (samples=1   mean=3438.61   median=3438.61   min=3438.61   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/7 (3446 ms)
+[ RUN      ] tracking_boosting.boosting/8, where GetParam() = ("david", 9)
+[ PERFSTAT ]    (samples=1   mean=3114.53   median=3114.53   min=3114.53   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/8 (3118 ms)
+[ RUN      ] tracking_boosting.boosting/9, where GetParam() = ("david", 10)
+[ PERFSTAT ]    (samples=1   mean=3598.10   median=3598.10   min=3598.10   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/9 (3609 ms)
+[ RUN      ] tracking_boosting.boosting/10, where GetParam() = ("dudek", 1)
+.
+[ PERFSTAT ]    (samples=1   mean=21253.56   median=21253.56   min=21253.56   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/10 (21267 ms)
+[ RUN      ] tracking_boosting.boosting/11, where GetParam() = ("dudek", 2)
+.
+[ PERFSTAT ]    (samples=1   mean=24495.56   median=24495.56   min=24495.56   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/11 (24508 ms)
+[ RUN      ] tracking_boosting.boosting/12, where GetParam() = ("dudek", 3)
+.
+[ PERFSTAT ]    (samples=1   mean=21402.59   median=21402.59   min=21402.59   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/12 (21420 ms)
+[ RUN      ] tracking_boosting.boosting/13, where GetParam() = ("dudek", 4)
+.
+[ PERFSTAT ]    (samples=1   mean=15928.56   median=15928.56   min=15928.56   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/13 (15941 ms)
+[ RUN      ] tracking_boosting.boosting/14, where GetParam() = ("dudek", 5)
+.
+[ PERFSTAT ]    (samples=1   mean=24384.57   median=24384.57   min=24384.57   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/14 (24396 ms)
+[ RUN      ] tracking_boosting.boosting/15, where GetParam() = ("dudek", 6)
+.
+[ PERFSTAT ]    (samples=1   mean=18767.68   median=18767.68   min=18767.68   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/15 (18779 ms)
+[ RUN      ] tracking_boosting.boosting/16, where GetParam() = ("dudek", 7)
+.
+[ PERFSTAT ]    (samples=1   mean=16279.91   median=16279.91   min=16279.91   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/16 (16289 ms)
+[ RUN      ] tracking_boosting.boosting/17, where GetParam() = ("dudek", 8)
+.
+[ PERFSTAT ]    (samples=1   mean=16573.27   median=16573.27   min=16573.27   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/17 (16587 ms)
+[ RUN      ] tracking_boosting.boosting/18, where GetParam() = ("dudek", 9)
+.
+[ PERFSTAT ]    (samples=1   mean=16767.24   median=16767.24   min=16767.24   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/18 (16776 ms)
+[ RUN      ] tracking_boosting.boosting/19, where GetParam() = ("dudek", 10)
+.
+[ PERFSTAT ]    (samples=1   mean=21843.94   median=21843.94   min=21843.94   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/19 (21859 ms)
+[ RUN      ] tracking_boosting.boosting/20, where GetParam() = ("faceocc2", 1)
+.
+[ PERFSTAT ]    (samples=1   mean=10520.39   median=10520.39   min=10520.39   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/20 (10531 ms)
+[ RUN      ] tracking_boosting.boosting/21, where GetParam() = ("faceocc2", 2)
+[ PERFSTAT ]    (samples=1   mean=9770.28   median=9770.28   min=9770.28   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/21 (9783 ms)
+[ RUN      ] tracking_boosting.boosting/22, where GetParam() = ("faceocc2", 3)
+[ PERFSTAT ]    (samples=1   mean=9779.47   median=9779.47   min=9779.47   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/22 (9786 ms)
+[ RUN      ] tracking_boosting.boosting/23, where GetParam() = ("faceocc2", 4)
+[ PERFSTAT ]    (samples=1   mean=9195.61   median=9195.61   min=9195.61   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/23 (9208 ms)
+[ RUN      ] tracking_boosting.boosting/24, where GetParam() = ("faceocc2", 5)
+[ PERFSTAT ]    (samples=1   mean=9377.56   median=9377.56   min=9377.56   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/24 (9389 ms)
+[ RUN      ] tracking_boosting.boosting/25, where GetParam() = ("faceocc2", 6)
+[ PERFSTAT ]    (samples=1   mean=9125.22   median=9125.22   min=9125.22   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/25 (9136 ms)
+[ RUN      ] tracking_boosting.boosting/26, where GetParam() = ("faceocc2", 7)
+[ PERFSTAT ]    (samples=1   mean=8835.95   median=8835.95   min=8835.95   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/26 (8845 ms)
+[ RUN      ] tracking_boosting.boosting/27, where GetParam() = ("faceocc2", 8)
+[ PERFSTAT ]    (samples=1   mean=8679.53   median=8679.53   min=8679.53   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/27 (8690 ms)
+[ RUN      ] tracking_boosting.boosting/28, where GetParam() = ("faceocc2", 9)
+[ PERFSTAT ]    (samples=1   mean=9512.65   median=9512.65   min=9512.65   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/28 (9519 ms)
+[ RUN      ] tracking_boosting.boosting/29, where GetParam() = ("faceocc2", 10)
+.
+[ PERFSTAT ]    (samples=1   mean=10162.27   median=10162.27   min=10162.27   stddev=0.00 (0.0%))
+[       OK ] tracking_boosting.boosting/29 (10169 ms)
+[----------] 30 tests from tracking_boosting (331006 ms total)
+
+[----------] 30 tests from tracking_tld
+[ RUN      ] tracking_tld.tld/0, where GetParam() = ("david", 1)
+[ PERFSTAT ]    (samples=1   mean=3667.63   median=3667.63   min=3667.63   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/0 (3669 ms)
+[ RUN      ] tracking_tld.tld/1, where GetParam() = ("david", 2)
+[ PERFSTAT ]    (samples=1   mean=3763.02   median=3763.02   min=3763.02   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/1 (3765 ms)
+[ RUN      ] tracking_tld.tld/2, where GetParam() = ("david", 3)
+[ PERFSTAT ]    (samples=1   mean=5093.17   median=5093.17   min=5093.17   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/2 (5094 ms)
+[ RUN      ] tracking_tld.tld/3, where GetParam() = ("david", 4)
+[ PERFSTAT ]    (samples=1   mean=4574.45   median=4574.45   min=4574.45   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/3 (4576 ms)
+[ RUN      ] tracking_tld.tld/4, where GetParam() = ("david", 5)
+[ PERFSTAT ]    (samples=1   mean=4851.38   median=4851.38   min=4851.38   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/4 (4853 ms)
+[ RUN      ] tracking_tld.tld/5, where GetParam() = ("david", 6)
+[ PERFSTAT ]    (samples=1   mean=4483.69   median=4483.69   min=4483.69   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/5 (4485 ms)
+[ RUN      ] tracking_tld.tld/6, where GetParam() = ("david", 7)
+[ PERFSTAT ]    (samples=1   mean=3553.57   median=3553.57   min=3553.57   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/6 (3555 ms)
+[ RUN      ] tracking_tld.tld/7, where GetParam() = ("david", 8)
+[ PERFSTAT ]    (samples=1   mean=3834.68   median=3834.68   min=3834.68   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/7 (3836 ms)
+[ RUN      ] tracking_tld.tld/8, where GetParam() = ("david", 9)
+[ PERFSTAT ]    (samples=1   mean=5769.43   median=5769.43   min=5769.43   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/8 (5771 ms)
+[ RUN      ] tracking_tld.tld/9, where GetParam() = ("david", 10)
+[ PERFSTAT ]    (samples=1   mean=2807.58   median=2807.58   min=2807.58   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/9 (2809 ms)
+[ RUN      ] tracking_tld.tld/10, where GetParam() = ("dudek", 1)
+.
+[ PERFSTAT ]    (samples=1   mean=22739.46   median=22739.46   min=22739.46   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/10 (22742 ms)
+[ RUN      ] tracking_tld.tld/11, where GetParam() = ("dudek", 2)
+.
+[ PERFSTAT ]    (samples=1   mean=20584.06   median=20584.06   min=20584.06   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/11 (20586 ms)
+[ RUN      ] tracking_tld.tld/12, where GetParam() = ("dudek", 3)
+.
+[ PERFSTAT ]    (samples=1   mean=16075.56   median=16075.56   min=16075.56   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/12 (16078 ms)
+[ RUN      ] tracking_tld.tld/13, where GetParam() = ("dudek", 4)
+.
+[ PERFSTAT ]    (samples=1   mean=18436.51   median=18436.51   min=18436.51   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/13 (18438 ms)
+[ RUN      ] tracking_tld.tld/14, where GetParam() = ("dudek", 5)
+.
+[ PERFSTAT ]    (samples=1   mean=19065.78   median=19065.78   min=19065.78   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/14 (19068 ms)
+[ RUN      ] tracking_tld.tld/15, where GetParam() = ("dudek", 6)
+.
+[ PERFSTAT ]    (samples=1   mean=20526.05   median=20526.05   min=20526.05   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/15 (20528 ms)
+[ RUN      ] tracking_tld.tld/16, where GetParam() = ("dudek", 7)
+.
+[ PERFSTAT ]    (samples=1   mean=18719.10   median=18719.10   min=18719.10   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/16 (18722 ms)
+[ RUN      ] tracking_tld.tld/17, where GetParam() = ("dudek", 8)
+.
+[ PERFSTAT ]    (samples=1   mean=16676.00   median=16676.00   min=16676.00   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/17 (16678 ms)
+[ RUN      ] tracking_tld.tld/18, where GetParam() = ("dudek", 9)
+.
+[ PERFSTAT ]    (samples=1   mean=21076.47   median=21076.47   min=21076.47   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/18 (21078 ms)
+[ RUN      ] tracking_tld.tld/19, where GetParam() = ("dudek", 10)
+.
+[ PERFSTAT ]    (samples=1   mean=17859.20   median=17859.20   min=17859.20   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/19 (17862 ms)
+[ RUN      ] tracking_tld.tld/20, where GetParam() = ("faceocc2", 1)
+[ PERFSTAT ]    (samples=1   mean=8422.07   median=8422.07   min=8422.07   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/20 (8424 ms)
+[ RUN      ] tracking_tld.tld/21, where GetParam() = ("faceocc2", 2)
+.
+[ PERFSTAT ]    (samples=1   mean=11144.59   median=11144.59   min=11144.59   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/21 (11146 ms)
+[ RUN      ] tracking_tld.tld/22, where GetParam() = ("faceocc2", 3)
+[ PERFSTAT ]    (samples=1   mean=9562.14   median=9562.14   min=9562.14   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/22 (9564 ms)
+[ RUN      ] tracking_tld.tld/23, where GetParam() = ("faceocc2", 4)
+.
+[ PERFSTAT ]    (samples=1   mean=11564.06   median=11564.06   min=11564.06   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/23 (11566 ms)
+[ RUN      ] tracking_tld.tld/24, where GetParam() = ("faceocc2", 5)
+[ PERFSTAT ]    (samples=1   mean=8823.48   median=8823.48   min=8823.48   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/24 (8826 ms)
+[ RUN      ] tracking_tld.tld/25, where GetParam() = ("faceocc2", 6)
+[ PERFSTAT ]    (samples=1   mean=6467.01   median=6467.01   min=6467.01   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/25 (6469 ms)
+[ RUN      ] tracking_tld.tld/26, where GetParam() = ("faceocc2", 7)
+[ PERFSTAT ]    (samples=1   mean=8471.30   median=8471.30   min=8471.30   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/26 (8473 ms)
+[ RUN      ] tracking_tld.tld/27, where GetParam() = ("faceocc2", 8)
+[ PERFSTAT ]    (samples=1   mean=8760.75   median=8760.75   min=8760.75   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/27 (8762 ms)
+[ RUN      ] tracking_tld.tld/28, where GetParam() = ("faceocc2", 9)
+[ PERFSTAT ]    (samples=1   mean=9451.65   median=9451.65   min=9451.65   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/28 (9454 ms)
+[ RUN      ] tracking_tld.tld/29, where GetParam() = ("faceocc2", 10)
+[ PERFSTAT ]    (samples=1   mean=8196.07   median=8196.07   min=8196.07   stddev=0.00 (0.0%))
+[       OK ] tracking_tld.tld/29 (8198 ms)
+[----------] 30 tests from tracking_tld (325075 ms total)
+
+[----------] 30 tests from tracking_GOTURN
+[ RUN      ] tracking_GOTURN.GOTURN/0, where GetParam() = ("david", 1)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("david", 1)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/0, where GetParam() = ("david", 1) (49 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/1, where GetParam() = ("david", 2)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("david", 2)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/1, where GetParam() = ("david", 2) (47 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/2, where GetParam() = ("david", 3)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("david", 3)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/2, where GetParam() = ("david", 3) (39 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/3, where GetParam() = ("david", 4)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("david", 4)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/3, where GetParam() = ("david", 4) (39 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/4, where GetParam() = ("david", 5)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("david", 5)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/4, where GetParam() = ("david", 5) (46 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/5, where GetParam() = ("david", 6)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("david", 6)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/5, where GetParam() = ("david", 6) (41 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/6, where GetParam() = ("david", 7)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("david", 7)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/6, where GetParam() = ("david", 7) (41 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/7, where GetParam() = ("david", 8)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("david", 8)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/7, where GetParam() = ("david", 8) (65 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/8, where GetParam() = ("david", 9)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("david", 9)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/8, where GetParam() = ("david", 9) (44 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/9, where GetParam() = ("david", 10)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("david", 10)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/9, where GetParam() = ("david", 10) (49 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/10, where GetParam() = ("dudek", 1)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("dudek", 1)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/10, where GetParam() = ("dudek", 1) (77 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/11, where GetParam() = ("dudek", 2)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("dudek", 2)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/11, where GetParam() = ("dudek", 2) (65 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/12, where GetParam() = ("dudek", 3)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("dudek", 3)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/12, where GetParam() = ("dudek", 3) (86 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/13, where GetParam() = ("dudek", 4)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("dudek", 4)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/13, where GetParam() = ("dudek", 4) (76 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/14, where GetParam() = ("dudek", 5)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("dudek", 5)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/14, where GetParam() = ("dudek", 5) (75 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/15, where GetParam() = ("dudek", 6)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("dudek", 6)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/15, where GetParam() = ("dudek", 6) (80 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/16, where GetParam() = ("dudek", 7)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("dudek", 7)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/16, where GetParam() = ("dudek", 7) (84 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/17, where GetParam() = ("dudek", 8)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("dudek", 8)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/17, where GetParam() = ("dudek", 8) (89 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/18, where GetParam() = ("dudek", 9)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("dudek", 9)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/18, where GetParam() = ("dudek", 9) (77 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/19, where GetParam() = ("dudek", 10)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("dudek", 10)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/19, where GetParam() = ("dudek", 10) (83 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/20, where GetParam() = ("faceocc2", 1)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("faceocc2", 1)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/20, where GetParam() = ("faceocc2", 1) (52 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/21, where GetParam() = ("faceocc2", 2)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("faceocc2", 2)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/21, where GetParam() = ("faceocc2", 2) (65 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/22, where GetParam() = ("faceocc2", 3)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("faceocc2", 3)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/22, where GetParam() = ("faceocc2", 3) (41 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/23, where GetParam() = ("faceocc2", 4)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("faceocc2", 4)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/23, where GetParam() = ("faceocc2", 4) (41 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/24, where GetParam() = ("faceocc2", 5)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("faceocc2", 5)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/24, where GetParam() = ("faceocc2", 5) (44 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/25, where GetParam() = ("faceocc2", 6)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("faceocc2", 6)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/25, where GetParam() = ("faceocc2", 6) (41 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/26, where GetParam() = ("faceocc2", 7)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("faceocc2", 7)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/26, where GetParam() = ("faceocc2", 7) (44 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/27, where GetParam() = ("faceocc2", 8)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("faceocc2", 8)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/27, where GetParam() = ("faceocc2", 8) (44 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/28, where GetParam() = ("faceocc2", 9)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("faceocc2", 9)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/28, where GetParam() = ("faceocc2", 9) (41 ms)
+[ RUN      ] tracking_GOTURN.GOTURN/29, where GetParam() = ("faceocc2", 10)
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/dnn/src/caffe/caffe_io.cpp:1121: error: (-2:Unspecified error) FAILED: fs.is_open(). Can't open "goturn.prototxt" in function 'ReadProtoFromTextFile'
+
+params    = ("faceocc2", 10)
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 1
+outliers  =          0
+frequency =          0
+[  FAILED  ] tracking_GOTURN.GOTURN/29, where GetParam() = ("faceocc2", 10) (43 ms)
+[----------] 30 tests from tracking_GOTURN (1708 ms total)
+
+[----------] Global test environment tear-down
+[==========] 120 tests from 4 test cases ran. (1049562 ms total)
+[  PASSED  ] 90 tests.
+[  FAILED  ] 30 tests, listed below:
+[  FAILED  ] tracking_GOTURN.GOTURN/0, where GetParam() = ("david", 1)
+[  FAILED  ] tracking_GOTURN.GOTURN/1, where GetParam() = ("david", 2)
+[  FAILED  ] tracking_GOTURN.GOTURN/2, where GetParam() = ("david", 3)
+[  FAILED  ] tracking_GOTURN.GOTURN/3, where GetParam() = ("david", 4)
+[  FAILED  ] tracking_GOTURN.GOTURN/4, where GetParam() = ("david", 5)
+[  FAILED  ] tracking_GOTURN.GOTURN/5, where GetParam() = ("david", 6)
+[  FAILED  ] tracking_GOTURN.GOTURN/6, where GetParam() = ("david", 7)
+[  FAILED  ] tracking_GOTURN.GOTURN/7, where GetParam() = ("david", 8)
+[  FAILED  ] tracking_GOTURN.GOTURN/8, where GetParam() = ("david", 9)
+[  FAILED  ] tracking_GOTURN.GOTURN/9, where GetParam() = ("david", 10)
+[  FAILED  ] tracking_GOTURN.GOTURN/10, where GetParam() = ("dudek", 1)
+[  FAILED  ] tracking_GOTURN.GOTURN/11, where GetParam() = ("dudek", 2)
+[  FAILED  ] tracking_GOTURN.GOTURN/12, where GetParam() = ("dudek", 3)
+[  FAILED  ] tracking_GOTURN.GOTURN/13, where GetParam() = ("dudek", 4)
+[  FAILED  ] tracking_GOTURN.GOTURN/14, where GetParam() = ("dudek", 5)
+[  FAILED  ] tracking_GOTURN.GOTURN/15, where GetParam() = ("dudek", 6)
+[  FAILED  ] tracking_GOTURN.GOTURN/16, where GetParam() = ("dudek", 7)
+[  FAILED  ] tracking_GOTURN.GOTURN/17, where GetParam() = ("dudek", 8)
+[  FAILED  ] tracking_GOTURN.GOTURN/18, where GetParam() = ("dudek", 9)
+[  FAILED  ] tracking_GOTURN.GOTURN/19, where GetParam() = ("dudek", 10)
+[  FAILED  ] tracking_GOTURN.GOTURN/20, where GetParam() = ("faceocc2", 1)
+[  FAILED  ] tracking_GOTURN.GOTURN/21, where GetParam() = ("faceocc2", 2)
+[  FAILED  ] tracking_GOTURN.GOTURN/22, where GetParam() = ("faceocc2", 3)
+[  FAILED  ] tracking_GOTURN.GOTURN/23, where GetParam() = ("faceocc2", 4)
+[  FAILED  ] tracking_GOTURN.GOTURN/24, where GetParam() = ("faceocc2", 5)
+[  FAILED  ] tracking_GOTURN.GOTURN/25, where GetParam() = ("faceocc2", 6)
+[  FAILED  ] tracking_GOTURN.GOTURN/26, where GetParam() = ("faceocc2", 7)
+[  FAILED  ] tracking_GOTURN.GOTURN/27, where GetParam() = ("faceocc2", 8)
+[  FAILED  ] tracking_GOTURN.GOTURN/28, where GetParam() = ("faceocc2", 9)
+[  FAILED  ] tracking_GOTURN.GOTURN/29, where GetParam() = ("faceocc2", 10)
+
+30 FAILED TESTS

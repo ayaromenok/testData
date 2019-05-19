@@ -1,0 +1,117 @@
+[----------]
+[   INFO   ] 	Implementation variant: cuda.
+[----------]
+[----------]
+[ GPU INFO ] 	Run test suite on NVIDIA Tegra X1 GPU.
+[----------]
+Time compensation is 0
+*** CUDA Device Query (Runtime API) version (CUDART static linking) *** 
+
+Device count: 1
+
+Device 0: "NVIDIA Tegra X1"
+  CUDA Driver Version / Runtime Version          10.0 / 10.0
+  CUDA Capability Major/Minor version number:    5.3
+  Total amount of global memory:                 3963 MBytes (4155834368 bytes)
+  GPU Clock Speed:                               0.92 GHz
+  Max Texture Dimension Size (x,y,z)             1D=(65536), 2D=(65536,65536), 3D=(4096,4096,4096)
+  Max Layered Texture Size (dim) x layers        1D=(16384) x 2048, 2D=(16384,16384) x 2048
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 32768
+  Warp size:                                     32
+  Maximum number of threads per block:           1024
+  Maximum sizes of each dimension of a block:    1024 x 1024 x 64
+  Maximum sizes of each dimension of a grid:     2147483647 x 65535 x 65535
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and execution:                 Yes with 1 copy engine(s)
+  Run time limit on kernels:                     Yes
+  Integrated GPU sharing Host Memory:            Yes
+  Support host page-locked memory mapping:       Yes
+  Concurrent kernel execution:                   Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support enabled:                No
+  Device is using TCC driver mode:               No
+  Device supports Unified Addressing (UVA):      Yes
+  Device PCI Bus ID / PCI location ID:           0 / 0
+  Compute Mode:
+      Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) 
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version  = 10.0, CUDA Runtime Version = 10.0, NumDevs = 1
+
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.1.0-dev
+OpenCV VCS version: 4.1.0-180-gb4ec8fe3e
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.4.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (888) haveOpenCL Initialize OpenCL runtime...
+OpenCL Platforms: 
+    Portable Computing Language
+        CPU: pthread-cortex-a57 (OpenCL 1.2 pocl HSTR: pthread-aarch64-unknown-linux-gnu-cortex-a57)
+        iGPU: NVIDIA Tegra X1 (OpenCL 1.2 pocl HSTR: CUDA-sm_53)
+Current OpenCL device: 
+    Type = iGPU
+    Name = NVIDIA Tegra X1
+    Version = OpenCL 1.2 pocl HSTR: CUDA-sm_53
+    Driver version = 1.3
+    Address bits = 64
+    Compute units = 1
+    Max work group size = 1024
+    Local memory size = 48 KB
+    Max memory allocation size = 990 MB 848 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_byte_addressable_store
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_fp16
+        cl_khr_fp64
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 1
+    Preferred vector width short = 1
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 6 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 3 tests from Count_Calib3D_ProjectPoints
+[ RUN      ] Count_Calib3D_ProjectPoints.Calib3D_ProjectPoints/0, where GetParam() = 5000
+[ PERFSTAT ]    (samples=100   mean=0.45   median=0.41   min=0.35   stddev=0.10 (22.5%))
+[       OK ] Count_Calib3D_ProjectPoints.Calib3D_ProjectPoints/0 (102 ms)
+[ RUN      ] Count_Calib3D_ProjectPoints.Calib3D_ProjectPoints/1, where GetParam() = 10000
+[ PERFSTAT ]    (samples=13   mean=0.54   median=0.53   min=0.53   stddev=0.01 (2.1%))
+[       OK ] Count_Calib3D_ProjectPoints.Calib3D_ProjectPoints/1 (10 ms)
+[ RUN      ] Count_Calib3D_ProjectPoints.Calib3D_ProjectPoints/2, where GetParam() = 20000
+[ PERFSTAT ]    (samples=100   mean=0.95   median=0.92   min=0.79   stddev=0.09 (9.9%))
+[       OK ] Count_Calib3D_ProjectPoints.Calib3D_ProjectPoints/2 (103 ms)
+[----------] 3 tests from Count_Calib3D_ProjectPoints (215 ms total)
+
+[----------] 3 tests from Count_Calib3D_SolvePnPRansac
+[ RUN      ] Count_Calib3D_SolvePnPRansac.Calib3D_SolvePnPRansac/0, where GetParam() = 5000
+[ PERFSTAT ]    (samples=100   mean=68.92   median=68.34   min=61.95   stddev=3.77 (5.5%))
+[       OK ] Count_Calib3D_SolvePnPRansac.Calib3D_SolvePnPRansac/0 (7386 ms)
+[ RUN      ] Count_Calib3D_SolvePnPRansac.Calib3D_SolvePnPRansac/1, where GetParam() = 10000
+[ PERFSTAT ]    (samples=100   mean=75.30   median=74.48   min=68.36   stddev=3.56 (4.7%))
+[       OK ] Count_Calib3D_SolvePnPRansac.Calib3D_SolvePnPRansac/1 (7618 ms)
+[ RUN      ] Count_Calib3D_SolvePnPRansac.Calib3D_SolvePnPRansac/2, where GetParam() = 20000
+[ PERFSTAT ]    (samples=100   mean=79.69   median=81.76   min=64.77   stddev=8.06 (10.1%))
+[       OK ] Count_Calib3D_SolvePnPRansac.Calib3D_SolvePnPRansac/2 (8118 ms)
+[----------] 3 tests from Count_Calib3D_SolvePnPRansac (23122 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 2 test cases ran. (23338 ms total)
+[  PASSED  ] 6 tests.
+
+  YOU HAVE 2 DISABLED TESTS
+

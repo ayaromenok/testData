@@ -1,0 +1,96 @@
+Time compensation is 0
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (888) haveOpenCL Initialize OpenCL runtime...
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.1.0-dev
+OpenCV VCS version: 4.1.0-180-gb4ec8fe3e
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.4.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+OpenCL Platforms: 
+    Portable Computing Language
+        CPU: pthread-cortex-a57 (OpenCL 1.2 pocl HSTR: pthread-aarch64-unknown-linux-gnu-cortex-a57)
+        iGPU: NVIDIA Tegra X1 (OpenCL 1.2 pocl HSTR: CUDA-sm_53)
+Current OpenCL device: 
+    Type = iGPU
+    Name = NVIDIA Tegra X1
+    Version = OpenCL 1.2 pocl HSTR: CUDA-sm_53
+    Driver version = 1.3
+    Address bits = 64
+    Compute units = 1
+    Max work group size = 1024
+    Local memory size = 48 KB
+    Max memory allocation size = 990 MB 848 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_byte_addressable_store
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_fp16
+        cl_khr_fp64
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 1
+    Preferred vector width short = 1
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 357 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 300 tests from Conv
+[ RUN      ] Conv.conv/0, where GetParam() = (GFLOPS=10.087, K=[3 x 3], IN={1, 576, 38, 50}, OCN=512, PM=SAME, BIAS, OCV/OCL)
+OpenCV(ocl4dnn): consider to specify kernel configuration cache directory 
+                 via OPENCV_OCL4DNN_CONFIG_PATH parameter.
+[DEBUG:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (344) OpenCLBinaryCacheConfigurator Initializing OpenCL cache configuration...
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (430) OpenCLBinaryCacheConfigurator Successfully initialized OpenCL cache directory: /home/pi/.cache/opencv/4.1-dev/opencl_cache/
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (454) prepareCacheDirectoryForContext Preparing OpenCL cache configuration for context: NVIDIA_Corporation--NVIDIA_Tegra_X1--1_3
+OpenCL program build log: dnn/dummy
+Status -43: CL_INVALID_BUILD_OPTIONS
+-cl-no-subgroup-ifp
+Invalid build option: -cl-no-subgroup-ifp
+
+IN=4275 Kb [ 1 576 38 50 ]    OUT=3800 Kb [ 1 512 38 50 ]    Weights(parameters): 10370 Kb    MFLOPS=10087
+.
+.
+.
+.
+.
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 26670080 (base=0  current=0)
+[ PERFSTAT ]    (samples=10   mean=5961.13   median=5967.39   min=5900.48   stddev=21.56 (0.4%))
+[       OK ] Conv.conv/0 (80937 ms)
+[ RUN      ] Conv.conv/1, where GetParam() = (GFLOPS=10.087, K=[3 x 3], IN={1, 576, 38, 50}, OCN=512, PM=SAME, BIAS, OCV/OCL_FP16)
+IN=4275 Kb [ 1 576 38 50 ]    OUT=3800 Kb [ 1 512 38 50 ]    Weights(parameters): 10370 Kb    MFLOPS=10087
+.
+.
+.
+.
+.
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 18887680 (base=0  current=0)
+[ PERFSTAT ]    (samples=10   mean=5970.69   median=5969.85   min=5968.33   stddev=1.89 (0.0%))
+[       OK ] Conv.conv/1 (65731 ms)
+[ RUN      ] Conv.conv/2, where GetParam() = (GFLOPS=10.087, K=[3 x 3], IN={1, 576, 38, 50}, OCN=512, PM=SAME, BIAS, OCV/CPU)
+IN=4275 Kb [ 1 576 38 50 ]    OUT=3800 Kb [ 1 512 38 50 ]    Weights(parameters): 10370 Kb    MFLOPS=10087
+[ PERFSTAT ]    (samples=10   mean=615.36   median=614.16   min=598.24   stddev=11.17 (1.8%))
+[       OK ] Conv.conv/2 (6812 ms)
+[ RUN      ] Conv.conv/3, where GetParam() = (GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, G=512, P=[1 x 1], BIAS, OCV/OCL)
+IN=722 Kb [ 1 512 19 19 ]    OUT=722 Kb [ 1 512 19 19 ]    Weights(parameters): 20 Kb    MFLOPS=1703.6
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 2977792 (base=0  current=0)
+[ PERFSTAT ]    (samples=100   mean=31.44   median=30.81   min=28.05   stddev=2.15 (6.9%))
+[       OK ] Conv.conv/3 (4646 ms)
+[ RUN      ] Conv.conv/4, where GetParam() = (GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, G=512, P=[1 x 1], BIAS, OCV/OCL_FP16)
+IN=722 Kb [ 1 512 19 19 ]    OUT=722 Kb [ 1 512 19 19 ]    Weights(parameters): 20 Kb    MFLOPS=1703.6
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/ts/src/ts.cpp (820) testTearDown Memory_usage (OpenCL): 1499136 (base=0  current=0)
+[ PERFSTAT ]    (samples=100   mean=30.82   median=30.61   min=28.15   stddev=1.49 (4.8%))
+[       OK ] Conv.conv/4 (3174 ms)
+[ RUN      ] Conv.conv/5, where GetParam() = (GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, G=512, P=[1 x 1], BIAS, OCV/CPU)
+IN=722 Kb [ 1 512 19 19 ]    OUT=722 Kb [ 1 512 19 19 ]    Weights(parameters): 20 Kb    MFLOPS=1703.6
+[ PERFSTAT ]    (samples=100   mean=2.42   median=2.21   min=2.15   stddev=0.59 (24.2%))
+[       OK ] Conv.conv/5 (275 ms)
+[ RUN      ] Conv.conv/6, where GetParam() = (GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, PM=SAME, OCV/OCL)

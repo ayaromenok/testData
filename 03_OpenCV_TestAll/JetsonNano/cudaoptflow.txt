@@ -1,0 +1,253 @@
+[----------]
+[   INFO   ] 	Implementation variant: cuda.
+[----------]
+[----------]
+[ GPU INFO ] 	Run test suite on NVIDIA Tegra X1 GPU.
+[----------]
+Time compensation is 0
+*** CUDA Device Query (Runtime API) version (CUDART static linking) *** 
+
+Device count: 1
+
+Device 0: "NVIDIA Tegra X1"
+  CUDA Driver Version / Runtime Version          10.0 / 10.0
+  CUDA Capability Major/Minor version number:    5.3
+  Total amount of global memory:                 3963 MBytes (4155834368 bytes)
+  GPU Clock Speed:                               0.92 GHz
+  Max Texture Dimension Size (x,y,z)             1D=(65536), 2D=(65536,65536), 3D=(4096,4096,4096)
+  Max Layered Texture Size (dim) x layers        1D=(16384) x 2048, 2D=(16384,16384) x 2048
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 32768
+  Warp size:                                     32
+  Maximum number of threads per block:           1024
+  Maximum sizes of each dimension of a block:    1024 x 1024 x 64
+  Maximum sizes of each dimension of a grid:     2147483647 x 65535 x 65535
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and execution:                 Yes with 1 copy engine(s)
+  Run time limit on kernels:                     Yes
+  Integrated GPU sharing Host Memory:            Yes
+  Support host page-locked memory mapping:       Yes
+  Concurrent kernel execution:                   Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support enabled:                No
+  Device is using TCC driver mode:               No
+  Device supports Unified Addressing (UVA):      Yes
+  Device PCI Bus ID / PCI location ID:           0 / 0
+  Compute Mode:
+      Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) 
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version  = 10.0, CUDA Runtime Version = 10.0, NumDevs = 1
+
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.1.0-dev
+OpenCV VCS version: 4.1.0-180-gb4ec8fe3e
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.4.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (888) haveOpenCL Initialize OpenCL runtime...
+OpenCL Platforms: 
+    Portable Computing Language
+        CPU: pthread-cortex-a57 (OpenCL 1.2 pocl HSTR: pthread-aarch64-unknown-linux-gnu-cortex-a57)
+        iGPU: NVIDIA Tegra X1 (OpenCL 1.2 pocl HSTR: CUDA-sm_53)
+Current OpenCL device: 
+    Type = iGPU
+    Name = NVIDIA Tegra X1
+    Version = OpenCL 1.2 pocl HSTR: CUDA-sm_53
+    Driver version = 1.3
+    Address bits = 64
+    Compute units = 1
+    Max work group size = 1024
+    Local memory size = 48 KB
+    Max memory allocation size = 990 MB 848 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_byte_addressable_store
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_fp16
+        cl_khr_fp64
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 1
+    Preferred vector width short = 1
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 39 tests from 5 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from ImagePair_BroxOpticalFlow
+[ RUN      ] ImagePair_BroxOpticalFlow.BroxOpticalFlow/0, where GetParam() = ("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png")
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=1349.80   median=1307.25   min=1288.37   stddev=75.35 (5.6%))
+[       OK ] ImagePair_BroxOpticalFlow.BroxOpticalFlow/0 (136520 ms)
+[----------] 1 test from ImagePair_BroxOpticalFlow (136520 ms total)
+
+[----------] 8 tests from ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse
+[ RUN      ] ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse.PyrLKOpticalFlowSparse/0, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), false, 8000, 21, 1, 1)
+[ PERFSTAT ]    (samples=100   mean=22.78   median=22.81   min=20.29   stddev=1.30 (5.7%))
+[       OK ] ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse.PyrLKOpticalFlowSparse/0 (2547 ms)
+[ RUN      ] ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse.PyrLKOpticalFlowSparse/1, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), false, 8000, 21, 1, 30)
+[ PERFSTAT ]    (samples=100   mean=36.57   median=37.09   min=32.41   stddev=1.95 (5.3%))
+[       OK ] ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse.PyrLKOpticalFlowSparse/1 (3771 ms)
+[ RUN      ] ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse.PyrLKOpticalFlowSparse/2, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), false, 8000, 21, 3, 1)
+[ PERFSTAT ]    (samples=100   mean=77.42   median=78.53   min=69.91   stddev=3.40 (4.4%))
+[       OK ] ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse.PyrLKOpticalFlowSparse/2 (7997 ms)
+[ RUN      ] ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse.PyrLKOpticalFlowSparse/3, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), false, 8000, 21, 3, 30)
+[ PERFSTAT ]    (samples=10   mean=122.93   median=123.41   min=118.32   stddev=3.11 (2.5%))
+[       OK ] ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse.PyrLKOpticalFlowSparse/3 (1311 ms)
+[ RUN      ] ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse.PyrLKOpticalFlowSparse/4, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), true, 8000, 21, 1, 1)
+[ PERFSTAT ]    (samples=100   mean=9.74   median=10.10   min=7.74   stddev=1.00 (10.3%))
+[       OK ] ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse.PyrLKOpticalFlowSparse/4 (1049 ms)
+[ RUN      ] ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse.PyrLKOpticalFlowSparse/5, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), true, 8000, 21, 1, 30)
+[ PERFSTAT ]    (samples=100   mean=15.76   median=16.00   min=13.01   stddev=1.53 (9.7%))
+[       OK ] ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse.PyrLKOpticalFlowSparse/5 (1677 ms)
+[ RUN      ] ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse.PyrLKOpticalFlowSparse/6, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), true, 8000, 21, 3, 1)
+[ PERFSTAT ]    (samples=100   mean=28.65   median=29.38   min=23.72   stddev=1.97 (6.9%))
+[       OK ] ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse.PyrLKOpticalFlowSparse/6 (2954 ms)
+[ RUN      ] ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse.PyrLKOpticalFlowSparse/7, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), true, 8000, 21, 3, 30)
+[ PERFSTAT ]    (samples=100   mean=48.68   median=48.65   min=41.68   stddev=2.93 (6.0%))
+[       OK ] ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse.PyrLKOpticalFlowSparse/7 (4982 ms)
+[----------] 8 tests from ImagePair_Gray_NPts_WinSz_Levels_Iters_PyrLKOpticalFlowSparse (26292 ms total)
+
+[----------] 28 tests from ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/0, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 3, 1, 1)
+[ PERFSTAT ]    (samples=13   mean=9.16   median=9.16   min=9.08   stddev=0.07 (0.8%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/0 (162 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/1, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 3, 1, 10)
+[ PERFSTAT ]    (samples=13   mean=17.36   median=17.32   min=16.95   stddev=0.28 (1.6%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/1 (261 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/2, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 3, 3, 1)
+[ PERFSTAT ]    (samples=100   mean=16.18   median=15.68   min=11.67   stddev=3.28 (20.3%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/2 (1725 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/3, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 3, 3, 10)
+[ PERFSTAT ]    (samples=100   mean=25.48   median=25.29   min=22.99   stddev=1.69 (6.6%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/3 (2661 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/4, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 5, 1, 1)
+[ PERFSTAT ]    (samples=13   mean=11.32   median=11.29   min=11.20   stddev=0.10 (0.9%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/4 (184 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/5, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 5, 1, 10)
+[ PERFSTAT ]    (samples=100   mean=30.54   median=30.26   min=26.65   stddev=1.78 (5.8%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/5 (3136 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/6, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 5, 3, 1)
+[ PERFSTAT ]    (samples=100   mean=21.84   median=21.96   min=15.09   stddev=3.13 (14.3%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/6 (2277 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/7, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 5, 3, 10)
+[ PERFSTAT ]    (samples=100   mean=37.55   median=37.52   min=33.44   stddev=1.22 (3.3%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/7 (3879 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/8, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 7, 1, 1)
+[ PERFSTAT ]    (samples=13   mean=12.85   median=12.84   min=12.73   stddev=0.08 (0.6%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/8 (205 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/9, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 7, 1, 10)
+[ PERFSTAT ]    (samples=100   mean=42.32   median=42.48   min=37.79   stddev=1.61 (3.8%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/9 (4298 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/10, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 7, 3, 1)
+[ PERFSTAT ]    (samples=20   mean=16.97   median=16.87   min=16.56   stddev=0.50 (2.9%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/10 (379 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/11, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 7, 3, 10)
+[ PERFSTAT ]    (samples=92   mean=55.02   median=55.38   min=49.94   stddev=1.65 (3.0%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/11 (5132 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/12, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 9, 1, 1)
+[ PERFSTAT ]    (samples=100   mean=19.32   median=18.14   min=14.82   stddev=2.67 (13.8%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/12 (2013 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/13, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 9, 1, 10)
+[ PERFSTAT ]    (samples=52   mean=56.05   median=55.98   min=52.97   stddev=1.67 (3.0%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/13 (3012 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/14, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 9, 3, 1)
+[ PERFSTAT ]    (samples=100   mean=23.34   median=23.07   min=19.83   stddev=1.66 (7.1%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/14 (2405 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/15, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 9, 3, 10)
+[ PERFSTAT ]    (samples=13   mean=72.14   median=72.01   min=69.56   stddev=2.09 (2.9%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/15 (980 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/16, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 13, 1, 1)
+[ PERFSTAT ]    (samples=63   mean=23.61   median=23.73   min=21.74   stddev=0.71 (3.0%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/16 (1530 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/17, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 13, 1, 10)
+[ PERFSTAT ]    (samples=10   mean=92.56   median=92.21   min=89.09   stddev=2.34 (2.5%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/17 (960 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/18, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 13, 3, 1)
+[ PERFSTAT ]    (samples=100   mean=31.27   median=31.39   min=28.60   stddev=1.03 (3.3%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/18 (3193 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/19, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 13, 3, 10)
+[ PERFSTAT ]    (samples=10   mean=114.62   median=114.34   min=110.70   stddev=2.33 (2.0%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/19 (1181 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/20, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 17, 1, 1)
+[ PERFSTAT ]    (samples=100   mean=35.50   median=35.74   min=31.95   stddev=1.26 (3.6%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/20 (3614 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/21, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 17, 1, 10)
+[ PERFSTAT ]    (samples=10   mean=135.10   median=135.10   min=131.88   stddev=2.58 (1.9%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/21 (1388 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/22, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 17, 3, 1)
+[ PERFSTAT ]    (samples=38   mean=46.57   median=46.21   min=42.73   stddev=1.36 (2.9%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/22 (1820 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/23, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 17, 3, 10)
+[ PERFSTAT ]    (samples=10   mean=164.41   median=163.99   min=160.46   stddev=2.50 (1.5%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/23 (1679 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/24, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 21, 1, 1)
+[ PERFSTAT ]    (samples=55   mean=49.77   median=49.96   min=45.36   stddev=1.49 (3.0%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/24 (2790 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/25, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 21, 1, 10)
+[ PERFSTAT ]    (samples=10   mean=178.14   median=178.34   min=175.05   stddev=1.95 (1.1%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/25 (1822 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/26, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 21, 3, 1)
+[ PERFSTAT ]    (samples=21   mean=65.17   median=65.61   min=59.66   stddev=1.94 (3.0%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/26 (1411 ms)
+[ RUN      ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/27, where GetParam() = (("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png"), 21, 3, 10)
+[ PERFSTAT ]    (samples=10   mean=211.60   median=210.37   min=207.27   stddev=3.41 (1.6%))
+[       OK ] ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense.PyrLKOpticalFlowDense/27 (2155 ms)
+[----------] 28 tests from ImagePair_WinSz_Levels_Iters_PyrLKOpticalFlowDense (56253 ms total)
+
+[----------] 1 test from ImagePair_FarnebackOpticalFlow
+[ RUN      ] ImagePair_FarnebackOpticalFlow.FarnebackOpticalFlow/0, where GetParam() = ("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png")
+[ PERFSTAT ]    (samples=13   mean=142.99   median=142.94   min=138.92   stddev=2.74 (1.9%))
+[       OK ] ImagePair_FarnebackOpticalFlow.FarnebackOpticalFlow/0 (1918 ms)
+[----------] 1 test from ImagePair_FarnebackOpticalFlow (1918 ms total)
+
+[----------] 1 test from ImagePair_OpticalFlowDual_TVL1
+[ RUN      ] ImagePair_OpticalFlowDual_TVL1.OpticalFlowDual_TVL1/0, where GetParam() = ("gpu/opticalflow/frame0.png", "gpu/opticalflow/frame1.png")
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=2063.93   median=1993.89   min=928.69   stddev=314.90 (15.3%))
+[       OK ] ImagePair_OpticalFlowDual_TVL1.OpticalFlowDual_TVL1/0 (211255 ms)
+[----------] 1 test from ImagePair_OpticalFlowDual_TVL1 (211255 ms total)
+
+[----------] Global test environment tear-down
+[==========] 39 tests from 5 test cases ran. (432239 ms total)
+[  PASSED  ] 39 tests.

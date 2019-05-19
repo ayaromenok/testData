@@ -1,0 +1,181 @@
+[----------]
+[   INFO   ] 	Implementation variant: cuda.
+[----------]
+[----------]
+[ GPU INFO ] 	Run test suite on NVIDIA Tegra X1 GPU.
+[----------]
+Time compensation is 0
+*** CUDA Device Query (Runtime API) version (CUDART static linking) *** 
+
+Device count: 1
+
+Device 0: "NVIDIA Tegra X1"
+  CUDA Driver Version / Runtime Version          10.0 / 10.0
+  CUDA Capability Major/Minor version number:    5.3
+  Total amount of global memory:                 3963 MBytes (4155834368 bytes)
+  GPU Clock Speed:                               0.92 GHz
+  Max Texture Dimension Size (x,y,z)             1D=(65536), 2D=(65536,65536), 3D=(4096,4096,4096)
+  Max Layered Texture Size (dim) x layers        1D=(16384) x 2048, 2D=(16384,16384) x 2048
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 32768
+  Warp size:                                     32
+  Maximum number of threads per block:           1024
+  Maximum sizes of each dimension of a block:    1024 x 1024 x 64
+  Maximum sizes of each dimension of a grid:     2147483647 x 65535 x 65535
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and execution:                 Yes with 1 copy engine(s)
+  Run time limit on kernels:                     Yes
+  Integrated GPU sharing Host Memory:            Yes
+  Support host page-locked memory mapping:       Yes
+  Concurrent kernel execution:                   Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support enabled:                No
+  Device is using TCC driver mode:               No
+  Device supports Unified Addressing (UVA):      Yes
+  Device PCI Bus ID / PCI location ID:           0 / 0
+  Compute Mode:
+      Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) 
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version  = 10.0, CUDA Runtime Version = 10.0, NumDevs = 1
+
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.1.0-dev
+OpenCV VCS version: 4.1.0-180-gb4ec8fe3e
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.4.0)
+Parallel framework: pthreads
+CPU features: NEON FP16
+[ INFO:0] global /home/pi/sdk/src/opencv/opencv/modules/core/src/ocl.cpp (888) haveOpenCL Initialize OpenCL runtime...
+OpenCL Platforms: 
+    Portable Computing Language
+        CPU: pthread-cortex-a57 (OpenCL 1.2 pocl HSTR: pthread-aarch64-unknown-linux-gnu-cortex-a57)
+        iGPU: NVIDIA Tegra X1 (OpenCL 1.2 pocl HSTR: CUDA-sm_53)
+Current OpenCL device: 
+    Type = iGPU
+    Name = NVIDIA Tegra X1
+    Version = OpenCL 1.2 pocl HSTR: CUDA-sm_53
+    Driver version = 1.3
+    Address bits = 64
+    Compute units = 1
+    Max work group size = 1024
+    Local memory size = 48 KB
+    Max memory allocation size = 990 MB 848 KB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_byte_addressable_store
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_fp16
+        cl_khr_fp64
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 1
+    Preferred vector width short = 1
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 10 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 8 tests from Image_ObjDetect_HOG
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/0, where GetParam() = "gpu/hog/road.png"
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=362.80   median=358.26   min=280.56   stddev=40.58 (11.2%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/0 (37261 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/1, where GetParam() = "gpu/caltech/image_00000009_0.png"
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=309.23   median=302.99   min=229.85   stddev=42.57 (13.8%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/1 (31772 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/2, where GetParam() = "gpu/caltech/image_00000032_0.png"
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=302.03   median=294.04   min=229.23   stddev=38.42 (12.7%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/2 (30875 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/3, where GetParam() = "gpu/caltech/image_00000165_0.png"
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=316.00   median=312.24   min=235.11   stddev=41.82 (13.2%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/3 (32513 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/4, where GetParam() = "gpu/caltech/image_00000261_0.png"
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=324.17   median=320.80   min=232.23   stddev=43.31 (13.4%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/4 (33489 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/5, where GetParam() = "gpu/caltech/image_00000469_0.png"
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=303.82   median=298.72   min=237.97   stddev=33.43 (11.0%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/5 (31045 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/6, where GetParam() = "gpu/caltech/image_00000527_0.png"
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=300.61   median=295.09   min=217.00   stddev=42.19 (14.0%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/6 (30814 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/7, where GetParam() = "gpu/caltech/image_00000574_0.png"
+.
+.
+[ PERFSTAT ]    (samples=100   mean=288.12   median=284.88   min=222.37   stddev=35.43 (12.3%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/7 (29527 ms)
+[----------] 8 tests from Image_ObjDetect_HOG (257296 ms total)
+
+[----------] 1 test from ImageAndCascade_ObjDetect_HaarClassifier
+[ RUN      ] ImageAndCascade_ObjDetect_HaarClassifier.ObjDetect_HaarClassifier/0, where GetParam() = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/perf/haarcascade_frontalface_alt.xml")
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/core/include/opencv2/core/private.cuda.hpp:113: error: (-213:The function/feature is not implemented) The called functionality is disabled for current build or platform in function 'throw_no_cuda'
+
+params    = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/perf/haarcascade_frontalface_alt.xml")
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] ImageAndCascade_ObjDetect_HaarClassifier.ObjDetect_HaarClassifier/0, where GetParam() = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/perf/haarcascade_frontalface_alt.xml") (11 ms)
+[----------] 1 test from ImageAndCascade_ObjDetect_HaarClassifier (11 ms total)
+
+[----------] 1 test from ImageAndCascade_ObjDetect_LBPClassifier
+[ RUN      ] ImageAndCascade_ObjDetect_LBPClassifier.ObjDetect_LBPClassifier/0, where GetParam() = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/lbpcascade/lbpcascade_frontalface.xml")
+/home/pi/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.1.0-dev) /home/pi/sdk/src/opencv/opencv/modules/core/include/opencv2/core/private.cuda.hpp:113: error: (-213:The function/feature is not implemented) The called functionality is disabled for current build or platform in function 'throw_no_cuda'
+
+params    = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/lbpcascade/lbpcascade_frontalface.xml")
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] ImageAndCascade_ObjDetect_LBPClassifier.ObjDetect_LBPClassifier/0, where GetParam() = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/lbpcascade/lbpcascade_frontalface.xml") (1 ms)
+[----------] 1 test from ImageAndCascade_ObjDetect_LBPClassifier (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 3 test cases ran. (257308 ms total)
+[  PASSED  ] 8 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] ImageAndCascade_ObjDetect_HaarClassifier.ObjDetect_HaarClassifier/0, where GetParam() = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/perf/haarcascade_frontalface_alt.xml")
+[  FAILED  ] ImageAndCascade_ObjDetect_LBPClassifier.ObjDetect_LBPClassifier/0, where GetParam() = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/lbpcascade/lbpcascade_frontalface.xml")
+
+ 2 FAILED TESTS
