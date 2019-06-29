@@ -1,0 +1,360 @@
+Time compensation is 0
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.1.1-pre
+OpenCV VCS version: 4.1.0-431-gb58b2c5ae
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.4.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    NVIDIA CUDA
+        dGPU: GeForce GTX 1050 (OpenCL 1.2 CUDA)
+    AMD Accelerated Parallel Processing
+        iGPU: gfx902 (OpenCL 2.0 AMD-APP (2841.17))
+Current OpenCL device: 
+    Type = dGPU
+    Name = GeForce GTX 1050
+    Version = OpenCL 1.2 CUDA
+    Driver version = 430.26
+    Address bits = 64
+    Compute units = 5
+    Max work group size = 1024
+    Local memory size = 48 KB
+    Max memory allocation size = 500 MB 80 KB
+    Double support = Yes
+    Host unified memory = No
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_fp64
+        cl_khr_byte_addressable_store
+        cl_khr_icd
+        cl_khr_gl_sharing
+        cl_nv_compiler_options
+        cl_nv_device_attribute_query
+        cl_nv_pragma_unroll
+        cl_nv_copy_opts
+        cl_nv_create_buffer
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 1
+    Preferred vector width short = 1
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 357 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 300 tests from Conv
+[ RUN      ] Conv.conv/0, where GetParam() = (GFLOPS=10.087, K=[3 x 3], IN={1, 576, 38, 50}, OCN=512, PM=SAME, BIAS, OCV/OCL)
+OpenCV(ocl4dnn): consider to specify kernel configuration cache directory 
+                 via OPENCV_OCL4DNN_CONFIG_PATH parameter.
+OpenCL program build log: dnn/dummy
+Status -11: CL_BUILD_PROGRAM_FAILURE
+-cl-no-subgroup-ifp
+Error in processing command line: Don't understand command line argument "-cl-no-subgroup-ifp"!
+IN=4275 Kb [ 1 576 38 50 ]    OUT=3800 Kb [ 1 512 38 50 ]    Weights(parameters): 10370 Kb    MFLOPS=10087
+[ PERFSTAT ]    (samples=10   mean=111.42   median=111.46   min=111.00   stddev=0.23 (0.2%))
+[       OK ] Conv.conv/0 (1590 ms)
+[ RUN      ] Conv.conv/1, where GetParam() = (GFLOPS=10.087, K=[3 x 3], IN={1, 576, 38, 50}, OCN=512, PM=SAME, BIAS, OCV/OCL_FP16)
+IN=4275 Kb [ 1 576 38 50 ]    OUT=3800 Kb [ 1 512 38 50 ]    Weights(parameters): 10370 Kb    MFLOPS=10087
+[ PERFSTAT ]    (samples=10   mean=111.39   median=111.41   min=111.06   stddev=0.19 (0.2%))
+[       OK ] Conv.conv/1 (1242 ms)
+[ RUN      ] Conv.conv/2, where GetParam() = (GFLOPS=10.087, K=[3 x 3], IN={1, 576, 38, 50}, OCN=512, PM=SAME, BIAS, OCV/CPU)
+IN=4275 Kb [ 1 576 38 50 ]    OUT=3800 Kb [ 1 512 38 50 ]    Weights(parameters): 10370 Kb    MFLOPS=10087
+[ PERFSTAT ]    (samples=100   mean=70.24   median=70.96   min=58.24   stddev=3.43 (4.9%))
+[       OK ] Conv.conv/2 (7147 ms)
+[ RUN      ] Conv.conv/3, where GetParam() = (GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, G=512, P=[1 x 1], BIAS, OCV/OCL)
+IN=722 Kb [ 1 512 19 19 ]    OUT=722 Kb [ 1 512 19 19 ]    Weights(parameters): 20 Kb    MFLOPS=1703.6
+[ PERFSTAT ]    (samples=10   mean=11.55   median=11.56   min=11.36   stddev=0.11 (1.0%))
+[       OK ] Conv.conv/3 (285 ms)
+[ RUN      ] Conv.conv/4, where GetParam() = (GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, G=512, P=[1 x 1], BIAS, OCV/OCL_FP16)
+IN=722 Kb [ 1 512 19 19 ]    OUT=722 Kb [ 1 512 19 19 ]    Weights(parameters): 20 Kb    MFLOPS=1703.6
+[ PERFSTAT ]    (samples=25   mean=11.54   median=11.48   min=11.20   stddev=0.22 (1.9%))
+[       OK ] Conv.conv/4 (308 ms)
+[ RUN      ] Conv.conv/5, where GetParam() = (GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, G=512, P=[1 x 1], BIAS, OCV/CPU)
+IN=722 Kb [ 1 512 19 19 ]    OUT=722 Kb [ 1 512 19 19 ]    Weights(parameters): 20 Kb    MFLOPS=1703.6
+[ PERFSTAT ]    (samples=100   mean=0.92   median=0.94   min=0.75   stddev=0.10 (11.4%))
+[       OK ] Conv.conv/5 (98 ms)
+[ RUN      ] Conv.conv/6, where GetParam() = (GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, PM=SAME, OCV/OCL)
+IN=722 Kb [ 1 512 19 19 ]    OUT=722 Kb [ 1 512 19 19 ]    Weights(parameters): 9216 Kb    MFLOPS=1703.6
+[ PERFSTAT ]    (samples=71   mean=22.29   median=22.03   min=21.99   stddev=0.67 (3.0%))
+[       OK ] Conv.conv/6 (1798 ms)
+[ RUN      ] Conv.conv/7, where GetParam() = (GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, PM=SAME, OCV/OCL_FP16)
+IN=722 Kb [ 1 512 19 19 ]    OUT=722 Kb [ 1 512 19 19 ]    Weights(parameters): 9216 Kb    MFLOPS=1703.6
+[ PERFSTAT ]    (samples=10   mean=22.03   median=22.03   min=21.99   stddev=0.03 (0.1%))
+[       OK ] Conv.conv/7 (251 ms)
+[ RUN      ] Conv.conv/8, where GetParam() = (GFLOPS=1.704, K=[3 x 3], IN={1, 512, 19, 19}, OCN=512, PM=SAME, OCV/CPU)
+IN=722 Kb [ 1 512 19 19 ]    OUT=722 Kb [ 1 512 19 19 ]    Weights(parameters): 9216 Kb    MFLOPS=1703.6
+[ PERFSTAT ]    (samples=100   mean=10.86   median=10.56   min=9.13   stddev=0.82 (7.5%))
+[       OK ] Conv.conv/8 (1133 ms)
+[ RUN      ] Conv.conv/9, where GetParam() = (GFLOPS=6.641, K=[3 x 3], IN={1, 64, 150, 200}, OCN=192, PM=SAME, BIAS, OCV/OCL)
+IN=7500 Kb [ 1 64 150 200 ]    OUT=22500 Kb [ 1 192 150 200 ]    Weights(parameters): 433 Kb    MFLOPS=6641.28
+[ PERFSTAT ]    (samples=10   mean=79.01   median=78.97   min=78.61   stddev=0.28 (0.4%))
+[       OK ] Conv.conv/9 (1179 ms)
+[ RUN      ] Conv.conv/10, where GetParam() = (GFLOPS=6.641, K=[3 x 3], IN={1, 64, 150, 200}, OCN=192, PM=SAME, BIAS, OCV/OCL_FP16)
+IN=7500 Kb [ 1 64 150 200 ]    OUT=22500 Kb [ 1 192 150 200 ]    Weights(parameters): 433 Kb    MFLOPS=6641.28
+[ PERFSTAT ]    (samples=10   mean=79.04   median=79.08   min=78.79   stddev=0.18 (0.2%))
+[       OK ] Conv.conv/10 (879 ms)
+[ RUN      ] Conv.conv/11, where GetParam() = (GFLOPS=6.641, K=[3 x 3], IN={1, 64, 150, 200}, OCN=192, PM=SAME, BIAS, OCV/CPU)
+IN=7500 Kb [ 1 64 150 200 ]    OUT=22500 Kb [ 1 192 150 200 ]    Weights(parameters): 433 Kb    MFLOPS=6641.28
+[ PERFSTAT ]    (samples=100   mean=45.13   median=45.24   min=38.68   stddev=1.62 (3.6%))
+[       OK ] Conv.conv/11 (4593 ms)
+[ RUN      ] Conv.conv/12, where GetParam() = (GFLOPS=1.659, K=[3 x 3], IN={1, 960, 10, 10}, OCN=960, PM=SAME, OCV/OCL)
+IN=375 Kb [ 1 960 10 10 ]    OUT=375 Kb [ 1 960 10 10 ]    Weights(parameters): 32400 Kb    MFLOPS=1658.98
+[ PERFSTAT ]    (samples=10   mean=39.94   median=39.90   min=39.68   stddev=0.18 (0.5%))
+[       OK ] Conv.conv/12 (667 ms)
+[ RUN      ] Conv.conv/13, where GetParam() = (GFLOPS=1.659, K=[3 x 3], IN={1, 960, 10, 10}, OCN=960, PM=SAME, OCV/OCL_FP16)
+IN=375 Kb [ 1 960 10 10 ]    OUT=375 Kb [ 1 960 10 10 ]    Weights(parameters): 32400 Kb    MFLOPS=1658.98
+[ PERFSTAT ]    (samples=10   mean=39.91   median=39.93   min=39.76   stddev=0.11 (0.3%))
+[       OK ] Conv.conv/13 (469 ms)
+[ RUN      ] Conv.conv/14, where GetParam() = (GFLOPS=1.659, K=[3 x 3], IN={1, 960, 10, 10}, OCN=960, PM=SAME, OCV/CPU)
+IN=375 Kb [ 1 960 10 10 ]    OUT=375 Kb [ 1 960 10 10 ]    Weights(parameters): 32400 Kb    MFLOPS=1658.98
+[ PERFSTAT ]    (samples=13   mean=13.40   median=13.38   min=13.04   stddev=0.20 (1.5%))
+[       OK ] Conv.conv/14 (210 ms)
+[ RUN      ] Conv.conv/15, where GetParam() = (GFLOPS=2.156, K=[3 x 3], IN={1, 576, 19, 19}, OCN=576, PM=SAME, OCV/OCL)
+IN=813 Kb [ 1 576 19 19 ]    OUT=813 Kb [ 1 576 19 19 ]    Weights(parameters): 11664 Kb    MFLOPS=2156.09
+[ PERFSTAT ]    (samples=10   mean=27.93   median=27.99   min=27.58   stddev=0.13 (0.5%))
+[       OK ] Conv.conv/15 (495 ms)
+[ RUN      ] Conv.conv/16, where GetParam() = (GFLOPS=2.156, K=[3 x 3], IN={1, 576, 19, 19}, OCN=576, PM=SAME, OCV/OCL_FP16)
+IN=813 Kb [ 1 576 19 19 ]    OUT=813 Kb [ 1 576 19 19 ]    Weights(parameters): 11664 Kb    MFLOPS=2156.09
+[ PERFSTAT ]    (samples=10   mean=27.88   median=27.88   min=27.84   stddev=0.02 (0.1%))
+[       OK ] Conv.conv/16 (318 ms)
+[ RUN      ] Conv.conv/17, where GetParam() = (GFLOPS=2.156, K=[3 x 3], IN={1, 576, 19, 19}, OCN=576, PM=SAME, OCV/CPU)
+IN=813 Kb [ 1 576 19 19 ]    OUT=813 Kb [ 1 576 19 19 ]    Weights(parameters): 11664 Kb    MFLOPS=2156.09
+[ PERFSTAT ]    (samples=13   mean=14.55   median=14.53   min=14.31   stddev=0.17 (1.1%))
+[       OK ] Conv.conv/17 (217 ms)
+[ RUN      ] Conv.conv/18, where GetParam() = (GFLOPS=0.958, K=[3 x 3], IN={1, 384, 19, 19}, OCN=384, PM=SAME, OCV/OCL)
+IN=542 Kb [ 1 384 19 19 ]    OUT=542 Kb [ 1 384 19 19 ]    Weights(parameters): 5184 Kb    MFLOPS=958.308
+[ PERFSTAT ]    (samples=10   mean=12.53   median=12.56   min=12.42   stddev=0.07 (0.5%))
+[       OK ] Conv.conv/18 (278 ms)
+[ RUN      ] Conv.conv/19, where GetParam() = (GFLOPS=0.958, K=[3 x 3], IN={1, 384, 19, 19}, OCN=384, PM=SAME, OCV/OCL_FP16)
+IN=542 Kb [ 1 384 19 19 ]    OUT=542 Kb [ 1 384 19 19 ]    Weights(parameters): 5184 Kb    MFLOPS=958.308
+[ PERFSTAT ]    (samples=10   mean=12.48   median=12.48   min=12.47   stddev=0.01 (0.1%))
+[       OK ] Conv.conv/19 (142 ms)
+[ RUN      ] Conv.conv/20, where GetParam() = (GFLOPS=0.958, K=[3 x 3], IN={1, 384, 19, 19}, OCN=384, PM=SAME, OCV/CPU)
+IN=542 Kb [ 1 384 19 19 ]    OUT=542 Kb [ 1 384 19 19 ]    Weights(parameters): 5184 Kb    MFLOPS=958.308
+[ PERFSTAT ]    (samples=100   mean=6.11   median=6.17   min=5.01   stddev=0.44 (7.3%))
+[       OK ] Conv.conv/20 (650 ms)
+[ RUN      ] Conv.conv/21, where GetParam() = (GFLOPS=0.830, K=[3 x 3], IN={1, 64, 75, 100}, OCN=96, PM=SAME, BIAS, OCV/OCL)
+IN=1875 Kb [ 1 64 75 100 ]    OUT=2813 Kb [ 1 96 75 100 ]    Weights(parameters): 217 Kb    MFLOPS=830.16
+[ PERFSTAT ]    (samples=10   mean=10.89   median=10.88   min=10.86   stddev=0.03 (0.3%))
+[       OK ] Conv.conv/21 (273 ms)
+[ RUN      ] Conv.conv/22, where GetParam() = (GFLOPS=0.830, K=[3 x 3], IN={1, 64, 75, 100}, OCN=96, PM=SAME, BIAS, OCV/OCL_FP16)
+IN=1875 Kb [ 1 64 75 100 ]    OUT=2813 Kb [ 1 96 75 100 ]    Weights(parameters): 217 Kb    MFLOPS=830.16
+[ PERFSTAT ]    (samples=10   mean=10.89   median=10.89   min=10.86   stddev=0.03 (0.3%))
+[       OK ] Conv.conv/22 (123 ms)
+[ RUN      ] Conv.conv/23, where GetParam() = (GFLOPS=0.830, K=[3 x 3], IN={1, 64, 75, 100}, OCN=96, PM=SAME, BIAS, OCV/CPU)
+IN=1875 Kb [ 1 64 75 100 ]    OUT=2813 Kb [ 1 96 75 100 ]    Weights(parameters): 217 Kb    MFLOPS=830.16
+[ PERFSTAT ]    (samples=100   mean=5.03   median=5.00   min=4.38   stddev=0.28 (5.5%))
+[       OK ] Conv.conv/23 (528 ms)
+[ RUN      ] Conv.conv/24, where GetParam() = (GFLOPS=1.245, K=[3 x 3], IN={1, 96, 75, 100}, OCN=96, PM=SAME, BIAS, OCV/OCL)
+IN=2813 Kb [ 1 96 75 100 ]    OUT=2813 Kb [ 1 96 75 100 ]    Weights(parameters): 325 Kb    MFLOPS=1244.88
+[ PERFSTAT ]    (samples=10   mean=15.71   median=15.71   min=15.65   stddev=0.04 (0.2%))
+[       OK ] Conv.conv/24 (322 ms)
+[ RUN      ] Conv.conv/25, where GetParam() = (GFLOPS=1.245, K=[3 x 3], IN={1, 96, 75, 100}, OCN=96, PM=SAME, BIAS, OCV/OCL_FP16)
+IN=2813 Kb [ 1 96 75 100 ]    OUT=2813 Kb [ 1 96 75 100 ]    Weights(parameters): 325 Kb    MFLOPS=1244.88
+[ PERFSTAT ]    (samples=10   mean=15.67   median=15.67   min=15.59   stddev=0.06 (0.4%))
+[       OK ] Conv.conv/25 (177 ms)
+[ RUN      ] Conv.conv/26, where GetParam() = (GFLOPS=1.245, K=[3 x 3], IN={1, 96, 75, 100}, OCN=96, PM=SAME, BIAS, OCV/CPU)
+IN=2813 Kb [ 1 96 75 100 ]    OUT=2813 Kb [ 1 96 75 100 ]    Weights(parameters): 325 Kb    MFLOPS=1244.88
+[ PERFSTAT ]    (samples=100   mean=7.89   median=7.68   min=7.13   stddev=0.43 (5.5%))
+[       OK ] Conv.conv/26 (836 ms)
+[ RUN      ] Conv.conv/27, where GetParam() = (GFLOPS=2.100, K=[3 x 3], IN={1, 144, 75, 75}, OCN=144, PM=SAME, OCV/OCL)
+IN=3165 Kb [ 1 144 75 75 ]    OUT=3165 Kb [ 1 144 75 75 ]    Weights(parameters): 729 Kb    MFLOPS=2100.33
+[ PERFSTAT ]    (samples=10   mean=25.66   median=25.64   min=25.61   stddev=0.04 (0.2%))
+[       OK ] Conv.conv/27 (467 ms)
+[ RUN      ] Conv.conv/28, where GetParam() = (GFLOPS=2.100, K=[3 x 3], IN={1, 144, 75, 75}, OCN=144, PM=SAME, OCV/OCL_FP16)
+IN=3165 Kb [ 1 144 75 75 ]    OUT=3165 Kb [ 1 144 75 75 ]    Weights(parameters): 729 Kb    MFLOPS=2100.33
+[ PERFSTAT ]    (samples=10   mean=25.62   median=25.62   min=25.57   stddev=0.04 (0.1%))
+[       OK ] Conv.conv/28 (288 ms)
+[ RUN      ] Conv.conv/29, where GetParam() = (GFLOPS=2.100, K=[3 x 3], IN={1, 144, 75, 75}, OCN=144, PM=SAME, OCV/CPU)
+IN=3165 Kb [ 1 144 75 75 ]    OUT=3165 Kb [ 1 144 75 75 ]    Weights(parameters): 729 Kb    MFLOPS=2100.33
+[ PERFSTAT ]    (samples=100   mean=12.69   median=12.55   min=11.08   stddev=0.65 (5.1%))
+[       OK ] Conv.conv/29 (1317 ms)
+[ RUN      ] Conv.conv/30, where GetParam() = (GFLOPS=1.022, K=[3 x 3], IN={1, 576, 19, 19}, OCN=273, PM=SAME, BIAS, OCV/OCL)
+IN=813 Kb [ 1 576 19 19 ]    OUT=385 Kb [ 1 273 19 19 ]    Weights(parameters): 5530 Kb    MFLOPS=1021.9
+[ PERFSTAT ]    (samples=10   mean=13.62   median=13.67   min=13.44   stddev=0.15 (1.1%))
+[       OK ] Conv.conv/30 (293 ms)
+[ RUN      ] Conv.conv/31, where GetParam() = (GFLOPS=1.022, K=[3 x 3], IN={1, 576, 19, 19}, OCN=273, PM=SAME, BIAS, OCV/OCL_FP16)
+IN=813 Kb [ 1 576 19 19 ]    OUT=385 Kb [ 1 273 19 19 ]    Weights(parameters): 5530 Kb    MFLOPS=1021.9
+[ PERFSTAT ]    (samples=10   mean=13.79   median=13.79   min=13.77   stddev=0.01 (0.1%))
+[       OK ] Conv.conv/31 (158 ms)
+[ RUN      ] Conv.conv/32, where GetParam() = (GFLOPS=1.022, K=[3 x 3], IN={1, 576, 19, 19}, OCN=273, PM=SAME, BIAS, OCV/CPU)
+IN=813 Kb [ 1 576 19 19 ]    OUT=385 Kb [ 1 273 19 19 ]    Weights(parameters): 5530 Kb    MFLOPS=1021.9
+[ PERFSTAT ]    (samples=100   mean=6.94   median=6.84   min=5.62   stddev=0.74 (10.7%))
+[       OK ] Conv.conv/32 (733 ms)
+[ RUN      ] Conv.conv/33, where GetParam() = (GFLOPS=0.958, K=[3 x 3], IN={1, 192, 38, 38}, OCN=192, PM=SAME, OCV/OCL)
+IN=1083 Kb [ 1 192 38 38 ]    OUT=1083 Kb [ 1 192 38 38 ]    Weights(parameters): 1296 Kb    MFLOPS=958.446
+[ PERFSTAT ]    (samples=10   mean=13.51   median=13.50   min=13.49   stddev=0.02 (0.1%))
+[       OK ] Conv.conv/33 (289 ms)
+[ RUN      ] Conv.conv/34, where GetParam() = (GFLOPS=0.958, K=[3 x 3], IN={1, 192, 38, 38}, OCN=192, PM=SAME, OCV/OCL_FP16)
+IN=1083 Kb [ 1 192 38 38 ]    OUT=1083 Kb [ 1 192 38 38 ]    Weights(parameters): 1296 Kb    MFLOPS=958.446
+[ PERFSTAT ]    (samples=10   mean=13.50   median=13.46   min=13.44   stddev=0.06 (0.5%))
+[       OK ] Conv.conv/34 (152 ms)
+[ RUN      ] Conv.conv/35, where GetParam() = (GFLOPS=0.958, K=[3 x 3], IN={1, 192, 38, 38}, OCN=192, PM=SAME, OCV/CPU)
+IN=1083 Kb [ 1 192 38 38 ]    OUT=1083 Kb [ 1 192 38 38 ]    Weights(parameters): 1296 Kb    MFLOPS=958.446
+[ PERFSTAT ]    (samples=100   mean=6.08   median=6.21   min=4.99   stddev=0.40 (6.7%))
+[       OK ] Conv.conv/35 (638 ms)
+[ RUN      ] Conv.conv/36, where GetParam() = (GFLOPS=1.888, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=1024, PM=SAME, OCV/OCL)
+IN=400 Kb [ 1 1024 10 10 ]    OUT=400 Kb [ 1 1024 10 10 ]    Weights(parameters): 36864 Kb    MFLOPS=1887.54
+[ PERFSTAT ]    (samples=10   mean=45.44   median=45.43   min=45.21   stddev=0.19 (0.4%))
+[       OK ] Conv.conv/36 (735 ms)
+[ RUN      ] Conv.conv/37, where GetParam() = (GFLOPS=1.888, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=1024, PM=SAME, OCV/OCL_FP16)
+IN=400 Kb [ 1 1024 10 10 ]    OUT=400 Kb [ 1 1024 10 10 ]    Weights(parameters): 36864 Kb    MFLOPS=1887.54
+[ PERFSTAT ]    (samples=10   mean=45.30   median=45.28   min=45.18   stddev=0.07 (0.2%))
+[       OK ] Conv.conv/37 (531 ms)
+[ RUN      ] Conv.conv/38, where GetParam() = (GFLOPS=1.888, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=1024, PM=SAME, OCV/CPU)
+IN=400 Kb [ 1 1024 10 10 ]    OUT=400 Kb [ 1 1024 10 10 ]    Weights(parameters): 36864 Kb    MFLOPS=1887.54
+[ PERFSTAT ]    (samples=100   mean=15.30   median=15.30   min=14.39   stddev=0.65 (4.3%))
+[       OK ] Conv.conv/38 (1611 ms)
+[ RUN      ] Conv.conv/39, where GetParam() = (GFLOPS=1.888, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=1024, G=1024, P=[1 x 1], BIAS, OCV/OCL)
+IN=400 Kb [ 1 1024 10 10 ]    OUT=400 Kb [ 1 1024 10 10 ]    Weights(parameters): 40 Kb    MFLOPS=1887.54
+[ PERFSTAT ]    (samples=10   mean=22.78   median=22.80   min=22.48   stddev=0.16 (0.7%))
+[       OK ] Conv.conv/39 (404 ms)
+[ RUN      ] Conv.conv/40, where GetParam() = (GFLOPS=1.888, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=1024, G=1024, P=[1 x 1], BIAS, OCV/OCL_FP16)
+IN=400 Kb [ 1 1024 10 10 ]    OUT=400 Kb [ 1 1024 10 10 ]    Weights(parameters): 40 Kb    MFLOPS=1887.54
+[ PERFSTAT ]    (samples=10   mean=22.59   median=22.79   min=21.27   stddev=0.52 (2.3%))
+[       OK ] Conv.conv/40 (249 ms)
+[ RUN      ] Conv.conv/41, where GetParam() = (GFLOPS=1.888, K=[3 x 3], IN={1, 1024, 10, 10}, OCN=1024, G=1024, P=[1 x 1], BIAS, OCV/CPU)
+IN=400 Kb [ 1 1024 10 10 ]    OUT=400 Kb [ 1 1024 10 10 ]    Weights(parameters): 40 Kb    MFLOPS=1887.54
+[ PERFSTAT ]    (samples=100   mean=0.63   median=0.62   min=0.50   stddev=0.10 (16.1%))
+[       OK ] Conv.conv/41 (69 ms)
+[ RUN      ] Conv.conv/42, where GetParam() = (GFLOPS=1.704, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, G=256, P=[1 x 1], BIAS, OCV/OCL)
+IN=1444 Kb [ 1 256 38 38 ]    OUT=1444 Kb [ 1 256 38 38 ]    Weights(parameters): 10 Kb    MFLOPS=1703.78
+[ PERFSTAT ]    (samples=10   mean=4.93   median=4.93   min=4.88   stddev=0.04 (0.8%))
+[       OK ] Conv.conv/42 (174 ms)
+[ RUN      ] Conv.conv/43, where GetParam() = (GFLOPS=1.704, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, G=256, P=[1 x 1], BIAS, OCV/OCL_FP16)
+IN=1444 Kb [ 1 256 38 38 ]    OUT=1444 Kb [ 1 256 38 38 ]    Weights(parameters): 10 Kb    MFLOPS=1703.78
+[ PERFSTAT ]    (samples=10   mean=4.86   median=4.91   min=4.61   stddev=0.13 (2.7%))
+[       OK ] Conv.conv/43 (56 ms)
+[ RUN      ] Conv.conv/44, where GetParam() = (GFLOPS=1.704, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, G=256, P=[1 x 1], BIAS, OCV/CPU)
+IN=1444 Kb [ 1 256 38 38 ]    OUT=1444 Kb [ 1 256 38 38 ]    Weights(parameters): 10 Kb    MFLOPS=1703.78
+[ PERFSTAT ]    (samples=100   mean=1.56   median=1.62   min=1.29   stddev=0.12 (8.0%))
+[       OK ] Conv.conv/44 (165 ms)
+[ RUN      ] Conv.conv/45, where GetParam() = (GFLOPS=1.704, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, PM=SAME, OCV/OCL)
+IN=1444 Kb [ 1 256 38 38 ]    OUT=1444 Kb [ 1 256 38 38 ]    Weights(parameters): 2304 Kb    MFLOPS=1703.78
+[ PERFSTAT ]    (samples=10   mean=23.65   median=23.66   min=23.41   stddev=0.17 (0.7%))
+[       OK ] Conv.conv/45 (422 ms)
+[ RUN      ] Conv.conv/46, where GetParam() = (GFLOPS=1.704, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, PM=SAME, OCV/OCL_FP16)
+IN=1444 Kb [ 1 256 38 38 ]    OUT=1444 Kb [ 1 256 38 38 ]    Weights(parameters): 2304 Kb    MFLOPS=1703.78
+[ PERFSTAT ]    (samples=10   mean=23.81   median=23.84   min=23.59   stddev=0.11 (0.5%))
+[       OK ] Conv.conv/46 (266 ms)
+[ RUN      ] Conv.conv/47, where GetParam() = (GFLOPS=1.704, K=[3 x 3], IN={1, 256, 38, 38}, OCN=256, PM=SAME, OCV/CPU)
+IN=1444 Kb [ 1 256 38 38 ]    OUT=1444 Kb [ 1 256 38 38 ]    Weights(parameters): 2304 Kb    MFLOPS=1703.78
+[ PERFSTAT ]    (samples=100   mean=10.34   median=9.98   min=9.86   stddev=0.58 (5.7%))
+[       OK ] Conv.conv/47 (1076 ms)
+[ RUN      ] Conv.conv/48, where GetParam() = (GFLOPS=1.660, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, G=128, P=[1 x 1], BIAS, OCV/OCL)
+IN=2813 Kb [ 1 128 75 75 ]    OUT=2813 Kb [ 1 128 75 75 ]    Weights(parameters): 5 Kb    MFLOPS=1659.6
+[ PERFSTAT ]    (samples=10   mean=2.66   median=2.64   min=2.62   stddev=0.05 (1.7%))
+[       OK ] Conv.conv/48 (153 ms)
+[ RUN      ] Conv.conv/49, where GetParam() = (GFLOPS=1.660, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, G=128, P=[1 x 1], BIAS, OCV/OCL_FP16)
+IN=2813 Kb [ 1 128 75 75 ]    OUT=2813 Kb [ 1 128 75 75 ]    Weights(parameters): 5 Kb    MFLOPS=1659.6
+[ PERFSTAT ]    (samples=10   mean=2.63   median=2.63   min=2.59   stddev=0.02 (0.9%))
+[       OK ] Conv.conv/49 (33 ms)
+[ RUN      ] Conv.conv/50, where GetParam() = (GFLOPS=1.660, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, G=128, P=[1 x 1], BIAS, OCV/CPU)
+IN=2813 Kb [ 1 128 75 75 ]    OUT=2813 Kb [ 1 128 75 75 ]    Weights(parameters): 5 Kb    MFLOPS=1659.6
+[ PERFSTAT ]    (samples=38   mean=2.82   median=2.81   min=2.77   stddev=0.07 (2.4%))
+[       OK ] Conv.conv/50 (116 ms)
+[ RUN      ] Conv.conv/51, where GetParam() = (GFLOPS=1.660, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, PM=SAME, OCV/OCL)
+IN=2813 Kb [ 1 128 75 75 ]    OUT=2813 Kb [ 1 128 75 75 ]    Weights(parameters): 576 Kb    MFLOPS=1659.6
+[ PERFSTAT ]    (samples=10   mean=20.47   median=20.48   min=20.40   stddev=0.05 (0.2%))
+[       OK ] Conv.conv/51 (385 ms)
+[ RUN      ] Conv.conv/52, where GetParam() = (GFLOPS=1.660, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, PM=SAME, OCV/OCL_FP16)
+IN=2813 Kb [ 1 128 75 75 ]    OUT=2813 Kb [ 1 128 75 75 ]    Weights(parameters): 576 Kb    MFLOPS=1659.6
+[ PERFSTAT ]    (samples=10   mean=20.34   median=20.33   min=20.29   stddev=0.03 (0.1%))
+[       OK ] Conv.conv/52 (228 ms)
+[ RUN      ] Conv.conv/53, where GetParam() = (GFLOPS=1.660, K=[3 x 3], IN={1, 128, 75, 75}, OCN=128, PM=SAME, OCV/CPU)
+IN=2813 Kb [ 1 128 75 75 ]    OUT=2813 Kb [ 1 128 75 75 ]    Weights(parameters): 576 Kb    MFLOPS=1659.6
+[ PERFSTAT ]    (samples=100   mean=10.19   median=10.30   min=8.71   stddev=0.72 (7.1%))
+[       OK ] Conv.conv/53 (1062 ms)
+[ RUN      ] Conv.conv/54, where GetParam() = (GFLOPS=0.280, K=[1 x 1], IN={1, 576, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/OCL)
+IN=4275 Kb [ 1 576 38 50 ]    OUT=950 Kb [ 1 128 38 50 ]    Weights(parameters): 289 Kb    MFLOPS=280.41
+[ PERFSTAT ]    (samples=10   mean=4.29   median=4.28   min=4.25   stddev=0.04 (0.9%))
+[       OK ] Conv.conv/54 (174 ms)
+[ RUN      ] Conv.conv/55, where GetParam() = (GFLOPS=0.280, K=[1 x 1], IN={1, 576, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/OCL_FP16)
+IN=4275 Kb [ 1 576 38 50 ]    OUT=950 Kb [ 1 128 38 50 ]    Weights(parameters): 289 Kb    MFLOPS=280.41
+[ PERFSTAT ]    (samples=10   mean=4.30   median=4.31   min=4.24   stddev=0.03 (0.7%))
+[       OK ] Conv.conv/55 (52 ms)
+[ RUN      ] Conv.conv/56, where GetParam() = (GFLOPS=0.280, K=[1 x 1], IN={1, 576, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/CPU)
+IN=4275 Kb [ 1 576 38 50 ]    OUT=950 Kb [ 1 128 38 50 ]    Weights(parameters): 289 Kb    MFLOPS=280.41
+[ PERFSTAT ]    (samples=100   mean=2.88   median=2.90   min=2.38   stddev=0.09 (3.1%))
+[       OK ] Conv.conv/56 (307 ms)
+[ RUN      ] Conv.conv/57, where GetParam() = (GFLOPS=0.701, K=[3 x 3], IN={1, 128, 38, 50}, OCN=160, PM=SAME, BIAS, OCV/OCL)
+IN=950 Kb [ 1 128 38 50 ]    OUT=1188 Kb [ 1 160 38 50 ]    Weights(parameters): 721 Kb    MFLOPS=700.72
+[ PERFSTAT ]    (samples=10   mean=7.29   median=7.28   min=7.22   stddev=0.05 (0.6%))
+[       OK ] Conv.conv/57 (209 ms)
+[ RUN      ] Conv.conv/58, where GetParam() = (GFLOPS=0.701, K=[3 x 3], IN={1, 128, 38, 50}, OCN=160, PM=SAME, BIAS, OCV/OCL_FP16)
+IN=950 Kb [ 1 128 38 50 ]    OUT=1188 Kb [ 1 160 38 50 ]    Weights(parameters): 721 Kb    MFLOPS=700.72
+[ PERFSTAT ]    (samples=10   mean=7.62   median=7.62   min=7.54   stddev=0.05 (0.6%))
+[       OK ] Conv.conv/58 (86 ms)
+[ RUN      ] Conv.conv/59, where GetParam() = (GFLOPS=0.701, K=[3 x 3], IN={1, 128, 38, 50}, OCN=160, PM=SAME, BIAS, OCV/CPU)
+IN=950 Kb [ 1 128 38 50 ]    OUT=1188 Kb [ 1 160 38 50 ]    Weights(parameters): 721 Kb    MFLOPS=700.72
+[ PERFSTAT ]    (samples=100   mean=4.48   median=4.53   min=3.69   stddev=0.27 (5.9%))
+[       OK ] Conv.conv/59 (474 ms)
+[ RUN      ] Conv.conv/60, where GetParam() = (GFLOPS=0.231, K=[3 x 3], IN={1, 128, 56, 56}, OCN=32, P=[1 x 1], OCV/OCL)
+IN=1568 Kb [ 1 128 56 56 ]    OUT=392 Kb [ 1 32 56 56 ]    Weights(parameters): 144 Kb    MFLOPS=231.311
+[ PERFSTAT ]    (samples=10   mean=2.65   median=2.65   min=2.63   stddev=0.01 (0.4%))
+[       OK ] Conv.conv/60 (146 ms)
+[ RUN      ] Conv.conv/61, where GetParam() = (GFLOPS=0.231, K=[3 x 3], IN={1, 128, 56, 56}, OCN=32, P=[1 x 1], OCV/OCL_FP16)
+IN=1568 Kb [ 1 128 56 56 ]    OUT=392 Kb [ 1 32 56 56 ]    Weights(parameters): 144 Kb    MFLOPS=231.311
+[ PERFSTAT ]    (samples=10   mean=2.65   median=2.65   min=2.64   stddev=0.01 (0.2%))
+[       OK ] Conv.conv/61 (31 ms)
+[ RUN      ] Conv.conv/62, where GetParam() = (GFLOPS=0.231, K=[3 x 3], IN={1, 128, 56, 56}, OCN=32, P=[1 x 1], OCV/CPU)
+IN=1568 Kb [ 1 128 56 56 ]    OUT=392 Kb [ 1 32 56 56 ]    Weights(parameters): 144 Kb    MFLOPS=231.311
+[ PERFSTAT ]    (samples=100   mean=1.94   median=1.93   min=1.92   stddev=0.06 (3.2%))
+[       OK ] Conv.conv/62 (210 ms)
+[ RUN      ] Conv.conv/63, where GetParam() = (GFLOPS=0.231, K=[3 x 3], IN={1, 256, 14, 14}, OCN=256, P=[1 x 1], OCV/OCL)
+IN=196 Kb [ 1 256 14 14 ]    OUT=196 Kb [ 1 256 14 14 ]    Weights(parameters): 2304 Kb    MFLOPS=231.261
+[ PERFSTAT ]    (samples=10   mean=4.13   median=4.13   min=4.12   stddev=0.01 (0.2%))
+[       OK ] Conv.conv/63 (166 ms)
+[ RUN      ] Conv.conv/64, where GetParam() = (GFLOPS=0.231, K=[3 x 3], IN={1, 256, 14, 14}, OCN=256, P=[1 x 1], OCV/OCL_FP16)
+IN=196 Kb [ 1 256 14 14 ]    OUT=196 Kb [ 1 256 14 14 ]    Weights(parameters): 2304 Kb    MFLOPS=231.261
+[ PERFSTAT ]    (samples=10   mean=4.13   median=4.13   min=4.11   stddev=0.01 (0.3%))
+[       OK ] Conv.conv/64 (48 ms)
+[ RUN      ] Conv.conv/65, where GetParam() = (GFLOPS=0.231, K=[3 x 3], IN={1, 256, 14, 14}, OCN=256, P=[1 x 1], OCV/CPU)
+IN=196 Kb [ 1 256 14 14 ]    OUT=196 Kb [ 1 256 14 14 ]    Weights(parameters): 2304 Kb    MFLOPS=231.261
+[ PERFSTAT ]    (samples=100   mean=1.77   median=1.69   min=1.66   stddev=0.21 (11.8%))
+[       OK ] Conv.conv/65 (191 ms)
+[ RUN      ] Conv.conv/66, where GetParam() = (GFLOPS=0.210, K=[1 x 1], IN={1, 576, 38, 50}, OCN=96, PM=SAME, BIAS, OCV/OCL)
+IN=4275 Kb [ 1 576 38 50 ]    OUT=713 Kb [ 1 96 38 50 ]    Weights(parameters): 217 Kb    MFLOPS=210.307
+[ PERFSTAT ]    (samples=10   mean=3.21   median=3.21   min=3.20   stddev=0.01 (0.2%))
+[       OK ] Conv.conv/66 (160 ms)
+[ RUN      ] Conv.conv/67, where GetParam() = (GFLOPS=0.210, K=[1 x 1], IN={1, 576, 38, 50}, OCN=96, PM=SAME, BIAS, OCV/OCL_FP16)
+IN=4275 Kb [ 1 576 38 50 ]    OUT=713 Kb [ 1 96 38 50 ]    Weights(parameters): 217 Kb    MFLOPS=210.307
+[ PERFSTAT ]    (samples=10   mean=3.21   median=3.21   min=3.20   stddev=0.01 (0.2%))
+[       OK ] Conv.conv/67 (39 ms)
+[ RUN      ] Conv.conv/68, where GetParam() = (GFLOPS=0.210, K=[1 x 1], IN={1, 576, 38, 50}, OCN=96, PM=SAME, BIAS, OCV/CPU)
+IN=4275 Kb [ 1 576 38 50 ]    OUT=713 Kb [ 1 96 38 50 ]    Weights(parameters): 217 Kb    MFLOPS=210.307
+[ PERFSTAT ]    (samples=63   mean=2.25   median=2.24   min=2.20   stddev=0.03 (1.4%))
+[       OK ] Conv.conv/68 (156 ms)
+[ RUN      ] Conv.conv/69, where GetParam() = (GFLOPS=0.420, K=[3 x 3], IN={1, 96, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/OCL)
+IN=713 Kb [ 1 96 38 50 ]    OUT=950 Kb [ 1 128 38 50 ]    Weights(parameters): 433 Kb    MFLOPS=420.493
+[ PERFSTAT ]    (samples=10   mean=4.48   median=4.47   min=4.46   stddev=0.03 (0.6%))
+[       OK ] Conv.conv/69 (172 ms)
+[ RUN      ] Conv.conv/70, where GetParam() = (GFLOPS=0.420, K=[3 x 3], IN={1, 96, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/OCL_FP16)
+IN=713 Kb [ 1 96 38 50 ]    OUT=950 Kb [ 1 128 38 50 ]    Weights(parameters): 433 Kb    MFLOPS=420.493
+[ PERFSTAT ]    (samples=10   mean=4.50   median=4.48   min=4.47   stddev=0.03 (0.8%))
+[       OK ] Conv.conv/70 (51 ms)
+[ RUN      ] Conv.conv/71, where GetParam() = (GFLOPS=0.420, K=[3 x 3], IN={1, 96, 38, 50}, OCN=128, PM=SAME, BIAS, OCV/CPU)
+IN=713 Kb [ 1 96 38 50 ]    OUT=950 Kb [ 1 128 38 50 ]    Weights(parameters): 433 Kb    MFLOPS=420.493
+[ PERFSTAT ]    (samples=100   mean=2.82   median=2.82   min=2.27   stddev=0.25 (8.9%))
+[       OK ] Conv.conv/71 (300 ms)
+[ RUN      ] Conv.conv/72, where GetParam() = (GFLOPS=1.261, K=[3 x 3], IN={1, 192, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/OCL)
+IN=1425 Kb [ 1 192 38 50 ]    OUT=1425 Kb [ 1 192 38 50 ]    Weights(parameters): 1297 Kb    MFLOPS=1261.11
+[ PERFSTAT ]    (samples=10   mean=14.10   median=14.07   min=13.94   stddev=0.12 (0.8%))
+[       OK ] Conv.conv/72 (298 ms)
+[ RUN      ] Conv.conv/73, where GetParam() = (GFLOPS=1.261, K=[3 x 3], IN={1, 192, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/OCL_FP16)
+IN=1425 Kb [ 1 192 38 50 ]    OUT=1425 Kb [ 1 192 38 50 ]    Weights(parameters): 1297 Kb    MFLOPS=1261.11
+[ PERFSTAT ]    (samples=10   mean=14.15   median=14.12   min=14.06   stddev=0.08 (0.6%))
+[       OK ] Conv.conv/73 (160 ms)
+[ RUN      ] Conv.conv/74, where GetParam() = (GFLOPS=1.261, K=[3 x 3], IN={1, 192, 38, 50}, OCN=192, PM=SAME, BIAS, OCV/CPU)
+IN=1425 Kb [ 1 192 38 50 ]    OUT=1425 Kb [ 1 192 38 50 ]    Weights(parameters): 1297 Kb    MFLOPS=1261.11
+[ PERFSTAT ]    (samples=100   mean=7.59   median=7.37   min=7.35   stddev=0.37 (4.9%))
+[       OK ] Conv.conv/74 (797 ms)
+[ RUN      ] Conv.conv/75, where GetParam() = (GFLOPS=1.258, K=[3 x 3], IN={1, 1280, 10, 10}, OCN=546, PM=SAME, BIAS, OCV/OCL)

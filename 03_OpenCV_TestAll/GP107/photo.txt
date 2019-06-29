@@ -1,0 +1,171 @@
+[----------]
+[   INFO   ] 	Implementation variant: cuda.
+[----------]
+[----------]
+[ GPU INFO ] 	Run test suite on GeForce GTX 1050 GPU.
+[----------]
+Time compensation is 0
+*** CUDA Device Query (Runtime API) version (CUDART static linking) *** 
+
+Device count: 1
+
+Device 0: "GeForce GTX 1050"
+  CUDA Driver Version / Runtime Version          10.20 / 10.10
+  CUDA Capability Major/Minor version number:    6.1
+  Total amount of global memory:                 2000 MBytes (2097479680 bytes)
+  GPU Clock Speed:                               1.46 GHz
+  Max Texture Dimension Size (x,y,z)             1D=(131072), 2D=(131072,65536), 3D=(16384,16384,16384)
+  Max Layered Texture Size (dim) x layers        1D=(32768) x 2048, 2D=(32768,32768) x 2048
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 65536
+  Warp size:                                     32
+  Maximum number of threads per block:           1024
+  Maximum sizes of each dimension of a block:    1024 x 1024 x 64
+  Maximum sizes of each dimension of a grid:     2147483647 x 65535 x 65535
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and execution:                 Yes with 2 copy engine(s)
+  Run time limit on kernels:                     No
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Concurrent kernel execution:                   Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support enabled:                No
+  Device is using TCC driver mode:               No
+  Device supports Unified Addressing (UVA):      Yes
+  Device PCI Bus ID / PCI location ID:           1 / 0
+  Compute Mode:
+      Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) 
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version  = 10.20, CUDA Runtime Version = 10.10, NumDevs = 1
+
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.1.1-pre
+OpenCV VCS version: 4.1.0-431-gb58b2c5ae
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.4.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    NVIDIA CUDA
+        dGPU: GeForce GTX 1050 (OpenCL 1.2 CUDA)
+    AMD Accelerated Parallel Processing
+        iGPU: gfx902 (OpenCL 2.0 AMD-APP (2841.17))
+Current OpenCL device: 
+    Type = dGPU
+    Name = GeForce GTX 1050
+    Version = OpenCL 1.2 CUDA
+    Driver version = 430.26
+    Address bits = 64
+    Compute units = 5
+    Max work group size = 1024
+    Local memory size = 48 KB
+    Max memory allocation size = 500 MB 80 KB
+    Double support = Yes
+    Host unified memory = No
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_fp64
+        cl_khr_byte_addressable_store
+        cl_khr_icd
+        cl_khr_gl_sharing
+        cl_nv_compiler_options
+        cl_nv_device_attribute_query
+        cl_nv_pragma_unroll
+        cl_nv_copy_opts
+        cl_nv_create_buffer
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 1
+    Preferred vector width short = 1
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 18 tests from 6 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from OCL_Photo_DenoisingGrayscale
+[ RUN      ] OCL_Photo_DenoisingGrayscale.DenoisingGrayscale
+[ PERFSTAT ]    (samples=10   mean=80.99   median=56.07   min=50.68   stddev=79.34 (98.0%))
+[       OK ] OCL_Photo_DenoisingGrayscale.DenoisingGrayscale (844 ms)
+[----------] 1 test from OCL_Photo_DenoisingGrayscale (844 ms total)
+
+[----------] 1 test from OCL_Photo_DenoisingColored
+[ RUN      ] OCL_Photo_DenoisingColored.DenoisingColored
+[ PERFSTAT ]    (samples=10   mean=163.11   median=104.90   min=103.19   stddev=184.97 (113.4%))
+[       OK ] OCL_Photo_DenoisingColored.DenoisingColored (1639 ms)
+[----------] 1 test from OCL_Photo_DenoisingColored (1639 ms total)
+
+[----------] 4 tests from Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/0, where GetParam() = (640x480, CV_8U, Gray, 21, 5)
+[ PERFSTAT ]    (samples=13   mean=149.05   median=148.69   min=148.25   stddev=0.82 (0.6%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/0 (1976 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/1, where GetParam() = (640x480, CV_8U, BGR, 21, 5)
+[ PERFSTAT ]    (samples=10   mean=253.69   median=253.87   min=252.12   stddev=0.97 (0.4%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/1 (2538 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/2, where GetParam() = (1280x720, CV_8U, Gray, 21, 5)
+[ PERFSTAT ]    (samples=10   mean=389.41   median=388.04   min=386.44   stddev=3.52 (0.9%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/2 (3896 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/3, where GetParam() = (1280x720, CV_8U, BGR, 21, 5)
+[ PERFSTAT ]    (samples=10   mean=706.82   median=706.32   min=702.73   stddev=3.22 (0.5%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/3 (7073 ms)
+[----------] 4 tests from Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans (15483 ms total)
+
+[----------] 4 tests from Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/0, where GetParam() = (640x480, CV_8U, Gray, 21, 7)
+[ PERFSTAT ]    (samples=29   mean=19.80   median=19.56   min=19.36   stddev=0.59 (3.0%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/0 (655 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/1, where GetParam() = (640x480, CV_8U, BGR, 21, 7)
+[ PERFSTAT ]    (samples=10   mean=19.62   median=19.64   min=19.39   stddev=0.16 (0.8%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/1 (197 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/2, where GetParam() = (1280x720, CV_8U, Gray, 21, 7)
+[ PERFSTAT ]    (samples=10   mean=46.56   median=46.55   min=46.33   stddev=0.17 (0.4%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/2 (468 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/3, where GetParam() = (1280x720, CV_8U, BGR, 21, 7)
+[ PERFSTAT ]    (samples=10   mean=47.09   median=47.06   min=47.00   stddev=0.14 (0.3%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/3 (472 ms)
+[----------] 4 tests from Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans (1792 ms total)
+
+[----------] 2 tests from Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored
+[ RUN      ] Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored.CUDA_FastNonLocalMeansColored/0, where GetParam() = (640x480, CV_8U, 21, 7)
+[ PERFSTAT ]    (samples=13   mean=125.62   median=125.66   min=125.08   stddev=0.33 (0.3%))
+[       OK ] Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored.CUDA_FastNonLocalMeansColored/0 (1653 ms)
+[ RUN      ] Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored.CUDA_FastNonLocalMeansColored/1, where GetParam() = (1280x720, CV_8U, 21, 7)
+[ PERFSTAT ]    (samples=10   mean=325.70   median=325.73   min=324.78   stddev=0.51 (0.2%))
+[       OK ] Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored.CUDA_FastNonLocalMeansColored/1 (3262 ms)
+[----------] 2 tests from Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored (4915 ms total)
+
+[----------] 6 tests from InpaintArea_InpaintingMethod_inpaint
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/0, where GetParam() = (24x24, INPAINT_NS)
+[ PERFSTAT ]    (samples=10   mean=9.47   median=9.45   min=9.31   stddev=0.10 (1.1%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/0 (104 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/1, where GetParam() = (24x24, INPAINT_TELEA)
+[ PERFSTAT ]    (samples=10   mean=10.60   median=10.63   min=10.40   stddev=0.17 (1.6%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/1 (115 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/2, where GetParam() = (32x32, INPAINT_NS)
+[ PERFSTAT ]    (samples=10   mean=14.84   median=14.80   min=14.67   stddev=0.11 (0.8%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/2 (157 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/3, where GetParam() = (32x32, INPAINT_TELEA)
+[ PERFSTAT ]    (samples=10   mean=15.78   median=15.74   min=15.61   stddev=0.15 (1.0%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/3 (167 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/4, where GetParam() = (64x64, INPAINT_NS)
+[ PERFSTAT ]    (samples=10   mean=49.85   median=49.90   min=49.62   stddev=0.13 (0.3%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/4 (508 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/5, where GetParam() = (64x64, INPAINT_TELEA)
+[ PERFSTAT ]    (samples=10   mean=50.04   median=50.06   min=49.72   stddev=0.13 (0.3%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/5 (509 ms)
+[----------] 6 tests from InpaintArea_InpaintingMethod_inpaint (1560 ms total)
+
+[----------] Global test environment tear-down
+[==========] 18 tests from 6 test cases ran. (26233 ms total)
+[  PASSED  ] 18 tests.
+
+  YOU HAVE 2 DISABLED TESTS
+

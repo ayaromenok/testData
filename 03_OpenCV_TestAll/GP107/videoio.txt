@@ -1,0 +1,72 @@
+Time compensation is 0
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.1.1-pre
+OpenCV VCS version: 4.1.0-431-gb58b2c5ae
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.4.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    NVIDIA CUDA
+        dGPU: GeForce GTX 1050 (OpenCL 1.2 CUDA)
+    AMD Accelerated Parallel Processing
+        iGPU: gfx902 (OpenCL 2.0 AMD-APP (2841.17))
+Current OpenCL device: 
+    Type = dGPU
+    Name = GeForce GTX 1050
+    Version = OpenCL 1.2 CUDA
+    Driver version = 430.26
+    Address bits = 64
+    Compute units = 5
+    Max work group size = 1024
+    Local memory size = 48 KB
+    Max memory allocation size = 500 MB 80 KB
+    Double support = Yes
+    Host unified memory = No
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_fp64
+        cl_khr_byte_addressable_store
+        cl_khr_icd
+        cl_khr_gl_sharing
+        cl_nv_compiler_options
+        cl_nv_device_attribute_query
+        cl_nv_pragma_unroll
+        cl_nv_copy_opts
+        cl_nv_create_buffer
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 1
+    Preferred vector width short = 1
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 17 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 5 tests from VideoCapture_Reading_ReadFile
+[ RUN      ] VideoCapture_Reading_ReadFile.ReadFile/0, where GetParam() = "highgui/video/big_buck_bunny.avi"
+[ PERFSTAT ]    (samples=25   mean=0.11   median=0.10   min=0.10   stddev=0.00 (2.7%))
+[       OK ] VideoCapture_Reading_ReadFile.ReadFile/0 (37 ms)
+[ RUN      ] VideoCapture_Reading_ReadFile.ReadFile/1, where GetParam() = "highgui/video/big_buck_bunny.mov"
+[ PERFSTAT ]    (samples=100   mean=0.09   median=0.09   min=0.07   stddev=0.01 (14.4%))
+[       OK ] VideoCapture_Reading_ReadFile.ReadFile/1 (19 ms)
+[ RUN      ] VideoCapture_Reading_ReadFile.ReadFile/2, where GetParam() = "highgui/video/big_buck_bunny.mp4"
+[ PERFSTAT ]    (samples=100   mean=0.05   median=0.06   min=0.03   stddev=0.01 (26.2%))
+[       OK ] VideoCapture_Reading_ReadFile.ReadFile/2 (7 ms)
+[ RUN      ] VideoCapture_Reading_ReadFile.ReadFile/3, where GetParam() = "highgui/video/big_buck_bunny.mpg"
+[ PERFSTAT ]    (samples=100   mean=0.07   median=0.07   min=0.06   stddev=0.01 (8.3%))
+[       OK ] VideoCapture_Reading_ReadFile.ReadFile/3 (14 ms)
+[ RUN      ] VideoCapture_Reading_ReadFile.ReadFile/4, where GetParam() = "highgui/video/big_buck_bunny.wmv"
+[ PERFSTAT ]    (samples=25   mean=0.07   median=0.07   min=0.06   stddev=0.00 (2.3%))
+[       OK ] VideoCapture_Reading_ReadFile.ReadFile/4 (2 ms)
+[----------] 5 tests from VideoCapture_Reading_ReadFile (79 ms total)
+
+[----------] 12 tests from VideoWriter_Writing_WriteFrame
+[ RUN      ] VideoWriter_Writing_WriteFrame.WriteFrame/0, where GetParam() = ("python/images/QCIF_00.bmp", false)

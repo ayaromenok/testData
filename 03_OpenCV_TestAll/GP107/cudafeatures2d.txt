@@ -1,0 +1,201 @@
+[----------]
+[   INFO   ] 	Implementation variant: cuda.
+[----------]
+[----------]
+[ GPU INFO ] 	Run test suite on GeForce GTX 1050 GPU.
+[----------]
+Time compensation is 0
+*** CUDA Device Query (Runtime API) version (CUDART static linking) *** 
+
+Device count: 1
+
+Device 0: "GeForce GTX 1050"
+  CUDA Driver Version / Runtime Version          10.20 / 10.10
+  CUDA Capability Major/Minor version number:    6.1
+  Total amount of global memory:                 2000 MBytes (2097479680 bytes)
+  GPU Clock Speed:                               1.46 GHz
+  Max Texture Dimension Size (x,y,z)             1D=(131072), 2D=(131072,65536), 3D=(16384,16384,16384)
+  Max Layered Texture Size (dim) x layers        1D=(32768) x 2048, 2D=(32768,32768) x 2048
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 65536
+  Warp size:                                     32
+  Maximum number of threads per block:           1024
+  Maximum sizes of each dimension of a block:    1024 x 1024 x 64
+  Maximum sizes of each dimension of a grid:     2147483647 x 65535 x 65535
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and execution:                 Yes with 2 copy engine(s)
+  Run time limit on kernels:                     No
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Concurrent kernel execution:                   Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support enabled:                No
+  Device is using TCC driver mode:               No
+  Device supports Unified Addressing (UVA):      Yes
+  Device PCI Bus ID / PCI location ID:           1 / 0
+  Compute Mode:
+      Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) 
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version  = 10.20, CUDA Runtime Version = 10.10, NumDevs = 1
+
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.1.1-pre
+OpenCV VCS version: 4.1.0-431-gb58b2c5ae
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.4.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    NVIDIA CUDA
+        dGPU: GeForce GTX 1050 (OpenCL 1.2 CUDA)
+    AMD Accelerated Parallel Processing
+        iGPU: gfx902 (OpenCL 2.0 AMD-APP (2841.17))
+Current OpenCL device: 
+    Type = dGPU
+    Name = GeForce GTX 1050
+    Version = OpenCL 1.2 CUDA
+    Driver version = 430.26
+    Address bits = 64
+    Compute units = 5
+    Max work group size = 1024
+    Local memory size = 48 KB
+    Max memory allocation size = 500 MB 80 KB
+    Double support = Yes
+    Host unified memory = No
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_fp64
+        cl_khr_byte_addressable_store
+        cl_khr_icd
+        cl_khr_gl_sharing
+        cl_nv_compiler_options
+        cl_nv_device_attribute_query
+        cl_nv_pragma_unroll
+        cl_nv_copy_opts
+        cl_nv_create_buffer
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 1
+    Preferred vector width short = 1
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 30 tests from 5 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from Image_Threshold_NonMaxSuppression_FAST
+[ RUN      ] Image_Threshold_NonMaxSuppression_FAST.FAST/0, where GetParam() = ("gpu/perf/aloe.png", 20, false)
+[ PERFSTAT ]    (samples=13   mean=0.69   median=0.69   min=0.68   stddev=0.01 (1.9%))
+[       OK ] Image_Threshold_NonMaxSuppression_FAST.FAST/0 (408 ms)
+[ RUN      ] Image_Threshold_NonMaxSuppression_FAST.FAST/1, where GetParam() = ("gpu/perf/aloe.png", 20, true)
+[ PERFSTAT ]    (samples=13   mean=1.72   median=1.71   min=1.71   stddev=0.00 (0.3%))
+[       OK ] Image_Threshold_NonMaxSuppression_FAST.FAST/1 (69 ms)
+[----------] 2 tests from Image_Threshold_NonMaxSuppression_FAST (477 ms total)
+
+[----------] 1 test from Image_NFeatures_ORB
+[ RUN      ] Image_NFeatures_ORB.ORB/0, where GetParam() = ("gpu/perf/aloe.png", 4000)
+[ PERFSTAT ]    (samples=13   mean=8.85   median=8.84   min=8.81   stddev=0.04 (0.4%))
+[       OK ] Image_NFeatures_ORB.ORB/0 (611 ms)
+[----------] 1 test from Image_NFeatures_ORB (611 ms total)
+
+[----------] 9 tests from DescSize_Norm_BFMatch
+[ RUN      ] DescSize_Norm_BFMatch.BFMatch/0, where GetParam() = (64, NORM_L1)
+[ PERFSTAT ]    (samples=13   mean=5.84   median=5.85   min=5.70   stddev=0.04 (0.7%))
+[       OK ] DescSize_Norm_BFMatch.BFMatch/0 (90 ms)
+[ RUN      ] DescSize_Norm_BFMatch.BFMatch/1, where GetParam() = (64, NORM_L2)
+[ PERFSTAT ]    (samples=10   mean=5.84   median=5.82   min=5.73   stddev=0.08 (1.4%))
+[       OK ] DescSize_Norm_BFMatch.BFMatch/1 (60 ms)
+[ RUN      ] DescSize_Norm_BFMatch.BFMatch/2, where GetParam() = (64, NORM_HAMMING)
+[ PERFSTAT ]    (samples=10   mean=4.85   median=4.84   min=4.84   stddev=0.03 (0.6%))
+[       OK ] DescSize_Norm_BFMatch.BFMatch/2 (50 ms)
+[ RUN      ] DescSize_Norm_BFMatch.BFMatch/3, where GetParam() = (128, NORM_L1)
+[ PERFSTAT ]    (samples=10   mean=11.60   median=11.48   min=11.45   stddev=0.20 (1.7%))
+[       OK ] DescSize_Norm_BFMatch.BFMatch/3 (119 ms)
+[ RUN      ] DescSize_Norm_BFMatch.BFMatch/4, where GetParam() = (128, NORM_L2)
+[ PERFSTAT ]    (samples=10   mean=11.59   median=11.45   min=11.45   stddev=0.25 (2.2%))
+[       OK ] DescSize_Norm_BFMatch.BFMatch/4 (118 ms)
+[ RUN      ] DescSize_Norm_BFMatch.BFMatch/5, where GetParam() = (128, NORM_HAMMING)
+[ PERFSTAT ]    (samples=10   mean=9.89   median=9.94   min=9.73   stddev=0.12 (1.2%))
+[       OK ] DescSize_Norm_BFMatch.BFMatch/5 (100 ms)
+[ RUN      ] DescSize_Norm_BFMatch.BFMatch/6, where GetParam() = (256, NORM_L1)
+[ PERFSTAT ]    (samples=10   mean=24.09   median=23.96   min=23.95   stddev=0.26 (1.1%))
+[       OK ] DescSize_Norm_BFMatch.BFMatch/6 (247 ms)
+[ RUN      ] DescSize_Norm_BFMatch.BFMatch/7, where GetParam() = (256, NORM_L2)
+[ PERFSTAT ]    (samples=10   mean=24.31   median=24.30   min=23.96   stddev=0.37 (1.5%))
+[       OK ] DescSize_Norm_BFMatch.BFMatch/7 (248 ms)
+[ RUN      ] DescSize_Norm_BFMatch.BFMatch/8, where GetParam() = (256, NORM_HAMMING)
+[ PERFSTAT ]    (samples=10   mean=20.56   median=20.65   min=20.30   stddev=0.22 (1.1%))
+[       OK ] DescSize_Norm_BFMatch.BFMatch/8 (207 ms)
+[----------] 9 tests from DescSize_Norm_BFMatch (1239 ms total)
+
+[----------] 12 tests from DescSize_K_Norm_BFKnnMatch
+[ RUN      ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/0, where GetParam() = (64, 2, NORM_L1)
+[ PERFSTAT ]    (samples=10   mean=5.97   median=5.93   min=5.93   stddev=0.09 (1.6%))
+[       OK ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/0 (62 ms)
+[ RUN      ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/1, where GetParam() = (64, 2, NORM_L2)
+[ PERFSTAT ]    (samples=10   mean=5.93   median=5.93   min=5.79   stddev=0.11 (1.9%))
+[       OK ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/1 (60 ms)
+[ RUN      ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/2, where GetParam() = (64, 3, NORM_L1)
+[ PERFSTAT ]    (samples=10   mean=7.42   median=7.47   min=6.97   stddev=0.16 (2.1%))
+[       OK ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/2 (77 ms)
+[ RUN      ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/3, where GetParam() = (64, 3, NORM_L2)
+[ PERFSTAT ]    (samples=10   mean=7.43   median=7.47   min=7.02   stddev=0.14 (1.9%))
+[       OK ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/3 (77 ms)
+[ RUN      ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/4, where GetParam() = (128, 2, NORM_L1)
+[ PERFSTAT ]    (samples=10   mean=11.97   median=11.96   min=11.81   stddev=0.18 (1.5%))
+[       OK ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/4 (122 ms)
+[ RUN      ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/5, where GetParam() = (128, 2, NORM_L2)
+[ PERFSTAT ]    (samples=10   mean=12.05   median=11.96   min=11.81   stddev=0.20 (1.7%))
+[       OK ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/5 (124 ms)
+[ RUN      ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/6, where GetParam() = (128, 3, NORM_L1)
+[ PERFSTAT ]    (samples=10   mean=12.57   median=12.60   min=12.30   stddev=0.10 (0.8%))
+[       OK ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/6 (129 ms)
+[ RUN      ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/7, where GetParam() = (128, 3, NORM_L2)
+[ PERFSTAT ]    (samples=10   mean=12.70   median=12.62   min=12.30   stddev=0.34 (2.7%))
+[       OK ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/7 (131 ms)
+[ RUN      ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/8, where GetParam() = (256, 2, NORM_L1)
+[ PERFSTAT ]    (samples=10   mean=24.30   median=24.19   min=24.16   stddev=0.26 (1.1%))
+[       OK ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/8 (248 ms)
+[ RUN      ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/9, where GetParam() = (256, 2, NORM_L2)
+[ PERFSTAT ]    (samples=10   mean=24.49   median=24.49   min=24.16   stddev=0.32 (1.3%))
+[       OK ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/9 (250 ms)
+[ RUN      ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/10, where GetParam() = (256, 3, NORM_L1)
+[ PERFSTAT ]    (samples=10   mean=23.17   median=23.19   min=22.98   stddev=0.07 (0.3%))
+[       OK ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/10 (237 ms)
+[ RUN      ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/11, where GetParam() = (256, 3, NORM_L2)
+[ PERFSTAT ]    (samples=10   mean=23.16   median=23.17   min=22.95   stddev=0.08 (0.3%))
+[       OK ] DescSize_K_Norm_BFKnnMatch.BFKnnMatch/11 (238 ms)
+[----------] 12 tests from DescSize_K_Norm_BFKnnMatch (1755 ms total)
+
+[----------] 6 tests from DescSize_Norm_BFRadiusMatch
+[ RUN      ] DescSize_Norm_BFRadiusMatch.BFRadiusMatch/0, where GetParam() = (64, NORM_L1)
+[ PERFSTAT ]    (samples=13   mean=6.08   median=6.08   min=6.08   stddev=0.00 (0.0%))
+[       OK ] DescSize_Norm_BFRadiusMatch.BFRadiusMatch/0 (108 ms)
+[ RUN      ] DescSize_Norm_BFRadiusMatch.BFRadiusMatch/1, where GetParam() = (64, NORM_L2)
+[ PERFSTAT ]    (samples=10   mean=6.10   median=6.08   min=6.08   stddev=0.05 (0.9%))
+[       OK ] DescSize_Norm_BFRadiusMatch.BFRadiusMatch/1 (89 ms)
+[ RUN      ] DescSize_Norm_BFRadiusMatch.BFRadiusMatch/2, where GetParam() = (128, NORM_L1)
+[ PERFSTAT ]    (samples=10   mean=12.08   median=12.06   min=12.05   stddev=0.08 (0.7%))
+[       OK ] DescSize_Norm_BFRadiusMatch.BFRadiusMatch/2 (150 ms)
+[ RUN      ] DescSize_Norm_BFRadiusMatch.BFRadiusMatch/3, where GetParam() = (128, NORM_L2)
+[ PERFSTAT ]    (samples=10   mean=12.08   median=12.05   min=12.05   stddev=0.08 (0.7%))
+[       OK ] DescSize_Norm_BFRadiusMatch.BFRadiusMatch/3 (149 ms)
+[ RUN      ] DescSize_Norm_BFRadiusMatch.BFRadiusMatch/4, where GetParam() = (256, NORM_L1)
+[ PERFSTAT ]    (samples=10   mean=24.05   median=24.02   min=24.02   stddev=0.08 (0.3%))
+[       OK ] DescSize_Norm_BFRadiusMatch.BFRadiusMatch/4 (271 ms)
+[ RUN      ] DescSize_Norm_BFRadiusMatch.BFRadiusMatch/5, where GetParam() = (256, NORM_L2)
+[ PERFSTAT ]    (samples=10   mean=24.03   median=24.01   min=24.01   stddev=0.08 (0.3%))
+[       OK ] DescSize_Norm_BFRadiusMatch.BFRadiusMatch/5 (271 ms)
+[----------] 6 tests from DescSize_Norm_BFRadiusMatch (1038 ms total)
+
+[----------] Global test environment tear-down
+[==========] 30 tests from 5 test cases ran. (5120 ms total)
+[  PASSED  ] 30 tests.

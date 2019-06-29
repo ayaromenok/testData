@@ -1,0 +1,73 @@
+Time compensation is 0
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.1.1-pre
+OpenCV VCS version: 4.1.0-431-gb58b2c5ae
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.4.0)
+Parallel framework: pthreads
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2019.0.0 Gold (-) Jul 24 2018
+OpenCL Platforms: 
+    NVIDIA CUDA
+        dGPU: GeForce GTX 1050 (OpenCL 1.2 CUDA)
+    AMD Accelerated Parallel Processing
+        iGPU: gfx902 (OpenCL 2.0 AMD-APP (2841.17))
+Current OpenCL device: 
+    Type = dGPU
+    Name = GeForce GTX 1050
+    Version = OpenCL 1.2 CUDA
+    Driver version = 430.26
+    Address bits = 64
+    Compute units = 5
+    Max work group size = 1024
+    Local memory size = 48 KB
+    Max memory allocation size = 500 MB 80 KB
+    Double support = Yes
+    Host unified memory = No
+    Device extensions:
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_fp64
+        cl_khr_byte_addressable_store
+        cl_khr_icd
+        cl_khr_gl_sharing
+        cl_nv_compiler_options
+        cl_nv_device_attribute_query
+        cl_nv_pragma_unroll
+        cl_nv_copy_opts
+        cl_nv_create_buffer
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 1
+    Preferred vector width short = 1
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 3 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from matching
+[ RUN      ] matching.single_match
+[ PERFSTAT ]    (samples=10   mean=2.49   median=2.47   min=2.46   stddev=0.06 (2.3%))
+[       OK ] matching.single_match (25 ms)
+[----------] 1 test from matching (25 ms total)
+
+[----------] 1 test from knn_matching
+[ RUN      ] knn_matching.knn_match_distances_test
+[ PERFSTAT ]    (samples=100   mean=56.05   median=56.28   min=38.48   stddev=9.54 (17.0%))
+[       OK ] knn_matching.knn_match_distances_test (6933 ms)
+[----------] 1 test from knn_matching (6933 ms total)
+
+[----------] 1 test from radius_match
+[ RUN      ] radius_match.radius_match_distances_test
+[ PERFSTAT ]    (samples=10   mean=58.35   median=58.33   min=58.27   stddev=0.10 (0.2%))
+[       OK ] radius_match.radius_match_distances_test (586 ms)
+[----------] 1 test from radius_match (586 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 3 test cases ran. (7544 ms total)
+[  PASSED  ] 3 tests.
