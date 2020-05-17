@@ -1,0 +1,136 @@
+[----------]
+[   INFO   ] 	Implementation variant: cuda.
+[----------]
+[----------]
+[ GPU INFO ] 	Run test suite on GeForce GTX 1050 GPU.
+[----------]
+Time compensation is 0
+*** CUDA Device Query (Runtime API) version (CUDART static linking) *** 
+
+Device count: 1
+
+Device 0: "GeForce GTX 1050"
+  CUDA Driver Version / Runtime Version          10.20 / 10.20
+  CUDA Capability Major/Minor version number:    6.1
+  Total amount of global memory:                 1997 MBytes (2094202880 bytes)
+  GPU Clock Speed:                               1.46 GHz
+  Max Texture Dimension Size (x,y,z)             1D=(131072), 2D=(131072,65536), 3D=(16384,16384,16384)
+  Max Layered Texture Size (dim) x layers        1D=(32768) x 2048, 2D=(32768,32768) x 2048
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 65536
+  Warp size:                                     32
+  Maximum number of threads per block:           1024
+  Maximum sizes of each dimension of a block:    1024 x 1024 x 64
+  Maximum sizes of each dimension of a grid:     2147483647 x 65535 x 65535
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and execution:                 Yes with 2 copy engine(s)
+  Run time limit on kernels:                     Yes
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Concurrent kernel execution:                   Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support enabled:                No
+  Device is using TCC driver mode:               No
+  Device supports Unified Addressing (UVA):      Yes
+  Device PCI Bus ID / PCI location ID:           1 / 0
+  Compute Mode:
+      Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) 
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version  = 10.20, CUDA Runtime Version = 10.20, NumDevs = 1
+
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.3.0-dev
+OpenCV VCS version: 4.3.0-201-gc722625f28
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.5.0)
+Parallel framework: pthreads (nthreads=4)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2020.0.0 Gold (-) Oct 19 2019
+OpenCL Platforms: 
+    NVIDIA CUDA
+        dGPU: GeForce GTX 1050 (OpenCL 1.2 CUDA)
+    AMD Accelerated Parallel Processing
+        iGPU: gfx902 (OpenCL 2.0 AMD-APP (3004.6))
+Current OpenCL device: 
+    Type = iGPU
+    Name = gfx902
+    Version = OpenCL 2.0 AMD-APP (3004.6)
+    Driver version = 3004.6 (PAL,HSAIL)
+    Address bits = 64
+    Compute units = 8
+    Max work group size = 256
+    Local memory size = 64 KB
+    Max memory allocation size = 435 MB 204 KB 819 B
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_fp64
+        cl_amd_fp64
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_byte_addressable_store
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_gl_depth_images
+        cl_amd_device_attribute_query
+        cl_amd_vec3
+        cl_amd_printf
+        cl_amd_media_ops
+        cl_amd_media_ops2
+        cl_amd_popcnt
+        cl_khr_image2d_from_buffer
+        cl_khr_subgroups
+        cl_khr_gl_event
+        cl_khr_depth_images
+        cl_khr_mipmap_image
+        cl_khr_mipmap_image_writes
+        cl_amd_copy_buffer_p2p
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 4
+    Preferred vector width short = 2
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 6 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 3 tests from Count_Calib3D_ProjectPoints
+[ RUN      ] Count_Calib3D_ProjectPoints.Calib3D_ProjectPoints/0, where GetParam() = 5000
+[ PERFSTAT ]    (samples=100   mean=0.06   median=0.06   min=0.06   stddev=0.01 (9.2%))
+[       OK ] Count_Calib3D_ProjectPoints.Calib3D_ProjectPoints/0 (38 ms)
+[ RUN      ] Count_Calib3D_ProjectPoints.Calib3D_ProjectPoints/1, where GetParam() = 10000
+[ PERFSTAT ]    (samples=100   mean=0.05   median=0.05   min=0.05   stddev=0.00 (6.4%))
+[       OK ] Count_Calib3D_ProjectPoints.Calib3D_ProjectPoints/1 (7 ms)
+[ RUN      ] Count_Calib3D_ProjectPoints.Calib3D_ProjectPoints/2, where GetParam() = 20000
+[ PERFSTAT ]    (samples=71   mean=0.06   median=0.06   min=0.06   stddev=0.00 (3.0%))
+[       OK ] Count_Calib3D_ProjectPoints.Calib3D_ProjectPoints/2 (5 ms)
+[----------] 3 tests from Count_Calib3D_ProjectPoints (50 ms total)
+
+[----------] 3 tests from Count_Calib3D_SolvePnPRansac
+[ RUN      ] Count_Calib3D_SolvePnPRansac.Calib3D_SolvePnPRansac/0, where GetParam() = 5000
+[ PERFSTAT ]    (samples=100   mean=3.99   median=3.94   min=3.17   stddev=0.38 (9.5%))
+[       OK ] Count_Calib3D_SolvePnPRansac.Calib3D_SolvePnPRansac/0 (474 ms)
+[ RUN      ] Count_Calib3D_SolvePnPRansac.Calib3D_SolvePnPRansac/1, where GetParam() = 10000
+[ PERFSTAT ]    (samples=100   mean=4.51   median=4.46   min=3.76   stddev=0.33 (7.3%))
+[       OK ] Count_Calib3D_SolvePnPRansac.Calib3D_SolvePnPRansac/1 (463 ms)
+[ RUN      ] Count_Calib3D_SolvePnPRansac.Calib3D_SolvePnPRansac/2, where GetParam() = 20000
+[ PERFSTAT ]    (samples=100   mean=5.71   median=5.55   min=5.07   stddev=0.51 (8.9%))
+[       OK ] Count_Calib3D_SolvePnPRansac.Calib3D_SolvePnPRansac/2 (591 ms)
+[----------] 3 tests from Count_Calib3D_SolvePnPRansac (1528 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 2 test cases ran. (1578 ms total)
+[  PASSED  ] 6 tests.
+
+  YOU HAVE 2 DISABLED TESTS
+

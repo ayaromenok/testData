@@ -1,0 +1,200 @@
+Time compensation is 0
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.3.0-dev
+OpenCV VCS version: 4.3.0-201-gc722625f28
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.5.0)
+Parallel framework: pthreads (nthreads=4)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2020.0.0 Gold (-) Oct 19 2019
+OpenCL Platforms: 
+    NVIDIA CUDA
+        dGPU: GeForce GTX 1050 (OpenCL 1.2 CUDA)
+    AMD Accelerated Parallel Processing
+        iGPU: gfx902 (OpenCL 2.0 AMD-APP (3004.6))
+Current OpenCL device: 
+    Type = iGPU
+    Name = gfx902
+    Version = OpenCL 2.0 AMD-APP (3004.6)
+    Driver version = 3004.6 (PAL,HSAIL)
+    Address bits = 64
+    Compute units = 8
+    Max work group size = 256
+    Local memory size = 64 KB
+    Max memory allocation size = 435 MB 204 KB 819 B
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_fp64
+        cl_amd_fp64
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_byte_addressable_store
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_gl_depth_images
+        cl_amd_device_attribute_query
+        cl_amd_vec3
+        cl_amd_printf
+        cl_amd_media_ops
+        cl_amd_media_ops2
+        cl_amd_popcnt
+        cl_khr_image2d_from_buffer
+        cl_khr_subgroups
+        cl_khr_gl_event
+        cl_khr_depth_images
+        cl_khr_mipmap_image
+        cl_khr_mipmap_image_writes
+        cl_amd_copy_buffer_p2p
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 4
+    Preferred vector width short = 2
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 38 tests from 6 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from s_bm_sgm_perf
+[ RUN      ] s_bm_sgm_perf.sgm_perf/0, where GetParam() = (512x283, 8UC1, CV_8U)
+[ PERFSTAT ]    (samples=13   mean=22.76   median=22.94   min=21.52   stddev=0.64 (2.8%))
+[       OK ] s_bm_sgm_perf.sgm_perf/0 (299 ms)
+[ RUN      ] s_bm_sgm_perf.sgm_perf/1, where GetParam() = (512x283, 8UC1, CV_16S)
+[ PERFSTAT ]    (samples=13   mean=22.41   median=22.35   min=21.58   stddev=0.55 (2.5%))
+[       OK ] s_bm_sgm_perf.sgm_perf/1 (293 ms)
+[ RUN      ] s_bm_sgm_perf.sgm_perf/2, where GetParam() = (320x240, 8UC1, CV_8U)
+[ PERFSTAT ]    (samples=20   mean=11.71   median=11.74   min=10.65   stddev=0.48 (4.1%))
+[       OK ] s_bm_sgm_perf.sgm_perf/2 (238 ms)
+[ RUN      ] s_bm_sgm_perf.sgm_perf/3, where GetParam() = (320x240, 8UC1, CV_16S)
+[ PERFSTAT ]    (samples=13   mean=11.86   median=11.87   min=11.26   stddev=0.34 (2.8%))
+[       OK ] s_bm_sgm_perf.sgm_perf/3 (158 ms)
+[----------] 4 tests from s_bm_sgm_perf (988 ms total)
+
+[----------] 2 tests from s_bm_bm_perf
+[ RUN      ] s_bm_bm_perf.bm_perf/0, where GetParam() = (512x383, 8UC1, CV_8U)
+[ PERFSTAT ]    (samples=14   mean=30.53   median=30.92   min=28.97   stddev=0.90 (2.9%))
+[       OK ] s_bm_bm_perf.bm_perf/0 (434 ms)
+[ RUN      ] s_bm_bm_perf.bm_perf/1, where GetParam() = (320x240, 8UC1, CV_8U)
+[ PERFSTAT ]    (samples=10   mean=10.61   median=10.58   min=10.28   stddev=0.26 (2.5%))
+[       OK ] s_bm_bm_perf.bm_perf/1 (107 ms)
+[----------] 2 tests from s_bm_bm_perf (541 ms total)
+
+[----------] 8 tests from descript_params_census_sparse_descriptor
+[ RUN      ] descript_params_census_sparse_descriptor.census_sparse_descriptor/0, where GetParam() = (640x480, 8UC1, UNKNOWN)
+[ PERFSTAT ]    (samples=75   mean=1.96   median=1.93   min=1.91   stddev=0.06 (2.9%))
+[       OK ] descript_params_census_sparse_descriptor.census_sparse_descriptor/0 (150 ms)
+[ RUN      ] descript_params_census_sparse_descriptor.census_sparse_descriptor/1, where GetParam() = (640x480, 8UC1, CV_32S)
+[ PERFSTAT ]    (samples=13   mean=1.94   median=1.93   min=1.91   stddev=0.04 (2.1%))
+[       OK ] descript_params_census_sparse_descriptor.census_sparse_descriptor/1 (26 ms)
+[ RUN      ] descript_params_census_sparse_descriptor.census_sparse_descriptor/2, where GetParam() = (1280x720, 8UC1, UNKNOWN)
+[ PERFSTAT ]    (samples=15   mean=5.97   median=5.93   min=5.80   stddev=0.18 (3.0%))
+[       OK ] descript_params_census_sparse_descriptor.census_sparse_descriptor/2 (94 ms)
+[ RUN      ] descript_params_census_sparse_descriptor.census_sparse_descriptor/3, where GetParam() = (1280x720, 8UC1, CV_32S)
+[ PERFSTAT ]    (samples=10   mean=5.91   median=5.87   min=5.82   stddev=0.10 (1.7%))
+[       OK ] descript_params_census_sparse_descriptor.census_sparse_descriptor/3 (60 ms)
+[ RUN      ] descript_params_census_sparse_descriptor.census_sparse_descriptor/4, where GetParam() = (1920x1080, 8UC1, UNKNOWN)
+[ PERFSTAT ]    (samples=25   mean=13.64   median=13.55   min=13.26   stddev=0.30 (2.2%))
+[       OK ] descript_params_census_sparse_descriptor.census_sparse_descriptor/4 (359 ms)
+[ RUN      ] descript_params_census_sparse_descriptor.census_sparse_descriptor/5, where GetParam() = (1920x1080, 8UC1, CV_32S)
+[ PERFSTAT ]    (samples=13   mean=13.61   median=13.51   min=13.23   stddev=0.32 (2.3%))
+[       OK ] descript_params_census_sparse_descriptor.census_sparse_descriptor/5 (181 ms)
+[ RUN      ] descript_params_census_sparse_descriptor.census_sparse_descriptor/6, where GetParam() = (127x61, 8UC1, UNKNOWN)
+[ PERFSTAT ]    (samples=10   mean=0.04   median=0.04   min=0.04   stddev=0.00 (1.7%))
+[       OK ] descript_params_census_sparse_descriptor.census_sparse_descriptor/6 (1 ms)
+[ RUN      ] descript_params_census_sparse_descriptor.census_sparse_descriptor/7, where GetParam() = (127x61, 8UC1, CV_32S)
+[ PERFSTAT ]    (samples=10   mean=0.04   median=0.04   min=0.04   stddev=0.00 (0.7%))
+[       OK ] descript_params_census_sparse_descriptor.census_sparse_descriptor/7 (0 ms)
+[----------] 8 tests from descript_params_census_sparse_descriptor (871 ms total)
+
+[----------] 8 tests from descript_params_star_census_transform
+[ RUN      ] descript_params_star_census_transform.star_census_transform/0, where GetParam() = (640x480, 8UC1, UNKNOWN)
+[ PERFSTAT ]    (samples=10   mean=9.25   median=9.22   min=9.15   stddev=0.14 (1.5%))
+[       OK ] descript_params_star_census_transform.star_census_transform/0 (94 ms)
+[ RUN      ] descript_params_star_census_transform.star_census_transform/1, where GetParam() = (640x480, 8UC1, CV_32S)
+[ PERFSTAT ]    (samples=10   mean=9.20   median=9.23   min=9.13   stddev=0.05 (0.6%))
+[       OK ] descript_params_star_census_transform.star_census_transform/1 (92 ms)
+[ RUN      ] descript_params_star_census_transform.star_census_transform/2, where GetParam() = (1280x720, 8UC1, UNKNOWN)
+[ PERFSTAT ]    (samples=10   mean=28.29   median=27.89   min=27.80   stddev=0.80 (2.8%))
+[       OK ] descript_params_star_census_transform.star_census_transform/2 (285 ms)
+[ RUN      ] descript_params_star_census_transform.star_census_transform/3, where GetParam() = (1280x720, 8UC1, CV_32S)
+[ PERFSTAT ]    (samples=10   mean=28.21   median=27.98   min=27.82   stddev=0.50 (1.8%))
+[       OK ] descript_params_star_census_transform.star_census_transform/3 (283 ms)
+[ RUN      ] descript_params_star_census_transform.star_census_transform/4, where GetParam() = (1920x1080, 8UC1, UNKNOWN)
+[ PERFSTAT ]    (samples=10   mean=63.93   median=63.46   min=62.94   stddev=1.31 (2.0%))
+[       OK ] descript_params_star_census_transform.star_census_transform/4 (645 ms)
+[ RUN      ] descript_params_star_census_transform.star_census_transform/5, where GetParam() = (1920x1080, 8UC1, CV_32S)
+[ PERFSTAT ]    (samples=10   mean=63.50   median=63.18   min=62.95   stddev=0.97 (1.5%))
+[       OK ] descript_params_star_census_transform.star_census_transform/5 (638 ms)
+[ RUN      ] descript_params_star_census_transform.star_census_transform/6, where GetParam() = (127x61, 8UC1, UNKNOWN)
+[ PERFSTAT ]    (samples=10   mean=0.20   median=0.20   min=0.19   stddev=0.00 (2.2%))
+[       OK ] descript_params_star_census_transform.star_census_transform/6 (2 ms)
+[ RUN      ] descript_params_star_census_transform.star_census_transform/7, where GetParam() = (127x61, 8UC1, CV_32S)
+[ PERFSTAT ]    (samples=10   mean=0.20   median=0.19   min=0.19   stddev=0.00 (1.7%))
+[       OK ] descript_params_star_census_transform.star_census_transform/7 (2 ms)
+[----------] 8 tests from descript_params_star_census_transform (2041 ms total)
+
+[----------] 8 tests from descript_params_modified_census_transform
+[ RUN      ] descript_params_modified_census_transform.modified_census_transform/0, where GetParam() = (640x480, 8UC1, UNKNOWN)
+[ PERFSTAT ]    (samples=10   mean=3.35   median=3.34   min=3.28   stddev=0.07 (2.0%))
+[       OK ] descript_params_modified_census_transform.modified_census_transform/0 (34 ms)
+[ RUN      ] descript_params_modified_census_transform.modified_census_transform/1, where GetParam() = (640x480, 8UC1, CV_32S)
+[ PERFSTAT ]    (samples=10   mean=3.32   median=3.29   min=3.26   stddev=0.06 (1.9%))
+[       OK ] descript_params_modified_census_transform.modified_census_transform/1 (33 ms)
+[ RUN      ] descript_params_modified_census_transform.modified_census_transform/2, where GetParam() = (1280x720, 8UC1, UNKNOWN)
+[ PERFSTAT ]    (samples=13   mean=10.25   median=10.27   min=10.01   stddev=0.15 (1.5%))
+[       OK ] descript_params_modified_census_transform.modified_census_transform/2 (136 ms)
+[ RUN      ] descript_params_modified_census_transform.modified_census_transform/3, where GetParam() = (1280x720, 8UC1, CV_32S)
+[ PERFSTAT ]    (samples=10   mean=10.18   median=10.20   min=10.02   stddev=0.14 (1.4%))
+[       OK ] descript_params_modified_census_transform.modified_census_transform/3 (103 ms)
+[ RUN      ] descript_params_modified_census_transform.modified_census_transform/4, where GetParam() = (1920x1080, 8UC1, UNKNOWN)
+[ PERFSTAT ]    (samples=13   mean=23.48   median=23.17   min=23.02   stddev=0.66 (2.8%))
+[       OK ] descript_params_modified_census_transform.modified_census_transform/4 (315 ms)
+[ RUN      ] descript_params_modified_census_transform.modified_census_transform/5, where GetParam() = (1920x1080, 8UC1, CV_32S)
+[ PERFSTAT ]    (samples=10   mean=23.29   median=23.31   min=22.92   stddev=0.27 (1.2%))
+[       OK ] descript_params_modified_census_transform.modified_census_transform/5 (235 ms)
+[ RUN      ] descript_params_modified_census_transform.modified_census_transform/6, where GetParam() = (127x61, 8UC1, UNKNOWN)
+[ PERFSTAT ]    (samples=10   mean=0.07   median=0.07   min=0.07   stddev=0.00 (0.8%))
+[       OK ] descript_params_modified_census_transform.modified_census_transform/6 (1 ms)
+[ RUN      ] descript_params_modified_census_transform.modified_census_transform/7, where GetParam() = (127x61, 8UC1, CV_32S)
+[ PERFSTAT ]    (samples=10   mean=0.07   median=0.07   min=0.07   stddev=0.00 (0.5%))
+[       OK ] descript_params_modified_census_transform.modified_census_transform/7 (0 ms)
+[----------] 8 tests from descript_params_modified_census_transform (857 ms total)
+
+[----------] 8 tests from descript_params_center_symetric_census
+[ RUN      ] descript_params_center_symetric_census.center_symetric_census/0, where GetParam() = (640x480, 8UC1, UNKNOWN)
+[ PERFSTAT ]    (samples=10   mean=2.89   median=2.86   min=2.83   stddev=0.07 (2.6%))
+[       OK ] descript_params_center_symetric_census.center_symetric_census/0 (30 ms)
+[ RUN      ] descript_params_center_symetric_census.center_symetric_census/1, where GetParam() = (640x480, 8UC1, CV_32S)
+[ PERFSTAT ]    (samples=10   mean=2.86   median=2.84   min=2.81   stddev=0.05 (1.8%))
+[       OK ] descript_params_center_symetric_census.center_symetric_census/1 (29 ms)
+[ RUN      ] descript_params_center_symetric_census.center_symetric_census/2, where GetParam() = (1280x720, 8UC1, UNKNOWN)
+[ PERFSTAT ]    (samples=10   mean=8.60   median=8.60   min=8.36   stddev=0.15 (1.7%))
+[       OK ] descript_params_center_symetric_census.center_symetric_census/2 (89 ms)
+[ RUN      ] descript_params_center_symetric_census.center_symetric_census/3, where GetParam() = (1280x720, 8UC1, CV_32S)
+[ PERFSTAT ]    (samples=10   mean=8.43   median=8.42   min=8.34   stddev=0.07 (0.9%))
+[       OK ] descript_params_center_symetric_census.center_symetric_census/3 (85 ms)
+[ RUN      ] descript_params_center_symetric_census.center_symetric_census/4, where GetParam() = (1920x1080, 8UC1, UNKNOWN)
+[ PERFSTAT ]    (samples=38   mean=18.73   median=18.63   min=18.33   stddev=0.42 (2.3%))
+[       OK ] descript_params_center_symetric_census.center_symetric_census/4 (728 ms)
+[ RUN      ] descript_params_center_symetric_census.center_symetric_census/5, where GetParam() = (1920x1080, 8UC1, CV_32S)
+[ PERFSTAT ]    (samples=10   mean=19.13   median=18.99   min=18.89   stddev=0.28 (1.4%))
+[       OK ] descript_params_center_symetric_census.center_symetric_census/5 (194 ms)
+[ RUN      ] descript_params_center_symetric_census.center_symetric_census/6, where GetParam() = (127x61, 8UC1, UNKNOWN)
+[ PERFSTAT ]    (samples=38   mean=0.06   median=0.06   min=0.06   stddev=0.00 (0.8%))
+[       OK ] descript_params_center_symetric_census.center_symetric_census/6 (3 ms)
+[ RUN      ] descript_params_center_symetric_census.center_symetric_census/7, where GetParam() = (127x61, 8UC1, CV_32S)
+[ PERFSTAT ]    (samples=10   mean=0.06   median=0.06   min=0.06   stddev=0.00 (0.5%))
+[       OK ] descript_params_center_symetric_census.center_symetric_census/7 (0 ms)
+[----------] 8 tests from descript_params_center_symetric_census (1158 ms total)
+
+[----------] Global test environment tear-down
+[==========] 38 tests from 6 test cases ran. (6456 ms total)
+[  PASSED  ] 38 tests.

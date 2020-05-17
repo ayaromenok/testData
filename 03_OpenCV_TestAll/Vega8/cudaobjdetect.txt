@@ -1,0 +1,177 @@
+[----------]
+[   INFO   ] 	Implementation variant: cuda.
+[----------]
+[----------]
+[ GPU INFO ] 	Run test suite on GeForce GTX 1050 GPU.
+[----------]
+Time compensation is 0
+*** CUDA Device Query (Runtime API) version (CUDART static linking) *** 
+
+Device count: 1
+
+Device 0: "GeForce GTX 1050"
+  CUDA Driver Version / Runtime Version          10.20 / 10.20
+  CUDA Capability Major/Minor version number:    6.1
+  Total amount of global memory:                 1997 MBytes (2094202880 bytes)
+  GPU Clock Speed:                               1.46 GHz
+  Max Texture Dimension Size (x,y,z)             1D=(131072), 2D=(131072,65536), 3D=(16384,16384,16384)
+  Max Layered Texture Size (dim) x layers        1D=(32768) x 2048, 2D=(32768,32768) x 2048
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 65536
+  Warp size:                                     32
+  Maximum number of threads per block:           1024
+  Maximum sizes of each dimension of a block:    1024 x 1024 x 64
+  Maximum sizes of each dimension of a grid:     2147483647 x 65535 x 65535
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and execution:                 Yes with 2 copy engine(s)
+  Run time limit on kernels:                     Yes
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Concurrent kernel execution:                   Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support enabled:                No
+  Device is using TCC driver mode:               No
+  Device supports Unified Addressing (UVA):      Yes
+  Device PCI Bus ID / PCI location ID:           1 / 0
+  Compute Mode:
+      Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) 
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version  = 10.20, CUDA Runtime Version = 10.20, NumDevs = 1
+
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.3.0-dev
+OpenCV VCS version: 4.3.0-201-gc722625f28
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.5.0)
+Parallel framework: pthreads (nthreads=4)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2020.0.0 Gold (-) Oct 19 2019
+OpenCL Platforms: 
+    NVIDIA CUDA
+        dGPU: GeForce GTX 1050 (OpenCL 1.2 CUDA)
+    AMD Accelerated Parallel Processing
+        iGPU: gfx902 (OpenCL 2.0 AMD-APP (3004.6))
+Current OpenCL device: 
+    Type = iGPU
+    Name = gfx902
+    Version = OpenCL 2.0 AMD-APP (3004.6)
+    Driver version = 3004.6 (PAL,HSAIL)
+    Address bits = 64
+    Compute units = 8
+    Max work group size = 256
+    Local memory size = 64 KB
+    Max memory allocation size = 435 MB 204 KB 819 B
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_fp64
+        cl_amd_fp64
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_byte_addressable_store
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_gl_depth_images
+        cl_amd_device_attribute_query
+        cl_amd_vec3
+        cl_amd_printf
+        cl_amd_media_ops
+        cl_amd_media_ops2
+        cl_amd_popcnt
+        cl_khr_image2d_from_buffer
+        cl_khr_subgroups
+        cl_khr_gl_event
+        cl_khr_depth_images
+        cl_khr_mipmap_image
+        cl_khr_mipmap_image_writes
+        cl_amd_copy_buffer_p2p
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 4
+    Preferred vector width short = 2
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 10 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 8 tests from Image_ObjDetect_HOG
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/0, where GetParam() = "gpu/hog/road.png"
+[ PERFSTAT ]    (samples=100   mean=20.45   median=20.06   min=19.68   stddev=1.10 (5.4%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/0 (2113 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/1, where GetParam() = "gpu/caltech/image_00000009_0.png"
+[ PERFSTAT ]    (samples=10   mean=13.45   median=13.50   min=13.11   stddev=0.18 (1.3%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/1 (145 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/2, where GetParam() = "gpu/caltech/image_00000032_0.png"
+[ PERFSTAT ]    (samples=10   mean=13.35   median=13.43   min=13.01   stddev=0.18 (1.3%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/2 (143 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/3, where GetParam() = "gpu/caltech/image_00000165_0.png"
+[ PERFSTAT ]    (samples=10   mean=13.36   median=13.41   min=13.04   stddev=0.19 (1.4%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/3 (144 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/4, where GetParam() = "gpu/caltech/image_00000261_0.png"
+[ PERFSTAT ]    (samples=10   mean=13.37   median=13.38   min=13.06   stddev=0.17 (1.3%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/4 (144 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/5, where GetParam() = "gpu/caltech/image_00000469_0.png"
+[ PERFSTAT ]    (samples=10   mean=13.39   median=13.40   min=13.13   stddev=0.17 (1.2%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/5 (144 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/6, where GetParam() = "gpu/caltech/image_00000527_0.png"
+[ PERFSTAT ]    (samples=10   mean=13.38   median=13.42   min=13.06   stddev=0.17 (1.3%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/6 (143 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/7, where GetParam() = "gpu/caltech/image_00000574_0.png"
+[ PERFSTAT ]    (samples=10   mean=13.36   median=13.38   min=13.00   stddev=0.20 (1.5%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/7 (145 ms)
+[----------] 8 tests from Image_ObjDetect_HOG (3121 ms total)
+
+[----------] 1 test from ImageAndCascade_ObjDetect_HaarClassifier
+[ RUN      ] ImageAndCascade_ObjDetect_HaarClassifier.ObjDetect_HaarClassifier/0, where GetParam() = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/perf/haarcascade_frontalface_alt.xml")
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/include/opencv2/core/private.cuda.hpp:115: error: (-213:The function/feature is not implemented) The called functionality is disabled for current build or platform in function 'throw_no_cuda'
+
+params    = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/perf/haarcascade_frontalface_alt.xml")
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] ImageAndCascade_ObjDetect_HaarClassifier.ObjDetect_HaarClassifier/0, where GetParam() = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/perf/haarcascade_frontalface_alt.xml") (4 ms)
+[----------] 1 test from ImageAndCascade_ObjDetect_HaarClassifier (4 ms total)
+
+[----------] 1 test from ImageAndCascade_ObjDetect_LBPClassifier
+[ RUN      ] ImageAndCascade_ObjDetect_LBPClassifier.ObjDetect_LBPClassifier/0, where GetParam() = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/lbpcascade/lbpcascade_frontalface.xml")
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/core/include/opencv2/core/private.cuda.hpp:115: error: (-213:The function/feature is not implemented) The called functionality is disabled for current build or platform in function 'throw_no_cuda'
+
+params    = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/lbpcascade/lbpcascade_frontalface.xml")
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] ImageAndCascade_ObjDetect_LBPClassifier.ObjDetect_LBPClassifier/0, where GetParam() = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/lbpcascade/lbpcascade_frontalface.xml") (0 ms)
+[----------] 1 test from ImageAndCascade_ObjDetect_LBPClassifier (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 3 test cases ran. (3125 ms total)
+[  PASSED  ] 8 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] ImageAndCascade_ObjDetect_HaarClassifier.ObjDetect_HaarClassifier/0, where GetParam() = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/perf/haarcascade_frontalface_alt.xml")
+[  FAILED  ] ImageAndCascade_ObjDetect_LBPClassifier.ObjDetect_LBPClassifier/0, where GetParam() = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/lbpcascade/lbpcascade_frontalface.xml")
+
+ 2 FAILED TESTS

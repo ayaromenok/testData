@@ -1,0 +1,91 @@
+Time compensation is 0
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.3.0-dev
+OpenCV VCS version: 4.3.0-201-gc722625f28
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.5.0)
+Parallel framework: pthreads (nthreads=4)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2020.0.0 Gold (-) Oct 19 2019
+OpenCL Platforms: 
+    NVIDIA CUDA
+        dGPU: GeForce GTX 1050 (OpenCL 1.2 CUDA)
+    AMD Accelerated Parallel Processing
+        iGPU: gfx902 (OpenCL 2.0 AMD-APP (3004.6))
+Current OpenCL device: 
+    Type = iGPU
+    Name = gfx902
+    Version = OpenCL 2.0 AMD-APP (3004.6)
+    Driver version = 3004.6 (PAL,HSAIL)
+    Address bits = 64
+    Compute units = 8
+    Max work group size = 256
+    Local memory size = 64 KB
+    Max memory allocation size = 435 MB 204 KB 819 B
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_fp64
+        cl_amd_fp64
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_byte_addressable_store
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_gl_depth_images
+        cl_amd_device_attribute_query
+        cl_amd_vec3
+        cl_amd_printf
+        cl_amd_media_ops
+        cl_amd_media_ops2
+        cl_amd_popcnt
+        cl_khr_image2d_from_buffer
+        cl_khr_subgroups
+        cl_khr_gl_event
+        cl_khr_depth_images
+        cl_khr_mipmap_image
+        cl_khr_mipmap_image_writes
+        cl_amd_copy_buffer_p2p
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 4
+    Preferred vector width short = 2
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 18 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoCapture_Camera
+[ RUN      ] VideoCapture_Camera.waitAny_V4L
+[     SKIP ] No list of tested cameras. Use OPENCV_TEST_PERF_CAMERA_LIST parameter
+[       OK ] VideoCapture_Camera.waitAny_V4L (0 ms)
+[----------] 1 test from VideoCapture_Camera (0 ms total)
+
+[----------] 5 tests from VideoCapture_Reading_ReadFile
+[ RUN      ] VideoCapture_Reading_ReadFile.ReadFile/0, where GetParam() = "highgui/video/big_buck_bunny.avi"
+[ PERFSTAT ]    (samples=100   mean=3.14   median=3.00   min=2.38   stddev=0.55 (17.5%))
+[       OK ] VideoCapture_Reading_ReadFile.ReadFile/0 (341 ms)
+[ RUN      ] VideoCapture_Reading_ReadFile.ReadFile/1, where GetParam() = "highgui/video/big_buck_bunny.mov"
+[ PERFSTAT ]    (samples=100   mean=3.26   median=3.31   min=2.47   stddev=0.56 (17.3%))
+[       OK ] VideoCapture_Reading_ReadFile.ReadFile/1 (347 ms)
+[ RUN      ] VideoCapture_Reading_ReadFile.ReadFile/2, where GetParam() = "highgui/video/big_buck_bunny.mp4"
+[ PERFSTAT ]    (samples=100   mean=3.16   median=3.24   min=2.48   stddev=0.41 (13.1%))
+[       OK ] VideoCapture_Reading_ReadFile.ReadFile/2 (327 ms)
+[ RUN      ] VideoCapture_Reading_ReadFile.ReadFile/3, where GetParam() = "highgui/video/big_buck_bunny.mpg"
+[ PERFSTAT ]    (samples=100   mean=2.18   median=2.13   min=2.03   stddev=0.12 (5.6%))
+[       OK ] VideoCapture_Reading_ReadFile.ReadFile/3 (226 ms)
+[ RUN      ] VideoCapture_Reading_ReadFile.ReadFile/4, where GetParam() = "highgui/video/big_buck_bunny.wmv"
+[ PERFSTAT ]    (samples=100   mean=2.19   median=2.20   min=2.00   stddev=0.14 (6.2%))
+[       OK ] VideoCapture_Reading_ReadFile.ReadFile/4 (231 ms)
+[----------] 5 tests from VideoCapture_Reading_ReadFile (1472 ms total)
+
+[----------] 12 tests from VideoWriter_Writing_WriteFrame
+[ RUN      ] VideoWriter_Writing_WriteFrame.WriteFrame/0, where GetParam() = ("python/images/QCIF_00.bmp", false)

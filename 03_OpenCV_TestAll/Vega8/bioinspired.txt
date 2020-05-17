@@ -1,0 +1,95 @@
+Time compensation is 0
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.3.0-dev
+OpenCV VCS version: 4.3.0-201-gc722625f28
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.5.0)
+Parallel framework: pthreads (nthreads=4)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2020.0.0 Gold (-) Oct 19 2019
+OpenCL Platforms: 
+    NVIDIA CUDA
+        dGPU: GeForce GTX 1050 (OpenCL 1.2 CUDA)
+    AMD Accelerated Parallel Processing
+        iGPU: gfx902 (OpenCL 2.0 AMD-APP (3004.6))
+Current OpenCL device: 
+    Type = iGPU
+    Name = gfx902
+    Version = OpenCL 2.0 AMD-APP (3004.6)
+    Driver version = 3004.6 (PAL,HSAIL)
+    Address bits = 64
+    Compute units = 8
+    Max work group size = 256
+    Local memory size = 64 KB
+    Max memory allocation size = 435 MB 204 KB 819 B
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_fp64
+        cl_amd_fp64
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_byte_addressable_store
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_gl_depth_images
+        cl_amd_device_attribute_query
+        cl_amd_vec3
+        cl_amd_printf
+        cl_amd_media_ops
+        cl_amd_media_ops2
+        cl_amd_popcnt
+        cl_khr_image2d_from_buffer
+        cl_khr_subgroups
+        cl_khr_gl_event
+        cl_khr_depth_images
+        cl_khr_mipmap_image
+        cl_khr_mipmap_image_writes
+        cl_amd_copy_buffer_p2p
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 4
+    Preferred vector width short = 2
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from OCL_RetinaFixture_Retina
+[ RUN      ] OCL_RetinaFixture_Retina.Retina/0, where GetParam() = (false, 2, 1, 10)
+[ PERFSTAT ]    (samples=13   mean=19.76   median=19.75   min=19.59   stddev=0.11 (0.5%))
+[       OK ] OCL_RetinaFixture_Retina.Retina/0 (486 ms)
+[ RUN      ] OCL_RetinaFixture_Retina.Retina/1, where GetParam() = (false, 2, 1, 5)
+[ PERFSTAT ]    (samples=13   mean=20.26   median=20.10   min=19.79   stddev=0.46 (2.3%))
+[       OK ] OCL_RetinaFixture_Retina.Retina/1 (320 ms)
+[ RUN      ] OCL_RetinaFixture_Retina.Retina/2, where GetParam() = (false, 2, 0.5, 10)
+[ PERFSTAT ]    (samples=13   mean=19.96   median=19.89   min=19.58   stddev=0.33 (1.6%))
+[       OK ] OCL_RetinaFixture_Retina.Retina/2 (318 ms)
+[ RUN      ] OCL_RetinaFixture_Retina.Retina/3, where GetParam() = (false, 2, 0.5, 5)
+[ PERFSTAT ]    (samples=13   mean=20.04   median=19.80   min=19.65   stddev=0.54 (2.7%))
+[       OK ] OCL_RetinaFixture_Retina.Retina/3 (317 ms)
+[ RUN      ] OCL_RetinaFixture_Retina.Retina/4, where GetParam() = (true, 2, 1, 10)
+[ PERFSTAT ]    (samples=10   mean=55.68   median=55.42   min=54.36   stddev=1.20 (2.2%))
+[       OK ] OCL_RetinaFixture_Retina.Retina/4 (609 ms)
+[ RUN      ] OCL_RetinaFixture_Retina.Retina/5, where GetParam() = (true, 2, 1, 5)
+[ PERFSTAT ]    (samples=10   mean=56.05   median=55.96   min=54.61   stddev=0.97 (1.7%))
+[       OK ] OCL_RetinaFixture_Retina.Retina/5 (616 ms)
+[ RUN      ] OCL_RetinaFixture_Retina.Retina/6, where GetParam() = (true, 2, 0.5, 10)
+[ PERFSTAT ]    (samples=10   mean=55.89   median=55.74   min=54.57   stddev=1.08 (1.9%))
+[       OK ] OCL_RetinaFixture_Retina.Retina/6 (612 ms)
+[ RUN      ] OCL_RetinaFixture_Retina.Retina/7, where GetParam() = (true, 2, 0.5, 5)
+[ PERFSTAT ]    (samples=10   mean=55.76   median=55.59   min=54.65   stddev=0.97 (1.7%))
+[       OK ] OCL_RetinaFixture_Retina.Retina/7 (612 ms)
+[----------] 8 tests from OCL_RetinaFixture_Retina (3890 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (3890 ms total)
+[  PASSED  ] 8 tests.

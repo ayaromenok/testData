@@ -1,0 +1,139 @@
+[----------]
+[   INFO   ] 	Implementation variant: cuda.
+[----------]
+[----------]
+[ GPU INFO ] 	Run test suite on GeForce GTX 1050 GPU.
+[----------]
+Time compensation is 0
+*** CUDA Device Query (Runtime API) version (CUDART static linking) *** 
+
+Device count: 1
+
+Device 0: "GeForce GTX 1050"
+  CUDA Driver Version / Runtime Version          10.20 / 10.20
+  CUDA Capability Major/Minor version number:    6.1
+  Total amount of global memory:                 1997 MBytes (2094202880 bytes)
+  GPU Clock Speed:                               1.46 GHz
+  Max Texture Dimension Size (x,y,z)             1D=(131072), 2D=(131072,65536), 3D=(16384,16384,16384)
+  Max Layered Texture Size (dim) x layers        1D=(32768) x 2048, 2D=(32768,32768) x 2048
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 65536
+  Warp size:                                     32
+  Maximum number of threads per block:           1024
+  Maximum sizes of each dimension of a block:    1024 x 1024 x 64
+  Maximum sizes of each dimension of a grid:     2147483647 x 65535 x 65535
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and execution:                 Yes with 2 copy engine(s)
+  Run time limit on kernels:                     Yes
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Concurrent kernel execution:                   Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support enabled:                No
+  Device is using TCC driver mode:               No
+  Device supports Unified Addressing (UVA):      Yes
+  Device PCI Bus ID / PCI location ID:           1 / 0
+  Compute Mode:
+      Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) 
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version  = 10.20, CUDA Runtime Version = 10.20, NumDevs = 1
+
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.3.0-dev
+OpenCV VCS version: 4.3.0-201-gc722625f28
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.5.0)
+Parallel framework: pthreads (nthreads=4)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2020.0.0 Gold (-) Oct 19 2019
+OpenCL Platforms: 
+    NVIDIA CUDA
+        dGPU: GeForce GTX 1050 (OpenCL 1.2 CUDA)
+    AMD Accelerated Parallel Processing
+        iGPU: gfx902 (OpenCL 2.0 AMD-APP (3004.6))
+Current OpenCL device: 
+    Type = iGPU
+    Name = gfx902
+    Version = OpenCL 2.0 AMD-APP (3004.6)
+    Driver version = 3004.6 (PAL,HSAIL)
+    Address bits = 64
+    Compute units = 8
+    Max work group size = 256
+    Local memory size = 64 KB
+    Max memory allocation size = 435 MB 204 KB 819 B
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_fp64
+        cl_amd_fp64
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_byte_addressable_store
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_gl_depth_images
+        cl_amd_device_attribute_query
+        cl_amd_vec3
+        cl_amd_printf
+        cl_amd_media_ops
+        cl_amd_media_ops2
+        cl_amd_popcnt
+        cl_khr_image2d_from_buffer
+        cl_khr_subgroups
+        cl_khr_gl_event
+        cl_khr_depth_images
+        cl_khr_mipmap_image
+        cl_khr_mipmap_image_writes
+        cl_amd_copy_buffer_p2p
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 4
+    Preferred vector width short = 2
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 8 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from Size_MatType_SuperResolution_BTVL1
+[ RUN      ] Size_MatType_SuperResolution_BTVL1.SuperResolution_BTVL1/0, where GetParam() = (64x64, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=12.37   median=12.40   min=11.96   stddev=0.35 (2.8%))
+[       OK ] Size_MatType_SuperResolution_BTVL1.SuperResolution_BTVL1/0 (684 ms)
+[ RUN      ] Size_MatType_SuperResolution_BTVL1.SuperResolution_BTVL1/1, where GetParam() = (64x64, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=20.53   median=20.37   min=19.80   stddev=0.59 (2.9%))
+[       OK ] Size_MatType_SuperResolution_BTVL1.SuperResolution_BTVL1/1 (273 ms)
+[ RUN      ] Size_MatType_SuperResolution_BTVL1.SuperResolution_BTVL1/2, where GetParam() = (128x128, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=20.58   median=20.62   min=20.01   stddev=0.39 (1.9%))
+[       OK ] Size_MatType_SuperResolution_BTVL1.SuperResolution_BTVL1/2 (272 ms)
+[ RUN      ] Size_MatType_SuperResolution_BTVL1.SuperResolution_BTVL1/3, where GetParam() = (128x128, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=52.10   median=52.04   min=51.75   stddev=0.33 (0.6%))
+[       OK ] Size_MatType_SuperResolution_BTVL1.SuperResolution_BTVL1/3 (679 ms)
+[----------] 4 tests from Size_MatType_SuperResolution_BTVL1 (1909 ms total)
+
+[----------] 4 tests from OCL_SuperResolution_BTVL1_BTVL1
+[ RUN      ] OCL_SuperResolution_BTVL1_BTVL1.BTVL1/0, where GetParam() = (64x64, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=105.20   median=107.04   min=98.90   stddev=3.65 (3.5%))
+[       OK ] OCL_SuperResolution_BTVL1_BTVL1.BTVL1/0 (1820 ms)
+[ RUN      ] OCL_SuperResolution_BTVL1_BTVL1.BTVL1/1, where GetParam() = (64x64, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=129.06   median=128.75   min=125.66   stddev=1.67 (1.3%))
+[       OK ] OCL_SuperResolution_BTVL1_BTVL1.BTVL1/1 (1871 ms)
+[ RUN      ] OCL_SuperResolution_BTVL1_BTVL1.BTVL1/2, where GetParam() = (128x128, 8UC1)
+[ PERFSTAT ]    (samples=10   mean=139.45   median=139.54   min=134.94   stddev=2.65 (1.9%))
+[       OK ] OCL_SuperResolution_BTVL1_BTVL1.BTVL1/2 (1879 ms)
+[ RUN      ] OCL_SuperResolution_BTVL1_BTVL1.BTVL1/3, where GetParam() = (128x128, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=205.09   median=203.70   min=201.02   stddev=5.53 (2.7%))
+[       OK ] OCL_SuperResolution_BTVL1_BTVL1.BTVL1/3 (2753 ms)
+[----------] 4 tests from OCL_SuperResolution_BTVL1_BTVL1 (8323 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 2 test cases ran. (10232 ms total)
+[  PASSED  ] 8 tests.

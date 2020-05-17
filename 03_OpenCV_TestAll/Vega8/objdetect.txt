@@ -1,0 +1,980 @@
+Time compensation is 0
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.3.0-dev
+OpenCV VCS version: 4.3.0-201-gc722625f28
+Build type: RELEASE
+WARNING: build value differs from runtime: Release
+Compiler: /usr/bin/c++  (ver 7.5.0)
+Parallel framework: pthreads (nthreads=4)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2020.0.0 Gold (-) Oct 19 2019
+OpenCL Platforms: 
+    NVIDIA CUDA
+        dGPU: GeForce GTX 1050 (OpenCL 1.2 CUDA)
+    AMD Accelerated Parallel Processing
+        iGPU: gfx902 (OpenCL 2.0 AMD-APP (3004.6))
+Current OpenCL device: 
+    Type = iGPU
+    Name = gfx902
+    Version = OpenCL 2.0 AMD-APP (3004.6)
+    Driver version = 3004.6 (PAL,HSAIL)
+    Address bits = 64
+    Compute units = 8
+    Max work group size = 256
+    Local memory size = 64 KB
+    Max memory allocation size = 435 MB 204 KB 819 B
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_fp64
+        cl_amd_fp64
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_3d_image_writes
+        cl_khr_byte_addressable_store
+        cl_khr_fp16
+        cl_khr_gl_sharing
+        cl_khr_gl_depth_images
+        cl_amd_device_attribute_query
+        cl_amd_vec3
+        cl_amd_printf
+        cl_amd_media_ops
+        cl_amd_media_ops2
+        cl_amd_popcnt
+        cl_khr_image2d_from_buffer
+        cl_khr_subgroups
+        cl_khr_gl_event
+        cl_khr_depth_images
+        cl_khr_mipmap_image
+        cl_khr_mipmap_image_writes
+        cl_amd_copy_buffer_p2p
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 4
+    Preferred vector width short = 2
+    Preferred vector width int = 1
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 98 tests from 5 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from OCL_HOGFixture_HOG
+[ RUN      ] OCL_HOGFixture_HOG.HOG
+[ PERFSTAT ]    (samples=100   mean=41.32   median=41.32   min=37.39   stddev=1.58 (3.8%))
+[       OK ] OCL_HOGFixture_HOG.HOG (4611 ms)
+[----------] 1 test from OCL_HOGFixture_HOG (4611 ms total)
+
+[----------] 27 tests from OCL_Cascade_Image_MinSize_CascadeClassifier
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/0, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt.xml", "cv/shared/lena.png", 30)
+[ PERFSTAT ]    (samples=100   mean=17.68   median=17.46   min=14.58   stddev=1.49 (8.4%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/0 (1933 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/1, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt.xml", "cv/shared/lena.png", 64)
+[ PERFSTAT ]    (samples=100   mean=4.93   median=4.85   min=4.24   stddev=0.47 (9.6%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/1 (529 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/2, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt.xml", "cv/shared/lena.png", 90)
+[ PERFSTAT ]    (samples=100   mean=3.25   median=3.21   min=2.90   stddev=0.21 (6.5%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/2 (364 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/3, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt.xml", "cv/cascadeandhog/images/bttf301.png", 30)
+[ PERFSTAT ]    (samples=100   mean=16.44   median=16.63   min=14.21   stddev=0.92 (5.6%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/3 (1682 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/4, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt.xml", "cv/cascadeandhog/images/bttf301.png", 64)
+[ PERFSTAT ]    (samples=100   mean=4.00   median=3.93   min=3.67   stddev=0.26 (6.5%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/4 (434 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/5, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt.xml", "cv/cascadeandhog/images/bttf301.png", 90)
+[ PERFSTAT ]    (samples=100   mean=2.42   median=2.40   min=2.23   stddev=0.13 (5.2%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/5 (271 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/6, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt.xml", "cv/cascadeandhog/images/class57.png", 30)
+.
+[ PERFSTAT ]    (samples=100   mean=103.67   median=104.27   min=92.35   stddev=4.38 (4.2%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/6 (10481 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/7, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt.xml", "cv/cascadeandhog/images/class57.png", 64)
+[ PERFSTAT ]    (samples=100   mean=20.93   median=21.04   min=17.27   stddev=1.44 (6.9%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/7 (2177 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/8, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt.xml", "cv/cascadeandhog/images/class57.png", 90)
+[ PERFSTAT ]    (samples=100   mean=12.77   median=12.68   min=10.60   stddev=0.99 (7.8%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/8 (1337 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/9, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt2.xml", "cv/shared/lena.png", 30)
+[ PERFSTAT ]    (samples=100   mean=18.20   median=18.04   min=15.66   stddev=1.53 (8.4%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/9 (1993 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/10, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt2.xml", "cv/shared/lena.png", 64)
+[ PERFSTAT ]    (samples=100   mean=5.41   median=5.27   min=4.71   stddev=0.53 (9.8%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/10 (577 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/11, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt2.xml", "cv/shared/lena.png", 90)
+[ PERFSTAT ]    (samples=100   mean=3.51   median=3.45   min=3.16   stddev=0.20 (5.6%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/11 (381 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/12, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt2.xml", "cv/cascadeandhog/images/bttf301.png", 30)
+[ PERFSTAT ]    (samples=100   mean=16.22   median=16.20   min=14.51   stddev=0.82 (5.0%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/12 (1655 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/13, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt2.xml", "cv/cascadeandhog/images/bttf301.png", 64)
+[ PERFSTAT ]    (samples=100   mean=4.25   median=4.13   min=3.82   stddev=0.37 (8.7%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/13 (458 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/14, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt2.xml", "cv/cascadeandhog/images/bttf301.png", 90)
+[ PERFSTAT ]    (samples=100   mean=2.36   median=2.35   min=2.23   stddev=0.09 (3.8%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/14 (261 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/15, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt2.xml", "cv/cascadeandhog/images/class57.png", 30)
+.
+[ PERFSTAT ]    (samples=100   mean=106.90   median=107.86   min=97.93   stddev=4.10 (3.8%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/15 (10797 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/16, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt2.xml", "cv/cascadeandhog/images/class57.png", 64)
+[ PERFSTAT ]    (samples=100   mean=22.09   median=22.25   min=18.56   stddev=1.31 (5.9%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/16 (2282 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/17, where GetParam() = ("cv/cascadeandhog/cascades/haarcascade_frontalface_alt2.xml", "cv/cascadeandhog/images/class57.png", 90)
+[ PERFSTAT ]    (samples=100   mean=13.23   median=13.15   min=11.35   stddev=0.84 (6.3%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/17 (1384 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/18, where GetParam() = ("cv/cascadeandhog/cascades/lbpcascade_frontalface.xml", "cv/shared/lena.png", 30)
+[ PERFSTAT ]    (samples=100   mean=16.75   median=16.81   min=14.11   stddev=1.36 (8.1%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/18 (1876 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/19, where GetParam() = ("cv/cascadeandhog/cascades/lbpcascade_frontalface.xml", "cv/shared/lena.png", 64)
+[ PERFSTAT ]    (samples=100   mean=5.58   median=5.50   min=5.20   stddev=0.30 (5.3%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/19 (580 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/20, where GetParam() = ("cv/cascadeandhog/cascades/lbpcascade_frontalface.xml", "cv/shared/lena.png", 90)
+[ PERFSTAT ]    (samples=100   mean=3.86   median=3.84   min=3.57   stddev=0.18 (4.7%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/20 (405 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/21, where GetParam() = ("cv/cascadeandhog/cascades/lbpcascade_frontalface.xml", "cv/cascadeandhog/images/bttf301.png", 30)
+[ PERFSTAT ]    (samples=10   mean=16.07   median=15.84   min=15.65   stddev=0.45 (2.8%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/21 (165 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/22, where GetParam() = ("cv/cascadeandhog/cascades/lbpcascade_frontalface.xml", "cv/cascadeandhog/images/bttf301.png", 64)
+[ PERFSTAT ]    (samples=100   mean=4.77   median=4.68   min=4.22   stddev=0.48 (10.1%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/22 (497 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/23, where GetParam() = ("cv/cascadeandhog/cascades/lbpcascade_frontalface.xml", "cv/cascadeandhog/images/bttf301.png", 90)
+[ PERFSTAT ]    (samples=100   mean=2.89   median=2.89   min=2.70   stddev=0.13 (4.5%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/23 (301 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/24, where GetParam() = ("cv/cascadeandhog/cascades/lbpcascade_frontalface.xml", "cv/cascadeandhog/images/class57.png", 30)
+[ PERFSTAT ]    (samples=10   mean=89.86   median=89.92   min=86.78   stddev=2.11 (2.3%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/24 (914 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/25, where GetParam() = ("cv/cascadeandhog/cascades/lbpcascade_frontalface.xml", "cv/cascadeandhog/images/class57.png", 64)
+[ PERFSTAT ]    (samples=18   mean=28.91   median=28.74   min=27.45   stddev=0.86 (3.0%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/25 (535 ms)
+[ RUN      ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/26, where GetParam() = ("cv/cascadeandhog/cascades/lbpcascade_frontalface.xml", "cv/cascadeandhog/images/class57.png", 90)
+[ PERFSTAT ]    (samples=100   mean=17.31   median=17.35   min=15.45   stddev=0.70 (4.0%))
+[       OK ] OCL_Cascade_Image_MinSize_CascadeClassifier.CascadeClassifier/26 (1764 ms)
+[----------] 27 tests from OCL_Cascade_Image_MinSize_CascadeClassifier (46034 ms total)
+
+[----------] 30 tests from Perf_Objdetect_QRCode
+[ RUN      ] Perf_Objdetect_QRCode.detect/0, where GetParam() = "version_1_down.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_down.jpg in function 'findData'
+
+params    = "version_1_down.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.detect/0, where GetParam() = "version_1_down.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/1, where GetParam() = "version_1_left.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_left.jpg in function 'findData'
+
+params    = "version_1_left.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.detect/1, where GetParam() = "version_1_left.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/2, where GetParam() = "version_1_right.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_right.jpg in function 'findData'
+
+params    = "version_1_right.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.detect/2, where GetParam() = "version_1_right.jpg" (1 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/3, where GetParam() = "version_1_up.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_up.jpg in function 'findData'
+
+params    = "version_1_up.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.detect/3, where GetParam() = "version_1_up.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/4, where GetParam() = "version_1_top.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_top.jpg in function 'findData'
+
+params    = "version_1_top.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.detect/4, where GetParam() = "version_1_top.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/5, where GetParam() = "version_5_down.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_down.jpg in function 'findData'
+
+params    = "version_5_down.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.detect/5, where GetParam() = "version_5_down.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/6, where GetParam() = "version_5_left.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_left.jpg in function 'findData'
+
+params    = "version_5_left.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.detect/6, where GetParam() = "version_5_left.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/7, where GetParam() = "version_5_right.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_right.jpg in function 'findData'
+
+params    = "version_5_right.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.detect/7, where GetParam() = "version_5_right.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/8, where GetParam() = "version_5_up.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_up.jpg in function 'findData'
+
+params    = "version_5_up.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.detect/8, where GetParam() = "version_5_up.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/9, where GetParam() = "version_5_top.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_top.jpg in function 'findData'
+
+params    = "version_5_top.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.detect/9, where GetParam() = "version_5_top.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/10, where GetParam() = "russian.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/russian.jpg in function 'findData'
+
+params    = "russian.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.detect/10, where GetParam() = "russian.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/11, where GetParam() = "kanji.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/kanji.jpg in function 'findData'
+
+params    = "kanji.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.detect/11, where GetParam() = "kanji.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/12, where GetParam() = "link_github_ocv.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/link_github_ocv.jpg in function 'findData'
+
+params    = "link_github_ocv.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.detect/12, where GetParam() = "link_github_ocv.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/13, where GetParam() = "link_ocv.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/link_ocv.jpg in function 'findData'
+
+params    = "link_ocv.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.detect/13, where GetParam() = "link_ocv.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/14, where GetParam() = "link_wiki_cv.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/link_wiki_cv.jpg in function 'findData'
+
+params    = "link_wiki_cv.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.detect/14, where GetParam() = "link_wiki_cv.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/0, where GetParam() = "version_1_down.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_down.jpg in function 'findData'
+
+params    = "version_1_down.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.decode/0, where GetParam() = "version_1_down.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/1, where GetParam() = "version_1_left.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_left.jpg in function 'findData'
+
+params    = "version_1_left.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.decode/1, where GetParam() = "version_1_left.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/2, where GetParam() = "version_1_right.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_right.jpg in function 'findData'
+
+params    = "version_1_right.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.decode/2, where GetParam() = "version_1_right.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/3, where GetParam() = "version_1_up.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_up.jpg in function 'findData'
+
+params    = "version_1_up.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.decode/3, where GetParam() = "version_1_up.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/4, where GetParam() = "version_1_top.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_1_top.jpg in function 'findData'
+
+params    = "version_1_top.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.decode/4, where GetParam() = "version_1_top.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/5, where GetParam() = "version_5_down.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_down.jpg in function 'findData'
+
+params    = "version_5_down.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.decode/5, where GetParam() = "version_5_down.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/6, where GetParam() = "version_5_left.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_left.jpg in function 'findData'
+
+params    = "version_5_left.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.decode/6, where GetParam() = "version_5_left.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/7, where GetParam() = "version_5_right.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_right.jpg in function 'findData'
+
+params    = "version_5_right.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.decode/7, where GetParam() = "version_5_right.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/8, where GetParam() = "version_5_up.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_up.jpg in function 'findData'
+
+params    = "version_5_up.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.decode/8, where GetParam() = "version_5_up.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/9, where GetParam() = "version_5_top.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/version_5_top.jpg in function 'findData'
+
+params    = "version_5_top.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.decode/9, where GetParam() = "version_5_top.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/10, where GetParam() = "russian.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/russian.jpg in function 'findData'
+
+params    = "russian.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.decode/10, where GetParam() = "russian.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/11, where GetParam() = "kanji.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/kanji.jpg in function 'findData'
+
+params    = "kanji.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.decode/11, where GetParam() = "kanji.jpg" (1 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/12, where GetParam() = "link_github_ocv.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/link_github_ocv.jpg in function 'findData'
+
+params    = "link_github_ocv.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.decode/12, where GetParam() = "link_github_ocv.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/13, where GetParam() = "link_ocv.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/link_ocv.jpg in function 'findData'
+
+params    = "link_ocv.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.decode/13, where GetParam() = "link_ocv.jpg" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/14, where GetParam() = "link_wiki_cv.jpg"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/link_wiki_cv.jpg in function 'findData'
+
+params    = "link_wiki_cv.jpg"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode.decode/14, where GetParam() = "link_wiki_cv.jpg" (0 ms)
+[----------] 30 tests from Perf_Objdetect_QRCode (3 ms total)
+
+[----------] 16 tests from Perf_Objdetect_QRCode_Multi
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/0, where GetParam() = "2_qrcodes.png"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/multiple/2_qrcodes.png in function 'findData'
+
+params    = "2_qrcodes.png"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.detectMulti/0, where GetParam() = "2_qrcodes.png" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/1, where GetParam() = "3_close_qrcodes.png"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/multiple/3_close_qrcodes.png in function 'findData'
+
+params    = "3_close_qrcodes.png"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.detectMulti/1, where GetParam() = "3_close_qrcodes.png" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/2, where GetParam() = "3_qrcodes.png"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/multiple/3_qrcodes.png in function 'findData'
+
+params    = "3_qrcodes.png"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.detectMulti/2, where GetParam() = "3_qrcodes.png" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/3, where GetParam() = "4_qrcodes.png"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/multiple/4_qrcodes.png in function 'findData'
+
+params    = "4_qrcodes.png"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.detectMulti/3, where GetParam() = "4_qrcodes.png" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/4, where GetParam() = "5_qrcodes.png"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/multiple/5_qrcodes.png in function 'findData'
+
+params    = "5_qrcodes.png"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.detectMulti/4, where GetParam() = "5_qrcodes.png" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/5, where GetParam() = "6_qrcodes.png"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/multiple/6_qrcodes.png in function 'findData'
+
+params    = "6_qrcodes.png"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.detectMulti/5, where GetParam() = "6_qrcodes.png" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/6, where GetParam() = "7_qrcodes.png"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/multiple/7_qrcodes.png in function 'findData'
+
+params    = "7_qrcodes.png"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.detectMulti/6, where GetParam() = "7_qrcodes.png" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/7, where GetParam() = "8_close_qrcodes.png"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/multiple/8_close_qrcodes.png in function 'findData'
+
+params    = "8_close_qrcodes.png"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.detectMulti/7, where GetParam() = "8_close_qrcodes.png" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/0, where GetParam() = "2_qrcodes.png"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/multiple/2_qrcodes.png in function 'findData'
+
+params    = "2_qrcodes.png"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.decodeMulti/0, where GetParam() = "2_qrcodes.png" (1 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/1, where GetParam() = "3_close_qrcodes.png"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/multiple/3_close_qrcodes.png in function 'findData'
+
+params    = "3_close_qrcodes.png"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.decodeMulti/1, where GetParam() = "3_close_qrcodes.png" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/2, where GetParam() = "3_qrcodes.png"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/multiple/3_qrcodes.png in function 'findData'
+
+params    = "3_qrcodes.png"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.decodeMulti/2, where GetParam() = "3_qrcodes.png" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/3, where GetParam() = "4_qrcodes.png"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/multiple/4_qrcodes.png in function 'findData'
+
+params    = "4_qrcodes.png"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.decodeMulti/3, where GetParam() = "4_qrcodes.png" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/4, where GetParam() = "5_qrcodes.png"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/multiple/5_qrcodes.png in function 'findData'
+
+params    = "5_qrcodes.png"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.decodeMulti/4, where GetParam() = "5_qrcodes.png" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/5, where GetParam() = "6_qrcodes.png"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/multiple/6_qrcodes.png in function 'findData'
+
+params    = "6_qrcodes.png"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.decodeMulti/5, where GetParam() = "6_qrcodes.png" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/6, where GetParam() = "7_qrcodes.png"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/multiple/7_qrcodes.png in function 'findData'
+
+params    = "7_qrcodes.png"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.decodeMulti/6, where GetParam() = "7_qrcodes.png" (0 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/7, where GetParam() = "8_close_qrcodes.png"
+/home/az/sdk/src/opencv/opencv/modules/ts/src/ts_perf.cpp:2028: Failure
+Failed
+Expected: PerfTestBody() doesn't throw an exception.
+  Actual: it throws cv::Exception:
+  OpenCV(4.3.0-dev) /home/az/sdk/src/opencv/opencv/modules/ts/src/ts.cpp:1052: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: cv/qrcode/multiple/8_close_qrcodes.png in function 'findData'
+
+params    = "8_close_qrcodes.png"
+termination reason:  unhandled exception
+bytesIn   =          0
+bytesOut  =          0
+samples   =          0 of 100
+outliers  =          0
+frequency =          0
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.decodeMulti/7, where GetParam() = "8_close_qrcodes.png" (0 ms)
+[----------] 16 tests from Perf_Objdetect_QRCode_Multi (1 ms total)
+
+[----------] 24 tests from Perf_Objdetect_Not_QRCode
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/0, where GetParam() = ("zero", 640x480)
+[ PERFSTAT ]    (samples=13   mean=8.49   median=8.47   min=8.23   stddev=0.20 (2.3%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/0 (116 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/1, where GetParam() = ("zero", 1280x720)
+[ PERFSTAT ]    (samples=13   mean=37.07   median=37.03   min=36.45   stddev=0.37 (1.0%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/1 (489 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/2, where GetParam() = ("zero", 1920x1080)
+[ PERFSTAT ]    (samples=10   mean=67.90   median=68.00   min=67.07   stddev=0.46 (0.7%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/2 (679 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/3, where GetParam() = ("zero", 3840x2160)
+[ PERFSTAT ]    (samples=10   mean=248.51   median=247.40   min=245.81   stddev=3.04 (1.2%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/3 (2486 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/4, where GetParam() = ("random", 640x480)
+[ PERFSTAT ]    (samples=10   mean=8.37   median=8.32   min=8.26   stddev=0.11 (1.3%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/4 (84 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/5, where GetParam() = ("random", 1280x720)
+[ PERFSTAT ]    (samples=10   mean=37.06   median=37.06   min=36.67   stddev=0.30 (0.8%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/5 (371 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/6, where GetParam() = ("random", 1920x1080)
+[ PERFSTAT ]    (samples=10   mean=68.24   median=68.28   min=67.86   stddev=0.29 (0.4%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/6 (684 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/7, where GetParam() = ("random", 3840x2160)
+[ PERFSTAT ]    (samples=10   mean=246.83   median=246.42   min=243.75   stddev=2.37 (1.0%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/7 (2475 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/8, where GetParam() = ("chessboard", 640x480)
+[ PERFSTAT ]    (samples=10   mean=19.25   median=19.22   min=19.11   stddev=0.11 (0.6%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/8 (194 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/9, where GetParam() = ("chessboard", 1280x720)
+[ PERFSTAT ]    (samples=13   mean=44.31   median=44.34   min=43.56   stddev=0.29 (0.6%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/9 (585 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/10, where GetParam() = ("chessboard", 1920x1080)
+[ PERFSTAT ]    (samples=10   mean=84.88   median=84.77   min=84.23   stddev=0.50 (0.6%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/10 (861 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/11, where GetParam() = ("chessboard", 3840x2160)
+[ PERFSTAT ]    (samples=10   mean=313.61   median=312.77   min=311.02   stddev=2.61 (0.8%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/11 (3190 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/0, where GetParam() = ("zero", 640x480)
+[ PERFSTAT ]    (samples=13   mean=10.41   median=10.43   min=10.25   stddev=0.12 (1.2%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/0 (138 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/1, where GetParam() = ("zero", 1280x720)
+[ PERFSTAT ]    (samples=10   mean=26.69   median=26.65   min=26.51   stddev=0.20 (0.7%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/1 (267 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/2, where GetParam() = ("zero", 1920x1080)
+[ PERFSTAT ]    (samples=10   mean=56.34   median=56.25   min=56.10   stddev=0.29 (0.5%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/2 (564 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/3, where GetParam() = ("zero", 3840x2160)
+[ PERFSTAT ]    (samples=10   mean=228.07   median=227.93   min=227.40   stddev=0.55 (0.2%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/3 (2284 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/4, where GetParam() = ("random", 640x480)
+[ PERFSTAT ]    (samples=10   mean=10.40   median=10.40   min=10.28   stddev=0.08 (0.8%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/4 (104 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/5, where GetParam() = ("random", 1280x720)
+[ PERFSTAT ]    (samples=10   mean=26.74   median=26.65   min=26.51   stddev=0.24 (0.9%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/5 (268 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/6, where GetParam() = ("random", 1920x1080)
+[ PERFSTAT ]    (samples=10   mean=56.57   median=56.39   min=56.13   stddev=0.51 (0.9%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/6 (568 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/7, where GetParam() = ("random", 3840x2160)
+[ PERFSTAT ]    (samples=10   mean=228.91   median=228.01   min=227.39   stddev=3.10 (1.4%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/7 (2298 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/8, where GetParam() = ("chessboard", 640x480)
+[ PERFSTAT ]    (samples=10   mean=11.29   median=11.30   min=11.18   stddev=0.06 (0.6%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/8 (114 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/9, where GetParam() = ("chessboard", 1280x720)
+[ PERFSTAT ]    (samples=10   mean=27.81   median=27.67   min=27.52   stddev=0.31 (1.1%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/9 (283 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/10, where GetParam() = ("chessboard", 1920x1080)
+[ PERFSTAT ]    (samples=10   mean=57.40   median=57.18   min=56.96   stddev=0.56 (1.0%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/10 (586 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/11, where GetParam() = ("chessboard", 3840x2160)
+[ PERFSTAT ]    (samples=10   mean=229.69   median=228.57   min=228.41   stddev=3.04 (1.3%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/11 (2348 ms)
+[----------] 24 tests from Perf_Objdetect_Not_QRCode (22036 ms total)
+
+[----------] Global test environment tear-down
+[==========] 98 tests from 5 test cases ran. (72685 ms total)
+[  PASSED  ] 52 tests.
+[  FAILED  ] 46 tests, listed below:
+[  FAILED  ] Perf_Objdetect_QRCode.detect/0, where GetParam() = "version_1_down.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.detect/1, where GetParam() = "version_1_left.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.detect/2, where GetParam() = "version_1_right.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.detect/3, where GetParam() = "version_1_up.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.detect/4, where GetParam() = "version_1_top.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.detect/5, where GetParam() = "version_5_down.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.detect/6, where GetParam() = "version_5_left.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.detect/7, where GetParam() = "version_5_right.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.detect/8, where GetParam() = "version_5_up.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.detect/9, where GetParam() = "version_5_top.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.detect/10, where GetParam() = "russian.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.detect/11, where GetParam() = "kanji.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.detect/12, where GetParam() = "link_github_ocv.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.detect/13, where GetParam() = "link_ocv.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.detect/14, where GetParam() = "link_wiki_cv.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.decode/0, where GetParam() = "version_1_down.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.decode/1, where GetParam() = "version_1_left.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.decode/2, where GetParam() = "version_1_right.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.decode/3, where GetParam() = "version_1_up.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.decode/4, where GetParam() = "version_1_top.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.decode/5, where GetParam() = "version_5_down.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.decode/6, where GetParam() = "version_5_left.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.decode/7, where GetParam() = "version_5_right.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.decode/8, where GetParam() = "version_5_up.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.decode/9, where GetParam() = "version_5_top.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.decode/10, where GetParam() = "russian.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.decode/11, where GetParam() = "kanji.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.decode/12, where GetParam() = "link_github_ocv.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.decode/13, where GetParam() = "link_ocv.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode.decode/14, where GetParam() = "link_wiki_cv.jpg"
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.detectMulti/0, where GetParam() = "2_qrcodes.png"
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.detectMulti/1, where GetParam() = "3_close_qrcodes.png"
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.detectMulti/2, where GetParam() = "3_qrcodes.png"
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.detectMulti/3, where GetParam() = "4_qrcodes.png"
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.detectMulti/4, where GetParam() = "5_qrcodes.png"
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.detectMulti/5, where GetParam() = "6_qrcodes.png"
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.detectMulti/6, where GetParam() = "7_qrcodes.png"
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.detectMulti/7, where GetParam() = "8_close_qrcodes.png"
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.decodeMulti/0, where GetParam() = "2_qrcodes.png"
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.decodeMulti/1, where GetParam() = "3_close_qrcodes.png"
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.decodeMulti/2, where GetParam() = "3_qrcodes.png"
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.decodeMulti/3, where GetParam() = "4_qrcodes.png"
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.decodeMulti/4, where GetParam() = "5_qrcodes.png"
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.decodeMulti/5, where GetParam() = "6_qrcodes.png"
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.decodeMulti/6, where GetParam() = "7_qrcodes.png"
+[  FAILED  ] Perf_Objdetect_QRCode_Multi.decodeMulti/7, where GetParam() = "8_close_qrcodes.png"
+
+46 FAILED TESTS
