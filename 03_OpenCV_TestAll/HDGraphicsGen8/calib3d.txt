@@ -1,0 +1,467 @@
+Time compensation is 0
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.3.0-openvino
+WARNING: build value differs from runtime: 4.3.0-dev
+OpenCV VCS version: 4d34934d25765ab06d8f7cb1ae0af78281b2784a
+Build type: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: tbb (nthreads=4)
+CPU features: SSE SSE2 SSE3 SSSE3 SSE4.1 POPCNT SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2020.0.0 Gold (-) Oct 19 2019
+OpenCL Platforms: 
+    Intel(R) OpenCL HD Graphics
+        iGPU: Intel(R) Gen8 HD Graphics NEO (OpenCL 2.1 NEO )
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) Gen8 HD Graphics NEO
+    Version = OpenCL 2.1 NEO 
+    Driver version = 20.17.16650
+    Address bits = 64
+    Compute units = 24
+    Max work group size = 256
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 1016 MB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_byte_addressable_store
+        cl_khr_fp16
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_icd
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_intel_subgroups
+        cl_intel_required_subgroup_size
+        cl_intel_subgroups_short
+        cl_khr_spir
+        cl_intel_accelerator
+        cl_intel_driver_diagnostics
+        cl_khr_priority_hints
+        cl_khr_throttle_hints
+        cl_khr_create_command_queue
+        cl_intel_subgroups_char
+        cl_intel_subgroups_long
+        cl_khr_fp64
+        cl_khr_subgroups
+        cl_khr_il_program
+        cl_intel_spirv_media_block_io
+        cl_intel_spirv_subgroups
+        cl_khr_spirv_no_integer_wrap_decoration
+        cl_intel_unified_shared_memory_preview
+        cl_khr_mipmap_image
+        cl_khr_mipmap_image_writes
+        cl_intel_planar_yuv
+        cl_intel_packed_yuv
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_intel_media_block_io
+        cl_khr_3d_image_writes
+        cl_intel_va_api_media_sharing
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 120 tests from 9 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from Undistort
+[ RUN      ] Undistort.InitUndistortMap
+[ PERFSTAT ]    (samples=13   mean=0.75   median=0.75   min=0.74   stddev=0.01 (0.8%))
+[       OK ] Undistort.InitUndistortMap (11 ms)
+[----------] 1 test from Undistort (11 ms total)
+
+[----------] 6 tests from OCL_StereoBMFixture_StereoBM
+[ RUN      ] OCL_StereoBMFixture_StereoBM.StereoBM/0, where GetParam() = (32, 11)
+[ PERFSTAT ]    (samples=10   mean=14.45   median=14.27   min=14.22   stddev=0.37 (2.6%))
+[       OK ] OCL_StereoBMFixture_StereoBM.StereoBM/0 (165 ms)
+[ RUN      ] OCL_StereoBMFixture_StereoBM.StereoBM/1, where GetParam() = (32, 21)
+[ PERFSTAT ]    (samples=10   mean=15.55   median=15.45   min=15.33   stddev=0.30 (1.9%))
+[       OK ] OCL_StereoBMFixture_StereoBM.StereoBM/1 (175 ms)
+[ RUN      ] OCL_StereoBMFixture_StereoBM.StereoBM/2, where GetParam() = (64, 11)
+[ PERFSTAT ]    (samples=10   mean=27.94   median=27.94   min=27.69   stddev=0.21 (0.8%))
+[       OK ] OCL_StereoBMFixture_StereoBM.StereoBM/2 (300 ms)
+[ RUN      ] OCL_StereoBMFixture_StereoBM.StereoBM/3, where GetParam() = (64, 21)
+[ PERFSTAT ]    (samples=14   mean=31.29   median=31.75   min=29.96   stddev=0.93 (3.0%))
+[       OK ] OCL_StereoBMFixture_StereoBM.StereoBM/3 (462 ms)
+[ RUN      ] OCL_StereoBMFixture_StereoBM.StereoBM/4, where GetParam() = (128, 11)
+[ PERFSTAT ]    (samples=10   mean=56.42   median=56.38   min=56.28   stddev=0.19 (0.3%))
+[       OK ] OCL_StereoBMFixture_StereoBM.StereoBM/4 (589 ms)
+[ RUN      ] OCL_StereoBMFixture_StereoBM.StereoBM/5, where GetParam() = (128, 21)
+[ PERFSTAT ]    (samples=10   mean=60.71   median=60.60   min=60.48   stddev=0.41 (0.7%))
+[       OK ] OCL_StereoBMFixture_StereoBM.StereoBM/5 (628 ms)
+[----------] 6 tests from OCL_StereoBMFixture_StereoBM (2319 ms total)
+
+[----------] 36 tests from EstimateAffine_EstimateAffine2D
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/0, where GetParam() = (100000, 0.99, RANSAC, 10)
+[ PERFSTAT ]    (samples=10   mean=58.17   median=57.55   min=56.88   stddev=1.53 (2.6%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/0 (584 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/1, where GetParam() = (100000, 0.99, RANSAC, 0)
+[ PERFSTAT ]    (samples=10   mean=24.66   median=24.59   min=23.91   stddev=0.60 (2.4%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/1 (248 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/2, where GetParam() = (100000, 0.99, LMEDS, 10)
+[ PERFSTAT ]    (samples=10   mean=56.62   median=56.60   min=55.81   stddev=0.51 (0.9%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/2 (567 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/3, where GetParam() = (100000, 0.99, LMEDS, 0)
+[ PERFSTAT ]    (samples=10   mean=27.81   median=27.79   min=27.33   stddev=0.40 (1.4%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/3 (279 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/4, where GetParam() = (100000, 0.95, RANSAC, 10)
+[ PERFSTAT ]    (samples=10   mean=49.42   median=49.27   min=48.69   stddev=0.58 (1.2%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/4 (496 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/5, where GetParam() = (100000, 0.95, RANSAC, 0)
+[ PERFSTAT ]    (samples=10   mean=16.06   median=16.12   min=15.52   stddev=0.43 (2.7%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/5 (161 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/6, where GetParam() = (100000, 0.95, LMEDS, 10)
+[ PERFSTAT ]    (samples=10   mean=92.57   median=92.12   min=91.04   stddev=1.35 (1.5%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/6 (927 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/7, where GetParam() = (100000, 0.95, LMEDS, 0)
+[ PERFSTAT ]    (samples=10   mean=18.72   median=18.57   min=18.34   stddev=0.37 (2.0%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/7 (188 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/8, where GetParam() = (100000, 0.9, RANSAC, 10)
+[ PERFSTAT ]    (samples=10   mean=45.87   median=45.61   min=45.28   stddev=0.69 (1.5%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/8 (460 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/9, where GetParam() = (100000, 0.9, RANSAC, 0)
+[ PERFSTAT ]    (samples=13   mean=12.28   median=12.16   min=12.10   stddev=0.29 (2.4%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/9 (162 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/10, where GetParam() = (100000, 0.9, LMEDS, 10)
+[ PERFSTAT ]    (samples=10   mean=111.24   median=110.90   min=110.47   stddev=0.84 (0.8%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/10 (1114 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/11, where GetParam() = (100000, 0.9, LMEDS, 0)
+[ PERFSTAT ]    (samples=10   mean=15.41   median=15.36   min=14.99   stddev=0.41 (2.6%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/11 (155 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/12, where GetParam() = (5000, 0.99, RANSAC, 10)
+[ PERFSTAT ]    (samples=56   mean=1.79   median=1.76   min=1.74   stddev=0.05 (3.0%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/12 (102 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/13, where GetParam() = (5000, 0.99, RANSAC, 0)
+[ PERFSTAT ]    (samples=13   mean=1.29   median=1.31   min=1.22   stddev=0.03 (2.6%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/13 (17 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/14, where GetParam() = (5000, 0.99, LMEDS, 10)
+[ PERFSTAT ]    (samples=22   mean=1.89   median=1.86   min=1.84   stddev=0.06 (3.0%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/14 (42 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/15, where GetParam() = (5000, 0.99, LMEDS, 0)
+[ PERFSTAT ]    (samples=13   mean=1.34   median=1.36   min=1.27   stddev=0.04 (3.0%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/15 (18 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/16, where GetParam() = (5000, 0.95, RANSAC, 10)
+[ PERFSTAT ]    (samples=22   mean=1.34   median=1.32   min=1.31   stddev=0.04 (3.0%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/16 (29 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/17, where GetParam() = (5000, 0.95, RANSAC, 0)
+[ PERFSTAT ]    (samples=10   mean=0.79   median=0.79   min=0.78   stddev=0.01 (1.0%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/17 (8 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/18, where GetParam() = (5000, 0.95, LMEDS, 10)
+[ PERFSTAT ]    (samples=27   mean=1.74   median=1.71   min=1.69   stddev=0.05 (3.0%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/18 (48 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/19, where GetParam() = (5000, 0.95, LMEDS, 0)
+[ PERFSTAT ]    (samples=10   mean=0.79   median=0.79   min=0.78   stddev=0.01 (0.7%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/19 (8 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/20, where GetParam() = (5000, 0.9, RANSAC, 10)
+[ PERFSTAT ]    (samples=10   mean=1.15   median=1.15   min=1.14   stddev=0.01 (0.5%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/20 (11 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/21, where GetParam() = (5000, 0.9, RANSAC, 0)
+[ PERFSTAT ]    (samples=69   mean=0.62   median=0.62   min=0.61   stddev=0.02 (3.0%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/21 (44 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/22, where GetParam() = (5000, 0.9, LMEDS, 10)
+[ PERFSTAT ]    (samples=10   mean=1.56   median=1.56   min=1.55   stddev=0.01 (0.4%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/22 (16 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/23, where GetParam() = (5000, 0.9, LMEDS, 0)
+[ PERFSTAT ]    (samples=10   mean=0.64   median=0.64   min=0.64   stddev=0.01 (0.8%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/23 (7 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/24, where GetParam() = (100, 0.99, RANSAC, 10)
+[ PERFSTAT ]    (samples=100   mean=0.09   median=0.09   min=0.09   stddev=0.00 (3.8%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/24 (9 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/25, where GetParam() = (100, 0.99, RANSAC, 0)
+[ PERFSTAT ]    (samples=10   mean=0.06   median=0.06   min=0.06   stddev=0.00 (1.7%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/25 (1 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/26, where GetParam() = (100, 0.99, LMEDS, 10)
+[ PERFSTAT ]    (samples=25   mean=0.06   median=0.05   min=0.05   stddev=0.00 (2.4%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/26 (1 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/27, where GetParam() = (100, 0.99, LMEDS, 0)
+[ PERFSTAT ]    (samples=19   mean=0.04   median=0.04   min=0.04   stddev=0.00 (3.0%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/27 (1 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/28, where GetParam() = (100, 0.95, RANSAC, 10)
+[ PERFSTAT ]    (samples=13   mean=0.07   median=0.07   min=0.07   stddev=0.00 (2.8%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/28 (1 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/29, where GetParam() = (100, 0.95, RANSAC, 0)
+[ PERFSTAT ]    (samples=10   mean=0.04   median=0.04   min=0.04   stddev=0.00 (2.5%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/29 (0 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/30, where GetParam() = (100, 0.95, LMEDS, 10)
+[ PERFSTAT ]    (samples=25   mean=0.05   median=0.05   min=0.04   stddev=0.00 (3.0%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/30 (1 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/31, where GetParam() = (100, 0.95, LMEDS, 0)
+[ PERFSTAT ]    (samples=17   mean=0.03   median=0.03   min=0.03   stddev=0.00 (2.9%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/31 (1 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/32, where GetParam() = (100, 0.9, RANSAC, 10)
+[ PERFSTAT ]    (samples=16   mean=0.06   median=0.06   min=0.06   stddev=0.00 (2.9%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/32 (1 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/33, where GetParam() = (100, 0.9, RANSAC, 0)
+[ PERFSTAT ]    (samples=12   mean=0.03   median=0.03   min=0.03   stddev=0.00 (3.0%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/33 (0 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/34, where GetParam() = (100, 0.9, LMEDS, 10)
+[ PERFSTAT ]    (samples=26   mean=0.06   median=0.06   min=0.06   stddev=0.00 (3.0%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/34 (2 ms)
+[ RUN      ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/35, where GetParam() = (100, 0.9, LMEDS, 0)
+[ PERFSTAT ]    (samples=13   mean=0.02   median=0.02   min=0.02   stddev=0.00 (1.5%))
+[       OK ] EstimateAffine_EstimateAffine2D.EstimateAffine2D/35 (0 ms)
+[----------] 36 tests from EstimateAffine_EstimateAffine2D (5709 ms total)
+
+[----------] 36 tests from EstimateAffine_EstimateAffinePartial2D
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/0, where GetParam() = (100000, 0.99, RANSAC, 10)
+[ PERFSTAT ]    (samples=10   mean=20.55   median=20.57   min=19.81   stddev=0.46 (2.3%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/0 (207 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/1, where GetParam() = (100000, 0.99, RANSAC, 0)
+[ PERFSTAT ]    (samples=13   mean=9.35   median=9.26   min=9.07   stddev=0.27 (2.9%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/1 (124 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/2, where GetParam() = (100000, 0.99, LMEDS, 10)
+[ PERFSTAT ]    (samples=10   mean=41.10   median=41.06   min=40.58   stddev=0.44 (1.1%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/2 (412 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/3, where GetParam() = (100000, 0.99, LMEDS, 0)
+[ PERFSTAT ]    (samples=31   mean=14.02   median=13.91   min=13.55   stddev=0.42 (3.0%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/3 (437 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/4, where GetParam() = (100000, 0.95, RANSAC, 10)
+[ PERFSTAT ]    (samples=10   mean=17.05   median=17.09   min=16.57   stddev=0.39 (2.3%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/4 (172 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/5, where GetParam() = (100000, 0.95, RANSAC, 0)
+[ PERFSTAT ]    (samples=100   mean=6.18   median=6.05   min=5.99   stddev=0.21 (3.4%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/5 (625 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/6, where GetParam() = (100000, 0.95, LMEDS, 10)
+[ PERFSTAT ]    (samples=10   mean=35.99   median=35.92   min=35.69   stddev=0.36 (1.0%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/6 (361 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/7, where GetParam() = (100000, 0.95, LMEDS, 0)
+[ PERFSTAT ]    (samples=10   mean=8.88   median=8.77   min=8.69   stddev=0.25 (2.8%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/7 (90 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/8, where GetParam() = (100000, 0.9, RANSAC, 10)
+[ PERFSTAT ]    (samples=10   mean=15.49   median=15.44   min=15.35   stddev=0.17 (1.1%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/8 (156 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/9, where GetParam() = (100000, 0.9, RANSAC, 0)
+[ PERFSTAT ]    (samples=12   mean=4.74   median=4.68   min=4.64   stddev=0.14 (2.9%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/9 (58 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/10, where GetParam() = (100000, 0.9, LMEDS, 10)
+[ PERFSTAT ]    (samples=10   mean=33.32   median=33.32   min=32.53   stddev=0.45 (1.4%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/10 (334 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/11, where GetParam() = (100000, 0.9, LMEDS, 0)
+[ PERFSTAT ]    (samples=13   mean=6.50   median=6.48   min=6.43   stddev=0.08 (1.2%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/11 (86 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/12, where GetParam() = (5000, 0.99, RANSAC, 10)
+[ PERFSTAT ]    (samples=10   mean=0.77   median=0.76   min=0.75   stddev=0.02 (3.0%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/12 (8 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/13, where GetParam() = (5000, 0.99, RANSAC, 0)
+[ PERFSTAT ]    (samples=10   mean=0.46   median=0.46   min=0.46   stddev=0.00 (0.5%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/13 (5 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/14, where GetParam() = (5000, 0.99, LMEDS, 10)
+[ PERFSTAT ]    (samples=43   mean=0.95   median=0.93   min=0.92   stddev=0.03 (3.0%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/14 (41 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/15, where GetParam() = (5000, 0.99, LMEDS, 0)
+[ PERFSTAT ]    (samples=10   mean=0.64   median=0.63   min=0.63   stddev=0.01 (1.9%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/15 (6 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/16, where GetParam() = (5000, 0.95, RANSAC, 10)
+[ PERFSTAT ]    (samples=10   mean=0.61   median=0.60   min=0.60   stddev=0.01 (2.3%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/16 (7 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/17, where GetParam() = (5000, 0.95, RANSAC, 0)
+[ PERFSTAT ]    (samples=10   mean=0.31   median=0.30   min=0.30   stddev=0.01 (2.9%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/17 (3 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/18, where GetParam() = (5000, 0.95, LMEDS, 10)
+[ PERFSTAT ]    (samples=50   mean=0.86   median=0.85   min=0.84   stddev=0.03 (3.0%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/18 (44 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/19, where GetParam() = (5000, 0.95, LMEDS, 0)
+[ PERFSTAT ]    (samples=10   mean=0.37   median=0.37   min=0.37   stddev=0.01 (2.2%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/19 (3 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/20, where GetParam() = (5000, 0.9, RANSAC, 10)
+[ PERFSTAT ]    (samples=10   mean=0.54   median=0.53   min=0.53   stddev=0.01 (2.5%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/20 (6 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/21, where GetParam() = (5000, 0.9, RANSAC, 0)
+[ PERFSTAT ]    (samples=13   mean=0.23   median=0.23   min=0.23   stddev=0.00 (0.3%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/21 (3 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/22, where GetParam() = (5000, 0.9, LMEDS, 10)
+[ PERFSTAT ]    (samples=10   mean=0.76   median=0.76   min=0.75   stddev=0.01 (1.9%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/22 (8 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/23, where GetParam() = (5000, 0.9, LMEDS, 0)
+[ PERFSTAT ]    (samples=10   mean=0.28   median=0.28   min=0.28   stddev=0.01 (2.5%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/23 (3 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/24, where GetParam() = (100, 0.99, RANSAC, 10)
+[ PERFSTAT ]    (samples=100   mean=0.05   median=0.04   min=0.04   stddev=0.01 (19.0%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/24 (5 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/25, where GetParam() = (100, 0.99, RANSAC, 0)
+[ PERFSTAT ]    (samples=13   mean=0.02   median=0.02   min=0.02   stddev=0.00 (0.6%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/25 (0 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/26, where GetParam() = (100, 0.99, LMEDS, 10)
+[ PERFSTAT ]    (samples=38   mean=0.03   median=0.03   min=0.03   stddev=0.00 (2.7%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/26 (1 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/27, where GetParam() = (100, 0.99, LMEDS, 0)
+[ PERFSTAT ]    (samples=13   mean=0.02   median=0.02   min=0.02   stddev=0.00 (2.4%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/27 (1 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/28, where GetParam() = (100, 0.95, RANSAC, 10)
+[ PERFSTAT ]    (samples=13   mean=0.04   median=0.04   min=0.04   stddev=0.00 (1.5%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/28 (0 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/29, where GetParam() = (100, 0.95, RANSAC, 0)
+[ PERFSTAT ]    (samples=13   mean=0.02   median=0.02   min=0.02   stddev=0.00 (0.6%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/29 (1 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/30, where GetParam() = (100, 0.95, LMEDS, 10)
+[ PERFSTAT ]    (samples=13   mean=0.03   median=0.03   min=0.03   stddev=0.00 (2.9%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/30 (0 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/31, where GetParam() = (100, 0.95, LMEDS, 0)
+[ PERFSTAT ]    (samples=13   mean=0.01   median=0.01   min=0.01   stddev=0.00 (2.1%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/31 (0 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/32, where GetParam() = (100, 0.9, RANSAC, 10)
+[ PERFSTAT ]    (samples=13   mean=0.03   median=0.03   min=0.03   stddev=0.00 (1.2%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/32 (1 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/33, where GetParam() = (100, 0.9, RANSAC, 0)
+[ PERFSTAT ]    (samples=25   mean=0.01   median=0.01   min=0.01   stddev=0.00 (0.6%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/33 (0 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/34, where GetParam() = (100, 0.9, LMEDS, 10)
+[ PERFSTAT ]    (samples=13   mean=0.03   median=0.03   min=0.03   stddev=0.00 (2.1%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/34 (1 ms)
+[ RUN      ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/35, where GetParam() = (100, 0.9, LMEDS, 0)
+[ PERFSTAT ]    (samples=13   mean=0.01   median=0.01   min=0.01   stddev=0.00 (2.0%))
+[       OK ] EstimateAffine_EstimateAffinePartial2D.EstimateAffinePartial2D/35 (0 ms)
+[----------] 36 tests from EstimateAffine_EstimateAffinePartial2D (3210 ms total)
+
+[----------] 9 tests from String_Size_asymm_circles_grid
+[ RUN      ] String_Size_asymm_circles_grid.asymm_circles_grid/0, where GetParam() = ("cv/cameracalibration/asymmetric_circles/acircles1.png", 7x13)
+[ PERFSTAT ]    (samples=10   mean=17.91   median=17.83   min=17.49   stddev=0.38 (2.1%))
+[       OK ] String_Size_asymm_circles_grid.asymm_circles_grid/0 (183 ms)
+[ RUN      ] String_Size_asymm_circles_grid.asymm_circles_grid/1, where GetParam() = ("cv/cameracalibration/asymmetric_circles/acircles2.png", 7x13)
+[ PERFSTAT ]    (samples=10   mean=22.70   median=22.57   min=22.50   stddev=0.23 (1.0%))
+[       OK ] String_Size_asymm_circles_grid.asymm_circles_grid/1 (231 ms)
+[ RUN      ] String_Size_asymm_circles_grid.asymm_circles_grid/2, where GetParam() = ("cv/cameracalibration/asymmetric_circles/acircles3.png", 7x13)
+[ PERFSTAT ]    (samples=10   mean=23.22   median=23.17   min=22.84   stddev=0.36 (1.6%))
+[       OK ] String_Size_asymm_circles_grid.asymm_circles_grid/2 (236 ms)
+[ RUN      ] String_Size_asymm_circles_grid.asymm_circles_grid/3, where GetParam() = ("cv/cameracalibration/asymmetric_circles/acircles4.png", 5x5)
+[ PERFSTAT ]    (samples=10   mean=11.76   median=11.71   min=11.66   stddev=0.14 (1.2%))
+[       OK ] String_Size_asymm_circles_grid.asymm_circles_grid/3 (122 ms)
+[ RUN      ] String_Size_asymm_circles_grid.asymm_circles_grid/4, where GetParam() = ("cv/cameracalibration/asymmetric_circles/acircles5.png", 5x5)
+[ PERFSTAT ]    (samples=10   mean=11.43   median=11.35   min=11.29   stddev=0.18 (1.6%))
+[       OK ] String_Size_asymm_circles_grid.asymm_circles_grid/4 (118 ms)
+[ RUN      ] String_Size_asymm_circles_grid.asymm_circles_grid/5, where GetParam() = ("cv/cameracalibration/asymmetric_circles/acircles6.png", 5x5)
+[ PERFSTAT ]    (samples=10   mean=12.54   median=12.46   min=12.32   stddev=0.31 (2.5%))
+[       OK ] String_Size_asymm_circles_grid.asymm_circles_grid/5 (129 ms)
+[ RUN      ] String_Size_asymm_circles_grid.asymm_circles_grid/6, where GetParam() = ("cv/cameracalibration/asymmetric_circles/acircles7.png", 3x9)
+[ PERFSTAT ]    (samples=10   mean=14.32   median=14.22   min=14.16   stddev=0.21 (1.5%))
+[       OK ] String_Size_asymm_circles_grid.asymm_circles_grid/6 (147 ms)
+[ RUN      ] String_Size_asymm_circles_grid.asymm_circles_grid/7, where GetParam() = ("cv/cameracalibration/asymmetric_circles/acircles8.png", 3x9)
+[ PERFSTAT ]    (samples=10   mean=12.90   median=12.86   min=12.82   stddev=0.10 (0.8%))
+[       OK ] String_Size_asymm_circles_grid.asymm_circles_grid/7 (132 ms)
+[ RUN      ] String_Size_asymm_circles_grid.asymm_circles_grid/8, where GetParam() = ("cv/cameracalibration/asymmetric_circles/acircles9.png", 3x9)
+[ PERFSTAT ]    (samples=10   mean=11.47   median=11.47   min=11.37   stddev=0.08 (0.7%))
+[       OK ] String_Size_asymm_circles_grid.asymm_circles_grid/8 (119 ms)
+[----------] 9 tests from String_Size_asymm_circles_grid (1417 ms total)
+
+[----------] 12 tests from PointsNum_Algo_solvePnP
+[ RUN      ] PointsNum_Algo_solvePnP.solvePnP/0, where GetParam() = (6, SOLVEPNP_ITERATIVE)
+[ PERFSTAT ]    (samples=16   mean=0.09   median=0.09   min=0.09   stddev=0.00 (3.0%))
+[       OK ] PointsNum_Algo_solvePnP.solvePnP/0 (2 ms)
+[ RUN      ] PointsNum_Algo_solvePnP.solvePnP/1, where GetParam() = (6, SOLVEPNP_EPNP)
+[ PERFSTAT ]    (samples=20   mean=0.06   median=0.06   min=0.06   stddev=0.00 (3.0%))
+[       OK ] PointsNum_Algo_solvePnP.solvePnP/1 (1 ms)
+[ RUN      ] PointsNum_Algo_solvePnP.solvePnP/2, where GetParam() = (6, SOLVEPNP_UPNP)
+[ PERFSTAT ]    (samples=14   mean=0.06   median=0.06   min=0.06   stddev=0.00 (2.9%))
+[       OK ] PointsNum_Algo_solvePnP.solvePnP/2 (1 ms)
+[ RUN      ] PointsNum_Algo_solvePnP.solvePnP/3, where GetParam() = (6, SOLVEPNP_DLS)
+[ PERFSTAT ]    (samples=18   mean=0.06   median=0.06   min=0.06   stddev=0.00 (3.0%))
+[       OK ] PointsNum_Algo_solvePnP.solvePnP/3 (1 ms)
+[ RUN      ] PointsNum_Algo_solvePnP.solvePnP/4, where GetParam() = (27, SOLVEPNP_ITERATIVE)
+[ PERFSTAT ]    (samples=100   mean=0.12   median=0.12   min=0.11   stddev=0.00 (3.0%))
+[       OK ] PointsNum_Algo_solvePnP.solvePnP/4 (12 ms)
+[ RUN      ] PointsNum_Algo_solvePnP.solvePnP/5, where GetParam() = (27, SOLVEPNP_EPNP)
+[ PERFSTAT ]    (samples=13   mean=0.07   median=0.07   min=0.07   stddev=0.00 (2.5%))
+[       OK ] PointsNum_Algo_solvePnP.solvePnP/5 (1 ms)
+[ RUN      ] PointsNum_Algo_solvePnP.solvePnP/6, where GetParam() = (27, SOLVEPNP_UPNP)
+[ PERFSTAT ]    (samples=12   mean=0.07   median=0.07   min=0.07   stddev=0.00 (2.9%))
+[       OK ] PointsNum_Algo_solvePnP.solvePnP/6 (1 ms)
+[ RUN      ] PointsNum_Algo_solvePnP.solvePnP/7, where GetParam() = (27, SOLVEPNP_DLS)
+[ PERFSTAT ]    (samples=34   mean=0.07   median=0.07   min=0.07   stddev=0.00 (3.0%))
+[       OK ] PointsNum_Algo_solvePnP.solvePnP/7 (3 ms)
+[ RUN      ] PointsNum_Algo_solvePnP.solvePnP/8, where GetParam() = (91, SOLVEPNP_ITERATIVE)
+[ PERFSTAT ]    (samples=100   mean=0.37   median=0.36   min=0.36   stddev=0.01 (3.0%))
+[       OK ] PointsNum_Algo_solvePnP.solvePnP/8 (38 ms)
+[ RUN      ] PointsNum_Algo_solvePnP.solvePnP/9, where GetParam() = (91, SOLVEPNP_EPNP)
+[ PERFSTAT ]    (samples=13   mean=0.08   median=0.08   min=0.08   stddev=0.00 (2.4%))
+[       OK ] PointsNum_Algo_solvePnP.solvePnP/9 (1 ms)
+[ RUN      ] PointsNum_Algo_solvePnP.solvePnP/10, where GetParam() = (91, SOLVEPNP_UPNP)
+[ PERFSTAT ]    (samples=10   mean=0.08   median=0.08   min=0.08   stddev=0.00 (2.9%))
+[       OK ] PointsNum_Algo_solvePnP.solvePnP/10 (1 ms)
+[ RUN      ] PointsNum_Algo_solvePnP.solvePnP/11, where GetParam() = (91, SOLVEPNP_DLS)
+[ PERFSTAT ]    (samples=10   mean=0.08   median=0.08   min=0.08   stddev=0.00 (3.0%))
+[       OK ] PointsNum_Algo_solvePnP.solvePnP/11 (1 ms)
+[----------] 12 tests from PointsNum_Algo_solvePnP (63 ms total)
+
+[----------] 4 tests from PointsNum_Algo_solvePnPSmallPoints
+[ RUN      ] PointsNum_Algo_solvePnPSmallPoints.solvePnPSmallPoints/0, where GetParam() = (5, SOLVEPNP_P3P)
+[ PERFSTAT ]    (samples=50   mean=0.02   median=0.02   min=0.02   stddev=0.00 (2.4%))
+[       OK ] PointsNum_Algo_solvePnPSmallPoints.solvePnPSmallPoints/0 (1 ms)
+[ RUN      ] PointsNum_Algo_solvePnPSmallPoints.solvePnPSmallPoints/1, where GetParam() = (5, SOLVEPNP_EPNP)
+[ PERFSTAT ]    (samples=25   mean=0.06   median=0.06   min=0.06   stddev=0.00 (1.5%))
+[       OK ] PointsNum_Algo_solvePnPSmallPoints.solvePnPSmallPoints/1 (2 ms)
+[ RUN      ] PointsNum_Algo_solvePnPSmallPoints.solvePnPSmallPoints/2, where GetParam() = (5, SOLVEPNP_DLS)
+[ PERFSTAT ]    (samples=12   mean=0.06   median=0.06   min=0.06   stddev=0.00 (2.9%))
+[       OK ] PointsNum_Algo_solvePnPSmallPoints.solvePnPSmallPoints/2 (1 ms)
+[ RUN      ] PointsNum_Algo_solvePnPSmallPoints.solvePnPSmallPoints/3, where GetParam() = (5, SOLVEPNP_UPNP)
+[ PERFSTAT ]    (samples=11   mean=0.06   median=0.06   min=0.06   stddev=0.00 (2.9%))
+[       OK ] PointsNum_Algo_solvePnPSmallPoints.solvePnPSmallPoints/3 (0 ms)
+[----------] 4 tests from PointsNum_Algo_solvePnPSmallPoints (4 ms total)
+
+[----------] 12 tests from TestStereoCorrespSGBM_SGBM
+[ RUN      ] TestStereoCorrespSGBM_SGBM.SGBM/0, where GetParam() = (1280x720, 256, StereoSGBM::MODE_SGBM)
+.
+[ PERFSTAT ]    (samples=10   mean=1153.75   median=1166.32   min=1079.99   stddev=28.48 (2.5%))
+[       OK ] TestStereoCorrespSGBM_SGBM.SGBM/0 (11606 ms)
+[ RUN      ] TestStereoCorrespSGBM_SGBM.SGBM/1, where GetParam() = (1280x720, 256, StereoSGBM::MODE_SGBM_3WAY)
+[ PERFSTAT ]    (samples=10   mean=659.48   median=659.81   min=653.42   stddev=3.60 (0.5%))
+[       OK ] TestStereoCorrespSGBM_SGBM.SGBM/1 (6662 ms)
+[ RUN      ] TestStereoCorrespSGBM_SGBM.SGBM/2, where GetParam() = (1280x720, 256, StereoSGBM::MODE_HH4)
+[ PERFSTAT ]    (samples=10   mean=861.83   median=861.77   min=858.05   stddev=3.13 (0.4%))
+[       OK ] TestStereoCorrespSGBM_SGBM.SGBM/2 (8686 ms)
+[ RUN      ] TestStereoCorrespSGBM_SGBM.SGBM/3, where GetParam() = (1280x720, 128, StereoSGBM::MODE_SGBM)
+[ PERFSTAT ]    (samples=10   mean=595.40   median=594.96   min=591.41   stddev=3.32 (0.6%))
+[       OK ] TestStereoCorrespSGBM_SGBM.SGBM/3 (6021 ms)
+[ RUN      ] TestStereoCorrespSGBM_SGBM.SGBM/4, where GetParam() = (1280x720, 128, StereoSGBM::MODE_SGBM_3WAY)
+[ PERFSTAT ]    (samples=10   mean=321.80   median=321.09   min=316.94   stddev=3.59 (1.1%))
+[       OK ] TestStereoCorrespSGBM_SGBM.SGBM/4 (3287 ms)
+[ RUN      ] TestStereoCorrespSGBM_SGBM.SGBM/5, where GetParam() = (1280x720, 128, StereoSGBM::MODE_HH4)
+[ PERFSTAT ]    (samples=10   mean=469.85   median=469.17   min=464.84   stddev=3.78 (0.8%))
+[       OK ] TestStereoCorrespSGBM_SGBM.SGBM/5 (4765 ms)
+[ RUN      ] TestStereoCorrespSGBM_SGBM.SGBM/6, where GetParam() = (640x480, 256, StereoSGBM::MODE_SGBM)
+[ PERFSTAT ]    (samples=10   mean=221.17   median=221.15   min=219.55   stddev=0.93 (0.4%))
+[       OK ] TestStereoCorrespSGBM_SGBM.SGBM/6 (2235 ms)
+[ RUN      ] TestStereoCorrespSGBM_SGBM.SGBM/7, where GetParam() = (640x480, 256, StereoSGBM::MODE_SGBM_3WAY)
+[ PERFSTAT ]    (samples=10   mean=105.28   median=104.33   min=102.51   stddev=2.74 (2.6%))
+[       OK ] TestStereoCorrespSGBM_SGBM.SGBM/7 (1076 ms)
+[ RUN      ] TestStereoCorrespSGBM_SGBM.SGBM/8, where GetParam() = (640x480, 256, StereoSGBM::MODE_HH4)
+[ PERFSTAT ]    (samples=10   mean=204.98   median=204.69   min=203.19   stddev=1.80 (0.9%))
+[       OK ] TestStereoCorrespSGBM_SGBM.SGBM/8 (2072 ms)
+[ RUN      ] TestStereoCorrespSGBM_SGBM.SGBM/9, where GetParam() = (640x480, 128, StereoSGBM::MODE_SGBM)
+[ PERFSTAT ]    (samples=10   mean=154.63   median=154.23   min=153.07   stddev=1.36 (0.9%))
+[       OK ] TestStereoCorrespSGBM_SGBM.SGBM/9 (1569 ms)
+[ RUN      ] TestStereoCorrespSGBM_SGBM.SGBM/10, where GetParam() = (640x480, 128, StereoSGBM::MODE_SGBM_3WAY)
+[ PERFSTAT ]    (samples=13   mean=66.89   median=66.58   min=66.06   stddev=0.96 (1.4%))
+[       OK ] TestStereoCorrespSGBM_SGBM.SGBM/10 (902 ms)
+[ RUN      ] TestStereoCorrespSGBM_SGBM.SGBM/11, where GetParam() = (640x480, 128, StereoSGBM::MODE_HH4)
+[ PERFSTAT ]    (samples=10   mean=141.18   median=140.54   min=139.45   stddev=2.71 (1.9%))
+[       OK ] TestStereoCorrespSGBM_SGBM.SGBM/11 (1434 ms)
+[----------] 12 tests from TestStereoCorrespSGBM_SGBM (50316 ms total)
+
+[----------] 4 tests from TestStereoCorrespBM_BM
+[ RUN      ] TestStereoCorrespBM_BM.BM/0, where GetParam() = (1280x720, 256)
+[ PERFSTAT ]    (samples=10   mean=66.78   median=66.69   min=64.93   stddev=1.54 (2.3%))
+[       OK ] TestStereoCorrespBM_BM.BM/0 (691 ms)
+[ RUN      ] TestStereoCorrespBM_BM.BM/1, where GetParam() = (1280x720, 128)
+[ PERFSTAT ]    (samples=13   mean=39.67   median=39.61   min=39.46   stddev=0.19 (0.5%))
+[       OK ] TestStereoCorrespBM_BM.BM/1 (545 ms)
+[ RUN      ] TestStereoCorrespBM_BM.BM/2, where GetParam() = (640x480, 256)
+[ PERFSTAT ]    (samples=21   mean=20.42   median=20.51   min=18.72   stddev=0.61 (3.0%))
+[       OK ] TestStereoCorrespBM_BM.BM/2 (438 ms)
+[ RUN      ] TestStereoCorrespBM_BM.BM/3, where GetParam() = (640x480, 128)
+[ PERFSTAT ]    (samples=10   mean=15.31   median=15.28   min=15.22   stddev=0.09 (0.6%))
+[       OK ] TestStereoCorrespBM_BM.BM/3 (160 ms)
+[----------] 4 tests from TestStereoCorrespBM_BM (1834 ms total)
+
+[----------] Global test environment tear-down
+[==========] 120 tests from 9 test cases ran. (64884 ms total)
+[  PASSED  ] 120 tests.
+
+  YOU HAVE 3 DISABLED TESTS
+

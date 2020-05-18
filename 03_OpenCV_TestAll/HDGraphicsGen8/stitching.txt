@@ -1,0 +1,524 @@
+Time compensation is 0
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.3.0-openvino
+WARNING: build value differs from runtime: 4.3.0-dev
+OpenCV VCS version: 4d34934d25765ab06d8f7cb1ae0af78281b2784a
+Build type: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: tbb (nthreads=4)
+CPU features: SSE SSE2 SSE3 SSSE3 SSE4.1 POPCNT SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2020.0.0 Gold (-) Oct 19 2019
+OpenCL Platforms: 
+    Intel(R) OpenCL HD Graphics
+        iGPU: Intel(R) Gen8 HD Graphics NEO (OpenCL 2.1 NEO )
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) Gen8 HD Graphics NEO
+    Version = OpenCL 2.1 NEO 
+    Driver version = 20.17.16650
+    Address bits = 64
+    Compute units = 24
+    Max work group size = 256
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 1016 MB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_byte_addressable_store
+        cl_khr_fp16
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_icd
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_intel_subgroups
+        cl_intel_required_subgroup_size
+        cl_intel_subgroups_short
+        cl_khr_spir
+        cl_intel_accelerator
+        cl_intel_driver_diagnostics
+        cl_khr_priority_hints
+        cl_khr_throttle_hints
+        cl_khr_create_command_queue
+        cl_intel_subgroups_char
+        cl_intel_subgroups_long
+        cl_khr_fp64
+        cl_khr_subgroups
+        cl_khr_il_program
+        cl_intel_spirv_media_block_io
+        cl_intel_spirv_subgroups
+        cl_khr_spirv_no_integer_wrap_decoration
+        cl_intel_unified_shared_memory_preview
+        cl_khr_mipmap_image
+        cl_khr_mipmap_image_writes
+        cl_intel_planar_yuv
+        cl_intel_packed_yuv
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_intel_media_block_io
+        cl_khr_3d_image_writes
+        cl_intel_va_api_media_sharing
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 110 tests from 17 test cases.
+[----------] Global test environment set-up.
+[----------] 3 tests from OCL_stitch_a123
+[ RUN      ] OCL_stitch_a123.a123/0, where GetParam() = "surf"
+.
+.
+[ PERFSTAT ]    (samples=20   mean=926.67   median=797.07   min=739.01   stddev=307.46 (33.2%))
+[       OK ] OCL_stitch_a123.a123/0 (31268 ms)
+[ RUN      ] OCL_stitch_a123.a123/1, where GetParam() = "orb"
+[ PERFSTAT ]    (samples=13   mean=604.14   median=603.63   min=600.48   stddev=2.42 (0.4%))
+[       OK ] OCL_stitch_a123.a123/1 (9383 ms)
+[ RUN      ] OCL_stitch_a123.a123/2, where GetParam() = "akaze"
+.
+[ PERFSTAT ]    (samples=13   mean=1067.64   median=1065.39   min=1037.83   stddev=18.84 (1.8%))
+[       OK ] OCL_stitch_a123.a123/2 (18067 ms)
+[----------] 3 tests from OCL_stitch_a123 (58718 ms total)
+
+[----------] 3 tests from OCL_stitch_b12
+[ RUN      ] OCL_stitch_b12.b12/0, where GetParam() = "surf"
+[ PERFSTAT ]    (samples=13   mean=278.57   median=274.98   min=268.84   stddev=7.08 (2.5%))
+[       OK ] OCL_stitch_b12.b12/0 (4509 ms)
+[ RUN      ] OCL_stitch_b12.b12/1, where GetParam() = "orb"
+[ PERFSTAT ]    (samples=10   mean=180.67   median=180.57   min=177.84   stddev=2.20 (1.2%))
+[       OK ] OCL_stitch_b12.b12/1 (1965 ms)
+[ RUN      ] OCL_stitch_b12.b12/2, where GetParam() = "akaze"
+.
+[ PERFSTAT ]    (samples=20   mean=573.09   median=567.29   min=556.12   stddev=18.67 (3.3%))
+[       OK ] OCL_stitch_b12.b12/2 (11794 ms)
+[----------] 3 tests from OCL_stitch_b12 (18268 ms total)
+
+[----------] 3 tests from OCL_stitch_boat
+[ RUN      ] OCL_stitch_boat.boat/0, where GetParam() = "surf"
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=13   mean=4221.88   median=4227.63   min=4109.35   stddev=65.59 (1.6%))
+[       OK ] OCL_stitch_boat.boat/0 (56267 ms)
+[ RUN      ] OCL_stitch_boat.boat/1, where GetParam() = "orb"
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=20   mean=3510.74   median=3374.02   min=3300.02   stddev=205.20 (5.8%))
+[       OK ] OCL_stitch_boat.boat/1 (71257 ms)
+[ RUN      ] OCL_stitch_boat.boat/2, where GetParam() = "akaze"
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=10   mean=5038.05   median=5028.33   min=4929.43   stddev=65.27 (1.3%))
+[       OK ] OCL_stitch_boat.boat/2 (51169 ms)
+[----------] 3 tests from OCL_stitch_boat (178693 ms total)
+
+[----------] 16 tests from OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/0, where GetParam() = (640x480, SphericalWarperType)
+[ PERFSTAT ]    (samples=100   mean=0.74   median=0.72   min=0.64   stddev=0.15 (19.8%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/0 (157 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/1, where GetParam() = (640x480, CylindricalWarperType)
+[ PERFSTAT ]    (samples=100   mean=0.69   median=0.66   min=0.58   stddev=0.07 (10.6%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/1 (71 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/2, where GetParam() = (640x480, PlaneWarperType)
+[ PERFSTAT ]    (samples=25   mean=0.65   median=0.65   min=0.64   stddev=0.01 (2.1%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/2 (16 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/3, where GetParam() = (640x480, AffineWarperType)
+[ PERFSTAT ]    (samples=10   mean=0.65   median=0.65   min=0.64   stddev=0.02 (2.5%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/3 (6 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/4, where GetParam() = (1280x720, SphericalWarperType)
+[ PERFSTAT ]    (samples=10   mean=2.58   median=2.56   min=2.52   stddev=0.08 (2.9%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/4 (26 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/5, where GetParam() = (1280x720, CylindricalWarperType)
+[ PERFSTAT ]    (samples=18   mean=2.55   median=2.54   min=2.45   stddev=0.07 (2.9%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/5 (55 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/6, where GetParam() = (1280x720, PlaneWarperType)
+[ PERFSTAT ]    (samples=13   mean=2.70   median=2.67   min=2.64   stddev=0.06 (2.2%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/6 (36 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/7, where GetParam() = (1280x720, AffineWarperType)
+[ PERFSTAT ]    (samples=10   mean=2.71   median=2.72   min=2.60   stddev=0.05 (1.8%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/7 (27 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/8, where GetParam() = (1920x1080, SphericalWarperType)
+[ PERFSTAT ]    (samples=100   mean=7.44   median=5.66   min=5.38   stddev=2.14 (28.7%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/8 (768 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/9, where GetParam() = (1920x1080, CylindricalWarperType)
+[ PERFSTAT ]    (samples=13   mean=5.51   median=5.52   min=5.35   stddev=0.11 (1.9%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/9 (72 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/10, where GetParam() = (1920x1080, PlaneWarperType)
+[ PERFSTAT ]    (samples=10   mean=5.93   median=5.91   min=5.72   stddev=0.16 (2.7%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/10 (67 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/11, where GetParam() = (1920x1080, AffineWarperType)
+[ PERFSTAT ]    (samples=10   mean=5.89   median=5.92   min=5.75   stddev=0.07 (1.2%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/11 (59 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/12, where GetParam() = (3840x2160, SphericalWarperType)
+[ PERFSTAT ]    (samples=100   mean=28.55   median=33.47   min=20.53   stddev=6.67 (23.4%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/12 (2929 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/13, where GetParam() = (3840x2160, CylindricalWarperType)
+[ PERFSTAT ]    (samples=13   mean=21.58   median=21.53   min=21.43   stddev=0.13 (0.6%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/13 (311 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/14, where GetParam() = (3840x2160, PlaneWarperType)
+[ PERFSTAT ]    (samples=13   mean=22.98   median=22.94   min=22.57   stddev=0.23 (1.0%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/14 (328 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/15, where GetParam() = (3840x2160, AffineWarperType)
+[ PERFSTAT ]    (samples=13   mean=23.04   median=22.96   min=22.77   stddev=0.28 (1.2%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps.StitchingWarpers_BuildMaps/15 (328 ms)
+[----------] 16 tests from OCL_StitchingWarpersFixture_StitchingWarpers_BuildMaps (5257 ms total)
+
+[----------] 16 tests from OCL_StitchingWarpersFixture_StitchingWarpers_Warp
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/0, where GetParam() = (640x480, SphericalWarperType)
+[ PERFSTAT ]    (samples=38   mean=1.23   median=1.23   min=1.19   stddev=0.03 (2.5%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/0 (637 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/1, where GetParam() = (640x480, CylindricalWarperType)
+[ PERFSTAT ]    (samples=63   mean=1.17   median=1.18   min=1.09   stddev=0.03 (2.8%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/1 (75 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/2, where GetParam() = (640x480, PlaneWarperType)
+[ PERFSTAT ]    (samples=13   mean=1.15   median=1.14   min=1.12   stddev=0.03 (2.5%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/2 (16 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/3, where GetParam() = (640x480, AffineWarperType)
+[ PERFSTAT ]    (samples=88   mean=1.19   median=1.19   min=1.12   stddev=0.03 (2.9%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/3 (107 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/4, where GetParam() = (1280x720, SphericalWarperType)
+[ PERFSTAT ]    (samples=10   mean=4.23   median=4.19   min=4.13   stddev=0.11 (2.7%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/4 (43 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/5, where GetParam() = (1280x720, CylindricalWarperType)
+[ PERFSTAT ]    (samples=10   mean=4.28   median=4.29   min=4.16   stddev=0.08 (1.8%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/5 (44 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/6, where GetParam() = (1280x720, PlaneWarperType)
+[ PERFSTAT ]    (samples=25   mean=4.54   median=4.54   min=4.41   stddev=0.09 (1.9%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/6 (116 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/7, where GetParam() = (1280x720, AffineWarperType)
+[ PERFSTAT ]    (samples=10   mean=4.56   median=4.54   min=4.45   stddev=0.08 (1.7%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/7 (47 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/8, where GetParam() = (1920x1080, SphericalWarperType)
+[ PERFSTAT ]    (samples=100   mean=10.42   median=9.31   min=8.74   stddev=2.00 (19.2%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/8 (1070 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/9, where GetParam() = (1920x1080, CylindricalWarperType)
+[ PERFSTAT ]    (samples=10   mean=9.35   median=9.32   min=9.21   stddev=0.14 (1.5%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/9 (94 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/10, where GetParam() = (1920x1080, PlaneWarperType)
+[ PERFSTAT ]    (samples=13   mean=9.89   median=9.82   min=9.63   stddev=0.22 (2.3%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/10 (134 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/11, where GetParam() = (1920x1080, AffineWarperType)
+[ PERFSTAT ]    (samples=13   mean=9.77   median=9.68   min=9.55   stddev=0.20 (2.1%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/11 (132 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/12, where GetParam() = (3840x2160, SphericalWarperType)
+[ PERFSTAT ]    (samples=100   mean=61.49   median=60.00   min=57.34   stddev=4.80 (7.8%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/12 (6318 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/13, where GetParam() = (3840x2160, CylindricalWarperType)
+[ PERFSTAT ]    (samples=10   mean=63.05   median=63.24   min=61.05   stddev=1.24 (2.0%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/13 (635 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/14, where GetParam() = (3840x2160, PlaneWarperType)
+[ PERFSTAT ]    (samples=10   mean=67.94   median=68.03   min=65.13   stddev=1.82 (2.7%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/14 (685 ms)
+[ RUN      ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/15, where GetParam() = (3840x2160, AffineWarperType)
+[ PERFSTAT ]    (samples=11   mean=67.04   median=67.76   min=62.65   stddev=1.95 (2.9%))
+[       OK ] OCL_StitchingWarpersFixture_StitchingWarpers_Warp.StitchingWarpers_Warp/15 (741 ms)
+[----------] 16 tests from OCL_StitchingWarpersFixture_StitchingWarpers_Warp (10894 ms total)
+
+[----------] 4 tests from bundleAdjuster_affine
+[ RUN      ] bundleAdjuster_affine.affine/0, where GetParam() = ("surf", "affinePartial")
+[ PERFSTAT ]    (samples=13   mean=8.54   median=8.45   min=8.38   stddev=0.19 (2.2%))
+[       OK ] bundleAdjuster_affine.affine/0 (822 ms)
+[ RUN      ] bundleAdjuster_affine.affine/1, where GetParam() = ("surf", "affine")
+[ PERFSTAT ]    (samples=17   mean=3.58   median=3.52   min=3.50   stddev=0.11 (3.0%))
+[       OK ] bundleAdjuster_affine.affine/1 (763 ms)
+[ RUN      ] bundleAdjuster_affine.affine/2, where GetParam() = ("orb", "affinePartial")
+[ PERFSTAT ]    (samples=100   mean=0.47   median=0.48   min=0.45   stddev=0.02 (4.1%))
+[       OK ] bundleAdjuster_affine.affine/2 (217 ms)
+[ RUN      ] bundleAdjuster_affine.affine/3, where GetParam() = ("orb", "affine")
+[ PERFSTAT ]    (samples=13   mean=1.14   median=1.13   min=1.12   stddev=0.02 (1.8%))
+[       OK ] bundleAdjuster_affine.affine/3 (179 ms)
+[----------] 4 tests from bundleAdjuster_affine (1981 ms total)
+
+[----------] 3 tests from FeaturesFinderVec_ParallelFeaturesFinder
+[ RUN      ] FeaturesFinderVec_ParallelFeaturesFinder.ParallelFeaturesFinder/0, where GetParam() = 1
+[ PERFSTAT ]    (samples=10   mean=21.08   median=20.91   min=20.70   stddev=0.44 (2.1%))
+[       OK ] FeaturesFinderVec_ParallelFeaturesFinder.ParallelFeaturesFinder/0 (216 ms)
+[ RUN      ] FeaturesFinderVec_ParallelFeaturesFinder.ParallelFeaturesFinder/1, where GetParam() = 5
+[ PERFSTAT ]    (samples=10   mean=105.72   median=105.70   min=103.98   stddev=0.99 (0.9%))
+[       OK ] FeaturesFinderVec_ParallelFeaturesFinder.ParallelFeaturesFinder/1 (1064 ms)
+[ RUN      ] FeaturesFinderVec_ParallelFeaturesFinder.ParallelFeaturesFinder/2, where GetParam() = 20
+[ PERFSTAT ]    (samples=10   mean=420.06   median=420.47   min=414.69   stddev=3.01 (0.7%))
+[       OK ] FeaturesFinderVec_ParallelFeaturesFinder.ParallelFeaturesFinder/2 (4207 ms)
+[----------] 3 tests from FeaturesFinderVec_ParallelFeaturesFinder (5487 ms total)
+
+[----------] 3 tests from FeaturesFinderVec_SerialFeaturesFinder
+[ RUN      ] FeaturesFinderVec_SerialFeaturesFinder.SerialFeaturesFinder/0, where GetParam() = 1
+[ PERFSTAT ]    (samples=10   mean=19.50   median=19.24   min=18.94   stddev=0.58 (3.0%))
+[       OK ] FeaturesFinderVec_SerialFeaturesFinder.SerialFeaturesFinder/0 (201 ms)
+[ RUN      ] FeaturesFinderVec_SerialFeaturesFinder.SerialFeaturesFinder/1, where GetParam() = 5
+[ PERFSTAT ]    (samples=10   mean=97.36   median=97.27   min=96.14   stddev=0.83 (0.9%))
+[       OK ] FeaturesFinderVec_SerialFeaturesFinder.SerialFeaturesFinder/1 (980 ms)
+[ RUN      ] FeaturesFinderVec_SerialFeaturesFinder.SerialFeaturesFinder/2, where GetParam() = 20
+[ PERFSTAT ]    (samples=10   mean=391.09   median=391.14   min=384.24   stddev=3.20 (0.8%))
+[       OK ] FeaturesFinderVec_SerialFeaturesFinder.SerialFeaturesFinder/2 (3918 ms)
+[----------] 3 tests from FeaturesFinderVec_SerialFeaturesFinder (5099 ms total)
+
+[----------] 2 tests from match_bestOf2Nearest
+[ RUN      ] match_bestOf2Nearest.bestOf2Nearest/0, where GetParam() = "surf"
+[ PERFSTAT ]    (samples=10   mean=90.27   median=90.42   min=88.11   stddev=1.26 (1.4%))
+[       OK ] match_bestOf2Nearest.bestOf2Nearest/0 (1575 ms)
+[ RUN      ] match_bestOf2Nearest.bestOf2Nearest/1, where GetParam() = "orb"
+[ PERFSTAT ]    (samples=100   mean=12.95   median=12.77   min=12.57   stddev=0.40 (3.1%))
+[       OK ] match_bestOf2Nearest.bestOf2Nearest/1 (1567 ms)
+[----------] 2 tests from match_bestOf2Nearest (3142 ms total)
+
+[----------] 6 tests from matchVector_bestOf2NearestVectorFeatures
+[ RUN      ] matchVector_bestOf2NearestVectorFeatures.bestOf2NearestVectorFeatures/0, where GetParam() = ("surf", 2)
+[ PERFSTAT ]    (samples=10   mean=89.88   median=90.09   min=87.60   stddev=1.34 (1.5%))
+[       OK ] matchVector_bestOf2NearestVectorFeatures.bestOf2NearestVectorFeatures/0 (1538 ms)
+[ RUN      ] matchVector_bestOf2NearestVectorFeatures.bestOf2NearestVectorFeatures/1, where GetParam() = ("surf", 4)
+.
+.
+[ PERFSTAT ]    (samples=100   mean=260.91   median=253.43   min=241.91   stddev=14.62 (5.6%))
+[       OK ] matchVector_bestOf2NearestVectorFeatures.bestOf2NearestVectorFeatures/1 (26969 ms)
+[ RUN      ] matchVector_bestOf2NearestVectorFeatures.bestOf2NearestVectorFeatures/2, where GetParam() = ("surf", 8)
+.
+[ PERFSTAT ]    (samples=10   mean=1071.75   median=1073.52   min=1058.40   stddev=8.69 (0.8%))
+[       OK ] matchVector_bestOf2NearestVectorFeatures.bestOf2NearestVectorFeatures/2 (11376 ms)
+[ RUN      ] matchVector_bestOf2NearestVectorFeatures.bestOf2NearestVectorFeatures/3, where GetParam() = ("orb", 2)
+[ PERFSTAT ]    (samples=50   mean=13.13   median=12.99   min=12.73   stddev=0.38 (2.9%))
+[       OK ] matchVector_bestOf2NearestVectorFeatures.bestOf2NearestVectorFeatures/3 (926 ms)
+[ RUN      ] matchVector_bestOf2NearestVectorFeatures.bestOf2NearestVectorFeatures/4, where GetParam() = ("orb", 4)
+[ PERFSTAT ]    (samples=100   mean=61.20   median=61.07   min=57.29   stddev=3.02 (4.9%))
+[       OK ] matchVector_bestOf2NearestVectorFeatures.bestOf2NearestVectorFeatures/4 (6426 ms)
+[ RUN      ] matchVector_bestOf2NearestVectorFeatures.bestOf2NearestVectorFeatures/5, where GetParam() = ("orb", 8)
+[ PERFSTAT ]    (samples=10   mean=272.42   median=270.67   min=266.61   stddev=5.53 (2.0%))
+[       OK ] matchVector_bestOf2NearestVectorFeatures.bestOf2NearestVectorFeatures/5 (2990 ms)
+[----------] 6 tests from matchVector_bestOf2NearestVectorFeatures (50225 ms total)
+
+[----------] 2 tests from match_affineBestOf2Nearest
+[ RUN      ] match_affineBestOf2Nearest.affineBestOf2Nearest/0, where GetParam() = "surf"
+[ PERFSTAT ]    (samples=10   mean=283.22   median=282.69   min=278.87   stddev=3.20 (1.1%))
+[       OK ] match_affineBestOf2Nearest.affineBestOf2Nearest/0 (3748 ms)
+[ RUN      ] match_affineBestOf2Nearest.affineBestOf2Nearest/1, where GetParam() = "orb"
+[ PERFSTAT ]    (samples=13   mean=12.44   median=12.31   min=12.21   stddev=0.37 (3.0%))
+[       OK ] match_affineBestOf2Nearest.affineBestOf2Nearest/1 (306 ms)
+[----------] 2 tests from match_affineBestOf2Nearest (4054 ms total)
+
+[----------] 6 tests from matchVector_affineBestOf2NearestVectorFeatures
+[ RUN      ] matchVector_affineBestOf2NearestVectorFeatures.affineBestOf2NearestVectorFeatures/0, where GetParam() = ("surf", 2)
+[ PERFSTAT ]    (samples=10   mean=278.66   median=278.04   min=276.32   stddev=2.15 (0.8%))
+[       OK ] matchVector_affineBestOf2NearestVectorFeatures.affineBestOf2NearestVectorFeatures/0 (3691 ms)
+[ RUN      ] matchVector_affineBestOf2NearestVectorFeatures.affineBestOf2NearestVectorFeatures/1, where GetParam() = ("surf", 4)
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=869.42   median=896.25   min=795.30   stddev=44.80 (5.2%))
+[       OK ] matchVector_affineBestOf2NearestVectorFeatures.affineBestOf2NearestVectorFeatures/1 (88338 ms)
+[ RUN      ] matchVector_affineBestOf2NearestVectorFeatures.affineBestOf2NearestVectorFeatures/2, where GetParam() = ("surf", 8)
+.
+.
+.
+[ PERFSTAT ]    (samples=10   mean=3485.18   median=3474.34   min=3441.47   stddev=32.27 (0.9%))
+[       OK ] matchVector_affineBestOf2NearestVectorFeatures.affineBestOf2NearestVectorFeatures/2 (35774 ms)
+[ RUN      ] matchVector_affineBestOf2NearestVectorFeatures.affineBestOf2NearestVectorFeatures/3, where GetParam() = ("orb", 2)
+[ PERFSTAT ]    (samples=100   mean=12.79   median=12.53   min=12.29   stddev=0.53 (4.2%))
+[       OK ] matchVector_affineBestOf2NearestVectorFeatures.affineBestOf2NearestVectorFeatures/3 (1438 ms)
+[ RUN      ] matchVector_affineBestOf2NearestVectorFeatures.affineBestOf2NearestVectorFeatures/4, where GetParam() = ("orb", 4)
+[ PERFSTAT ]    (samples=100   mean=62.13   median=62.33   min=57.65   stddev=3.04 (4.9%))
+[       OK ] matchVector_affineBestOf2NearestVectorFeatures.affineBestOf2NearestVectorFeatures/4 (6402 ms)
+[ RUN      ] matchVector_affineBestOf2NearestVectorFeatures.affineBestOf2NearestVectorFeatures/5, where GetParam() = ("orb", 8)
+[ PERFSTAT ]    (samples=10   mean=272.73   median=270.22   min=269.34   stddev=4.13 (1.5%))
+[       OK ] matchVector_affineBestOf2NearestVectorFeatures.affineBestOf2NearestVectorFeatures/5 (2868 ms)
+[----------] 6 tests from matchVector_affineBestOf2NearestVectorFeatures (138511 ms total)
+
+[----------] 3 tests from stitch_a123
+[ RUN      ] stitch_a123.a123/0, where GetParam() = "surf"
+.
+[ PERFSTAT ]    (samples=20   mean=766.45   median=773.68   min=702.66   stddev=30.58 (4.0%))
+[       OK ] stitch_a123.a123/0 (15421 ms)
+[ RUN      ] stitch_a123.a123/1, where GetParam() = "orb"
+[ PERFSTAT ]    (samples=10   mean=620.50   median=619.67   min=615.66   stddev=3.95 (0.6%))
+[       OK ] stitch_a123.a123/1 (6235 ms)
+[ RUN      ] stitch_a123.a123/2, where GetParam() = "akaze"
+.
+[ PERFSTAT ]    (samples=10   mean=1032.63   median=1029.40   min=1027.03   stddev=6.21 (0.6%))
+[       OK ] stitch_a123.a123/2 (10360 ms)
+[----------] 3 tests from stitch_a123 (32016 ms total)
+
+[----------] 5 tests from stitchExposureCompensation_a123
+[ RUN      ] stitchExposureCompensation_a123.a123/0, where GetParam() = 32
+[ PERFSTAT ]    (samples=10   mean=612.09   median=613.45   min=598.76   stddev=6.10 (1.0%))
+[       OK ] stitchExposureCompensation_a123.a123/0 (6153 ms)
+[ RUN      ] stitchExposureCompensation_a123.a123/1, where GetParam() = 16
+.
+[ PERFSTAT ]    (samples=10   mean=1150.14   median=1108.36   min=1100.75   stddev=131.60 (11.4%))
+[       OK ] stitchExposureCompensation_a123.a123/1 (11531 ms)
+[ RUN      ] stitchExposureCompensation_a123.a123/2, where GetParam() = 12
+.
+.
+.
+[ PERFSTAT ]    (samples=10   mean=3358.34   median=3361.08   min=3319.90   stddev=13.77 (0.4%))
+[       OK ] stitchExposureCompensation_a123.a123/2 (33614 ms)
+[ RUN      ] stitchExposureCompensation_a123.a123/3, where GetParam() = 10
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=10   mean=8212.54   median=8236.20   min=8161.37   stddev=37.17 (0.5%))
+[       OK ] stitchExposureCompensation_a123.a123/3 (82155 ms)
+[ RUN      ] stitchExposureCompensation_a123.a123/4, where GetParam() = 8
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=10   mean=28043.49   median=27984.30   min=27882.81   stddev=136.27 (0.5%))
+[       OK ] stitchExposureCompensation_a123.a123/4 (280466 ms)
+[----------] 5 tests from stitchExposureCompensation_a123 (413919 ms total)
+
+[----------] 20 tests from stitchExposureCompMultiFeed_a123
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/0, where GetParam() = ("gain", 1)
+[ PERFSTAT ]    (samples=10   mean=639.82   median=598.29   min=597.32   stddev=129.10 (20.2%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/0 (6428 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/1, where GetParam() = ("gain", 2)
+[ PERFSTAT ]    (samples=10   mean=591.21   median=591.29   min=588.79   stddev=2.16 (0.4%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/1 (5945 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/2, where GetParam() = ("gain", 3)
+[ PERFSTAT ]    (samples=10   mean=594.78   median=594.36   min=591.64   stddev=2.58 (0.4%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/2 (5978 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/3, where GetParam() = ("gain", 4)
+[ PERFSTAT ]    (samples=10   mean=613.01   median=612.18   min=606.90   stddev=4.51 (0.7%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/3 (6160 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/4, where GetParam() = ("gain", 5)
+[ PERFSTAT ]    (samples=10   mean=646.23   median=645.73   min=640.49   stddev=4.23 (0.7%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/4 (6493 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/5, where GetParam() = ("channels", 1)
+[ PERFSTAT ]    (samples=10   mean=524.97   median=524.79   min=518.12   stddev=3.31 (0.6%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/5 (5280 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/6, where GetParam() = ("channels", 2)
+[ PERFSTAT ]    (samples=10   mean=666.76   median=627.15   min=623.50   stddev=125.07 (18.8%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/6 (6697 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/7, where GetParam() = ("channels", 3)
+[ PERFSTAT ]    (samples=10   mean=559.94   median=559.04   min=553.99   stddev=4.38 (0.8%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/7 (5629 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/8, where GetParam() = ("channels", 4)
+.
+[ PERFSTAT ]    (samples=10   mean=1195.19   median=495.19   min=490.43   stddev=2214.70 (185.3%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/8 (11982 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/9, where GetParam() = ("channels", 5)
+[ PERFSTAT ]    (samples=10   mean=516.34   median=516.39   min=513.40   stddev=1.46 (0.3%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/9 (5193 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/10, where GetParam() = ("blocks_gain", 1)
+[ PERFSTAT ]    (samples=10   mean=599.55   median=599.22   min=594.85   stddev=3.49 (0.6%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/10 (6026 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/11, where GetParam() = ("blocks_gain", 2)
+[ PERFSTAT ]    (samples=10   mean=650.44   median=650.37   min=644.19   stddev=4.38 (0.7%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/11 (6534 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/12, where GetParam() = ("blocks_gain", 3)
+[ PERFSTAT ]    (samples=10   mean=667.72   median=668.69   min=658.71   stddev=5.21 (0.8%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/12 (6707 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/13, where GetParam() = ("blocks_gain", 4)
+[ PERFSTAT ]    (samples=10   mean=714.82   median=710.31   min=699.48   stddev=12.35 (1.7%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/13 (7178 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/14, where GetParam() = ("blocks_gain", 5)
+[ PERFSTAT ]    (samples=10   mean=789.01   median=783.56   min=779.87   stddev=14.25 (1.8%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/14 (7920 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/15, where GetParam() = ("blocks_channels", 1)
+[ PERFSTAT ]    (samples=10   mean=811.59   median=727.59   min=722.09   stddev=266.48 (32.8%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/15 (8146 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/16, where GetParam() = ("blocks_channels", 2)
+[ PERFSTAT ]    (samples=10   mean=648.80   median=645.04   min=641.67   stddev=7.79 (1.2%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/16 (6519 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/17, where GetParam() = ("blocks_channels", 3)
+[ PERFSTAT ]    (samples=10   mean=769.51   median=776.38   min=747.19   stddev=18.14 (2.4%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/17 (7725 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/18, where GetParam() = ("blocks_channels", 4)
+[ PERFSTAT ]    (samples=10   mean=878.82   median=875.03   min=864.21   stddev=12.43 (1.4%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/18 (8818 ms)
+[ RUN      ] stitchExposureCompMultiFeed_a123.a123/19, where GetParam() = ("blocks_channels", 5)
+[ PERFSTAT ]    (samples=10   mean=978.54   median=965.32   min=936.25   stddev=36.04 (3.7%))
+[       OK ] stitchExposureCompMultiFeed_a123.a123/19 (9816 ms)
+[----------] 20 tests from stitchExposureCompMultiFeed_a123 (141175 ms total)
+
+[----------] 3 tests from stitch_b12
+[ RUN      ] stitch_b12.b12/0, where GetParam() = "surf"
+[ PERFSTAT ]    (samples=10   mean=288.66   median=288.87   min=274.14   stddev=7.01 (2.4%))
+[       OK ] stitch_b12.b12/0 (2909 ms)
+[ RUN      ] stitch_b12.b12/1, where GetParam() = "orb"
+[ PERFSTAT ]    (samples=10   mean=191.01   median=190.55   min=189.62   stddev=1.20 (0.6%))
+[       OK ] stitch_b12.b12/1 (1929 ms)
+[ RUN      ] stitch_b12.b12/2, where GetParam() = "akaze"
+[ PERFSTAT ]    (samples=13   mean=571.22   median=567.93   min=559.99   stddev=13.19 (2.3%))
+[       OK ] stitch_b12.b12/2 (7495 ms)
+[----------] 3 tests from stitch_b12 (12333 ms total)
+
+[----------] 12 tests from stitchDatasets_affine
+[ RUN      ] stitchDatasets_affine.affine/0, where GetParam() = ("s", "surf")
+.
+[ PERFSTAT ]    (samples=20   mean=878.71   median=868.09   min=832.88   stddev=30.44 (3.5%))
+[       OK ] stitchDatasets_affine.affine/0 (18126 ms)
+[ RUN      ] stitchDatasets_affine.affine/1, where GetParam() = ("s", "orb")
+[ PERFSTAT ]    (samples=10   mean=558.22   median=558.96   min=551.23   stddev=3.20 (0.6%))
+[       OK ] stitchDatasets_affine.affine/1 (5680 ms)
+[ RUN      ] stitchDatasets_affine.affine/2, where GetParam() = ("s", "akaze")
+.
+[ PERFSTAT ]    (samples=10   mean=1403.08   median=1404.07   min=1391.98   stddev=6.96 (0.5%))
+[       OK ] stitchDatasets_affine.affine/2 (14130 ms)
+[ RUN      ] stitchDatasets_affine.affine/3, where GetParam() = ("budapest", "surf")
+.
+.
+.
+[ PERFSTAT ]    (samples=10   mean=3348.39   median=3329.48   min=3207.68   stddev=81.15 (2.4%))
+[       OK ] stitchDatasets_affine.affine/3 (33607 ms)
+[ RUN      ] stitchDatasets_affine.affine/4, where GetParam() = ("budapest", "orb")
+.
+.
+[ PERFSTAT ]    (samples=10   mean=2155.31   median=2157.27   min=2144.60   stddev=6.76 (0.3%))
+[       OK ] stitchDatasets_affine.affine/4 (21674 ms)
+[ RUN      ] stitchDatasets_affine.affine/5, where GetParam() = ("budapest", "akaze")
+.
+.
+[ PERFSTAT ]    (samples=10   mean=3261.30   median=3276.52   min=3162.20   stddev=47.16 (1.4%))
+[       OK ] stitchDatasets_affine.affine/5 (32734 ms)
+[ RUN      ] stitchDatasets_affine.affine/6, where GetParam() = ("newspaper", "surf")
+.
+[ PERFSTAT ]    (samples=10   mean=1442.00   median=1454.05   min=1368.74   stddev=41.02 (2.8%))
+[       OK ] stitchDatasets_affine.affine/6 (14525 ms)
+[ RUN      ] stitchDatasets_affine.affine/7, where GetParam() = ("newspaper", "orb")
+[ PERFSTAT ]    (samples=10   mean=993.46   median=989.21   min=982.88   stddev=14.49 (1.5%))
+[       OK ] stitchDatasets_affine.affine/7 (10037 ms)
+[ RUN      ] stitchDatasets_affine.affine/8, where GetParam() = ("newspaper", "akaze")
+.
+.
+[ PERFSTAT ]    (samples=10   mean=2509.94   median=2511.20   min=2455.56   stddev=39.53 (1.6%))
+[       OK ] stitchDatasets_affine.affine/8 (25206 ms)
+[ RUN      ] stitchDatasets_affine.affine/9, where GetParam() = ("prague", "surf")
+[ PERFSTAT ]    (samples=10   mean=548.11   median=542.39   min=536.23   stddev=14.96 (2.7%))
+[       OK ] stitchDatasets_affine.affine/9 (5549 ms)
+[ RUN      ] stitchDatasets_affine.affine/10, where GetParam() = ("prague", "orb")
+[ PERFSTAT ]    (samples=10   mean=254.45   median=253.92   min=249.54   stddev=4.28 (1.7%))
+[       OK ] stitchDatasets_affine.affine/10 (2612 ms)
+[ RUN      ] stitchDatasets_affine.affine/11, where GetParam() = ("prague", "akaze")
+.
+[ PERFSTAT ]    (samples=10   mean=1151.23   median=1157.32   min=1113.08   stddev=17.65 (1.5%))
+[       OK ] stitchDatasets_affine.affine/11 (11583 ms)
+[----------] 12 tests from stitchDatasets_affine (195463 ms total)
+
+[----------] Global test environment tear-down
+[==========] 110 tests from 17 test cases ran. (1275235 ms total)
+[  PASSED  ] 110 tests.

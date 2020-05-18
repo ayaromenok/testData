@@ -1,0 +1,75 @@
+Time compensation is 0
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.3.0-openvino
+WARNING: build value differs from runtime: 4.3.0-dev
+OpenCV VCS version: 4d34934d25765ab06d8f7cb1ae0af78281b2784a
+Build type: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: tbb (nthreads=4)
+CPU features: SSE SSE2 SSE3 SSSE3 SSE4.1 POPCNT SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2020.0.0 Gold (-) Oct 19 2019
+OpenCL Platforms: 
+    Intel(R) OpenCL HD Graphics
+        iGPU: Intel(R) Gen8 HD Graphics NEO (OpenCL 2.1 NEO )
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) Gen8 HD Graphics NEO
+    Version = OpenCL 2.1 NEO 
+    Driver version = 20.17.16650
+    Address bits = 64
+    Compute units = 24
+    Max work group size = 256
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 1016 MB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_byte_addressable_store
+        cl_khr_fp16
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_icd
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_intel_subgroups
+        cl_intel_required_subgroup_size
+        cl_intel_subgroups_short
+        cl_khr_spir
+        cl_intel_accelerator
+        cl_intel_driver_diagnostics
+        cl_khr_priority_hints
+        cl_khr_throttle_hints
+        cl_khr_create_command_queue
+        cl_intel_subgroups_char
+        cl_intel_subgroups_long
+        cl_khr_fp64
+        cl_khr_subgroups
+        cl_khr_il_program
+        cl_intel_spirv_media_block_io
+        cl_intel_spirv_subgroups
+        cl_khr_spirv_no_integer_wrap_decoration
+        cl_intel_unified_shared_memory_preview
+        cl_khr_mipmap_image
+        cl_khr_mipmap_image_writes
+        cl_intel_planar_yuv
+        cl_intel_packed_yuv
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_intel_media_block_io
+        cl_khr_3d_image_writes
+        cl_intel_va_api_media_sharing
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 20 tests from 5 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from Size_MatType_Registration_Shift
+[ RUN      ] Size_MatType_Registration_Shift.Registration_Shift/0, where GetParam() = (64x64, 64FC1)

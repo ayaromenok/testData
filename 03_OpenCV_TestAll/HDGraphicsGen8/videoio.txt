@@ -1,0 +1,99 @@
+Time compensation is 0
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.3.0-openvino
+WARNING: build value differs from runtime: 4.3.0-dev
+OpenCV VCS version: 4d34934d25765ab06d8f7cb1ae0af78281b2784a
+Build type: Release
+Compiler: /usr/bin/c++  (ver 5.4.0)
+Parallel framework: tbb (nthreads=4)
+CPU features: SSE SSE2 SSE3 SSSE3 SSE4.1 POPCNT SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2020.0.0 Gold (-) Oct 19 2019
+OpenCL Platforms: 
+    Intel(R) OpenCL HD Graphics
+        iGPU: Intel(R) Gen8 HD Graphics NEO (OpenCL 2.1 NEO )
+Current OpenCL device: 
+    Type = iGPU
+    Name = Intel(R) Gen8 HD Graphics NEO
+    Version = OpenCL 2.1 NEO 
+    Driver version = 20.17.16650
+    Address bits = 64
+    Compute units = 24
+    Max work group size = 256
+    Local memory size = 64 KB
+    Max memory allocation size = 1 GB 1016 MB
+    Double support = Yes
+    Host unified memory = Yes
+    Device extensions:
+        cl_khr_byte_addressable_store
+        cl_khr_fp16
+        cl_khr_global_int32_base_atomics
+        cl_khr_global_int32_extended_atomics
+        cl_khr_icd
+        cl_khr_local_int32_base_atomics
+        cl_khr_local_int32_extended_atomics
+        cl_intel_subgroups
+        cl_intel_required_subgroup_size
+        cl_intel_subgroups_short
+        cl_khr_spir
+        cl_intel_accelerator
+        cl_intel_driver_diagnostics
+        cl_khr_priority_hints
+        cl_khr_throttle_hints
+        cl_khr_create_command_queue
+        cl_intel_subgroups_char
+        cl_intel_subgroups_long
+        cl_khr_fp64
+        cl_khr_subgroups
+        cl_khr_il_program
+        cl_intel_spirv_media_block_io
+        cl_intel_spirv_subgroups
+        cl_khr_spirv_no_integer_wrap_decoration
+        cl_intel_unified_shared_memory_preview
+        cl_khr_mipmap_image
+        cl_khr_mipmap_image_writes
+        cl_intel_planar_yuv
+        cl_intel_packed_yuv
+        cl_khr_int64_base_atomics
+        cl_khr_int64_extended_atomics
+        cl_khr_image2d_from_buffer
+        cl_khr_depth_images
+        cl_intel_media_block_io
+        cl_khr_3d_image_writes
+        cl_intel_va_api_media_sharing
+    Has AMD Blas = No
+    Has AMD Fft = No
+    Preferred vector width char = 16
+    Preferred vector width short = 8
+    Preferred vector width int = 4
+    Preferred vector width long = 1
+    Preferred vector width float = 1
+    Preferred vector width double = 1
+[==========] Running 18 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoCapture_Camera
+[ RUN      ] VideoCapture_Camera.waitAny_V4L
+[     SKIP ] No list of tested cameras. Use OPENCV_TEST_PERF_CAMERA_LIST parameter
+[       OK ] VideoCapture_Camera.waitAny_V4L (0 ms)
+[----------] 1 test from VideoCapture_Camera (0 ms total)
+
+[----------] 5 tests from VideoCapture_Reading_ReadFile
+[ RUN      ] VideoCapture_Reading_ReadFile.ReadFile/0, where GetParam() = "highgui/video/big_buck_bunny.avi"
+[ PERFSTAT ]    (samples=100   mean=3.50   median=3.21   min=2.89   stddev=0.61 (17.3%))
+[       OK ] VideoCapture_Reading_ReadFile.ReadFile/0 (380 ms)
+[ RUN      ] VideoCapture_Reading_ReadFile.ReadFile/1, where GetParam() = "highgui/video/big_buck_bunny.mov"
+[ PERFSTAT ]    (samples=100   mean=3.48   median=3.26   min=2.96   stddev=0.55 (15.7%))
+[       OK ] VideoCapture_Reading_ReadFile.ReadFile/1 (412 ms)
+[ RUN      ] VideoCapture_Reading_ReadFile.ReadFile/2, where GetParam() = "highgui/video/big_buck_bunny.mp4"
+[ PERFSTAT ]    (samples=100   mean=3.34   median=3.21   min=2.84   stddev=0.47 (14.0%))
+[       OK ] VideoCapture_Reading_ReadFile.ReadFile/2 (355 ms)
+[ RUN      ] VideoCapture_Reading_ReadFile.ReadFile/3, where GetParam() = "highgui/video/big_buck_bunny.mpg"
+[ PERFSTAT ]    (samples=100   mean=2.97   median=2.79   min=2.57   stddev=0.42 (14.0%))
+[       OK ] VideoCapture_Reading_ReadFile.ReadFile/3 (315 ms)
+[ RUN      ] VideoCapture_Reading_ReadFile.ReadFile/4, where GetParam() = "highgui/video/big_buck_bunny.wmv"
+[ PERFSTAT ]    (samples=100   mean=2.85   median=2.66   min=2.43   stddev=0.44 (15.6%))
+[       OK ] VideoCapture_Reading_ReadFile.ReadFile/4 (300 ms)
+[----------] 5 tests from VideoCapture_Reading_ReadFile (1762 ms total)
+
+[----------] 12 tests from VideoWriter_Writing_WriteFrame
+[ RUN      ] VideoWriter_Writing_WriteFrame.WriteFrame/0, where GetParam() = ("python/images/QCIF_00.bmp", false)
